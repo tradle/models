@@ -1,0 +1,42 @@
+{
+  "id": "tradle.AutoInsurance",
+  "title": "Auto Insurance",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.FinancialProduct",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "forms": [
+    "tradle.H1",
+    "tradle.H2"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "backlink": "document",
+        "ref": "tradle.Verification"
+      }
+    },
+    "referencedBy": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.SimpleMessage"
+    }
+  }
+}

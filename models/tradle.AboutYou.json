@@ -1,0 +1,121 @@
+{
+  "id": "tradle.AboutYou",
+  "title": "About You",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "residentialStatus": {
+      "type": "object",
+      "ref": "tradle.ResidentialStatus"
+    },
+    "maritalStatus": {
+      "type": "object",
+      "ref": "tradle.MaritalStatus"
+    },
+    "dependants": {
+      "type": "number",
+      "description": "How many people who live with you depend on you financially?"
+    },
+    "nationality": {
+      "type": "object",
+      "ref": "tradle.Nationality"
+    },
+    "countryOfBirth": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "taxResidency": {
+      "type": "object",
+      "description": "Country/countries in which you have tax residency (or been resident of for the past 2 years):",
+      "ref": "tradle.Country"
+    },
+    "fundAccount": {
+      "type": "object",
+      "description": "How will you fund your account?",
+      "ref": "tradle.HowToFund"
+    },
+    "purposeOfTheAccount": {
+      "type": "object",
+      "ref": "tradle.PurposeOfTheAccount"
+    },
+    "phones": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "phoneType": {
+            "type": "object",
+            "ref": "tradle.PhoneTypes"
+          },
+          "number": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "phoneType",
+        "number"
+      ]
+    },
+    "emailAddress": {
+      "type": "string"
+    },
+    "photos": {
+      "type": "array",
+      "title": "Photo ID snapshots",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "skipLabel": true
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          },
+          "width": {
+            "type": "number",
+            "readOnly": true
+          },
+          "height": {
+            "type": "number",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "title",
+        "url"
+      ]
+    }
+  },
+  "viewCols": [
+    "residentialStatus",
+    "maritalStatus",
+    "countryOfBirth",
+    "taxResidency",
+    "fundAccount",
+    "purposeOfTheAccount",
+    "phones",
+    "emailAddress",
+    "photos"
+  ]
+}

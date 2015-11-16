@@ -1,0 +1,79 @@
+{
+  "id": "tradle.Verification",
+  "type": "tradle.Model",
+  "title": "Verification",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "icon": "ios-checkmark-empty",
+  "style": {
+    "backgroundColor": "#E7E6F5"
+  },
+  "autoCreate": true,
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "document": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Message",
+      "title": "Verifying document"
+    },
+    "message": {
+      "type": "object",
+      "title": "Description",
+      "displayName": true
+    },
+    "to": {
+      "type": "object",
+      "title": "Owner",
+      "ref": "tradle.Identity",
+      "displayName": true,
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "title": "Verifier",
+      "readOnly": true,
+      "ref": "tradle.Identity",
+      "displayName": true
+    },
+    "blockchainUrl": {
+      "type": "string",
+      "readOnly": true
+    },
+    "transactionHash": {
+      "type": "string",
+      "readOnly": true
+    },
+    "time": {
+      "type": "date",
+      "skipLabel": true,
+      "readOnly": true
+    },
+    "organization": {
+      "type": "object",
+      "ref": "tradle.Organization"
+    }
+  },
+  "required": [
+    "message",
+    "to",
+    "from",
+    "time"
+  ],
+  "viewCols": [
+    "message",
+    "time",
+    "organization"
+  ],
+  "gridCols": [
+    "message",
+    "time",
+    "from",
+    "document",
+    "organization"
+  ]
+}

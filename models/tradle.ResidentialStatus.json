@@ -1,0 +1,20 @@
+{
+  "id": "tradle.ResidentialStatus",
+  "title": "Residential Status",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Enum",
+  "sort": "status",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "status": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "required": [
+    "status"
+  ]
+}

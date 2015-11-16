@@ -1,0 +1,144 @@
+{
+  "id": "tradle.UtilityBillVerification",
+  "type": "tradle.Model",
+  "title": "Utility Bill Verification",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "style": {
+    "backgroundColor": "#EBE1FA"
+  },
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "billDate": {
+      "type": "date",
+      "displayName": true
+    },
+    "issuedBy": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "formattedAddress": {
+      "transient": true,
+      "type": "string",
+      "displayAs": [
+        "street",
+        ",",
+        "city",
+        ",",
+        "region",
+        "postalCode"
+      ],
+      "title": "Address",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "displayName": true,
+      "readOnly": true
+    },
+    "blockchainUrl": {
+      "type": "string",
+      "readOnly": true
+    },
+    "transactionHash": {
+      "readOnly": true,
+      "type": "string"
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "skipLabel": true
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          },
+          "width": {
+            "type": "number",
+            "readOnly": true
+          },
+          "height": {
+            "type": "number",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "title",
+        "url"
+      ]
+    },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "backlink": "document",
+        "ref": "tradle.Verification"
+      }
+    }
+  },
+  "required": [
+    "to",
+    "from",
+    "photos",
+    "billDate",
+    "issuedBy",
+    "firstName",
+    "lastName",
+    "city",
+    "street",
+    "postalCode",
+    "region"
+  ],
+  "gridCols": [
+    "from",
+    "formattedAddress",
+    "billDate",
+    "time"
+  ],
+  "viewCols": [
+    "from",
+    "formattedAddress",
+    "billDate",
+    "time"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "tradle.Organization",
+  "type": "tradle.Model",
+  "title": "Organization",
+  "sort": "lastMessageTime",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "name": {
+      "type": "string",
+      "displayName": true
+    },
+    "email": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "formattedAddress": {
+      "transient": true,
+      "type": "string",
+      "displayAs": [
+        "street",
+        ",",
+        "city",
+        ",",
+        "region",
+        "postalCode"
+      ],
+      "title": "Address",
+      "readOnly": true
+    },
+    "contacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "ref": "tradle.Identity",
+        "backlink": "organization"
+      }
+    },
+    "lastMessage": {
+      "type": "string",
+      "style": {
+        "color": "#999999",
+        "fontSize": 14
+      },
+      "transient": true
+    },
+    "lastMessageTime": {
+      "type": "date",
+      "transient": true
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "title": "Tags via comma"
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          },
+          "width": {
+            "type": "number",
+            "readOnly": true
+          },
+          "height": {
+            "type": "number",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "url"
+      ]
+    },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "ref": "tradle.Verification",
+        "backlink": "organization"
+      }
+    },
+    "securityCodes": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "ref": "tradle.SecurityCode",
+        "backlink": "organization"
+      }
+    },
+    "verificationsCount": {
+      "type": "number",
+      "readOnly": true,
+      "skipLabel": true
+    },
+    "verificationRequests": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "ref": "tradle.Message",
+        "backlink": "organization"
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "modelName": {
+            "type": "tradle.Model"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "name"
+  ],
+  "viewCols": [
+    "name",
+    "photos",
+    "verifications"
+  ],
+  "gridCols": [
+    "name",
+    "lastMessage",
+    "lastMessageTime"
+  ],
+  "editCols": [
+    "name",
+    "street",
+    "city",
+    "region",
+    "country"
+  ]
+}

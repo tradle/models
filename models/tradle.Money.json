@@ -1,0 +1,22 @@
+{
+  "id": "tradle.Money",
+  "type": "tradle.Model",
+  "inlined": true,
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "value": {
+      "type": "number"
+    },
+    "currency": {
+      "type": "object",
+      "ref": "tradle.Currency"
+    }
+  },
+  "required": [
+    "value",
+    "currency"
+  ]
+}

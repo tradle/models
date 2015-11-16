@@ -1,0 +1,20 @@
+{
+  "id": "tradle.Currency",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Enum",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "currency": {
+      "type": "string"
+    },
+    "symbol": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "currency"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "tradle.MotorInsurance",
+  "title": "Motor Insurance",
+  "type": "tradle.Model",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.FinancialProduct",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "accountWith": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Organization"
+    }
+  }
+}

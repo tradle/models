@@ -1,0 +1,19 @@
+{
+  "id": "tradle.MaritalStatus",
+  "title": "Marital Status",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Enum",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "status": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "required": [
+    "status"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "id": "tradle.H1",
+  "title": "H1",
+  "type": "tradle.Model",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "residentialStatus": {
+      "type": "object",
+      "ref": "tradle.ResidentialStatus"
+    },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "backlink": "document",
+        "ref": "tradle.Verification"
+      }
+    }
+  },
+  "viewCols": [
+    "residentialStatus"
+  ]
+}

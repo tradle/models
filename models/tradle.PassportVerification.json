@@ -1,0 +1,160 @@
+{
+  "id": "tradle.PassportVerification",
+  "type": "tradle.Model",
+  "title": "Passport Verification",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "style": {
+    "backgroundColor": "#EBE1FA"
+  },
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "codeOfIssuing": {
+      "type": "string"
+    },
+    "passportNumber": {
+      "type": "number",
+      "maxLength": 9,
+      "minLength": 9,
+      "displayName": true
+    },
+    "surname": {
+      "type": "string"
+    },
+    "givenName": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "sex": {
+      "type": "string",
+      "oneOf": [
+        "Male",
+        "Female"
+      ]
+    },
+    "placeOfBirth": {
+      "type": "string"
+    },
+    "dateOfIssue": {
+      "type": "date"
+    },
+    "authority": {
+      "type": "string",
+      "displayName": true
+    },
+    "dateOfExpiry": {
+      "type": "date",
+      "displayName": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity",
+      "displayName": true
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "readOnly": true
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "skipLabel": true
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          },
+          "width": {
+            "type": "number",
+            "readOnly": true
+          },
+          "height": {
+            "type": "number",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "title",
+        "url"
+      ]
+    },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "backlink": "document",
+        "ref": "tradle.Verification"
+      }
+    },
+    "blockchainUrl": {
+      "type": "string",
+      "readOnly": true
+    },
+    "transactionHash": {
+      "readOnly": true,
+      "type": "string"
+    },
+    "additionalInfo": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.AdditionalInfo",
+        "backlink": "document"
+      }
+    }
+  },
+  "required": [
+    "to",
+    "from",
+    "photos",
+    "codeOfIssuing",
+    "passportNumber",
+    "surname",
+    "givenName",
+    "nationality",
+    "dateOfBirth",
+    "sex",
+    "placeOfBirth",
+    "dateOfIssue",
+    "authority",
+    "dateOfExpiry"
+  ],
+  "gridCols": [
+    "from",
+    "passportNumber",
+    "dateOfExpiry",
+    "time"
+  ],
+  "viewCols": [
+    "codeOfIssuing",
+    "passportNumber",
+    "surname",
+    "givenName",
+    "nationality",
+    "dateOfBirth",
+    "sex",
+    "placeOfBirth",
+    "dateOfIssue",
+    "authority",
+    "dateOfExpiry"
+  ]
+}

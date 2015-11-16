@@ -1,0 +1,42 @@
+{
+  "id": "tradle.YourMoney",
+  "title": "Your Money",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "employer": {
+      "type": "object",
+      "ref": "tradle.Organization"
+    },
+    "howLongHaveYouWorkedHere": {
+      "type": "number",
+      "units": "years"
+    },
+    "monthlyIncome": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    }
+  },
+  "viewCols": [
+    "employer",
+    "monthlyIncome",
+    "howLongHaveYouWorkedHere"
+  ]
+}

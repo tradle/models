@@ -1,0 +1,26 @@
+{
+  "id": "tradle.MyIdentities",
+  "type": "tradle.Model",
+  "title": "My Identities",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "currentIdentity": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "readOnly": true
+    },
+    "allIdentities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "ref": "tradle.Identity"
+      }
+    }
+  },
+  "required": [
+    "id"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "tradle.SecurityCode",
+  "type": "tradle.Model",
+  "title": "Security Code",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "code": {
+      "type": "string",
+      "readOnly": true
+    },
+    "organization": {
+      "type": "object",
+      "ref": "tradle.Organization"
+    }
+  }
+}

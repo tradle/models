@@ -1,0 +1,65 @@
+{
+  "id": "tradle.SalesData",
+  "title": "Sales Data for last year",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "averageMonthlySales": {
+      "type": "object",
+      "ref": "tradle.Money",
+      "units": "[min - max]",
+      "description": "Average monthly sales"
+    },
+    "averageTxsPerMonth": {
+      "type": "number",
+      "units": "[min - max]",
+      "description": "Average number of transactions per month"
+    },
+    "averageTxAmount": {
+      "type": "object",
+      "ref": "tradle.Money",
+      "units": "[min - max]",
+      "description": "Average amount of a single transaction"
+    },
+    "numberOfChargebacks": {
+      "type": "number"
+    },
+    "volumeOfChargebacks": {
+      "type": "object",
+      "ref": "tradle.Money",
+      "title": "Total amount of chargebacks"
+    },
+    "settlementCurrency": {
+      "type": "string"
+    }
+  },
+  "viewCols": [
+    "averageMonthlySales",
+    "averageTxsPerMonth"
+  ],
+  "required": [
+    "averageMonthlySales",
+    "averageTxsPerMonth",
+    "averageTxAmount",
+    "numberOfChargebacks",
+    "volumeOfChargebacks",
+    "settlementCurrency"
+  ]
+}

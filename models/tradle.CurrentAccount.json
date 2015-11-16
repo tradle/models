@@ -1,0 +1,114 @@
+{
+  "id": "tradle.CurrentAccount",
+  "type": "tradle.Model",
+  "title": "Current Account",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.FinancialProduct",
+  "forms": [
+    "tradle.AboutYou",
+    "tradle.YourMoney",
+    "tradle.UtilityBillVerification"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "productType": {
+      "type": "string",
+      "readOnly": true,
+      "displayName": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "accountWith": {
+      "type": "object",
+      "readOnly": true,
+      "displayName": true,
+      "ref": "tradle.Organization"
+    },
+    "residentialStatus": {
+      "type": "object",
+      "ref": "tradle.ResidentialStatus"
+    },
+    "maritalStatus": {
+      "type": "object",
+      "ref": "tradle.MaritalStatus"
+    },
+    "dependants": {
+      "type": "number",
+      "description": "How many people who live with you depend on you financially?"
+    },
+    "nationality": {
+      "type": "object",
+      "ref": "tradle.Nationality"
+    },
+    "inUKFrom": {
+      "type": "date",
+      "description": "When did you arrive in the UK?",
+      "title": "In UK from"
+    },
+    "countryOfBirth": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "taxResidency": {
+      "type": "object",
+      "description": "Country/countries in which you have tax residency (or been resident of for the past 2 years):",
+      "ref": "tradle.Country"
+    },
+    "fundAccount": {
+      "type": "object",
+      "description": "How will you fund your account?",
+      "ref": "tradle.HowToFund"
+    },
+    "purposeOfTheAccount": {
+      "type": "object",
+      "ref": "tradle.PurposeOfTheAccount"
+    },
+    "phones": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "properties": {
+          "phoneType": {
+            "type": "string",
+            "ref": "tradle.PhoneTypes"
+          },
+          "number": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "phoneType",
+        "number"
+      ]
+    },
+    "emailAddress": {
+      "type": "string"
+    },
+    "employer": {
+      "type": "object",
+      "ref": "tradle.Organization"
+    },
+    "howLongHaveYouWorkedHere": {
+      "type": "number",
+      "units": "years"
+    },
+    "monthlyIncome": {
+      "type": "object",
+      "ref": "tradle.Money"
+    }
+  }
+}
