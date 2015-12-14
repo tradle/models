@@ -962,6 +962,7 @@ module.exports = [
       },
       "myProducts": {
         "type": "array",
+        "title": "Products",
         "allowRoles": "me",
         "items": {
           "readOnly": true,
@@ -971,6 +972,7 @@ module.exports = [
       },
       "myVerifications": {
         "type": "array",
+        "title": "Verifications",
         "allowRoles": "me",
         "icon": "ios-checkmark-empty",
         "items": {
@@ -981,6 +983,7 @@ module.exports = [
       },
       "myRequests": {
         "type": "array",
+        "title": "Requests",
         "allowRoles": "me",
         "items": {
           "readOnly": true,
