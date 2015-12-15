@@ -861,7 +861,8 @@ module.exports = [
         "readOnly": true
       },
       "securityCode": {
-        "type": "string"
+        "type": "string",
+        "readOnly": true,
       },
       "contactInfo": {
         "type": "array",
@@ -1114,7 +1115,6 @@ module.exports = [
       "photos"
     ],
     "editCols": [
-      "securityCode",
       "firstName",
       "lastName",
       "street",
@@ -1124,6 +1124,7 @@ module.exports = [
       "country",
       "pubkeys",
       "organization"
+      "securityCode",
     ]
   },
   {
