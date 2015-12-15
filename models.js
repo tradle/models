@@ -932,7 +932,7 @@ module.exports = [
       },
       "lastName": {
         "type": "string",
-        "description": "Choose a fake name or a real name. It all depends on how you want people to know you. Choose a different Identity for work and social."
+        // "description": "Choose a fake name or a real name. It all depends on how you want people to know you. Choose a different Identity for work and social."
       },
       "formatted": {
         "transient": true,
@@ -1081,7 +1081,8 @@ module.exports = [
       }
     },
     "required": [
-      "firstName"
+      "firstName",
+      "lastName"
     ],
     "groups": {
       "name": [
