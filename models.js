@@ -894,7 +894,7 @@ module.exports = [
       },
       "securityCode": {
         "type": "string",
-        "readOnly": true,
+        "readOnly": true
       },
       "contactInfo": {
         "type": "array",
@@ -963,8 +963,7 @@ module.exports = [
         "type": "string"
       },
       "lastName": {
-        "type": "string",
-        // "description": "Choose a fake name or a real name. It all depends on how you want people to know you. Choose a different Identity for work and social."
+        "type": "string"
       },
       "formatted": {
         "transient": true,
@@ -1156,8 +1155,8 @@ module.exports = [
       "postalCode",
       "country",
       "pubkeys",
-      "organization"
-      "securityCode",
+      "organization",
+      "securityCode"
     ]
   },
   {

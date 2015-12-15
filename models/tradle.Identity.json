@@ -10,7 +10,8 @@
       "readOnly": true
     },
     "securityCode": {
-      "type": "string"
+      "type": "string",
+      "readOnly": true
     },
     "contactInfo": {
       "type": "array",
@@ -79,8 +80,7 @@
       "type": "string"
     },
     "lastName": {
-      "type": "string",
-      "description": "Choose a fake name or a real name. It all depends on how you want people to know you. Choose a different Identity for work and social."
+      "type": "string"
     },
     "formatted": {
       "transient": true,
@@ -111,6 +111,7 @@
     },
     "myProducts": {
       "type": "array",
+      "title": "Products",
       "allowRoles": "me",
       "items": {
         "readOnly": true,
@@ -120,6 +121,7 @@
     },
     "myVerifications": {
       "type": "array",
+      "title": "Verifications",
       "allowRoles": "me",
       "icon": "ios-checkmark-empty",
       "items": {
@@ -130,6 +132,7 @@
     },
     "myRequests": {
       "type": "array",
+      "title": "Requests",
       "allowRoles": "me",
       "items": {
         "readOnly": true,
@@ -226,7 +229,8 @@
     }
   },
   "required": [
-    "firstName"
+    "firstName",
+    "lastName"
   ],
   "groups": {
     "name": [
@@ -260,7 +264,6 @@
     "photos"
   ],
   "editCols": [
-    "securityCode",
     "firstName",
     "lastName",
     "street",
@@ -269,6 +272,7 @@
     "postalCode",
     "country",
     "pubkeys",
-    "organization"
+    "organization",
+    "securityCode"
   ]
 }

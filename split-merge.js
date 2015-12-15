@@ -12,11 +12,7 @@ function split (models, dir) {
   dir = path.resolve(dir || DEFAULT_MODELS_DIR)
   models.forEach(function (m) {
     var fname = toFilePath(dir, m.id)
-    fs.exists(fname, function (exists) {
-      if (!exists) {
-        fs.writeFile(fname, JSON.stringify(m, null, 2))
-      }
-    })
+    fs.writeFile(path.resolve(fname), JSON.stringify(m, null, 2))
   })
 }
 
