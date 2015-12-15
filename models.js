@@ -617,6 +617,38 @@ module.exports = [
     }
   },
   {
+    "id": "tradle.ForgetMe",
+    "title": "Forget Me",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "subClassOf": "tradle.Form",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "reason": {
+        "type": "string"
+      }
+    },
+    "viewCols": [
+      "reason"
+    ],
+    "required": []
+  },
+  {
     "id": "tradle.Form",
     "title": "Form",
     "type": "tradle.Model",
@@ -1126,6 +1158,38 @@ module.exports = [
       "pubkeys",
       "organization"
       "securityCode",
+    ]
+  },
+  {
+    "id": "tradle.IdentityPublishRequest",
+    "title": "Identity Publish Request",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "subClassOf": "tradle.Form",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "identity": {
+        "type": "object",
+        "ref": "tradle.Identity"
+      }
+    },
+    "viewCols": [
+      "identity"
     ]
   },
   {

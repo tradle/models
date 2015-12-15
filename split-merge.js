@@ -9,7 +9,7 @@ module.exports = {
 }
 
 function split (models, dir) {
-  dir = dir || DEFAULT_MODELS_DIR
+  dir = path.resolve(dir || DEFAULT_MODELS_DIR)
   models.forEach(function (m) {
     var fname = toFilePath(dir, m.id)
     fs.exists(fname, function (exists) {
@@ -26,7 +26,7 @@ function merge (modelsDir, outFilePath) {
     modelsDir = null
   }
 
-  modelsDir = modelsDir || DEFAULT_MODELS_DIR
+  modelsDir = path.resolve(modelsDir || DEFAULT_MODELS_DIR)
   var models = fs.readdirSync(modelsDir)
     .map(function (fname) {
       var file = fs.readFileSync(path.join(modelsDir, fname))
@@ -38,7 +38,7 @@ function merge (modelsDir, outFilePath) {
     contents = 'module.exports = ' + contents
   }
 
-  fs.writeFile(outFilePath, contents)
+  fs.writeFile(path.resolve(outFilePath), contents)
 }
 
 function toFilePath (dir, id) {
