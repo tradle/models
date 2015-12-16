@@ -1,0 +1,85 @@
+{
+  "id": "tradle.PropertyInformation",
+  "title": "Property Information",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "propertyStreetAddress": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "formattedAddress": {
+      "transient": true,
+      "type": "string",
+      "displayAs": [
+        "propertyStreetAddress",
+        ",",
+        "city",
+        ",",
+        "region",
+        "postalCode",
+        ",  ",
+        "country"
+      ],
+      "title": "Property Address",
+      "readOnly": true
+    },
+    "propertyType": {
+      "type": "object",
+      "ref": "tradle.PropertyType"
+    },
+    "sizeOfProperty": {
+      "type": "string",
+      "units": "sqft"
+    },
+    "bedrooms": {
+      "type": "number",
+      "title": "Number of bedrooms"
+    },
+    "bathrooms": {
+      "type": "number",
+      "title": "Number of bathrooms"
+    },
+    "yearBuilt": {
+      "type": "number",
+      "title": "Year it was built"
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    }
+  },
+  "viewCols": [
+    "formattedAddress",
+    "purposeOfMortgageLoan",
+    "totalAmountRequired",
+    "totalValueOfProperty",
+    "propertyType",
+    "sizeOfProperty"
+  ]
+}
