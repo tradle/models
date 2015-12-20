@@ -66,7 +66,8 @@ module.exports = [
               "ref": "tradle.PhoneTypes"
             },
             "number": {
-              "type": "string"
+              "type": "string",
+              "keyboard": "phone-pad"
             }
           }
         },
@@ -76,7 +77,8 @@ module.exports = [
         ]
       },
       "emailAddress": {
-        "type": "string"
+        "type": "string",
+        "keyboard": "email-address"
       },
       "photos": {
         "type": "array",
@@ -288,13 +290,16 @@ module.exports = [
         "type": "string"
       },
       "companyPhone": {
-        "type": "string"
+        "type": "string",
+        "keyboard": "phone-pad"
       },
       "companyFax": {
-        "type": "string"
+        "type": "string",
+        "keyboard": "phone-pad"
       },
       "companyEmail": {
-        "type": "string"
+        "type": "string",
+        "keyboard": "email-address"
       },
       "numberOfEmployees": {
         "type": "number"
@@ -486,7 +491,8 @@ module.exports = [
               "ref": "tradle.PhoneTypes"
             },
             "number": {
-              "type": "string"
+              "type": "string",
+              "keyboard": "phone-pad"
             }
           }
         },
@@ -496,7 +502,8 @@ module.exports = [
         ]
       },
       "emailAddress": {
-        "type": "string"
+        "type": "string",
+        "keyboard": "email-address"
       },
       "employer": {
         "type": "object",
@@ -545,10 +552,12 @@ module.exports = [
               "skipLabel": true
             },
             "email": {
-              "type": "string"
+              "type": "string",
+              "keyboard": "email-address"
             },
             "phone": {
-              "type": "string"
+              "type": "string",
+              "keyboard": "phone-pad"
             }
           }
         }
@@ -1019,8 +1028,7 @@ module.exports = [
         "allowRoles": "me",
         "items": {
           "readOnly": true,
-          "ref": "tradle.Message",
-          "where": "document !== null",
+          "ref": "tradle.Form",
           "backlink": "from"
         }
       },
@@ -1112,8 +1120,7 @@ module.exports = [
       }
     },
     "required": [
-      "firstName",
-      "lastName"
+      "firstName"
     ],
     "groups": {
       "name": [
@@ -1791,7 +1798,8 @@ module.exports = [
         "displayName": true
       },
       "email": {
-        "type": "string"
+        "type": "string",
+        "keyboard": "email-address"
       },
       "city": {
         "type": "string"
@@ -1898,7 +1906,7 @@ module.exports = [
         "readOnly": true,
         "items": {
           "type": "object",
-          "ref": "tradle.Message",
+          "ref": "tradle.Form",
           "backlink": "organization"
         }
       },
@@ -2190,10 +2198,10 @@ module.exports = [
       },
       "propertyType": {
         "type": "object",
-        "ref": "tradle.PropertyType"
+        "ref": "tradle.PropertyTypes"
       },
       "sizeOfProperty": {
-        "type": "string",
+        "type": "number",
         "units": "sqft"
       },
       "bedrooms": {
@@ -2221,16 +2229,34 @@ module.exports = [
     },
     "viewCols": [
       "formattedAddress",
-      "purposeOfMortgageLoan",
-      "totalAmountRequired",
-      "totalValueOfProperty",
       "propertyType",
-      "sizeOfProperty"
+      "sizeOfProperty",
+      "bedrooms",
+      "bathrooms",
+      "yearBuilt"
     ]
   },
   {
     "id": "tradle.PropertyType",
     "title": "Property Type",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "propertyType": {
+        "displayName": true,
+        "type": "string"
+      }
+    },
+    "required": [
+      "propertyType"
+    ]
+  },
+  {
+    "id": "tradle.PropertyTypes",
+    "title": "Property Types",
     "type": "tradle.Model",
     "properties": {
       "_t": {

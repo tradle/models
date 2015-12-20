@@ -13,7 +13,8 @@
       "displayName": true
     },
     "email": {
-      "type": "string"
+      "type": "string",
+      "keyboard": "email-address"
     },
     "city": {
       "type": "string"
@@ -120,7 +121,7 @@
       "readOnly": true,
       "items": {
         "type": "object",
-        "ref": "tradle.Message",
+        "ref": "tradle.Form",
         "backlink": "organization"
       }
     },

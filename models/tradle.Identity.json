@@ -136,8 +136,7 @@
       "allowRoles": "me",
       "items": {
         "readOnly": true,
-        "ref": "tradle.Message",
-        "where": "document !== null",
+        "ref": "tradle.Form",
         "backlink": "from"
       }
     },
@@ -229,8 +228,7 @@
     }
   },
   "required": [
-    "firstName",
-    "lastName"
+    "firstName"
   ],
   "groups": {
     "name": [
