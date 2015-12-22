@@ -2152,6 +2152,44 @@ module.exports = [
     ]
   },
   {
+    "id": "tradle.ProductList",
+    "title": "Product List",
+    "type": "tradle.Model",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "message": {
+        "type": "string"
+      },
+      "list": {
+        "type": "array",
+        "readOnly": true,
+        "items": {
+          "type": "object",
+          "ref": "tradle.Model"
+        }
+      }
+    },
+    "viewCols": [
+      "message"
+    ]
+  },
+  {
     "id": "tradle.PropertyInformation",
     "title": "Property Information",
     "interfaces": [
