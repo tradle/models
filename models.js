@@ -594,6 +594,45 @@ module.exports = [
     }
   },
   {
+    "id": "tradle.CustomerWaiting",
+    "title": "Customer waiting",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "message": {
+        "type": "string"
+      },
+      "time": {
+        "type": "date",
+        "readOnly": true
+      },
+      "welcome": {
+        "type": "boolean",
+        "readOnly": true
+      }
+    },
+    "viewCols": [
+      "message"
+    ],
+    "required": []
+  },
+  {
     "id": "tradle.Enum",
     "title": "Enum",
     "type": "tradle.Model",
@@ -631,7 +670,6 @@ module.exports = [
     "interfaces": [
       "tradle.Message"
     ],
-    "subClassOf": "tradle.Form",
     "type": "tradle.Model",
     "properties": {
       "_t": {
@@ -648,12 +686,51 @@ module.exports = [
         "readOnly": true,
         "ref": "tradle.Identity"
       },
-      "reason": {
+      "time": {
+        "type": "date",
+        "readOnly": true
+      },
+      "message": {
         "type": "string"
       }
     },
     "viewCols": [
-      "reason"
+      "message"
+    ],
+    "required": []
+  },
+  {
+    "id": "tradle.ForgotYou",
+    "title": "Forgot You",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "time": {
+        "type": "date",
+        "readOnly": true
+      },
+      "message": {
+        "type": "string"
+      }
+    },
+    "viewCols": [
+      "message"
     ],
     "required": []
   },
@@ -2376,6 +2453,37 @@ module.exports = [
         "ref": "tradle.Identity"
       }
     }
+  },
+  {
+    "id": "tradle.RequestForRepresentative",
+    "title": "Request for representative",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "message": {
+        "type": "string"
+      }
+    },
+    "viewCols": [
+      "message"
+    ],
+    "required": []
   },
   {
     "id": "tradle.ResidentialStatus",

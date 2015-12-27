@@ -4,7 +4,6 @@
   "interfaces": [
     "tradle.Message"
   ],
-  "subClassOf": "tradle.Form",
   "type": "tradle.Model",
   "properties": {
     "_t": {
@@ -21,12 +20,16 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
-    "reason": {
+    "time": {
+      "type": "date",
+      "readOnly": true
+    },
+    "message": {
       "type": "string"
     }
   },
   "viewCols": [
-    "reason"
+    "message"
   ],
   "required": []
 }
