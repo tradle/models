@@ -1085,7 +1085,7 @@ module.exports = [
         "items": {
           "readOnly": true,
           "ref": "tradle.FinancialProduct",
-          "backlink": "from"
+          "backlink": "to"
         }
       },
       "myVerifications": {
