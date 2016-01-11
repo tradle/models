@@ -657,12 +657,21 @@ module.exports = [
         "readOnly": true,
         "ref": "tradle.Identity"
       },
-      "accountWith": {
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "organization": {
         "type": "object",
         "readOnly": true,
         "ref": "tradle.Organization"
       }
-    }
+    },
+    "viewCols": [
+      "_t",
+      "organization"
+    ]
   },
   {
     "id": "tradle.ForgetMe",
@@ -2665,7 +2674,10 @@ module.exports = [
     },
     "viewCols": [
       "averageMonthlySales",
-      "averageTxsPerMonth"
+      "averageTxsPerMonth",
+      "averageTxAmount",
+      "numberOfChargebacks",
+      "volumeOfChargebacks"
     ],
     "required": [
       "averageMonthlySales",
@@ -3051,7 +3063,7 @@ module.exports = [
       "time"
     ],
     "viewCols": [
-      "from",
+      "issuedBy",
       "formattedAddress",
       "billDate",
       "time"
