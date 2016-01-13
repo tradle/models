@@ -2929,6 +2929,7 @@ module.exports = [
     "id": "tradle.UtilityBillVerification",
     "type": "tradle.Model",
     "title": "Utility Bill Verification",
+    "subClassOf": "tradle.Form",
     "interfaces": [
       "tradle.Message"
     ],
