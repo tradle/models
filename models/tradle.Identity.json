@@ -13,39 +13,6 @@
       "type": "string",
       "readOnly": true
     },
-    "contactInfo": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "contactMethod": {
-            "type": "string",
-            "displayAs": [
-              "type",
-              " : ",
-              "identifier"
-            ],
-            "readOnly": true,
-            "skipLabel": true
-          },
-          "identifier": {
-            "type": "string",
-            "description": "Phone number, IM name, skype id, etc."
-          },
-          "type": {
-            "type": "string",
-            "description": "Like \"phone\", \"IM\", \"skype\", \"email\", etc."
-          }
-        }
-      },
-      "viewCols": [
-        "contactMethod"
-      ],
-      "required": [
-        "identifier",
-        "type"
-      ]
-    },
     "city": {
       "type": "string"
     },
@@ -256,7 +223,6 @@
     "formattedAddress",
     "organization",
     "myVerifications",
-    "contactInfo",
     "websites",
     "pubkeys",
     "photos"

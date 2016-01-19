@@ -991,39 +991,6 @@ module.exports = [
         "type": "string",
         "readOnly": true
       },
-      "contactInfo": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "contactMethod": {
-              "type": "string",
-              "displayAs": [
-                "type",
-                " : ",
-                "identifier"
-              ],
-              "readOnly": true,
-              "skipLabel": true
-            },
-            "identifier": {
-              "type": "string",
-              "description": "Phone number, IM name, skype id, etc."
-            },
-            "type": {
-              "type": "string",
-              "description": "Like \"phone\", \"IM\", \"skype\", \"email\", etc."
-            }
-          }
-        },
-        "viewCols": [
-          "contactMethod"
-        ],
-        "required": [
-          "identifier",
-          "type"
-        ]
-      },
       "city": {
         "type": "string"
       },
@@ -1234,7 +1201,6 @@ module.exports = [
       "formattedAddress",
       "organization",
       "myVerifications",
-      "contactInfo",
       "websites",
       "pubkeys",
       "photos"
@@ -2717,6 +2683,28 @@ module.exports = [
         "ref": "tradle.Organization"
       }
     }
+  },
+  {
+    "id": "tradle.Settings",
+    "type": "tradle.Model",
+    "title": "Settings",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "url": {
+        "title": "Server URL",
+        "type": "string",
+        "keyboard": "url"
+      }
+    },
+    "viewCols": [
+      "url"
+    ],
+    "required": [
+      "url"
+    ]
   },
   {
     "id": "tradle.SimpleMessage",
