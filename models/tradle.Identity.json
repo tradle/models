@@ -9,132 +9,12 @@
       "type": "string",
       "readOnly": true
     },
-    "securityCode": {
-      "type": "string",
-      "readOnly": true
-    },
-    "city": {
-      "type": "string"
-    },
-    "country": {
-      "type": "object",
-      "ref": "tradle.Country"
-    },
-    "postalCode": {
-      "type": "string"
-    },
-    "region": {
-      "type": "string"
-    },
-    "street": {
-      "type": "string"
-    },
-    "formattedAddress": {
-      "transient": true,
-      "type": "string",
-      "displayAs": [
-        "street",
-        ",",
-        "city",
-        ",",
-        "region",
-        "postalCode"
-      ],
-      "title": "Address",
-      "readOnly": true
-    },
-    "firstName": {
-      "type": "string"
-    },
-    "lastName": {
-      "type": "string"
-    },
-    "formatted": {
-      "transient": true,
-      "type": "string",
-      "displayAs": [
-        "firstName",
-        "lastName"
-      ],
-      "readOnly": true,
-      "displayName": true
-    },
-    "middleName": {
-      "type": "string"
-    },
-    "organization": {
-      "type": "object",
-      "ref": "tradle.Organization"
-    },
-    "verifiedByMe": {
-      "type": "array",
-      "allowRoles": "me",
-      "icon": "ios-checkmark-empty",
-      "items": {
-        "readOnly": true,
-        "ref": "tradle.Verification",
-        "backlink": "from"
-      }
-    },
-    "myProducts": {
-      "type": "array",
-      "title": "Products",
-      "allowRoles": "me",
-      "items": {
-        "readOnly": true,
-        "ref": "tradle.FinancialProduct",
-        "backlink": "to"
-      }
-    },
-    "myVerifications": {
-      "type": "array",
-      "title": "Verifications",
-      "allowRoles": "me",
-      "icon": "ios-checkmark-empty",
-      "items": {
-        "readOnly": true,
-        "ref": "tradle.Verification",
-        "backlink": "to"
-      }
-    },
-    "myRequests": {
-      "type": "array",
-      "title": "Requests",
-      "allowRoles": "me",
-      "items": {
-        "readOnly": true,
-        "ref": "tradle.Form",
-        "backlink": "from"
-      }
-    },
-    "photos": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "title": "Tags via comma"
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "url"
-      ]
-    },
     "pubkeys": {
       "type": "array",
       "readOnly": true,
       "items": {
         "type": "object",
         "properties": {
-          "_sig": {
-            "type": "string"
-          },
           "curve": {
             "type": "string"
           },
@@ -158,85 +38,14 @@
           }
         },
         "required": [
-          "_sig",
+          "type",
           "fingerprint",
           "value"
         ]
       }
-    },
-    "summary": {
-      "type": "string"
-    },
-    "lastMessage": {
-      "type": "string",
-      "style": {
-        "color": "#999999",
-        "fontSize": 14
-      },
-      "transient": true
-    },
-    "lastMessageTime": {
-      "type": "date",
-      "transient": true
-    },
-    "websites": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "url"
-      ]
     }
   },
   "required": [
-    "firstName"
-  ],
-  "groups": {
-    "name": [
-      "firstName",
-      "middleName",
-      "lastName",
-      "formatted"
-    ],
-    "location": [
-      "city",
-      "country",
-      "street",
-      "region",
-      "postalCode",
-      "formattedAddress"
-    ]
-  },
-  "gridCols": [
-    "formatted",
-    "lastMessage",
-    "lastMessageTime",
-    "organization"
-  ],
-  "viewCols": [
-    "formattedAddress",
-    "organization",
-    "myVerifications",
-    "websites",
-    "pubkeys",
-    "photos"
-  ],
-  "editCols": [
-    "firstName",
-    "lastName",
-    "street",
-    "city",
-    "region",
-    "postalCode",
-    "country",
-    "pubkeys",
-    "organization",
-    "securityCode"
+    "pubkeys"
   ]
 }
