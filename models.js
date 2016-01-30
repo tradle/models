@@ -992,9 +992,6 @@ module.exports = [
         "items": {
           "type": "object",
           "properties": {
-            "_sig": {
-              "type": "string"
-            },
             "curve": {
               "type": "string"
             },
@@ -1018,7 +1015,7 @@ module.exports = [
             }
           },
           "required": [
-            "_sig",
+            "type",
             "fingerprint",
             "value"
           ]
@@ -2057,7 +2054,7 @@ module.exports = [
     "type": "tradle.Model",
     "title": "Profile",
     "sort": "lastMessageTime",
-    "plural": "Identities",
+    "plural": "Profiles",
     "properties": {
       "_t": {
         "type": "string",
@@ -2208,10 +2205,6 @@ module.exports = [
         "required": [
           "url"
         ]
-      },
-      "identity": {
-        "type": "object",
-        "ref": "tradle.Identity"
       }
     },
     "required": [
