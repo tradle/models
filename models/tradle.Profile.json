@@ -1,0 +1,206 @@
+{
+  "id": "tradle.Profile",
+  "type": "tradle.Model",
+  "title": "Profile",
+  "sort": "lastMessageTime",
+  "plural": "Identities",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "securityCode": {
+      "type": "string",
+      "readOnly": true
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "formattedAddress": {
+      "transient": true,
+      "type": "string",
+      "displayAs": [
+        "street",
+        ",",
+        "city",
+        ",",
+        "region",
+        "postalCode"
+      ],
+      "title": "Address",
+      "readOnly": true
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "formatted": {
+      "transient": true,
+      "type": "string",
+      "displayAs": [
+        "firstName",
+        "lastName"
+      ],
+      "readOnly": true,
+      "displayName": true
+    },
+    "middleName": {
+      "type": "string"
+    },
+    "organization": {
+      "type": "object",
+      "ref": "tradle.Organization"
+    },
+    "verifiedByMe": {
+      "type": "array",
+      "allowRoles": "me",
+      "icon": "ios-checkmark-empty",
+      "items": {
+        "readOnly": true,
+        "ref": "tradle.Verification",
+        "backlink": "from"
+      }
+    },
+    "myProducts": {
+      "type": "array",
+      "title": "Products",
+      "allowRoles": "me",
+      "items": {
+        "readOnly": true,
+        "ref": "tradle.FinancialProduct",
+        "backlink": "to"
+      }
+    },
+    "myVerifications": {
+      "type": "array",
+      "title": "Verifications",
+      "allowRoles": "me",
+      "icon": "ios-checkmark-empty",
+      "items": {
+        "readOnly": true,
+        "ref": "tradle.Verification",
+        "backlink": "to"
+      }
+    },
+    "myRequests": {
+      "type": "array",
+      "title": "Requests",
+      "allowRoles": "me",
+      "items": {
+        "readOnly": true,
+        "ref": "tradle.Form",
+        "backlink": "from"
+      }
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "title": "Tags via comma"
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "url"
+      ]
+    },
+    "summary": {
+      "type": "string"
+    },
+    "lastMessage": {
+      "type": "string",
+      "style": {
+        "color": "#999999",
+        "fontSize": 14
+      },
+      "transient": true
+    },
+    "lastMessageTime": {
+      "type": "date",
+      "transient": true
+    },
+    "websites": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "url": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "url"
+      ]
+    },
+    "identity": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    }
+  },
+  "required": [
+    "firstName"
+  ],
+  "groups": {
+    "name": [
+      "firstName",
+      "middleName",
+      "lastName",
+      "formatted"
+    ],
+    "location": [
+      "city",
+      "country",
+      "street",
+      "region",
+      "postalCode",
+      "formattedAddress"
+    ]
+  },
+  "gridCols": [
+    "formatted",
+    "lastMessage",
+    "lastMessageTime",
+    "organization"
+  ],
+  "viewCols": [
+    "formattedAddress",
+    "organization",
+    "myVerifications",
+    "websites",
+    "photos"
+  ],
+  "editCols": [
+    "firstName",
+    "lastName",
+    "street",
+    "city",
+    "region",
+    "postalCode",
+    "country",
+    "organization",
+    "securityCode"
+  ]
+}
