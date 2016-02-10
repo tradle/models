@@ -2340,6 +2340,7 @@ module.exports = [
     "id": "tradle.PropertyType",
     "title": "Property Type",
     "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
     "properties": {
       "_t": {
         "type": "string",
@@ -2376,6 +2377,7 @@ module.exports = [
     "id": "tradle.PurposeOfMortgageLoan",
     "title": "Purpose of mortgage loan",
     "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
     "properties": {
       "_t": {
         "type": "string",
