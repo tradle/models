@@ -4,8 +4,12 @@
   "description": "models for tradle apps",
   "main": "models.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "merge": "node merge.js ./models ./models.js"
   },
+  "pre-commit": [
+    "merge"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/tradle/models"
@@ -19,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/tradle/models/issues"
   },
-  "homepage": "https://github.com/tradle/models"
+  "homepage": "https://github.com/tradle/models",
+  "devDependencies": {
+    "pre-commit": "^1.1.2"
+  }
 }
