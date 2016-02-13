@@ -3173,8 +3173,7 @@ module.exports = [
         "readOnly": true
       },
       "employer": {
-        "type": "object",
-        "ref": "tradle.Organization"
+        "type": "string"
       },
       "howLongHaveYouWorkedHere": {
         "type": "number",
