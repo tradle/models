@@ -1435,8 +1435,18 @@ module.exports = [
         "type": "number"
       },
       "currency": {
-        "type": "object",
-        "ref": "tradle.Currency"
+        "type": "enum",
+        "oneOf": [
+          {
+            "USD": "$"
+          },
+          {
+            "GBR": "£"
+          },
+          {
+            "EUR": "€"
+          }
+        ]
       }
     },
     "required": [
