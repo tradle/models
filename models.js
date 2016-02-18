@@ -2707,6 +2707,42 @@ module.exports = [
     }
   },
   {
+    "id": "tradle.SelfIntrodiction",
+    "title": "Self introdiction",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "identity": {
+        "type": "object",
+        "ref": "tradle.Identity"
+      },
+      "message": {
+        "type": "string"
+      }
+    },
+    "viewCols": [
+      "message",
+      "identity"
+    ],
+    "required": []
+  },
+  {
     "id": "tradle.Settings",
     "type": "tradle.Model",
     "title": "Settings",
