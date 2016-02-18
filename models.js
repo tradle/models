@@ -2707,8 +2707,8 @@ module.exports = [
     }
   },
   {
-    "id": "tradle.SelfIntrodiction",
-    "title": "Self introdiction",
+    "id": "tradle.SelfIntroduction",
+    "title": "Self introduction",
     "interfaces": [
       "tradle.Message"
     ],
