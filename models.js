@@ -290,6 +290,10 @@ module.exports = [
       "actualAddress": {
         "type": "string"
       },
+      "country": {
+        "type": "object",
+        "ref": "tradle.Country"
+      },
       "companyPhone": {
         "type": "string",
         "patterns": {
