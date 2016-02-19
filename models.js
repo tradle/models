@@ -78,6 +78,7 @@ module.exports = [
       },
       "emailAddress": {
         "type": "string",
+        "pattern": "(.)+@(.)+/",
         "keyboard": "email-address"
       },
       "photos": {
@@ -291,6 +292,10 @@ module.exports = [
       },
       "companyPhone": {
         "type": "string",
+        "pattern-us": "^\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$",
+        "pattern-uk": "^(((\\+44\\s?\\d{4}|\\(?0\\d{4}\\)?)\\s?\\d{3}\\s?\\d{3})|((\\+44\\s?\\d{3}|\\(?0\\d{3}\\)?)\\s?\\d{3}\\s?\\d{4})|((\\+44\\s?\\d{2}|\\(?0\\d{2}\\)?)\\s?\\d{4}\\s?\\d{4}))(\\s?\\#(\\d{4}|\\d{3}))?$",
+        "pattern-dutch": "^\\+[0-9]{2}|^\\+[0-9]{2}\\(0\\)|^\\(\\+[0-9]{2}\\)\\(0\\)|^00[0-9]{2}|^0)([0-9]{9}$|[0-9\\-\\s]{10}$",
+        "pattern": "^\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$",
         "keyboard": "phone-pad"
       },
       "companyFax": {
@@ -299,6 +304,7 @@ module.exports = [
       },
       "companyEmail": {
         "type": "string",
+        "pattern": "(.)+@(.)+",
         "keyboard": "email-address"
       },
       "numberOfEmployees": {
@@ -753,6 +759,66 @@ module.exports = [
         "readOnly": true
       }
     }
+  },
+  {
+    "id": "tradle.FormError",
+    "title": "Form Error",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "form": {
+        "type": "object",
+        "ref": "tradle.Form",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "message": {
+        "type": "string"
+      },
+      "time": {
+        "type": "date",
+        "readOnly": true
+      },
+      "errors": {
+        "type": "array",
+        "readOnly": true,
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "error": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "viewCols": [
+      "message",
+      "form",
+      "errors"
+    ],
+    "required": [
+      "form",
+      "errors"
+    ]
   },
   {
     "id": "tradle.H1",
