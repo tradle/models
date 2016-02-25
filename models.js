@@ -593,9 +593,9 @@ module.exports = [
         "type": "object",
         "ref": "tradle.Identity"
       },
-      "isYouCompanyListed": {
+      "isYourCompanyListed": {
         "type": "object",
-        "ref": "tradle.Organizations"
+        "ref": "tradle.Organization"
       },
       "stockExchange": {
         "type": "object",
@@ -1486,8 +1486,7 @@ module.exports = [
     },
     "required": [
       "to",
-      "from",
-      "message"
+      "from"
     ],
     "viewCols": [
       "message"
@@ -1777,7 +1776,7 @@ module.exports = [
         "type": "array",
         "items": {
           "type": "object",
-          "ref": "tradle.Identity",
+          "ref": "tradle.Profile",
           "backlink": "organization"
         }
       },
@@ -3212,7 +3211,7 @@ module.exports = [
         "title": "Verifying document"
       },
       "message": {
-        "type": "object",
+        "type": "string",
         "title": "Description",
         "displayName": true
       },
