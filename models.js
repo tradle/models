@@ -949,7 +949,6 @@ module.exports = [
     "interfaces": [
       "tradle.Message"
     ],
-    "subClassOf": "tradle.Form",
     "type": "tradle.Model",
     "properties": {
       "_t": {
