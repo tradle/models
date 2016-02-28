@@ -1059,6 +1059,25 @@ module.exports = [
     }
   },
   {
+    "id": "tradle.Language",
+    "subClassOf": "tradle.Enum",
+    "title": "Language",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "language": {
+        "displayName": true,
+        "type": "string"
+      }
+    },
+    "required": [
+      "language"
+    ]
+  },
+  {
     "id": "tradle.LicenseVerification",
     "type": "tradle.Model",
     "title": "License Verification",
@@ -2035,6 +2054,10 @@ module.exports = [
         ],
         "readOnly": true,
         "displayName": true
+      },
+      "language": {
+        "type": "object",
+        "ref": "tradle.Language"
       },
       "middleName": {
         "type": "string"
