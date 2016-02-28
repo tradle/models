@@ -20,22 +20,32 @@ if (!argv.models)
 var models = JSON.parse(argv.models)
 
 var propNames
+var modelNames
+var phrases
 let lang = argv.language || 'en'
 let fn = './dictionary_' + lang + '.json'
 // Check if the dictionary exists
 try {
-  propNames = require(fn)
+  let d = require(fn)
+  propNames = d.properties
+  modelNames = d.models
+  phrases = d.phrases
 } catch (err) {
   debugger
 }
 
 if (!propNames)
   propNames = {}
+if (!modelNames)
+  modelNames = {}
+if (!phrases)
+  phrases = {'Official Accounts': 'Official Accounts', 'Back': 'Back', 'Profile': 'Profile'}
 
 writeDictionary()
 
 function writeDictionary() {
   models.forEach(function(m) {
+    modelNames[m.id] = m.title
     for (let p in m.properties) {
       if (p.charAt(0) === '_')
         continue
@@ -50,7 +60,13 @@ function writeDictionary() {
       }
     }
   })
-  writeFileAtomic(fn, JSON.stringify(propNames, 0, 2), (err) => {console.log(err)})
+  let dictionary = {
+    properties: propNames,
+    models: modelNames,
+    phrases: phrases
+  }
+
+  writeFileAtomic(fn, JSON.stringify(dictionary, 0, 2), (err) => {console.log(err)})
   // console.log(JSON.stringify(propNames, 0, 2))
   // for (let p in propNames) {
   //   console.log(p + ':  ' + JSON.stringify(propNames[p], 0, 2))
