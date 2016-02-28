@@ -1,2 +1,6 @@
 exports = models.exports = require('./models')
-export.dictionaries = require('./dictionaries')
+export.dictionaries = (lang) => {
+  try {
+    return require('dictionary_' + lang)
+  } catch ((err) => null)
+}
