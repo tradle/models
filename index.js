@@ -1,2 +1,2 @@
 exports = models.exports = require('./models')
-export.dict = require('./dictionaries')
+export.dictionaries = require('./dictionaries')
