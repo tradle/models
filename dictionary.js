@@ -39,7 +39,12 @@ if (!propNames)
 if (!modelNames)
   modelNames = {}
 if (!phrases)
-  phrases = {'Official Accounts': 'Official Accounts', 'Back': 'Back', 'Profile': 'Profile'}
+  phrases = {
+    'Official Accounts': 'Official Accounts',
+    'Back': 'Back',
+    'Edit': 'Edit',
+    'Profile': 'Profile'
+  }
 
 writeDictionary()
 
