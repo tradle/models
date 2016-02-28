@@ -1,5 +1,5 @@
 exports = models.exports = require('./models')
-export.dictionaries = (lang) => {
+exports.dictionaries = (lang) => {
   try {
     return require('dictionary_' + lang)
   } catch ((err) => null)
