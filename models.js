@@ -2197,7 +2197,8 @@ module.exports = [
       "postalCode",
       "country",
       "organization",
-      "securityCode"
+      "securityCode",
+      "language"
     ]
   },
   {
