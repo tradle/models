@@ -6,3 +6,8 @@ exports.dictionaries = (lang) => {
     return require('./dictionary_en.json')
   }
 }
+
+exports.dict = {
+  en: require('./dictionary_en.json'),
+  ru: require('./dictionary_nl.json')
+}
