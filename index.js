@@ -9,5 +9,5 @@ exports.dictionaries = (lang) => {
 
 exports.dict = {
   en: require('./dictionary_en.json'),
-  ru: require('./dictionary_nl.json')
+  nl: require('./dictionary_nl.json')
 }
