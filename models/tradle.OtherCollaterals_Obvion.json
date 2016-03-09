@@ -1,0 +1,55 @@
+{
+  "id": "tradle.OtherCollaterals",
+  "title": "Other Collaterals",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "otherCollaterals": {
+      "type": "object",
+      "ref": "tradle.OtherCollateralTypes"
+    },
+    "coverage": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "company": {
+      "type": "string"
+    },
+    "insuranceNumber": {
+      "type": "string"
+    },
+    "whoIsCovered": {
+      "type": "string"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    },
+    "monthlyCost": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "typeOfCoverage": {
+      "type": "string"
+    }
+  }
+}

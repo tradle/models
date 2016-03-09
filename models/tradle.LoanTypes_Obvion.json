@@ -1,0 +1,20 @@
+{
+  "id": "tradle.LoanTypes",
+  "title": "Loan Types",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Enum",
+  "sort": "name",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "loanType": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "required": [
+    "status"
+  ]
+}

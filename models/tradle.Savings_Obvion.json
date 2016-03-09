@@ -1,0 +1,71 @@
+{
+  "id": "tradle.Savings",
+  "title": "Savings",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "proofOfSavings": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "dateOfTheProof": {
+      "type": "date"
+    },
+    "photos": {
+      "type": "array",
+      "title": "Snapshot of the document",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "skipLabel": true
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          },
+          "width": {
+            "type": "number",
+            "readOnly": true
+          },
+          "height": {
+            "type": "number",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "title",
+        "url"
+      ]
+    }
+  },
+  "required": [
+    "proofOfSavings",
+    "dateOfTheProof",
+    "photos"
+  ],
+  "viewCols": [
+    "proofOfSavings",
+    "dateOfTheProof",
+    "photos"
+  ]
+}

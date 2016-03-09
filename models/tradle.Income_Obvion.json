@@ -1,0 +1,54 @@
+{
+  "id": "tradle.Income",
+  "title": "Income",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "jobDescription": {
+      "type": "string"
+    },
+    "grossMonthlyIncome": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "holidayMoney": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "bonusOrProvisionalIncome": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "additionalMonthOfPayment": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "employer": {
+      "type": "string"
+    },
+    "contractType": {
+      "type": "object",
+      "ref": "tradle.ContractType"
+    },
+    "amountOfHours": {
+      "type": "number"
+    }
+  }
+}

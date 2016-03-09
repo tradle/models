@@ -1,0 +1,35 @@
+{
+  "id": "tradle.MortgageProduct",
+  "title": "Mortgage",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "type": "tradle.Model",
+  "forms": [
+    "tradle.MortgageDetail",
+    "tradle.LoanPart",
+    "tradle.PersonalInfo",
+    "tradle.Savings",
+    "tradle.Income",
+    "tradle.ObligationsDebts",
+    "tradle.Collateral",
+    "tradle.OtherCollaterals"
+  ],
+  "subClassOf": "tradle.FinancialProduct",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "tradle.ObligationsDebts",
+  "title": "Obligations / Debts",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "debtAmount": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "debtKind": {
+      "type": "object",
+      "ref": "tradle.DebtKind"
+    },
+    "monthlyPayment": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "defaultCode": {
+      "type": "string"
+    },
+    "companyOrBeneficiary": {
+      "type": "string"
+    }
+  }
+}

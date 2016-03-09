@@ -1,0 +1,85 @@
+{
+  "id": "tradle.LoanPart",
+  "title": "Loan Part",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "amount": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "repaymentType": {
+      "type": "object",
+      "ref": "tradle.TypeOfCoverage"
+    },
+    "interestType": {
+      "type": "object",
+      "ref": "tradle.InterestType"
+    },
+    "interestPercentage": {
+      "type": "number",
+      "units": "%",
+      "min": "0",
+      "max": "100"
+    },
+    "monthlyCosts": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "monthlyRepaymentAmount": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "monthlyInterestAmount": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "monthlyOtherPayments": {
+      "type": "object",
+      "ref": "tradle.Money",
+      "title": "Monthly other payments"
+    },
+    "infoOnRepayment": {
+      "type": "string",
+      "title": "Info on repayment"
+    }
+  },
+  "required": [
+    "amount",
+    "repaymentType",
+    "interestType",
+    "interestPercentage",
+    "monthlyCosts",
+    "monthlyRepaymentAmount",
+    "monthlyInterestAmount",
+    "monthlyOtherPayments"
+  ],
+  "viewCols": [
+    "amount",
+    "repaymentType",
+    "interestType",
+    "interestPercentage",
+    "monthlyCosts",
+    "monthlyRepaymentAmount",
+    "monthlyInterestAmount",
+    "monthlyOtherPayments",
+    "infoOnRepayment"
+  ]
+}

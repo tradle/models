@@ -1,0 +1,82 @@
+{
+  "id": "tradle.Collateral",
+  "title": "Collateral/House",
+
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "formattedAddress": {
+      "transient": true,
+      "type": "string",
+      "displayAs": [
+        "street",
+        ",",
+        "city",
+        ",",
+        "region",
+        "postalCode"
+      ],
+      "title": "Address",
+      "readOnly": true
+    },
+    "houseValue": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "kindOfHouse": {
+      "type": "object",
+      "ref": "tradle.KindOfHouse"
+    },
+    "constructionYear": {
+      "type": "integer",
+      "minimum": "1800"
+    },
+    "stateOfHouse": {
+      "type": "object",
+      "ref": "tradle.StateOfHouse"
+    },
+    "renovationAmonunt": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "energyLabel": {
+      "type": "string"
+    },
+    "additionalInfo": {
+      "type": "string"
+    }
+  }
+}

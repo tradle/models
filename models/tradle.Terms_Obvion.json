@@ -1,0 +1,20 @@
+{
+  "id": "tradle.Terms",
+  "title": "Terms",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Enum",
+  "sort": "name",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "term": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "required": [
+    "status"
+  ]
+}
