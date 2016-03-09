@@ -443,8 +443,8 @@ module.exports = [
     }
   },
   {
-    "id": "tradle.RoleInContract",
-    "title": "Role In Contract",
+    "id": "tradle.ContractType",
+    "title": "Contract Type",
     "subClassOf": "tradle.Enum",
     "type": "tradle.Model",
     "properties": {
@@ -1567,7 +1567,6 @@ module.exports = [
       },
       "interestPercentage": {
         "type": "number",
-        "keyboard": "numbers-and-punctuation",
         "units": "%",
         "min": "0",
         "max": "100"
