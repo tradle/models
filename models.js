@@ -1172,7 +1172,27 @@ module.exports = [
       "amountOfHours": {
         "type": "number"
       }
-    }
+    },
+    "required": [
+      "jobDescription",
+      "grossMonthlyIncome",
+      "holidayMoney",
+      "bonusOrProvisionalIncome",
+      "additionalMonthOfPayment",
+      "employer",
+      "contractType",
+      "amountOfHours"
+    ],
+    "viewCols": [
+      "jobDescription",
+      "grossMonthlyIncome",
+      "holidayMoney",
+      "bonusOrProvisionalIncome",
+      "additionalMonthOfPayment",
+      "employer",
+      "contractType",
+      "amountOfHours"
+    ]
   },
   {
     "id": "tradle.InsuranceInfo",
