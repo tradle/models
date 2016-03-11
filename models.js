@@ -1356,6 +1356,7 @@ module.exports = [
     "id": "tradle.LicenseVerification",
     "type": "tradle.Model",
     "title": "License Verification",
+    "subClassOf": "tradle.Form",
     "interfaces": [
       "tradle.Message"
     ],
