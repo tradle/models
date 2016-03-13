@@ -11,3 +11,5 @@ exports.dict = {
   en: require('./dictionary_en.json'),
   nl: require('./dictionary_nl.json')
 }
+
+exports.Validator = require('./validator')

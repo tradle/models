@@ -1,37 +1,25 @@
 'use strict'
 
-var fs = require('fs')
-var argv = require('minimist')(process.argv.slice(2), {
-  alias: {
-    m: 'model',
-    h: 'help',
-    f: 'file',
-    r: 'references'
-  }
-})
-
-if (argv.help) {
-  printUsage()
-  process.exit(0)
-}
-var models
-var modelsO = {}
-if (argv.file) {
-  fs.readFile(argv.model, function(error, data) {
-    checkModel(JSON.parse(data))
-  })
-}
-else if (argv.model)
-  checkModel(JSON.parse(argv.model))
-else if (argv.references) {
-  models = JSON.parse(argv.references)
-  models.forEach(function(m) {
-    modelsO[m.id] = m
-  })
-  checkReferences(models)
+function Validator (models) {
+  this._models = [].concat(models) // normalize to array
+  this._byId = {}
+  this._models.forEach(function(m) {
+    this._byId[m.id] = m
+  }, this)
 }
 
-function checkModel(json) {
+module.exports = Validator
+const proto = Validator.prototype
+
+Validator.validate = function (model) {
+  new Validator(model).validate(model)
+}
+
+Validator.validateReferences = function (models) {
+  new Validator(models).validateReferences()
+}
+
+proto.validate = function (json) {
   let err = ''
   // _t
   if (!json.type) {
@@ -78,13 +66,15 @@ function checkModel(json) {
   else if (typeof json.properties !== 'object')
     err += '\n the required property "properties" should be a valid json object'
   else
-    err += checkProperties(json.properties, json)
+    err += this.validateProperties(json)
   console.log(err  ||  'Validation was successful')
 }
 
+proto.validateReferences = function (models) {
+  models = models || this._models
 
-function checkReferences(models) {
   let err = ''
+  const modelsO = this._byId
   models.forEach(function(m) {
     if (m.subClassOf) {
       if (!modelsO[m.subClassOf])
@@ -136,21 +126,24 @@ function checkReferences(models) {
         }
       })
     }
-    err += checkProperties(m.properties, m)
-  })
+
+    err += this.validateProperties(m, true)
+  }, this)
 
   if (err.length)
     console.log(err)
   else
     console.log('All the references are valid.')
 }
-function checkProperties(properties, m) {
+
+proto.validateProperties = function (m, checkRefs) {
 // backlink
 // ref
 // array
 // items or ref
+  const properties = m.properties
+  const modelsO = this._byId
   let err = ''
-  let checkingRefs = argv.references
   for (let p in properties) {
     let prop = properties[p]
     if (prop.readOnly) {
@@ -161,7 +154,7 @@ function checkProperties(properties, m) {
       if (!prop.ref)
           err += '\n "' + m.id + '" property "' + p + '" has a type "object". It has to have "ref" property that defines a type of this property'
       if (prop.ref) {
-        if (checkingRefs  &&  !modelsO[prop.ref])
+        if (checkRefs  &&  !modelsO[prop.ref])
           err += '\n "' + m.id + '" property "' + p + '" has invalid "ref" value'
       }
     }
@@ -171,7 +164,7 @@ function checkProperties(properties, m) {
       else if (prop.items.backlink) {
         if (!prop.items.ref)
           err += '\n "' + m.id + '" property "' + p + '" has a backlink "' + prop.items.backlink + '", it can be valid only if the "ref" property is defined and has the same value as the property in "backlink"'
-        else if (checkingRefs) {
+        else if (checkRefs) {
           if  (!modelsO[prop.items.ref])
             err += '\n "' + m.id + '" property "' + p + '.items" has invalid "ref"'
           else if (!modelsO[prop.items.ref].properties[prop.items.backlink])
@@ -179,8 +172,8 @@ function checkProperties(properties, m) {
         }
       }
       else if (!prop.items.backlink)
-        checkProperties(prop.items.properties, true)
-      else if (isCheckingRefs) {
+        this.validateProperties(prop.items, checkRefs)
+      else if (checkRefs) {
         if (!models[prop.items.ref])
           err += '\n "' + m.id + '" property "' + p + '" has a ref "' + prop.items.ref + '" that does not corresponds to any model'
         else if (!modelsO[prop.items.ref][backlink])
@@ -193,17 +186,4 @@ function checkProperties(properties, m) {
     }
   }
   return err
-}
-function printUsage () {
-  console.log(function () {
-  /*
-  Usage:
-  Options:
-      -h, --help              print usage
-      -f, --file              file path where the model resides
-      -m, --model             model json object. Verifies everyhing except references
-      -r, --references        the array of models for which to check the references
-  */
-  }.toString().split(/\n/).slice(2, -2).join('\n'))
-  process.exit(0)
 }
