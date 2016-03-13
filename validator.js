@@ -67,7 +67,8 @@ proto.validate = function (json) {
     err += '\n the required property "properties" should be a valid json object'
   else
     err += this.validateProperties(json)
-  console.log(err  ||  'Validation was successful')
+
+  if (err) throw new Error(err)
 }
 
 proto.validateReferences = function (models) {
@@ -130,10 +131,7 @@ proto.validateReferences = function (models) {
     err += this.validateProperties(m, true)
   }, this)
 
-  if (err.length)
-    console.log(err)
-  else
-    console.log('All the references are valid.')
+  if (err) throw new Error(err)
 }
 
 proto.validateProperties = function (m, checkRefs) {
@@ -185,5 +183,6 @@ proto.validateProperties = function (m, checkRefs) {
         err += '\n "' + m.id + '" property "' + p + '" has a units. It is allowed only for properties of type "number" or if the type of the property is "object" then it should have "ref" to "tradle.Money"'
     }
   }
-  return err
+
+  if (err) throw new Error(err)
 }
