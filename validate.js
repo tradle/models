@@ -20,22 +20,33 @@ if (argv.help) {
 var Validator = require('./validator')
 var models
 var modelsO = {}
+var errs
 if (argv.file) {
   var model = require(path.resolve(argv.file))
   var validator = new Validator(model)
   if (Array.isArray(model)) {
-    validator.validateReferences()
+    errs = validator.validateReferences()
+  } else {
+    errs = validator.validate(model)
   }
 }
 else if (argv.model) {
-  Validator.validate(JSON.parse(argv.model))
+  errs = Validator.validate(JSON.parse(argv.model))
 }
 else if (argv.references) {
   models = JSON.parse(argv.references)
   models.forEach(function(m) {
     modelsO[m.id] = m
   })
-  Validator.validateReferences(models)
+  errs = Validator.validateReferences(models)
+}
+else {
+  printUsage()
+  process.exit(1)
+}
+
+if (errs && errs.length) {
+  throw new Error(errs.join('\n'))
 }
 
 function printUsage () {
