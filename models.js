@@ -525,6 +525,21 @@ module.exports = [
     ]
   },
   {
+    "id": "tradle.CommercialProductType",
+    "title": "Commercial Product Type",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "productType": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
+  },
+  {
     "id": "tradle.ContractType",
     "title": "Contract Type",
     "subClassOf": "tradle.Enum",
@@ -1832,6 +1847,10 @@ module.exports = [
         "min": "0",
         "max": "100"
       },
+      "monthlyPayment": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
       "monthlyPremium": {
         "type": "object",
         "ref": "tradle.Money"
@@ -1858,6 +1877,7 @@ module.exports = [
       "interestType",
       "interestPercentage",
       "monthlyPremium",
+      "monthlyPayment",
       "monthlyInterest",
       "duration"
     ],
@@ -1866,6 +1886,7 @@ module.exports = [
       "repaymentType",
       "interestType",
       "interestPercentage",
+      "monthlyPayment",
       "monthlyPremium",
       "monthlyInterest",
       "duration",
@@ -2058,44 +2079,56 @@ module.exports = [
         "readOnly": true,
         "ref": "tradle.Identity"
       },
-      "totalMortgageAmount": {
-        "type": "object",
-        "ref": "tradle.Money"
-      },
-      "productType": {
-        "type": "object",
-        "title": "Product",
-        "ref": "tradle.MortgageProductType"
-      },
-      "mortgageNumber": {
-        "type": "string"
-      },
       "loanType": {
         "type": "object",
         "ref": "tradle.LoanTypes"
       },
-      "guarantee": {
+      "applicationDate": {
+        "type": "date"
+      },
+      "startMortgageDate": {
+        "type": "date"
+      },
+      "productType": {
+        "type": "object",
+        "title": "Product",
+        "ref": "tradle.CommercialProductType"
+      },
+      "mortgageGuarantee": {
         "type": "string"
       },
-      "termsApply": {
+      "mortgageAmount": {
         "type": "object",
-        "title": "Which terms apply?",
-        "ref": "tradle.Terms"
+        "ref": "tradle.Money"
+      },
+      "mortgageNumber": {
+        "type": "string"
+      },
+      "intermediary": {
+        "type": "string"
+      },
+      "notary": {
+        "type": "string"
+      },
+      "duration": {
+        "type": "number"
       }
     },
     "required": [
-      "totalMortgageAmount",
-      "productType",
-      "mortgageNumber",
-      "loanType"
+      "loanType",
+      "mortgageAmount",
+      "productType"
     ],
     "viewCols": [
-      "totalMortgageAmount",
+      "loanType",
+      "applicationDate",
+      "mortgageAmount",
       "productType",
       "mortgageNumber",
-      "loanType",
-      "guarantee",
-      "termsApply"
+      "mortgageGuarantee",
+      "notary",
+      "intermediary",
+      "duration"
     ]
   },
   {
@@ -2216,24 +2249,6 @@ module.exports = [
         "ref": "tradle.Identity"
       }
     }
-  },
-  {
-    "id": "tradle.MortgageProductType",
-    "title": "Mortgage Product Type",
-    "type": "tradle.Model",
-    "properties": {
-      "_t": {
-        "type": "string",
-        "readOnly": true
-      },
-      "mortgageProductType": {
-        "displayName": true,
-        "type": "string"
-      }
-    },
-    "required": [
-      "propertyType"
-    ]
   },
   {
     "id": "tradle.MotorInsurance",

@@ -35,11 +35,11 @@
       "min": "0",
       "max": "100"
     },
-    "monthlyPremium": {
+    "monthlyPayment": {
       "type": "object",
       "ref": "tradle.Money"
     },
-    "monthlyInterest": {
+    "monthlyPremium": {
       "type": "object",
       "ref": "tradle.Money"
     },
@@ -61,6 +61,7 @@
     "interestType",
     "interestPercentage",
     "monthlyPremium",
+    "monthlyPayment",
     "monthlyInterest",
     "duration"
   ],
@@ -69,6 +70,7 @@
     "repaymentType",
     "interestType",
     "interestPercentage",
+    "monthlyPayment",
     "monthlyPremium",
     "monthlyInterest",
     "duration",

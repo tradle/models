@@ -21,43 +21,55 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
-    "totalMortgageAmount": {
-      "type": "object",
-      "ref": "tradle.Money"
-    },
-    "productType": {
-      "type": "object",
-      "title": "Product",
-      "ref": "tradle.MortgageProductType"
-    },
-    "mortgageNumber": {
-      "type": "string"
-    },
     "loanType": {
       "type": "object",
       "ref": "tradle.LoanTypes"
     },
-    "guarantee": {
+    "applicationDate": {
+      "type": "date"
+    },
+    "startMortgageDate": {
+      "type": "date"
+    },
+    "productType": {
+      "type": "object",
+      "title": "Product",
+      "ref": "tradle.CommercialProductType"
+    },
+    "mortgageGuarantee": {
       "type": "string"
     },
-    "termsApply": {
+    "totalAmount": {
       "type": "object",
-      "title": "Which terms apply?",
-      "ref": "tradle.Terms"
+      "ref": "tradle.Money"
+    },
+    "mortgageNumber": {
+      "type": "string"
+    },
+    "intermediary": {
+      "type": "string"
+    },
+    "notary": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "number"
     }
   },
   "required": [
-    "totalMortgageAmount",
-    "productType",
-    "mortgageNumber",
-    "loanType"
+    "loanType",
+    "mortgageAmount",
+    "productType"
   ],
   "viewCols": [
-    "totalMortgageAmount",
+    "loanType",
+    "applicationDate",
+    "mortgageAmount",
     "productType",
     "mortgageNumber",
-    "loanType",
-    "guarantee",
-    "termsApply"
+    "mortgageGuarantee",
+    "notary",
+    "intermediary",
+    "duration"
   ]
 }
