@@ -31,8 +31,8 @@
       "transient": true,
       "type": "string",
       "displayAs": [
-        "firstName",
-        "lastName"
+        "lastName",
+        "firstName"
       ],
       "readOnly": true,
       "displayName": true
@@ -43,27 +43,31 @@
     "placeOfBirth": {
        "type": "string"
     },
+    "street": {
+      "type": "string"
+    },
+    "houseNumber": {
+      "type": "number"
+    },
     "city": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "postalCode": {
       "type": "string"
     },
     "country": {
       "type": "object",
       "ref": "tradle.Country"
     },
-    "postalCode": {
-      "type": "string"
-    },
-    "region": {
-      "type": "string"
-    },
-    "street": {
-      "type": "string"
-    },
     "address": {
       "transient": true,
       "type": "string",
       "displayAs": [
         "street",
+        "houseNumber",
         ",",
         "city",
         ",",
@@ -73,9 +77,12 @@
       "title": "Address",
       "readOnly": true
     },
-    "roleInContract": {
+    "socialSecurityNumber": {
+      "type": "string"
+    },
+    "nationality": {
       "type": "object",
-      "ref": "tradle.RoleInContract"
+      "ref": "tradle.Nationality"
     },
     "phones": {
       "type": "array",
@@ -101,6 +108,22 @@
       "type": "string",
       "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
       "keyboard": "email-address"
+    },
+    "idCardType": {
+      "type": "object",
+      "title": "ID Card",
+      "ref": "tradle.IDCardType"
+    },
+    "idCardNumber": {
+      "type": "string"
+    },
+    "maritalStatus": {
+      "type": "object",
+      "ref": "tradle.MaritalStatus"
+    },
+    "education": {
+      "type": "object",
+      "ref": "tradle.EducationNL"
     },
     "photos": {
       "type": "array",
@@ -138,15 +161,33 @@
     "dateOfBirth",
     "placeOfBirth",
     "street",
+    "houseNumber",
     "city",
     "country",
     "postalCode",
-    "region"
+    "region",
+    "socialSecurityNumber",
+    "idCardType",
+    "idCardNumber",
+    "nationality",
+    "maritalStatus",
+    "education",
+    "nationality",
+    "phones",
+    "photos"
   ],
   "viewCols": [
     "name",
     "address",
     "dateOfBirth",
+    "placeOfBirth",
+    "socialSecurityNumber",
+    "idCardType",
+    "idCardNumber",
+    "nationality",
+    "maritalStatus",
+    "education",
+    "phones",
     "photos"
   ]
 }

@@ -21,22 +21,17 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
-    "otherCollaterals": {
+    "insuranceCompany": {
       "type": "object",
-      "ref": "tradle.OtherCollateralTypes"
+      "ref": "tradle.Organization"
     },
-    "coverage": {
+    "statusOfInsurance": {
       "type": "object",
-      "ref": "tradle.Money"
+      "ref": "tradle.StatusOfInsurance"
     },
-    "company": {
-      "type": "string"
-    },
-    "insuranceNumber": {
-      "type": "string"
-    },
-    "whoIsCovered": {
-      "type": "string"
+    "kindOfInsurance": {
+      "type": "object",
+      "ref": "tradle.KindOfInsurance"
     },
     "startDate": {
       "type": "date"
@@ -44,12 +39,72 @@
     "endDate": {
       "type": "date"
     },
-    "monthlyCost": {
+    "yearsOfInsurance": {
+      "type": "number"
+    },
+    "amountToTransfer": {
+      "type": "object",
+      "ref": "tradle.Money",
+      "description": "Amount to be transferred by the insurance company when insurance stops earlier"
+    },
+    "insuredPersons": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "person": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "person"
+      ]
+    },
+    "policyHolder": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "person": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "policyNumber": {
+      "type": "string"
+    },
+    "coverage": {
       "type": "object",
       "ref": "tradle.Money"
-    },
-    "typeOfCoverage": {
-      "type": "string"
     }
-  }
+  },
+  "required": [
+    "insuranceCompany",
+    "statusOfInsurance",
+    "kindOfInsurance",
+    "startDate",
+    "endDate",
+    "yearsOfInsurance",
+    "amountToTransfer",
+    "insuredPersons",
+    "policyHolder",
+    "policyNumber",
+    "coverage"
+  ],
+  "viewCols": [
+    "insuranceCompany",
+    "statusOfInsurance",
+    "kindOfInsurance",
+    "startDate",
+    "endDate",
+    "yearsOfInsurance",
+    "amountToTransfer",
+    "insuredPersons",
+    "policyHolder",
+    "policyNumber",
+    "coverage"
+  ]
 }
+

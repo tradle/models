@@ -213,6 +213,22 @@ module.exports = [
     }
   },
   {
+    "id": "tradle.Boolean",
+    "title": "Energy Label",
+    "subClassOf": "tradle.Enum",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "boolean": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
+  },
+  {
     "id": "tradle.BusinessAccount",
     "title": "Business Account",
     "interfaces": [
@@ -384,27 +400,31 @@ module.exports = [
         "readOnly": true,
         "ref": "tradle.Identity"
       },
+      "street": {
+        "type": "string"
+      },
+      "houseNumber": {
+        "type": "number"
+      },
       "city": {
+        "type": "string"
+      },
+      "region": {
+        "type": "string"
+      },
+      "postalCode": {
         "type": "string"
       },
       "country": {
         "type": "object",
         "ref": "tradle.Country"
       },
-      "postalCode": {
-        "type": "string"
-      },
-      "region": {
-        "type": "string"
-      },
-      "street": {
-        "type": "string"
-      },
       "formattedAddress": {
         "transient": true,
         "type": "string",
         "displayAs": [
           "street",
+          "houseNumber",
           ",",
           "city",
           ",",
@@ -418,29 +438,91 @@ module.exports = [
         "type": "object",
         "ref": "tradle.Money"
       },
+      "kindOfConstruction": {
+        "type": "object",
+        "ref": "tradle.KindOfConstruction"
+      },
       "kindOfHouse": {
         "type": "object",
         "ref": "tradle.KindOfHouse"
       },
-      "constructionYear": {
-        "type": "integer",
+      "additionalCosts": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "restructuringCosts": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "leaseholdKind": {
+        "type": "object",
+        "ref": "tradle.PaymentPeriod"
+      },
+      "leaseholdAmount": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "yearTheHouseWasBuild": {
+        "type": "number",
         "minimum": "1800"
       },
-      "stateOfHouse": {
-        "type": "object",
-        "ref": "tradle.StateOfHouse"
+      "rented": {
+        "type": "boolean",
+        "title": "Rented?"
       },
-      "renovationAmonunt": {
+      "purchasePrice": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "valuedPrice": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "foreclosureValue": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "badMaintenanceAmount": {
         "type": "object",
         "ref": "tradle.Money"
       },
       "energyLabel": {
-        "type": "string"
-      },
-      "additionalInfo": {
-        "type": "string"
+        "type": "object",
+        "ref": "tradle.EnergyLabel"
       }
-    }
+    },
+    "required": [
+      "street",
+      "houseNumber",
+      "city",
+      "region",
+      "country",
+      "postalCode",
+      "houseValue",
+      "kindOfConstruction",
+      "kindOfHouse",
+      "restructuringCosts",
+      "yearTheHouseWasBuild",
+      "purchasePrice",
+      "valuedPrice",
+      "energyLabel"
+    ],
+    "viewCols": [
+      "formattedAddress",
+      "houseValue",
+      "kindOfConstruction",
+      "kindOfHouse",
+      "restructuringCosts",
+      "leaseholdKind",
+      "leaseholdAmount",
+      "yearTheHouseWasBuild",
+      "rented",
+      "purchasePrice",
+      "valuedPrice",
+      "foreclosureValue",
+      "badMaintenanceAmount",
+      "energyLabel"
+    ]
   },
   {
     "id": "tradle.ContractType",
@@ -758,6 +840,41 @@ module.exports = [
     ]
   },
   {
+    "id": "tradle.EducationNL",
+    "title": "Education",
+    "subClassOf": "tradle.Enum",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "education": {
+        "displayName": true,
+        "type": "string"
+      }
+    },
+    "required": [
+      "education"
+    ]
+  },
+  {
+    "id": "tradle.EnergyLabel",
+    "title": "Energy Label",
+    "subClassOf": "tradle.Enum",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "energyLabel": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
+  },
+  {
     "id": "tradle.Enum",
     "title": "Enum",
     "type": "tradle.Model",
@@ -1000,6 +1117,25 @@ module.exports = [
     ]
   },
   {
+    "id": "tradle.IDCardType",
+    "title": "ID Card",
+    "subClassOf": "tradle.Enum",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "idCardType": {
+        "displayName": true,
+        "type": "string"
+      }
+    },
+    "required": [
+      "phoneType"
+    ]
+  },
+  {
     "id": "tradle.ISAs",
     "title": "ISAs",
     "type": "tradle.Model",
@@ -1143,10 +1279,30 @@ module.exports = [
         "readOnly": true,
         "ref": "tradle.Identity"
       },
-      "jobDescription": {
+      "sourceOfIncome": {
+        "type": "object",
+        "ref": "tradle.SourceOfIncome"
+      },
+      "nameOfEmployer": {
         "type": "string"
       },
-      "grossMonthlyIncome": {
+      "residenceOfEmployer": {
+        "type": "string"
+      },
+      "occupation": {
+        "type": "string"
+      },
+      "kindOfEngagement": {
+        "type": "object",
+        "ref": "tradle.KindOfEngagement"
+      },
+      "startDate": {
+        "type": "date"
+      },
+      "yearsOfSelfEmployment": {
+        "type": "number"
+      },
+      "grossYearlyIncome": {
         "type": "object",
         "ref": "tradle.Money"
       },
@@ -1154,7 +1310,7 @@ module.exports = [
         "type": "object",
         "ref": "tradle.Money"
       },
-      "bonusOrProvisionalIncome": {
+      "provisionalIncome": {
         "type": "object",
         "ref": "tradle.Money"
       },
@@ -1162,36 +1318,44 @@ module.exports = [
         "type": "object",
         "ref": "tradle.Money"
       },
-      "employer": {
-        "type": "string"
-      },
-      "contractType": {
+      "irregularityCompensation": {
         "type": "object",
-        "ref": "tradle.ContractType"
+        "ref": "tradle.Money"
       },
-      "amountOfHours": {
-        "type": "number"
+      "overtimeCompensation": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "bonus": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "totalIncome": {
+        "type": "object",
+        "ref": "tradle.Money"
       }
     },
     "required": [
-      "jobDescription",
-      "grossMonthlyIncome",
-      "holidayMoney",
-      "bonusOrProvisionalIncome",
-      "additionalMonthOfPayment",
-      "employer",
-      "contractType",
-      "amountOfHours"
+      "sourceOfIncome",
+      "nameOfEmployer",
+      "residenceOfEmployer",
+      "startDate",
+      "kindOfEngagement",
+      "grossYearlyIncome"
     ],
     "viewCols": [
-      "jobDescription",
-      "grossMonthlyIncome",
+      "sourceOfIncome",
+      "nameOfEmployer",
+      "residenceOfEmployer",
+      "startDate",
+      "kindOfEngagement",
+      "grossYearlyIncome",
       "holidayMoney",
-      "bonusOrProvisionalIncome",
+      "provisionalIncome",
       "additionalMonthOfPayment",
-      "employer",
-      "contractType",
-      "amountOfHours"
+      "overtimeCompensation",
+      "bonus",
+      "totalIncome"
     ]
   },
   {
@@ -1330,6 +1494,86 @@ module.exports = [
         "type": "object",
         "readOnly": true,
         "ref": "tradle.Identity"
+      }
+    }
+  },
+  {
+    "id": "tradle.KindOfConstruction",
+    "title": "Kind Of Construction",
+    "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "kindOfConstruction": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
+  },
+  {
+    "id": "tradle.KindOfEngagement",
+    "title": "Kind Of Engagement",
+    "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "kindOfEngagement": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
+  },
+  {
+    "id": "tradle.KindOfHouse",
+    "title": "Kind Of House",
+    "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "kindOfHouse": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
+  },
+  {
+    "id": "tradle.KindOfInsurance",
+    "title": "Kind Of Insurance",
+    "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "kindOfInsurance": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
+  },
+  {
+    "id": "tradle.KindOfObligation",
+    "title": "Kind of Obligation",
+    "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "kindOfObligation": {
+        "displayName": true,
+        "type": "string"
       }
     }
   },
@@ -1578,10 +1822,6 @@ module.exports = [
         "type": "object",
         "ref": "tradle.Money"
       },
-      "repaymentType": {
-        "type": "object",
-        "ref": "tradle.TypeOfCoverage"
-      },
       "interestType": {
         "type": "object",
         "ref": "tradle.InterestType"
@@ -1592,26 +1832,24 @@ module.exports = [
         "min": "0",
         "max": "100"
       },
-      "monthlyCosts": {
+      "monthlyPremium": {
         "type": "object",
         "ref": "tradle.Money"
       },
-      "monthlyRepaymentAmount": {
+      "monthlyInterest": {
         "type": "object",
         "ref": "tradle.Money"
       },
-      "monthlyInterestAmount": {
+      "repaymentType": {
         "type": "object",
-        "ref": "tradle.Money"
+        "ref": "tradle.TypeOfCoverage"
       },
-      "monthlyOtherPayments": {
-        "type": "object",
-        "ref": "tradle.Money",
-        "title": "Monthly other payments"
-      },
-      "infoOnRepayment": {
+      "loanPartID": {
         "type": "string",
-        "title": "Info on repayment"
+        "title": "Loan Part ID"
+      },
+      "duration": {
+        "type": "number"
       }
     },
     "required": [
@@ -1619,21 +1857,19 @@ module.exports = [
       "repaymentType",
       "interestType",
       "interestPercentage",
-      "monthlyCosts",
-      "monthlyRepaymentAmount",
-      "monthlyInterestAmount",
-      "monthlyOtherPayments"
+      "monthlyPremium",
+      "monthlyInterest",
+      "duration"
     ],
     "viewCols": [
       "amount",
       "repaymentType",
       "interestType",
       "interestPercentage",
-      "monthlyCosts",
-      "monthlyRepaymentAmount",
-      "monthlyInterestAmount",
-      "monthlyOtherPayments",
-      "infoOnRepayment"
+      "monthlyPremium",
+      "monthlyInterest",
+      "duration",
+      "loanPartID"
     ]
   },
   {
@@ -2107,25 +2343,37 @@ module.exports = [
         "readOnly": true,
         "ref": "tradle.Identity"
       },
-      "debtAmount": {
+      "kindOfObligation": {
+        "type": "object",
+        "ref": "tradle.KindOfObligation"
+      },
+      "creditLimit": {
         "type": "object",
         "ref": "tradle.Money"
       },
-      "debtKind": {
-        "type": "object",
-        "ref": "tradle.DebtKind"
-      },
-      "monthlyPayment": {
+      "payment": {
         "type": "object",
         "ref": "tradle.Money"
       },
-      "defaultCode": {
-        "type": "string"
+      "paymentPeriod": {
+        "type": "object",
+        "ref": "tradle.PaymentPeriod"
       },
-      "companyOrBeneficiary": {
-        "type": "string"
+      "endDate": {
+        "type": "date"
       }
-    }
+    },
+    "required": [
+      "kindOfObligation",
+      "creditLimit",
+      "paymentPeriod"
+    ],
+    "viewCols": [
+      "kindOfObligation",
+      "creditLimit",
+      "paymentPeriod",
+      "endDate"
+    ]
   },
   {
     "id": "tradle.Organization",
@@ -2311,22 +2559,17 @@ module.exports = [
         "readOnly": true,
         "ref": "tradle.Identity"
       },
-      "otherCollaterals": {
+      "insuranceCompany": {
         "type": "object",
-        "ref": "tradle.OtherCollateralTypes"
+        "ref": "tradle.Organization"
       },
-      "coverage": {
+      "statusOfInsurance": {
         "type": "object",
-        "ref": "tradle.Money"
+        "ref": "tradle.StatusOfInsurance"
       },
-      "company": {
-        "type": "string"
-      },
-      "insuranceNumber": {
-        "type": "string"
-      },
-      "whoIsCovered": {
-        "type": "string"
+      "kindOfInsurance": {
+        "type": "object",
+        "ref": "tradle.KindOfInsurance"
       },
       "startDate": {
         "type": "date"
@@ -2334,14 +2577,73 @@ module.exports = [
       "endDate": {
         "type": "date"
       },
-      "monthlyCost": {
+      "yearsOfInsurance": {
+        "type": "number"
+      },
+      "amountToTransfer": {
+        "type": "object",
+        "ref": "tradle.Money",
+        "description": "Amount to be transferred by the insurance company when insurance stops earlier"
+      },
+      "insuredPersons": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "person": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "person"
+        ]
+      },
+      "policyHolder": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "person": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "policyNumber": {
+        "type": "string"
+      },
+      "coverage": {
         "type": "object",
         "ref": "tradle.Money"
-      },
-      "typeOfCoverage": {
-        "type": "string"
       }
-    }
+    },
+    "required": [
+      "insuranceCompany",
+      "statusOfInsurance",
+      "kindOfInsurance",
+      "startDate",
+      "endDate",
+      "yearsOfInsurance",
+      "amountToTransfer",
+      "insuredPersons",
+      "policyHolder",
+      "policyNumber",
+      "coverage"
+    ],
+    "viewCols": [
+      "insuranceCompany",
+      "statusOfInsurance",
+      "kindOfInsurance",
+      "startDate",
+      "endDate",
+      "yearsOfInsurance",
+      "amountToTransfer",
+      "insuredPersons",
+      "policyHolder",
+      "policyNumber",
+      "coverage"
+    ]
   },
   {
     "id": "tradle.PassportVerification",
@@ -2504,6 +2806,22 @@ module.exports = [
     ]
   },
   {
+    "id": "tradle.PaymentPeriod",
+    "title": "Payment Period",
+    "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "paymentPeriod": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
+  },
+  {
     "id": "tradle.Pension",
     "title": "Pension",
     "interfaces": [
@@ -2565,8 +2883,8 @@ module.exports = [
         "transient": true,
         "type": "string",
         "displayAs": [
-          "firstName",
-          "lastName"
+          "lastName",
+          "firstName"
         ],
         "readOnly": true,
         "displayName": true
@@ -2577,27 +2895,31 @@ module.exports = [
       "placeOfBirth": {
         "type": "string"
       },
+      "street": {
+        "type": "string"
+      },
+      "houseNumber": {
+        "type": "number"
+      },
       "city": {
+        "type": "string"
+      },
+      "region": {
+        "type": "string"
+      },
+      "postalCode": {
         "type": "string"
       },
       "country": {
         "type": "object",
         "ref": "tradle.Country"
       },
-      "postalCode": {
-        "type": "string"
-      },
-      "region": {
-        "type": "string"
-      },
-      "street": {
-        "type": "string"
-      },
       "address": {
         "transient": true,
         "type": "string",
         "displayAs": [
           "street",
+          "houseNumber",
           ",",
           "city",
           ",",
@@ -2607,9 +2929,12 @@ module.exports = [
         "title": "Address",
         "readOnly": true
       },
-      "roleInContract": {
+      "socialSecurityNumber": {
+        "type": "string"
+      },
+      "nationality": {
         "type": "object",
-        "ref": "tradle.RoleInContract"
+        "ref": "tradle.Nationality"
       },
       "phones": {
         "type": "array",
@@ -2635,6 +2960,22 @@ module.exports = [
         "type": "string",
         "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
         "keyboard": "email-address"
+      },
+      "idCardType": {
+        "type": "object",
+        "title": "ID Card",
+        "ref": "tradle.IDCardType"
+      },
+      "idCardNumber": {
+        "type": "string"
+      },
+      "maritalStatus": {
+        "type": "object",
+        "ref": "tradle.MaritalStatus"
+      },
+      "education": {
+        "type": "object",
+        "ref": "tradle.EducationNL"
       },
       "photos": {
         "type": "array",
@@ -2672,15 +3013,33 @@ module.exports = [
       "dateOfBirth",
       "placeOfBirth",
       "street",
+      "houseNumber",
       "city",
       "country",
       "postalCode",
-      "region"
+      "region",
+      "socialSecurityNumber",
+      "idCardType",
+      "idCardNumber",
+      "nationality",
+      "maritalStatus",
+      "education",
+      "nationality",
+      "phones",
+      "photos"
     ],
     "viewCols": [
       "name",
       "address",
       "dateOfBirth",
+      "placeOfBirth",
+      "socialSecurityNumber",
+      "idCardType",
+      "idCardNumber",
+      "nationality",
+      "maritalStatus",
+      "education",
+      "phones",
       "photos"
     ]
   },
@@ -3209,8 +3568,8 @@ module.exports = [
     ]
   },
   {
-    "id": "tradle.RoleInContract",
-    "title": "Role In Contract",
+    "id": "tradle.StateOfHouse",
+    "title": "State of House",
     "subClassOf": "tradle.Enum",
     "type": "tradle.Model",
     "properties": {
@@ -3218,7 +3577,7 @@ module.exports = [
         "type": "string",
         "readOnly": true
       },
-      "role": {
+      "stateOfHouse": {
         "displayName": true,
         "type": "string"
       }
@@ -3400,7 +3759,7 @@ module.exports = [
   },
   {
     "id": "tradle.Savings",
-    "title": "Savings",
+    "title": "Posessions",
     "interfaces": [
       "tradle.Message"
     ],
@@ -3421,12 +3780,9 @@ module.exports = [
         "readOnly": true,
         "ref": "tradle.Identity"
       },
-      "proofOfSavings": {
+      "downPayment": {
         "type": "object",
         "ref": "tradle.Money"
-      },
-      "dateOfTheProof": {
-        "type": "date"
       },
       "photos": {
         "type": "array",
@@ -3459,13 +3815,11 @@ module.exports = [
       }
     },
     "required": [
-      "proofOfSavings",
-      "dateOfTheProof",
+      "downPayment",
       "photos"
     ],
     "viewCols": [
-      "proofOfSavings",
-      "dateOfTheProof",
+      "downPayment",
       "photos"
     ]
   },
@@ -3723,6 +4077,40 @@ module.exports = [
       "photos",
       "verifications"
     ]
+  },
+  {
+    "id": "tradle.SourceOfIncome",
+    "title": "Source Of Income",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "sourceOfIncome": {
+        "displayName": true,
+        "type": "string"
+      }
+    },
+    "required": [
+      "SourceOfIncome"
+    ]
+  },
+  {
+    "id": "tradle.StatusOfInsurance",
+    "title": "Status Of Insurance",
+    "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "statusOfInsurance": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
   },
   {
     "id": "tradle.TermInsurance",

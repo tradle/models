@@ -1,6 +1,6 @@
 {
-  "id": "tradle.StateOfHouse",
-  "title": "State of House",
+  "id": "tradle.EducationNL",
+  "title": "Education",
   "subClassOf": "tradle.Enum",
   "type": "tradle.Model",
   "properties": {
@@ -8,9 +8,12 @@
       "type": "string",
       "readOnly": true
     },
-    "stateOfHouse": {
+    "education": {
       "displayName": true,
       "type": "string"
     }
-  }
+  },
+  "required": [
+    "education"
+  ]
 }

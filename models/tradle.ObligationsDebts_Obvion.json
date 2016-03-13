@@ -21,23 +21,35 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
-    "debtAmount": {
+    "kindOfObligation": {
+      "type": "object",
+      "ref": "tradle.KindOfObligation"
+    },
+    "creditLimit": {
       "type": "object",
       "ref": "tradle.Money"
     },
-    "debtKind": {
-      "type": "object",
-      "ref": "tradle.DebtKind"
-    },
-    "monthlyPayment": {
+    "payment": {
       "type": "object",
       "ref": "tradle.Money"
     },
-    "defaultCode": {
-      "type": "string"
+    "paymentPeriod": {
+      "type": "object",
+      "ref": "tradle.PaymentPeriod"
     },
-    "companyOrBeneficiary": {
-      "type": "string"
+    "endDate": {
+      "type": "date"
     }
-  }
+  },
+  "required": [
+    "kindOfObligation",
+    "creditLimit",
+    "paymentPeriod"
+  ],
+  "viewCols": [
+    "kindOfObligation",
+    "creditLimit",
+    "paymentPeriod",
+    "endDate"
+  ]
 }

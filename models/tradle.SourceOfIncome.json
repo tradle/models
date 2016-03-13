@@ -1,16 +1,18 @@
 {
-  "id": "tradle.StateOfHouse",
-  "title": "State of House",
-  "subClassOf": "tradle.Enum",
+  "id": "tradle.SourceOfIncome",
+  "title": "Source Of Income",
   "type": "tradle.Model",
   "properties": {
     "_t": {
       "type": "string",
       "readOnly": true
     },
-    "stateOfHouse": {
+    "sourceOfIncome": {
       "displayName": true,
       "type": "string"
     }
-  }
+  },
+  "required": [
+    "SourceOfIncome"
+  ]
 }

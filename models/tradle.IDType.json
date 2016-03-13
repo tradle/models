@@ -1,6 +1,6 @@
 {
-  "id": "tradle.StateOfHouse",
-  "title": "State of House",
+  "id": "tradle.IDCardType",
+  "title": "ID Card",
   "subClassOf": "tradle.Enum",
   "type": "tradle.Model",
   "properties": {
@@ -8,9 +8,12 @@
       "type": "string",
       "readOnly": true
     },
-    "stateOfHouse": {
+    "idCardType": {
       "displayName": true,
       "type": "string"
     }
-  }
+  },
+  "required": [
+    "phoneType"
+  ]
 }

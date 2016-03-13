@@ -1,7 +1,6 @@
 {
   "id": "tradle.Collateral",
   "title": "Collateral/House",
-
   "interfaces": [
     "tradle.Message"
   ],
@@ -22,27 +21,31 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
+    "street": {
+      "type": "string"
+    },
+    "houseNumber": {
+      "type": "number"
+    },
     "city": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "postalCode": {
       "type": "string"
     },
     "country": {
       "type": "object",
       "ref": "tradle.Country"
     },
-    "postalCode": {
-      "type": "string"
-    },
-    "region": {
-      "type": "string"
-    },
-    "street": {
-      "type": "string"
-    },
     "formattedAddress": {
       "transient": true,
       "type": "string",
       "displayAs": [
         "street",
+        "houseNumber",
         ",",
         "city",
         ",",
@@ -56,27 +59,93 @@
       "type": "object",
       "ref": "tradle.Money"
     },
+    "kindOfConstruction": {
+      "type": "object",
+      "ref": "tradle.KindOfConstruction"
+    },
     "kindOfHouse": {
       "type": "object",
       "ref": "tradle.KindOfHouse"
     },
-    "constructionYear": {
-      "type": "integer",
+    "additionalCosts": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "restructuringCosts": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "leaseholdKind": {
+      "type": "object",
+      "ref": "tradle.PaymentPeriod"
+    },
+    "leaseholdAmount": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "yearTheHouseWasBuild": {
+      "type": "number",
       "minimum": "1800"
     },
-    "stateOfHouse": {
-      "type": "object",
-      "ref": "tradle.StateOfHouse"
+    "rented": {
+      "type": "boolean",
+      "title": "Rented?"
     },
-    "renovationAmonunt": {
+    "purchasePrice": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "valuedPrice": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "foreclosureValue": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "valuedPrice": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "badMaintenanceAmount": {
       "type": "object",
       "ref": "tradle.Money"
     },
     "energyLabel": {
-      "type": "string"
-    },
-    "additionalInfo": {
-      "type": "string"
+      "type": "object",
+      "ref": "tradle.EnergyLabel"
     }
-  }
+  },
+  "required": [
+    "street",
+    "houseNumber",
+    "city",
+    "region",
+    "country",
+    "postalCode",
+    "houseValue",
+    "kindOfConstruction",
+    "kindOfHouse",
+    "restructuringCosts",
+    "yearTheHouseWasBuild",
+    "purchasePrice",
+    "valuedPrice",
+    "energyLabel"
+  ],
+  "viewCols": [
+    "formattedAddress",
+    "houseValue",
+    "kindOfConstruction",
+    "kindOfHouse",
+    "restructuringCosts",
+    "leaseholdKind",
+    "leaseholdAmount",
+    "yearTheHouseWasBuild",
+    "rented",
+    "purchasePrice",
+    "valuedPrice",
+    "foreclosureValue",
+    "badMaintenanceAmount",
+    "energyLabel"
+  ]
 }

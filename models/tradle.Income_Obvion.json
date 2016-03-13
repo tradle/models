@@ -21,10 +21,30 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
-    "jobDescription": {
+    "sourceOfIncome": {
+      "type": "object",
+      "ref": "tradle.SourceOfIncome"
+    },
+    "nameOfEmployer": {
       "type": "string"
     },
-    "grossMonthlyIncome": {
+    "residenceOfEmployer": {
+      "type": "string"
+    },
+    "occupation": {
+      "type": "string"
+    },
+    "kindOfEngagement": {
+      "type": "object",
+      "ref": "tradle.KindOfEngagement"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "yearsOfSelfEmployment": {
+      "type": "number"
+    },
+    "grossYearlyIncome": {
       "type": "object",
       "ref": "tradle.Money"
     },
@@ -32,7 +52,7 @@
       "type": "object",
       "ref": "tradle.Money"
     },
-    "bonusOrProvisionalIncome": {
+    "provisionalIncome": {
       "type": "object",
       "ref": "tradle.Money"
     },
@@ -40,35 +60,43 @@
       "type": "object",
       "ref": "tradle.Money"
     },
-    "employer": {
-      "type": "string"
-    },
-    "contractType": {
+    "irregularityCompensation": {
       "type": "object",
-      "ref": "tradle.ContractType"
+      "ref": "tradle.Money"
     },
-    "amountOfHours": {
-      "type": "number"
+    "overtimeCompensation": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "bonus": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "totalIncome": {
+      "type": "object",
+      "ref": "tradle.Money"
     }
   },
   "required": [
-    "jobDescription",
-    "grossMonthlyIncome",
-    "holidayMoney",
-    "bonusOrProvisionalIncome",
-    "additionalMonthOfPayment",
-    "employer",
-    "contractType",
-    "amountOfHours"
+    "sourceOfIncome",
+    "nameOfEmployer",
+    "residenceOfEmployer",
+    "startDate",
+    "kindOfEngagement",
+    "grossYearlyIncome"
   ],
   "viewCols": [
-    "jobDescription",
-    "grossMonthlyIncome",
+    "sourceOfIncome",
+    "nameOfEmployer",
+    "residenceOfEmployer",
+    "startDate",
+    "kindOfEngagement",
+    "grossYearlyIncome",
     "holidayMoney",
-    "bonusOrProvisionalIncome",
+    "provisionalIncome",
     "additionalMonthOfPayment",
-    "employer",
-    "contractType",
-    "amountOfHours"
+    "overtimeCompensation",
+    "bonus",
+    "totalIncome"
   ]
 }

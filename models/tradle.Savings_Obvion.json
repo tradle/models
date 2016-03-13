@@ -1,6 +1,6 @@
 {
   "id": "tradle.Savings",
-  "title": "Savings",
+  "title": "Posessions",
   "interfaces": [
     "tradle.Message"
   ],
@@ -21,12 +21,9 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
-    "proofOfSavings": {
+    "downPayment": {
       "type": "object",
       "ref": "tradle.Money"
-    },
-    "dateOfTheProof": {
-      "type": "date"
     },
     "photos": {
       "type": "array",
@@ -59,13 +56,11 @@
     }
   },
   "required": [
-    "proofOfSavings",
-    "dateOfTheProof",
+    "downPayment",
     "photos"
   ],
   "viewCols": [
-    "proofOfSavings",
-    "dateOfTheProof",
+    "downPayment",
     "photos"
   ]
 }

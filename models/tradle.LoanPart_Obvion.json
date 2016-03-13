@@ -25,10 +25,6 @@
       "type": "object",
       "ref": "tradle.Money"
     },
-    "repaymentType": {
-      "type": "object",
-      "ref": "tradle.TypeOfCoverage"
-    },
     "interestType": {
       "type": "object",
       "ref": "tradle.InterestType"
@@ -39,26 +35,24 @@
       "min": "0",
       "max": "100"
     },
-    "monthlyCosts": {
+    "monthlyPremium": {
       "type": "object",
       "ref": "tradle.Money"
     },
-    "monthlyRepaymentAmount": {
+    "monthlyInterest": {
       "type": "object",
       "ref": "tradle.Money"
     },
-    "monthlyInterestAmount": {
+    "repaymentType": {
       "type": "object",
-      "ref": "tradle.Money"
+      "ref": "tradle.TypeOfCoverage"
     },
-    "monthlyOtherPayments": {
-      "type": "object",
-      "ref": "tradle.Money",
-      "title": "Monthly other payments"
-    },
-    "infoOnRepayment": {
+    "loanPartID": {
       "type": "string",
-      "title": "Info on repayment"
+      "title": "Loan Part ID"
+    },
+    "duration": {
+      "type": "number"
     }
   },
   "required": [
@@ -66,20 +60,18 @@
     "repaymentType",
     "interestType",
     "interestPercentage",
-    "monthlyCosts",
-    "monthlyRepaymentAmount",
-    "monthlyInterestAmount",
-    "monthlyOtherPayments"
+    "monthlyPremium",
+    "monthlyInterest",
+    "duration"
   ],
   "viewCols": [
     "amount",
     "repaymentType",
     "interestType",
     "interestPercentage",
-    "monthlyCosts",
-    "monthlyRepaymentAmount",
-    "monthlyInterestAmount",
-    "monthlyOtherPayments",
-    "infoOnRepayment"
+    "monthlyPremium",
+    "monthlyInterest",
+    "duration",
+    "loanPartID"
   ]
 }
