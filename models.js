@@ -1855,10 +1855,6 @@ module.exports = [
         "type": "object",
         "ref": "tradle.Money"
       },
-      "monthlyInterest": {
-        "type": "object",
-        "ref": "tradle.Money"
-      },
       "repaymentType": {
         "type": "object",
         "ref": "tradle.TypeOfCoverage"
@@ -2097,7 +2093,7 @@ module.exports = [
       "mortgageGuarantee": {
         "type": "string"
       },
-      "mortgageAmount": {
+      "totalAmount": {
         "type": "object",
         "ref": "tradle.Money"
       },
@@ -3647,22 +3643,6 @@ module.exports = [
     "required": [
       "status"
     ]
-  },
-  {
-    "id": "tradle.StateOfHouse",
-    "title": "State of House",
-    "subClassOf": "tradle.Enum",
-    "type": "tradle.Model",
-    "properties": {
-      "_t": {
-        "type": "string",
-        "readOnly": true
-      },
-      "stateOfHouse": {
-        "displayName": true,
-        "type": "string"
-      }
-    }
   },
   {
     "id": "tradle.SalaryVerification",
