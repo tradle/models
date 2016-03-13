@@ -1,6 +1,9 @@
 'use strict'
 
+
+var m = require('./models')
 var writeFileAtomic = require('write-file-atomic')
+
 
 var argv = require('minimist')(process.argv.slice(2), {
   alias: {
@@ -14,10 +17,12 @@ if (argv.help) {
   printUsage()
   process.exit(0)
 }
-if (!argv.models)
-  throw new Error('There is no models to create a dictionary for')
-
-var models = JSON.parse(argv.models)
+var models
+if (argv.models)
+  models = JSON.parse(argv.models)
+  // throw new Error('There is no models to create a dictionary for')
+else
+  models = m
 
 var propNames
 var modelNames
@@ -41,18 +46,25 @@ writeDictionary()
 
 function writeDictionary() {
   models.forEach(function(m) {
-    modelNames[m.id] = m.title
+    modelNames[m.id] = modelNames[m.id]  ||  m.title
     for (let p in m.properties) {
       if (p.charAt(0) === '_')
         continue
-      if (!propNames[p])
+      if (!propNames[p]) {
         propNames[p] = {}
 
-      if (m.properties[p].title)
-        propNames[p][m.id] = m.properties[p].title
+        if (m.properties[p].title)
+          propNames[p][m.id] = m.properties[p].title
+        else {
+          let title = makeLabel(p)
+          propNames[p]['Default'] = title
+        }
+      }
       else {
-        let title = makeLabel(p)
-        propNames[p]['Default'] = title
+        if (m.properties[p].title) {
+          if (!propNames[p][m.id])
+            propNames[p][m.id] = m.properties[p].title
+        }
       }
     }
   })
