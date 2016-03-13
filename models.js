@@ -3063,6 +3063,72 @@ module.exports = [
     ]
   },
   {
+    "id": "tradle.Posessions",
+    "title": "Posessions",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "subClassOf": "tradle.Form",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "downPayment": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "photos": {
+        "type": "array",
+        "title": "Snapshot of the document",
+        "items": {
+          "type": "object",
+          "properties": {
+            "tags": {
+              "type": "string",
+              "skipLabel": true
+            },
+            "url": {
+              "type": "string",
+              "readOnly": true
+            },
+            "width": {
+              "type": "number",
+              "readOnly": true
+            },
+            "height": {
+              "type": "number",
+              "readOnly": true
+            }
+          }
+        },
+        "required": [
+          "title",
+          "url"
+        ]
+      }
+    },
+    "required": [
+      "downPayment",
+      "photos"
+    ],
+    "viewCols": [
+      "downPayment",
+      "photos"
+    ]
+  },
+  {
     "id": "tradle.ProductList",
     "title": "Product List",
     "type": "tradle.Model",
@@ -3755,72 +3821,6 @@ module.exports = [
       "numberOfChargebacks",
       "volumeOfChargebacks",
       "settlementCurrency"
-    ]
-  },
-  {
-    "id": "tradle.Savings",
-    "title": "Posessions",
-    "interfaces": [
-      "tradle.Message"
-    ],
-    "subClassOf": "tradle.Form",
-    "type": "tradle.Model",
-    "properties": {
-      "_t": {
-        "type": "string",
-        "readOnly": true
-      },
-      "from": {
-        "type": "object",
-        "readOnly": true,
-        "ref": "tradle.Identity"
-      },
-      "to": {
-        "type": "object",
-        "readOnly": true,
-        "ref": "tradle.Identity"
-      },
-      "downPayment": {
-        "type": "object",
-        "ref": "tradle.Money"
-      },
-      "photos": {
-        "type": "array",
-        "title": "Snapshot of the document",
-        "items": {
-          "type": "object",
-          "properties": {
-            "tags": {
-              "type": "string",
-              "skipLabel": true
-            },
-            "url": {
-              "type": "string",
-              "readOnly": true
-            },
-            "width": {
-              "type": "number",
-              "readOnly": true
-            },
-            "height": {
-              "type": "number",
-              "readOnly": true
-            }
-          }
-        },
-        "required": [
-          "title",
-          "url"
-        ]
-      }
-    },
-    "required": [
-      "downPayment",
-      "photos"
-    ],
-    "viewCols": [
-      "downPayment",
-      "photos"
     ]
   },
   {
