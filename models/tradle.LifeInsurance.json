@@ -6,6 +6,10 @@
   "title": "Life Insurance",
   "type": "tradle.Model",
   "subClassOf": "tradle.FinancialProduct",
+  "forms": [
+    "tradle.PersonalInfo",
+    "tradle.ORV"
+  ],
   "properties": {
     "_t": {
       "type": "string",
@@ -15,11 +19,6 @@
       "type": "object",
       "readOnly": true,
       "ref": "tradle.Identity"
-    },
-    "accountWith": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Organization"
     }
   }
 }
