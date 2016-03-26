@@ -77,9 +77,6 @@
       "title": "Address",
       "readOnly": true
     },
-    "socialSecurityNumber": {
-      "type": "string"
-    },
     "nationality": {
       "type": "object",
       "ref": "tradle.Nationality"
@@ -103,6 +100,9 @@
         "phoneType",
         "number"
       ]
+    },
+    "video": {
+      "type": "object"
     },
     "emailAddress": {
       "type": "string",
@@ -166,7 +166,6 @@
     "country",
     "postalCode",
     "region",
-    "socialSecurityNumber",
     "idCardType",
     "idCardNumber",
     "nationality",
@@ -181,12 +180,12 @@
     "address",
     "dateOfBirth",
     "placeOfBirth",
-    "socialSecurityNumber",
     "idCardType",
     "idCardNumber",
     "nationality",
     "maritalStatus",
     "education",
+    "video",
     "phones",
     "photos"
   ]

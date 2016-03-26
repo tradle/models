@@ -214,7 +214,7 @@ module.exports = [
   },
   {
     "id": "tradle.Boolean",
-    "title": "Energy Label",
+    "title": "Boolean",
     "subClassOf": "tradle.Enum",
     "type": "tradle.Model",
     "properties": {
@@ -525,9 +525,10 @@ module.exports = [
     ]
   },
   {
-    "id": "tradle.CommercialProductType",
-    "title": "Commercial Product Type",
+    "id": "tradle.CommercialProduct",
+    "title": "Commercial Product",
     "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
     "properties": {
       "_t": {
         "type": "string",
@@ -1768,6 +1769,30 @@ module.exports = [
     "title": "Life Insurance",
     "type": "tradle.Model",
     "subClassOf": "tradle.FinancialProduct",
+    "forms": [
+      "tradle.PersonalInfo",
+      "tradle.ORV"
+    ],
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      }
+    }
+  },
+  {
+    "id": "tradle.ORV",
+    "title": "ORV - Life Insurance",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "subClassOf": "tradle.Form",
+    "type": "tradle.Model",
     "properties": {
       "_t": {
         "type": "string",
@@ -1778,12 +1803,72 @@ module.exports = [
         "readOnly": true,
         "ref": "tradle.Identity"
       },
-      "accountWith": {
+      "to": {
         "type": "object",
         "readOnly": true,
-        "ref": "tradle.Organization"
+        "ref": "tradle.Identity"
+      },
+      "startDate": {
+        "type": "date"
+      },
+      "endDate": {
+        "type": "date"
+      },
+      "insuredAmount": {
+        "type": "object",
+        "ref": "tradle.Money",
+        "description": "Insured amount at date insurance starts"
+      },
+      "typeOfCoverage": {
+        "type": "object",
+        "ref": "tradle.TypeOfCoverage"
+      },
+      "policyHolder": {
+        "type": "object",
+        "ref": "tradle.PersonalInfo",
+        "allowToAdd": true
+      },
+      "insuredPersons": {
+        "type": "array",
+        "allowToAdd": true,
+        "items": {
+          "type": "object",
+          "ref": "tradle.PersonalInfo"
+        }
+      },
+      "beneficiary": {
+        "type": "string",
+        "defaultValue": "Standard"
+      },
+      "nonSmokersTariff": {
+        "type": "boolean",
+        "description": "Non-smokers tariff (did not smoke for more than 2 years)",
+        "title": "Non-smokers tariff"
+      },
+      "bankAccountNumber": {
+        "type": "string"
       }
-    }
+    },
+    "required": [
+      "startDate",
+      "endDate",
+      "insuredAmount",
+      "policyHolder",
+      "insuredPersons",
+      "beneficiary",
+      "nonSmokersTariff",
+      "bankAccountNumber"
+    ],
+    "viewCols": [
+      "startDate",
+      "endDate",
+      "insuredAmount",
+      "policyHolder",
+      "insuredPersons",
+      "beneficiary",
+      "nonSmokersTariff",
+      "bankAccountNumber"
+    ]
   },
   {
     "id": "tradle.Loan",
@@ -1857,7 +1942,7 @@ module.exports = [
       },
       "repaymentType": {
         "type": "object",
-        "ref": "tradle.TypeOfCoverage"
+        "ref": "tradle.RepaymentType"
       },
       "loanPartID": {
         "type": "string",
@@ -2085,10 +2170,10 @@ module.exports = [
       "startMortgageDate": {
         "type": "date"
       },
-      "productType": {
+      "commercialProduct": {
         "type": "object",
         "title": "Product",
-        "ref": "tradle.CommercialProductType"
+        "ref": "tradle.CommercialProduct"
       },
       "mortgageGuarantee": {
         "type": "string"
@@ -2219,13 +2304,14 @@ module.exports = [
     ],
     "type": "tradle.Model",
     "forms": [
-      "tradle.MortgageDetail",
-      "tradle.LoanPart",
       "tradle.PersonalInfo",
-      "tradle.Savings",
+      "tradle.SocialSecurityNumber",
+      "tradle.Collateral",
       "tradle.Income",
       "tradle.ObligationsDebts",
-      "tradle.Collateral",
+      "tradle.Posessions",
+      "tradle.MortgageDetail",
+      "tradle.LoanPart",
       "tradle.OtherCollaterals"
     ],
     "subClassOf": "tradle.FinancialProduct",
@@ -2585,9 +2671,6 @@ module.exports = [
       "startDate": {
         "type": "date"
       },
-      "endDate": {
-        "type": "date"
-      },
       "yearsOfInsurance": {
         "type": "number"
       },
@@ -2627,6 +2710,9 @@ module.exports = [
       "coverage": {
         "type": "object",
         "ref": "tradle.Money"
+      },
+      "endDate": {
+        "type": "date"
       }
     },
     "required": [
@@ -2647,12 +2733,12 @@ module.exports = [
       "statusOfInsurance",
       "kindOfInsurance",
       "startDate",
-      "endDate",
       "yearsOfInsurance",
       "amountToTransfer",
       "insuredPersons",
       "policyHolder",
       "policyNumber",
+      "endDate",
       "coverage"
     ]
   },
@@ -2940,9 +3026,6 @@ module.exports = [
         "title": "Address",
         "readOnly": true
       },
-      "socialSecurityNumber": {
-        "type": "string"
-      },
       "nationality": {
         "type": "object",
         "ref": "tradle.Nationality"
@@ -2966,6 +3049,9 @@ module.exports = [
           "phoneType",
           "number"
         ]
+      },
+      "video": {
+        "type": "object"
       },
       "emailAddress": {
         "type": "string",
@@ -3029,7 +3115,6 @@ module.exports = [
       "country",
       "postalCode",
       "region",
-      "socialSecurityNumber",
       "idCardType",
       "idCardNumber",
       "nationality",
@@ -3044,12 +3129,12 @@ module.exports = [
       "address",
       "dateOfBirth",
       "placeOfBirth",
-      "socialSecurityNumber",
       "idCardType",
       "idCardNumber",
       "nationality",
       "maritalStatus",
       "education",
+      "video",
       "phones",
       "photos"
     ]
@@ -3574,8 +3659,8 @@ module.exports = [
     }
   },
   {
-    "id": "tradle.TypeOfCoverage",
-    "title": "Type Of Coverage",
+    "id": "tradle.RepaymentType",
+    "title": "RepaymentType",
     "type": "tradle.Model",
     "subClassOf": "tradle.Enum",
     "sort": "name",
@@ -3642,6 +3727,69 @@ module.exports = [
     },
     "required": [
       "status"
+    ]
+  },
+  {
+    "id": "tradle.SocialSecurityNumber",
+    "title": "Social Security Number",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "subClassOf": "tradle.Form",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "socialSecurityNumber": {
+        "type": "string"
+      },
+      "photos": {
+        "type": "array",
+        "title": "Photo ID snapshots",
+        "items": {
+          "type": "object",
+          "properties": {
+            "tags": {
+              "type": "string",
+              "skipLabel": true
+            },
+            "url": {
+              "type": "string",
+              "readOnly": true
+            },
+            "width": {
+              "type": "number",
+              "readOnly": true
+            },
+            "height": {
+              "type": "number",
+              "readOnly": true
+            }
+          }
+        },
+        "required": [
+          "title",
+          "url"
+        ]
+      }
+    },
+    "required": [
+      "socialSecurityNumber"
+    ],
+    "viewCols": [
+      "socialSecurityNumber"
     ]
   },
   {
@@ -4077,6 +4225,7 @@ module.exports = [
     "id": "tradle.SourceOfIncome",
     "title": "Source Of Income",
     "type": "tradle.Model",
+    "subClassOf": "tradle.Enum",
     "properties": {
       "_t": {
         "type": "string",
@@ -4155,6 +4304,22 @@ module.exports = [
     "required": [
       "status"
     ]
+  },
+  {
+    "id": "tradle.TypeOfCoverage",
+    "title": "Type Of Coverage",
+    "subClassOf": "tradle.Enum",
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "typeOfCoverage": {
+        "displayName": true,
+        "type": "string"
+      }
+    }
   },
   {
     "id": "tradle.UtilityBillVerification",

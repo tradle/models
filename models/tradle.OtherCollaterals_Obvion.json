@@ -36,9 +36,6 @@
     "startDate": {
       "type": "date"
     },
-    "endDate": {
-      "type": "date"
-    },
     "yearsOfInsurance": {
       "type": "number"
     },
@@ -78,6 +75,9 @@
     "coverage": {
       "type": "object",
       "ref": "tradle.Money"
+    },
+    "endDate": {
+      "type": "date"
     }
   },
   "required": [
@@ -98,12 +98,12 @@
     "statusOfInsurance",
     "kindOfInsurance",
     "startDate",
-    "endDate",
     "yearsOfInsurance",
     "amountToTransfer",
     "insuredPersons",
     "policyHolder",
     "policyNumber",
+    "endDate",
     "coverage"
   ]
 }
