@@ -1959,7 +1959,6 @@ module.exports = [
       "interestPercentage",
       "monthlyPremium",
       "monthlyPayment",
-      "monthlyInterest",
       "duration"
     ],
     "viewCols": [
@@ -1969,7 +1968,6 @@ module.exports = [
       "interestPercentage",
       "monthlyPayment",
       "monthlyPremium",
-      "monthlyInterest",
       "duration",
       "loanPartID"
     ]
@@ -2198,13 +2196,13 @@ module.exports = [
     "required": [
       "loanType",
       "mortgageAmount",
-      "productType"
+      "commercialProduct"
     ],
     "viewCols": [
       "loanType",
       "applicationDate",
       "mortgageAmount",
-      "productType",
+      "commercialProduct",
       "mortgageNumber",
       "mortgageGuarantee",
       "notary",
@@ -3115,14 +3113,14 @@ module.exports = [
       "country",
       "postalCode",
       "region",
+      "emailAddress",
       "idCardType",
       "idCardNumber",
       "nationality",
       "maritalStatus",
       "education",
       "nationality",
-      "phones",
-      "photos"
+      "phones"
     ],
     "viewCols": [
       "name",
@@ -3135,6 +3133,7 @@ module.exports = [
       "maritalStatus",
       "education",
       "video",
+      "emailAddress",
       "phones",
       "photos"
     ]
@@ -3216,8 +3215,7 @@ module.exports = [
       }
     },
     "required": [
-      "downPayment",
-      "photos"
+      "downPayment"
     ],
     "viewCols": [
       "downPayment",
