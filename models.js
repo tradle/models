@@ -1013,6 +1013,107 @@ module.exports = [
     }
   },
   {
+    "id": "tradle.FormError",
+    "title": "Form Error",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "time": {
+        "type": "date",
+        "readOnly": true
+      },
+      "message": {
+        "type": "string"
+      },
+      "form": {
+        "type": "object",
+        "ref": "tradle.Form",
+        "readOnly": true
+      },
+      "prefilled": {
+        "type": "object"
+      },
+      "errors": {
+        "type": "array",
+        "readOnly": true,
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "error": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "viewCols": [
+      "form",
+      "message",
+      "errors"
+    ],
+    "required": [
+      "message"
+    ]
+  },
+  {
+    "id": "tradle.GuestSessionProof",
+    "title": "Guest Session Proof",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "time": {
+        "type": "date",
+        "readOnly": true
+      },
+      "session": {
+        "type": "string"
+      }
+    },
+    "viewCols": [
+      "form",
+      "message",
+      "errors"
+    ],
+    "required": [
+      "message"
+    ]
+  },
+  {
     "id": "tradle.HealthInsurance",
     "title": "Health Insurance",
     "interfaces": [
