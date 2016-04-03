@@ -1,0 +1,61 @@
+{
+  "id": "tradle.FormError",
+  "title": "Form Error",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true
+    },
+    "message": {
+      "type": "string"
+    },
+    "form": {
+      "type": "object",
+      "ref": "tradle.Form",
+      "readOnly": true
+    },
+    "prefilled": {
+      "type": "object"
+    },
+    "errors": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "error": {
+            "type": "string"
+          }
+        }
+      },
+      "readOnly": true
+    }
+  },
+  "viewCols": [
+    "form",
+    "message",
+    "errors"
+  ],
+  "required": ["message"]
+}
