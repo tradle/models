@@ -615,9 +615,8 @@ module.exports = [
     ],
     "subClassOf": "tradle.FinancialProduct",
     "forms": [
-      "tradle.AboutYou",
-      "tradle.YourMoney",
-      "tradle.UtilityBillVerification"
+      "tradle.PersonalInfo",
+      "tradle.YourBalance"
     ],
     "properties": {
       "_t": {
@@ -1011,6 +1010,66 @@ module.exports = [
         "readOnly": true
       }
     }
+  },
+  {
+    "id": "tradle.FormError",
+    "title": "Form Error",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "type": "tradle.Model",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "form": {
+        "type": "object",
+        "ref": "tradle.Form",
+        "readOnly": true
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "message": {
+        "type": "string"
+      },
+      "time": {
+        "type": "date",
+        "readOnly": true
+      },
+      "errors": {
+        "type": "array",
+        "readOnly": true,
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "error": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "viewCols": [
+      "message",
+      "form",
+      "errors"
+    ],
+    "required": [
+      "form",
+      "errors"
+    ]
   },
   {
     "id": "tradle.HealthInsurance",
@@ -3120,7 +3179,8 @@ module.exports = [
       "maritalStatus",
       "education",
       "nationality",
-      "phones"
+      "phones",
+      "photos"
     ],
     "viewCols": [
       "name",
@@ -4541,6 +4601,46 @@ module.exports = [
       "from",
       "document",
       "organization"
+    ]
+  },
+  {
+    "id": "tradle.YourBalance",
+    "title": "Your Balance",
+    "interfaces": [
+      "tradle.Message"
+    ],
+    "type": "tradle.Model",
+    "subClassOf": "tradle.Form",
+    "properties": {
+      "_t": {
+        "type": "string",
+        "readOnly": true
+      },
+      "currentBalance": {
+        "type": "object",
+        "ref": "tradle.Money"
+      },
+      "date": {
+        "type": "date"
+      },
+      "from": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      },
+      "to": {
+        "type": "object",
+        "readOnly": true,
+        "ref": "tradle.Identity"
+      }
+    },
+    "required": [
+      "date",
+      "currentBalance"
+    ],
+    "viewCols": [
+      "date",
+      "currentBalance"
     ]
   },
   {
