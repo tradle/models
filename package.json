@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "merge": "node merge.js ./models ./models.js"
+    "merge": "node merge.js ./models ./models.js",
+    "postpublish": "git push -u"
   },
   "pre-commit": [
     "merge"
