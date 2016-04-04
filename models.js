@@ -1104,12 +1104,10 @@ module.exports = [
       }
     },
     "viewCols": [
-      "form",
-      "message",
-      "errors"
+      "session"
     ],
     "required": [
-      "message"
+      "session"
     ]
   },
   {
