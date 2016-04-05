@@ -37,7 +37,8 @@
       "ref": "tradle.CommercialProduct"
     },
     "mortgageGuarantee": {
-      "type": "string"
+      "type": "object",
+      "ref": "tradle.MortgageGuarantee"
     },
     "totalAmount": {
       "type": "object",
@@ -58,16 +59,22 @@
   },
   "required": [
     "loanType",
-    "mortgageAmount",
-    "commercialProduct"
+    "startMortgageDate",
+    "mortgageGuarantee",
+    "totalAmount",
+    "intermediary",
+    "commercialProduct",
+    "notary",
+    "duration"
   ],
   "viewCols": [
     "loanType",
+    "startMortgageDate",
+    "mortgageGuarantee",
+    "totalAmount",
     "applicationDate",
-    "mortgageAmount",
     "commercialProduct",
     "mortgageNumber",
-    "mortgageGuarantee",
     "notary",
     "intermediary",
     "duration"
