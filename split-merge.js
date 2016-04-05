@@ -23,20 +23,20 @@ function merge (modelsDir, outFilePath) {
   }
 
   modelsDir = path.resolve(modelsDir || DEFAULT_MODELS_DIR)
-  var models = []
-  var modelFiles = fs.readdirSync(modelsDir)
-    .forEach(function (fname) {
+  var models = fs.readdirSync(modelsDir)
+    .filter(function (fname) {
       var idx = fname.indexOf('.json')
-      if (idx === -1  ||  idx + 5 !== fname.length)
-        return
-      var file = fs.readFileSync(path.join(modelsDir, fname))
-      models.push(JSON.parse(file))
+      return idx !== -1  &&  idx + 5 === fname.length
     })
+    .map(fname => `\nrequire('./models/${fname}')`)
+    .join(',')
 
-  var contents = JSON.stringify(models, null, 2)
-  if (/\.js$/.test(outFilePath)) {
-    contents = 'module.exports = ' + contents
-  }
+  var contents =
+`var models = module.exports = [${models}]
+models.forEach(function (m) {
+  models[m.id] = m
+})
+`
 
   fs.writeFile(path.resolve(outFilePath), contents)
 }
