@@ -52,12 +52,18 @@
     "insuredPersons": {
       "type": "array",
       "allowToAdd": true,
-      "ref": "tradle.PersonalInfo"
+      "items": {
+        "type": "object",
+        "ref": "tradle.PersonalInfo"
+      }
     },
     "policyHolder": {
       "type": "array",
       "allowToAdd": true,
-      "ref": "tradle.PersonalInfo"
+      "items": {
+        "type": "object",
+        "ref": "tradle.PersonalInfo"
+      }
     },
     "policyNumber": {
       "type": "string"
