@@ -44,30 +44,20 @@
       "ref": "tradle.Money",
       "description": "Amount to be transferred by the insurance company when insurance stops earlier"
     },
+    "policyHolder": {
+      "type": "object",
+      "ref": "tradle.PersonalInfo",
+      "allowToAdd": true
+    },
     "insuredPersons": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "person": {
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "person"
-      ]
+      "allowToAdd": true,
+      "ref": "tradle.PersonalInfo"
     },
     "policyHolder": {
       "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "person": {
-            "type": "string"
-          }
-        }
-      }
+      "allowToAdd": true,
+      "ref": "tradle.PersonalInfo"
     },
     "policyNumber": {
       "type": "string"
