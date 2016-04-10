@@ -37,7 +37,8 @@
     },
     "monthlyPayment": {
       "type": "object",
-      "ref": "tradle.Money"
+      "ref": "tradle.Money",
+      "description": "Amount paid for saving/insurance part in loan construction"
     },
     "monthlyPremium": {
       "type": "object",
@@ -52,7 +53,8 @@
       "title": "Loan Part ID"
     },
     "duration": {
-      "type": "number"
+      "type": "number",
+      "units": "years"
     }
   },
   "required": [
@@ -71,7 +73,9 @@
     "interestPercentage",
     "monthlyPayment",
     "monthlyPremium",
-    "duration",
+    "duration"
+  ],
+  "hidden": [
     "loanPartID"
   ]
 }
