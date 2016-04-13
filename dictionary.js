@@ -59,6 +59,18 @@ function writeDictionary() {
           let title = makeLabel(p)
           propNames[p]['Default'] = title
         }
+        if (m.properties[p].type === 'array'  &&  m.properties[p].items.properties) {
+          let props = m.properties[p].items.properties
+          propNames[p].items = {}
+          for (var pp in props) {
+            if (props[pp].title)
+              propNames[p].items[pp] = props[pp].title
+            else {
+              let title = makeLabel(pp)
+              propNames[p].items[pp] = title
+            }
+          }
+        }
       }
       else {
         if (m.properties[p].title) {
