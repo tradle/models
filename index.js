@@ -11,9 +11,7 @@ exports.dict = {
   en: require('./dictionary_en.json'),
   nl: require('./dictionary_nl.json')
 }
-
-exports.data = {
-  require('./data/formDefaults.json')
-}
+exports.formDefaults = require('./data/formDefaults.json')
+exports.data = require('./data/data')
 
 exports.Validator = require('./validator')
