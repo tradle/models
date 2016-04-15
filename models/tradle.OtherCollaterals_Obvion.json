@@ -28,9 +28,9 @@
       "type": "object",
       "ref": "tradle.StatusOfInsurance"
     },
-    "kindOfInsurance": {
+    "typeOfCoverage": {
       "type": "object",
-      "ref": "tradle.KindOfInsurance"
+      "ref": "tradle.TypeOfCoverage"
     },
     "startDate": {
       "type": "date"
@@ -67,7 +67,7 @@
     "policyNumber": {
       "type": "string"
     },
-    "coverage": {
+    "insuredAmount": {
       "type": "object",
       "ref": "tradle.Money"
     },
@@ -78,7 +78,7 @@
   "required": [
     "insuranceCompany",
     "statusOfInsurance",
-    "kindOfInsurance",
+    "typeOfCoverage",
     "startDate",
     "endDate",
     "yearsOfInsurance",
@@ -86,12 +86,12 @@
     "insuredPersons",
     "policyHolder",
     "policyNumber",
-    "coverage"
+    "insuredAmount"
   ],
   "viewCols": [
     "insuranceCompany",
     "statusOfInsurance",
-    "kindOfInsurance",
+    "typeOfCoverage",
     "startDate",
     "yearsOfInsurance",
     "amountToTransfer",
@@ -99,7 +99,7 @@
     "policyHolder",
     "policyNumber",
     "endDate",
-    "coverage"
+    "insuredAmount"
   ]
 }
 

@@ -1,0 +1,63 @@
+{
+  "id": "tradle.MyLifeInsurance",
+  "title": "My Life Insurance",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.MyProduct",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "policyNumber": {
+      "type": "string"
+    },
+    "policyHolder": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "typeOfCoverage": {
+      "type": "object",
+      "ref": "tradle.TypeOfCoverage"
+    },
+    "insuredAmount": {
+      "type": "object",
+      "ref": "tradle.Money",
+      "description": "Insured amount at date insurance starts"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    }
+  },
+  "required": [
+    "policyNumber",
+    "policyHolder",
+    "typeOfCoverage",
+    "insuredAmount",
+    "startDate",
+    "endDate"
+  ],
+  "viewCols": [
+    "policyNumber",
+    "policyHolder",
+    "typeOfCoverage",
+    "insuredAmount",
+    "startDate",
+    "endDate"
+  ]
+}
