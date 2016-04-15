@@ -12,4 +12,8 @@ exports.dict = {
   nl: require('./dictionary_nl.json')
 }
 
+exports.data = {
+  require('./data/formDefaults.json')
+}
+
 exports.Validator = require('./validator')
