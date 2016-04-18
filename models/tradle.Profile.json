@@ -83,10 +83,11 @@
     "myProducts": {
       "type": "array",
       "title": "Products",
+      "icon": "ios-cart-outline",
       "allowRoles": "me",
       "items": {
         "readOnly": true,
-        "ref": "tradle.FinancialProduct",
+        "ref": "tradle.MyProduct",
         "backlink": "to"
       }
     },
@@ -94,17 +95,18 @@
       "type": "array",
       "title": "Verifications",
       "allowRoles": "me",
-      "icon": "ios-checkmark-empty",
+      "icon": "ios-checkmark-outline",
       "items": {
         "readOnly": true,
         "ref": "tradle.Verification",
         "backlink": "to"
       }
     },
-    "myRequests": {
+    "myForms": {
       "type": "array",
-      "title": "Requests",
+      "title": "Documents",
       "allowRoles": "me",
+      "icon": "ios-paper-outline",
       "items": {
         "readOnly": true,
         "ref": "tradle.Form",
