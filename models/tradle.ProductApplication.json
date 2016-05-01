@@ -1,0 +1,41 @@
+{
+  "id": "tradle.ProductApplication",
+  "title": "ProductApplication",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "product": {
+      "type": "string"
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true
+    },
+    "welcome": {
+      "type": "boolean",
+      "readOnly": true
+    }
+  },
+  "viewCols": [
+    "product"
+  ],
+  "required": [
+    "product"
+  ]
+}
