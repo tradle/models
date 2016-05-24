@@ -27,7 +27,7 @@
     "message": {
       "type": "string"
     },
-    "form": {
+    "prefill": {
       "type": "object",
       "ref": "tradle.Form",
       "readOnly": true
@@ -37,7 +37,6 @@
     },
     "errors": {
       "type": "array",
-      "readOnly": true,
       "items": {
         "type": "object",
         "properties": {
@@ -48,14 +47,16 @@
             "type": "string"
           }
         }
-      },
-      "readOnly": true
+      }
     }
   },
   "viewCols": [
-    "form",
     "message",
     "errors"
   ],
-  "required": ["message"]
+  "required": [
+    "prefill",
+    "errors",
+    "message"
+  ]
 }
