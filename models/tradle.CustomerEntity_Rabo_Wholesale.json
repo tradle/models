@@ -1,0 +1,106 @@
+{
+  "id": "tradle.CustomerProduct",
+  "title": "Customer Product",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "entityRole": {
+      "type": "string"
+    },
+    "entityType": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string",
+      "title": "Position/Rank/Title"
+    },
+    "other": {
+      "type": "string",
+      "description": "e.g. VP Treasurer"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "middleName": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "citizenshipCountry": {
+      "string": "tradle.Country"
+    },
+    "residenceCountry": {
+      "string": "tradle.Country"
+    },
+    "ownershipNature": {
+      "type": "string"
+    },
+    "ownershipPercentage": {
+      "type": "number",
+      "units": "%"
+    },
+    "email": {
+      "type": "string",
+      "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+      "keyboard": "email-address"
+    },
+    "phone": {
+      "type": "number",
+      "keyboard": "phone-pad"
+    }
+  },
+  "viewCols": [
+    "entityRole",
+    "entityType",
+    "position",
+    "other",
+    "lastName",
+    "firstName",
+    "middleName",
+    "suffix",
+    "dateOfBirth",
+    "citizenshipCountry",
+    "residenceCountry",
+    "ownershipNature",
+    "ownershipPercentage",
+    "email",
+    "phone"
+  ],
+  "required": [
+    "entityRole",
+    "entityType",
+    "lastName",
+    "firstName",
+    "dateOfBirth",
+    "citizenshipCountry",
+    "residenceCountry",
+    "ownershipNature",
+    "ownershipPercentage",
+    "email",
+    "phone"
+  ]
+}

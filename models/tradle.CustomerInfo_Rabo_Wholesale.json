@@ -1,0 +1,57 @@
+{
+  "id": "tradle.CustomerInfo",
+  "title": "Customer Info",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "customerName": {
+      "type": "string",
+      "description": "e.g. del monte fresh produce, North America, inc"
+    },
+    "customerOf": {
+      "type": "string"
+    },
+    "secondaryName": {
+      "type": "string"
+    },
+    "middle": {
+      "type": "string"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "formType": {
+      "type": "tradle.FormationType",
+      "title": "Formation type",
+      "description": "e.g. Corporation, LLC, etc"
+    }
+  },
+  "viewCols": [
+    "customerName",
+    "customerOf",
+    "secondaryName",
+    "middle",
+    "suffix"
+  ],
+  "required": [
+    "customerName",
+    "customerOf"
+  ]
+}

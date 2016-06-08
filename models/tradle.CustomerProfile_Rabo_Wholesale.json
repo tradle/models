@@ -1,0 +1,169 @@
+{
+  "id": "tradle.CustomerProfile",
+  "title": "CIP Profile",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "address1": {
+      "type": "string"
+    },
+    "address2": {
+      "type": "string"
+    },
+    "address3": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string",
+      "title": "State/Province"
+    },
+    "zipCode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "address": {
+      "transient": true,
+      "type": "string",
+      "displayAs": [
+        "address1",
+        "address2",
+        "address3",
+        ",",
+        "city",
+        ",",
+        "region",
+        "zipCode",
+        ",",
+        "country"
+      ],
+      "title": "CIP Address",
+      "readOnly": true
+    },
+    "natureOfCompany": {
+      "type": "string"
+    },
+    "natureOfCompanyOther": {
+      "type": "string"
+    },
+    "dateOfFormation": {
+      "type": "date"
+    },
+    "formedLessThenTwoYears": {
+      "type": "boolean",
+      "title": "Was the customer formed within the last 2 years"
+    },
+    "patriotActCertification": {
+      "type": "string",
+      "title": "PATRIOT Act Certification"
+    },
+    "businessOrIndustryType": {
+      "type": "string",
+      "title": "Business/Industry Type"
+    },
+    "naics": {
+      "type": "string",
+      "title": "NAICS"
+    },
+    "dans": {
+      "type": "string",
+      "title": "DANS"
+    },
+    "wwid": {
+      "type": "string",
+      "title": "WWID"
+    },
+    "govIdType": {
+      "type": "string",
+      "title": "Gov. ID Type"
+    },
+    "govIssuedIdNumber": {
+      "type": "string",
+      "title": "Gov. Issued ID Number"
+    },
+    "govIdIssuingCountry": {
+      "type": "tradle.Country",
+      "title": "Gov. ID Issuing Country"
+    },
+    "regulator": {
+      "type": "string"
+    },
+    "regulatorOther": {
+      "type": "string"
+    },
+    "exchange": {
+      "type": "string"
+    },
+    "exchangeOther": {
+      "type": "string"
+    },
+    "stockSymbol": {
+      "type": "string",
+      "title": "Stock Symbol/Ticker"
+    }
+  },
+  "viewCols": [
+    "address",
+    "natureOfCompany",
+    "natureOfCompanyOther",
+    "dateOfFormation",
+    "formedLessThenTwoYears",
+    "patriotActCertification",
+    "businessOrIndustryType",
+    "naics",
+    "dans",
+    "wwid",
+    "govIdType",
+    "govIssuedIdNumber",
+    "govIdIssuingCountry",
+    "regulator",
+    "regulatorOther",
+    "exchange",
+    "exchangeOther",
+    "stockSymbol"
+  ],
+  "required": [
+    "address1",
+    "address2",
+    "address3",
+    "city",
+    "region",
+    "zipCode",
+    "country",
+    "natureOfCompany",
+    "natureOfCompanyOther",
+    "dateOfFormation",
+    "formedLessThenTwoYears",
+    "patriotActCertification",
+    "businessOrIndustryType",
+    "naics",
+    "dans",
+    "wwid",
+    "govIdType",
+    "govIssuedIdNumber",
+    "govIdIssuingCountry",
+    "regulator"
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "id": "tradle.CustomerOwnership",
+  "title": "Customer Ownership",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "ownershipStructure": {
+      "type": "tradle.OwnershipStructure",
+      "title": "Ownership Structure"
+    },
+    "ownershipStructureOther": {
+      "type": "tradle.OwnershipStructureOther",
+      "title": "Ownership Structure"
+    },
+    "bearerShareEntity": {
+      "type": "string",
+      "title": "Bearer-share Entity"
+    },
+    "ownerName": {
+      "type": "string"
+    },
+    "ownerCountry": {
+      "type": "tradle.Country"
+    },
+    "ownerRegulator": {
+      "type": "string"
+    },
+    "ownerRegulatorOther": {
+      "type": "string"
+    },
+    "ownerExchange": {
+      "type": "string"
+    },
+    "ownerExchangeOther": {
+      "type": "string"
+    },
+    "ownerStockSymbol": {
+      "type": "string",
+      "title": "Owner Stock Symbol/Ticker"
+    },
+    "pacOwnership": {
+      "title": "PAC Ownership",
+      "type": "string"
+    },
+    "cipExemptStatus": {
+      "type": "tradle.ExemptStatus"
+    },
+    "cipExemptReason": {
+      "type": "string"
+    },
+    "internetGambling": {
+      "type": "string"
+    }
+  },
+  "viewCols": [
+    "ownershipStructure",
+    "ownershipStructureOther",
+    "bearerShareEntity",
+    "ownerName",
+    "ownerCountry",
+    "ownerRegulator",
+    "ownerRegulatorOther",
+    "ownerExchange",
+    "ownerExchangeOther",
+    "ownerStockSymbol",
+    "pacOwnership",
+    "cipExemptStatus",
+    "cipExemptReason",
+    "internetGambling"
+  ],
+  "required": [
+    "ownershipStructure",
+    "ownershipStructureOther",
+    "bearerShareEntity",
+    "ownerName",
+    "ownerCountry"
+  ]
+}

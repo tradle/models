@@ -1,0 +1,52 @@
+{
+  "id": "tradle.InternalInfo",
+  "title": "Internal Info",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "CIF": {
+      "title": "CIF",
+      "type": "string"
+    },
+    "trueCustomer": {
+      "type": "boolean"
+    },
+    "customerOfWhatBranch": {
+      "type": "string"
+    },
+    "customerType": {
+      "type": "string",
+      "title": "Customer type #"
+    }
+  },
+  "viewCols": [
+    "internalId",
+    "trueCustomer",
+    "customerOfWhatBranch",
+    "customerTypeId"
+  ],
+  "required": [
+    "internalId",
+    "trueCustomer",
+    "customerOfWhatBranch",
+    "customerTypeId"
+  ]
+}
+
