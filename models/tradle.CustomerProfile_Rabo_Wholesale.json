@@ -76,7 +76,7 @@
       "title": "Was the customer formed within the last 2 years"
     },
     "patriotActCertification": {
-      "type": "string",
+      "type": "date",
       "title": "PATRIOT Act Certification"
     },
     "businessOrIndustryType": {
@@ -104,7 +104,8 @@
       "title": "Gov. Issued ID Number"
     },
     "govIdIssuingCountry": {
-      "type": "tradle.Country",
+      "type": "object",
+      "ref": "tradle.Country",
       "title": "Gov. ID Issuing Country"
     },
     "regulator": {

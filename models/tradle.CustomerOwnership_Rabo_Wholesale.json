@@ -22,11 +22,13 @@
       "ref": "tradle.Identity"
     },
     "ownershipStructure": {
-      "type": "tradle.OwnershipStructure",
+      "type": "object",
+      "ref": "tradle.OwnershipStructure",
       "title": "Ownership Structure"
     },
     "ownershipStructureOther": {
-      "type": "tradle.OwnershipStructureOther",
+      "type": "object",
+      "ref": "tradle.OwnershipStructureOther",
       "title": "Ownership Structure"
     },
     "bearerShareEntity": {
@@ -37,7 +39,8 @@
       "type": "string"
     },
     "ownerCountry": {
-      "type": "tradle.Country"
+      "type": "object",
+      "ref": "tradle.Country"
     },
     "ownerRegulator": {
       "type": "string"
@@ -60,7 +63,8 @@
       "type": "string"
     },
     "cipExemptStatus": {
-      "type": "tradle.ExemptStatus"
+      "type": "object",
+      "ref": "tradle.ExemptStatus"
     },
     "cipExemptReason": {
       "type": "string"
