@@ -589,8 +589,99 @@ var resources = [
 {
   _t: 'tradle.ContractType',
   contractType: 'self-employed'
+},
+{
+  _t: 'tradle.OwnershipStructure',
+  ownershipStructure: 'Sole Proprietorship'
+},
+{
+  _t: 'tradle.OwnershipStructure',
+  ownershipStructure: 'Partnership'
+},
+{
+  _t: 'tradle.OwnershipStructure',
+  ownershipStructure: 'Limited Partnership'
+},
+{
+  _t: 'tradle.OwnershipStructure',
+  ownershipStructure: 'Limited Liability Company (LLC)'
+},
+{
+  _t: 'tradle.OwnershipStructure',
+  ownershipStructure: 'Corporation (for-profit)'
+},
+{
+  _t: 'tradle.OwnershipStructure',
+  ownershipStructure: 'Nonprofit Corporation'
+},
+{
+  _t: 'tradle.OwnershipStructure',
+  ownershipStructure: 'Cooperative'
+},
+{
+  _t: 'tradle.ExemptStatus',
+  exemptStatus: 'Exempt'
+},
+{
+  _t: 'tradle.ExemptStatus',
+  exemptStatus: 'Non-Exempt'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'Corporation'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'Foreign Financial Institution'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'Fund'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'Government'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'Investment Advisor'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'NGO Charity'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'Partnership'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'Sole Proprietorship or Individual'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'Special Purpose Vehicle'
+},
+{
+  _t: 'tradle.FormationType',
+  formationType: 'Trust'
+},
+{
+  _t: 'tradle.AddressType',
+  addressType: 'Physical'
+},
+{
+  _t: 'tradle.GovernmentIdType',
+  governmentIdType: 'U.S. Employee Identification Number'
+},
+{
+  _t: 'tradle.Regulator',
+  regulator: 'U.S. Securities and Exchange Commission'
+},
+{
+  _t: 'tradle.Exchange',
+  exchange: 'U.S. NYSE'
 }
-
 ];
 
 var myId;

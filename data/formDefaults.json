@@ -1,5 +1,109 @@
 {
- "tradle.PersonalInfo": {
+  "tradle.CustomerInfo": {
+    "_t": "tradle.CustomerInfo",
+    "customerName": "Tradle Inc",
+    "customerOf": "US branch",
+    "secondaryName": null,
+    "middle": null,
+    "suffix": null,
+    "formType": {
+      "id": "tradle.FormationType_302c5997af0e0ed72ff907ea4aa6a546c8616141",
+      "title": "Corporation"
+    }
+  },
+  "tradle.CustomerProfile": {
+    "_t": "tradle.CustomerProfile",
+    "addressType": {
+      "id": "tradle.AddressType_0f643323a50e6264ed05bead4dde9d63b5fd59bc",
+      "title": "Physical"
+    },
+    "message": "",
+    "address1": "22 Broadway",
+    "city": "NY",
+    "region": "NY",
+    "zipCode": "10001",
+    "country": {
+      "id": "tradle.Country_b424fcc35801022868a5285956805e8e9e0bb31a",
+      "title": "US"
+    },
+    "natureOfCompany": "FinTech",
+    "dateOfFormation": "2014-06-09T18:37:38.000Z",
+    "formedLessThenTwoYears": {
+      "id": "tradle.Boolean_1f5dba0cfec9363a65ced36883e4bcfb1d9930d7",
+      "title": "No"
+    },
+    "patriotActCertification": "2014-06-09T18:37:46.000Z",
+    "businessOrIndustryType": "FinTech",
+    "naics": "NAICS",
+    "duns": 123654789,
+    "wwid": "WWID",
+    "govIdType": {
+      "id": "tradle.IDCardType_8d590490b65632efde2728f9c8200af93889d686",
+      "title": "Passport"
+    },
+    "govIssuedIdNumber": "0987775555",
+    "govIdIssuingCountry": {
+      "id": "tradle.Country_b424fcc35801022868a5285956805e8e9e0bb31a",
+      "title": "US"
+    },
+    "regulator": {
+      "id": "tradle.Regulator_6d87d852dc38879a2931ea1770e266c1ddb72179",
+      "title": "U.S. Securities and Exchange Commission"
+    },
+    "exchange": {
+      "id": "tradle.Exchange_5aecf70b60518bbb0a5a403eb955590c3bd3fd86",
+      "title": "U.S. NYSE"
+    }
+  },
+  "tradle.CustomerOwnership": {
+    "ownershipStructure": {
+      "id": "tradle.OwnershipStructure_83c7ca422067c7e87763b0ede033af68ec643058",
+      "title": "Corporation (for-profit)"
+    },
+    "ownershipStructureOther": null,
+    "bearerShareEntity": null,
+    "ownerName": "Tradle Inc",
+    "ownerCountry": {
+      "id": "tradle.Country_b424fcc35801022868a5285956805e8e9e0bb31a",
+      "title": "US"
+    },
+    "ownerRegulator": null,
+    "ownerRegulatorOther": null,
+    "ownerExchange": null,
+    "ownerExchangeOther": null,
+    "ownerStockSymbol": null,
+    "pacOwnership": null,
+    "cipExemptStatus": {
+      "id": "tradle.ExemptStatus_a9d0648a756426f145630b46509c6125b02fe7f5",
+      "title": "Non-Exempt"
+    },
+    "cipExemptReason": null,
+    "internetGambling": null,
+    "_t": "tradle.CustomerOwnership"
+  },
+
+  "tradle.CustomerEntity": {
+    "_t": "tradle.CustomerEntity",
+    "entityRole": "COO",
+    "entityType": "Person",
+    "lastName": "Jack",
+    "firstName": "Lindt",
+    "dateOfBirth": "1986-06-10T17:08:40.000Z",
+    "citizenshipCountry": {
+      "id": "tradle.Country_b424fcc35801022868a5285956805e8e9e0bb31a",
+      "title": "US"
+    },
+    "message": "",
+    "residenceCountry": {
+      "id": "tradle.Country_b424fcc35801022868a5285956805e8e9e0bb31a",
+      "title": "US"
+    },
+    "ownershipNature": "F",
+    "ownershipPercentage": 2,
+    "email": "a@a.com",
+    "phone": 2123335555
+  },
+  "tradle.PersonalInfo": {
     "_t": "tradle.PersonalInfo",
     "firstName": "Eunice",
     "lastName": "van der Linden",
