@@ -38,7 +38,8 @@
       "type": "string"
     },
     "formType": {
-      "type": "tradle.FormationType",
+      "type": "object",
+      "ref": "tradle.FormationType",
       "title": "Formation type",
       "description": "e.g. Corporation, LLC, etc"
     }
@@ -48,10 +49,12 @@
     "customerOf",
     "secondaryName",
     "middle",
-    "suffix"
+    "suffix",
+    "formType"
   ],
   "required": [
     "customerName",
-    "customerOf"
+    "customerOf",
+    "formType"
   ]
 }

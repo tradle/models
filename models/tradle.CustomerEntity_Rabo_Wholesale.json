@@ -1,6 +1,6 @@
 {
-  "id": "tradle.CustomerProduct",
-  "title": "Customer Product",
+  "id": "tradle.CustomerEntity",
+  "title": "Customer Entity",
   "interfaces": [
     "tradle.Message"
   ],
@@ -51,11 +51,12 @@
       "type": "date"
     },
     "citizenshipCountry": {
-      "type": "string",
+      "type": "object",
       "ref": "tradle.Country"
     },
     "residenceCountry": {
-      "string": "tradle.Country"
+      "type": "object",
+      "ref": "tradle.Country"
     },
     "ownershipNature": {
       "type": "string"

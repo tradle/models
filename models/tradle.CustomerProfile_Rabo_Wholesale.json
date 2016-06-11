@@ -21,6 +21,10 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
+    "addressType": {
+      "type": "object",
+      "ref": "tradle.AddressType"
+    },
     "address1": {
       "type": "string"
     },
@@ -87,16 +91,19 @@
       "type": "string",
       "title": "NAICS"
     },
-    "dans": {
-      "type": "string",
-      "title": "DANS"
+    "duns": {
+      "type": "number",
+      "title": "DUNS",
+      "keyboardType": "numbers-and-punctuation",
+      "maxLength": 9
     },
     "wwid": {
       "type": "string",
       "title": "WWID"
     },
     "govIdType": {
-      "type": "string",
+      "type": "object",
+      "ref": "tradle.GovernmentIdType",
       "title": "Gov. ID Type"
     },
     "govIssuedIdNumber": {
@@ -109,13 +116,15 @@
       "title": "Gov. ID Issuing Country"
     },
     "regulator": {
-      "type": "string"
+      "type": "object",
+      "ref": "tradle.Regulator"
     },
     "regulatorOther": {
       "type": "string"
     },
     "exchange": {
-      "type": "string"
+      "type": "object",
+      "ref": "tradle.Exchange"
     },
     "exchangeOther": {
       "type": "string"
@@ -126,6 +135,7 @@
     }
   },
   "viewCols": [
+    "addressType",
     "address",
     "natureOfCompany",
     "natureOfCompanyOther",
@@ -134,7 +144,7 @@
     "patriotActCertification",
     "businessOrIndustryType",
     "naics",
-    "dans",
+    "duns",
     "wwid",
     "govIdType",
     "govIssuedIdNumber",
@@ -146,21 +156,19 @@
     "stockSymbol"
   ],
   "required": [
+    "addressType",
     "address1",
-    "address2",
-    "address3",
     "city",
     "region",
     "zipCode",
     "country",
     "natureOfCompany",
-    "natureOfCompanyOther",
     "dateOfFormation",
     "formedLessThenTwoYears",
     "patriotActCertification",
     "businessOrIndustryType",
     "naics",
-    "dans",
+    "duns",
     "wwid",
     "govIdType",
     "govIssuedIdNumber",
