@@ -70,6 +70,14 @@
       "type": "object",
       "ref": "tradle.Organization"
     },
+    "bot": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "isEmployee": {
+      "type": "boolean",
+      "readOnly": true
+    },
     "verifiedByMe": {
       "type": "array",
       "allowRoles": "me",
