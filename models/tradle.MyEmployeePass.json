@@ -21,14 +21,19 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
+    "entityRole": {
+      "type": "string"
+    },
     "employeeID": {
       "type": "string"
     }
   },
   "required": [
+    "entityRole",
     "employeeID"
   ],
   "viewCols": [
+    "entityRole",
     "employeeID"
   ]
 }
