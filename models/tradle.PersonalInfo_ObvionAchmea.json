@@ -47,7 +47,8 @@
       "type": "string"
     },
     "houseNumber": {
-      "type": "number"
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9.-]*$"
     },
     "city": {
       "type": "string"
@@ -104,7 +105,7 @@
             ],
             "readOnly": true,
             "skipLabel": true
-         }
+          }
         }
       },
       "required": [
