@@ -1,5 +1,5 @@
 {
-  "id": "tradle.MyMortgage",
+  "id": "tradle.MyMortgageProduct",
   "title": "My Mortgage",
   "interfaces": [
     "tradle.Message"
@@ -37,7 +37,8 @@
       "type": "object",
       "ref": "tradle.Money"
     },
-    "mortgageNumber": {
+    "myProductId": {
+      "title": "Mortgage number",
       "type": "string"
     },
     "duration": {
@@ -50,7 +51,7 @@
     "startMortgageDate",
     "totalAmount",
     "commercialProduct",
-    "mortgageNumber",
+    "myProductId",
     "duration"
   ],
   "viewCols": [
@@ -58,7 +59,7 @@
     "startMortgageDate",
     "totalAmount",
     "commercialProduct",
-    "mortgageNumber",
+    "myProductId",
     "duration"
   ]
 }

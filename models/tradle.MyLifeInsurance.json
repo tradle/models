@@ -21,7 +21,8 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
-    "policyNumber": {
+    "myProductId": {
+      "title": "Policy number",
       "type": "string"
     },
     "policyHolder": {
@@ -45,7 +46,7 @@
     }
   },
   "required": [
-    "policyNumber",
+    "myProductId",
     "policyHolder",
     "typeOfCoverage",
     "insuredAmount",
@@ -53,7 +54,7 @@
     "endDate"
   ],
   "viewCols": [
-    "policyNumber",
+    "myProductId",
     "policyHolder",
     "typeOfCoverage",
     "insuredAmount",

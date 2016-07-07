@@ -1,5 +1,5 @@
 {
-  "id": "tradle.MyEmployeePass",
+  "id": "tradle.MyEmployeeOnboarding",
   "title": "My Employee Pass",
   "interfaces": [
     "tradle.Message"
@@ -24,7 +24,8 @@
     "entityRole": {
       "type": "string"
     },
-    "employeeID": {
+    "myProductId": {
+      "title": "Employee ID",
       "type": "string"
     },
     "firstName": {
@@ -36,10 +37,10 @@
   },
   "required": [
     "entityRole",
-    "employeeID"
+    "myProductId"
   ],
   "viewCols": [
     "entityRole",
-    "employeeID"
+    "myProductId"
   ]
 }
