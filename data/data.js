@@ -681,6 +681,18 @@ var resources = [
 {
   _t: 'tradle.Exchange',
   exchange: 'U.S. NYSE'
+},
+{
+  _t: 'tradle.AuthenticationMethod',
+  authenticationMethod: "Touch ID"
+},
+{
+  _t: 'tradle.AuthenticationMethod',
+  authenticationMethod: "Gesture Password"
+},
+{
+  _t: 'tradle.AuthenticationMethod',
+  authenticationMethod: "Both"
 }
 ];
 
