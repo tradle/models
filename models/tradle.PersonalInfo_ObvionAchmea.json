@@ -40,6 +40,10 @@
     "dateOfBirth": {
        "type": "date"
     },
+    "address_group": {
+      "type": "string",
+      "title": "Address"
+    },
     "placeOfBirth": {
        "type": "string"
     },
@@ -189,6 +193,7 @@
   ],
   "viewCols": [
     "name",
+    "address_group",
     "address",
     "dateOfBirth",
     "placeOfBirth",
