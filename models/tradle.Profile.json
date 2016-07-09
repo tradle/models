@@ -49,6 +49,14 @@
     "lastName": {
       "type": "string"
     },
+    "address_group": {
+      "title": "Home Address",
+      "type": "string",
+    },
+    "employment_group": {
+      "title": "Employment",
+      "type": "string",
+    },
     "formatted": {
       "transient": true,
       "type": "string",
@@ -201,7 +209,9 @@
     "organization"
   ],
   "viewCols": [
+    "address_group",
     "formattedAddress",
+    "employment_group",
     "organization",
     "myVerifications",
     "websites",
@@ -210,11 +220,13 @@
   "editCols": [
     "firstName",
     "lastName",
+    "address_group",
     "street",
     "city",
     "region",
     "postalCode",
     "country",
+    "employment_group",
     "organization",
     "language"
   ]
