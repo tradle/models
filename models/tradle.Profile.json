@@ -129,12 +129,15 @@
         "backlink": "from"
       }
     },
-    "authenticationMethod": {
-      "type": "number",
-      "hidden": true
+    "useTouchId": {
+      "type": "boolean"
+    },
+    "useGesturePassword": {
+      "type": "boolean"
     },
     "photos": {
       "type": "array",
+      "_allowPicturesFromLibrary": true,
       "items": {
         "type": "object",
         "properties": {
