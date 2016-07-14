@@ -20,15 +20,6 @@ var resources = [
   }
 },
 {
-  _t: 'tradle.Boolean',
-  boolean: 'Yes'
-},
-{
-  _t: 'tradle.Boolean',
-  boolean: 'No'
-},
-
-{
   _t: 'tradle.PurposeOfTheAccount',
   purpose: 'Benefit Payments'
 },
