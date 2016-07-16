@@ -28,9 +28,9 @@
       "type": "string"
     },
     "name": {
-      "transient": true,
       "type": "string",
-      "displayAs": [
+      "displayAs": "{2} {1}",
+      "group": [
         "lastName",
         "firstName"
       ],
@@ -42,7 +42,37 @@
     },
     "address_group": {
       "type": "string",
-      "title": "Address"
+      "title": "Address",
+      "list": [
+        "street",
+        "houseNumber",
+        "city",
+        "country",
+        "postalCode",
+        "region"
+      ]
+    },
+    "name_group": {
+      "type": "string",
+      "title": "Personal detail",
+      "list": [
+        "firstName",
+        "lastName",
+        "emailAddress",
+        "dateOfBirth",
+        "placeOfBirth",
+        "maritalStatus",
+        "education",
+        "nationality"
+      ]
+    },
+    "id_group": {
+      "type": "string",
+      "title": "Primary ID",
+      "list": [
+        "idCardType",
+        "idCardNumber"
+      ]
     },
     "placeOfBirth": {
        "type": "string"
@@ -68,14 +98,12 @@
       "ref": "tradle.Country"
     },
     "address": {
-      "transient": true,
       "type": "string",
-      "displayAs": [
-        "street",
+      "displayAs": "{1} {2}, {3}, {4} {5}",
+      "group": [
         "houseNumber",
-        ",",
+        "street",
         "city",
-        ",",
         "region",
         "postalCode"
       ],
@@ -171,6 +199,13 @@
       ]
     }
   },
+  "editCols": [
+    "name_group",
+    "address_group",
+    "id_group",
+    "phones",
+    "photos"
+  ],
   "required": [
     "firstName",
     "lastName",
@@ -192,6 +227,7 @@
     "photos"
   ],
   "viewCols": [
+    "name_group",
     "name",
     "address_group",
     "address",

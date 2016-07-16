@@ -44,13 +44,11 @@
       "type": "string"
     },
     "formattedAddress": {
-      "transient": true,
       "type": "string",
-      "displayAs": [
+      "displayAs": "{1} {2}, {3}, {4}",
+      "group": [
         "street",
-        ",",
         "city",
-        ",",
         "region",
         "postalCode"
       ],

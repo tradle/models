@@ -40,16 +40,13 @@
       "ref": "tradle.Country"
     },
     "formattedAddress": {
-      "transient": true,
       "type": "string",
-      "displayAs": [
+      "displayAs": "{1}, {2}, {3} {4}, {5}",
+      "group": [
         "propertyStreetAddress",
-        ",",
         "city",
-        ",",
         "region",
         "postalCode",
-        ",  ",
         "country"
       ],
       "title": "Property Address",

@@ -30,13 +30,11 @@
       "type": "string"
     },
     "formattedAddress": {
-      "transient": true,
       "type": "string",
-      "displayAs": [
+      "displayAs": "{1} {2}, {3}, {4}",
+      "group": [
         "street",
-        ",",
         "city",
-        ",",
         "region",
         "postalCode"
       ],
@@ -58,11 +56,11 @@
       "type": "string"
     },
     "formatted": {
-      "transient": true,
       "type": "string",
-      "displayAs": [
-        "firstName",
-        "lastName"
+      "displayAs": "{2} {1}",
+      "group": [
+        "lastName",
+        "firstName"
       ],
       "readOnly": true,
       "displayName": true
@@ -163,12 +161,10 @@
       "style": {
         "color": "#999999",
         "fontSize": 14
-      },
-      "transient": true
+      }
     },
     "lastMessageTime": {
-      "type": "date",
-      "transient": true
+      "type": "date"
     },
     "websites": {
       "type": "array",

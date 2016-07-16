@@ -41,14 +41,12 @@
       "ref": "tradle.Country"
     },
     "formattedAddress": {
-      "transient": true,
       "type": "string",
-      "displayAs": [
-        "street",
+      "displayAs": "{1} {2}, {3}, {4} {5}",
+      "group": [
         "houseNumber",
-        ",",
+        "street",
         "city",
-        ",",
         "region",
         "postalCode"
       ],

@@ -49,18 +49,15 @@
       "ref": "tradle.Country"
     },
     "address": {
-      "transient": true,
       "type": "string",
-      "displayAs": [
+      "displayAs": "{1} {2} {3}, {4}, {5} {6}, {7}",
+      "group": [
         "address1",
         "address2",
         "address3",
-        ",",
         "city",
-        ",",
         "region",
         "zipCode",
-        ",",
         "country"
       ],
       "title": "CIP Address",

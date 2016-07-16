@@ -34,13 +34,11 @@
       "type": "string"
     },
     "formattedAddress": {
-      "transient": true,
       "type": "string",
-      "displayAs": [
+      "displayAs": "{1}, {2}, {3}, {4}",
+      "group": [
         "street",
-        ",",
         "city",
-        ",",
         "region",
         "postalCode"
       ],
@@ -60,12 +58,10 @@
       "style": {
         "color": "#999999",
         "fontSize": 14
-      },
-      "transient": true
+      }
     },
     "lastMessageTime": {
-      "type": "date",
-      "transient": true
+      "type": "date"
     },
     "photos": {
       "type": "array",
