@@ -126,6 +126,7 @@
           },
           "number": {
             "type": "string",
+            "range": "phone",
             "keyboard": "phone-pad"
           },
           "myPhones": {
@@ -151,7 +152,8 @@
     "emailAddress": {
       "type": "string",
       "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
-      "keyboard": "email-address"
+      "keyboard": "email-address",
+      "range": "email"
     },
     "idCardType": {
       "type": "object",
