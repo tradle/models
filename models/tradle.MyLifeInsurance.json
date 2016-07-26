@@ -1,10 +1,10 @@
 {
-  "id": "tradle.PersonalInfo",
-  "title": "Personal Info",
+  "id": "tradle.MyLifeInsurance",
+  "title": "My Life Insurance",
   "interfaces": [
     "tradle.Message"
   ],
-  "subClassOf": "tradle.Form",
+  "subClassOf": "tradle.MyProduct",
   "type": "tradle.Model",
   "properties": {
     "_t": {
@@ -21,218 +21,44 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
-    "firstName": {
+    "myProductId": {
+      "title": "Policy number",
       "type": "string"
     },
-    "lastName": {
-      "type": "string"
-    },
-    "name": {
-      "type": "string",
-      "displayAs": "{2} {1}",
-      "group": [
-        "lastName",
-        "firstName"
-      ],
-      "readOnly": true,
-      "displayName": true
-    },
-    "dateOfBirth": {
-       "type": "date"
-    },
-    "address_group": {
-      "type": "string",
-      "title": "Address",
-      "list": [
-        "street",
-        "houseNumber",
-        "city",
-        "country",
-        "postalCode",
-        "region"
-      ]
-    },
-    "name_group": {
-      "type": "string",
-      "title": "Personal",
-      "list": [
-        "firstName",
-        "lastName",
-        "dateOfBirth",
-        "placeOfBirth"
-      ]
-    },
-    "placeOfBirth": {
-       "type": "string"
-    },
-    "street": {
-      "type": "string"
-    },
-    "houseNumber": {
-      "type": "string",
-      "pattern": "^[a-zA-Z0-9.-]*$"
-    },
-    "city": {
-      "type": "string"
-    },
-    "region": {
-      "type": "string"
-    },
-    "postalCode": {
-      "type": "string"
-    },
-    "country": {
+    "policyHolder": {
       "type": "object",
-      "ref": "tradle.Country"
+      "ref": "tradle.Identity"
     },
-    "address": {
-      "type": "string",
-      "displayAs": "{1} {2}, {3}, {4} {5}",
-      "group": [
-        "houseNumber",
-        "street",
-        "city",
-        "region",
-        "postalCode"
-      ],
-      "title": "Address",
-      "readOnly": true
-    },
-    "nationality": {
+    "typeOfCoverage": {
       "type": "object",
-      "ref": "tradle.Nationality"
+      "ref": "tradle.TypeOfCoverage"
     },
-    "phones": {
-      "type": "array",
-      "icon": "ios-call-outline",
-      "items": {
-        "type": "object",
-        "properties": {
-          "phoneType": {
-            "type": "object",
-            "ref": "tradle.PhoneTypes"
-          },
-          "number": {
-            "type": "string",
-            "keyboard": "phone-pad"
-          },
-          "myPhones": {
-            "type": "string",
-            "group": [
-              "phoneType",
-              "number"
-            ],
-            "displayAs": "{1} : {2}",
-            "readOnly": true,
-            "skipLabel": true
-          }
-        }
-      },
-      "required": [
-        "phoneType",
-        "number"
-      ],
-      "viewCols": [
-        "myPhones"
-      ]
-    },
-    "emailAddress": {
-      "type": "string",
-      "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
-      "keyboard": "email-address"
-    },
-    "idCardType": {
+    "insuredAmount": {
       "type": "object",
-      "title": "ID Card Type",
-      "ref": "tradle.IDCardType"
+      "ref": "tradle.Money",
+      "description": "Insured amount at date insurance starts"
     },
-    "idCardNumber": {
-      "type": "string"
+    "startDate": {
+      "type": "date"
     },
-    "maritalStatus": {
-      "type": "object",
-      "ref": "tradle.MaritalStatus"
-    },
-    "education": {
-      "type": "object",
-      "ref": "tradle.EducationNL"
-    },
-    "photos": {
-      "type": "array",
-      "title": "Photo ID snapshots",
-      "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "skipLabel": true
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          },
-          "width": {
-            "type": "number",
-            "readOnly": true
-          },
-          "height": {
-            "type": "number",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "title",
-        "url"
-      ]
+    "endDate": {
+      "type": "date"
     }
   },
-  "editCols": [
-    "name_group",
-    "address_group",
-    "emailAddress",
-    "idCardType",
-    "idCardNumber",
-    "maritalStatus",
-    "education",
-    "nationality",
-    "phones",
-    "photos"
-  ],
   "required": [
-    "firstName",
-    "lastName",
-    "dateOfBirth",
-    "placeOfBirth",
-    "street",
-    "houseNumber",
-    "city",
-    "country",
-    "postalCode",
-    "region",
-    "emailAddress",
-    "idCardType",
-    "idCardNumber",
-    "maritalStatus",
-    "education",
-    "nationality",
-    "phones",
-    "photos"
+    "myProductId",
+    "policyHolder",
+    "typeOfCoverage",
+    "insuredAmount",
+    "startDate",
+    "endDate"
   ],
   "viewCols": [
-    "name_group",
-    "name",
-    "address_group",
-    "address",
-    "dateOfBirth",
-    "placeOfBirth",
-    "idCardType",
-    "idCardNumber",
-    "nationality",
-    "maritalStatus",
-    "education",
-    "emailAddress",
-    "phones",
-    "photos"
+    "myProductId",
+    "policyHolder",
+    "typeOfCoverage",
+    "insuredAmount",
+    "startDate",
+    "endDate"
   ]
 }
