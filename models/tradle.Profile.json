@@ -31,12 +31,13 @@
     },
     "formattedAddress": {
       "type": "string",
-      "displayAs": "{1}, {2}, {3} {4}",
+      "displayAs": "{1}, {2}, {3} {4}, {5}",
       "group": [
         "street",
         "city",
         "region",
-        "postalCode"
+        "postalCode",
+        "country"
       ],
       "title": "Address",
       "readOnly": true
@@ -185,22 +186,6 @@
   "required": [
     "firstName"
   ],
-  "groups": {
-    "name": [
-      "firstName",
-      "middleName",
-      "lastName",
-      "formatted"
-    ],
-    "location": [
-      "city",
-      "country",
-      "street",
-      "region",
-      "postalCode",
-      "formattedAddress"
-    ]
-  },
   "gridCols": [
     "formatted",
     "lastMessage",
