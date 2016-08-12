@@ -1,0 +1,22 @@
+{
+  "id": "tradle.PairingRequest",
+  "title": "Pairing Request",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "identity": {
+      "type": "object",
+      "ref": "tradle.identity"
+    },
+    "auth": {
+      "type": "string"
+    },
+  },
+  "required": [
+    "identity",
+    "auth"
+  ]
+}

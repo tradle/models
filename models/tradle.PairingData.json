@@ -1,0 +1,29 @@
+{
+  "id": "tradle.PairingData",
+  "title": "Pairing Data",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "identity": {
+      "type": "object",
+      "ref": "tradle.identity"
+    },
+    "nonce": {
+      "type": "string"
+    },
+    "rendezvous": {
+      "type": "object",
+      "url": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "identity",
+    "nonce",
+    "rendezvous"
+  ]
+}

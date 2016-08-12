@@ -1,0 +1,23 @@
+{
+  "id": "tradle.PairingResponse",
+  "title": "Pairing Response",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "identity": {
+      "type": "object",
+      "ref": "tradle.identity"
+    },
+    "previousIdentity": {
+      "type": "object",
+      "ref": "tradle.identity"
+    },
+  },
+  "required": [
+    "identity",
+    "previousIdentity"
+  ]
+}
