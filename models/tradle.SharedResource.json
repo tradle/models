@@ -1,0 +1,51 @@
+{
+  "id": "tradle.SharedResource",
+  "type": "tradle.Model",
+  "title": "Shared Resource",
+  "autoCreate": true,
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "displayName": true,
+      "readOnly": true
+    },
+    "message": {
+      "type": "string",
+      "displayName": true
+    },
+    "resource": {
+      "type": "object",
+      "ref": "tradle.Form",
+      "readOnly": true
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true
+    },
+  },
+  "required": [
+    "to",
+    "message",
+    "form",
+    "product"
+  ],
+  "viewCols": [
+    "message",
+    "form",
+    "product",
+    "time"
+  ]
+}
