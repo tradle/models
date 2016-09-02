@@ -757,23 +757,23 @@ var resources = [
 },
 
 {
-  _t: 'tradle.E_ResidencyMotivation',
+  _t: 'tradle.EResidencyMotivation',
   eResidencyMotivation: 'Location independant international business'
 },
 {
-  _t: 'tradle.E_ResidencyMotivation',
+  _t: 'tradle.EResidencyMotivation',
   eResidencyMotivation: 'Bringing business to Estonia'
 },
 {
-  _t: 'tradle.E_ResidencyMotivation',
+  _t: 'tradle.EResidencyMotivation',
   eResidencyMotivation: 'Using the technology of secure authentication'
 },
 {
-  _t: 'tradle.E_ResidencyMotivation',
+  _t: 'tradle.EResidencyMotivation',
   eResidencyMotivation: 'Living in or visiting Estonia'
 },
 {
-  _t: 'tradle.E_ResidencyMotivation',
+  _t: 'tradle.EResidencyMotivation',
   eResidencyMotivation: 'Fan of e-Residency'
 }
 ];
