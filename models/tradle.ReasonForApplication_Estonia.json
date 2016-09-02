@@ -1,0 +1,38 @@
+{
+  "id": "tradle.ReasonForApplication",
+  "type": "tradle.Model",
+  "title": "Reason for application",
+  "subClassOf": "tradle.Form",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "style": {
+    "backgroundColor": "#EBE1FA"
+  },
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "mainMotivation": {
+      "type": "object",
+      "ref": "tradle.E_ResidencyMotivation"
+    },
+    "description": {
+      "type": "number",
+      "displayName": true,
+      "description": "Describe your main motivations to become an e-resident"
+    }
+  },
+  "editCols": [
+    "mainMotivation",
+    "description"
+  ],
+  "required": [
+    "mainMotivation"
+  ],
+  "viewCols": [
+    "mainMotivation",
+    "description"
+  ]
+}

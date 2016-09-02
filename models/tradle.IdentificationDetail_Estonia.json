@@ -1,0 +1,107 @@
+{
+  "id": "tradle.IdentificationDetail",
+  "type": "tradle.Model",
+  "title": "Identification Detail",
+  "subClassOf": "tradle.Form",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "style": {
+    "backgroundColor": "#EBE1FA"
+  },
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "typeOfIdentityDocument": {
+      "type": "object",
+      "ref": "tradle.IdentityDocumentType"
+    },
+    "documentNumber": {
+      "type": "number",
+      "displayName": true
+    },
+    "dateOfIssue": {
+      "type": "date"
+    },
+    "dateOfExpiry": {
+      "type": "date",
+      "displayName": true
+    },
+    "issuingAuthority": {
+      "type": "string"
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "displayName": true,
+      "readOnly": true
+    },
+    "issuingCountry": {
+       "type": "object",
+       "ref": "tradle.Country"
+    },
+    "photos": {
+      "type": "array",
+      "title": "Document Snapshots",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "skipLabel": true
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          },
+          "width": {
+            "type": "number",
+            "readOnly": true
+          },
+          "height": {
+            "type": "number",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "title",
+        "url"
+      ]
+    }
+  },
+  "editCols": [
+    "typeOfIdentityDocument",
+    "documentNumber",
+    "issuingAuthority",
+    "dateOfIssue",
+    "dateOfExpiry",
+    "issuingCountry",
+    "photos"
+  ],
+  "required": [
+    "typeOfIdentityDocument",
+    "documentNumber",
+    "issuingAuthority",
+    "dateOfIssue",
+    "dateOfExpiry",
+    "issuingCountry",
+    "photos"
+  ],
+  "viewCols": [
+    "typeOfIdentityDocument",
+    "documentNumber",
+    "issuingAuthority",
+    "dateOfIssue",
+    "dateOfExpiry",
+    "issuingCountry",
+    "photos"
+  ]
+}

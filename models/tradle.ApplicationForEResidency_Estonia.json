@@ -1,0 +1,80 @@
+{
+  "id": "tradle.ApplicationForEResidency",
+  "title": "Application for e-Residency",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "countryOfBirth": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "name": {
+      "type": "string",
+      "displayAs": "{2} {1}",
+      "group": [
+        "lastName",
+        "firstName"
+      ],
+      "readOnly": true,
+      "displayName": true
+    },
+    "citizenship": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "sex": {
+      "type": "object",
+      "ref": "tradle.Sex"
+    }
+  },
+  "editCols": [
+    "firstName",
+    "lastName",
+    "countryOfBirth",
+    "citizenship",
+    "dateOfBirth",
+    "sex"
+  ],
+  "required": [
+    "firstName",
+    "lastName",
+    "countryOfBirth",
+    "citizenship",
+    "dateOfBirth",
+    "sex"
+  ],
+  "viewCols": [
+    "firstName",
+    "lastName",
+    "countryOfBirth",
+    "citizenship",
+    "dateOfBirth",
+    "sex"
+  ]
+}

@@ -447,6 +447,10 @@ var resources = [
 // },
 {
   _t: 'tradle.Country',
+  country: 'Estonia',
+},
+{
+  _t: 'tradle.Country',
   country: 'UK',
 },
 {
@@ -672,6 +676,105 @@ var resources = [
 {
   _t: 'tradle.Exchange',
   exchange: 'U.S. NYSE'
+},
+
+{
+  _t: "tradle.EResidencyApplicationType",
+  eResidencyApplicationType: 'First e-Residency application'
+},
+{
+  _t: "tradle.EResidencyApplicationType",
+  eResidencyApplicationType: 'Expry of documents'
+},
+{
+  _t: "tradle.EResidencyApplicationType",
+  eResidencyApplicationType: 'Data has changed'
+},
+{
+  _t: "tradle.EResidencyApplicationType",
+  eResidencyApplicationType: 'Lost, destroyed, stolen'
+},
+{
+  _t: "tradle.EResidencyApplicationType",
+  eResidencyApplicationType: 'Unusable'
+},
+
+{
+  _t: 'tradle.IdentityDocumentType',
+  documentType: 'National passport (issued by your country of citizenship)'
+},
+{
+  _t: 'tradle.IdentityDocumentType',
+  documentType: 'Other ID document/ID card'
+},
+{
+  _t: 'tradle.IdentityDocumentType',
+  documentType: 'Republic of Estonia ID'
+},
+{
+  _t: 'tradle.IdentityDocumentType',
+  documentType: 'Foreign passport (not issued by your country of citizenship)'
+},
+
+{
+  _t: 'tradle.Location',
+  location: 'Offices in Estonia'
+},
+{
+  _t: 'tradle.Location',
+  location: 'Australia, Canberra'
+},
+{
+  _t: 'tradle.Location',
+  location: 'Austia, Vienna'
+},
+{
+  _t: 'tradle.Location',
+  location: 'China, Beijing'
+},
+{
+  _t: 'tradle.Location',
+  location: 'Canada, Ottava'
+},
+{
+  _t: 'tradle.Location',
+  location: 'France, Paris'
+},
+
+{
+  _t: 'tradle.Location',
+  location: 'Latvia, Riga'
+},
+
+{
+  _t: 'tradle.Location',
+  location: 'UK, London'
+},
+
+{
+  _t: 'tradle.Location',
+  location: 'USA, New York'
+},
+
+{
+  _t: 'tradle.E_ResidencyMotivation',
+  eResidencyMotivation: 'Location independant international business'
+},
+{
+  _t: 'tradle.E_ResidencyMotivation',
+  eResidencyMotivation: 'Bringing business to Estonia'
+},
+{
+  _t: 'tradle.E_ResidencyMotivation',
+  eResidencyMotivation: 'Using the technology of secure authentication'
+},
+{
+  _t: 'tradle.E_ResidencyMotivation',
+  eResidencyMotivation: 'Living in or visiting Estonia'
+},
+{
+  _t: 'tradle.E_ResidencyMotivation',
+  eResidencyMotivation: 'Fan of e-Residency'
 }
 ];
 

@@ -1,0 +1,36 @@
+{
+  "id": "tradle.EResidency",
+  "type": "tradle.Model",
+  "title": "e-Residency",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.FinancialProduct",
+  "forms": [
+    "tradle.EResidencyApplication",
+    "tradle.ContactInformation",
+    "tradle.IdentificationDetail",
+    "tradle.ReasonForApplication"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "productType": {
+      "type": "string",
+      "readOnly": true,
+      "displayName": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    }
+  }
+}
