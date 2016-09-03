@@ -677,7 +677,14 @@ var resources = [
   _t: 'tradle.Exchange',
   exchange: 'U.S. NYSE'
 },
-
+{
+  _t: 'tradle.Sex',
+  sex: 'Male'
+},
+{
+  _t: 'tradle.Sex',
+  sex: 'Female'
+},
 {
   _t: "tradle.EResidencyApplicationType",
   eResidencyApplicationType: 'First e-Residency application'
