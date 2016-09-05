@@ -23,10 +23,14 @@
       "displayName": true
     },
     "dateOfIssue": {
-      "type": "date"
+      "type": "date",
+      "maxDate": "today",
+      "minDate": "10 years before"
     },
     "dateOfExpiry": {
       "type": "date",
+      "maxDate": "10 years after",
+      "minDate": "tomorrow",
       "displayName": true
     },
     "issuingAuthority": {
