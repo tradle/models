@@ -57,6 +57,7 @@
     },
     "phones": {
       "type": "array",
+      "icon": "ios-call-outline",
       "items": {
         "type": "object",
         "properties": {
@@ -84,6 +85,9 @@
       "required": [
         "phoneType",
         "number"
+      ],
+      "viewCols": [
+        "myPhones"
       ]
     },
     "emailAddress": {
