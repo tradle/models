@@ -494,21 +494,21 @@ var resources = [
   phoneType: 'Work',
 },
 
-{
-  _t: 'tradle.Currency',
-  currency: 'USD',
-  symbol: '$'
-},
-{
-  _t: 'tradle.Currency',
-  currency: 'Euro',
-  symbol: '€'
-},
-{
-  _t: 'tradle.Currency',
-  currency: 'GBR',
-  symbol: '£'
-},
+// {
+//   _t: 'tradle.Currency',
+//   currency: 'USD',
+//   symbol: '$'
+// },
+// {
+//   _t: 'tradle.Currency',
+//   currency: 'Euro',
+//   symbol: '€'
+// },
+// {
+//   _t: 'tradle.Currency',
+//   currency: 'GBR',
+//   symbol: '£'
+// },
 {
   _t: 'tradle.CommercialProduct',
   productType: 'Obvion'
