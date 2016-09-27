@@ -1,0 +1,60 @@
+{
+  "id": "tradle.KeyStaff",
+  "type": "tradle.Model",
+  "title": "Key Staff",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+
+    "accountingPeriodFrom": {
+      "type": "date"
+    },
+    "accountingPeriodTo": {
+      "type": "date"
+    },
+    "theseAccountsAre": {
+      "type": "string"
+    },
+    "currency": {
+      "type": "string"
+    },
+    "companyLegalStatus": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "accountingPeriodFrom",
+    "accountingPeriodTo",
+    "theseAccountsAre",
+    "currency",
+    "companyLegalStatus"
+  ],
+  "viewCols": [
+    "accountingPeriodFrom",
+    "accountingPeriodTo",
+    "theseAccountsAre",
+    "currency",
+    "companyLegalStatus"
+  ]
+}
+
+
+
+
+

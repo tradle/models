@@ -12,6 +12,16 @@
     },
     "myProductId": {
       "type": "string"
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
     }
   }
 }

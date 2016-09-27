@@ -1,0 +1,70 @@
+{
+  "id": "tradle.Licences",
+  "type": "tradle.Model",
+  "title": "Licences",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "name": {
+      "type": "string"
+    },
+    "territory": {
+      "type": "string"
+    },
+    "regulator": {
+      "type": "string"
+    },
+    "licenceName": {
+      "type": "string"
+    },
+    "licenceNumber": {
+      "type": "string"
+    },
+    "nameOfLicence": {
+      "type": "string",
+      "title": "Name on Licence"
+    },
+    "expiryDate": {
+      "type": "date"
+    }
+  },
+  "required": [
+    "name",
+    "territory",
+    "regulator",
+    "licenceName",
+    "licenceNumber",
+    "nameOfLicence",
+    "expiryDate"
+  ],
+  "viewCols": [
+    "name",
+    "territory",
+    "regulator",
+    "licenceName",
+    "licenceNumber",
+    "nameOfLicence",
+    "expiryDate"
+  ]
+}
+
+
+
+
+

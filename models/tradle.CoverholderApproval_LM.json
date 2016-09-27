@@ -1,14 +1,18 @@
 {
-  "id": "tradle.LifeInsurance",
+  "id": "tradle.CoverholderApproval",
   "interfaces": [
     "tradle.Message"
   ],
-  "title": "Life Insurance",
+  "title": "Coverholder Approval",
   "type": "tradle.Model",
   "subClassOf": "tradle.FinancialProduct",
   "forms": [
-    "tradle.PersonalInfo",
-    "tradle.ORV"
+    "tradle.ProfessionalIndemnity",
+    "tradle.Licences",
+    "tradle.KeyStaff",
+    "tradle.Financials",
+    "tradle.CompanyOwners",
+    "tradle.IndividualOwners"
   ],
   "properties": {
     "_t": {

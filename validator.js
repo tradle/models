@@ -133,7 +133,7 @@ proto.validateModel = function(m, modelsO) {
               err.push('forms list for "' + m.id + '" contains "' + f +'" that is not subClassOf "tradle.Form"')
           })
         }
-        err.push('the model that is a subClassOf "tradle.FinancialProduct" should also implement "tradle.Message" interface to allow resources of this type show up in chat')
+        err.push(m.id + ' is a subClassOf "tradle.FinancialProduct" should also implement "tradle.Message" interface to allow resources of this type show up in chat')
       }
       else if (m.subClassOf === 'tradle.Form') {
         if (!m.interfaces)

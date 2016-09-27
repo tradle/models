@@ -1,0 +1,58 @@
+{
+  "id": "tradle.IndividualOwners",
+  "type": "tradle.Model",
+  "title": "IndividualOwners",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "nationality": {
+      "type": "tradle.Nationality"
+    },
+    "shareholding": {
+      "type": "number",
+      "units": "%"
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "nationality",
+    "shareholding"
+  ],
+  "viewCols": [
+    "firstName",
+    "lastName",
+    "nationality",
+    "shareholding"
+  ]
+}
+
+
+
+
+

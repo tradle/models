@@ -1,0 +1,54 @@
+{
+  "id": "tradle.Financials",
+  "type": "tradle.Model",
+  "title": "Financials",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "title": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "title",
+    "firstName",
+    "lastName",
+    "role"
+  ],
+  "viewCols": [
+    "title",
+    "firstName",
+    "lastName",
+    "role"
+  ]
+}
+
+
+
+
+
