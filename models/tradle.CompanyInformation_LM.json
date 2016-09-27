@@ -1,0 +1,67 @@
+{
+  "id": "tradle.CompanyInformation",
+  "type": "tradle.Model",
+  "title": "Company Information",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "legalName": {
+      "type": "string"
+    },
+    "tradingName": {
+      "type": "string"
+    },
+    "registeredAddress": {
+      "type": "string"
+    },
+    "tradingAddress":{
+      "type": "string"
+    },
+    "postalAddress": {
+      "type": "string"
+    },
+    "coverHolderContactInformation": {
+      "type": "string"
+    },
+    "webSite": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "legalName",
+    "tradingName",
+    "registeredAddress",
+    "tradingAddress",
+    "postalAddress",
+    "coverHolderContactInformation",
+    "webSite"
+  ],
+  "viewCols": [
+    "legalName",
+    "tradingName",
+    "registeredAddress",
+    "tradingAddress",
+    "postalAddress",
+    "coverHolderContactInformation",
+    "webSite"
+  ]
+}
+
+
+
