@@ -45,15 +45,18 @@
       "type": "tradle.Currency"
     },
     "limitIL": {
-      "type": "tradle.Money",
+      "type": "object",
+      "ref": "tradle.Money",
       "title": "Limit – Individual loss"
     },
     "limitAL": {
-      "type": "tradle.Money",
+      "type": "object",
+      "ref": "tradle.Money",
       "title": "Limit – Aggregate loss"
     },
     "deductible": {
-      "type": "tradle.Money",
+      "type": "object",
+      "ref": "tradle.Money",
       "title": "Deductible – Individual loss"
     },
     "policyCoverActsOfDishonestyByEmployees": {
