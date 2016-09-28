@@ -13,5 +13,5 @@ exports.dict = {
 }
 exports.formDefaults = require('./data/formDefaults.json')
 exports.data = require('./data/data')
-
+exports.currencies = require('./data/currencies')
 exports.Validator = require('./validator')
