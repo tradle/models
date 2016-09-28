@@ -14,4 +14,6 @@ exports.dict = {
 exports.formDefaults = require('./data/formDefaults.json')
 exports.data = require('./data/data')
 exports.currencies = require('./data/tradle.Currency.json')
+exports.nationalities = require('./data/tradle.Nationality.json')
+
 exports.Validator = require('./validator')

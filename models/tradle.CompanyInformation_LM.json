@@ -38,6 +38,19 @@
         "r_region"
       ]
     },
+    "registeredAddress": {
+      "type": "string",
+      "displayAs": "{1}, {2}, {3} {4}, {5}",
+      "group": [
+        "r_street",
+        "r_city",
+        "r_region",
+        "r_postalCode",
+        "r_country"
+      ],
+      "title": "Registered address",
+      "readOnly": true
+    },
 
     "r_street": {
       "type": "string",
@@ -62,7 +75,7 @@
     },
     "tradingAddress_group": {
       "type": "string",
-      "title": "Registered address",
+      "title": "Trading address",
       "list": [
         "t_street",
         "t_city",
@@ -70,6 +83,19 @@
         "t_postalCode",
         "t_region"
       ]
+    },
+    "tradingAddress": {
+      "type": "string",
+      "displayAs": "{1}, {2}, {3} {4}, {5}",
+      "group": [
+        "t_street",
+        "t_city",
+        "t_region",
+        "t_postalCode",
+        "t_country"
+      ],
+      "title": "Trading address",
+      "readOnly": true
     },
 
     "t_street": {
@@ -94,9 +120,6 @@
       "title": "Country"
     },
 
-    "t_postalAddress": {
-      "type": "string"
-    },
     "postalAddress_group": {
       "type": "string",
       "title": "Postal address",
@@ -107,6 +130,19 @@
         "p_postalCode",
         "p_region"
       ]
+    },
+    "postalAddress": {
+      "type": "string",
+      "displayAs": "{1}, {2}, {3} {4}, {5}",
+      "group": [
+        "p_street",
+        "p_city",
+        "p_region",
+        "p_postalCode",
+        "p_country"
+      ],
+      "title": "Postal address",
+      "readOnly": true
     },
 
     "p_street": {
@@ -172,12 +208,12 @@
     "legalName",
     "tradingName",
     "registeredAddress_group",
+    "registeredAddress",
     "tradingAddress_group",
+    "tradingAddress",
     "postalAddress_group",
+    "postalAddress",
     "coverHolderContactInformation",
     "webSite"
   ]
 }
-
-
-
