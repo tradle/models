@@ -332,26 +332,26 @@ var resources = [
   _t: "tradle.TypeOfCoverage",
   typeOfCoverage: "Linearly Decreasing"
 },
-{
-  _t: 'tradle.Nationality',
-  nationality: 'British',
-},
-{
-  _t: 'tradle.Nationality',
-  nationality: 'American',
-},
-{
-  _t: 'tradle.Nationality',
-  nationality: 'French',
-},
-{
-  _t: 'tradle.Nationality',
-  nationality: 'Russian',
-},
-{
-  _t: 'tradle.Nationality',
-  nationality: 'Dutch'
-},
+// {
+//   _t: 'tradle.Nationality',
+//   nationality: 'British',
+// },
+// {
+//   _t: 'tradle.Nationality',
+//   nationality: 'American',
+// },
+// {
+//   _t: 'tradle.Nationality',
+//   nationality: 'French',
+// },
+// {
+//   _t: 'tradle.Nationality',
+//   nationality: 'Russian',
+// },
+// {
+//   _t: 'tradle.Nationality',
+//   nationality: 'Dutch'
+// },
 {
   _t: 'tradle.PropertyType',
   propertyType: 'Freehold'
