@@ -7,14 +7,26 @@
       "type": "string",
       "readOnly": true
     },
-    "currency": {
+    "currencyName": {
+      "type": "string"
+    },
+    "code": {
       "type": "string"
     },
     "symbol": {
       "type": "string"
+    },
+    "currency": {
+      "type": "string",
+      "displayAs": "{1} - {2}",
+      "group": [
+        "code",
+        "currencyName"
+      ]
     }
   },
   "required": [
-    "currency"
+    "currency",
+    "code"
   ]
 }
