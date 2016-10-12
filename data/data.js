@@ -83,21 +83,6 @@ var resources = [
   _t: 'tradle.MaritalStatus',
   status: 'Married',
 },
-/*
-{
-  _t: 'tradle.MaritalStatus',
-  status: 'Widowed',
-},
-{
-  _t: 'tradle.MaritalStatus',
-  status: 'Divorced/Dissolved civil partnership',
-},
-{
-  _t: 'tradle.MaritalStatus',
-  status: 'Separated'
-},
-*/
-
 {
   _t: 'tradle.MaritalStatus',
   status:  "Married with prenuptial agreement"
@@ -332,26 +317,6 @@ var resources = [
   _t: "tradle.TypeOfCoverage",
   typeOfCoverage: "Linearly Decreasing"
 },
-// {
-//   _t: 'tradle.Nationality',
-//   nationality: 'British',
-// },
-// {
-//   _t: 'tradle.Nationality',
-//   nationality: 'American',
-// },
-// {
-//   _t: 'tradle.Nationality',
-//   nationality: 'French',
-// },
-// {
-//   _t: 'tradle.Nationality',
-//   nationality: 'Russian',
-// },
-// {
-//   _t: 'tradle.Nationality',
-//   nationality: 'Dutch'
-// },
 {
   _t: 'tradle.PropertyType',
   propertyType: 'Freehold'
@@ -440,35 +405,6 @@ var resources = [
   language: 'Dutch',
   code: 'nl'
 },
-// {
-//   _t: 'tradle.Language',
-//   language: 'Russian',
-//   code: 'ru'
-// },
-{
-  _t: 'tradle.Country',
-  country: 'Estonia',
-},
-{
-  _t: 'tradle.Country',
-  country: 'UK',
-},
-{
-  _t: 'tradle.Country',
-  country: 'US',
-},
-{
-  _t: 'tradle.Country',
-  country: 'France',
-},
-{
-  _t: 'tradle.Country',
-  country: 'Russia',
-},
-{
-  _t: 'tradle.Country',
-  country: 'Netherlands'
-},
 {
   _t: 'tradle.HowToFund',
   howToFund: 'Cash',
@@ -493,22 +429,6 @@ var resources = [
   _t: 'tradle.PhoneTypes',
   phoneType: 'Work',
 },
-
-// {
-//   _t: 'tradle.Currency',
-//   currency: 'USD',
-//   symbol: '$'
-// },
-// {
-//   _t: 'tradle.Currency',
-//   currency: 'Euro',
-//   symbol: '€'
-// },
-// {
-//   _t: 'tradle.Currency',
-//   currency: 'GBR',
-//   symbol: '£'
-// },
 {
   _t: 'tradle.CommercialProduct',
   productType: 'Obvion'
