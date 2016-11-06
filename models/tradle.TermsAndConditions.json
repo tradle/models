@@ -8,38 +8,49 @@
       "readOnly": true
     },
     "introduction": {
+      "type": "string",
+      "skipLabel": true
+    },
+    "identity": {
       "type": "string"
     },
-    "intellectualPropertyRights": {
+    "sharing": {
       "type": "string"
     },
-    "restrictions": {
-      "type": "array",
-      "title": "Restrictions",
-      "items": {
-        "type": "string",
-        "properties": {
-          "text": {
-            "type": "string",
-            "skipLabel": true
-          }
-        }
-      }
+    "notifications": {
+      "type": "string"
     },
-    "limitationOfLiability": {
+    "digitalSignatures": {
+      "type": "string"
+    },
+    "changes": {
+      "type": "string"
+    },
+    "contactUs": {
+      "type": "string"
+    },
+    "damages": {
       "type": "string"
     }
   },
   "required": [
     "introduction",
-    "intellectualPropertyRights",
-    "restrictions",
-    "limitationOfLiability"
+    "identity",
+    "sharing",
+    "notifications",
+    "digitalSignatures",
+    "changes",
+    "contactUs",
+    "damages"
   ],
   "viewCols": [
     "introduction",
-    "intellectualPropertyRights",
-    "restrictions",
-    "limitationOfLiability"
+    "identity",
+    "sharing",
+    "notifications",
+    "digitalSignatures",
+    "changes",
+    "contactUs",
+    "damages"
   ]
 }
