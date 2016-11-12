@@ -22,7 +22,7 @@
       "ref": "tradle.Identity"
     },
     "dateNotarized": {
-      "type": "string"
+      "type": "date"
     },
     "photos": {
       "type": "array",
@@ -53,16 +53,12 @@
       ]
     }
   },
-  "editCols": [
+  "required": [
     "dateNotarized",
     "photos"
   ],
-  "required": [
-    "date",
-    "photos"
-  ],
   "viewCols": [
-    "date",
+    "dateNotarized",
     "photos"
   ]
 }
