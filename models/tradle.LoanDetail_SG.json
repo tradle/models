@@ -25,12 +25,6 @@
       "type": "object",
       "ref": "tradle.Money"
     },
-    "interestPercentage": {
-      "type": "number",
-      "units": "%",
-      "min": "0",
-      "max": "100"
-    },
     "duration": {
       "type": "number",
       "units": "months"
@@ -38,12 +32,10 @@
   },
   "required": [
     "amount",
-    "interestPercentage",
     "duration"
   ],
   "viewCols": [
     "amount",
-    "interestPercentage",
     "duration"
   ]
 }
