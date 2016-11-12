@@ -1,0 +1,68 @@
+{
+  "id": "tradle.PropertyOwnership",
+  "title": "Property Ownership",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "dateNotarized": {
+      "type": "string"
+    },
+    "photos": {
+      "type": "array",
+      "title": "Photo ID snapshots",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "skipLabel": true
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          },
+          "width": {
+            "type": "number",
+            "readOnly": true
+          },
+          "height": {
+            "type": "number",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "url"
+      ]
+    }
+  },
+  "editCols": [
+    "dateNotarized",
+    "photos"
+  ],
+  "required": [
+    "date",
+    "photos"
+  ],
+  "viewCols": [
+    "date",
+    "photos"
+  ]
+}

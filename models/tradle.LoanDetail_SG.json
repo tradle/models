@@ -1,0 +1,49 @@
+{
+  "id": "tradle.LoanDetail",
+  "title": "Loan Detail",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "amount": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "interestPercentage": {
+      "type": "number",
+      "units": "%",
+      "min": "0",
+      "max": "100"
+    },
+    "duration": {
+      "type": "number",
+      "units": "months"
+    }
+  },
+  "required": [
+    "amount",
+    "interestPercentage",
+    "duration"
+  ],
+  "viewCols": [
+    "amount",
+    "interestPercentage",
+    "duration"
+  ]
+}
