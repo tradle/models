@@ -32,6 +32,35 @@
     },
     "role": {
       "type": "string"
+    },
+    "photos": {
+      "type": "array",
+      "title": "Document snapshots",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "skipLabel": true
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          },
+          "width": {
+            "type": "number",
+            "readOnly": true
+          },
+          "height": {
+            "type": "number",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "title",
+        "url"
+      ]
     }
   },
   "required": [
@@ -41,11 +70,7 @@
     "title",
     "firstName",
     "lastName",
-    "role"
+    "role",
+    "photos"
   ]
 }
-
-
-
-
-

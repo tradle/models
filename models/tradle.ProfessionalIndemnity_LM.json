@@ -79,6 +79,35 @@
     "numberOfPIclaims": {
       "type": "number",
       "title": "Number of PI claims in the last five years"
+    },
+    "photos": {
+      "type": "array",
+      "title": "Document snapshots",
+      "items": {
+        "type": "object",
+        "properties": {
+          "tags": {
+            "type": "string",
+            "skipLabel": true
+          },
+          "url": {
+            "type": "string",
+            "readOnly": true
+          },
+          "width": {
+            "type": "number",
+            "readOnly": true
+          },
+          "height": {
+            "type": "number",
+            "readOnly": true
+          }
+        }
+      },
+      "required": [
+        "title",
+        "url"
+      ]
     }
   },
   "required": [
@@ -101,9 +130,7 @@
     "fidelityInsurancePolicy",
     "additionalLinesOfPIcover",
     "detailsOfAdditionalLinesOfPIcover",
-    "numberOfPIclaims"
+    "numberOfPIclaims",
+    "photos"
   ]
 }
-
-
-
