@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "validate": "./node_modules/.bin/jsonlint-cli models/*.json",
+    "validate": "./node_modules/.bin/jsonlint-cli `git ls-files models/*.json`",
     "merge": "node merge.js ./models ./models.js",
     "postpublish": "git push -u"
   },
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/tradle/models",
   "devDependencies": {
+    "git": "^0.1.5",
     "jsonlint-cli": "^1.0.1",
     "pre-commit": "^1.1.3"
   },
