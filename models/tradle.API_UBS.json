@@ -1,0 +1,22 @@
+{
+  "id": "tradle.API",
+  "type": "tradle.Model",
+  "title": "API",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "provider": {
+      "type": "object",
+      "ref": "tradle.Organization"
+    }
+  },
+  "required": [
+    "name",
+    "provider"
+  ]
+}

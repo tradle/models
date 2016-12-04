@@ -1,0 +1,46 @@
+{
+  "id": "tradle.MyCoverholderApproval",
+  "title": "My Coverholder Approval",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.MyProduct",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "legalName": {
+      "type": "string"
+    },
+    "piInsurerName":{
+      "title": "PI Insurer Name",
+      "type": "string"
+    },
+    "expiryDateOfCover": {
+      "type": "date"
+    },
+    "licenceNumber": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "legalName",
+    "piInsurerName",
+    "expiryDateOfCover",
+    "licenceNumber"
+  ],
+  "viewCols": [
+  ]
+}

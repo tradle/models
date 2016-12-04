@@ -1,0 +1,31 @@
+{
+  "id": "tradle.Photo",
+  "type": "tradle.Model",
+  "title": "Photo",
+  "icon": "ios-call-outline",
+  "properties": {
+    "phoneType": {
+      "type": "object",
+      "ref": "tradle.PhoneTypes"
+    },
+    "number": {
+      "type": "string",
+      "range": "phone",
+      "keyboard": "phone-pad"
+    },
+    "myPhones": {
+      "type": "string",
+      "displayAs": [
+        "phoneType",
+        " : ",
+        "number"
+      ],
+      "readOnly": true,
+      "skipLabel": true
+    }
+  },
+  "required": [
+    "phoneType",
+    "number"
+  ]
+}

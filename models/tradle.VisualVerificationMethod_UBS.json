@@ -1,0 +1,26 @@
+{
+  "id": "tradle.VisualVerificationMethod",
+  "type": "tradle.Model",
+  "title": "Visual Verification Method",
+  "subClassOf": "tradle.Method",
+
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "methodName": {
+      "type": "string",
+      "readOnly": true
+    },
+    "photos": {
+      "type": "object",
+      "ref": "tradle.Photo",
+      "inlined": true
+    }
+  },
+  "required": [
+    "methodName",
+    "photos"
+  ]
+}

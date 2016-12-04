@@ -61,6 +61,19 @@
     "cancel": {
       "type": "boolean",
       "immutable": true
+    },
+    "sources": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "backlink": "document",
+        "ref": "tradle.Verification"
+      }
+    },
+    "method": {
+      "type": "object",
+      "inlined": true,
+      "ref": "tradle.Method"
     }
   },
   "required": [

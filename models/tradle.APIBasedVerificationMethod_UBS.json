@@ -1,0 +1,30 @@
+{
+  "id": "tradle.APIBasedVerificationMethod",
+  "type": "tradle.Model",
+  "title": "API based verification",
+  "subClassOf": "tradle.Method",
+
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "methodName": {
+      "type": "string",
+      "readOnly": true
+    },
+    "api": {
+      "type": "object",
+      "ref": "tradle.API",
+      "inlined": true
+    },
+    "reference": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "methodName",
+    "api",
+    "reference"
+  ]
+}
