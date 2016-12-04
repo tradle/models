@@ -1,0 +1,38 @@
+{
+  "id": "tradle.ApplicationSubmitted",
+  "type": "tradle.Model",
+  "title": "Application Submitted",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "message": {
+      "type": "string"
+    },
+    "application": {
+      "type": "object",
+      "ref": "tradle.ProductApplication"
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "ref": "tradle.Form"
+      }
+    }
+  }
+}

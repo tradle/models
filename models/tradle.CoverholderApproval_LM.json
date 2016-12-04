@@ -3,9 +3,10 @@
   "interfaces": [
     "tradle.Message"
   ],
-  "title": "Coverholder Approval",
+  "title": "Coverholder Application",
   "type": "tradle.Model",
   "subClassOf": "tradle.FinancialProduct",
+  "customerCanHaveMultiple": true,
   "forms": [
     "tradle.CompanyInformation",
     "tradle.ProfessionalIndemnity",
