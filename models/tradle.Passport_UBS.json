@@ -70,8 +70,10 @@
     },
     "photos": {
       "type": "array",
-      "ref": "tradle.Photo",
-      "inlined": true
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Photo"
+      }
     }
   },
   "required": [
