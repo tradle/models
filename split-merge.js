@@ -1,6 +1,8 @@
 
+
 var path = require('path')
 var fs = require('fs')
+var proc = require('child_process')
 var DEFAULT_MODELS_DIR = './models'
 
 module.exports = {
@@ -23,22 +25,22 @@ function merge (modelsDir, outFilePath) {
   }
 
   modelsDir = path.resolve(modelsDir || DEFAULT_MODELS_DIR)
-  var models = fs.readdirSync(modelsDir)
-    .filter(function (fname) {
-      var idx = fname.indexOf('.json')
-      return idx !== -1  &&  idx + 5 === fname.length
-    })
-    .map(fname => `\nrequire('./models/${fname}')`)
-    .join(',')
+  proc.exec(`git ls-files "${modelsDir}/*.json"`, function (err, result) {
+    if (err) return cb(err)
 
-  var contents =
+    var models = result.trim().split('\n')
+      .map(p => `\nrequire('./${p}')`)
+      .join(',')
+
+    var contents =
 `var models = module.exports = [${models}]
 models.forEach(function (m) {
   models[m.id] = m
 })
 `
 
-  fs.writeFile(path.resolve(outFilePath), contents)
+    fs.writeFile(path.resolve(outFilePath), contents)
+  })
 }
 
 function toFilePath (dir, id) {
