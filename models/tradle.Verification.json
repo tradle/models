@@ -72,6 +72,7 @@
     },
     "method": {
       "type": "object",
+      "readOnly": true,
       "inlined": true,
       "ref": "tradle.Method"
     }
@@ -81,6 +82,8 @@
   ],
   "viewCols": [
     "message",
-    "organization"
+    "organization",
+    "method",
+    "sources"
   ]
 }
