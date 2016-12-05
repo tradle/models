@@ -20,6 +20,24 @@
     },
     "reference": {
       "type": "string"
+    },
+    "confidence": {
+      "type": "number",
+      "min": "0",
+      "max": "1"
+    },
+    "aspect": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "authentic": {
+            "type": "boolean"
+          }
+        }
+      }
     }
   },
   "required": [
