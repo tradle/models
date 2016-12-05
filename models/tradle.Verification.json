@@ -49,7 +49,7 @@
       "type": "string",
       "readOnly": true
     },
-    "time": {
+    "dateVerified": {
       "type": "date",
       "skipLabel": true,
       "readOnly": true
@@ -65,6 +65,7 @@
     "sources": {
       "type": "array",
       "readOnly": true,
+      "inlined": true,
       "items": {
         "ref": "tradle.Verification"
       }
@@ -76,21 +77,10 @@
     }
   },
   "required": [
-    "message",
-    "to",
-    "from",
-    "time"
+    "message"
   ],
   "viewCols": [
     "message",
-    "time",
-    "organization"
-  ],
-  "gridCols": [
-    "message",
-    "time",
-    "from",
-    "document",
     "organization"
   ]
 }
