@@ -19,7 +19,14 @@
       "inlined": true
     },
     "reference": {
-      "type": "string"
+      "type": "array",
+      "items": {
+        "properties": {
+          "queryId": {
+            "type": "string"
+          }
+        }
+      }
     },
     "confidence": {
       "type": "number",
