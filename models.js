@@ -163,6 +163,7 @@ require('./models/tradle.UtilityBillVerification.json'),
 require('./models/tradle.Verification.json'),
 require('./models/tradle.VisualVerificationMethod_Wealth.json'),
 require('./models/tradle.WMP.json'),
+require('./models/tradle.WebSite.json'),
 require('./models/tradle.WellDrilling_Estonia.json'),
 require('./models/tradle.YourBalance.json'),
 require('./models/tradle.YourMoney.json')]

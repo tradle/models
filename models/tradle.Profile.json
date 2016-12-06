@@ -136,23 +136,10 @@
     },
     "photos": {
       "type": "array",
-      "_allowPicturesFromLibrary": true,
+      "inlined": true,
       "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "title": "Tags via comma"
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "url"
-      ]
+        "ref": "tradle.Photo"
+      }
     },
     "summary": {
       "type": "string"
@@ -165,18 +152,10 @@
     },
     "websites": {
       "type": "array",
+      "inlined": true,
       "items": {
-        "type": "object",
-        "properties": {
-          "url": {
-            "skipLabel": true,
-            "type": "string"
-          }
-        }
-      },
-      "required": [
-        "url"
-      ]
+        "ref": "tradle.WebSite"
+      }
     }
   },
   "required": [
