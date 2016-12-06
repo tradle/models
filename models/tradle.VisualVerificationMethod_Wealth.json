@@ -13,6 +13,25 @@
       "type": "string",
       "readOnly": true
     },
+    "aspect": {
+      "type": "array",
+      "items": {
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "authentic": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "documentPresence": {
+      "type": "string"
+    },
+    "ownerPresence": {
+      "type": "string"
+    },
     "photos": {
       "type": "object",
       "ref": "tradle.Photo",
