@@ -41,6 +41,13 @@
     "welcome": {
       "type": "boolean",
       "readOnly": true
+    },
+    "verifiers": {
+      "type": "array",
+      "inlined": "true",
+      "items": {
+        "ref": "tradle.ServiceProvider"
+      }
     }
   },
   "required": [

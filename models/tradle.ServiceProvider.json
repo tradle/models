@@ -1,0 +1,23 @@
+{
+  "id": "tradle.ServiceProvider",
+  "type": "tradle.Model",
+  "title": "Service Provider",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "provider": {
+      "type": "object",
+      "ref": "tradle.Organization"
+    },
+    "url": {
+      "type": "string",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "provider",
+    "url"
+  ]
+}
