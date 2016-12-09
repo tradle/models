@@ -1,0 +1,86 @@
+{
+  "id": "tradle.Residence",
+  "type": "tradle.Model",
+  "title": "Residence",
+  "subClassOf": "tradle.Form",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "streetAddress": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "residenceType": {
+      "type": "object",
+      "title": "Residence Type",
+      "ref": "tradle.ResidenceType"
+    },
+    "formattedAddress": {
+      "type": "string",
+      "displayAs": "{1}: {2}, {3}, {4} {5}",
+      "group": [
+        "residenceType",
+        "streetAddress",
+        "city",
+        "region",
+        "postalCode"
+      ],
+      "title": "Address",
+      "readOnly": true
+    },
+    "address_group": {
+      "type": "string",
+      "title": "Address",
+      "list": [
+        "streetAddress",
+        "city",
+        "country",
+        "postalCode",
+        "region"
+      ]
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "displayName": true,
+      "readOnly": true
+    }
+  },
+  "required": [
+    "residenceType",
+    "city",
+    "streetAddress",
+    "postalCode",
+    "region"
+  ],
+  "editCols": [
+    "residenceType",
+    "address_group"
+  ],
+  "viewCols": [
+    "residenceType",
+    "address_group"
+  ]
+}

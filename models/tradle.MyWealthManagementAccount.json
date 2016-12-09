@@ -1,0 +1,41 @@
+{
+  "id": "tradle.MyWealthManagementAccount",
+  "title": "My Wealth Management Account",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.MyProduct",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "myProductId": {
+      "title": "Account number",
+      "type": "string"
+    },
+    "policyHolder": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    }
+  },
+  "required": [
+    "myProductId",
+    "policyHolder"
+  ],
+  "viewCols": [
+    "myProductId",
+    "policyHolder"
+  ]
+}

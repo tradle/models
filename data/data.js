@@ -702,7 +702,19 @@ var resources = [
 {
   _t: 'tradle.EResidencyMotivation',
   eResidencyMotivation: 'Fan of e-Residency'
-}
+},
+{
+  _t: "tradle.ResidenceType",
+  value: 'Primary Residence'
+},
+{
+  _t: "tradle.ResidenceType",
+  value: 'Second Home'
+},
+{
+  _t: "tradle.ResidenceType",
+  value: 'Investment Property'
+},
 ];
 
 var myId;

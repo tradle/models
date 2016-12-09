@@ -1,0 +1,28 @@
+{
+  "id": "tradle.TaxesFiledConfirmation",
+  "type": "tradle.Model",
+  "title": "Taxes Filed Confirmation",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.FinancialProduct",
+  "forms": [
+    "tradle.TaxesFiledConfirmationForm"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    }
+  }
+}

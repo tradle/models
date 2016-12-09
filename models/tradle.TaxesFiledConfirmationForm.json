@@ -1,0 +1,39 @@
+{
+  "id": "tradle.TaxesFiledConfirmationForm",
+  "title": "Taxes Filed Confirmation Form",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "startDate": {
+      "type": "date"
+    },
+    "endDate": {
+      "type": "date"
+    }
+  },
+  "required": [
+    "startDate",
+    "endDate"
+  ],
+  "viewCols": [
+    "startDate",
+    "endDate"
+  ]
+}

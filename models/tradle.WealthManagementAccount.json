@@ -1,0 +1,32 @@
+{
+  "id": "tradle.WealthManagementAccount",
+  "type": "tradle.Model",
+  "title": "Wealth Management Account",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.FinancialProduct",
+  "forms": [
+    "tradle.PersonalInfo",
+    "tradle.Residence"
+  ],
+  "multiEntryForms": [
+    "tradle.Residence"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    }
+  }
+}
