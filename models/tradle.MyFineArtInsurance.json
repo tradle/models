@@ -1,0 +1,46 @@
+{
+  "id": "tradle.MyFineArtInsurance",
+  "title": "My Fine Art Insurance",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.MyProduct",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "myProductId": {
+      "title": "Confirmation number",
+      "type": "string"
+    },
+    "policyHolder": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "artworkName": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "myProductId",
+    "policyHolder",
+    "artworkName"
+  ],
+  "viewCols": [
+    "myProductId",
+    "policyHolder",
+    "artworkName"
+  ]
+}

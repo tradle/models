@@ -1,11 +1,15 @@
 {
-  "id": "tradle.TaxesFiledConfirmationForm",
-  "title": "Taxes Filed",
+  "id": "tradle.FineArtInsurance",
+  "type": "tradle.Model",
+  "title": "Fine Art Insurance",
   "interfaces": [
     "tradle.Message"
   ],
-  "subClassOf": "tradle.Form",
-  "type": "tradle.Model",
+  "subClassOf": "tradle.FinancialProduct",
+  "forms": [
+    "tradle.PersonalInfo",
+    "tradle.ArtworkInfo"
+  ],
   "properties": {
     "_t": {
       "type": "string",
@@ -20,20 +24,6 @@
       "type": "object",
       "readOnly": true,
       "ref": "tradle.Identity"
-    },
-    "startDate": {
-      "type": "date"
-    },
-    "endDate": {
-      "type": "date"
     }
-  },
-  "required": [
-    "startDate",
-    "endDate"
-  ],
-  "viewCols": [
-    "startDate",
-    "endDate"
-  ]
+  }
 }
