@@ -11,7 +11,7 @@
       "type": "string",
       "readOnly": true
     },
-    "street": {
+    "streetAddress": {
       "type": "string"
     },
     "city": {
@@ -29,9 +29,9 @@
     },
     "formattedAddress": {
       "type": "string",
-      "displayAs": "{1} {2}, {3}, {4}",
+      "displayAs": "{1}, {2}, {3} {4}",
       "group": [
-        "street",
+        "streetAddress",
         "city",
         "region",
         "postalCode"
@@ -43,8 +43,7 @@
       "type": "string",
       "title": "Address",
       "list": [
-        "street",
-        "houseNumber",
+        "streetAddress",
         "city",
         "country",
         "postalCode",
@@ -61,19 +60,12 @@
       "ref": "tradle.Identity",
       "displayName": true,
       "readOnly": true
-    },
-    "photos": {
-      "type": "array",
-      "inlined": true,
-      "items": {
-        "ref": "tradle.Photo"
-      }
     }
   },
   "required": [
-    "photos",
+    "streetAddress",
     "city",
-    "street",
+    "country",
     "postalCode",
     "region"
   ],
