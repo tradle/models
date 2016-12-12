@@ -1,0 +1,52 @@
+{
+  "id": "tradle.Partial",
+  "type": "tradle.Model",
+  "title": "Partial",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "to": {
+      "type": "object",
+      "title": "Owner",
+      "ref": "tradle.Identity",
+      "displayName": true,
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity",
+      "displayName": true
+    },
+    "root": {
+      "type": "object",
+      "readOnly": true,
+      "inlined": true,
+      "ref": "tradle.MerkleNode"
+    },
+    "proof": {
+      "type": "array",
+      "readOnly": true,
+      "inlined": true,
+      "items": {
+        "ref": "tradle.MerkleNode"
+      }
+    },
+    "leaves": {
+      "type": "array",
+      "readOnly": true,
+      "inlined": true,
+      "items": {
+        "ref": "tradle.MerkleLeaf"
+      }
+    },
+    "sig": {
+      "type": "string"
+    }
+  }
+}
