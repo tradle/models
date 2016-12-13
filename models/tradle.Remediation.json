@@ -1,0 +1,27 @@
+{
+  "id": "tradle.Remediation",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "title": "Remediation",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.FinancialProduct",
+  "forms": [
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    }
+  }
+}
