@@ -121,12 +121,16 @@ var resources = [
   education: 'University'
 },
 {
-  _t: "tradle.IDCardType",
+  _t: 'tradle.IDCardType',
   idCardType: 'Passport'
 },
 {
-  _t: "tradle.IDCardType",
+  _t: 'tradle.IDCardType',
   idCardType: 'ID Card'
+},
+{
+  _t: 'tradle.IDCardType',
+  idCardType: 'Driver licence'
 },
 {
   _t: "tradle.IDCardType",
