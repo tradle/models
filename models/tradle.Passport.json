@@ -3,8 +3,28 @@
   "type": "tradle.Model",
   "title": "Passport",
   "interfaces": [
-    "tradle.Message"
+    "tradle.Message",
+    "tradle.Verifiable"
   ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod",
+        "tradle.APIVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod",
+        "tradle.ContactAuthorityVerificationMethod"
+      ]
+    }
+  },
   "subClassOf": "tradle.Form",
   "properties": {
     "_t": {
@@ -51,6 +71,10 @@
       "type": "date",
       "displayName": true
     },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
     "from": {
       "type": "object",
       "readOnly": true,
@@ -75,6 +99,7 @@
     }
   },
   "required": [
+    "country",
     "photos",
     "codeOfIssuing",
     "passportNumber",
@@ -89,6 +114,7 @@
     "dateOfExpiry"
   ],
   "viewCols": [
+    "country",
     "codeOfIssuing",
     "passportNumber",
     "surname",

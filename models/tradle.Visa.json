@@ -1,17 +1,40 @@
 {
-  "id": "tradle.PassportVerification",
+  "id": "tradle.Visa",
   "type": "tradle.Model",
-  "title": "Passport Verification",
+  "title": "Visa",
   "interfaces": [
     "tradle.Message",
     "tradle.Verifiable"
   ],
+  "subClassOf": "tradle.Form",
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod",
+        "tradle.APIVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod",
+        "tradle.ContactAuthorityVerificationMethod"
+      ]
+    }
+  },
   "properties": {
     "_t": {
       "type": "string",
       "readOnly": true
     },
-    "codeOfIssuing": {
+    "controlNumber": {
+      "type": "string"
+    },
+    "issuingPostName": {
       "type": "string"
     },
     "passportNumber": {
@@ -26,8 +49,15 @@
     "givenName": {
       "type": "string"
     },
-    "nationality": {
+    "visaClass": {
       "type": "string"
+    },
+    "visaType": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "object",
+      "ref": "tradle.Nationality"
     },
     "dateOfBirth": {
       "type": "date"
@@ -50,6 +80,10 @@
       "type": "date",
       "displayName": true
     },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
     "from": {
       "type": "object",
       "readOnly": true,
@@ -71,25 +105,15 @@
       "items": {
         "ref": "tradle.Photo"
       }
-    },
-    "country": {
-      "type": "onject",
-      "ref": "tradle.Country"
-    },
-    "verifications": {
-      "type": "array",
-      "readOnly": true,
-      "items": {
-        "backlink": "document",
-        "ref": "tradle.Verification"
-      }
     }
   },
   "required": [
-    "to",
-    "from",
+    "country",
+    "visaType",
+    "visaClass",
     "photos",
-    "codeOfIssuing",
+    "controlNumber",
+    "issuingPostName",
     "passportNumber",
     "surname",
     "givenName",
@@ -101,14 +125,12 @@
     "authority",
     "dateOfExpiry"
   ],
-  "gridCols": [
-    "from",
-    "passportNumber",
-    "dateOfExpiry",
-    "time"
-  ],
   "viewCols": [
-    "codeOfIssuing",
+    "country",
+    "visaType",
+    "visaClass",
+    "controlNumber",
+    "issuingPostName",
     "passportNumber",
     "surname",
     "givenName",

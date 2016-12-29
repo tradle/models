@@ -48,37 +48,17 @@
       "readOnly": true
     },
     "issuingCountry": {
-       "type": "object",
-       "ref": "tradle.Country"
+      "type": "object",
+      "ref": "tradle.Country"
     },
     "photos": {
       "type": "array",
+      "range": "photo",
       "title": "Document Snapshots",
+      "inlined": true,
       "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "skipLabel": true
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          },
-          "width": {
-            "type": "number",
-            "readOnly": true
-          },
-          "height": {
-            "type": "number",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "title",
-        "url"
-      ]
+        "ref": "tradle.Photo"
+      }
     }
   },
   "editCols": [

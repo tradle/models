@@ -2,7 +2,15 @@
   "id": "tradle.PersonalInfo",
   "title": "Personal Info",
   "interfaces": [
-    "tradle.Message"
+    "tradle.Message",
+    "tradle.Verifiable"
+  ],
+  "evidentiaryDocuments": [
+    "tradle.Passport",
+    "tradle.Visa",
+    "tradle.DriverLicense",
+    "tradle.IdentificationDetail",
+    "tradle.ResidencePermit"
   ],
   "subClassOf": "tradle.Form",
   "type": "tradle.Model",
@@ -38,7 +46,7 @@
       "displayName": true
     },
     "dateOfBirth": {
-       "type": "date",
+      "type": "date",
       "maxDate": "18 years before",
       "minDate": "110 years before"
     },
@@ -77,7 +85,7 @@
       ]
     },
     "placeOfBirth": {
-       "type": "string"
+      "type": "string"
     },
     "street": {
       "type": "string"
@@ -118,38 +126,10 @@
     },
     "phones": {
       "type": "array",
-      "icon": "ios-call-outline",
+      "inlined": true,
       "items": {
-        "type": "object",
-        "properties": {
-          "phoneType": {
-            "type": "object",
-            "ref": "tradle.PhoneTypes"
-          },
-          "number": {
-            "type": "string",
-            "range": "phone",
-            "keyboard": "phone-pad"
-          },
-          "myPhones": {
-            "type": "string",
-            "displayAs": [
-              "phoneType",
-              " : ",
-              "number"
-            ],
-            "readOnly": true,
-            "skipLabel": true
-          }
-        }
-      },
-      "required": [
-        "phoneType",
-        "number"
-      ],
-      "viewCols": [
-        "myPhones"
-      ]
+        "ref": "tradle.Phone"
+      }
     },
     "emailAddress": {
       "type": "string",
@@ -172,43 +152,13 @@
     "education": {
       "type": "object",
       "ref": "tradle.EducationNL"
-    },
-    "photos": {
-      "type": "array",
-      "title": "Photo ID snapshots",
-      "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "skipLabel": true
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          },
-          "width": {
-            "type": "number",
-            "readOnly": true
-          },
-          "height": {
-            "type": "number",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "title",
-        "url"
-      ]
     }
   },
   "editCols": [
     "name_group",
     "address_group",
     "id_group",
-    "phones",
-    "photos"
+    "phones"
   ],
   "required": [
     "firstName",
@@ -227,8 +177,7 @@
     "maritalStatus",
     "education",
     "nationality",
-    "phones",
-    "photos"
+    "phones"
   ],
   "viewCols": [
     "name_group",
@@ -243,7 +192,6 @@
     "maritalStatus",
     "education",
     "emailAddress",
-    "phones",
-    "photos"
+    "phones"
   ]
 }

@@ -1,13 +1,30 @@
 {
-  "id": "tradle.LicenseVerification",
+  "id": "tradle.DriverLicense",
   "type": "tradle.Model",
-  "title": "License Verification",
+  "title": "Driver License",
   "subClassOf": "tradle.Form",
   "interfaces": [
-    "tradle.Message"
+    "tradle.Message",
+    "tradle.Verifiable"
   ],
-  "style": {
-    "backgroundColor": "#EBE1FA"
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod",
+        "tradle.APIVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod",
+        "tradle.ContactAuthorityVerificationMethod"
+      ]
+    }
   },
   "properties": {
     "_t": {
@@ -62,31 +79,11 @@
     "photos": {
       "type": "array",
       "title": "Document Snapshots",
+      "range": "photo",
+      "inlined": true,
       "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "skipLabel": true
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          },
-          "width": {
-            "type": "number",
-            "readOnly": true
-          },
-          "height": {
-            "type": "number",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "title",
-        "url"
-      ]
+        "ref": "tradle.Photo"
+      }
     },
     "verifications": {
       "type": "array",
@@ -94,21 +91,6 @@
       "items": {
         "backlink": "document",
         "ref": "tradle.Verification"
-      }
-    },
-    "blockchainUrl": {
-      "type": "string",
-      "readOnly": true
-    },
-    "transactionHash": {
-      "readOnly": true,
-      "type": "string"
-    },
-    "additionalInfo": {
-      "type": "array",
-      "items": {
-        "ref": "tradle.AdditionalInfo",
-        "backlink": "document"
       }
     }
   },

@@ -33,43 +33,33 @@
     "role": {
       "type": "string"
     },
+    "name": {
+      "type": "string",
+      "displayAs": "{1} {2} {3}",
+      "group": [
+        "title",
+        "firstName",
+        "lastName"
+      ],
+      "readOnly": true,
+      "displayName": true
+    },
     "photos": {
       "type": "array",
-      "title": "Document snapshots",
+      "range": "photo",
+      "inlined": true,
       "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "skipLabel": true
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          },
-          "width": {
-            "type": "number",
-            "readOnly": true
-          },
-          "height": {
-            "type": "number",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "title",
-        "url"
-      ]
+        "ref": "tradle.Photo"
+      }
     }
   },
   "required": [
-    "title"
-  ],
-  "viewCols": [
     "title",
     "firstName",
-    "lastName",
+    "lastName"
+  ],
+  "viewCols": [
+    "name",
     "role",
     "photos"
   ]
