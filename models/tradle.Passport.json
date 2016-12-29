@@ -31,8 +31,9 @@
       "type": "string",
       "readOnly": true
     },
-    "codeOfIssuing": {
-      "type": "string"
+    "issuingCountry": {
+      "type": "object",
+      "ref": "tradle.Country"
     },
     "passportNumber": {
       "type": "number",
@@ -101,7 +102,7 @@
   "required": [
     "country",
     "photos",
-    "codeOfIssuing",
+    "issuingCountry",
     "passportNumber",
     "surname",
     "givenName",
@@ -115,7 +116,7 @@
   ],
   "viewCols": [
     "country",
-    "codeOfIssuing",
+    "issuingCountry",
     "passportNumber",
     "surname",
     "givenName",
