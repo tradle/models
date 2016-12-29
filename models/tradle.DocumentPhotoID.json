@@ -15,11 +15,10 @@
         "ref": "tradle.Country"
      },
      "scan": {
-        "type": "array",
+        "type": "object",
         "range": "photo",
-        "items": {
-           "ref": "tradle.Photo"
-        }
+        "component": "QRCodeScanner",
+        "ref": "tradle.Photo"
      },
      "scanJson": {
         "type": "object",
@@ -27,11 +26,9 @@
         "readOnly": true
      },
      "selfie": {
-        "type": "array",
+        "type": "object",
         "range": "photo",
-        "items": {
-          "ref": "tradle.Photo"
-        }
+        "ref": "tradle.Photo"
      },
      "selfieJson": {
         "type": "object",
