@@ -1,0 +1,71 @@
+{
+  "id": "tradle.DocumentPhotoID",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Form",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+     "documentType": {
+        "type": "object",
+        "ref": "tradle.IDCardType"
+     },
+     "country": {
+        "type": "object",
+        "ref": "tradle.Country"
+     },
+     "scan": {
+        "type": "array",
+        "range": "photo",
+        "items": {
+           "ref": "tradle.Photo"
+        }
+     },
+     "scanJson": {
+        "type": "object",
+        "range": "json",
+        "readOnly": true
+     },
+     "selfie": {
+        "type": "array",
+        "range": "photo",
+        "items": {
+          "ref": "tradle.Photo"
+        }
+     },
+     "selfieJson": {
+        "type": "object",
+        "range": "json",
+        "readOnly": true
+     },
+    "scan_group": {
+      "type": "string",
+      "title": "Scanned Document",
+      "list": [
+        "scan",
+        "scanJson"
+      ]
+    },
+    "selfie_group": {
+      "type": "string",
+      "title": "Selfie",
+      "list": [
+        "selfie",
+        "selfieJson"
+      ]
+    }
+  },
+  "required": [
+    "documentType",
+    "country",
+    "scan",
+    "scanJson",
+    "selfie"
+  ],
+  "viewCols": [
+    "documentType",
+    "country",
+    "scan_group",
+    "selfie_group"
+  ]
+}
