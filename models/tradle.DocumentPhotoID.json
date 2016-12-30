@@ -7,25 +7,39 @@
     "tradle.Message"
   ],
   "properties": {
-     "documentType": {
-        "type": "object",
-        "ref": "tradle.IDCardType"
-     },
-     "country": {
-        "type": "object",
-        "ref": "tradle.Country"
-     },
-     "scan": {
-        "type": "object",
-        "range": "photo",
-        "component": "QRCodeScanner",
-        "ref": "tradle.Photo"
-     },
-     "scanJson": {
-        "type": "string",
-        "range": "json",
-        "readOnly": true
-     },
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "documentType": {
+      "type": "object",
+      "ref": "tradle.IDCardType"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "scan": {
+      "type": "object",
+      "range": "photo",
+      "component": "QRCodeScanner",
+      "ref": "tradle.Photo"
+    },
+    "scanJson": {
+      "type": "string",
+      "range": "json",
+      "readOnly": true
+    },
     "scan_group": {
       "type": "string",
       "title": "Scanned Document",
