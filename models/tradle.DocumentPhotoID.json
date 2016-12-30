@@ -1,6 +1,7 @@
 {
   "id": "tradle.DocumentPhotoID",
   "type": "tradle.Model",
+  "title": "Document Photo ID",
   "subClassOf": "tradle.Form",
   "interfaces": [
     "tradle.Message"
@@ -25,16 +26,6 @@
         "range": "json",
         "readOnly": true
      },
-     "selfie": {
-        "type": "object",
-        "range": "photo",
-        "ref": "tradle.Photo"
-     },
-     "selfieJson": {
-        "type": "object",
-        "range": "json",
-        "readOnly": true
-     },
     "scan_group": {
       "type": "string",
       "title": "Scanned Document",
@@ -42,27 +33,17 @@
         "scan",
         "scanJson"
       ]
-    },
-    "selfie_group": {
-      "type": "string",
-      "title": "Selfie",
-      "list": [
-        "selfie",
-        "selfieJson"
-      ]
     }
   },
   "required": [
     "documentType",
     "country",
     "scan",
-    "scanJson",
-    "selfie"
+    "scanJson"
   ],
   "viewCols": [
     "documentType",
     "country",
-    "scan_group",
-    "selfie_group"
+    "scan_group"
   ]
 }

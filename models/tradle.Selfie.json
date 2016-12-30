@@ -1,0 +1,73 @@
+{
+  "id": "tradle.Selfie",
+  "type": "tradle.Model",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Verifiable"
+  ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity",
+      "displayName": true
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "readOnly": true
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true
+    },
+    "selfie_group": {
+      "type": "string",
+      "title": "Selfie",
+      "list": [
+        "selfie",
+        "selfieJson"
+      ]
+    },
+    "selfie": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Photo"
+      }
+    },
+    "selfieJson": {
+      "type": "object",
+      "range": "json",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "selfie"
+  ],
+  "viewCols": [
+    "selfie"
+  ]
+}
