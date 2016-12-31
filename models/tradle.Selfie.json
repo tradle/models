@@ -47,15 +47,17 @@
         "selfieJson"
       ]
     },
-    "selfie": {
+    "photos": {
       "type": "array",
       "inlined": true,
+      "title": "Selfie",
       "items": {
         "ref": "tradle.Photo"
       }
     },
-    "selfieJson": {
+    "photosJson": {
       "type": "string",
+      "title": "Photo info",
       "range": "json",
       "readOnly": true
     }
