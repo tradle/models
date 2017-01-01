@@ -48,6 +48,14 @@
     "document": {
       "type": "object",
       "range": "file"
+    },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "backlink": "document",
+        "ref": "tradle.Verification"
+      }
     }
   },
   "required": [
