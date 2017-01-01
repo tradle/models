@@ -1,0 +1,97 @@
+{
+  "id": "tradle.WealthCV",
+  "title": "Wealth CV",
+  "type": "tradle.Model",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Verifiable"
+  ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity",
+      "displayName": true
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "readOnly": true
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "displayAs": "{2} {1}",
+      "group": [
+        "lastName",
+        "firstName"
+      ],
+      "readOnly": true,
+      "displayName": true
+    },
+    "name_group": {
+      "type": "string",
+      "title": "Name",
+      "list": [
+        "firstName",
+        "lastName"
+      ]
+    },
+    "narrative": {
+      "type": "string"
+    },
+    "wealth_group": {
+      "type": "string",
+      "title": "Wealth",
+      "list": [
+        "narrative"
+      ]
+    },
+    "proofs": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.ProofOfWealth"
+      }
+    }
+  },
+  "required": [
+    "firstName",
+    "lastName",
+    "narrative",
+    "proofs"
+  ],
+  "viewCols": [
+    "name_group",
+    "name",
+    "wealth_group",
+    "narrative",
+    "proofs"
+  ]
+}

@@ -4,8 +4,26 @@
   "title": "Document Photo ID",
   "subClassOf": "tradle.Form",
   "interfaces": [
-    "tradle.Message"
+    "tradle.Message",
+    "tradle.Verifiable"
   ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
   "properties": {
     "_t": {
       "type": "string",
@@ -49,6 +67,14 @@
         "scan",
         "scanJson"
       ]
+    },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "backlink": "document",
+        "ref": "tradle.Verification"
+      }
     }
   },
   "required": [

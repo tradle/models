@@ -1,0 +1,63 @@
+{
+  "id": "tradle.ProofOfWealth",
+  "title": "Proof of wealth",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Verifiable"
+  ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "narrative": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "document": {
+      "type": "object",
+      "range": "file"
+    }
+  },
+  "required": [
+    "narrative",
+    "date",
+    "document"
+  ],
+  "viewCols": [
+    "narrative",
+    "date",
+    "document"
+  ]
+}
