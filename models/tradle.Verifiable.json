@@ -2,12 +2,22 @@
     "id": "tradle.Verifiable",
     "type": "tradle.Model",
     "isInterface": true,
-    "verifiableAspects": [],
-    "evidentiaryDocuments": [],
     "properties": {
       "_t": {
         "type": "string",
         "readOnly": true
+      },
+      "verifiableAspects": {
+        "type": "array",
+        "items": {
+          "ref": "tradle.Method"
+        }
+      },
+      "evidentiaryDocuments": {
+        "type": "array",
+        "items": {
+          "ref": "tradle.Verifiable"
+        }
       }
     }
   }
