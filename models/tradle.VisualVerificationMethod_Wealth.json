@@ -9,22 +9,8 @@
       "type": "string",
       "readOnly": true
     },
-    "methodName": {
-      "type": "string",
-      "readOnly": true
-    },
     "aspect": {
-      "type": "array",
-      "items": {
-        "properties": {
-          "type": {
-            "type": "string"
-          },
-          "authentic": {
-            "type": "boolean"
-          }
-        }
-      }
+      "type": "string"
     },
     "documentPresence": {
       "type": "string"
@@ -33,13 +19,21 @@
       "type": "string"
     },
     "photos": {
-      "type": "object",
-      "ref": "tradle.Photo",
-      "inlined": true
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Photo"
+      }
     }
   },
   "required": [
-    "methodName",
+    "aspect",
+    "photos"
+  ],
+  "viewCols": [
+    "aspect",
+    "ownerPresence",
+    "documentPresence",
     "photos"
   ]
 }

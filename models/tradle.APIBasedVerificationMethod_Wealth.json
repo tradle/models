@@ -35,22 +35,17 @@
       "max": "1"
     },
     "aspect": {
-      "type": "array",
-      "items": {
-        "properties": {
-          "type": {
-            "type": "string"
-          },
-          "authentic": {
-            "type": "boolean"
-          }
-        }
-      }
+      "type": "string"
     }
   },
   "required": [
     "methodName",
     "api",
     "reference"
+  ],
+  "viewCols": [
+    "aspect",
+    "api",
+    "confidence"
   ]
 }
