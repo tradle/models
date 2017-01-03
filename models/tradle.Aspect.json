@@ -1,0 +1,25 @@
+{
+  "id": "Aspect",
+  "properties": {
+    "_t": {
+      "type": "string"
+    },
+    "name" : {
+      "type": "string"
+    },
+    "methods": {
+      "type": "array",
+      "items": {
+        "type": "tradle.Method"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "methods"
+  ],
+  "viewCols": [
+    "name",
+    "methods"
+  ]
+}
