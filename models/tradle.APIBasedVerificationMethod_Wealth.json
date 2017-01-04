@@ -9,10 +9,6 @@
       "type": "string",
       "readOnly": true
     },
-    "methodName": {
-      "type": "string",
-      "readOnly": true
-    },
     "api": {
       "type": "object",
       "ref": "tradle.API",
@@ -39,13 +35,14 @@
     }
   },
   "required": [
-    "methodName",
+    "aspect",
     "api",
     "reference"
   ],
-  "viewCols": [
+  "required": [
     "aspect",
     "api",
+    "reference",
     "confidence"
   ]
 }
