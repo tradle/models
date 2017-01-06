@@ -1,0 +1,79 @@
+{
+  "id": "tradle.CVItem",
+  "title": "CV item",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Verifiable"
+  ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "narrative": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "files": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.File"
+      }
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.Photo"
+      }
+    },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "backlink": "document",
+        "ref": "tradle.Verification"
+      }
+    }
+  },
+  "required": [
+    "narrative",
+    "date",
+    "document"
+  ],
+  "viewCols": [
+    "narrative",
+    "date",
+    "document"
+  ]
+}
