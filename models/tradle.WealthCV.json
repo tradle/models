@@ -40,39 +40,8 @@
       "ref": "tradle.Identity",
       "readOnly": true
     },
-    "firstName": {
-      "type": "string"
-    },
-    "lastName": {
-      "type": "string"
-    },
-    "name": {
-      "type": "string",
-      "displayAs": "{2} {1}",
-      "group": [
-        "lastName",
-        "firstName"
-      ],
-      "readOnly": true,
-      "displayName": true
-    },
-    "name_group": {
-      "type": "string",
-      "title": "Name",
-      "list": [
-        "firstName",
-        "lastName"
-      ]
-    },
     "narrative": {
       "type": "string"
-    },
-    "wealth_group": {
-      "type": "string",
-      "title": "Wealth",
-      "list": [
-        "narrative"
-      ]
     },
     "cvItems": {
       "type": "array",
@@ -92,14 +61,9 @@
     }
   },
   "required": [
-    "firstName",
-    "lastName",
     "narrative"
   ],
   "viewCols": [
-    "name_group",
-    "name",
-    "wealth_group",
     "narrative",
     "cvItems"
   ]
