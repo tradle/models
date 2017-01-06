@@ -77,8 +77,8 @@
     "cvItems": {
       "type": "array",
       "title": "CV items",
-      "inlined": true,
       "items": {
+        "backlink": "wealthCV",
         "ref": "tradle.CVItem"
       }
     },
@@ -95,13 +95,13 @@
     "firstName",
     "lastName",
     "narrative",
-    "proofs"
+    "cvItems"
   ],
   "viewCols": [
     "name_group",
     "name",
     "wealth_group",
     "narrative",
-    "proofs"
+    "cvItems"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "id": "tradle.CVItem",
-  "title": "CV item",
+  "title": "Wealth CV item",
   "interfaces": [
     "tradle.Message",
     "tradle.Verifiable"
@@ -52,6 +52,13 @@
         "ref": "tradle.File"
       }
     },
+    "wealthCV": {
+      "type": "object",
+      "title": "Wealth CV",
+      "readOnly": true,
+      "ref": "tradle.WealthCV",
+      "findInContext": true
+    },
     "photos": {
       "type": "array",
       "inlined": true,
@@ -69,6 +76,11 @@
     }
   },
   "required": [
+    "narrative",
+    "date",
+    "photos"
+  ],
+  "editCols": [
     "narrative",
     "date",
     "photos"
