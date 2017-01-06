@@ -74,10 +74,12 @@
         "narrative"
       ]
     },
-    "proofs": {
+    "cvItems": {
       "type": "array",
+      "title": "CV items",
+      "inlined": true,
       "items": {
-        "ref": "tradle.ProofOfWealth"
+        "ref": "tradle.CVItem"
       }
     },
     "verifications": {
