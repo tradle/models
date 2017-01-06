@@ -1,0 +1,32 @@
+{
+  "id": "tradle.VerifiedItem",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "title": "VerifiedItem",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "item": {
+      "type": "object",
+      "ref": "tradle.Form"
+    },
+    "verification": {
+      "type": "object",
+      "ref": "tradle.Verification"
+    }
+  }
+}
