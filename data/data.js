@@ -708,16 +708,36 @@ var resources = [
   eResidencyMotivation: 'Fan of e-Residency'
 },
 {
-  _t: "tradle.ResidenceType",
+  _t: 'tradle.ResidenceType',
   value: 'Primary Residence'
 },
 {
-  _t: "tradle.ResidenceType",
+  _t: 'tradle.ResidenceType',
   value: 'Second Home'
 },
 {
-  _t: "tradle.ResidenceType",
+  _t: 'tradle.ResidenceType',
   value: 'Investment Property'
+},
+{
+  _t: 'tradle.WealthItemType',
+  value: 'Inheritance'
+},
+{
+  _t: 'tradle.WealthItemType',
+  value: 'Securities purchase'
+},
+{
+  _t: 'tradle.WealthItemType',
+  value: 'Securities sale'
+},
+{
+  _t: 'tradle.WealthItemType',
+  value: 'Investment'
+},
+{
+  _t: 'tradle.WealthItemType',
+  value: 'Liquidation'
 },
 ];
 
