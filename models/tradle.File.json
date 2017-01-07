@@ -1,0 +1,35 @@
+{
+  "id": "tradle.File",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "url": {
+      "type": "string",
+      "readOnly": true
+    },
+    "size": {
+      "type": "number",
+      "readOnly": true
+    },
+    "name": {
+      "type": "string",
+      "readOnly": true
+    },
+    "mimeType": {
+      "type": "string",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "url"
+  ],
+   "required": [
+    "name",
+    "mimeType",
+    "url",
+    "size"
+  ]
+}
