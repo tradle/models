@@ -58,6 +58,15 @@
         "ref": "tradle.Photo"
       }
     },
+    "amount": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "itemType": {
+      "type": "object",
+
+      "ref": "tradle.WealthItemType"
+    },
     "verifications": {
       "type": "array",
       "readOnly": true,
@@ -70,16 +79,22 @@
   "required": [
     "narrative",
     "date",
+    "itemType",
+    "amount",
     "photos"
   ],
   "editCols": [
     "narrative",
     "date",
+    "itemType",
+    "amount",
     "photos"
   ],
   "viewCols": [
     "narrative",
     "date",
+    "itemType",
+    "amount",
     "photos"
   ]
 }
