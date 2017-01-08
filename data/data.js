@@ -739,6 +739,10 @@ var resources = [
   _t: 'tradle.WealthItemType',
   itemType: 'Liquidation'
 },
+{
+  _t: 'tradle.WealthItemType',
+  itemType: 'Other'
+},
 ];
 
 var myId;
