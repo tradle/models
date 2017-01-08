@@ -3,26 +3,9 @@
   "title": "Source of Wealth",
   "type": "tradle.Model",
   "interfaces": [
-    "tradle.Message",
-    "tradle.Verifiable"
+    "tradle.Message"
   ],
-  "verifiableAspects": {
-    "authenticity": {
-      "methods": [
-        "tradle.VisualVerificationMethod"
-      ]
-    },
-    "ownership": {
-      "methods": [
-        "tradle.VisualVerificationMethod"
-      ]
-    },
-    "validity": {
-      "methods": [
-        "tradle.VisualVerificationMethod"
-      ]
-    }
-  },
+  "verifiable": false,
   "subClassOf": "tradle.Form",
   "properties": {
     "_t": {
