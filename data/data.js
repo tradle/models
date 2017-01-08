@@ -721,23 +721,23 @@ var resources = [
 },
 {
   _t: 'tradle.WealthItemType',
-  value: 'Inheritance'
+  itemType: 'Inheritance'
 },
 {
   _t: 'tradle.WealthItemType',
-  value: 'Securities purchase'
+  itemType: 'Securities purchase'
 },
 {
   _t: 'tradle.WealthItemType',
-  value: 'Securities sale'
+  itemType: 'Securities sale'
 },
 {
   _t: 'tradle.WealthItemType',
-  value: 'Investment'
+  itemType: 'Investment'
 },
 {
   _t: 'tradle.WealthItemType',
-  value: 'Liquidation'
+  itemType: 'Liquidation'
 },
 ];
 
