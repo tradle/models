@@ -725,6 +725,10 @@ var resources = [
 },
 {
   _t: 'tradle.WealthItemType',
+  itemType: 'Salary'
+},
+{
+  _t: 'tradle.WealthItemType',
   itemType: 'Securities purchase'
 },
 {
