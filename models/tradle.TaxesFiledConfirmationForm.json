@@ -21,11 +21,26 @@
       "readOnly": true,
       "ref": "tradle.Identity"
     },
-    "startDate": {
-      "type": "date"
+    "relevatntTaxEear": {
+      "type": "date",
+      "range": "year"
     },
-    "endDate": {
-      "type": "date"
+    "confirmationText": {
+      "type": "string",
+      "readOnly": true,
+      "skipLabel": true
+    },
+    "confirmationCheck": {
+      "type": "boolean",
+      "range": "check"
+    },
+    "confirmation": {
+      "type": "string",
+      "displayAs": "{1} {2}",
+      "group": [
+        "confirmationCheck",
+        "confirmationText"
+      ]
     }
   },
   "required": [
