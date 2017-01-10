@@ -50,18 +50,6 @@
       "maxDate": "18 years before",
       "minDate": "110 years before"
     },
-    "address_group": {
-      "type": "string",
-      "title": "Address",
-      "list": [
-        "street",
-        "houseNumber",
-        "city",
-        "country",
-        "postalCode",
-        "region"
-      ]
-    },
     "name_group": {
       "type": "string",
       "title": "Personal detail",
@@ -74,14 +62,6 @@
         "maritalStatus",
         "education",
         "nationality"
-      ]
-    },
-    "id_group": {
-      "type": "string",
-      "title": "Primary ID",
-      "list": [
-        "idCardType",
-        "idCardNumber"
       ]
     },
     "placeOfBirth": {
@@ -137,14 +117,6 @@
       "keyboard": "email-address",
       "range": "email"
     },
-    "idCardType": {
-      "type": "object",
-      "title": "ID Card Type",
-      "ref": "tradle.IDCardType"
-    },
-    "idCardNumber": {
-      "type": "string"
-    },
     "maritalStatus": {
       "type": "object",
       "ref": "tradle.MaritalStatus"
@@ -156,8 +128,6 @@
   },
   "editCols": [
     "name_group",
-    "address_group",
-    "id_group",
     "phones"
   ],
   "required": [
@@ -165,15 +135,7 @@
     "lastName",
     "dateOfBirth",
     "placeOfBirth",
-    "street",
-    "houseNumber",
-    "city",
-    "country",
-    "postalCode",
-    "region",
     "emailAddress",
-    "idCardType",
-    "idCardNumber",
     "maritalStatus",
     "education",
     "nationality",
@@ -182,12 +144,8 @@
   "viewCols": [
     "name_group",
     "name",
-    "address_group",
-    "address",
     "dateOfBirth",
     "placeOfBirth",
-    "idCardType",
-    "idCardNumber",
     "nationality",
     "maritalStatus",
     "education",
