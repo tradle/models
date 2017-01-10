@@ -87,19 +87,6 @@
       "type": "object",
       "ref": "tradle.Country"
     },
-    "address": {
-      "type": "string",
-      "displayAs": "{1} {2}, {3}, {4} {5}",
-      "group": [
-        "houseNumber",
-        "street",
-        "city",
-        "region",
-        "postalCode"
-      ],
-      "title": "Address",
-      "readOnly": true
-    },
     "nationality": {
       "type": "object",
       "ref": "tradle.Nationality"
