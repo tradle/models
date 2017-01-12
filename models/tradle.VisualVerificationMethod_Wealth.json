@@ -10,14 +10,21 @@
       "readOnly": true
     },
     "aspect": {
-      "type": "string",
-      "displayName": true
+      "type": "string"
     },
     "documentPresence": {
       "type": "string"
     },
     "ownerPresence": {
       "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "readOnly": true,
+      "displayName": true,
+      "displayAs": "based on document ownership checked by visual inspection in person",
+      "group": [
+      ]
     },
     "photos": {
       "type": "array",
