@@ -30,6 +30,7 @@
     "residenceType": {
       "type": "object",
       "title": "Residence Type",
+      "displayName": true,
       "ref": "tradle.ResidenceType"
     },
     "formattedAddress": {
@@ -64,7 +65,6 @@
     "to": {
       "type": "object",
       "ref": "tradle.Identity",
-      "displayName": true,
       "readOnly": true
     }
   },
