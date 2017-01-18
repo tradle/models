@@ -1,0 +1,16 @@
+{
+  "id": "tradle.Item",
+  "type": "tradle.Model",
+  "isInterface": true,
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "container": {
+      "type": "object",
+      "ref": "tradle.Form"
+    }
+  }
+}
+
