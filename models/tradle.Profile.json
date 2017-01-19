@@ -110,7 +110,7 @@
       "type": "array",
       "title": "Verifications",
       "allowRoles": "me",
-      "icon": "ios-checkmark-outline",
+      "icon": "ios-checkmark-circle-outline",
       "items": {
         "readOnly": true,
         "ref": "tradle.Verification",
@@ -125,6 +125,17 @@
       "items": {
         "readOnly": true,
         "ref": "tradle.Form",
+        "backlink": "from"
+      }
+    },
+    "myDocuments": {
+      "type": "array",
+      "title": "Evidence",
+      "allowRoles": "me",
+      "icon": "ios-eye-outline",
+      "items": {
+        "readOnly": true,
+        "ref": "tradle.Document",
         "backlink": "from"
       }
     },
