@@ -63,32 +63,16 @@
     "lastMessageTime": {
       "type": "date"
     },
+    "inactive": {
+      "type": "boolean"
+    },
     "photos": {
       "type": "array",
+      "range": "photo",
+      "inlined": true,
       "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "title": "Tags via comma"
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          },
-          "width": {
-            "type": "number",
-            "readOnly": true
-          },
-          "height": {
-            "type": "number",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "url"
-      ]
+        "ref": "tradle.Photo"
+      }
     },
     "verifications": {
       "type": "array",
@@ -124,6 +108,7 @@
     },
     "products": {
       "type": "array",
+      "readOnly": true,
       "items": {
         "type": "object",
         "properties": {
