@@ -1,0 +1,55 @@
+{
+  "id": "tradle.ConfirmPackageRequest",
+  "type": "tradle.Model",
+  "title": "Confirm Package Request",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "displayName": true,
+      "readOnly": true
+    },
+    "message": {
+      "type": "string",
+      "displayName": true
+    },
+    "form": {
+      "type": "string",
+      "readOnly": true
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true
+    },
+    "items": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.Form"
+      }
+    }
+  },
+  "required": [
+    "to",
+    "message",
+    "form"
+  ],
+  "viewCols": [
+    "message",
+    "form",
+    "product",
+    "time"
+  ]
+}
