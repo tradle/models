@@ -74,15 +74,6 @@
         "ref": "tradle.Photo"
       }
     },
-    "verifications": {
-      "type": "array",
-      "readOnly": true,
-      "items": {
-        "type": "object",
-        "ref": "tradle.Verification",
-        "backlink": "organization"
-      }
-    },
     "securityCodes": {
       "type": "array",
       "readOnly": true,
@@ -90,32 +81,6 @@
         "type": "object",
         "ref": "tradle.SecurityCode",
         "backlink": "organization"
-      }
-    },
-    "verificationsCount": {
-      "type": "number",
-      "readOnly": true,
-      "skipLabel": true
-    },
-    "verificationRequests": {
-      "type": "array",
-      "readOnly": true,
-      "items": {
-        "type": "object",
-        "ref": "tradle.Form",
-        "backlink": "organization"
-      }
-    },
-    "products": {
-      "type": "array",
-      "readOnly": true,
-      "items": {
-        "type": "object",
-        "properties": {
-          "modelName": {
-            "type": "tradle.Model"
-          }
-        }
       }
     }
   },
@@ -125,7 +90,7 @@
   "viewCols": [
     "name",
     "photos",
-    "verifications"
+    ""
   ],
   "gridCols": [
     "name",

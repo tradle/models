@@ -7,6 +7,16 @@
       "type": "string",
       "readOnly": true
     },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "displayName": true
+    },
     "container": {
       "type": "object",
       "ref": "tradle.Form"
