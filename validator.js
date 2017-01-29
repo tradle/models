@@ -12,6 +12,9 @@ module.exports = Validator
 const proto = Validator.prototype
 const IDENTITY = 'tradle.Identity'
 const PROFILE = 'tradle.Profile'
+const PROPERTY_RANGES = ['json', 'email', 'phone', 'year', 'photo', 'check', 'url'] // year - not yet working :)
+const VERIFIABLE = 'tradle.Verifiable'
+
 Validator.validate = function (model) {
   new Validator(model).validate(model)
 }
@@ -41,28 +44,41 @@ proto.validateReferences = function (models) {
 }
 
 proto.validateProperties = function (m, checkRefs) {
-// backlink
-// ref
-// array
-// items or ref
-  // properties
   let err = []
-  if (!m.properties) {
+  const properties = m.properties
+  if (!properties) {
     err.push('the required property "properties" is missing')
     return err
   }
-  else if (typeof m.properties !== 'object') {
+  if (typeof properties !== 'object') {
     err.push('the required property "properties" should be a valid json object')
     return err
   }
-  const properties = m.properties
   const modelsO = this._byId
   for (let p in properties) {
     let prop = properties[p]
+    if (prop.range  &&  PROPERTY_RANGES.indexOf(prop.range) === -1) {
+      err.push('\n "' + m.id + '" property "' + p + '" has unexpected range "' + prop.range + '"')
+      continue
+    }
     if (prop.readOnly) {
-      if (prop.readOnly !== true && prop.readOnly !== false)
+      if (prop.readOnly !== true  &&  prop.readOnly !== false)
         err.push('\n "' + m.id + '" property "' + p + '" defined as readOnly. readOnly can have only true/false values')
     }
+    if (prop.displayAs) {
+      if (prop.type !== 'string')
+        err.push('\n "' + m.id + '" property "' + p + '" defined as displayAs must have type "string"')
+      if (!prop.group)
+        err.push('\n "' + m.id + '" property "' + p + '" defined as displayAs must have "group"')
+      else {
+        prop.group.forEach((g) => {
+          if (!properties[g])
+           err.push('\n "' + m.id + '" property "' + p + '" defined as displayAs. It has imvalid property "' + g + '" listed in "group"')
+        })
+      }
+
+    }
+
     if (prop.type === 'object') {
       if (!prop.ref  &&  prop.range !== 'json'  &&  !prop.properties)
         err.push('"' + m.id + '" property "' + p + '" has type "object". It has to have "ref" property that defines a type of this property')
@@ -71,6 +87,7 @@ proto.validateProperties = function (m, checkRefs) {
           err.push('"' + m.id + '" property "' + p + '" has invalid "ref" value')
       }
     }
+
     else if (prop.type === 'array') {
       if (!prop.items) {
         err.push('"' + m.id + '" property "' + p + '" is of array type. It has to have property "items" that will define the properties or the array item')
@@ -78,41 +95,39 @@ proto.validateProperties = function (m, checkRefs) {
       }
       let backlink = prop.items.backlink
       let ref = prop.items.ref
-      if (backlink) {
-        if (!ref)
-          err.push('"' + m.id + '" property "' + p + '" has a backlink "' + backlink + '", it can be valid only if the "ref" property is defined and has the same value as the property in "backlink"')
-        else if (checkRefs) {
-          if  (!modelsO[ref])
-            err.push('"' + m.id + '" property "' + p + '.items" has invalid "ref"')
-          else if (!modelsO[ref].properties[backlink]) {
-            let interfaces = modelsO[ref].interfaces
-            if (interfaces) {
-              let found = interfaces.some((i) => {
-                let bm = modelsO[i].properties[backlink]
-                if (bm  &&  bm.ref) {
-                  if (bm.ref === m.id  ||  modelsO[bm.ref].subClassOf === m.id)
-                    return true
-                  // HACK for from and to in Message interface
-                  if ((bm.ref === IDENTITY || bm.ref === PROFILE) &&
-                      (m.id === IDENTITY || m.id === PROFILE))
-                    return true
-                }
-              })
-              if (found)
-                continue
-            }
-            err.push('"' + m.id + '" property "' + p + '" has a backlink "' + backlink + '" that does not corresponds to any property in the model')
-          }
-        }
-      }
-      else
+      if (!backlink) {
         this.validateProperties(prop.items, checkRefs)
-      // else if (checkRefs) {
-      //   if (!models[prop.items.ref])
-      //     err.push('"' + m.id + '" property "' + p + '" has a ref "' + prop.items.ref + '" that does not corresponds to any model')
-      //   else if (!modelsO[prop.items.ref][backlink])
-      //     err.push('"' + m.id + '" property "' + p + '" has a backlink "' + backlink + '" for its "items" property that was not found in ' + prop.items.ref)
-      // }
+        continue
+      }
+      if (!ref) {
+        err.push('"' + m.id + '" property "' + p + '" has a backlink "' + backlink + '", it can be valid only if the "ref" property is defined and has the same value as the property in "backlink"')
+        continue
+      }
+      if (checkRefs) {
+        if  (!modelsO[ref]) {
+          err.push('"' + m.id + '" property "' + p + '.items" has invalid "ref"')
+          continue
+        }
+        else if (modelsO[ref].properties[backlink])
+          continue
+        let interfaces = modelsO[ref].interfaces
+        if (interfaces) {
+          let found = interfaces.some((i) => {
+            let bm = modelsO[i].properties[backlink]
+            if (bm  &&  bm.ref) {
+              if (bm.ref === m.id  ||  modelsO[bm.ref].subClassOf === m.id)
+                return true
+              // HACK for from and to in Message interface
+              if ((bm.ref === IDENTITY || bm.ref === PROFILE) &&
+                  (m.id === IDENTITY || m.id === PROFILE))
+                return true
+            }
+          })
+          if (found)
+            continue
+        }
+        err.push('"' + m.id + '" property "' + p + '" has a backlink "' + backlink + '" that does not corresponds to any property in the model')
+      }
     }
     else if (prop.units) {
       if (prop.type !== 'number'  &&  prop.ref !== 'tradle.Money')
@@ -167,7 +182,6 @@ proto.validateModel = function(m, modelsO) {
       }
     }
   }
-
   if (m.interfaces && !m.abstract) {
     if (m.interfaces.constructor !== Array)
       err.push('' + m.id + ' has property interfaces that should be an array')
@@ -190,10 +204,24 @@ proto.validateModel = function(m, modelsO) {
           }
         }
       })
+      if (m.interfaces.indexOf(VERIFIABLE)) {
+        if (m.evidentiaryDocuments) {
+          m.evidentiaryDocuments.forEach((e) => {
+            if (!modelsO[e])
+              console.log('  ' + m.id + ' implements interface "' + VERIFIABLE + '". it\'s evidentiaryDocuments lists non-existent type "' +  e + '"')
+          })
+        }
+      }
     }
   }
-  if (m.required  &&  (m.required.constructor !== Array))
+  if (m.required  &&  !Array.isArray(m.required))
     err.push('the required property required should be of type Array')
+  if (m.viewCols  &&  !Array.isArray(m.viewCols))
+    err.push('the required property viewCols should be of type Array')
+  if (m.editCols  &&  !Array.isArray(m.editCols))
+    err.push('the required property editCols should be of type Array')
+// Check if implements Verifiable then probably has to have 'verifiableAspects' and/or 'evidentiaryDocuments'
+// Check if implements Item should have property that has backlink for this type of items
 
   return err
 }
