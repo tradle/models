@@ -10,7 +10,8 @@ function Validator (models) {
 
 module.exports = Validator
 const proto = Validator.prototype
-
+const IDENTITY = 'tradle.Identity'
+const PROFILE = 'tradle.Profile'
 Validator.validate = function (model) {
   new Validator(model).validate(model)
 }
@@ -63,7 +64,7 @@ proto.validateProperties = function (m, checkRefs) {
         err.push('\n "' + m.id + '" property "' + p + '" defined as readOnly. readOnly can have only true/false values')
     }
     if (prop.type === 'object') {
-      if (!prop.ref && prop.range !== 'json')
+      if (!prop.ref  &&  prop.range !== 'json'  &&  !prop.properties)
         err.push('"' + m.id + '" property "' + p + '" has type "object". It has to have "ref" property that defines a type of this property')
       if (prop.ref) {
         if (checkRefs  &&  !modelsO[prop.ref])
@@ -71,26 +72,47 @@ proto.validateProperties = function (m, checkRefs) {
       }
     }
     else if (prop.type === 'array') {
-      if (!prop.items)
+      if (!prop.items) {
         err.push('"' + m.id + '" property "' + p + '" is of array type. It has to have property "items" that will define the properties or the array item')
-      else if (prop.items.backlink) {
-        if (!prop.items.ref)
-          err.push('"' + m.id + '" property "' + p + '" has a backlink "' + prop.items.backlink + '", it can be valid only if the "ref" property is defined and has the same value as the property in "backlink"')
+        continue
+      }
+      let backlink = prop.items.backlink
+      let ref = prop.items.ref
+      if (backlink) {
+        if (!ref)
+          err.push('"' + m.id + '" property "' + p + '" has a backlink "' + backlink + '", it can be valid only if the "ref" property is defined and has the same value as the property in "backlink"')
         else if (checkRefs) {
-          if  (!modelsO[prop.items.ref])
+          if  (!modelsO[ref])
             err.push('"' + m.id + '" property "' + p + '.items" has invalid "ref"')
-          else if (!modelsO[prop.items.ref].properties[prop.items.backlink])
-            err.push('"' + m.id + '" property "' + p + '" has a backlink "' + prop.items.backlink + '" that does not corresponds to any property in the model')
+          else if (!modelsO[ref].properties[backlink]) {
+            let interfaces = modelsO[ref].interfaces
+            if (interfaces) {
+              let found = interfaces.some((i) => {
+                let bm = modelsO[i].properties[backlink]
+                if (bm  &&  bm.ref) {
+                  if (bm.ref === m.id  ||  modelsO[bm.ref].subClassOf === m.id)
+                    return true
+                  // HACK for from and to in Message interface
+                  if ((bm.ref === IDENTITY || bm.ref === PROFILE) &&
+                      (m.id === IDENTITY || m.id === PROFILE))
+                    return true
+                }
+              })
+              if (found)
+                continue
+            }
+            err.push('"' + m.id + '" property "' + p + '" has a backlink "' + backlink + '" that does not corresponds to any property in the model')
+          }
         }
       }
-      else if (!prop.items.backlink)
+      else
         this.validateProperties(prop.items, checkRefs)
-      else if (checkRefs) {
-        if (!models[prop.items.ref])
-          err.push('"' + m.id + '" property "' + p + '" has a ref "' + prop.items.ref + '" that does not corresponds to any model')
-        else if (!modelsO[prop.items.ref][backlink])
-          err.push('"' + m.id + '" property "' + p + '" has a backlink "' + backlink + '" for its "items" property that was not found in ' + prop.items.ref)
-      }
+      // else if (checkRefs) {
+      //   if (!models[prop.items.ref])
+      //     err.push('"' + m.id + '" property "' + p + '" has a ref "' + prop.items.ref + '" that does not corresponds to any model')
+      //   else if (!modelsO[prop.items.ref][backlink])
+      //     err.push('"' + m.id + '" property "' + p + '" has a backlink "' + backlink + '" for its "items" property that was not found in ' + prop.items.ref)
+      // }
     }
     else if (prop.units) {
       if (prop.type !== 'number'  &&  prop.ref !== 'tradle.Money')
@@ -139,11 +161,9 @@ proto.validateModel = function(m, modelsO) {
       }
       else if (m.subClassOf === 'tradle.Form') {
         if (!m.interfaces)
-          err.push('' + m.id + ' is a subClassOf "tradle.Form". It should also implement interface "tradle.Message" and it\'s properties "from" and "to"')
+          err.push('' + m.id + ' is a subClassOf "tradle.Form". It should also implement interface "tradle.Message"')
         else if (m.interfaces.constructor !== Array)
           err.push('' + m.id + ' has property interfaces that should be an array')
-        else if (m.interfaces.indexOf('tradle.Message') === -1)
-          err.push('' + m.id + ' is a subClassOf "tradle.Form". It should also implement interface "tradle.Message" and it\'s properties "from" and "to"')
       }
     }
   }
