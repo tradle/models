@@ -63,8 +63,8 @@ proto.validateProperties = function (m, checkRefs) {
         err.push('\n "' + m.id + '" property "' + p + '" defined as readOnly. readOnly can have only true/false values')
     }
     if (prop.type === 'object') {
-      if (!prop.ref)
-          err.push('"' + m.id + '" property "' + p + '" has a type "object". It has to have "ref" property that defines a type of this property')
+      if (!prop.ref && prop.range !== 'json')
+        err.push('"' + m.id + '" property "' + p + '" has type "object". It has to have "ref" property that defines a type of this property')
       if (prop.ref) {
         if (checkRefs  &&  !modelsO[prop.ref])
           err.push('"' + m.id + '" property "' + p + '" has invalid "ref" value')
@@ -124,7 +124,6 @@ proto.validateModel = function(m, modelsO) {
       if (isFinancialProduct) {
         if (!m.forms)
           err.push('model "'+ m.id + '" has subClassOf "tradle.FinancialProduct". Being that it has to have property "forms"')
-
         else if (checkRefs) {
           m.forms.forEach(function(f) {
             if (!modelsO[f])
@@ -133,7 +132,10 @@ proto.validateModel = function(m, modelsO) {
               err.push('forms list for "' + m.id + '" contains "' + f +'" that is not subClassOf "tradle.Form"')
           })
         }
-        err.push(m.id + ' is a subClassOf "tradle.FinancialProduct" should also implement "tradle.Message" interface to allow resources of this type show up in chat')
+
+        if (m.interfaces.indexOf('tradle.Message') === -1) {
+          err.push(m.id + ' is a subClassOf "tradle.FinancialProduct" should also implement "tradle.Message" interface to allow resources of this type show up in chat')
+        }
       }
       else if (m.subClassOf === 'tradle.Form') {
         if (!m.interfaces)
@@ -146,7 +148,7 @@ proto.validateModel = function(m, modelsO) {
     }
   }
 
-  if (m.interfaces) {
+  if (m.interfaces && !m.abstract) {
     if (m.interfaces.constructor !== Array)
       err.push('' + m.id + ' has property interfaces that should be an array')
     if (checkRefs) {
