@@ -1,0 +1,56 @@
+{
+  "id": "tradle.MediaSnippet",
+  "type": "tradle.Model",
+  "title": "Media Snippet",
+  "subClassOf": "tradle.Form",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "headline": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string",
+      "range": "url"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "datePublished": {
+      "type": "date"
+    },
+    "photos": {
+      "type": "array",
+      "range": "photo",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Photo"
+      }
+    }
+  },
+  "required": [
+    "summary",
+    "publisher",
+    "datePublished"
+  ],
+  "gridCols": [
+    "headline",
+    "publisher",
+    "datePublished"
+  ],
+  "viewCols": [
+    "headline",
+    "summary",
+    "publisher",
+    "datePublished",
+    "photos"
+  ]
+}

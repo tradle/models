@@ -1,0 +1,93 @@
+{
+  "id": "tradle.PhoneBill",
+  "type": "tradle.Model",
+  "title": "Phone Bill",
+  "subClassOf": "tradle.Form",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "billDate": {
+      "type": "date",
+      "displayName": true
+    },
+    "issuedBy": {
+      "type": "string",
+      "displayName": true
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "streetAddress": {
+      "type": "string"
+    },
+    "phoneNumbers": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Phone"
+      }
+    },
+    "formattedAddress": {
+      "type": "string",
+      "displayAs": "{1} {2}, {3}, {4}",
+      "group": [
+        "streetAddress",
+        "city",
+        "region",
+        "postalCode"
+      ],
+      "title": "Address",
+      "readOnly": true
+    },
+    "photos": {
+      "type": "array",
+      "range": "photo",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Photo"
+      }
+    }
+  },
+  "required": [
+    "photos",
+    "billDate",
+    "issuedBy",
+    "firstName",
+    "lastName",
+    "city",
+    "streetAddress",
+    "postalCode",
+    "region"
+  ],
+  "gridCols": [
+    "issuedBy",
+    "billDate"
+  ],
+  "viewCols": [
+    "issuedBy",
+    "formattedAddress",
+    "billDate",
+    "photos"
+  ]
+}
