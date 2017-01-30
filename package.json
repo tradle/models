@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "./node_modules/.bin/jsonlint-cli `git ls-files models/*.json`",
-    "validate": "node ./validate -f ./models.js",
+    "validate": "node run merge && node ./validate -f ./models.js",
     "merge": "node merge.js ./models ./models.js",
     "postpublish": "git push -u"
   },

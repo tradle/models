@@ -208,20 +208,36 @@ proto.validateModel = function(m, modelsO) {
         if (m.evidentiaryDocuments) {
           m.evidentiaryDocuments.forEach((e) => {
             if (!modelsO[e])
-              console.log('  ' + m.id + ' implements interface "' + VERIFIABLE + '". it\'s evidentiaryDocuments lists non-existent type "' +  e + '"')
+              console.log('  ' + m.id + ' implements interface "' + VERIFIABLE + '". its evidentiaryDocuments lists non-existent type "' +  e + '"')
           })
         }
       }
     }
   }
-  if (m.required  &&  !Array.isArray(m.required))
-    err.push('the required property required should be of type Array')
-  if (m.viewCols  &&  !Array.isArray(m.viewCols))
-    err.push('the required property viewCols should be of type Array')
-  if (m.editCols  &&  !Array.isArray(m.editCols))
-    err.push('the required property editCols should be of type Array')
+
+  err.push.apply(err, checkGroups(m))
+
 // Check if implements Verifiable then probably has to have 'verifiableAspects' and/or 'evidentiaryDocuments'
 // Check if implements Item should have property that has backlink for this type of items
 
   return err
+}
+
+function checkGroups (model) {
+  return ['required', 'viewCols', 'editCols', 'gridCols'].reduce((errs, group) => {
+    return errs.concat(checkGroup(model, group) || [])
+  }, [])
+}
+
+function checkGroup (model, group) {
+  const val = model[group]
+  if (!val) return
+
+  if (!Array.isArray(val)) {
+    return `"${group}" should be of type Array`
+  }
+
+  return model[group]
+    .filter(prop => !model.properties[prop])
+    .map(prop => `${model.id} property "${prop}" is listed "${group}" but not defined in "properties"`)
 }
