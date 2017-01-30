@@ -61,17 +61,6 @@
     "entitlementCategories": {
       "type": "string"
     },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
-    "to": {
-      "type": "object",
-      "ref": "tradle.Identity",
-      "displayName": true,
-      "readOnly": true
-    },
     "time": {
       "type": "date",
       "readOnly": true
@@ -95,8 +84,6 @@
     }
   },
   "required": [
-    "to",
-    "from",
     "photos",
     "licenseNumber",
     "surname",
@@ -109,7 +96,6 @@
     "entitlementCategories"
   ],
   "gridCols": [
-    "from",
     "licenseNumber",
     "dateOfExpiry",
     "time"
@@ -125,7 +111,6 @@
     "issuingAuthority",
     "holderAddress",
     "entitlementCategories",
-    "verifications",
-    "additionalInfo"
+    "verifications"
   ]
 }
