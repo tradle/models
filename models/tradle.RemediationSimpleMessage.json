@@ -1,0 +1,30 @@
+{
+  "id": "tradle.RemediationSimpleMessage",
+  "type": "tradle.Model",
+  "title": "Remediation Simple Message",
+  "autoCreate": true,
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "message": {
+      "type": "string",
+      "displayName": true
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "message"
+  ],
+  "viewCols": [
+    "message",
+    "time"
+  ]
+}
