@@ -4,8 +4,27 @@
   "title": "Phone Bill",
   "subClassOf": "tradle.Form",
   "interfaces": [
-    "tradle.Message"
+    "tradle.Message",
+    "tradle.Verifiable",
+    "tradle.Document"
   ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
   "properties": {
     "_t": {
       "type": "string",

@@ -4,8 +4,17 @@
   "title": "Media Snippet",
   "subClassOf": "tradle.Form",
   "interfaces": [
-    "tradle.Message"
+    "tradle.Message",
+    "tradle.Verifiable",
+    "tradle.Document"
   ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
   "properties": {
     "_t": {
       "type": "string",
