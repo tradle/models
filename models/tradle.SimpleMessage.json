@@ -15,17 +15,6 @@
       "type": "string",
       "displayName": true
     },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
-    "to": {
-      "type": "object",
-      "ref": "tradle.Identity",
-      "displayName": true,
-      "readOnly": true
-    },
     "photos": {
       "type": "array",
       "range": "photo",
@@ -44,9 +33,7 @@
     }
   },
   "required": [
-    "to",
-    "message",
-    "from"
+    "message"
   ],
   "viewCols": [
     "message",
