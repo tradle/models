@@ -1,0 +1,25 @@
+{
+  "id": "tradle.Funds",
+  "title": "Funds",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "statement": {
+      "type": "string"
+    },
+    "confirmation": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "statement",
+    "confirmation"
+  ],
+  "viewCols": [
+    "statement",
+    "confirmation"
+  ]
+}

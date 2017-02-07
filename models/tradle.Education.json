@@ -1,0 +1,33 @@
+{
+  "id": "tradle.Education",
+  "title": "Education",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "highestDegree": {
+      "type": "object",
+      "ref": "tradle.EducationDegree"
+    },
+    "major": {
+      "type": "object",
+      "ref": "tradle.Major"
+    },
+    "diploma": {
+      "type": "object",
+      "ref": "tradle.Photo"
+    }
+  },
+  "required": [
+    "highestDegree",
+    "major",
+    "diploma"
+  ],
+  "viewCols": [
+    "highestDegree",
+    "major",
+    "diploma"
+  ]
+}
