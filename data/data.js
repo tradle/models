@@ -1,60 +1,14 @@
 'use strict'
 
+var staticData = [
+  require('./tradle.PurposeOfTheAccount.json'),
+  require('./tradle.EducationDegree.json'),
+  require('./tradle.Country.json'),
+  require('./tradle.Nationality.json'),
+  require('./tradle.Currency.json'),
+  require('./tradle.Major.json')
+]
 var resources = [
-{
-  _t: 'tradle.SecurityCode',
-  _z: '04e21cf6dc67f9c5430221031b433e1903ca5975dfd7338f338146a99202c86b',
-  code: '1234567',
-  organization: {
-    id: 'tradle.Organization_71e4b7cd6c11ab7221537275988f113a879029ea',
-    title: 'Rabobank'
-  }
-},
-{
-  _t: 'tradle.SecurityCode',
-  _z: '04e21cf6dc67f9c5430221031b433e1903ca5975dfd7338f338146a99202c87b',
-  code: '7654321',
-  organization: {
-    id: 'tradle.Organization_71e4b7cd6c11ab7221537275988f113a879029ea',
-    title: 'Rabobank'
-  }
-},
-{
-  _t: 'tradle.PurposeOfTheAccount',
-  purpose: 'Benefit Payments'
-},
-{
-  _t: 'tradle.PurposeOfTheAccount',
-  purpose: 'Bills / Expenses'
-},
-{
-  _t: 'tradle.PurposeOfTheAccount',
-  purpose: 'Capital Raising ( Scottish Widows Bank )'
-},
-{
-  _t: 'tradle.PurposeOfTheAccount',
-  purpose: 'Inheritance'
-},
-{
-  _t: 'tradle.PurposeOfTheAccount',
-  purpose: 'Probate / Executor / Trustee'
-},
-{
-  _t: 'tradle.PurposeOfTheAccount',
-  purpose: 'Salary / Pension / Other Regular Income'
-},
-{
-  _t: 'tradle.PurposeOfTheAccount',
-  purpose: 'Savings'
-},
-{
-  _t: 'tradle.PurposeOfTheAccount',
-  purpose: 'Spending money'
-},
-{
-  _t: 'tradle.PurposeOfTheAccount',
-  purpose: 'Student'
-},
 {
   _t: 'tradle.ResidentialStatus',
   status: 'Home owner (with mortgage)'
@@ -671,7 +625,6 @@ var resources = [
   _t: 'tradle.Location',
   location: 'France, Paris'
 },
-
 {
   _t: 'tradle.Location',
   location: 'Latvia, Riga'
@@ -718,44 +671,13 @@ var resources = [
 {
   _t: 'tradle.ResidenceType',
   value: 'Investment Property'
-},
-{
-  _t: 'tradle.WealthItemType',
-  itemType: 'Inheritance'
-},
-{
-  _t: 'tradle.WealthItemType',
-  itemType: 'Salary'
-},
-{
-  _t: 'tradle.WealthItemType',
-  itemType: 'Securities purchase'
-},
-{
-  _t: 'tradle.WealthItemType',
-  itemType: 'Securities sale'
-},
-{
-  _t: 'tradle.WealthItemType',
-  itemType: 'Investment'
-},
-{
-  _t: 'tradle.WealthItemType',
-  itemType: 'Liquidation'
-},
-{
-  _t: 'tradle.WealthItemType',
-  itemType: 'Other'
-},
-];
+}
+]
 
-var myId;
 var data = {
   getResources: function() {
+    staticData.forEach((data) =>  data.forEach((r) => resources.push(r)))
     return resources;
-  },
-  getMyId: function() {
-    return myId
   }
 }
 module.exports = data;
