@@ -18,107 +18,23 @@
       "type": "string",
       "readOnly": true
     },
-    "firstName": {
-      "type": "string"
-    },
-    "lastName": {
-      "type": "string"
-    },
-    "name": {
+    "narrative": {
       "type": "string",
-      "displayAs": "{2} {1}",
-      "group": [
-        "lastName",
-        "firstName"
-      ],
-      "readOnly": true,
       "displayName": true
     },
-    "dateOfBirth": {
-      "type": "date",
-      "maxDate": "18 years before",
-      "minDate": "110 years before"
-    },
-    "name_group": {
-      "type": "string",
-      "title": "Personal detail",
-      "list": [
-        "firstName",
-        "lastName",
-        "emailAddress",
-        "dateOfBirth",
-        "placeOfBirth",
-        "maritalStatus",
-        "nationality"
-      ]
-    },
-    "placeOfBirth": {
-      "type": "string"
-    },
-    "street": {
-      "type": "string"
-    },
-    "houseNumber": {
-      "type": "string",
-      "pattern": "^[a-zA-Z0-9.-]*$"
-    },
-    "city": {
-      "type": "string"
-    },
-    "region": {
-      "type": "string"
-    },
-    "postalCode": {
-      "type": "string"
-    },
-    "country": {
-      "type": "object",
-      "ref": "tradle.Country"
-    },
-    "nationality": {
-      "type": "object",
-      "ref": "tradle.Nationality"
-    },
-    "phones": {
+    "verifications": {
       "type": "array",
-      "inlined": true,
+      "readOnly": true,
       "items": {
-        "ref": "tradle.Phone"
+        "backlink": "document",
+        "ref": "tradle.Verification"
       }
-    },
-    "emailAddress": {
-      "type": "string",
-      "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
-      "keyboard": "email-address",
-      "range": "email"
-    },
-    "maritalStatus": {
-      "type": "object",
-      "ref": "tradle.MaritalStatus"
     }
   },
-  "editCols": [
-    "name_group",
-    "phones"
-  ],
   "required": [
-    "firstName",
-    "lastName",
-    "dateOfBirth",
-    "placeOfBirth",
-    "emailAddress",
-    "maritalStatus",
-    "nationality",
-    "phones"
+    "narrative"
   ],
   "viewCols": [
-    "name_group",
-    "name",
-    "dateOfBirth",
-    "placeOfBirth",
-    "nationality",
-    "maritalStatus",
-    "emailAddress",
-    "phones"
+    "narrative"
   ]
 }
