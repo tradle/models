@@ -17,13 +17,15 @@
     },
     "documentType": {
       "type": "object",
-      "displayName": true,
       "ref": "tradle.IDCardType"
     },
     "country": {
       "type": "object",
-      "displayName": true,
       "ref": "tradle.Country"
     }
-  }
+  },
+  "viewCols": [
+    "documentType",
+    "country"
+  ]
 }
