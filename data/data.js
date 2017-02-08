@@ -4,7 +4,8 @@ const staticData = [
   require('./tradle.Country.json'),
   require('./tradle.Nationality.json'),
   require('./tradle.Currency.json'),
-  require('./tradle.Major.json')
+  require('./tradle.Major.json'),
+  require('./tradle.InvestingType.json')
 ]
 const resources = [
 {
