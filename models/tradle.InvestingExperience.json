@@ -2,6 +2,11 @@
   "id": "tradle.InvestingExperience",
   "title": "Investing Experience",
   "type": "tradle.Model",
+  "subClassOf": "tradle.Form",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Verifiable"
+  ],
   "properties": {
     "_t": {
       "type": "string",
