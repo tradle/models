@@ -1,0 +1,19 @@
+{
+  "id": "nl.tradle.MyBusinessAccount",
+  "title": "My Business Account",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.MyProduct",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "myProductId": {
+      "title": "Account ID",
+      "type": "string"
+    }
+  }
+}

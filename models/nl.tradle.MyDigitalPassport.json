@@ -1,0 +1,29 @@
+{
+  "id": "nl.tradle.MyDigitalPassport",
+  "title": "Digital Passport",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.MyProduct",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "myProductId": {
+      "title": "Digital Passport ID",
+      "type": "string"
+    },
+    "documentType": {
+      "type": "object",
+      "displayName": true,
+      "ref": "tradle.IDCardType"
+    },
+    "country": {
+      "type": "object",
+      "displayName": true,
+      "ref": "tradle.Country"
+    }
+  }
+}

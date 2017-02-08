@@ -1,0 +1,84 @@
+{
+  "id": "nl.tradle.CompanyInformation",
+  "title": "Company Information",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "companyName": {
+      "type": "string"
+    },
+    "natureOfCompany": {
+      "type": "string"
+    },
+    "dateOfFormation": {
+      "type": "date"
+    },
+    "address1": {
+      "type": "string",
+      "title": "Address line 1"
+    },
+    "address2": {
+      "type": "string",
+      "title": "Address line 2"
+    },
+    "city": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string",
+      "title": "State/Province"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "address": {
+      "type": "string",
+      "displayAs": "{1} {2} {3}, {4}, {5} {6}, {7}",
+      "group": [
+        "address1",
+        "address2",
+        "city",
+        "region",
+        "postalCode",
+        "country"
+      ],
+      "title": "Company Address",
+      "readOnly": true
+    }
+  },
+  "editCols": [
+    "companyName",
+    "natureOfCompany",
+    "dateOfFormation",
+    "address"
+  ],
+  "viewCols": [
+    "companyName",
+    "natureOfCompany",
+    "dateOfFormation",
+    "address",
+    "natureOfCompany",
+    "dateOfFormation"
+  ],
+  "required": [
+    "companyName",
+    "address1",
+    "city",
+    "region",
+    "postalCode",
+    "country",
+    "natureOfCompany",
+    "dateOfFormation"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "id": "nl.tradle.BusinessAccount",
+  "title": "Business Account",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.FinancialProduct",
+  "type": "tradle.Model",
+  "forms": [
+    "nl.tradle.MyDigitalPassport",
+    "nl.tradle.MyCompanyRegistration"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    }
+  }
+}

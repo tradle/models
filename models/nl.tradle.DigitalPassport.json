@@ -1,0 +1,19 @@
+{
+  "id": "nl.tradle.DigitalPassport",
+  "title": "Digital Passport",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.FinancialProduct",
+  "type": "tradle.Model",
+  "forms": [
+    "tradle.PhotoID",
+    "tradle.Selfie"
+  ],
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    }
+  }
+}

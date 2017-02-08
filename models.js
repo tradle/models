@@ -1,4 +1,11 @@
 const models = module.exports = [
+require('./models/nl.tradle.BusinessAccount.json'),
+require('./models/nl.tradle.CompanyInformation.json'),
+require('./models/nl.tradle.CompanyRegistration.json'),
+require('./models/nl.tradle.DigitalPassport.json'),
+require('./models/nl.tradle.MyBusinessAccount.json'),
+require('./models/nl.tradle.MyCompanyRegistration.json'),
+require('./models/nl.tradle.MyDigitalPassport.json'),
 require('./models/tradle.APIBasedVerificationMethod_Wealth.json'),
 require('./models/tradle.API_Wealth.json'),
 require('./models/tradle.AboutYou.json'),
