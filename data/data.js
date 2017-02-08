@@ -1,6 +1,4 @@
-'use strict'
-
-var resources = [
+const resources = [
 {
   _t: 'tradle.SecurityCode',
   _z: '04e21cf6dc67f9c5430221031b433e1903ca5975dfd7338f338146a99202c86b',
@@ -65,7 +63,7 @@ var resources = [
 },
 {
   _t: 'tradle.ResidentialStatus',
-  status:  'Tenant (private)',
+  status: 'Tenant (private)',
 },
 {
   _t: 'tradle.ResidentialStatus',
@@ -85,7 +83,7 @@ var resources = [
 },
 {
   _t: 'tradle.MaritalStatus',
-  status:  "Married with prenuptial agreement"
+  status: "Married with prenuptial agreement"
 },
 {
   _t: 'tradle.MaritalStatus',
@@ -95,7 +93,6 @@ var resources = [
   _t: 'tradle.MaritalStatus',
   status: 'Living together with agreement'
 },
-///
 {
   _t: 'tradle.EducationNL',
   education: 'Elementary School'
@@ -194,19 +191,19 @@ var resources = [
 },
 {
   _t: "tradle.KindOfHouse",
-  kindOfHouse:  "Detached"
+  kindOfHouse: "Detached"
 },
 {
   _t: "tradle.KindOfHouse",
-  kindOfHouse:  "Semi-Detached"
+  kindOfHouse: "Semi-Detached"
 },
 {
   _t: "tradle.KindOfHouse",
-  kindOfHouse:  "Terraced house"
+  kindOfHouse: "Terraced house"
 },
 {
   _t: "tradle.KindOfHouse",
-  kindOfHouse:  "Appartment"
+  kindOfHouse: "Appartment"
 },
 { _t: "tradle.MortgageGuarantee",
   mortgageGuarantee: "No"
@@ -749,12 +746,12 @@ var resources = [
 },
 ];
 
-var myId;
-var data = {
-  getResources: function() {
+const myId = null // do we need this?
+const data = {
+  getResources() {
     return resources;
   },
-  getMyId: function() {
+  getMyId() {
     return myId
   }
 }

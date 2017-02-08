@@ -73,7 +73,7 @@
     },
     "yearTheHouseWasBuilt": {
       "type": "number",
-      "minimum": "1800"
+      "min": "1800"
     },
     "rented": {
       "type": "boolean",
@@ -88,10 +88,6 @@
       "ref": "tradle.Money"
     },
     "foreclosureValue": {
-      "type": "object",
-      "ref": "tradle.Money"
-    },
-    "valuedPrice": {
       "type": "object",
       "ref": "tradle.Money"
     },

@@ -1,4 +1,4 @@
-var models = module.exports = [
+const models = module.exports = [
 require('./models/tradle.APIBasedVerificationMethod_Wealth.json'),
 require('./models/tradle.API_Wealth.json'),
 require('./models/tradle.AboutYou.json'),
