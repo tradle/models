@@ -11,7 +11,7 @@
     "authenticity": {
       "methods": [
         "tradle.VisualVerificationMethod",
-        "tradle.APIVerificationMethod"
+        "tradle.APIBasedVerificationMethod"
       ]
     },
     "ownership": {
@@ -21,8 +21,7 @@
     },
     "validity": {
       "methods": [
-        "tradle.VisualVerificationMethod",
-        "tradle.ContactAuthorityVerificationMethod"
+        "tradle.VisualVerificationMethod"
       ]
     }
   },

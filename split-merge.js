@@ -1,19 +1,16 @@
 
 
-var path = require('path')
-var fs = require('fs')
-var proc = require('child_process')
-var DEFAULT_MODELS_DIR = './models'
+const path = require('path')
+const fs = require('fs')
+const proc = require('child_process')
+const DEFAULT_MODELS_DIR = './models'
 
-module.exports = {
-  split: split,
-  merge: merge
-}
+module.exports = { split, merge }
 
 function split (models, dir) {
   dir = path.resolve(dir || DEFAULT_MODELS_DIR)
   models.forEach(function (m) {
-    var fname = toFilePath(dir, m.id)
+    const fname = toFilePath(dir, m.id)
     fs.writeFile(path.resolve(fname), JSON.stringify(m, null, 2))
   })
 }
@@ -26,14 +23,14 @@ function merge (modelsDir, outFilePath) {
 
   modelsDir = path.resolve(modelsDir || DEFAULT_MODELS_DIR)
   proc.exec(`git ls-files "${modelsDir}/*.json"`, function (err, result) {
-    if (err) return cb(err)
+    if (err) throw err
 
-    var models = result.trim().split('\n')
+    const models = result.trim().split('\n')
       .map(p => `\nrequire('./${p}')`)
       .join(',')
 
-    var contents =
-`var models = module.exports = [${models}]
+    const contents =
+`const models = module.exports = [${models}]
 models.forEach(function (m) {
   models[m.id] = m
 })

@@ -1,4 +1,4 @@
-var models = module.exports = [
+const models = module.exports = [
 require('./models/tradle.APIBasedVerificationMethod_Wealth.json'),
 require('./models/tradle.API_Wealth.json'),
 require('./models/tradle.AboutYou.json'),
@@ -108,6 +108,7 @@ require('./models/tradle.MerkleLeaf.json'),
 require('./models/tradle.MerkleNode.json'),
 require('./models/tradle.Message.json'),
 require('./models/tradle.Method.json'),
+require('./models/tradle.ModelsPack.json'),
 require('./models/tradle.Money.json'),
 require('./models/tradle.Mortgage.json'),
 require('./models/tradle.MortgageDetail_Obvion.json'),

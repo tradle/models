@@ -4,15 +4,15 @@
   "description": "models for tradle apps",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "./node_modules/.bin/jsonlint-cli `git ls-files models/*.json`",
-    "validate": "npm run merge && node ./validate -f ./models.js",
+    "lint": "eslint --quiet --ext .js --ext .json .",
+    "validate": "PRINT_ONLY=1 node ./validate -f ./models.js",
     "merge": "node merge.js ./models ./models.js",
     "postpublish": "git push -u"
   },
   "pre-commit": [
     "merge",
-    "lint"
+    "lint",
+    "validate"
   ],
   "repository": {
     "type": "git",
@@ -29,12 +29,15 @@
   },
   "homepage": "https://github.com/tradle/models",
   "devDependencies": {
+    "@tradle/validate": "tradle/validate",
+    "eslint": "^3.15.0",
+    "eslint-plugin-json": "^1.2.0",
     "git": "^0.1.5",
-    "jsonlint-cli": "^1.0.1",
     "pre-commit": "^1.1.3"
   },
   "dependencies": {
     "minimist": "^1.2.0",
+    "typeforce": "^1.10.6",
     "write-file-atomic": "^1.1.4"
   }
 }

@@ -1,6 +1,4 @@
-'use strict'
-
-var staticData = [
+const staticData = [
   require('./tradle.PurposeOfTheAccount.json'),
   require('./tradle.EducationDegree.json'),
   require('./tradle.Country.json'),
@@ -8,7 +6,7 @@ var staticData = [
   require('./tradle.Currency.json'),
   require('./tradle.Major.json')
 ]
-var resources = [
+const resources = [
 {
   _t: 'tradle.ResidentialStatus',
   status: 'Home owner (with mortgage)'
@@ -19,7 +17,7 @@ var resources = [
 },
 {
   _t: 'tradle.ResidentialStatus',
-  status:  'Tenant (private)',
+  status: 'Tenant (private)',
 },
 {
   _t: 'tradle.ResidentialStatus',
@@ -39,7 +37,7 @@ var resources = [
 },
 {
   _t: 'tradle.MaritalStatus',
-  status:  "Married with prenuptial agreement"
+  status: "Married with prenuptial agreement"
 },
 {
   _t: 'tradle.MaritalStatus',
@@ -49,7 +47,6 @@ var resources = [
   _t: 'tradle.MaritalStatus',
   status: 'Living together with agreement'
 },
-///
 {
   _t: 'tradle.EducationNL',
   education: 'Elementary School'
@@ -148,19 +145,19 @@ var resources = [
 },
 {
   _t: "tradle.KindOfHouse",
-  kindOfHouse:  "Detached"
+  kindOfHouse: "Detached"
 },
 {
   _t: "tradle.KindOfHouse",
-  kindOfHouse:  "Semi-Detached"
+  kindOfHouse: "Semi-Detached"
 },
 {
   _t: "tradle.KindOfHouse",
-  kindOfHouse:  "Terraced house"
+  kindOfHouse: "Terraced house"
 },
 {
   _t: "tradle.KindOfHouse",
-  kindOfHouse:  "Appartment"
+  kindOfHouse: "Appartment"
 },
 { _t: "tradle.MortgageGuarantee",
   mortgageGuarantee: "No"
@@ -674,9 +671,9 @@ var resources = [
 }
 ]
 
-var data = {
-  getResources: function() {
-    staticData.forEach((data) =>  data.forEach((r) => resources.push(r)))
+const data = {
+  getResources() {
+    staticData.forEach(data =>  data.forEach(r => resources.push(r)))
     return resources;
   }
 }
