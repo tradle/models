@@ -15,17 +15,13 @@
       "title": "Digital Passport ID",
       "type": "string"
     },
-    "documentType": {
-      "type": "object",
-      "ref": "tradle.IDCardType"
-    },
     "country": {
       "type": "object",
       "ref": "tradle.Country"
     }
   },
   "viewCols": [
-    "documentType",
+    "myProductId",
     "country"
   ]
 }
