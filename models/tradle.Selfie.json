@@ -52,13 +52,11 @@
       ]
     },
     "selfie": {
-      "type": "array",
+      "type": "object",
       "inlined": true,
       "cameraType": "front",
       "title": "Selfie",
-      "items": {
-        "ref": "tradle.Photo"
-      }
+      "ref": "tradle.Photo"
     },
     "selfieJson": {
       "type": "object",
