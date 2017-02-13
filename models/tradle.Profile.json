@@ -148,6 +148,8 @@
     "photos": {
       "type": "array",
       "range": "photo",
+      "allowPicturesFromLibrary": true,
+      "cameraType": "front",
       "inlined": true,
       "items": {
         "ref": "tradle.Photo"
