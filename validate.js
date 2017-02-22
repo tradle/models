@@ -15,7 +15,7 @@ if (argv.help) {
   process.exit(0)
 }
 
-const validate = require('@tradle/validate').models
+const validate = require('@tradle/validate-model')
 // try {
   run()
 // } catch (err) {

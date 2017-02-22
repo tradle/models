@@ -76,18 +76,18 @@ const resources = [
   _t: 'tradle.IDCardType',
   idCardType: 'Passport'
 },
-{
-  _t: 'tradle.IDCardType',
-  idCardType: 'ID Card'
-},
+// {
+//   _t: 'tradle.IDCardType',
+//   idCardType: 'ID Card'
+// },
 {
   _t: 'tradle.IDCardType',
   idCardType: 'Driver licence'
 },
-{
-  _t: "tradle.IDCardType",
-  idCardType: 'Residence permit'
-},
+// {
+//   _t: "tradle.IDCardType",
+//   idCardType: 'Residence permit'
+// },
 {
   _t: 'tradle.SourceOfIncome',
   sourceOfIncome: 'Employed'

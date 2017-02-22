@@ -1,0 +1,34 @@
+{
+  "id": "tradle.Confirmation",
+  "type": "tradle.Model",
+  "title": "Confirmation",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "message": {
+      "type": "string",
+      "readOnly": true,
+      "displayName": true
+    },
+    "confirmationFor": {
+      "type": "object",
+      "ref": "tradle.ProductApplication",
+      "readOnly": true
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "ref": "tradle.Form"
+      }
+    }
+  },
+  "required": [
+    "message"
+  ],
+  "viewCols": [
+    "message",
+    "confirmationFor"
+  ]
+}
