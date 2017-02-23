@@ -8,7 +8,7 @@
     "validate": "PRINT_ONLY=1 node ./validate -f ./models.js",
     "merge": "node merge.js ./models ./models.js",
     "postpublish": "git push -u",
-    "precommit": "npm run merge && git add models.js && npm run validate && node dictionary.js"
+    "precommit": "npm run merge && git add models.js && npm run validate && node dictionary.js && git add dictionary_en.json"
   },
   "repository": {
     "type": "git",
