@@ -1,0 +1,22 @@
+{
+  "id": "tradle.EmailAddress",
+  "title": "Email Address",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "email": {
+      "type": "string",
+      "range": "email",
+      "keyboard": "email-address"
+    }
+  },
+  "required": [
+    "email"
+  ],
+  "viewCols": [
+    "email"
+  ]
+}
