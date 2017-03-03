@@ -1,0 +1,26 @@
+{
+  "id": "tradle.Ack",
+  "type": "tradle.Model",
+  "title": "Item Received",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "message": {
+      "skipLabel": true,
+      "type": "string"
+    },
+    "item": {
+      "type": "object",
+      "ref": "tradle.Message",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "item",
+    "message"
+  ],
+  "viewCols": [
+    "message"
+  ]
+}
