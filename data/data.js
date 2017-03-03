@@ -74,7 +74,7 @@ const resources = [
 },
 {
   _t: 'tradle.IDCardType',
-  idCardType: 'Passport'
+  idCardType: 'Valid Passport'
 },
 // {
 //   _t: 'tradle.IDCardType',
@@ -82,7 +82,7 @@ const resources = [
 // },
 {
   _t: 'tradle.IDCardType',
-  idCardType: 'Driver licence'
+  idCardType: 'Valid Driver Licence'
 },
 // {
 //   _t: "tradle.IDCardType",
