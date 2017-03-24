@@ -1,0 +1,26 @@
+{
+  "id": "tradle.Name",
+  "title": "Name",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "givenName": {
+      "title": "Given name(s)",
+      "type": "string"
+    },
+    "surname": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "givenName",
+    "surname"
+  ],
+  "viewCols": [
+    "givenName",
+    "surname"
+  ]
+}
