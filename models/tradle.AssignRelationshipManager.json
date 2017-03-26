@@ -1,0 +1,25 @@
+{
+  "id": "tradle.AssignRelationshipManager",
+  "title": "Assign Relationship Manager",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "employee": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "application": {
+      "type": "object",
+      "ref": "tradle.ProductApplication"
+    }
+  },
+  "required": [
+    "employee"
+  ],
+  "viewCols": [
+    "employee"
+  ]
+}
