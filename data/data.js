@@ -73,18 +73,6 @@ const resources = [
   _t: 'tradle.EducationNL',
   education: 'University'
 },
-{
-  _t: 'tradle.IDCardType',
-  idCardType: 'Valid Passport'
-},
-// {
-//   _t: 'tradle.IDCardType',
-//   idCardType: 'ID Card'
-// },
-{
-  _t: 'tradle.IDCardType',
-  idCardType: 'Valid Driver Licence'
-},
 // {
 //   _t: "tradle.IDCardType",
 //   idCardType: 'Residence permit'
