@@ -4,13 +4,13 @@
   "subClassOf": "tradle.Enum",
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "idCardType": {
       "displayName": true,
       "type": "string"
     }
-  }
+  },
+  "enum": [
+    { "id": "passport", "title": "Valid Passport" },
+    { "id": "license", "title": "Valid Driver Licence" }
+  ]
 }
