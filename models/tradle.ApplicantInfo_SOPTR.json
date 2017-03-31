@@ -1,0 +1,142 @@
+{
+  "id": "tradle.ApplicantlInfo",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Verifiable"
+  ],
+  "evidentiaryDocuments": [
+    "tradle.Passport",
+    "tradle.Visa",
+    "tradle.DriverLicense",
+    "tradle.IdentificationDetail"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "ownerType": {
+       "type": "object",
+       "ref": "tradle.CopyrightRepresentativeType",
+       "title": "Type of representative of the copyright holder"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "middleName": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "displayAs": "{1} {2} {3}",
+      "group": [
+        "lastName",
+        "firstName",
+        "middleName"
+      ],
+      "readOnly": true,
+      "displayName": true
+    },
+    "SNILS": {
+      "type": "string",
+      "title": "SNILS",
+      "description": "Personal insurance policy number"
+    },
+    "name_group": {
+      "type": "string",
+      "title": "Personal detail",
+      "list": [
+        "firstName",
+        "middleName",
+        "lastName",
+        "SNILS"
+      ]
+    },
+    "address_group": {
+      "type": "string",
+      "title": "Mailing address",
+      "list": [
+        "mailingAddress"
+      ]
+    },
+    "mailingAddress": {
+      "type": "string"
+    },
+    "contact_group": {
+      "type": "string",
+      "title": "Contact information",
+      "list": [
+        "phone",
+        "emailAddress"
+      ]
+    },
+    "phone": {
+      "type": "object",
+      "ref": "tradle.Phone"
+    },
+    "emailAddress": {
+      "type": "string",
+      "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+      "keyboard": "email-address",
+      "range": "email"
+    },
+    "documentType": {
+      "type": "object",
+      "ref": "tradle.IDCardType"
+    },
+    "serialNumber": {
+      "type": "number"
+    },
+    "issuedBy": {
+      "type": "string"
+    },
+    "dateIssued": {
+      "type": "date"
+    },
+    "id_group": {
+      "type": "string",
+      "title": "The document proving the identity",
+      "list": [
+        "documentType",
+        "serialNumber",
+        "issuedBy",
+        "dateIssued"
+      ]
+    }
+  },
+  "editCols": [
+    "name_group",
+    "id_group",
+    "address_group",
+    "phone"
+  ],
+  "required": [
+    "firstName",
+    "middleName",
+    "lastName",
+    "emailAddress",
+    "phone",
+    "mailingAddress",
+    "documentType",
+    "serialNumber",
+    "issuedBy",
+    "dateIssued"
+  ],
+  "viewCols": [
+    "lastName",
+    "firstName",
+    "middleName",
+    "emailAddress",
+    "phone",
+    "mailingAddress",
+    "documentType",
+    "serialNumber",
+    "issuedBy",
+    "dateIssued"
+  ]
+}

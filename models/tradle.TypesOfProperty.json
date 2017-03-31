@@ -1,0 +1,29 @@
+{
+  "id": "tradle.TypesOfProperty",
+  "title": "Property Types",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "propertyType": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "required": [
+    "propertyType"
+  ],
+  "enum": [
+    {"id": "landPlot", "title": "Land plot"},
+    {"id": "building", "title": "Building"},
+    {"id": "ronResidentialPremises", "title": "Non-residential premises"},
+    {"id": "construction", "title": "Construction"},
+    {"id": "residentialHouse", "title": "Residential house"},
+    {"id": "unfinishedConstructionObject", "title": "Unfinished construction object"},
+    {"id": "apartment", "title": "Apartment"},
+    {"id": "enterprisePropertyComplex", "title": "Enterprise as a property complex"},
+    {"id": "plotOfSubsoil", "title": "Plot of subsoil"}
+  ]
+}

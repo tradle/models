@@ -1,0 +1,23 @@
+{
+  "id": "tradle.CopyrightRepresentativeType",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "copyrightRepresentativeType": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "required": [
+    "copyrightRepresentativeType"
+  ],
+  "enum": [
+    {"id": "legalRepresentative", "title": "Legal representative"},
+    {"id": "confidant", "title": "Confidant"},
+    {"id": "authorizedPerson", "title": "Authorized person"},
+    {"id": "otherPerson", "title": "Other person"}
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "id": "tradle.PropertyRightsRegistration",
+  "title": "Property Rights Registration",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Verifiable"
+  ],
+  "evidentiaryDocuments": [
+    "tradle.Passport",
+    "tradle.Visa",
+    "tradle.DriverLicense",
+    "tradle.IdentificationDetail"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "propertyType": {
+      "type": "object",
+      "ref": "tradle.TypesOfProperty"
+    },
+    "cadastralNumber": {
+      "type": "string",
+      "keyboardType": "numbers-and-punctuation"
+    },
+    "conditionalNumber": {
+      "type": "string",
+      "keyboardType": "numbers-and-punctuation"
+    },
+    "area": {
+      "units": "m²",
+      "type": "number"
+    },
+    "propertyAddress": {
+      "type": "string"
+    },
+    "houseNumber": {
+      "type": "string"
+    },
+    "unit": {
+      "type": "string"
+    },
+    "building": {
+      "type": "string"
+    },
+    "apartmentNumber": {
+      "type": "string"
+    },
+    "other": {
+      "type": "string"
+    },
+    "additionalInformation": {
+      "type": "string"
+    },
+    "ownerType": {
+      "type": "object",
+      "ref": "tradle.OwnerType"
+    },
+    "fullTitle": {
+      "type": "string"
+    },
+    "PSRN": {
+      "type": "number",
+      "title": "PSRN"
+    },
+    "TIN": {
+      "type": "string",
+      "title": "TIN",
+      "description": "Tax identification number"
+    },
+    "KPP": {
+      "type": "string",
+      "title": "KPP",
+      "description": "tax registration reason code"
+    },
+    "registrationDate": {
+      "type": "date"
+    },
+    "ownerAddress": {
+      "type": "string"
+    }
+  },
+  "editCols": [
+    "name_group",
+    "phones"
+  ],
+  "required": [
+    "propertyType",
+    "cadastralNumber",
+    "conditionalNumber",
+    "area",
+    "propertyAddress",
+    "fullTitle",
+    "TIN",
+    "KPP",
+    "PSRN",
+    "registrationDate",
+    "ownerAddress"
+  ],
+  "viewCols": [
+    "propertyType",
+    "cadastralNumber",
+    "conditionalNumber",
+    "area",
+    "propertyAddress",
+    "fullTitle",
+    "TIN",
+    "KPP",
+    "PSRN",
+    "registrationDate",
+    "ownerAddress"
+  ]
+}

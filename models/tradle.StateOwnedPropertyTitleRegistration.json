@@ -1,0 +1,28 @@
+{
+  "id": "tradle.StateOwnedPropertyTitleRegistration",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "type": "tradle.Model",
+  "forms": [
+    "tradle.PropertyRightsRegistration",
+    "tradle.ApplicantInfo"
+  ],
+  "subClassOf": "tradle.FinancialProduct",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    },
+    "to": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity"
+    }
+  }
+}
