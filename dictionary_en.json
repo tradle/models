@@ -147,7 +147,8 @@
     },
     "givenName": {
       "Default": "Given Name",
-      "tradle.Name": "Given name(s)"
+      "tradle.Name": "Given name(s)",
+      "tradle.OnfidoApplicant": "Given name(s)"
     },
     "dateOfBirth": {
       "Default": "Date Of Birth"
@@ -218,7 +219,9 @@
       "tradle.Collateral": "Address",
       "tradle.Address": "Address",
       "tradle.PhoneBill": "Address",
-      "tradle.Residence": "Address"
+      "tradle.Residence": "Address",
+      "tradle.OnfidoAddress": "Address",
+      "tradle.OnfidoApplicant": "Address"
     },
     "propertyType": {
       "Default": "Property Type"
@@ -718,7 +721,11 @@
     "address_group": {
       "tradle.Address": "Address",
       "tradle.Profile": "Home Address",
-      "tradle.Residence": "Address"
+      "tradle.Residence": "Address",
+      "tradle.OnfidoAddress": "Address",
+      "tradle.OnfidoApplicant": "Address",
+      "tradle.ApplicantInfo": "Mailing address",
+      "tradle.PropertyRightsRegistration": "Property address"
     },
     "state": {
       "Default": "State"
@@ -757,7 +764,8 @@
       "Default": "Methods"
     },
     "formattedName": {
-      "Default": "Formatted Name"
+      "Default": "Formatted Name",
+      "tradle.OnfidoApplicant": "Name"
     },
     "dockerhub": {
       "tradle.BetaTesterContactInfo": "Docker Hub username"
@@ -1227,7 +1235,8 @@
       "Default": "Context"
     },
     "name_group": {
-      "tradle.PersonalInfo": "Personal detail"
+      "tradle.PersonalInfo": "Personal detail",
+      "tradle.ApplicantInfo": "Personal detail"
     },
     "number": {
       "Default": "Number"
@@ -1531,6 +1540,120 @@
     },
     "employee": {
       "Default": "Employee"
+    },
+    "buildingNumber": {
+      "Default": "Building Number"
+    },
+    "town": {
+      "Default": "Town"
+    },
+    "postcode": {
+      "Default": "Postcode"
+    },
+    "flatNumber": {
+      "Default": "Flat Number"
+    },
+    "subStreet": {
+      "Default": "Sub Street"
+    },
+    "personalinfo_group": {
+      "tradle.OnfidoApplicant": "Personal Info"
+    },
+    "ownerType": {
+      "tradle.ApplicantInfo": "Type of representative of the copyright holder"
+    },
+    "SNILS": {
+      "tradle.ApplicantInfo": "SNILS"
+    },
+    "mailingAddress": {
+      "Default": "Mailing Address"
+    },
+    "contact_group": {
+      "tradle.ApplicantInfo": "Contact information"
+    },
+    "series": {
+      "Default": "Series"
+    },
+    "dateIssued": {
+      "Default": "Date Issued"
+    },
+    "id_group": {
+      "tradle.ApplicantInfo": "The document proving the identity"
+    },
+    "copyrightRepresentativeType": {
+      "Default": "Copyright Representative Type"
+    },
+    "property_group": {
+      "tradle.PropertyRightsRegistration": "About property"
+    },
+    "cadastralNumber": {
+      "Default": "Cadastral Number"
+    },
+    "conditionalNumber": {
+      "Default": "Conditional Number"
+    },
+    "area": {
+      "Default": "Area"
+    },
+    "fullAddress": {
+      "Default": "Full Address"
+    },
+    "unit": {
+      "Default": "Unit"
+    },
+    "building": {
+      "Default": "Building"
+    },
+    "apartmentNumber": {
+      "Default": "Apartment Number"
+    },
+    "additionalInformation": {
+      "Default": "Additional Information"
+    },
+    "owner_group": {
+      "tradle.PropertyRightsRegistration": "About owner"
+    },
+    "fullTitle": {
+      "Default": "Full Title"
+    },
+    "PSRN": {
+      "tradle.PropertyRightsRegistration": "PSRN"
+    },
+    "TIN": {
+      "tradle.PropertyRightsRegistration": "TIN"
+    },
+    "KPP": {
+      "tradle.PropertyRightsRegistration": "KPP"
+    },
+    "ownerAddress_group": {
+      "tradle.PropertyRightsRegistration": "Owner address"
+    },
+    "ownerFullAddress": {
+      "Default": "Owner Full Address"
+    },
+    "ownerHouseNumber": {
+      "tradle.PropertyRightsRegistration": "House Number"
+    },
+    "ownerUnit": {
+      "tradle.PropertyRightsRegistration": "Unit"
+    },
+    "ownerBuilding": {
+      "tradle.PropertyRightsRegistration": "Building"
+    },
+    "ownerApartmentNumber": {
+      "tradle.PropertyRightsRegistration": "Apartment number"
+    },
+    "ownerOther": {
+      "tradle.PropertyRightsRegistration": "Other"
+    },
+    "contactInfo_group": {
+      "tradle.PropertyRightsRegistration": "Contact info"
+    },
+    "contactPhone": {
+      "Default": "Contact Phone"
+    },
+    "contactEmailAddress": {
+      "Default": "Contact Email Address"
     }
   },
   "models": {
@@ -1767,6 +1890,15 @@
     "tradle.Name": "Name",
     "tradle.ApplicationRejection": "Application Denial",
     "tradle.AssignRelationshipManager": "Assign Relationship Manager",
-    "tradle.ApplicationDenial": "Application Denial"
+    "tradle.ApplicationDenial": "Application Denial",
+    "tradle.OnfidoAddress": "Address",
+    "tradle.OnfidoApplicant": "Personal Info",
+    "tradle.ApplicantInfo": "Applicant Info",
+    "tradle.CopyrightRepresentativeType": "Copyright Representative Type",
+    "tradle.DocumentType_SOPRT": "Document Type",
+    "tradle.OwnerType": "Owner Type",
+    "tradle.PropertyRightsRegistration": "Property Rights Registration",
+    "tradle.StateOwnedPropertyTitleRegistration": "Title Registration",
+    "tradle.TypesOfProperty": "Property Types"
   }
 }
