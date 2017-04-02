@@ -46,9 +46,9 @@
     },
     "address_group": {
       "type": "string",
-      "title": "Address of the property",
+      "title": "Property address",
       "list": [
-        "propertyAddress",
+        "fullAddress",
         "houseNumber",
         "unit",
         "building",
@@ -57,7 +57,7 @@
         "additionalInformation"
       ]
     },
-    "propertyAddress": {
+    "fullAddress": {
       "type": "string"
     },
     "houseNumber": {
@@ -115,8 +115,11 @@
       "type": "date"
     },
     "ownerAddress_group": {
+      "type": "string",
+      "readOnly": true,
+      "title": "Owner address",
       "list": [
-        "ownerAddress",
+        "ownerFullAddress",
         "ownerHouseNumber",
         "ownerHouseNumber",
         "ownerUnit",
@@ -125,8 +128,7 @@
         "ownerOther"
       ]
     },
-
-    "ownerAddress": {
+    "ownerFullAddress": {
       "type": "string"
     },
     "ownerHouseNumber": {
@@ -138,7 +140,8 @@
       "title": "Unit"
     },
     "ownerBuilding": {
-      "type": "string"
+      "type": "string",
+      "title": "Building"
     },
     "ownerApartmentNumber": {
       "type": "string",
