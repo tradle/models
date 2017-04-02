@@ -160,8 +160,11 @@
       ]
     },
     "contactPhone": {
-      "type": "object",
-      "ref": "tradle.Phone"
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Phone"
+      }
     },
     "contactEmailAddress": {
       "type": "string",
