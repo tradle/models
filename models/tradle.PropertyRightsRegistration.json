@@ -18,6 +18,16 @@
       "type": "string",
       "readOnly": true
     },
+    "property_group": {
+      "type": "string",
+      "title": "About property",
+      "list": [
+        "propertyType",
+        "cadastralNumber",
+        "conditionalNumber",
+        "area"
+      ]
+    },
     "propertyType": {
       "type": "object",
       "ref": "tradle.TypesOfProperty"
@@ -33,6 +43,19 @@
     "area": {
       "units": "m²",
       "type": "number"
+    },
+    "address_group": {
+      "type": "string",
+      "title": "Address of the property",
+      "list": [
+        "propertyAddress",
+        "houseNumber",
+        "unit",
+        "building",
+        "apartmentNumber",
+        "other",
+        "additionalInformation"
+      ]
     },
     "propertyAddress": {
       "type": "string"
@@ -59,6 +82,18 @@
       "type": "object",
       "ref": "tradle.OwnerType"
     },
+    "owner_group": {
+      "type": "string",
+      "title": "About property",
+      "list": [
+        "fullTitle",
+        "PSRN",
+        "TIN",
+        "KPP",
+        "registrationDate"
+      ]
+    },
+
     "fullTitle": {
       "type": "string"
     },
@@ -79,10 +114,47 @@
     "registrationDate": {
       "type": "date"
     },
+    "ownerAddress_group": {
+      "list": [
+        "ownerAddress",
+        "ownerHouseNumber",
+        "ownerHouseNumber",
+        "ownerUnit",
+        "ownerBuilding",
+        "ownerApartmentNumber",
+        "ownerOther"
+      ]
+    },
+
     "ownerAddress": {
       "type": "string"
+    },
+    "ownerHouseNumber": {
+      "type": "string",
+      "title": "House Number"
+    },
+    "ownerUnit": {
+      "type": "string",
+      "title": "Unit"
+    },
+    "ownerBuilding": {
+      "type": "string"
+    },
+    "ownerApartmentNumber": {
+      "type": "string",
+      "title": "Apartment number"
+    },
+    "ownerOther": {
+      "type": "string",
+      "title": "Other"
     }
   },
+  "editCols": [
+    "property_group",
+    "address_group",
+    "owner_group",
+    "ownerAddress_group"
+  ],
   "required": [
     "propertyType",
     "cadastralNumber",
