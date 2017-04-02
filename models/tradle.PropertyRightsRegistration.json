@@ -90,6 +90,7 @@
         "PSRN",
         "TIN",
         "KPP",
+        "ownerType",
         "registrationDate"
       ]
     },
@@ -149,18 +150,36 @@
     "ownerOther": {
       "type": "string",
       "title": "Other"
+    },
+    "contactInfo_group": {
+      "type": "string",
+      "title": "Contact info",
+      "list": [
+        "contactPhone",
+        "contactEmailAddress"
+      ]
+    },
+    "contactPhone": {
+      "type": "object",
+      "ref": "tradle.Phone"
+    },
+    "contactEmailAddress": {
+      "type": "string",
+      "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+      "keyboard": "email-address",
+      "range": "email"
     }
   },
   "editCols": [
     "property_group",
     "address_group",
     "owner_group",
-    "ownerAddress_group"
+    "ownerAddress_group",
+    "contactInfo_group"
   ],
   "required": [
     "propertyType",
     "cadastralNumber",
-    "conditionalNumber",
     "area",
     "fullAddress",
     "fullTitle",
@@ -168,7 +187,8 @@
     "KPP",
     "PSRN",
     "registrationDate",
-    "ownerFullAddress"
+    "ownerFullAddress",
+    "contactPhone"
   ],
   "viewCols": [
     "propertyType",
@@ -181,6 +201,7 @@
     "KPP",
     "PSRN",
     "registrationDate",
-    "ownerFullAddress"
+    "ownerFullAddress",
+    "contactPhone"
   ]
 }
