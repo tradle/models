@@ -1,0 +1,46 @@
+{
+  "id": "tradle.IProovSelfie",
+  "type": "tradle.Model",
+  "title": "iProov Selfie",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Verifiable",
+    "tradle.Document"
+  ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.APIBasedVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.APIBasedVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.APIBasedVerificationMethod"
+      ]
+    }
+  },
+  "notShareable": true,
+  "notEditable": true,
+  "formRequestMessage": "Please take a sci-fi selfie of yourself",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "token": {
+      "type": "string"
+    },
+    "enroll": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "token",
+    "enroll"
+  ],
+  "viewCols": [
+    "token"
+  ]
+}
