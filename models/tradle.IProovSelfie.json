@@ -33,12 +33,12 @@
       "type": "string"
     },
     "enroll": {
-      "type": "boolean"
+      "type": "boolean",
+      "readOnly": true
     }
   },
   "required": [
-    "token",
-    "enroll"
+    "token"
   ],
   "viewCols": [
     "token"
