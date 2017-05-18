@@ -11,7 +11,7 @@ exports.dict = {
   en: require('./dictionary_en.json'),
   nl: require('./dictionary_nl.json')
 }
-exports.formDefaults = require('./data/formDefaults.json')
+// exports.formDefaults = require('./data/formDefaults.json')
 exports.data = require('./data/data')
 exports.currencies = require('./data/tradle.Currency.json')
 exports.nationalities = require('./data/tradle.Nationality.json')
