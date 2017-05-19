@@ -50,34 +50,6 @@ const resources = [
   status: 'Living together with agreement'
 },
 {
-  _t: 'tradle.EducationNL',
-  education: 'Elementary School'
-},
-{
-  _t: 'tradle.EducationNL',
-  education: 'High School'
-},
-{
-  _t: 'tradle.EducationNL',
-  education: 'Vocational Secondary School (Junior)'  // LBO
-},
-{
-  _t: 'tradle.EducationNL',
-  education: 'Vocational Secondary School (Senior)'  // MBO
-},
-{
-  _t: 'tradle.EducationNL',
-  education: 'College'                               // HBO
-},
-{
-  _t: 'tradle.EducationNL',
-  education: 'University'
-},
-// {
-//   _t: "tradle.IDCardType",
-//   idCardType: 'Residence permit'
-// },
-{
   _t: 'tradle.SourceOfIncome',
   sourceOfIncome: 'Employed'
 },
@@ -148,15 +120,6 @@ const resources = [
 {
   _t: "tradle.KindOfHouse",
   kindOfHouse: "Appartment"
-},
-{ _t: "tradle.MortgageGuarantee",
-  mortgageGuarantee: "No"
-},
-{ _t: "tradle.MortgageGuarantee",
-  mortgageGuarantee: "NHG"
-},
-{ _t: "tradle.MortgageGuarantee",
-  mortgageGuarantee: "Gemeente Garantie"
 },
 {
   _t: "tradle.KindOfObligation",
@@ -291,34 +254,6 @@ const resources = [
   propertyType: 'Buy to let'
 },
 {
-  _t: 'tradle.PropertyTypes',
-  propertyType: 'Single Family House'
-},
-{
-  _t: 'tradle.PropertyTypes',
-  propertyType: 'Condominium'
-},
-{
-  _t: 'tradle.PropertyTypes',
-  propertyType: 'Duplex'
-},
-{
-  _t: 'tradle.PropertyTypes',
-  propertyType: 'High Volume Home'
-},
-{
-  _t: 'tradle.PropertyTypes',
-  propertyType: 'Vacation Home'
-},
-{
-  _t: 'tradle.PropertyTypes',
-  propertyType: 'Farm'
-},
-{
-  _t: 'tradle.PropertyTypes',
-  propertyType: 'Land'
-},
-{
   _t: 'tradle.PurposeOfMortgageLoan',
   purpose: 'Buy your first home'
 },
@@ -375,138 +310,6 @@ const resources = [
   phoneType: 'Work',
 },
 {
-  _t: 'tradle.CommercialProduct',
-  productType: 'Obvion'
-},
-{
-  _t: 'tradle.CommercialProduct',
-  productType: 'Basis'
-},
-{
-  _t: 'tradle.CommercialProduct',
-  productType: 'Compact'
-},
-{
-  _t: 'tradle.CommercialProduct',
-  productType: 'ABP'
-},
-{
-  _t: 'tradle.RepaymentType',
-  repaymentType: 'Annuity'
-},
-{
-  _t: 'tradle.RepaymentType',
-  repaymentType: 'Linear'
-},
-{
-  _t: 'tradle.RepaymentType',
-  repaymentType: 'Interest Only'
-},
-{
-  _t: 'tradle.LoanTypes',
-  loanType: 'New Mortgage'
-},
-{
-  _t: 'tradle.LoanTypes',
-  loanType: 'Second Mortgage'
-},
-{
-  _t: 'tradle.LoanTypes',
-  loanType: 'Additional Mortgage Within Existing Contract'
-},
-{
-  _t: 'tradle.LoanTypes',
-  loanType: 'Coming Form Other Mortgage Supplier'
-},
-{
-  _t: 'tradle.LoanTypes',
-  loanType: 'Change Mortgage Construction'
-},
-{
-  _t: 'tradle.InterestType',
-  interestType: '30 years fixed'
-},
-{
-  _t: 'tradle.InterestType',
-  interestType: '15 years fixed'
-},
-{
-  _t: 'tradle.InterestType',
-  interestType: '10 years fixed'
-},
-{
-  _t: 'tradle.InterestType',
-  interestType: '5 adjustable'
-},
-{
-  _t: 'tradle.InterestType',
-  interestType: 'Variable'
-},
-{
-  _t: 'tradle.ContractType',
-  contractType: 'fixed'
-},
-{
-  _t: 'tradle.ContractType',
-  contractType: 'self-employed'
-},
-{
-  _t: 'tradle.OwnershipStructure',
-  ownershipStructure: 'Sole Proprietorship'
-},
-{
-  _t: 'tradle.OwnershipStructure',
-  ownershipStructure: 'Partnership'
-},
-{
-  _t: 'tradle.OwnershipStructure',
-  ownershipStructure: 'Limited Partnership'
-},
-{
-  _t: 'tradle.OwnershipStructure',
-  ownershipStructure: 'Limited Liability Company (LLC)'
-},
-{
-  _t: 'tradle.OwnershipStructure',
-  ownershipStructure: 'Corporation (for-profit)'
-},
-{
-  _t: 'tradle.OwnershipStructure',
-  ownershipStructure: 'Nonprofit Corporation'
-},
-{
-  _t: 'tradle.OwnershipStructure',
-  ownershipStructure: 'Cooperative'
-},
-{
-  _t: 'tradle.ExemptStatus',
-  exemptStatus: 'Exempt'
-},
-{
-  _t: 'tradle.ExemptStatus',
-  exemptStatus: 'Non-Exempt'
-},
-{
-  _t: 'tradle.FormationType',
-  formationType: 'Corporation'
-},
-{
-  _t: 'tradle.FormationType',
-  formationType: 'Foreign Financial Institution'
-},
-{
-  _t: 'tradle.FormationType',
-  formationType: 'Fund'
-},
-{
-  _t: 'tradle.FormationType',
-  formationType: 'Government'
-},
-{
-  _t: 'tradle.FormationType',
-  formationType: 'Investment Advisor'
-},
-{
   _t: 'tradle.FormationType',
   formationType: 'NGO Charity'
 },
@@ -527,125 +330,12 @@ const resources = [
   formationType: 'Trust'
 },
 {
-  _t: 'tradle.AddressType',
-  addressType: 'Physical'
-},
-{
-  _t: 'tradle.GovernmentIdType',
-  governmentIdType: 'U.S. Employee Identification Number'
-},
-{
   _t: 'tradle.Regulator',
   regulator: 'U.S. Securities and Exchange Commission'
 },
 {
   _t: 'tradle.Exchange',
   exchange: 'U.S. NYSE'
-},
-{
-  _t: 'tradle.Sex',
-  sex: 'Male'
-},
-{
-  _t: 'tradle.Sex',
-  sex: 'Female'
-},
-{
-  _t: "tradle.EResidencyApplicationType",
-  eResidencyApplicationType: 'First e-Residency application'
-},
-{
-  _t: "tradle.EResidencyApplicationType",
-  eResidencyApplicationType: 'Expry of documents'
-},
-{
-  _t: "tradle.EResidencyApplicationType",
-  eResidencyApplicationType: 'Data has changed'
-},
-{
-  _t: "tradle.EResidencyApplicationType",
-  eResidencyApplicationType: 'Lost, destroyed, stolen'
-},
-{
-  _t: "tradle.EResidencyApplicationType",
-  eResidencyApplicationType: 'Unusable'
-},
-
-{
-  _t: 'tradle.IdentityDocumentType',
-  documentType: 'National passport (issued by your country of citizenship)'
-},
-{
-  _t: 'tradle.IdentityDocumentType',
-  documentType: 'Other ID document/ID card'
-},
-{
-  _t: 'tradle.IdentityDocumentType',
-  documentType: 'Republic of Estonia ID'
-},
-{
-  _t: 'tradle.IdentityDocumentType',
-  documentType: 'Foreign passport (not issued by your country of citizenship)'
-},
-
-{
-  _t: 'tradle.Location',
-  location: 'Offices in Estonia'
-},
-{
-  _t: 'tradle.Location',
-  location: 'Australia, Canberra'
-},
-{
-  _t: 'tradle.Location',
-  location: 'Austia, Vienna'
-},
-{
-  _t: 'tradle.Location',
-  location: 'China, Beijing'
-},
-{
-  _t: 'tradle.Location',
-  location: 'Canada, Ottava'
-},
-{
-  _t: 'tradle.Location',
-  location: 'France, Paris'
-},
-{
-  _t: 'tradle.Location',
-  location: 'Latvia, Riga'
-},
-
-{
-  _t: 'tradle.Location',
-  location: 'UK, London'
-},
-
-{
-  _t: 'tradle.Location',
-  location: 'USA, New York'
-},
-
-{
-  _t: 'tradle.EResidencyMotivation',
-  eResidencyMotivation: 'Location independant international business'
-},
-{
-  _t: 'tradle.EResidencyMotivation',
-  eResidencyMotivation: 'Bringing business to Estonia'
-},
-{
-  _t: 'tradle.EResidencyMotivation',
-  eResidencyMotivation: 'Using the technology of secure authentication'
-},
-{
-  _t: 'tradle.EResidencyMotivation',
-  eResidencyMotivation: 'Living in or visiting Estonia'
-},
-{
-  _t: 'tradle.EResidencyMotivation',
-  eResidencyMotivation: 'Fan of e-Residency'
 },
 {
   _t: 'tradle.ResidenceType',
