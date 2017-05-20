@@ -1,0 +1,130 @@
+{
+  "id": "tradle.Passport",
+  "type": "tradle.Model",
+  "title": "Passport",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Verifiable"
+  ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod",
+        "tradle.APIBasedVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "issuingCountry": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "passportNumber": {
+      "type": "number",
+      "maxLength": 9,
+      "minLength": 9,
+      "displayName": true
+    },
+    "surname": {
+      "type": "string"
+    },
+    "givenName": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "object",
+      "ref": "tradle.Nationality"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "sex": {
+      "type": "object",
+      "ref": "tradle.Sex"
+    },
+    "placeOfBirth": {
+      "type": "string"
+    },
+    "dateOfIssue": {
+      "type": "date"
+    },
+    "authority": {
+      "type": "string",
+      "displayName": true
+    },
+    "dateOfExpiry": {
+      "type": "date",
+      "displayName": true
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "from": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Identity",
+      "displayName": true
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "readOnly": true
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true
+    },
+    "photos": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Photo"
+      }
+    }
+  },
+  "required": [
+    "country",
+    "photos",
+    "issuingCountry",
+    "passportNumber",
+    "surname",
+    "givenName",
+    "nationality",
+    "dateOfBirth",
+    "sex",
+    "placeOfBirth",
+    "dateOfIssue",
+    "authority",
+    "dateOfExpiry"
+  ],
+  "viewCols": [
+    "country",
+    "issuingCountry",
+    "passportNumber",
+    "surname",
+    "givenName",
+    "nationality",
+    "dateOfBirth",
+    "sex",
+    "placeOfBirth",
+    "dateOfIssue",
+    "authority",
+    "dateOfExpiry"
+  ]
+}
