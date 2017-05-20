@@ -1,5 +1,4 @@
 const staticData = [
-  require('./tradle.PurposeOfTheAccount.json'),
   require('./tradle.EducationDegree.json'),
   require('./tradle.Country.json'),
   require('./tradle.Nationality.json'),
@@ -28,26 +27,6 @@ const resources = [
 {
   _t: 'tradle.ResidentialStatus',
   status: 'Living with parents'
-},
-{
-  _t: 'tradle.MaritalStatus',
-  status: 'Single',
-},
-{
-  _t: 'tradle.MaritalStatus',
-  status: 'Married',
-},
-{
-  _t: 'tradle.MaritalStatus',
-  status: "Married with prenuptial agreement"
-},
-{
-  _t: 'tradle.MaritalStatus',
-  status: 'Civil partnership'
-},
-{
-  _t: 'tradle.MaritalStatus',
-  status: 'Living together with agreement'
 },
 {
   _t: 'tradle.SourceOfIncome',
@@ -284,18 +263,6 @@ const resources = [
   _t: 'tradle.Language',
   language: 'Dutch',
   code: 'nl'
-},
-{
-  _t: 'tradle.HowToFund',
-  howToFund: 'Cash',
-},
-{
-  _t: 'tradle.HowToFund',
-  howToFund: 'Check',
-},
-{
-  _t: 'tradle.HowToFund',
-  howToFund: 'Direct to Bank'
 },
 {
   _t: 'tradle.PhoneTypes',

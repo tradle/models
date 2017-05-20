@@ -1,0 +1,30 @@
+{
+  "id": "tradle.PurposeOfTheAccount",
+  "title": "Purpose Of The Account",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "purpose": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "required": [
+    "purpose"
+  ],
+  "enum": [
+    {"id": "Benefit", "title": "Benefit Payments"},
+    {"id": "Bills", "title": "Bills / Expenses"},
+    {"id": "Capital", "title": "Capital Raising ( Scottish Widows Bank )"},
+    {"id": "Inheritance", "title": "Inheritance"},
+    {"id": "Probate", "title": "Probate / Executor / Trustee"},
+    {"id": "Salary", "title": "Salary / Pension / Other Regular Income"},
+    {"id": "Savings", "title": "Savings"},
+    {"id": "Spending", "title": "Spending money"},
+    {"id": "Student", "title": "Student"}
+  ]
+}
