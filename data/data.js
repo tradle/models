@@ -193,18 +193,6 @@ const resources = [
   statusOfInsurance: "To Be Arranged"
 },
 {
-  _t: "tradle.TypeOfCoverage",
-  typeOfCoverage: "Equal Over Time"
-},
-{
-  _t: "tradle.TypeOfCoverage",
-  typeOfCoverage: "Yearly Decreasing"
-},
-{
-  _t: "tradle.TypeOfCoverage",
-  typeOfCoverage: "Linearly Decreasing"
-},
-{
   _t: 'tradle.PropertyType',
   propertyType: 'Freehold'
 },
