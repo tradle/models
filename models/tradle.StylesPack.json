@@ -93,12 +93,6 @@
     "shareButtonBackgroundColor": {
       "type": "string"
     },
-    "backlinkRowBgColor": {
-      "type": "string"
-    },
-    "backlinkRowTextColor": {
-      "type": "string"
-    },
     "listBg": {
       "type": "string"
     },
@@ -117,11 +111,28 @@
     "navBarBorderColor": {
       "type": "string"
     },
+    "messageSentStatus": {
+      "type": "string"
+    },
+    "incomingMessageBgColor": {
+      "type": "string"
+    },
+    "incomingMessageTextColor": {
+      "type": "string"
+    },
+    "incomingMessageOpaqueTextColor": {
+      "type": "string"
+    },
     "navBarBorderWidth": {
       "type": "number"
     },
-    "messageSentStatus": {
-      "type": "string"
+    "submitBarInFooter": {
+      "type": "boolean"
+    },
+    "logo": {
+      "type": "object",
+      "inlined": true,
+      "ref": "tradle.Photo"
     }
   }
 }
