@@ -117,6 +117,9 @@
     "navBarBorderColor": {
       "type": "string"
     },
+    "navBarBorderWidth": {
+      "type": "number"
+    },
     "messageSentStatus": {
       "type": "string"
     },
@@ -129,13 +132,15 @@
     "incomingMessageOpaqueTextColor": {
       "type": "string"
     },
-    "navBarBorderWidth": {
-      "type": "number"
-    },
     "submitBarInFooter": {
       "type": "boolean"
     },
     "logo": {
+      "type": "object",
+      "inlined": true,
+      "ref": "tradle.Photo"
+    },
+    "backgroundImage": {
       "type": "object",
       "inlined": true,
       "ref": "tradle.Photo"
