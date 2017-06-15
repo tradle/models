@@ -70,7 +70,26 @@
         "ref": "tradle.Photo"
       }
     },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "ref": "tradle.Verification",
+        "backlink": "from"
+      }
+    },
+    "forms": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "ref": "tradle.Form",
+        "backlink": "to"
+      }
+    },
     "securityCodes": {
+      "hidden": true,
       "type": "array",
       "readOnly": true,
       "items": {
