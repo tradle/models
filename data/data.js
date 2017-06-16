@@ -263,18 +263,6 @@ const resources = [
 {
   _t: 'tradle.Exchange',
   exchange: 'U.S. NYSE'
-},
-{
-  _t: 'tradle.ResidenceType',
-  value: 'Primary Residence'
-},
-{
-  _t: 'tradle.ResidenceType',
-  value: 'Second Home'
-},
-{
-  _t: 'tradle.ResidenceType',
-  value: 'Investment Property'
 }
 ]
 
