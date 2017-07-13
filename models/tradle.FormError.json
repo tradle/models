@@ -20,14 +20,17 @@
     "prefill": {
       "type": "object",
       "ref": "tradle.Form",
-      "readOnly": true
+      "readOnly": true,
+      "inlined": true
     },
     "prefilled": {
       "type": "object",
-      "range": "json"
+      "range": "json",
+      "inlined": true
     },
     "errors": {
       "type": "array",
+      "inlined": true,
       "items": {
         "type": "object",
         "properties": {
