@@ -8,10 +8,6 @@
   "icon": "ios-checkmark-circle-outline",
   "autoCreate": true,
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "document": {
       "type": "object",
       "readOnly": true,
@@ -21,20 +17,6 @@
     "message": {
       "type": "string",
       "title": "Description",
-      "displayName": true
-    },
-    "to": {
-      "type": "object",
-      "title": "Owner",
-      "ref": "tradle.Identity",
-      "displayName": true,
-      "readOnly": true
-    },
-    "from": {
-      "type": "object",
-      "title": "Verifier",
-      "readOnly": true,
-      "ref": "tradle.Identity",
       "displayName": true
     },
     "dateVerified": {

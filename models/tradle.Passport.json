@@ -26,10 +26,6 @@
   },
   "subClassOf": "tradle.Form",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "issuingCountry": {
       "type": "object",
       "ref": "tradle.Country"
@@ -74,17 +70,6 @@
     "country": {
       "type": "object",
       "ref": "tradle.Country"
-    },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity",
-      "displayName": true
-    },
-    "to": {
-      "type": "object",
-      "ref": "tradle.Identity",
-      "readOnly": true
     },
     "time": {
       "type": "date",

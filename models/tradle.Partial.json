@@ -3,26 +3,9 @@
   "type": "tradle.Model",
   "title": "Partial",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "resource": {
       "type": "object",
       "ref": "tradle.Message"
-    },
-    "to": {
-      "type": "object",
-      "title": "Owner",
-      "ref": "tradle.Identity",
-      "displayName": true,
-      "readOnly": true
-    },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity",
-      "displayName": true
     },
     "provider": {
       "type": "object",

@@ -4,10 +4,6 @@
   "subClassOf": "tradle.Enum",
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "howToFund": {
       "displayName": true,
       "type": "string"
@@ -17,8 +13,17 @@
     "howToFund"
   ],
   "enum": [
-    {"id": "cash", "title": "Cash"},
-    {"id": "check", "title": "Check"},
-    {"id": "direct", "title": "Direct to Bank"}
+    {
+      "id": "cash",
+      "title": "Cash"
+    },
+    {
+      "id": "check",
+      "title": "Check"
+    },
+    {
+      "id": "direct",
+      "title": "Direct to Bank"
+    }
   ]
 }

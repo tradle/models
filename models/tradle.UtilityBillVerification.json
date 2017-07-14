@@ -10,10 +10,6 @@
     "backgroundColor": "#EBE1FA"
   },
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "billDate": {
       "type": "date",
       "displayName": true
@@ -53,17 +49,6 @@
         "postalCode"
       ],
       "title": "Address",
-      "readOnly": true
-    },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
-    "to": {
-      "type": "object",
-      "ref": "tradle.Identity",
-      "displayName": true,
       "readOnly": true
     },
     "blockchainUrl": {
@@ -116,8 +101,6 @@
     }
   },
   "required": [
-    "to",
-    "from",
     "photos",
     "billDate",
     "issuedBy",
@@ -129,7 +112,6 @@
     "region"
   ],
   "gridCols": [
-    "from",
     "formattedAddress",
     "billDate",
     "time"
