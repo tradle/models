@@ -3,42 +3,5 @@
   "type": "tradle.Model",
   "title": "Message",
   "isInterface": true,
-  "properties": {
-    "message": {
-      "type": "string",
-      "displayName": true
-    },
-    "time": {
-      "type": "date",
-      "readOnly": true,
-      "displayName": true
-    },
-    "photos": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "skipLabel": true
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "title",
-        "url"
-      ]
-    },
-    "relatedTo": {
-      "type": "object",
-      "ref": "tradle.Message"
-    }
-  },
-  "viewCols": [
-    "message"
-  ]
+  "properties": {}
 }
