@@ -65,6 +65,13 @@
       "type": "string",
       "virtual": true,
       "readOnly": true
+    },
+    "_virtual": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "type": "string"
+      }
     }
   },
   "required": [
