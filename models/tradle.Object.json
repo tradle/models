@@ -1,0 +1,74 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.Object",
+  "title": "Object",
+  "description": "the base Object model from which all inherit",
+  "abstract": true,
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true,
+      "description": "the instance type"
+    },
+    "_s": {
+      "type": "string",
+      "readOnly": true,
+      "description": "signature"
+    },
+    "_r": {
+      "type": "string",
+      "readOnly": true,
+      "description": "the link to the original version of this object (permalink)"
+    },
+    "_p": {
+      "type": "string",
+      "readOnly": true,
+      "description": "the link to the previous version of this object"
+    },
+    "_q": {
+      "type": "string",
+      "readOnly": true,
+      "description": "the link to the previous message sent to a given recipient"
+    },
+    "_n": {
+      "type": "number",
+      "readOnly": true,
+      "description": "message sequence number, for tradle.Message object"
+    },
+    "_author": {
+      "type": "string",
+      "virtual": true,
+      "readOnly": true,
+      "description": "this object author's identity's permalink"
+    },
+    "_link": {
+      "type": "string",
+      "virtual": true,
+      "readOnly": true
+    },
+    "_permalink": {
+      "type": "string",
+      "virtual": true,
+      "readOnly": true
+    },
+    "_time": {
+      "type": "string",
+      "virtual": true,
+      "readOnly": true
+    },
+    "_min": {
+      "type": "boolean",
+      "virtual": true,
+      "readOnly": true
+    },
+    "_displayName": {
+      "type": "string",
+      "virtual": true,
+      "readOnly": true
+    }
+  },
+  "required": [
+    "_t",
+    "_s"
+  ]
+}
