@@ -56,10 +56,13 @@
       "virtual": true,
       "readOnly": true
     },
-    "_min": {
-      "type": "boolean",
+    "_cut": {
+      "type": "array",
       "virtual": true,
-      "readOnly": true
+      "readOnly": true,
+      "items": {
+        "type": "string"
+      }
     },
     "_displayName": {
       "type": "string",
