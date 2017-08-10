@@ -26,6 +26,20 @@
       "type": "object",
       "range": "json"
     },
+    "requestedProperties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "message": {
+            "type": "string"
+          }
+        }
+      }
+    },
     "errors": {
       "type": "array",
       "items": {
