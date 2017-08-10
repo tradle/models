@@ -2,14 +2,10 @@
   "id": "tradle.FormError",
   "title": "Form Error",
   "interfaces": [
-    "tradle.Message"
+    "tradle.ChatItem"
   ],
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "time": {
       "type": "date",
       "readOnly": true
@@ -20,11 +16,13 @@
     "prefill": {
       "type": "object",
       "ref": "tradle.Form",
-      "readOnly": true
+      "readOnly": true,
+      "inlined": true
     },
     "prefilled": {
       "type": "object",
-      "range": "json"
+      "range": "json",
+      "inlined": true
     },
     "requestedProperties": {
       "type": "array",
@@ -42,6 +40,7 @@
     },
     "errors": {
       "type": "array",
+      "inlined": true,
       "items": {
         "type": "object",
         "properties": {

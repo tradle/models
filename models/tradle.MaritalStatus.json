@@ -4,10 +4,6 @@
   "type": "tradle.Model",
   "subClassOf": "tradle.Enum",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "status": {
       "displayName": true,
       "type": "string"
@@ -17,10 +13,25 @@
     "status"
   ],
   "enum": [
-    {"id": "single", "title": "Single"},
-    {"id": "married", "title": "Married"},
-    {"id": "marriedPA", "title": "Married with prenuptial agreement"},
-    {"id": "civil", "title": "Civil partnership"},
-    {"id": "livingTogether", "title": "Living together with agreement"}
+    {
+      "id": "single",
+      "title": "Single"
+    },
+    {
+      "id": "married",
+      "title": "Married"
+    },
+    {
+      "id": "marriedPA",
+      "title": "Married with prenuptial agreement"
+    },
+    {
+      "id": "civil",
+      "title": "Civil partnership"
+    },
+    {
+      "id": "livingTogether",
+      "title": "Living together with agreement"
+    }
   ]
 }

@@ -4,24 +4,9 @@
   "title": "Form Request",
   "autoCreate": true,
   "interfaces": [
-    "tradle.Message"
+    "tradle.ChatItem"
   ],
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
-    "to": {
-      "type": "object",
-      "ref": "tradle.Identity",
-      "displayName": true,
-      "readOnly": true
-    },
     "message": {
       "type": "string",
       "displayName": true
@@ -52,14 +37,14 @@
     "prefill": {
       "type": "object",
       "ref": "tradle.Form",
-      "readOnly": true
+      "readOnly": true,
+      "inlined": true
     },
     "requireRawData": {
       "type": "boolean"
     }
   },
   "required": [
-    "to",
     "message",
     "form"
   ],

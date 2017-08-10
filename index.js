@@ -1,4 +1,8 @@
-exports = module.exports = require('./models')
+const models = require('./models')
+exports = module.exports = models
+
+// exports = models is deprecated
+exports.models = models
 exports.dictionaries = lang => {
   try {
     return require('./dictionary_' + lang + '.json')

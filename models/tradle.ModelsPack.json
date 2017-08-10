@@ -2,17 +2,14 @@
   "id": "tradle.ModelsPack",
   "title": "Models Pack",
   "interfaces": [
-    "tradle.Message"
+    "tradle.ChatItem"
   ],
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "models": {
       "type": "array",
       "readOnly": true,
+      "inlined": true,
       "items": {
         "type": "object",
         "ref": "tradle.Model"

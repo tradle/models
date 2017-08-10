@@ -4,27 +4,12 @@
   "title": "Progress Message",
   "autoCreate": true,
   "interfaces": [
-    "tradle.Message"
+    "tradle.ChatItem"
   ],
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "message": {
       "type": "string",
       "displayName": true
-    },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
-    "to": {
-      "type": "object",
-      "ref": "tradle.Identity",
-      "displayName": true,
-      "readOnly": true
     },
     "time": {
       "type": "date",

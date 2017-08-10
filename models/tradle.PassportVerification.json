@@ -3,14 +3,10 @@
   "type": "tradle.Model",
   "title": "Passport Verification",
   "interfaces": [
-    "tradle.Message",
+    "tradle.ChatItem",
     "tradle.Verifiable"
   ],
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "codeOfIssuing": {
       "type": "string"
     },
@@ -50,17 +46,6 @@
       "type": "date",
       "displayName": true
     },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity",
-      "displayName": true
-    },
-    "to": {
-      "type": "object",
-      "ref": "tradle.Identity",
-      "readOnly": true
-    },
     "time": {
       "type": "date",
       "readOnly": true
@@ -86,8 +71,6 @@
     }
   },
   "required": [
-    "to",
-    "from",
     "photos",
     "codeOfIssuing",
     "passportNumber",
@@ -102,7 +85,6 @@
     "dateOfExpiry"
   ],
   "gridCols": [
-    "from",
     "passportNumber",
     "dateOfExpiry",
     "time"

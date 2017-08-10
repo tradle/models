@@ -3,23 +3,9 @@
   "type": "tradle.Model",
   "title": "Application Submitted",
   "interfaces": [
-    "tradle.Message"
+    "tradle.ChatItem"
   ],
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
-    "to": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
     "message": {
       "type": "string"
     },

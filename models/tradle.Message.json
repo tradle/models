@@ -2,57 +2,44 @@
   "id": "tradle.Message",
   "type": "tradle.Model",
   "title": "Message",
-  "isInterface": true,
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
+    "_n": {
+      "type": "number"
     },
-    "message": {
-      "type": "string",
-      "displayName": true
+    "_q": {
+      "type": "string"
     },
-    "from": {
+    "recipientPubKey": {
       "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
+      "inlined": true,
+      "properties": {
+        "curve": {
+          "type": "string"
+        },
+        "pub": {
+          "type": "string"
+        }
+      }
     },
-    "to": {
+    "object": {
       "type": "object",
-      "ref": "tradle.Identity",
-      "displayName": true
+      "inlined": true,
+      "ref": "tradle.Object"
     },
     "time": {
-      "type": "date",
-      "readOnly": true,
-      "displayName": true
+      "type": "date"
     },
-    "photos": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "tags": {
-            "type": "string",
-            "skipLabel": true
-          },
-          "url": {
-            "type": "string",
-            "readOnly": true
-          }
-        }
-      },
-      "required": [
-        "title",
-        "url"
-      ]
+    "context": {
+      "type": "string"
     },
-    "relatedTo": {
-      "type": "object",
-      "ref": "tradle.Message"
+    "_recipient": {
+      "type": "string",
+      "virtual": true
     }
   },
-  "viewCols": [
-    "message"
+  "required": [
+    "recipientPubKey",
+    "object",
+    "time"
   ]
 }

@@ -4,21 +4,9 @@
   "subClassOf": "tradle.Enum",
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "value": {
       "displayName": true,
       "type": "string"
     }
-  },
-  "required": [
-    "value"
-  ],
-  "enum": [
-    {"id": "primary", "title": "Primary Residence"},
-    {"id": "secondary", "title": "Second Home"},
-    {"id": "investment", "title": "Investment Property"}
-  ]
+  }
 }

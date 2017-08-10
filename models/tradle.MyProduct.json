@@ -3,25 +3,11 @@
   "title": "My Product",
   "type": "tradle.Model",
   "interfaces": [
-    "tradle.Message"
+    "tradle.ChatItem"
   ],
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "myProductId": {
       "type": "string"
-    },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
-    "to": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
     }
   }
 }

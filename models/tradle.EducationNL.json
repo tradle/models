@@ -4,10 +4,6 @@
   "subClassOf": "tradle.Enum",
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "education": {
       "displayName": true,
       "type": "string"
@@ -17,11 +13,29 @@
     "education"
   ],
   "enum": [
-    {"id": "elementary", "title": "Elementary School"},
-    {"id": "highSchool", "title": "High School"},
-    {"id": "vocationalJ", "title": "Vocational Secondary School (Junior)"},
-    {"id": "vocationalS", "title": "Vocational Secondary School (Senior)"},
-    {"id": "college", "title": "College"},
-    {"id": "university", "title": "University"}
+    {
+      "id": "elementary",
+      "title": "Elementary School"
+    },
+    {
+      "id": "highSchool",
+      "title": "High School"
+    },
+    {
+      "id": "vocationalJ",
+      "title": "Vocational Secondary School (Junior)"
+    },
+    {
+      "id": "vocationalS",
+      "title": "Vocational Secondary School (Senior)"
+    },
+    {
+      "id": "college",
+      "title": "College"
+    },
+    {
+      "id": "university",
+      "title": "University"
+    }
   ]
 }

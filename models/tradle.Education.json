@@ -4,15 +4,11 @@
   "type": "tradle.Model",
   "subClassOf": "tradle.Form",
   "interfaces": [
-    "tradle.Message",
+    "tradle.ChatItem",
     "tradle.Document",
     "tradle.Verifiable"
   ],
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "highestDegree": {
       "type": "object",
       "ref": "tradle.EducationDegree"

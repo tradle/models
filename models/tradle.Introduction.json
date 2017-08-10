@@ -2,27 +2,14 @@
   "id": "tradle.Introduction",
   "title": "Introduction",
   "interfaces": [
-    "tradle.Message"
+    "tradle.ChatItem"
   ],
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
-    "to": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
     "identity": {
       "type": "object",
-      "ref": "tradle.Identity"
+      "ref": "tradle.Identity",
+      "inlined": true
     },
     "name": {
       "type": "string"

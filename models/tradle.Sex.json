@@ -4,10 +4,6 @@
   "subClassOf": "tradle.Enum",
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "sex": {
       "displayName": true,
       "type": "string"
@@ -17,7 +13,13 @@
     "sex"
   ],
   "enum": [
-    {"id": "Male", "title": "Male"},
-    {"id": "Female", "title": "Female"}
+    {
+      "id": "Male",
+      "title": "Male"
+    },
+    {
+      "id": "Female",
+      "title": "Female"
+    }
   ]
 }
