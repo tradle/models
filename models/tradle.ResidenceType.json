@@ -8,5 +8,13 @@
       "displayName": true,
       "type": "string"
     }
-  }
+  },
+  "required": [
+    "value"
+  ],
+  "enum": [
+    {"id": "primary", "title": "Primary Residence"},
+    {"id": "secondary", "title": "Second Home"},
+    {"id": "investment", "title": "Investment Property"}
+  ]
 }
