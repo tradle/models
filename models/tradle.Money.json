@@ -5,7 +5,13 @@
   "inlined": true,
   "properties": {
     "value": {
-      "type": "number"
+      "type": "number",
+      "faker": {
+        "random.number": {
+          "min": 1000,
+          "max": 100000000
+        }
+      }
     },
     "currency": {
       "type": "enum",
@@ -493,7 +499,8 @@
         {
           "TRY": "₤"
         }
-      ]
+      ],
+      "faker": "currency"
     }
   },
   "required": [

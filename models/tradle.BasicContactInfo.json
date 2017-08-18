@@ -8,15 +8,18 @@
   "type": "tradle.Model",
   "properties": {
     "firstName": {
-      "type": "string"
+      "type": "string",
+      "faker": "name.firstName"
     },
     "lastName": {
-      "type": "string"
+      "type": "string",
+      "faker": "name.lastName"
     },
     "email": {
       "type": "string",
       "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
-      "keyboard": "email-address"
+      "keyboard": "email-address",
+      "faker": "internet.email"
     },
     "formattedName": {
       "type": "string",

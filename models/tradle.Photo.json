@@ -6,15 +6,30 @@
   "properties": {
     "url": {
       "type": "string",
-      "readOnly": true
+      "readOnly": true,
+      "faker": {
+        "image.dataUri": [800, 600]
+      }
     },
     "width": {
       "type": "number",
-      "readOnly": true
+      "readOnly": true,
+      "faker": {
+        "random.number": {
+          "min": 100,
+          "max": 2000
+        }
+      }
     },
     "height": {
       "type": "number",
-      "readOnly": true
+      "readOnly": true,
+      "faker": {
+        "random.number": {
+          "min": 100,
+          "max": 2000
+        }
+      }
     }
   },
   "required": [

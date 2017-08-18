@@ -9,10 +9,12 @@
   "properties": {
     "givenName": {
       "title": "Given name(s)",
-      "type": "string"
+      "type": "string",
+      "faker": "name.firstName"
     },
     "surname": {
-      "type": "string"
+      "type": "string",
+      "faker": "name.lastName"
     }
   },
   "required": [

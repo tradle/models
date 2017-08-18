@@ -7,12 +7,14 @@
   "properties": {
     "phoneType": {
       "type": "object",
-      "ref": "tradle.PhoneTypes"
+      "ref": "tradle.PhoneTypes",
+      "faker": "phone.phoneType"
     },
     "number": {
       "type": "string",
       "range": "phone",
-      "keyboard": "phone-pad"
+      "keyboard": "phone-pad",
+      "faker": "phone.phoneNumber"
     },
     "myPhones": {
       "type": "string",
