@@ -8,13 +8,13 @@
     "phoneType": {
       "type": "object",
       "ref": "tradle.PhoneTypes",
-      "faker": "phone.phoneType"
+      "sample": "phone.phoneType"
     },
     "number": {
       "type": "string",
       "range": "phone",
       "keyboard": "phone-pad",
-      "faker": "phone.phoneNumber"
+      "sample": "phone.phoneNumber"
     },
     "myPhones": {
       "type": "string",

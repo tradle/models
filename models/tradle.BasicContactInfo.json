@@ -9,17 +9,17 @@
   "properties": {
     "firstName": {
       "type": "string",
-      "faker": "name.firstName"
+      "sample": "name.firstName"
     },
     "lastName": {
       "type": "string",
-      "faker": "name.lastName"
+      "sample": "name.lastName"
     },
     "email": {
       "type": "string",
       "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
       "keyboard": "email-address",
-      "faker": "internet.email"
+      "sample": "internet.email"
     },
     "formattedName": {
       "type": "string",
