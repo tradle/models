@@ -13,53 +13,63 @@
     "_s": {
       "type": "string",
       "readOnly": true,
-      "description": "signature"
+      "description": "signature",
+      "sample": "sig"
     },
     "_r": {
       "type": "string",
       "readOnly": true,
-      "description": "the link to the original version of this object (permalink)"
+      "description": "the link to the original version of this object (permalink)",
+      "sample": "hash"
     },
     "_p": {
       "type": "string",
       "readOnly": true,
-      "description": "the link to the previous version of this object"
+      "description": "the link to the previous version of this object",
+      "sample": "hash"
     },
     "_q": {
       "type": "string",
       "readOnly": true,
-      "description": "the link to the previous message sent to a given recipient"
+      "description": "the link to the previous message sent to a given recipient",
+      "sample": "hash"
     },
     "_n": {
       "type": "number",
       "readOnly": true,
-      "description": "message sequence number, for tradle.Message object"
+      "description": "message sequence number, for tradle.Message object",
+      "sample": "random.number"
     },
     "_z": {
       "type": "string",
       "readOnly": true,
-      "description": "nonce"
+      "description": "nonce",
+      "sample": "hash"
     },
     "_author": {
       "type": "string",
       "virtual": true,
       "readOnly": true,
-      "description": "this object author's identity's permalink"
+      "description": "this object author's identity's permalink",
+      "sample": "hash"
     },
     "_link": {
       "type": "string",
       "virtual": true,
-      "readOnly": true
+      "readOnly": true,
+      "sample": "hash"
     },
     "_permalink": {
       "type": "string",
       "virtual": true,
-      "readOnly": true
+      "readOnly": true,
+      "sample": "hash"
     },
     "_time": {
       "type": "number",
       "virtual": true,
-      "readOnly": true
+      "readOnly": true,
+      "sample": "timestamp.recent"
     },
     "_cut": {
       "type": "array",
@@ -77,7 +87,8 @@
     "_sigPubKey": {
       "type": "string",
       "virtual": true,
-      "readOnly": true
+      "readOnly": true,
+      "sample": "hash"
     },
     "_virtual": {
       "type": "array",
