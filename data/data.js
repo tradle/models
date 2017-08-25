@@ -225,18 +225,6 @@ const resources = [
   code: 'nl'
 },
 {
-  _t: 'tradle.PhoneTypes',
-  phoneType: 'Home'
-},
-{
-  _t: 'tradle.PhoneTypes',
-  phoneType: 'Mobile',
-},
-{
-  _t: 'tradle.PhoneTypes',
-  phoneType: 'Work',
-},
-{
   _t: 'tradle.FormationType',
   formationType: 'NGO Charity'
 },
