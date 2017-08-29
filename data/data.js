@@ -1,6 +1,6 @@
 const staticData = [
   require('./tradle.EducationDegree.json'),
-  require('./tradle.Country.json'),
+  // require('./tradle.Country.json'),
   require('./tradle.Nationality.json'),
   // require('./tradle.Currency.json'),
   require('./tradle.Major.json'),
