@@ -1,0 +1,25 @@
+{
+  "id": "tradle.Bookmark",
+  "type": "tradle.Model",
+  "title": "Bookmark",
+  "notEditable": true,
+  "properties": {
+    "message": {
+      "type": "string",
+      "readOnly": true,
+      "skipLabel": true,
+      "displayName": true
+    },
+    "bookmark": {
+      "type": "object",
+      "range": "json",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "bookmark"
+  ],
+  "viewCols": [
+    "bookmark"
+  ]
+}
