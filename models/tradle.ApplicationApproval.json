@@ -1,0 +1,36 @@
+{
+  "id": "tradle.ApplicationApproval",
+  "type": "tradle.Model",
+  "title": "Application Approval",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "notEditable": true,
+  "properties": {
+    "message": {
+      "type": "string",
+      "readOnly": true,
+      "skipLabel": true,
+      "displayName": true
+    },
+    "application": {
+      "type": "object",
+      "ref": "tradle.Application",
+      "readOnly": true
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "ref": "tradle.Form"
+      }
+    }
+  },
+  "required": [
+    "message",
+    "application"
+  ],
+  "viewCols": [
+    "message"
+  ]
+}
