@@ -1,0 +1,50 @@
+{
+  "type": "tradle.Model",
+  "title": "Application",
+  "id": "tradle.Application",
+  "properties": {
+    "applicant": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "relationshipManager": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "status": {
+      "type": "string"
+    },
+    "dateStarted": {
+      "type": "date"
+    },
+    "dateCompleted": {
+      "type": "date"
+    },
+    "dateEvaluated": {
+      "type": "date"
+    },
+    "dateModified": {
+      "type": "date"
+    },
+    "context": {
+      "type": "string"
+    },
+    "request": {
+      "type": "object",
+      "ref": "tradle.Form"
+    },
+    "requestFor": {
+      "type": "string"
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.Form"
+      }
+    },
+    "certificate": {
+      "type": "object",
+      "ref": "tradle.MyProduct"
+    }
+  }
+}
