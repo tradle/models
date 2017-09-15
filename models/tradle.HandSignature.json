@@ -1,0 +1,23 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.HandSignature",
+  "title": "Hand Signature",
+  "subClassOf": "tradle.Form",
+  "interfaces": [
+    "tradle.Message"
+  ],
+  "properties": {
+    "signatureFor": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.Object"
+      }
+    },
+    "signature": {
+      "type": "string",
+      "signature": true
+    }
+  },
+  "editCols": ["signature"]
+}
