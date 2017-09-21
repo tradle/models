@@ -39,20 +39,44 @@
     "state": {
       "Default": "State"
     },
-    "application": {
-      "Default": "Application"
+    "applicant": {
+      "Default": "Applicant"
+    },
+    "relationshipManager": {
+      "Default": "Relationship Manager"
+    },
+    "status": {
+      "Default": "Status"
+    },
+    "dateStarted": {
+      "Default": "Date Started"
+    },
+    "dateCompleted": {
+      "Default": "Date Completed"
+    },
+    "dateEvaluated": {
+      "Default": "Date Evaluated"
+    },
+    "dateModified": {
+      "Default": "Date Modified"
+    },
+    "context": {
+      "Default": "Context"
+    },
+    "request": {
+      "Default": "Request"
+    },
+    "requestFor": {
+      "Default": "Request For"
     },
     "forms": {
       "Default": "Forms"
     },
-    "from": {
-      "Default": "From",
-      "tradle.Verification": "Verifier"
+    "certificate": {
+      "Default": "Certificate"
     },
-    "to": {
-      "Default": "To",
-      "tradle.Partial": "Owner",
-      "tradle.Verification": "Owner"
+    "application": {
+      "Default": "Application"
     },
     "methods": {
       "Default": "Methods"
@@ -81,6 +105,9 @@
     "github": {
       "tradle.BetaTesterContactInfo": "Github username"
     },
+    "bookmark": {
+      "Default": "Bookmark"
+    },
     "form": {
       "Default": "Form"
     },
@@ -96,11 +123,11 @@
     "country": {
       "Default": "Country"
     },
-    "code": {
-      "Default": "Code"
-    },
     "currencyName": {
       "Default": "Currency Name"
+    },
+    "code": {
+      "Default": "Code"
     },
     "symbol": {
       "Default": "Symbol"
@@ -154,6 +181,13 @@
     "prefilled": {
       "Default": "Prefilled"
     },
+    "requestedProperties": {
+      "Default": "Requested Properties",
+      "items": {
+        "name": "Name",
+        "message": "Message"
+      }
+    },
     "errors": {
       "Default": "Errors",
       "items": {
@@ -172,6 +206,12 @@
     },
     "session": {
       "Default": "Session"
+    },
+    "signatureFor": {
+      "Default": "Signature For"
+    },
+    "signature": {
+      "Default": "Signature"
     },
     "howToFund": {
       "Default": "How To Fund"
@@ -194,9 +234,6 @@
     "language": {
       "Default": "Language"
     },
-    "status": {
-      "Default": "Status"
-    },
     "headline": {
       "Default": "Headline"
     },
@@ -218,9 +255,6 @@
     "hash": {
       "Default": "Hash"
     },
-    "relatedTo": {
-      "Default": "Related To"
-    },
     "models": {
       "Default": "Models"
     },
@@ -234,8 +268,7 @@
       "Default": "All Identities"
     },
     "myProductId": {
-      "Default": "My Product Id",
-      "tradle.MyEmployeeOnboarding": "Employee ID"
+      "Default": "My Product Id"
     },
     "givenName": {
       "tradle.Name": "Given name(s)"
@@ -279,6 +312,9 @@
     "inactive": {
       "Default": "Inactive"
     },
+    "verifications": {
+      "Default": "Verifications"
+    },
     "securityCodes": {
       "Default": "Security Codes"
     },
@@ -312,9 +348,6 @@
     "type": {
       "Default": "Type"
     },
-    "context": {
-      "Default": "Context"
-    },
     "issuingCountry": {
       "Default": "Issuing Country"
     },
@@ -341,9 +374,6 @@
     },
     "codeOfIssuing": {
       "Default": "Code Of Issuing"
-    },
-    "verifications": {
-      "Default": "Verifications"
     },
     "phoneType": {
       "Default": "Phone Type"
@@ -429,6 +459,9 @@
     },
     "additionalInfo": {
       "Default": "Additional Info"
+    },
+    "permalink": {
+      "Default": "Permalink"
     },
     "with": {
       "Default": "With"
@@ -544,6 +577,9 @@
     "navBarBorderColor": {
       "Default": "Nav Bar Border Color"
     },
+    "navBarBorderWidth": {
+      "Default": "Nav Bar Border Width"
+    },
     "messageSentStatus": {
       "Default": "Message Sent Status"
     },
@@ -556,14 +592,14 @@
     "incomingMessageOpaqueTextColor": {
       "Default": "Incoming Message Opaque Text Color"
     },
-    "navBarBorderWidth": {
-      "Default": "Nav Bar Border Width"
-    },
     "submitBarInFooter": {
       "Default": "Submit Bar In Footer"
     },
     "logo": {
       "Default": "Logo"
+    },
+    "backgroundImage": {
+      "Default": "Background Image"
     },
     "introduction": {
       "Default": "Introduction"
@@ -622,63 +658,14 @@
     "ownerPresence": {
       "Default": "Owner Presence"
     },
-    "backgroundImage": {
-      "Default": "Background Image"
-    },
     "recipientPubKey": {
       "Default": "Recipient Pub Key"
     },
     "object": {
       "Default": "Object"
     },
-    "requestedProperties": {
-      "Default": "Requested Properties",
-      "items": {
-        "name": "Name",
-        "message": "Message"
-      }
-    },
-    "permalink": {
-      "Default": "Permalink"
-    },
-    "applicant": {
-      "Default": "Applicant"
-    },
-    "relationshipManager": {
-      "Default": "Relationship Manager"
-    },
-    "dateStarted": {
-      "Default": "Date Started"
-    },
-    "dateCompleted": {
-      "Default": "Date Completed"
-    },
-    "dateEvaluated": {
-      "Default": "Date Evaluated"
-    },
-    "dateModified": {
-      "Default": "Date Modified"
-    },
-    "request": {
-      "Default": "Request"
-    },
-    "requestFor": {
-      "Default": "Request For"
-    },
-    "certificate": {
-      "Default": "Certificate"
-    },
     "entityRole": {
       "Default": "Entity Role"
-    },
-    "bookmark": {
-      "Default": "Bookmark"
-    },
-    "signatureFor": {
-      "Default": "Signature For"
-    },
-    "signature": {
-      "Default": "Signature"
     },
     "purpose": {
       "Default": "Purpose"
@@ -737,14 +724,19 @@
     "tradle.API": "API",
     "tradle.Ack": "Item Received",
     "tradle.AppState": "App State",
+    "tradle.Application": "Application",
+    "tradle.ApplicationApproval": "Application Approval",
     "tradle.ApplicationDenial": "Application Denial",
     "tradle.ApplicationSubmitted": "Application Submitted",
     "tradle.Aspect": "Aspect",
     "tradle.AssignRelationshipManager": "Assign Relationship Manager",
     "tradle.BasicContactInfo": "Basic Contact Info",
     "tradle.BetaTesterContactInfo": "Beta Tester Contact Info",
+    "tradle.Bookmark": "Bookmark",
+    "tradle.ChatItem": "Message",
     "tradle.ConfirmPackageRequest": "Confirm Package Request",
     "tradle.Confirmation": "Confirmation",
+    "tradle.Context": "Context",
     "tradle.Country": "Country",
     "tradle.CreditCards": "Credit Cards",
     "tradle.Currency": "Currency",
@@ -764,6 +756,7 @@
     "tradle.FormError": "Form Error",
     "tradle.FormRequest": "Form Request",
     "tradle.GuestSessionProof": "Guest Session Proof",
+    "tradle.HandSignature": "Hand Signature",
     "tradle.HowToFund": "How To Fund",
     "tradle.Identity": "Identity",
     "tradle.IdentityPublishRequest": "Identity Publish Request",
@@ -785,6 +778,7 @@
     "tradle.Nationality": "Nationality",
     "tradle.NewMessageModel": "New message model",
     "tradle.NextFormRequest": "NextFormRequest",
+    "tradle.Object": "Object",
     "tradle.Organization": "Organization",
     "tradle.PairingData": "Pairing Data",
     "tradle.PairingRequest": "Pairing Request",
@@ -795,7 +789,7 @@
     "tradle.Phone": "Phone",
     "tradle.PhoneTypes": "Phone Types",
     "tradle.Photo": "Photo",
-    "tradle.ProductApplication": "ProductApplication",
+    "tradle.ProductApplication": "Product Application",
     "tradle.ProductList": "Product List",
     "tradle.Profile": "Profile",
     "tradle.ProgressMessage": "Progress Message",
@@ -807,6 +801,7 @@
     "tradle.SalaryVerification": "Salary Verification",
     "tradle.SecurityCode": "Security Code",
     "tradle.SelfIntroduction": "Self introduction",
+    "tradle.ServiceProvider": "Service Provider Server Info",
     "tradle.Settings": "Settings",
     "tradle.Sex": "Sex",
     "tradle.ShareContext": "Share Context",
@@ -821,14 +816,7 @@
     "tradle.VerifiedItem": "VerifiedItem",
     "tradle.VisualVerificationMethod": "Visual Verification Method",
     "tradle.WebSite": "Web site",
-    "tradle.Object": "Object",
-    "tradle.ServiceProvider": "Service Provider Server Info",
-    "tradle.Application": "Application",
     "tradle.MyEmployeeOnboarding": "My Employee Pass",
-    "tradle.Bookmark": "Bookmark",
-    "tradle.ApplicationApproval": "Application Approval",
-    "tradle.Context": "Context",
-    "tradle.HandSignature": "Hand Signature",
     "tradle.PubKey": "Public Key",
     "tradle.ProductRequest": "Product Request",
     "tradle.PropertyChooser": "Property Chooser",
