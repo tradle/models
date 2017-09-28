@@ -7,36 +7,10 @@
     "pubkeys": {
       "type": "array",
       "readOnly": true,
+      "inlined": true,
       "items": {
         "type": "object",
-        "properties": {
-          "curve": {
-            "type": "string"
-          },
-          "fingerprint": {
-            "type": "string"
-          },
-          "label": {
-            "type": "string"
-          },
-          "networkName": {
-            "type": "string"
-          },
-          "purpose": {
-            "type": "string"
-          },
-          "type": {
-            "type": "string"
-          },
-          "value": {
-            "type": "string"
-          }
-        },
-        "required": [
-          "type",
-          "fingerprint",
-          "value"
-        ]
+        "ref": "tradle.PubKey"
       }
     }
   },
