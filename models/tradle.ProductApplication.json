@@ -21,12 +21,16 @@
     "welcome": {
       "type": "boolean",
       "readOnly": true
+    },
+    "contextId": {
+      "type": "string"
     }
   },
   "viewCols": [
     "product"
   ],
   "required": [
-    "product"
+    "product",
+    "contextId"
   ]
 }
