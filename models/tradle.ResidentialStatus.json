@@ -11,5 +11,27 @@
   },
   "required": [
     "status"
+  ],
+  "enum": [
+    {
+      "id": "withMortgage",
+      "title": "Home owner (with mortgage)"
+    },
+    {
+      "id": "withoutMortgage",
+      "title": "Home owner (without mortgage)",
+    },
+    {
+      "id": "tenantP",
+      "title": "Tenant (private)",
+    },
+    {
+      "id": "tenantC",
+      "title": "Tenant (counsel)",
+    },
+    {
+      "id": "livingWithParents",
+      "title": "Living with parents"
+    }
   ]
 }
