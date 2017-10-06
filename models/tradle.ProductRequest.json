@@ -1,0 +1,28 @@
+{
+  "id": "tradle.ProductRequest",
+  "title": "Product Request",
+  "interfaces": [
+    "tradle.Message",
+    "tradle.Context"
+  ],
+  "type": "tradle.Model",
+  "properties": {
+    "requestFor": {
+      "type": "string",
+      "displayName": true
+    },
+    "contextId": {
+      "type": "string",
+      "readOnly": true,
+      "immutable": true
+    }
+  },
+  "viewCols": [
+    "requestFor",
+    "contextId"
+  ],
+  "required": [
+    "requestFor",
+    "contextId"
+  ]
+}

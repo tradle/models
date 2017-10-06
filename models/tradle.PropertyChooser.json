@@ -1,0 +1,20 @@
+{
+  "id": "tradle.PropertyChooser",
+  "type": "tradle.Model",
+  "title": "Property Chooser",
+  "inlined": true,
+  "properties": {
+    "property": {
+      "type": "string",
+      "displayName": true,
+      "readOnly": true
+    },
+    "oneOf": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
