@@ -1,0 +1,25 @@
+{
+  "id": "tradle.ShareRequest",
+  "type": "tradle.Model",
+  "title": "Share Request",
+  "properties": {
+    "links": {
+      "type": "array",
+      "immutable": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "with": {
+      "type": "array",
+      "immutable": true,
+      "items": {
+        "ref": "tradle.Identity"
+      }
+    }
+  },
+  "required": [
+    "links",
+    "with"
+  ]
+}
