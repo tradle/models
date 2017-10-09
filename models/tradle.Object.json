@@ -8,22 +8,26 @@
     "_t": {
       "type": "string",
       "readOnly": true,
+      "immutable": true,
       "description": "the instance type"
     },
     "_s": {
       "type": "string",
       "readOnly": true,
+      "immutable": true,
       "description": "signature",
       "sample": "sig"
     },
     "_r": {
       "type": "string",
       "readOnly": true,
+      "immutable": true,
       "description": "the link to the original version of this object (permalink)",
       "sample": "hash"
     },
     "_p": {
       "type": "string",
+      "immutable": true,
       "readOnly": true,
       "description": "the link to the previous version of this object",
       "sample": "hash"
@@ -31,20 +35,29 @@
     "_q": {
       "type": "string",
       "readOnly": true,
+      "immutable": true,
       "description": "the link to the previous message sent to a given recipient",
       "sample": "hash"
     },
     "_n": {
       "type": "number",
       "readOnly": true,
+      "immutable": true,
       "description": "message sequence number, for tradle.Message object",
       "sample": "random.number"
     },
     "_z": {
       "type": "string",
       "readOnly": true,
+      "immutable": true,
       "description": "nonce",
       "sample": "hash"
+    },
+    "time": {
+      "type": "date",
+      "readOnly": true,
+      "immutable": true,
+      "sample": "timestamp.recent"
     },
     "_author": {
       "type": "string",
