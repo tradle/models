@@ -42,6 +42,20 @@
         "ref": "tradle.Form"
       }
     },
+    "verificationsImported": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.VerifiedItem"
+      }
+    },
+    "verificationsIssued": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.VerifiedItem"
+      }
+    },
     "certificate": {
       "type": "object",
       "ref": "tradle.MyProduct"
