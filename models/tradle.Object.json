@@ -53,6 +53,13 @@
       "description": "nonce",
       "sample": "hash"
     },
+    "_seal": {
+      "type": "object",
+      "ref": "tradle.Seal",
+      "readOnly": true,
+      "immutable": true,
+      "inlined": true
+    },
     "time": {
       "type": "date",
       "readOnly": true,
