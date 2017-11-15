@@ -1,5 +1,13 @@
 #!/usr/bin/env node
 
+const mockery = require('mockery')
+mockery.enable({
+  warnOnReplace: false,
+  warnOnUnregistered: false
+})
+
+mockery.registerMock('@tradle/models', require('./'))
+
 const path = require('path')
 const argv = require('minimist')(process.argv.slice(2), {
   alias: {
