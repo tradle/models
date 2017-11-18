@@ -32,6 +32,17 @@
     "context": {
       "type": "string"
     },
+    "forward": {
+      "type": "string"
+    },
+    "originalSender": {
+      "type": "string",
+      "description": "for proxied messages"
+    },
+    "originalRecipient": {
+      "type": "string",
+      "description": "for proxied messages"
+    },
     "_recipient": {
       "type": "string",
       "virtual": true
