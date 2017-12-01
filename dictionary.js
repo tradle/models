@@ -42,7 +42,8 @@ if (!modelNames)
 writeDictionary()
 
 function writeDictionary() {
-  models.forEach(function(m) {
+  Object.keys(models).forEach(id => {
+    const m = models[id]
     modelNames[m.id] = modelNames[m.id]  ||  m.title
     for (let p in m.properties) {
       if (p.charAt(0) === '_')

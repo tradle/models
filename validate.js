@@ -33,8 +33,8 @@ const validate = require('@tradle/validate-model')
 
 function run () {
   if (argv.file) {
-    const model = require(path.resolve(argv.file))
-    return validate(model)
+    const models = require(argv.file)
+    return validate(models)
   }
 
   const json = argv.model || argv.references
