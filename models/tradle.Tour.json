@@ -1,0 +1,21 @@
+{
+  "id": "tradle.Tour",
+  "type": "tradle.Model",
+  "title": "Tour",
+  "properties": {
+    "message": {
+      "type": "string"
+    },
+    "pages": {
+      "type": "array",
+      "description": "urls of tour pages",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "message",
+    "pages"
+  ]
+}
