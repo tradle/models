@@ -6,6 +6,9 @@
     "versionId": {
       "type": "string"
     },
+    "namespace": {
+      "type": "string"
+    },
     "models": {
       "type": "array",
       "readOnly": true,
@@ -15,5 +18,10 @@
         "ref": "tradle.Model"
       }
     }
-  }
+  },
+  "required": [
+    "versionId",
+    "namespace",
+    "models"
+  ]
 }
