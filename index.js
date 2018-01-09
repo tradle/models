@@ -15,4 +15,4 @@ exports.dict = {
 exports.data = require('./data/data')
 exports.currencies = require('./data/tradle.Currency.json')
 exports.nationalities = require('./data/tradle.Nationality.json')
-exports.countries = require('./data/tradle.Country.json')
+// exports.countries = require('./data/tradle.Country.json')
