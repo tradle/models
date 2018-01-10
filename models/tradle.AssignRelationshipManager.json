@@ -10,13 +10,16 @@
     },
     "application": {
       "type": "object",
-      "ref": "tradle.Application"
+      "ref": "tradle.Application",
+      "displayName": true
     }
   },
   "required": [
-    "employee"
+    "employee",
+    "application"
   ],
   "viewCols": [
-    "employee"
+    "employee",
+    "application"
   ]
 }
