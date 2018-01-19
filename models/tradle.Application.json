@@ -14,6 +14,12 @@
       "type": "object",
       "ref": "tradle.Identity"
     },
+    "relationshipManagers": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.Identity"
+      }
+    },
     "status": {
       "type": "string",
       "skipLabel": true

@@ -8,9 +8,10 @@
     },
     "pages": {
       "type": "array",
+      "inlined": true,
       "description": "urls of tour pages",
       "items": {
-        "type": "string"
+        "ref": "tradle.TourPage"
       }
     },
     "dotColor": {

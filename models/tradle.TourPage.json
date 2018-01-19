@@ -1,0 +1,39 @@
+{
+  "id": "tradle.TourPage",
+  "type": "tradle.Model",
+  "title": "Tour Page",
+  "properties": {
+    "url": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "img": {
+      "type": "string"
+    },
+    "imgStyle": {
+      "type": "object",
+      "properties": {
+        "width": {
+          "type": "number"
+        },
+        "height": {
+          "type": "number"
+        }
+      }
+    },
+    "backgroundColor": {
+      "type": "string"
+    },
+    "fontColor": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number"
+    }
+  }
+}
