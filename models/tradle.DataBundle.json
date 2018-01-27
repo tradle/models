@@ -1,0 +1,18 @@
+{
+  "id": "tradle.DataBundle",
+  "title": "DataBundle",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "items": {
+      "type": "object",
+      "ref": "tradle.Object"
+    }
+  },
+  "viewCols": [
+    "items"
+  ],
+  "required": [
+    "items"
+  ]
+}
