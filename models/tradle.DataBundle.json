@@ -5,8 +5,11 @@
   "subClassOf": "tradle.Form",
   "properties": {
     "items": {
-      "type": "object",
-      "ref": "tradle.Object"
+      "inlined": true,
+      "type": "array",
+      "items": {
+        "ref": "tradle.Object"
+      }
     }
   },
   "viewCols": [
