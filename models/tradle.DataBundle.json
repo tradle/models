@@ -1,0 +1,21 @@
+{
+  "id": "tradle.DataBundle",
+  "title": "DataBundle",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "items": {
+      "inlined": true,
+      "type": "array",
+      "items": {
+        "ref": "tradle.Object"
+      }
+    }
+  },
+  "viewCols": [
+    "items"
+  ],
+  "required": [
+    "items"
+  ]
+}

@@ -1,5 +1,6 @@
 const m = require('./models')
 const writeFileAtomic = require('write-file-atomic')
+const stableStringify = require('json-stable-stringify')
 const argv = require('minimist')(process.argv.slice(2), {
   alias: {
     m: 'models',
@@ -26,13 +27,13 @@ let modelNames
 const lang = argv.language || 'en'
 const fn = './dictionary_' + lang + '.json'
 // Check if the dictionary exists
-try {
-  const d = require(fn)
-  propNames = d.properties
-  modelNames = d.models
-} catch (err) {
-  console.log('dictionary not found')
-}
+// try {
+//   const d = require(fn)
+//   propNames = d.properties
+//   modelNames = d.models
+// } catch (err) {
+//   console.log('dictionary not found')
+// }
 
 if (!propNames)
   propNames = {}
@@ -84,7 +85,7 @@ function writeDictionary() {
     models: modelNames
   }
 
-  writeFileAtomic(fn, JSON.stringify(dictionary, 0, 2), console.log)
+  writeFileAtomic(fn, stableStringify(dictionary, { space: '  ' }), console.log)
   // console.log(JSON.stringify(propNames, 0, 2))
   // for (let p in propNames) {
   //   console.log(p + ':  ' + JSON.stringify(propNames[p], 0, 2))
