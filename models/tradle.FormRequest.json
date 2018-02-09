@@ -42,9 +42,9 @@
     "prefill": {
       "type": "object",
       "ref": "tradle.Form",
-      "range": "json",
       "readOnly": true,
-      "inlined": true
+      "inlined": true,
+      "partial": true
     },
     "requireRawData": {
       "type": "boolean"
