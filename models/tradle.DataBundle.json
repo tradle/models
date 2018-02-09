@@ -4,6 +4,9 @@
   "type": "tradle.Model",
   "subClassOf": "tradle.Form",
   "properties": {
+    "message": {
+      "type": "string"
+    },
     "items": {
       "inlined": true,
       "type": "array",
@@ -13,6 +16,7 @@
     }
   },
   "viewCols": [
+    "message",
     "items"
   ],
   "required": [
