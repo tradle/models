@@ -1,0 +1,22 @@
+{
+  "id": "tradle.Status",
+  "title": "Status",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "status": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    {
+      "id": "pass",
+      "title": "Pass"
+    },
+    {
+      "id": "fail",
+      "title": "Fail"
+    }
+  ]
+}

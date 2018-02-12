@@ -7,9 +7,17 @@
     "provider": {
       "type": "string",
       "readOnly": true
+    },
+    "status": {
+      "type": "object",
+      "ref": "tradle.Status"
+    },
+    "isPending": {
+      "type": "boolean"
     }
   },
   "required": [
-    "provider"
+    "provider",
+    "status"
   ]
 }
