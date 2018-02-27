@@ -80,6 +80,14 @@
     },
     "archived": {
       "type": "boolean"
+    },
+    "draft": {
+      "type": "boolean",
+      "description": "true if this is a draft for another application"
+    },
+    "prefillFromApplication": {
+      "type": "object",
+      "ref": "tradle.Application"
     }
   },
   "viewCols": [
