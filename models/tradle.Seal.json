@@ -9,6 +9,11 @@
       "readOnly": true,
       "immutable": true
     },
+    "forResource": {
+      "type": "object",
+      "ref": "tradle.Object",
+      "readOnly": true
+    },
     "txId": {
       "type": "string",
       "readOnly": true,
@@ -42,7 +47,7 @@
     "network"
   ],
   "viewCols": [
-    "link",
+    "forResource",
     "txId",
     "blockchain",
     "network"
