@@ -1,0 +1,22 @@
+{
+  "id": "tradle.FormPrefill",
+  "title": "Form Prefill",
+  "type": "tradle.Model",
+  "properties": {
+    "prefill": {
+      "type": "object",
+      "ref": "tradle.Form"
+    },
+    "draft": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.DraftApplication"
+    }
+  },
+  "viewCols": [
+    "prefill"
+  ],
+  "required": [
+    "prefill"
+  ]
+}

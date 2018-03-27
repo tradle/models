@@ -1,0 +1,52 @@
+{
+  "type": "tradle.Model",
+  "title": "Draft Application",
+  "id": "tradle.DraftApplication",
+  "properties": {
+    "applicantName": {
+      "type": "string"
+    },
+    "applicant": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "dateStarted": {
+      "type": "date"
+    },
+    "dateCompleted": {
+      "type": "date"
+    },
+    "dateEvaluated": {
+      "type": "date"
+    },
+    "dateModified": {
+      "type": "date"
+    },
+    "context": {
+      "type": "string"
+    },
+    "request": {
+      "type": "object",
+      "ref": "tradle.Form"
+    },
+    "requestFor": {
+      "type": "string",
+      "range": "model",
+      "displayName": true
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.FormPrefill"
+      }
+    }
+  },
+  "viewCols": [
+    "status",
+    "applicantName",
+    "requestFor",
+    "dateStarted",
+    "dateModified",
+    "dateCompleted"
+  ]
+}
