@@ -34,10 +34,11 @@
       "range": "model",
       "displayName": true
     },
-    "forms": {
+    "formPrefills": {
       "type": "array",
       "items": {
-        "ref": "tradle.FormPrefill"
+        "ref": "tradle.FormPrefill",
+        "backlink": "draft"
       }
     }
   },

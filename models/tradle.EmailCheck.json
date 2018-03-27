@@ -22,6 +22,13 @@
     "application": {
       "type": "object",
       "ref": "tradle.Application"
+    },
+    "user": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "dateExpires": {
+      "type": "date"
     }
   },
   "required": [
