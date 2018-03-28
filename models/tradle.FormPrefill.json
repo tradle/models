@@ -2,7 +2,6 @@
   "id": "tradle.FormPrefill",
   "title": "Form Prefill",
   "type": "tradle.Model",
-  "inlined": true,
   "interfaces": [
     "tradle.Item"
   ],
@@ -10,6 +9,7 @@
     "prefill": {
       "type": "object",
       "ref": "tradle.Form",
+      "inlined": true,
       "partial": true
     },
     "draft": {
