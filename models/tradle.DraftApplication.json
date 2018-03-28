@@ -22,9 +22,6 @@
     "dateModified": {
       "type": "date"
     },
-    "context": {
-      "type": "string"
-    },
     "request": {
       "type": "object",
       "ref": "tradle.Form"
@@ -36,6 +33,7 @@
     },
     "formPrefills": {
       "type": "array",
+      "allowToAdd": true,
       "items": {
         "ref": "tradle.FormPrefill",
         "backlink": "draft"
