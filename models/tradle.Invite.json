@@ -1,0 +1,48 @@
+{
+  "type": "tradle.Model",
+  "title": "Invite",
+  "id": "tradle.Invite",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "subject": {
+      "type": "string"
+    },
+    "body": {
+      "type": "string"
+    },
+    "inviteLink": {
+      "type": "string",
+      "description": "the link to share",
+      "readOnly": true
+    },
+    "buttonText": {
+      "type": "string",
+      "description": "the text on the big button in their email"
+    },
+    "signature": {
+      "type": "string",
+      "description": "signature in the footer, e.g. \"-Tradle Team\""
+    },
+    "draft": {
+      "type": "object",
+      "ref": "tradle.DraftApplication"
+    },
+    "recipient": {
+      "type": "string",
+      "description": "who to email this link",
+      "range": "email"
+    }
+  },
+  "editCols": [
+    "subject",
+    "body",
+    "recipients",
+    "buttonText",
+    "signature"
+  ],
+  "required": [
+    "subject",
+    "body",
+    "recipients"
+  ]
+}

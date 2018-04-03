@@ -41,6 +41,14 @@
         "ref": "tradle.FormPrefill",
         "backlink": "draft"
       }
+    },
+    "invites": {
+      "type": "array",
+      "allowToAdd": true,
+      "items": {
+        "ref": "tradle.Invite",
+        "backlink": "draft"
+      }
     }
   },
   "viewCols": [
