@@ -6,12 +6,12 @@
     "source": {
       "type": "string",
       "description": "{type}_{permalink}:{property}",
-      "sample": "tradle.Verification_abcdef:document"
+      "sample": "document:tradle.Verification_abcdef"
     },
     "sourceLink": {
       "type": "string"
     },
-    "backlinkProp": {
+    "linkProp": {
       "type": "string"
     },
     "target": {
@@ -21,10 +21,14 @@
     },
     "targetLink": {
       "type": "string"
+    },
+    "property": {
+      "type": "string",
+      "description": "forward link property"
     }
   },
   "required": [
-    "backlinkProp",
+    "linkProp",
     "source",
     "sourceLink",
     "target",
