@@ -1,0 +1,85 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.SealState",
+  "title": "Seal State",
+  "properties": {
+    "sealId": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "permalink": {
+      "type": "string"
+    },
+    "forResource": {
+      "type": "object",
+      "ref": "tradle.Object"
+    },
+    "counterparty": {
+      "type": "string"
+    },
+    "blockchain": {
+      "type": "string"
+    },
+    "network": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "pubKey": {
+      "type": "object",
+      "range": "json"
+    },
+    "watchType": {
+      "type": "string"
+    },
+    "confirmations": {
+      "type": "number"
+    },
+    "write": {
+      "type": "boolean"
+    },
+    "errors": {
+      "type": "object",
+      "range": "json"
+    },
+    "unconfirmed": {
+      "type": "boolean"
+    },
+    "unsealed": {
+      "type": "boolean"
+    },
+    "txId": {
+      "type": "string"
+    },
+    "dateSealed": {
+      "type": "number"
+    },
+    "dateWriteCanceled": {
+      "type": "date"
+    }
+  },
+  "primaryKeys": [
+    "sealId"
+  ],
+  "indexes": [
+    {
+      "hashKey": "link",
+      "rangeKey": "sealId"
+    },
+    {
+      "hashKey": "unsealed",
+      "rangeKey": "sealId"
+    },
+    {
+      "hashKey": "unconfirmed",
+      "rangeKey": "sealId"
+    }
+  ],
+  "required": [
+    "sealId",
+    "link"
+  ]
+}
