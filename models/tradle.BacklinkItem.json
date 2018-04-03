@@ -1,0 +1,37 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.BacklinkItem",
+  "title": "Backlink Item",
+  "properties": {
+    "source": {
+      "type": "string",
+      "description": "{type}_{permalink}:{property}",
+      "sample": "tradle.Verification_abcdef:document"
+    },
+    "sourceLink": {
+      "type": "string"
+    },
+    "backlinkProp": {
+      "type": "string"
+    },
+    "target": {
+      "type": "string",
+      "description": "{type}_{permalink}",
+      "sample": "tradle.PhotoID_123456"
+    },
+    "targetLink": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "backlinkProp",
+    "source",
+    "sourceLink",
+    "target",
+    "targetLink"
+  ],
+  "primaryKeys": {
+    "hashKey": "target",
+    "rangeKey": "source"
+  }
+}
