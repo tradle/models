@@ -4,6 +4,11 @@
   "id": "tradle.Invite",
   "subClassOf": "tradle.Form",
   "properties": {
+    "recipient": {
+      "type": "string",
+      "description": "who to email this link",
+      "range": "email"
+    },
     "subject": {
       "type": "string"
     },
@@ -27,11 +32,6 @@
       "type": "object",
       "readOnly": true,
       "ref": "tradle.DraftApplication"
-    },
-    "recipient": {
-      "type": "string",
-      "description": "who to email this link",
-      "range": "email"
     }
   },
   "editCols": [
