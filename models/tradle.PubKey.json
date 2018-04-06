@@ -41,7 +41,12 @@
   "primaryKeys": {
     "hashKey": "pub"
   },
-  "indexes": ["permalink"],
+  "indexes": [
+    {
+      "hashKey": "permalink",
+      "rangeKey": "link"
+    }
+  ],
   "required": [
     "type",
     "fingerprint",
