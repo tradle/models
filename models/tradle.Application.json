@@ -44,38 +44,59 @@
       "range": "model",
       "displayName": true
     },
-    "forms": {
-      "type": "array",
-      "items": {
-        "ref": "tradle.Form"
-      }
-    },
-    "verificationsImported": {
-      "type": "array",
-      "inlined": true,
-      "items": {
-        "ref": "tradle.VerifiedItem"
-      }
-    },
-    "verificationsIssued": {
-      "type": "array",
-      "inlined": true,
-      "items": {
-        "ref": "tradle.VerifiedItem"
-      }
-    },
-    "checks": {
-      "type": "array",
-      "items": {
-        "ref": "tradle.Check",
-        "backlink": "application"
-      }
-    },
     "submissions": {
       "type": "array",
       "items": {
         "ref": "tradle.ApplicationSubmission",
         "backlink": "application"
+      }
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.ApplicationSubmission",
+        "backlink": "application",
+        "filter": {
+          "SUBCLASS_OF": {
+            "submission.type": ["tradle.Form"]
+          }
+        }
+      }
+    },
+    "editRequests": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.ApplicationSubmission",
+        "backlink": "application",
+        "filter": {
+          "EQ": {
+            "submission.type": "tradle.FormError"
+          }
+        }
+      }
+    },
+    "verifications": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.ApplicationSubmission",
+        "backlink": "application",
+        "filter": {
+          "EQ": {
+            "submission.type": "tradle.Verification"
+          }
+        }
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.ApplicationSubmission",
+        "backlink": "application",
+        "filter": {
+          "EQ": {
+            "submission.type": "tradle.Check"
+          }
+        }
       }
     },
     "certificate": {

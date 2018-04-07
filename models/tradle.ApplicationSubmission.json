@@ -9,7 +9,8 @@
     },
     "submission": {
       "type": "object",
-      "ref": "tradle.Object"
+      "ref": "tradle.Object",
+      "displayName": true
     },
     "context": {
       "type": "string"
@@ -27,6 +28,13 @@
     {
       "hashKey": "context",
       "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_permalink"
     }
+  ],
+  "viewCols": [
+    "application",
+    "submission"
   ]
 }
