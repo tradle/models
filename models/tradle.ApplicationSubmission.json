@@ -1,0 +1,32 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.ApplicationSubmission",
+  "title": "Application Submission",
+  "properties": {
+    "application": {
+      "type": "object",
+      "ref": "tradle.Application"
+    },
+    "submission": {
+      "type": "object",
+      "ref": "tradle.Object"
+    },
+    "context": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "application",
+    "submission"
+  ],
+  "primaryKeys": {
+    "hashKey": "application.permalink",
+    "rangeKey": "submission.permalink"
+  },
+  "indexes": [
+    {
+      "hashKey": "context",
+      "rangeKey": "_time"
+    }
+  ]
+}

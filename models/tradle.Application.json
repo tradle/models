@@ -71,6 +71,13 @@
         "backlink": "application"
       }
     },
+    "submissions": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.ApplicationSubmission",
+        "backlink": "application"
+      }
+    },
     "certificate": {
       "type": "object",
       "ref": "tradle.MyProduct"
