@@ -32,20 +32,6 @@
       "description": "the link to the previous version of this object",
       "sample": "hash"
     },
-    "_q": {
-      "type": "string",
-      "readOnly": true,
-      "immutable": true,
-      "description": "the link to the previous message sent to a given recipient",
-      "sample": "hash"
-    },
-    "_n": {
-      "type": "number",
-      "readOnly": true,
-      "immutable": true,
-      "description": "message sequence number, for tradle.Message object",
-      "sample": "random.number"
-    },
     "_z": {
       "type": "string",
       "readOnly": true,
@@ -53,12 +39,20 @@
       "description": "nonce",
       "sample": "hash"
     },
+    "_o": {
+      "type": "string",
+      "readOnly": true,
+      "immutable": true,
+      "description": "owner",
+      "sample": "hash"
+    },
     "_seal": {
       "type": "object",
       "ref": "tradle.Seal",
       "readOnly": true,
       "immutable": true,
-      "inlined": true
+      "inlined": true,
+      "virtual": true
     },
     "time": {
       "type": "date",

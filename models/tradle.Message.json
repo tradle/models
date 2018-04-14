@@ -3,12 +3,6 @@
   "type": "tradle.Model",
   "title": "Message",
   "properties": {
-    "_n": {
-      "type": "number"
-    },
-    "_q": {
-      "type": "string"
-    },
     "recipientPubKey": {
       "type": "object",
       "inlined": true,
@@ -46,6 +40,20 @@
     "inReplyTo": {
       "type": "string"
     },
+    "_n": {
+      "type": "number",
+      "readOnly": true,
+      "immutable": true,
+      "description": "message sequence number, for this recipient",
+      "sample": "random.number"
+    },
+    "_q": {
+      "type": "string",
+      "readOnly": true,
+      "immutable": true,
+      "description": "link to the previous message sent to this recipient",
+      "sample": "hash"
+    },
     "_recipient": {
       "type": "string",
       "virtual": true
@@ -61,11 +69,46 @@
     "_payloadRecipient": {
       "type": "string",
       "virtual": true
+    },
+    "_inbound": {
+      "type": "boolean",
+      "virtual": true
+    },
+    "_counterparty": {
+      "type": "string",
+      "virtual": true,
+      "description": "_author if inbound, _recipient otherwise"
+    },
+    "_dcounterparty": {
+      "type": "string",
+      "virtual": true,
+      "description": "property used for indexing in/outbound messages by counterparty"
     }
   },
   "required": [
     "recipientPubKey",
     "object",
     "time"
+  ],
+  "primaryKeys": {
+    "hashKey": "_counterparty",
+    "rangeKey": "time"
+  },
+  "indexes": [
+    {
+      "hashKey": "_dcounterparty",
+      "rangeKey": "time"
+    },
+    {
+      "hashKey": "context",
+      "rangeKey": "time"
+    },
+    {
+      "hashKey": "_payloadType",
+      "rangeKey": "time"
+    },
+    {
+      "hashKey": "_link"
+    }
   ]
 }
