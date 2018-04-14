@@ -4,35 +4,31 @@
   "title": "Backlink Item",
   "properties": {
     "source": {
-      "type": "string",
-      "description": "{type}_{permalink}:{property}",
-      "sample": "document:tradle.Verification_abcdef"
+      "type": "object",
+      "ref": "tradle.Object"
     },
-    "sourceLink": {
-      "type": "string"
+    "target": {
+      "type": "object",
+      "ref": "tradle.Object"
     },
     "linkProp": {
       "type": "string",
       "description": "forward link property"
-    },
-    "target": {
-      "type": "string",
-      "description": "{type}_{permalink}",
-      "sample": "tradle.PhotoID_123456"
-    },
-    "targetLink": {
-      "type": "string"
     }
   },
   "required": [
-    "linkProp",
     "source",
-    "sourceLink",
     "target",
-    "targetLink"
+    "linkProp"
   ],
   "primaryKeys": {
-    "hashKey": "target",
-    "rangeKey": "source"
-  }
+    "hashKey": "target._permalink",
+    "rangeKey": "source._permalink"
+  },
+  "indexes": [
+    {
+      "hashKey": "source._permalink",
+      "rangeKey": "{{linkProp}}:{{target._permalink}}"
+    }
+  ]
 }
