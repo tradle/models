@@ -58,7 +58,7 @@
         "backlink": "application",
         "filter": {
           "SUBCLASS_OF": {
-            "submission.type": ["tradle.Form"]
+            "submission._t": ["tradle.Form"]
           }
         }
       }
@@ -70,7 +70,7 @@
         "backlink": "application",
         "filter": {
           "EQ": {
-            "submission.type": "tradle.FormError"
+            "submission._t": "tradle.FormError"
           }
         }
       }
@@ -82,7 +82,7 @@
         "backlink": "application",
         "filter": {
           "EQ": {
-            "submission.type": "tradle.Verification"
+            "submission._t": "tradle.Verification"
           }
         }
       }
@@ -94,7 +94,7 @@
         "backlink": "application",
         "filter": {
           "EQ": {
-            "submission.type": "tradle.Check"
+            "submission._t": "tradle.Check"
           }
         }
       }
