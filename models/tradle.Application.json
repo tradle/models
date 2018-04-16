@@ -90,13 +90,8 @@
     "checks": {
       "type": "array",
       "items": {
-        "ref": "tradle.ApplicationSubmission",
-        "backlink": "application",
-        "filter": {
-          "EQ": {
-            "submission._t": "tradle.Check"
-          }
-        }
+        "ref": "tradle.Check",
+        "backlink": "application"
       }
     },
     "certificate": {
