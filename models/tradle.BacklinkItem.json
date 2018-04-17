@@ -23,12 +23,12 @@
   ],
   "primaryKeys": {
     "hashKey": "target._permalink",
-    "rangeKey": "{{linkProp}}:{{source._permalink}}"
+    "rangeKey": ["linkProp", "source._permalink"]
   },
   "indexes": [
     {
       "hashKey": "source._permalink",
-      "rangeKey": "{{linkProp}}:{{target._permalink}}"
+      "rangeKey": ["linkProp", "target._permalink"]
     }
   ]
 }
