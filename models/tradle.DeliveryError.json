@@ -1,0 +1,16 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.DeliveryError",
+  "title": "Delivery Error",
+  "properties": {
+    "counterparty": {
+      "type": "string"
+    },
+    "time": {
+      "type": "number"
+    }
+  },
+  "primaryKeys": {
+    "hashKey": "counterparty"
+  }
+}
