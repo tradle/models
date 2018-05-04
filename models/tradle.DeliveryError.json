@@ -12,5 +12,11 @@
   },
   "primaryKeys": {
     "hashKey": "counterparty"
-  }
+  },
+  "indexes": [
+    {
+      "hashKey": "_t",
+      "rangeKey": "time"
+    }
+  ]
 }
