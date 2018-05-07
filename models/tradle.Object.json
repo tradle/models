@@ -18,6 +18,27 @@
       "description": "signature",
       "sample": "sig"
     },
+    "_w": {
+      "type": "array",
+      "readOnly": true,
+      "immutable": true,
+      "description": "witness signatures",
+      "sample": "sigs",
+      "items": {
+        "properties": {
+          "a": {
+            "type": "string",
+            "sample": "hash",
+            "description": "author identity permalink"
+          },
+          "s": {
+            "type": "string",
+            "sample": "sig",
+            "description": "signature"
+          }
+        }
+      }
+    },
     "_r": {
       "type": "string",
       "readOnly": true,
