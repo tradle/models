@@ -20,9 +20,6 @@
       "inlined": true,
       "ref": "tradle.Object"
     },
-    "time": {
-      "type": "date"
-    },
     "context": {
       "type": "string"
     },
@@ -66,8 +63,7 @@
       "sample": "hash"
     },
     "_recipient": {
-      "type": "string",
-      "virtual": true
+      "type": "string"
     },
     "_payloadType": {
       "type": "string",
@@ -99,20 +95,21 @@
   "required": [
     "recipientPubKey",
     "object",
-    "time"
+    "_time",
+    "_recipient"
   ],
   "primaryKeys": {
     "hashKey": "_counterparty",
-    "rangeKey": "time"
+    "rangeKey": "_time"
   },
   "indexes": [
     {
       "hashKey": "_dcounterparty",
-      "rangeKey": "time"
+      "rangeKey": "_time"
     },
     {
       "hashKey": "context",
-      "rangeKey": "time"
+      "rangeKey": "_time"
     },
     {
       "hashKey": "_link"

@@ -32,6 +32,20 @@
       "description": "the link to the previous version of this object",
       "sample": "hash"
     },
+    "_ph": {
+      "type": "string",
+      "immutable": true,
+      "readOnly": true,
+      "description": "previous header merkle root",
+      "sample": "hash"
+    },
+    "_v": {
+      "type": "number",
+      "readOnly": true,
+      "immutable": true,
+      "description": "object version number",
+      "sample": "random.number"
+    },
     "_z": {
       "type": "string",
       "readOnly": true,
@@ -46,15 +60,7 @@
       "description": "owner",
       "sample": "hash"
     },
-    "_seal": {
-      "type": "object",
-      "ref": "tradle.Seal",
-      "readOnly": true,
-      "immutable": true,
-      "inlined": true,
-      "virtual": true
-    },
-    "time": {
+    "_time": {
       "type": "date",
       "readOnly": true,
       "immutable": true,
@@ -62,7 +68,6 @@
     },
     "_author": {
       "type": "string",
-      "virtual": true,
       "readOnly": true,
       "description": "this object author's identity's permalink",
       "sample": "hash"
@@ -85,11 +90,13 @@
       "readOnly": true,
       "sample": "hash"
     },
-    "_time": {
-      "type": "number",
-      "virtual": true,
+    "_seal": {
+      "type": "object",
+      "ref": "tradle.Seal",
       "readOnly": true,
-      "sample": "timestamp.recent"
+      "immutable": true,
+      "inlined": true,
+      "virtual": true
     },
     "_cut": {
       "type": "array",
@@ -109,18 +116,11 @@
       "virtual": true,
       "readOnly": true,
       "sample": "hash"
-    },
-    "_virtual": {
-      "type": "array",
-      "inlined": true,
-      "virtual": true,
-      "items": {
-        "type": "string"
-      }
     }
   },
   "required": [
     "_t",
-    "_s"
+    "_s",
+    "_time"
   ]
 }
