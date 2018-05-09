@@ -3,18 +3,6 @@
   "type": "tradle.Model",
   "title": "Message",
   "properties": {
-    "recipientPubKey": {
-      "type": "object",
-      "inlined": true,
-      "properties": {
-        "curve": {
-          "type": "string"
-        },
-        "pub": {
-          "type": "bytes"
-        }
-      }
-    },
     "object": {
       "type": "object",
       "inlined": true,
@@ -62,6 +50,12 @@
       "description": "link to the previous message sent to this recipient",
       "sample": "hash"
     },
+    "_time": {
+      "type": "date",
+      "readOnly": true,
+      "immutable": true,
+      "sample": "timestamp.recent"
+    },
     "_recipient": {
       "type": "string"
     },
@@ -93,7 +87,6 @@
     }
   },
   "required": [
-    "recipientPubKey",
     "object",
     "_time",
     "_recipient"
