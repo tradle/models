@@ -1,0 +1,21 @@
+{
+  "id": "tradle.Issue",
+  "title": "Issue",
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "subject": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "subject"
+  ],
+  "viewCols": [
+    "subject",
+    "description"
+  ]
+}
