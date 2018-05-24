@@ -9,6 +9,21 @@
       "readOnly": true,
       "immutable": true
     },
+    "permalink": {
+      "type": "string",
+      "readOnly": true,
+      "immutable": true
+    },
+    "headerHash": {
+      "type": "string",
+      "readOnly": true,
+      "immutable": true
+    },
+    "prevHeaderHash": {
+      "type": "string",
+      "readOnly": true,
+      "immutable": true
+    },
     "forResource": {
       "type": "object",
       "ref": "tradle.Object",
@@ -42,6 +57,7 @@
   },
   "required": [
     "link",
+    "headerHash",
     "txId",
     "blockchain",
     "network"
