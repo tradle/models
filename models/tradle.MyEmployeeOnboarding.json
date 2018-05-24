@@ -4,20 +4,6 @@
   "subClassOf": "tradle.MyProduct",
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
-    "from": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
-    "to": {
-      "type": "object",
-      "readOnly": true,
-      "ref": "tradle.Identity"
-    },
     "entityRole": {
       "type": "string"
     },
@@ -26,16 +12,20 @@
       "type": "string"
     },
     "firstName": {
-      "type": "string"
+      "type": "string",
+      "immutable": true
     },
     "lastName": {
-      "type": "string"
+      "type": "string",
+      "immutable": true
     }
   },
   "required": [
     "myProductId"
   ],
   "viewCols": [
-    "myProductId"
+    "myProductId",
+    "firstName",
+    "lastName"
   ]
 }
