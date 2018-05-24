@@ -1,0 +1,52 @@
+{
+  "id": "tradle.Selfie",
+  "type": "tradle.Model",
+  "title": "Selfie",
+  "interfaces": [
+    "tradle.Verifiable",
+    "tradle.Document"
+  ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
+  "notShareable": true,
+  "notEditable": true,
+  "formRequestMessage": "Please take a **selfie** picture of your face",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "selfie": {
+      "type": "object",
+      "inlined": true,
+      "cameraType": "front",
+      "title": "Selfie",
+      "ref": "tradle.Photo",
+      "sample": "face"
+    },
+    "selfieJson": {
+      "type": "object",
+      "title": "Photo info",
+      "range": "json",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "selfie"
+  ],
+  "viewCols": [
+    "selfie"
+  ]
+}

@@ -78,9 +78,11 @@
     "tradle.Partial": "Partial",
     "tradle.Passport": "Passport",
     "tradle.PassportVerification": "Passport Verification",
+    "tradle.PersonalInfo": "Personal Info",
     "tradle.Phone": "Phone",
     "tradle.PhoneTypes": "Phone Types",
     "tradle.Photo": "Photo",
+    "tradle.PhotoID": "Photo ID",
     "tradle.ProductApplication": "Product Application",
     "tradle.ProductList": "Product List",
     "tradle.ProductRequest": "Product Request",
@@ -98,6 +100,7 @@
     "tradle.SealState": "Seal State",
     "tradle.SecurityCode": "Security Code",
     "tradle.SelfIntroduction": "Self introduction",
+    "tradle.Selfie": "Selfie",
     "tradle.ServiceProvider": "Service Provider Server Info",
     "tradle.Settings": "Settings",
     "tradle.Sex": "Sex",
@@ -131,6 +134,7 @@
       "Default": "Address"
     },
     "address_group": {
+      "tradle.PhotoID": "Address",
       "tradle.Profile": "Home Address",
       "tradle.Residence": "Address"
     },
@@ -175,6 +179,9 @@
     },
     "billDate": {
       "Default": "Bill Date"
+    },
+    "birthData": {
+      "Default": "Birth Data"
     },
     "blockchain": {
       "Default": "Blockchain"
@@ -261,7 +268,8 @@
       "Default": "Counterparty"
     },
     "country": {
-      "Default": "Country"
+      "Default": "Country",
+      "tradle.PhotoID": "Country of Issue"
     },
     "coverPhoto": {
       "Default": "Cover Photo"
@@ -336,8 +344,20 @@
       "Default": "Document",
       "tradle.Verification": "Verified document"
     },
+    "documentNumber": {
+      "Default": "Document Number"
+    },
+    "documentPassport_group": {
+      "tradle.PhotoID": "Document"
+    },
     "documentPresence": {
       "Default": "Document Presence"
+    },
+    "documentType": {
+      "Default": "Document Type"
+    },
+    "document_group": {
+      "tradle.PhotoID": "Document"
     },
     "domain": {
       "Default": "Domain"
@@ -436,6 +456,9 @@
     "from": {
       "Default": "From"
     },
+    "full": {
+      "Default": "Full"
+    },
     "github": {
       "tradle.BetaTesterContactInfo": "Github username"
     },
@@ -502,6 +525,9 @@
     "issuedBy": {
       "Default": "Issued By"
     },
+    "issuer": {
+      "Default": "Issuer"
+    },
     "issuingCountry": {
       "Default": "Issuing Country"
     },
@@ -565,6 +591,9 @@
     "major": {
       "Default": "Major"
     },
+    "maritalStatus": {
+      "Default": "Marital Status"
+    },
     "message": {
       "Default": "Message",
       "tradle.SalaryVerification": "Description",
@@ -616,6 +645,9 @@
     },
     "name": {
       "Default": "Name"
+    },
+    "name_group": {
+      "tradle.PersonalInfo": "Personal detail"
     },
     "namespace": {
       "Default": "Namespace"
@@ -674,8 +706,17 @@
     "permalink": {
       "Default": "Permalink"
     },
+    "personalPassport_group": {
+      "tradle.PhotoID": "Personal"
+    },
+    "personal_group": {
+      "tradle.PhotoID": "Pesonal"
+    },
     "phoneType": {
       "Default": "Phone Type"
+    },
+    "phones": {
+      "Default": "Phones"
     },
     "photo": {
       "Default": "Photo"
@@ -709,9 +750,6 @@
     },
     "productRowTextColor": {
       "Default": "Product Row Text Color"
-    },
-    "productType": {
-      "Default": "Product Type"
     },
     "progress": {
       "Default": "Progress"
@@ -792,6 +830,18 @@
     "root": {
       "Default": "Root"
     },
+    "scan": {
+      "Default": "Scan"
+    },
+    "scanJson": {
+      "tradle.PhotoID": "Extracted fields"
+    },
+    "scanLicence_group": {
+      "tradle.PhotoID": "Scanned Licence"
+    },
+    "scannedBy": {
+      "Default": "Scanned By"
+    },
     "sealId": {
       "Default": "Seal Id"
     },
@@ -800,6 +850,12 @@
     },
     "securityCodes": {
       "Default": "Security Codes"
+    },
+    "selfie": {
+      "tradle.Selfie": "Selfie"
+    },
+    "selfieJson": {
+      "tradle.Selfie": "Photo info"
     },
     "session": {
       "Default": "Session"

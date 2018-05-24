@@ -1,0 +1,177 @@
+{
+  "id": "tradle.PhotoID",
+  "type": "tradle.Model",
+  "title": "Photo ID",
+  "subClassOf": "tradle.Form",
+  "interfaces": [
+    "tradle.Verifiable",
+    "tradle.Document"
+  ],
+  "verifiableAspects": {
+    "authenticity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "ownership": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    },
+    "validity": {
+      "methods": [
+        "tradle.VisualVerificationMethod"
+      ]
+    }
+  },
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "documentType": {
+      "type": "object",
+      "displayName": true,
+      "ref": "tradle.IDCardType"
+    },
+    "country": {
+      "type": "object",
+      "title": "Country of Issue",
+      "displayName": true,
+      "ref": "tradle.Country"
+    },
+    "scan": {
+      "type": "object",
+      "range": "photo",
+      "mainPhoto": true,
+      "component": "BlinkID",
+      "ref": "tradle.Photo",
+      "sample": "scan.photoId"
+    },
+    "scanJson": {
+      "type": "object",
+      "title": "Extracted fields",
+      "range": "json",
+      "readOnly": true
+    },
+    "scannedBy": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.DocumentScanner"
+    },
+    "verifications": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "backlink": "document",
+        "ref": "tradle.Verification"
+      }
+    },
+    "scanLicence_group": {
+      "type": "string",
+      "title": "Scanned Licence",
+      "readOnly": true,
+      "list": [
+        "personal_group",
+        "address_group",
+        "document_group"
+      ]
+    },
+    "personal_group": {
+      "type": "string",
+      "title": "Pesonal",
+      "list": [
+        "firstName",
+        "birthData",
+        "lastName"
+      ]
+    },
+    "address_group": {
+      "type": "string",
+      "title": "Address",
+      "list": [
+        "full"
+      ]
+    },
+    "document_group": {
+      "type": "string",
+      "title": "Document",
+      "list": [
+        "dateOfIssue",
+        "documentNumber",
+        "issuer",
+        "dateOfExpiry"
+      ]
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "birthData": {
+      "type": "date"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "full": {
+      "type": "string"
+    },
+    "dateOfIssue": {
+      "type": "date"
+    },
+    "documentNumber": {
+      "type": "string"
+    },
+    "issuer": {
+      "type": "string"
+    },
+    "dateOfExpiry": {
+      "type": "date"
+    },
+    "documentPassport_group": {
+      "type": "string",
+      "title": "Document",
+      "list": [
+        "issuer",
+        "documentNumber",
+        "dateOfIssue",
+        "dateOfExpiry"
+      ]
+    },
+    "personalPassport_group": {
+      "type": "string",
+      "title": "Personal",
+      "list": [
+        "dateOfBirth",
+        "firstName",
+        "lastName",
+        "nationality",
+        "sex"
+      ]
+    },
+    "sex": {
+      "type": "string"
+    },
+    "dateOfBirth": {
+      "type": "date"
+    },
+    "nationality": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "documentType",
+    "country",
+    "scan"
+  ],
+  "editCols": [
+    "documentType",
+    "country",
+    "scan"
+  ],
+  "viewCols": [
+    "documentType",
+    "country",
+    "scan",
+    "scanJson"
+  ]
+}

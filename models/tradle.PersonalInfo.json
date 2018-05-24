@@ -1,0 +1,105 @@
+{
+  "id": "tradle.PersonalInfo",
+  "title": "Personal Info",
+  "interfaces": [
+    "tradle.Verifiable"
+  ],
+  "evidentiaryDocuments": [
+    "tradle.Passport",
+    "tradle.Visa",
+    "tradle.DriverLicense",
+    "tradle.IdentificationDetail"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string",
+      "displayAs": "{2} {1}",
+      "group": [
+        "lastName",
+        "firstName"
+      ],
+      "readOnly": true,
+      "displayName": true
+    },
+    "dateOfBirth": {
+      "type": "date",
+      "maxDate": "18 years before",
+      "minDate": "110 years before"
+    },
+    "name_group": {
+      "type": "string",
+      "title": "Personal detail",
+      "list": [
+        "firstName",
+        "lastName",
+        "emailAddress",
+        "dateOfBirth",
+        "placeOfBirth",
+        "maritalStatus",
+        "education",
+        "nationality"
+      ]
+    },
+    "placeOfBirth": {
+      "type": "string"
+    },
+    "nationality": {
+      "type": "object",
+      "ref": "tradle.Nationality"
+    },
+    "phones": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Phone"
+      }
+    },
+    "emailAddress": {
+      "type": "string",
+      "pattern": "^(([^<>()\\[\\]\\\\.,;:\\s@\"]+(\\.[^<>()\\[\\]\\\\.,;:\\s@\"]+)*)|(\".+\"))@((\\[[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}\\.[0-9]{1,3}])|(([a-zA-Z\\-0-9]+\\.)+[a-zA-Z]{2,}))$",
+      "keyboard": "email-address",
+      "range": "email",
+      "sample": "internet.email"
+    },
+    "maritalStatus": {
+      "type": "object",
+      "ref": "tradle.MaritalStatus"
+    },
+    "education": {
+      "type": "object",
+      "ref": "tradle.EducationNL"
+    }
+  },
+  "editCols": [
+    "name_group",
+    "phones"
+  ],
+  "required": [
+    "firstName",
+    "lastName",
+    "emailAddress"
+  ],
+  "viewCols": [
+    "name_group",
+    "name",
+    "dateOfBirth",
+    "placeOfBirth",
+    "nationality",
+    "maritalStatus",
+    "education",
+    "emailAddress",
+    "phones"
+  ]
+}
