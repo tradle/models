@@ -1,0 +1,22 @@
+{
+  "id": "tradle.DocumentScanner",
+  "title": "Document Scanner",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Enum",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "documentScanner": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "required": [
+    "documentScanner"
+  ],
+  "enum": [
+    {"id": "blinkId", "title": "Blink ID"}
+  ]
+}
