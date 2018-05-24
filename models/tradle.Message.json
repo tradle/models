@@ -3,25 +3,10 @@
   "type": "tradle.Model",
   "title": "Message",
   "properties": {
-    "recipientPubKey": {
-      "type": "object",
-      "inlined": true,
-      "properties": {
-        "curve": {
-          "type": "string"
-        },
-        "pub": {
-          "type": "bytes"
-        }
-      }
-    },
     "object": {
       "type": "object",
       "inlined": true,
       "ref": "tradle.Object"
-    },
-    "time": {
-      "type": "date"
     },
     "context": {
       "type": "string"
@@ -65,9 +50,14 @@
       "description": "link to the previous message sent to this recipient",
       "sample": "hash"
     },
+    "_time": {
+      "type": "date",
+      "readOnly": true,
+      "immutable": true,
+      "sample": "timestamp.recent"
+    },
     "_recipient": {
-      "type": "string",
-      "virtual": true
+      "type": "string"
     },
     "_payloadType": {
       "type": "string",
@@ -97,22 +87,22 @@
     }
   },
   "required": [
-    "recipientPubKey",
     "object",
-    "time"
+    "_time",
+    "_recipient"
   ],
   "primaryKeys": {
     "hashKey": "_counterparty",
-    "rangeKey": "time"
+    "rangeKey": "_time"
   },
   "indexes": [
     {
       "hashKey": "_dcounterparty",
-      "rangeKey": "time"
+      "rangeKey": "_time"
     },
     {
       "hashKey": "context",
-      "rangeKey": "time"
+      "rangeKey": "_time"
     },
     {
       "hashKey": "_link"
