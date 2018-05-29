@@ -42,14 +42,15 @@
         "lastName",
         "emailAddress",
         "dateOfBirth",
-        "placeOfBirth",
+        "countryOfBirth",
         "maritalStatus",
         "education",
         "nationality"
       ]
     },
-    "placeOfBirth": {
-      "type": "string"
+    "countryOfBirth": {
+      "type": "object",
+      "ref": "tradle.Country"
     },
     "nationality": {
       "type": "object",
@@ -91,7 +92,7 @@
     "name_group",
     "name",
     "dateOfBirth",
-    "placeOfBirth",
+    "countryOfBirth",
     "nationality",
     "maritalStatus",
     "education",
