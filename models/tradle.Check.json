@@ -24,9 +24,13 @@
     "application": {
       "type": "object",
       "ref": "tradle.Application"
+    },
+    "isInactive": {
+      "type": "boolean"
     }
   },
   "required": [
-    "provider"
+    "provider",
+    "application"
   ]
 }
