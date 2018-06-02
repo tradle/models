@@ -39,9 +39,14 @@
     }
   },
   "primaryKeys": {
-    "hashKey": "pub"
+    "hashKey": "pub",
+    "rangeKey": "_time"
   },
   "indexes": [
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    },
     {
       "hashKey": "permalink",
       "rangeKey": "link"
