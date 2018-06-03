@@ -8,7 +8,7 @@
       "ref": "tradle.Identity",
       "inlined": true
     },
-    "to": {
+    "target": {
       "type": "object",
       "ref": "tradle.Identity",
       "description": "who are you introducing yourself to?",
@@ -24,7 +24,7 @@
   "viewCols": [
     "message",
     "identity",
-    "to"
+    "target"
   ],
   "required": [
     "identity"
@@ -40,7 +40,7 @@
     },
     {
       "hashKey": "identity._permalink",
-      "rangeKey": "to._permalink"
+      "rangeKey": "target._permalink"
     }
   ]
 }
