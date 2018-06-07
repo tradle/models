@@ -45,11 +45,13 @@
   "indexes": [
     {
       "hashKey": "permalink",
-      "rangeKey": "link"
+      "rangeKey": {
+        "template": "{_time}:{link}"
+      }
     },
     {
       "hashKey": "fingerprint",
-      "rangeKey": "permalink"
+      "rangeKey": "_time"
     },
     {
       "hashKey": "_t",
