@@ -1,0 +1,24 @@
+{
+  "id": "tradle.RelationshipType",
+  "subClassOf": "tradle.Enum",
+  "title": "Relationship Type",
+  "type": "tradle.Model",
+  "properties": {
+    "relationship": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "son", "title": "Son" },
+    { "id": "daughter", "title": "Daughter" },
+    { "id": "mother", "title": "Mother" },
+    { "id": "father", "title": "Father" },
+    { "id": "sister", "title": "Sister" },
+    { "id": "brother", "title": "Brother" },
+    { "id": "spouse", "title": "Spouse" },
+    { "id": "domesticpartner", "title": "Domestic Partner" },
+    { "id": "guardian", "title": "Guardian" },
+    { "id": "other", "title": "Other" }
+  ]
+}

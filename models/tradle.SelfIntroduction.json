@@ -8,6 +8,12 @@
       "ref": "tradle.Identity",
       "inlined": true
     },
+    "target": {
+      "type": "object",
+      "ref": "tradle.Identity",
+      "description": "who are you introducing yourself to?",
+      "inlined": true
+    },
     "name": {
       "type": "string"
     },
@@ -17,9 +23,24 @@
   },
   "viewCols": [
     "message",
-    "identity"
+    "identity",
+    "target"
   ],
   "required": [
     "identity"
+  ],
+  "indexes": [
+    {
+      "hashKey": "_author",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "identity._permalink",
+      "rangeKey": "target._permalink"
+    }
   ]
 }
