@@ -44,16 +44,16 @@
   },
   "indexes": [
     {
-      "hashKey": "_t",
-      "rangeKey": "_time"
-    },
-    {
       "hashKey": "permalink",
       "rangeKey": "link"
     },
     {
       "hashKey": "fingerprint",
       "rangeKey": "permalink"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
     }
   ],
   "required": [

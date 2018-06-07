@@ -72,20 +72,20 @@
   ],
   "indexes": [
     {
-      "hashKey": "_t",
-      "rangeKey": "_time"
-    },
-    {
-      "hashKey": "link",
-      "rangeKey": "sealId"
-    },
-    {
       "hashKey": "unsealed",
       "rangeKey": "sealId"
     },
     {
       "hashKey": "unconfirmed",
       "rangeKey": "sealId"
+    },
+    {
+      "hashKey": "link",
+      "rangeKey": "sealId"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
     }
   ],
   "required": [

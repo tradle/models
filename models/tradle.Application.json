@@ -125,10 +125,14 @@
     "context"
   ],
   "indexes": [
+    "context",
+    {
+      "hashKey": "applicant._permalink",
+      "rangeKey": "_time"
+    },
     {
       "hashKey": "_t",
       "rangeKey": "_time"
-    },
-    "context"
+    }
   ]
 }
