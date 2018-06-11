@@ -75,6 +75,18 @@
         }
       }
     },
+    "products": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.ApplicationSubmission",
+        "backlink": "application",
+        "filter": {
+          "SUBCLASS_OF": {
+            "submission._t": ["tradle.MyProduct"]
+          }
+        }
+      }
+    },
     "verifications": {
       "type": "array",
       "items": {
