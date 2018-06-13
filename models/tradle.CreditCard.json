@@ -1,0 +1,59 @@
+{
+  "id": "tradle.CreditCard",
+  "type": "tradle.Model",
+  "title": "Credit Card",
+  "properties": {
+    "cardType":  {
+      "type": "string"
+    },
+    "cardNumber": {
+      "type": "string"
+    },
+    "redactedCardNumber": {
+      "type": "string"
+    },
+    "expiryMonth": {
+      "type": "number",
+      "max": 12
+    },
+    "expiryYear": {
+      "type": "number"
+    },
+    "cvv": {
+      "type": "string"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "scanned": {
+      "type": "boolean"
+    },
+    "cardholderName": {
+      "type": "string"
+    },
+    "scan": {
+      "type": "object",
+      "range": "creditCard",
+      "mainPhoto": true,
+      "ref": "tradle.Photo"
+    },
+    "scanJson": {
+      "type": "object",
+      "title": "Extracted fields",
+      "range": "json",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "cardType",
+    "cardholderName",
+    "expiryMonth",
+    "expiryYear",
+    "cvv",
+    "postalCode"
+  ],
+  "viewCols": [
+    "cardholderName",
+    "scan"
+  ]
+}
