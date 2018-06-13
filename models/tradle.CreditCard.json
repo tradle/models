@@ -11,7 +11,8 @@
       "type": "string"
     },
     "redactedCardNumber": {
-      "type": "string"
+      "type": "string",
+      "readOnly": true
     },
     "expiryMonth": {
       "type": "number",
@@ -27,7 +28,8 @@
       "type": "string"
     },
     "scanned": {
-      "type": "boolean"
+      "type": "boolean",
+      "readOnly": true
     },
     "cardholderName": {
       "type": "string"
@@ -49,13 +51,21 @@
   "required": [
     "cardType",
     "cardholderName",
+    "cardNumber",
+    "expiryMonth",
+    "expiryYear",
+    "cvv"
+  ],
+  "viewCols": [
+    "cardType",
+    "cardholderName",
+    "cardNumber",
     "expiryMonth",
     "expiryYear",
     "cvv",
     "postalCode"
   ],
-  "viewCols": [
-    "cardholderName",
+  "editCols": [
     "scan"
   ]
 }
