@@ -93,6 +93,20 @@
       "description": "this object author's identity's permalink",
       "sample": "hash"
     },
+    "_org": {
+      "type": "string",
+      "readOnly": true,
+      "immutable": true,
+      "description": "this author organization's identity's permalink",
+      "sample": "hash"
+    },
+    "_orgsig": {
+      "type": "string",
+      "readOnly": true,
+      "immutable": true,
+      "description": "this author organization's signature",
+      "sample": "sig"
+    },
     "_link": {
       "type": "string",
       "virtual": true,
