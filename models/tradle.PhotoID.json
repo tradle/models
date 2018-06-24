@@ -68,16 +68,6 @@
         "ref": "tradle.Verification"
       }
     },
-    "scanLicence_group": {
-      "type": "string",
-      "title": "Scanned Licence",
-      "readOnly": true,
-      "list": [
-        "personal_group",
-        "address_group",
-        "document_group"
-      ]
-    },
     "personal_group": {
       "type": "string",
       "title": "Pesonal",
@@ -125,17 +115,6 @@
     "dateOfExpiry": {
       "type": "date"
     },
-    "personalPassport_group": {
-      "type": "string",
-      "title": "Personal",
-      "list": [
-        "firstName",
-        "lastName",
-        "dateOfBirth",
-        "nationality",
-        "sex"
-      ]
-    },
     "sex": {
       "type": "string"
     },
@@ -162,6 +141,11 @@
   "viewCols": [
     "documentType",
     "country",
-    "scan"
+    "scan",
+    "personal_group",
+    "nationality",
+    "sex",
+    "document_group",
+    "address_group"
   ]
 }
