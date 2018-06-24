@@ -125,23 +125,13 @@
     "dateOfExpiry": {
       "type": "date"
     },
-    "documentPassport_group": {
-      "type": "string",
-      "title": "Document",
-      "list": [
-        "issuer",
-        "documentNumber",
-        "dateOfIssue",
-        "dateOfExpiry"
-      ]
-    },
     "personalPassport_group": {
       "type": "string",
       "title": "Personal",
       "list": [
-        "dateOfBirth",
         "firstName",
         "lastName",
+        "dateOfBirth",
         "nationality",
         "sex"
       ]
