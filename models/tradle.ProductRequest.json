@@ -25,5 +25,19 @@
   "required": [
     "requestFor",
     "contextId"
+  ],
+  "indexes": [
+    {
+      "hashKey": "contextId",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_orgOrAuthor",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
   ]
 }
