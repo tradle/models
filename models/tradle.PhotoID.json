@@ -116,13 +116,15 @@
       "type": "date"
     },
     "sex": {
-      "type": "string"
+      "type": "object",
+      "ref": "tradle.Sex"
     },
     "dateOfBirth": {
       "type": "date"
     },
     "nationality": {
-      "type": "string"
+      "type": "object",
+      "ref": "tradle.Nationality"
     }
   },
   "required": [
