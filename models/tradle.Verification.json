@@ -42,6 +42,11 @@
       "readOnly": true,
       "inlined": true,
       "ref": "tradle.Method"
+    },
+    "check": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Check"
     }
   },
   "required": [
@@ -52,6 +57,7 @@
     "dateVerified",
     "organization",
     "method",
-    "sources"
+    "sources",
+    "check"
   ]
 }
