@@ -8,6 +8,13 @@
     },
     "time": {
       "type": "number"
+    },
+    "attempts": {
+      "type": "number"
+    },
+    "status": {
+      "type": "object",
+      "ref": "tradle.DeliveryErrorStatus"
     }
   },
   "primaryKeys": {
