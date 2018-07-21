@@ -13,7 +13,9 @@
       }
     },
     "signature": {
-      "type": "string",
+      "type": "object",
+      "ref": "tradle.Photo",
+      "inlined": true,
       "skipLabel": true,
       "signature": true
     }
