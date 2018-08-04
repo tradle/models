@@ -9,6 +9,21 @@
     },
     "description": {
       "type": "string"
+    },
+    "assignTo": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "status": {
+      "type": "object",
+      "ref": "tradle.IssueStatus"
+    },
+    "tags": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Label"
+      }
     }
   },
   "required": [

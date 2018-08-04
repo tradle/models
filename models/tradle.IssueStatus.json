@@ -1,0 +1,22 @@
+{
+  "id": "tradle.IssueStatus",
+  "title": "Status",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "status": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    {
+      "id": "closed",
+      "title": "Closed"
+    },
+    {
+      "id": "open",
+      "title": "Open"
+    }
+  ]
+}
