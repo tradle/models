@@ -11,8 +11,7 @@
       "type": "string"
     },
     "assignTo": {
-      "type": "object",
-      "ref": "tradle.Identity"
+      "type": "string"
     },
     "status": {
       "type": "object",
@@ -31,6 +30,8 @@
   ],
   "viewCols": [
     "subject",
-    "description"
+    "description",
+    "status",
+    "tags"
   ]
 }
