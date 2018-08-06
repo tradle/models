@@ -17,9 +17,10 @@
       "type": "object",
       "ref": "tradle.IssueStatus"
     },
-    "tags": {
+    "labels": {
       "type": "array",
       "inlined": true,
+      "allowToAdd": true,
       "items": {
         "ref": "tradle.Label"
       }
@@ -32,6 +33,6 @@
     "subject",
     "description",
     "status",
-    "tags"
+    "labels"
   ]
 }
