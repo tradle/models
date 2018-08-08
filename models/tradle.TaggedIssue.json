@@ -1,0 +1,26 @@
+{
+  "id": "tradle.legal.TaggedIssue",
+  "title": "Tagged Issue",
+  "type": "tradle.Model",
+  "interfaces": [
+    "tradle.Intersection"
+  ],
+  "properties": {
+    "tag":  {
+        "type": "object",
+        "ref": "tradle.Tag"
+    },
+    "issue": {
+        "type": "object",
+        "ref": "tradle.Issue"
+    }
+  },
+  "required": [
+    "tag",
+    "issue"
+  ],
+  "viewCols": [
+    "tag",
+    "issue"
+  ]
+}

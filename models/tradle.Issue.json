@@ -10,19 +10,16 @@
     "description": {
       "type": "string"
     },
-    "assignTo": {
-      "type": "string"
-    },
     "status": {
       "type": "object",
       "ref": "tradle.IssueStatus"
     },
-    "labels": {
+    "tags": {
       "type": "array",
-      "inlined": true,
       "allowToAdd": true,
       "items": {
-        "ref": "tradle.Label"
+        "ref": "tradle.TaggedIssue",
+        "backlink": "issue"
       }
     }
   },
@@ -33,6 +30,6 @@
     "subject",
     "description",
     "status",
-    "labels"
+    "tags"
   ]
 }

@@ -1,0 +1,25 @@
+{
+  "id": "tradle.Tag",
+  "title": "Tag",
+  "type": "tradle.Model",
+  "properties": {
+    "tag": {
+      "displayName": true,
+      "type": "string"
+    },
+    "issues": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.TaggedIssue",
+        "backlink": "tag"
+      }
+    }
+  },
+  "required": [
+    "tag"
+  ],
+  "viewCols": [
+    "tag"
+  ]
+}
