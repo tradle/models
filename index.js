@@ -1,15 +1,8 @@
+'use strict'
 exports.models = require('./models.json')
-exports.dictionaries = lang => {
-  try {
-    return require('./dictionary_' + lang + '.json')
-  } catch (err) {
-    // return require('./dictionary_en.json')
-  }
-}
-
-exports.dict = {
-  // en: require('./dictionary_en.json'),
-  nl: require('./dictionary_nl.json')
+exports.dictionaries = {
+  get en() { return require('./dictionary_en.json') },
+  get nl() { return require('./dictionary_nl.json') },
 }
 // exports.formDefaults = require('./data/formDefaults.json')
 exports.data = require('./data/data')
