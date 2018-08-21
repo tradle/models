@@ -1,1132 +1,3292 @@
-{
-  "models": {
-    "tradle.API": "API",
-    "tradle.APIBasedVerificationMethod": "API based verification",
-    "tradle.Ack": "Item Received",
-    "tradle.AdditionalInfo": "Additional Information",
-    "tradle.AppState": "App State",
-    "tradle.Application": "Application",
-    "tradle.ApplicationApproval": "Application Approval",
-    "tradle.ApplicationDenial": "Application Denial",
-    "tradle.ApplicationSubmission": "Application Submission",
-    "tradle.ApplicationSubmitted": "Application Submitted",
-    "tradle.Aspect": "Aspect",
-    "tradle.AssignRelationshipManager": "Assign Relationship Manager",
-    "tradle.BacklinkItem": "Backlink Item",
-    "tradle.BasicContactInfo": "Basic Contact Info",
-    "tradle.BetaTesterContactInfo": "Beta Tester Contact Info",
-    "tradle.Bookmark": "Bookmark",
-    "tradle.Check": "Check",
-    "tradle.Confirmation": "Confirmation",
-    "tradle.Context": "Context",
-    "tradle.Country": "Country",
-    "tradle.CreditCard": "Credit Card",
-    "tradle.CreditCards": "Credit Cards",
-    "tradle.Currency": "Currency",
-    "tradle.CustomerWaiting": "Customer waiting",
-    "tradle.DataBundle": "Data Bundle",
-    "tradle.DataClaim": "Data Claim",
-    "tradle.DeliveryError": "Delivery Error",
-    "tradle.DeliveryErrorStatus": "Country",
-    "tradle.Document": "Document",
-    "tradle.DocumentScanner": "Document Scanner",
-    "tradle.DraftApplication": "Draft Application",
-    "tradle.Education": "Education",
-    "tradle.EducationDegree": "Degree of education",
-    "tradle.EducationNL": "Education",
-    "tradle.EmailAddress": "Email Address",
-    "tradle.EmailCheck": "Email Check",
-    "tradle.EmployeeOnboarding": "Employee Onboarding",
-    "tradle.Enum": "Enum",
-    "tradle.File": "File",
-    "tradle.FinancialProduct": "Financial Product",
-    "tradle.ForgetMe": "Forget Me",
-    "tradle.ForgotYou": "Forgot You",
-    "tradle.Form": "Form",
-    "tradle.FormError": "Form Error",
-    "tradle.FormPrefill": "Form Prefill",
-    "tradle.FormRequest": "Form Request",
-    "tradle.HandSignature": "Signature on screen",
-    "tradle.HowToFund": "How To Fund",
-    "tradle.IDCardType": "ID Card Type",
-    "tradle.Identity": "Identity",
-    "tradle.IdentityPublishRequest": "Identity Publish Request",
-    "tradle.IdentityPublished": "Identity Published",
-    "tradle.Intersection": "Intersection",
-    "tradle.Introduction": "Introduction",
-    "tradle.Invite": "Invite",
-    "tradle.Issue": "Issue",
-    "tradle.IssueProduct": "Issue",
-    "tradle.IssueStatus": "Status",
-    "tradle.Item": "Item",
-    "tradle.Language": "Language",
-    "tradle.Major": "Major",
-    "tradle.MaritalStatus": "Marital Status",
-    "tradle.MediaSnippet": "Media Snippet",
-    "tradle.MerkleLeaf": "Merkle Leaf",
-    "tradle.MerkleNode": "Merkle Node",
-    "tradle.Message": "Message",
-    "tradle.Method": "Method",
-    "tradle.ModelsPack": "Models Pack",
-    "tradle.Money": "Money",
-    "tradle.MyEmployeeOnboarding": "My Employee Pass",
-    "tradle.MyIdentities": "My Identities",
-    "tradle.MyIssueProduct": "My Issue Product",
-    "tradle.MyProduct": "My Product",
-    "tradle.MyRemediation": "My Remediation",
-    "tradle.Name": "Name",
-    "tradle.Nationality": "Nationality",
-    "tradle.NewMessageModel": "New message model",
-    "tradle.NextFormRequest": "NextFormRequest",
-    "tradle.Object": "Object",
-    "tradle.Organization": "Organization",
-    "tradle.PairingData": "Pairing Data",
-    "tradle.PairingRequest": "Pairing Request",
-    "tradle.PairingResponse": "Pairing Response",
-    "tradle.Partial": "Partial",
-    "tradle.Passport": "Passport",
-    "tradle.PassportVerification": "Passport Verification",
-    "tradle.PersonalInfo": "Personal Info",
-    "tradle.Phone": "Phone",
-    "tradle.PhoneTypes": "Phone Types",
-    "tradle.Photo": "Photo",
-    "tradle.PhotoID": "Photo ID",
-    "tradle.ProductApplication": "Product Application",
-    "tradle.ProductList": "Product List",
-    "tradle.ProductRequest": "Product Request",
-    "tradle.Profile": "Profile",
-    "tradle.ProgressMessage": "Progress Message",
-    "tradle.PropertyChooser": "Property Chooser",
-    "tradle.PubKey": "Public Key",
-    "tradle.RelationshipType": "Relationship Type",
-    "tradle.Remediation": "Remediation",
-    "tradle.RemediationSimpleMessage": "Remediation Simple Message",
-    "tradle.Residence": "Residence",
-    "tradle.ResidenceType": "Residence Type",
-    "tradle.ResidentialStatus": "Residential Status",
-    "tradle.SalaryVerification": "Salary Verification",
-    "tradle.Seal": "Seal",
-    "tradle.SealState": "Seal State",
-    "tradle.SecurityCode": "Security Code",
-    "tradle.SelfIntroduction": "Self introduction",
-    "tradle.Selfie": "Selfie",
-    "tradle.ServiceProvider": "Service Provider Server Info",
-    "tradle.Settings": "Settings",
-    "tradle.Sex": "Sex",
-    "tradle.ShareContext": "Share Context",
-    "tradle.ShareRequest": "Share Request",
-    "tradle.SharedResource": "Shared Resource",
-    "tradle.SimpleMessage": "Simple Message",
-    "tradle.SkillVerification": "Skill Verification",
-    "tradle.Status": "Status",
-    "tradle.StylesPack": "Styles Pack",
-    "tradle.Tag": "Tag",
-    "tradle.TaggedIssue": "Tagged Issue",
-    "tradle.TermsAndConditions": "Terms and Conditions",
-    "tradle.Tour": "Tour",
-    "tradle.TourPage": "Tour Page",
-    "tradle.UtilityBillVerification": "Utility Bill Verification",
-    "tradle.Verifiable": "Verifiable",
-    "tradle.Verification": "Verification",
-    "tradle.VisualVerificationMethod": "Visual Verification Method",
-    "tradle.WebSite": "Web site"
+[
+  {
+    "en": "API",
+    "name": "tradle.API",
+    "type": "model"
   },
-  "properties": {
-    "a": {
-      "Default": "A"
-    },
-    "activeDotColor": {
-      "Default": "Active Dot Color"
-    },
-    "additionalInfo": {
-      "Default": "Additional Info"
-    },
-    "address": {
-      "Default": "Address"
-    },
-    "addressForPrev": {
-      "Default": "Address For Prev"
-    },
-    "address_group": {
-      "tradle.PhotoID": "Address",
-      "tradle.Profile": "Home Address",
-      "tradle.Residence": "Address"
-    },
-    "after": {
-      "Default": "After"
-    },
-    "allIdentities": {
-      "Default": "All Identities"
-    },
-    "api": {
-      "Default": "Api"
-    },
-    "applicant": {
-      "Default": "Applicant"
-    },
-    "applicantName": {
-      "Default": "Applicant Name"
-    },
-    "application": {
-      "Default": "Application"
-    },
-    "archived": {
-      "Default": "Archived"
-    },
-    "aspect": {
-      "Default": "Aspect"
-    },
-    "aspects": {
-      "Default": "Aspects"
-    },
-    "attempts": {
-      "Default": "Attempts"
-    },
-    "auth": {
-      "Default": "Auth"
-    },
-    "authority": {
-      "Default": "Authority"
-    },
-    "b": {
-      "Default": "B"
-    },
-    "backgroundColor": {
-      "Default": "Background Color"
-    },
-    "backgroundImage": {
-      "Default": "Background Image"
-    },
-    "basePubKey": {
-      "Default": "Base Pub Key"
-    },
-    "billDate": {
-      "Default": "Bill Date"
-    },
-    "blockchain": {
-      "Default": "Blockchain"
-    },
-    "blockchainUrl": {
-      "Default": "Blockchain Url"
-    },
-    "body": {
-      "Default": "Body"
-    },
-    "bookmark": {
-      "Default": "Bookmark"
-    },
-    "bot": {
-      "Default": "Bot"
-    },
-    "buttonText": {
-      "Default": "Button Text"
-    },
-    "cancel": {
-      "Default": "Cancel"
-    },
-    "cardNumber": {
-      "Default": "Card Number"
-    },
-    "cardType": {
-      "Default": "Card Type"
-    },
-    "cardholderName": {
-      "Default": "Cardholder Name"
-    },
-    "certificate": {
-      "Default": "Certificate"
-    },
-    "check": {
-      "Default": "Check"
-    },
-    "checks": {
-      "Default": "Checks"
-    },
-    "chooser": {
-      "Default": "Chooser"
-    },
-    "city": {
-      "Default": "City"
-    },
-    "claimId": {
-      "Default": "Claim Id"
-    },
-    "code": {
-      "Default": "Code"
-    },
-    "codeOfIssuing": {
-      "Default": "Code Of Issuing"
-    },
-    "confidence": {
-      "Default": "Confidence"
-    },
-    "confirmationBg": {
-      "Default": "Confirmation Bg"
-    },
-    "confirmationColor": {
-      "Default": "Confirmation Color"
-    },
-    "confirmationFor": {
-      "Default": "Confirmation For"
-    },
-    "confirmations": {
-      "Default": "Confirmations"
-    },
-    "confirmed": {
-      "Default": "Confirmed"
-    },
-    "contacts": {
-      "Default": "Contacts"
-    },
-    "container": {
-      "Default": "Container"
-    },
-    "context": {
-      "Default": "Context"
-    },
-    "contextBackgroundColor": {
-      "Default": "Context Background Color"
-    },
-    "contextBorderColor": {
-      "Default": "Context Border Color"
-    },
-    "contextId": {
-      "Default": "Context Id"
-    },
-    "contextTextColor": {
-      "Default": "Context Text Color"
-    },
-    "counterparty": {
-      "Default": "Counterparty"
-    },
-    "country": {
-      "Default": "Country",
-      "tradle.PhotoID": "Country of Issue"
-    },
-    "countryOfBirth": {
-      "Default": "Country Of Birth"
-    },
-    "coverPhoto": {
-      "Default": "Cover Photo"
-    },
-    "currency": {
-      "Default": "Currency"
-    },
-    "currencyName": {
-      "Default": "Currency Name"
-    },
-    "currentContextBackgroundColor": {
-      "Default": "Current Context Background Color"
-    },
-    "currentContextTextColor": {
-      "Default": "Current Context Text Color"
-    },
-    "currentIdentity": {
-      "Default": "Current Identity"
-    },
-    "curve": {
-      "Default": "Curve"
-    },
-    "cvv": {
-      "Default": "Cvv"
-    },
-    "data": {
-      "Default": "Data"
-    },
-    "dateCompleted": {
-      "Default": "Date Completed"
-    },
-    "dateEvaluated": {
-      "Default": "Date Evaluated"
-    },
-    "dateExpires": {
-      "Default": "Date Expires"
-    },
-    "dateModified": {
-      "Default": "Date Modified"
-    },
-    "dateOfBirth": {
-      "Default": "Date Of Birth"
-    },
-    "dateOfExpiry": {
-      "Default": "Date Of Expiry"
-    },
-    "dateOfIssue": {
-      "Default": "Date Of Issue"
-    },
-    "datePublished": {
-      "Default": "Date Published"
-    },
-    "dateSealed": {
-      "Default": "Date Sealed"
-    },
-    "dateStarted": {
-      "Default": "Date Started"
-    },
-    "dateVerified": {
-      "Default": "Date Verified"
-    },
-    "dateWriteCanceled": {
-      "Default": "Date Write Canceled"
-    },
-    "description": {
-      "Default": "Description"
-    },
-    "diploma": {
-      "Default": "Diploma"
-    },
-    "dockerhub": {
-      "tradle.BetaTesterContactInfo": "Docker Hub username"
-    },
-    "document": {
-      "Default": "Document",
-      "tradle.Verification": "Verified document"
-    },
-    "documentNumber": {
-      "Default": "Document Number"
-    },
-    "documentPresence": {
-      "Default": "Document Presence"
-    },
-    "documentScanner": {
-      "Default": "Document Scanner"
-    },
-    "documentType": {
-      "Default": "Document Type"
-    },
-    "document_group": {
-      "tradle.PhotoID": "Document"
-    },
-    "domain": {
-      "Default": "Domain"
-    },
-    "doneBtnText": {
-      "Default": "Done Btn Text"
-    },
-    "dotColor": {
-      "Default": "Dot Color"
-    },
-    "draft": {
-      "Default": "Draft"
-    },
-    "editRequests": {
-      "Default": "Edit Requests"
-    },
-    "education": {
-      "Default": "Education"
-    },
-    "educationDegree": {
-      "Default": "Education Degree"
-    },
-    "email": {
-      "Default": "Email"
-    },
-    "emailAddress": {
-      "Default": "Email Address"
-    },
-    "employee": {
-      "Default": "Employee"
-    },
-    "employment_group": {
-      "tradle.Profile": "Employment"
-    },
-    "entityRole": {
-      "Default": "Entity Role"
-    },
-    "errors": {
-      "Default": "Errors",
-      "items": {
-        "error": "Error",
-        "name": "Name"
-      }
-    },
-    "evidentiaryDocuments": {
-      "Default": "Evidentiary Documents"
-    },
-    "expiryMonth": {
-      "Default": "Expiry Month"
-    },
-    "expiryYear": {
-      "Default": "Expiry Year"
-    },
-    "fingerprint": {
-      "Default": "Fingerprint"
-    },
-    "firstName": {
-      "Default": "First Name"
-    },
-    "fixErrorColor": {
-      "Default": "Fix Error Color"
-    },
-    "fontColor": {
-      "Default": "Font Color"
-    },
-    "forResource": {
-      "Default": "For Resource"
-    },
-    "form": {
-      "Default": "Form"
-    },
-    "formErrorBg": {
-      "Default": "Form Error Bg"
-    },
-    "formErrorBorder": {
-      "Default": "Form Error Border"
-    },
-    "formErrorColor": {
-      "Default": "Form Error Color"
-    },
-    "formPrefills": {
-      "Default": "Form Prefills"
-    },
-    "formatted": {
-      "Default": "Formatted"
-    },
-    "formattedAddress": {
-      "tradle.Organization": "Address",
-      "tradle.Profile": "Address",
-      "tradle.Residence": "Address",
-      "tradle.UtilityBillVerification": "Address"
-    },
-    "formattedName": {
-      "Default": "Formatted Name"
-    },
-    "forms": {
-      "Default": "Forms"
-    },
-    "forward": {
-      "Default": "Forward"
-    },
-    "from": {
-      "Default": "From"
-    },
-    "full": {
-      "Default": "Full"
-    },
-    "github": {
-      "tradle.BetaTesterContactInfo": "Github username"
-    },
-    "givenName": {
-      "tradle.Name": "Given name(s)"
-    },
-    "hash": {
-      "Default": "Hash"
-    },
-    "headerHash": {
-      "Default": "Header Hash"
-    },
-    "headline": {
-      "Default": "Headline"
-    },
-    "height": {
-      "Default": "Height"
-    },
-    "highestDegree": {
-      "Default": "Highest Degree"
-    },
-    "howToFund": {
-      "Default": "How To Fund"
-    },
-    "iOfN": {
-      "Default": "I Of N"
-    },
-    "idCardDocument_group": {
-      "tradle.PhotoID": "ID Card Details"
-    },
-    "idCardType": {
-      "Default": "Id Card Type"
-    },
-    "identity": {
-      "Default": "Identity"
-    },
-    "img": {
-      "Default": "Img"
-    },
-    "imgStyle": {
-      "Default": "Img Style"
-    },
-    "inReplyTo": {
-      "Default": "In Reply To"
-    },
-    "inactive": {
-      "Default": "Inactive"
-    },
-    "incomingMessageBgColor": {
-      "Default": "Incoming Message Bg Color"
-    },
-    "incomingMessageOpaqueTextColor": {
-      "Default": "Incoming Message Opaque Text Color"
-    },
-    "incomingMessageTextColor": {
-      "Default": "Incoming Message Text Color"
-    },
-    "index": {
-      "Default": "Index"
-    },
-    "inviteLink": {
-      "Default": "Invite Link"
-    },
-    "invites": {
-      "Default": "Invites"
-    },
-    "isEmployee": {
-      "Default": "Is Employee"
-    },
-    "isInactive": {
-      "Default": "Is Inactive"
-    },
-    "issue": {
-      "Default": "Issue"
-    },
-    "issuedBy": {
-      "Default": "Issued By"
-    },
-    "issuer": {
-      "Default": "Issuer"
-    },
-    "issues": {
-      "Default": "Issues"
-    },
-    "issuingCountry": {
-      "Default": "Issuing Country"
-    },
-    "item": {
-      "Default": "Item"
-    },
-    "items": {
-      "Default": "Items"
-    },
-    "language": {
-      "Default": "Language"
-    },
-    "lastMessage": {
-      "Default": "Last Message"
-    },
-    "lastMessageTime": {
-      "Default": "Last Message Time"
-    },
-    "lastName": {
-      "Default": "Last Name"
-    },
-    "leaves": {
-      "Default": "Leaves"
-    },
-    "leftTextColor": {
-      "Default": "Left Text Color"
-    },
-    "lens": {
-      "Default": "Lens"
-    },
-    "level": {
-      "Default": "Level"
-    },
-    "link": {
-      "Default": "Link"
-    },
-    "linkColor": {
-      "Default": "Link Color"
-    },
-    "linkProp": {
-      "Default": "Link Prop"
-    },
-    "links": {
-      "Default": "Links"
-    },
-    "list": {
-      "Default": "List"
-    },
-    "listBg": {
-      "Default": "List Bg"
-    },
-    "listColor": {
-      "Default": "List Color"
-    },
-    "logo": {
-      "Default": "Logo"
-    },
-    "logoNeedsText": {
-      "Default": "Logo Needs Text"
-    },
-    "major": {
-      "Default": "Major"
-    },
-    "maritalStatus": {
-      "Default": "Marital Status"
-    },
-    "message": {
-      "Default": "Message",
-      "tradle.SalaryVerification": "Description",
-      "tradle.SkillVerification": "Description",
-      "tradle.Verification": "Description"
-    },
-    "messageSentStatus": {
-      "Default": "Message Sent Status"
-    },
-    "method": {
-      "Default": "Method"
-    },
-    "methods": {
-      "Default": "Methods"
-    },
-    "middleName": {
-      "Default": "Middle Name"
-    },
-    "mimeType": {
-      "Default": "Mime Type"
-    },
-    "models": {
-      "Default": "Models"
-    },
-    "myDocuments": {
-      "tradle.Profile": "Documents"
-    },
-    "myForms": {
-      "tradle.Profile": "My Data"
-    },
-    "myMessageBackgroundColor": {
-      "Default": "My Message Background Color"
-    },
-    "myMessageLinkColor": {
-      "Default": "My Message Link Color"
-    },
-    "myPhones": {
-      "Default": "My Phones"
-    },
-    "myProductId": {
-      "tradle.MyEmployeeOnboarding": "Employee ID",
-      "tradle.MyRemediation": "Remediation ID"
-    },
-    "myProducts": {
-      "tradle.Profile": "Products"
-    },
-    "myVerifications": {
-      "tradle.Profile": "Verifications"
-    },
-    "name": {
-      "Default": "Name"
-    },
-    "name_group": {
-      "tradle.PersonalInfo": "Personal detail"
-    },
-    "namespace": {
-      "Default": "Namespace"
-    },
-    "nationality": {
-      "Default": "Nationality"
-    },
-    "navBarBackgroundColor": {
-      "Default": "Nav Bar Background Color"
-    },
-    "navBarBorderColor": {
-      "Default": "Nav Bar Border Color"
-    },
-    "navBarBorderWidth": {
-      "Default": "Nav Bar Border Width"
-    },
-    "network": {
-      "Default": "Network"
-    },
-    "networkName": {
-      "Default": "Network Name"
-    },
-    "nextBtnText": {
-      "Default": "Next Btn Text"
-    },
-    "nonce": {
-      "Default": "Nonce"
-    },
-    "number": {
-      "Default": "Number"
-    },
-    "object": {
-      "Default": "Object"
-    },
-    "oneOf": {
-      "Default": "One Of"
-    },
-    "organization": {
-      "Default": "Organization"
-    },
-    "originalRecipient": {
-      "Default": "Original Recipient"
-    },
-    "originalSender": {
-      "Default": "Original Sender"
-    },
-    "ownerPresence": {
-      "Default": "Owner Presence"
-    },
-    "pages": {
-      "Default": "Pages"
-    },
-    "passportNumber": {
-      "Default": "Passport Number"
-    },
-    "permalink": {
-      "Default": "Permalink"
-    },
-    "personal_group": {
-      "tradle.PhotoID": "Personal"
-    },
-    "phoneType": {
-      "Default": "Phone Type"
-    },
-    "phones": {
-      "Default": "Phones"
-    },
-    "photo": {
-      "Default": "Photo"
-    },
-    "photos": {
-      "Default": "Photos"
-    },
-    "placeOfBirth": {
-      "Default": "Place Of Birth"
-    },
-    "postalCode": {
-      "Default": "Postal Code"
-    },
-    "prefill": {
-      "Default": "Prefill"
-    },
-    "prefillFromApplication": {
-      "Default": "Prefill From Application"
-    },
-    "prev": {
-      "Default": "Prev"
-    },
-    "prevHeaderHash": {
-      "Default": "Prev Header Hash"
-    },
-    "product": {
-      "Default": "Product"
-    },
-    "productBgColor": {
-      "Default": "Product Bg Color"
-    },
-    "productRowBgColor": {
-      "Default": "Product Row Bg Color"
-    },
-    "productRowTextColor": {
-      "Default": "Product Row Text Color"
-    },
-    "products": {
-      "Default": "Products"
-    },
-    "progress": {
-      "Default": "Progress"
-    },
-    "proof": {
-      "Default": "Proof"
-    },
-    "property": {
-      "Default": "Property"
-    },
-    "provider": {
-      "Default": "Provider"
-    },
-    "providerReferenceNumber": {
-      "Default": "Provider Reference Number"
-    },
-    "pub": {
-      "Default": "Pub"
-    },
-    "pubKey": {
-      "Default": "Pub Key"
-    },
-    "pubkeys": {
-      "Default": "Pubkeys"
-    },
-    "publisher": {
-      "Default": "Publisher"
-    },
-    "purpose": {
-      "Default": "Purpose"
-    },
-    "rawData": {
-      "tradle.APIBasedVerificationMethod": "Raw data"
-    },
-    "recipient": {
-      "Default": "Recipient"
-    },
-    "redactedCardNumber": {
-      "Default": "Redacted Card Number"
-    },
-    "reference": {
-      "Default": "Reference",
-      "items": {
-        "queryId": "Query Id"
-      }
-    },
-    "region": {
-      "Default": "Region"
-    },
-    "relationship": {
-      "Default": "Relationship"
-    },
-    "relationshipManagers": {
-      "Default": "Relationship Managers"
-    },
-    "rendezvous": {
-      "Default": "Rendezvous"
-    },
-    "request": {
-      "Default": "Request"
-    },
-    "requestFor": {
-      "Default": "Request For"
-    },
-    "requestedProperties": {
-      "Default": "Requested Properties",
-      "items": {
-        "message": "Message",
-        "name": "Name"
-      }
-    },
-    "requireRawData": {
-      "Default": "Require Raw Data"
-    },
-    "residenceType": {
-      "tradle.Residence": "Residence Type"
-    },
-    "resource": {
-      "Default": "Resource"
-    },
-    "resultDetails": {
-      "Default": "Result Details"
-    },
-    "rightTextColor": {
-      "Default": "Right Text Color"
-    },
-    "root": {
-      "Default": "Root"
-    },
-    "scan": {
-      "Default": "Scan"
-    },
-    "scanJson": {
-      "tradle.CreditCard": "Extracted fields",
-      "tradle.PhotoID": "Extracted fields"
-    },
-    "scanned": {
-      "Default": "Scanned"
-    },
-    "scannedBy": {
-      "Default": "Scanned By"
-    },
-    "sealId": {
-      "Default": "Seal Id"
-    },
-    "securityCode": {
-      "Default": "Security Code"
-    },
-    "securityCodes": {
-      "Default": "Security Codes"
-    },
-    "selfie": {
-      "tradle.Selfie": "Selfie"
-    },
-    "selfieJson": {
-      "tradle.Selfie": "Photo info"
-    },
-    "session": {
-      "Default": "Session"
-    },
-    "sex": {
-      "Default": "Sex"
-    },
-    "shareButtonBackgroundColor": {
-      "Default": "Share Button Background Color"
-    },
-    "shareContextBackgroundColor": {
-      "Default": "Share Context Background Color"
-    },
-    "shareContextTextColor": {
-      "Default": "Share Context Text Color"
-    },
-    "sharedWithBg": {
-      "Default": "Shared With Bg"
-    },
-    "sharedWithVerificationBg": {
-      "Default": "Shared With Verification Bg"
-    },
-    "showDoneButton": {
-      "Default": "Show Done Button"
-    },
-    "showDots": {
-      "Default": "Show Dots"
-    },
-    "showSkipButton": {
-      "Default": "Show Skip Button"
-    },
-    "sig": {
-      "Default": "Sig"
-    },
-    "signature": {
-      "Default": "Signature"
-    },
-    "signatureFor": {
-      "Default": "Signature For"
-    },
-    "size": {
-      "Default": "Size"
-    },
-    "skipBtnText": {
-      "Default": "Skip Btn Text"
-    },
-    "source": {
-      "Default": "Source"
-    },
-    "sourcedVerificationBgColor": {
-      "Default": "Sourced Verification Bg Color"
-    },
-    "sourcedVerificationTextColor": {
-      "Default": "Sourced Verification Text Color"
-    },
-    "sources": {
-      "Default": "Sources"
-    },
-    "splashscreen": {
-      "Default": "Splashscreen"
-    },
-    "state": {
-      "Default": "State"
-    },
-    "status": {
-      "Default": "Status"
-    },
-    "street": {
-      "Default": "Street"
-    },
-    "streetAddress": {
-      "Default": "Street Address"
-    },
-    "subject": {
-      "Default": "Subject"
-    },
-    "submission": {
-      "Default": "Submission"
-    },
-    "submissions": {
-      "Default": "Submissions"
-    },
-    "submitBarInFooter": {
-      "Default": "Submit Bar In Footer"
-    },
-    "summary": {
-      "Default": "Summary"
-    },
-    "surname": {
-      "Default": "Surname"
-    },
-    "symbol": {
-      "Default": "Symbol"
-    },
-    "tag": {
-      "Default": "Tag"
-    },
-    "tags": {
-      "Default": "Tags"
-    },
-    "target": {
-      "Default": "Target"
-    },
-    "termsAndConditions": {
-      "Default": "Terms And Conditions"
-    },
-    "time": {
-      "Default": "Time"
-    },
-    "title": {
-      "Default": "Title"
-    },
-    "to": {
-      "Default": "To"
-    },
-    "transactionHash": {
-      "Default": "Transaction Hash"
-    },
-    "txId": {
-      "Default": "Tx Id"
-    },
-    "type": {
-      "Default": "Type"
-    },
-    "unconfirmed": {
-      "Default": "Unconfirmed"
-    },
-    "unsealed": {
-      "Default": "Unsealed"
-    },
-    "url": {
-      "Default": "Url",
-      "tradle.Settings": "Server URL"
-    },
-    "useGesturePassword": {
-      "Default": "Use Gesture Password"
-    },
-    "useTouchId": {
-      "Default": "Use Touch Id"
-    },
-    "user": {
-      "Default": "User"
-    },
-    "value": {
-      "Default": "Value"
-    },
-    "verifiableAspects": {
-      "Default": "Verifiable Aspects"
-    },
-    "verifications": {
-      "Default": "Verifications"
-    },
-    "verifiedBg": {
-      "Default": "Verified Bg"
-    },
-    "verifiedBorderColor": {
-      "Default": "Verified Border Color"
-    },
-    "verifiedByMe": {
-      "Default": "Verified By Me"
-    },
-    "verifiedHeaderColor": {
-      "Default": "Verified Header Color"
-    },
-    "verifiedHeaderTextColor": {
-      "Default": "Verified Header Text Color"
-    },
-    "verifiedLinkColor": {
-      "Default": "Verified Link Color"
-    },
-    "verifiedSourcesColor": {
-      "Default": "Verified Sources Color"
-    },
-    "verifiedTextColor": {
-      "Default": "Verified Text Color"
-    },
-    "verifiers": {
-      "Default": "Verifiers"
-    },
-    "versionId": {
-      "Default": "Version Id"
-    },
-    "watchType": {
-      "Default": "Watch Type"
-    },
-    "websites": {
-      "Default": "Websites"
-    },
-    "welcome": {
-      "Default": "Welcome"
-    },
-    "width": {
-      "Default": "Width"
-    },
-    "with": {
-      "Default": "With"
-    },
-    "write": {
-      "Default": "Write"
-    }
+  {
+    "en": "API based verification",
+    "name": "tradle.APIBasedVerificationMethod",
+    "type": "model"
+  },
+  {
+    "en": "Item Received",
+    "name": "tradle.Ack",
+    "type": "model"
+  },
+  {
+    "en": "Additional Information",
+    "name": "tradle.AdditionalInfo",
+    "type": "model"
+  },
+  {
+    "en": "App State",
+    "name": "tradle.AppState",
+    "type": "model"
+  },
+  {
+    "en": "Application",
+    "name": "tradle.Application",
+    "type": "model"
+  },
+  {
+    "en": "Application Approval",
+    "name": "tradle.ApplicationApproval",
+    "type": "model"
+  },
+  {
+    "en": "Application Denial",
+    "name": "tradle.ApplicationDenial",
+    "type": "model"
+  },
+  {
+    "en": "Application Submission",
+    "name": "tradle.ApplicationSubmission",
+    "type": "model"
+  },
+  {
+    "en": "Application Submitted",
+    "name": "tradle.ApplicationSubmitted",
+    "type": "model"
+  },
+  {
+    "en": "Aspect",
+    "name": "tradle.Aspect",
+    "type": "model"
+  },
+  {
+    "en": "Assign Relationship Manager",
+    "name": "tradle.AssignRelationshipManager",
+    "type": "model"
+  },
+  {
+    "en": "Backlink Item",
+    "name": "tradle.BacklinkItem",
+    "type": "model"
+  },
+  {
+    "en": "Basic Contact Info",
+    "name": "tradle.BasicContactInfo",
+    "type": "model"
+  },
+  {
+    "en": "Beta Tester Contact Info",
+    "name": "tradle.BetaTesterContactInfo",
+    "type": "model"
+  },
+  {
+    "en": "Bookmark",
+    "name": "tradle.Bookmark",
+    "type": "model"
+  },
+  {
+    "en": "Check",
+    "name": "tradle.Check",
+    "type": "model"
+  },
+  {
+    "en": "Confirmation",
+    "name": "tradle.Confirmation",
+    "type": "model"
+  },
+  {
+    "en": "Context",
+    "name": "tradle.Context",
+    "type": "model"
+  },
+  {
+    "en": "Country",
+    "name": "tradle.Country",
+    "type": "model"
+  },
+  {
+    "en": "Credit Card",
+    "name": "tradle.CreditCard",
+    "type": "model"
+  },
+  {
+    "en": "Credit Cards",
+    "name": "tradle.CreditCards",
+    "type": "model"
+  },
+  {
+    "en": "Currency",
+    "name": "tradle.Currency",
+    "type": "model"
+  },
+  {
+    "en": "Customer waiting",
+    "name": "tradle.CustomerWaiting",
+    "type": "model"
+  },
+  {
+    "en": "Data Bundle",
+    "name": "tradle.DataBundle",
+    "type": "model"
+  },
+  {
+    "en": "Data Claim",
+    "name": "tradle.DataClaim",
+    "type": "model"
+  },
+  {
+    "en": "Delivery Error",
+    "name": "tradle.DeliveryError",
+    "type": "model"
+  },
+  {
+    "en": "Country",
+    "name": "tradle.DeliveryErrorStatus",
+    "type": "model"
+  },
+  {
+    "en": "Document",
+    "name": "tradle.Document",
+    "type": "model"
+  },
+  {
+    "en": "Document Scanner",
+    "name": "tradle.DocumentScanner",
+    "type": "model"
+  },
+  {
+    "en": "Draft Application",
+    "name": "tradle.DraftApplication",
+    "type": "model"
+  },
+  {
+    "en": "Education",
+    "name": "tradle.Education",
+    "type": "model"
+  },
+  {
+    "en": "Degree of education",
+    "name": "tradle.EducationDegree",
+    "type": "model"
+  },
+  {
+    "en": "Education",
+    "name": "tradle.EducationNL",
+    "type": "model"
+  },
+  {
+    "en": "Email Address",
+    "name": "tradle.EmailAddress",
+    "type": "model"
+  },
+  {
+    "en": "Email Check",
+    "name": "tradle.EmailCheck",
+    "type": "model"
+  },
+  {
+    "en": "Employee Onboarding",
+    "name": "tradle.EmployeeOnboarding",
+    "type": "model"
+  },
+  {
+    "en": "Enum",
+    "name": "tradle.Enum",
+    "type": "model"
+  },
+  {
+    "en": "File",
+    "name": "tradle.File",
+    "type": "model"
+  },
+  {
+    "en": "Financial Product",
+    "name": "tradle.FinancialProduct",
+    "type": "model"
+  },
+  {
+    "en": "Forget Me",
+    "name": "tradle.ForgetMe",
+    "type": "model"
+  },
+  {
+    "en": "Forgot You",
+    "name": "tradle.ForgotYou",
+    "type": "model"
+  },
+  {
+    "en": "Form",
+    "name": "tradle.Form",
+    "type": "model"
+  },
+  {
+    "en": "Form Error",
+    "name": "tradle.FormError",
+    "type": "model"
+  },
+  {
+    "en": "Form Prefill",
+    "name": "tradle.FormPrefill",
+    "type": "model"
+  },
+  {
+    "en": "Form Request",
+    "name": "tradle.FormRequest",
+    "type": "model"
+  },
+  {
+    "en": "Signature on screen",
+    "name": "tradle.HandSignature",
+    "type": "model"
+  },
+  {
+    "en": "How To Fund",
+    "name": "tradle.HowToFund",
+    "type": "model"
+  },
+  {
+    "en": "ID Card Type",
+    "name": "tradle.IDCardType",
+    "type": "model"
+  },
+  {
+    "en": "Identity",
+    "name": "tradle.Identity",
+    "type": "model"
+  },
+  {
+    "en": "Identity Publish Request",
+    "name": "tradle.IdentityPublishRequest",
+    "type": "model"
+  },
+  {
+    "en": "Identity Published",
+    "name": "tradle.IdentityPublished",
+    "type": "model"
+  },
+  {
+    "en": "Intersection",
+    "name": "tradle.Intersection",
+    "type": "model"
+  },
+  {
+    "en": "Introduction",
+    "name": "tradle.Introduction",
+    "type": "model"
+  },
+  {
+    "en": "Invite",
+    "name": "tradle.Invite",
+    "type": "model"
+  },
+  {
+    "en": "Issue",
+    "name": "tradle.Issue",
+    "type": "model"
+  },
+  {
+    "en": "Issue",
+    "name": "tradle.IssueProduct",
+    "type": "model"
+  },
+  {
+    "en": "Status",
+    "name": "tradle.IssueStatus",
+    "type": "model"
+  },
+  {
+    "en": "Item",
+    "name": "tradle.Item",
+    "type": "model"
+  },
+  {
+    "en": "Language",
+    "name": "tradle.Language",
+    "type": "model"
+  },
+  {
+    "en": "Major",
+    "name": "tradle.Major",
+    "type": "model"
+  },
+  {
+    "en": "Marital Status",
+    "name": "tradle.MaritalStatus",
+    "type": "model"
+  },
+  {
+    "en": "Media Snippet",
+    "name": "tradle.MediaSnippet",
+    "type": "model"
+  },
+  {
+    "en": "Merkle Leaf",
+    "name": "tradle.MerkleLeaf",
+    "type": "model"
+  },
+  {
+    "en": "Merkle Node",
+    "name": "tradle.MerkleNode",
+    "type": "model"
+  },
+  {
+    "en": "Message",
+    "name": "tradle.Message",
+    "type": "model"
+  },
+  {
+    "en": "Method",
+    "name": "tradle.Method",
+    "type": "model"
+  },
+  {
+    "en": "Models Pack",
+    "name": "tradle.ModelsPack",
+    "type": "model"
+  },
+  {
+    "en": "Money",
+    "name": "tradle.Money",
+    "type": "model"
+  },
+  {
+    "en": "My Employee Pass",
+    "name": "tradle.MyEmployeeOnboarding",
+    "type": "model"
+  },
+  {
+    "en": "My Identities",
+    "name": "tradle.MyIdentities",
+    "type": "model"
+  },
+  {
+    "en": "My Issue Product",
+    "name": "tradle.MyIssueProduct",
+    "type": "model"
+  },
+  {
+    "en": "My Product",
+    "name": "tradle.MyProduct",
+    "type": "model"
+  },
+  {
+    "en": "My Remediation",
+    "name": "tradle.MyRemediation",
+    "type": "model"
+  },
+  {
+    "en": "Name",
+    "name": "tradle.Name",
+    "type": "model"
+  },
+  {
+    "en": "Nationality",
+    "name": "tradle.Nationality",
+    "type": "model"
+  },
+  {
+    "en": "New message model",
+    "name": "tradle.NewMessageModel",
+    "type": "model"
+  },
+  {
+    "en": "NextFormRequest",
+    "name": "tradle.NextFormRequest",
+    "type": "model"
+  },
+  {
+    "en": "Object",
+    "name": "tradle.Object",
+    "type": "model"
+  },
+  {
+    "en": "Organization",
+    "name": "tradle.Organization",
+    "type": "model"
+  },
+  {
+    "en": "Pairing Data",
+    "name": "tradle.PairingData",
+    "type": "model"
+  },
+  {
+    "en": "Pairing Request",
+    "name": "tradle.PairingRequest",
+    "type": "model"
+  },
+  {
+    "en": "Pairing Response",
+    "name": "tradle.PairingResponse",
+    "type": "model"
+  },
+  {
+    "en": "Partial",
+    "name": "tradle.Partial",
+    "type": "model"
+  },
+  {
+    "en": "Passport",
+    "name": "tradle.Passport",
+    "type": "model"
+  },
+  {
+    "en": "Passport Verification",
+    "name": "tradle.PassportVerification",
+    "type": "model"
+  },
+  {
+    "en": "Personal Info",
+    "name": "tradle.PersonalInfo",
+    "type": "model"
+  },
+  {
+    "en": "Phone",
+    "name": "tradle.Phone",
+    "type": "model"
+  },
+  {
+    "en": "Phone Types",
+    "name": "tradle.PhoneTypes",
+    "type": "model"
+  },
+  {
+    "en": "Photo",
+    "name": "tradle.Photo",
+    "type": "model"
+  },
+  {
+    "en": "Photo ID",
+    "name": "tradle.PhotoID",
+    "type": "model"
+  },
+  {
+    "en": "Product Application",
+    "name": "tradle.ProductApplication",
+    "type": "model"
+  },
+  {
+    "en": "Product List",
+    "name": "tradle.ProductList",
+    "type": "model"
+  },
+  {
+    "en": "Product Request",
+    "name": "tradle.ProductRequest",
+    "type": "model"
+  },
+  {
+    "en": "Profile",
+    "name": "tradle.Profile",
+    "type": "model"
+  },
+  {
+    "en": "Progress Message",
+    "name": "tradle.ProgressMessage",
+    "type": "model"
+  },
+  {
+    "en": "Property Chooser",
+    "name": "tradle.PropertyChooser",
+    "type": "model"
+  },
+  {
+    "en": "Public Key",
+    "name": "tradle.PubKey",
+    "type": "model"
+  },
+  {
+    "en": "Relationship Type",
+    "name": "tradle.RelationshipType",
+    "type": "model"
+  },
+  {
+    "en": "Remediation",
+    "name": "tradle.Remediation",
+    "type": "model"
+  },
+  {
+    "en": "Remediation Simple Message",
+    "name": "tradle.RemediationSimpleMessage",
+    "type": "model"
+  },
+  {
+    "en": "Residence",
+    "name": "tradle.Residence",
+    "type": "model"
+  },
+  {
+    "en": "Residence Type",
+    "name": "tradle.ResidenceType",
+    "type": "model"
+  },
+  {
+    "en": "Residential Status",
+    "name": "tradle.ResidentialStatus",
+    "type": "model"
+  },
+  {
+    "en": "Salary Verification",
+    "name": "tradle.SalaryVerification",
+    "type": "model"
+  },
+  {
+    "en": "Seal",
+    "name": "tradle.Seal",
+    "type": "model"
+  },
+  {
+    "en": "Seal State",
+    "name": "tradle.SealState",
+    "type": "model"
+  },
+  {
+    "en": "Security Code",
+    "name": "tradle.SecurityCode",
+    "type": "model"
+  },
+  {
+    "en": "Self introduction",
+    "name": "tradle.SelfIntroduction",
+    "type": "model"
+  },
+  {
+    "en": "Selfie",
+    "name": "tradle.Selfie",
+    "type": "model"
+  },
+  {
+    "en": "Service Provider Server Info",
+    "name": "tradle.ServiceProvider",
+    "type": "model"
+  },
+  {
+    "en": "Settings",
+    "name": "tradle.Settings",
+    "type": "model"
+  },
+  {
+    "en": "Sex",
+    "name": "tradle.Sex",
+    "type": "model"
+  },
+  {
+    "en": "Share Context",
+    "name": "tradle.ShareContext",
+    "type": "model"
+  },
+  {
+    "en": "Share Request",
+    "name": "tradle.ShareRequest",
+    "type": "model"
+  },
+  {
+    "en": "Shared Resource",
+    "name": "tradle.SharedResource",
+    "type": "model"
+  },
+  {
+    "en": "Simple Message",
+    "name": "tradle.SimpleMessage",
+    "type": "model"
+  },
+  {
+    "en": "Skill Verification",
+    "name": "tradle.SkillVerification",
+    "type": "model"
+  },
+  {
+    "en": "Status",
+    "name": "tradle.Status",
+    "type": "model"
+  },
+  {
+    "en": "Styles Pack",
+    "name": "tradle.StylesPack",
+    "type": "model"
+  },
+  {
+    "en": "Tag",
+    "name": "tradle.Tag",
+    "type": "model"
+  },
+  {
+    "en": "Tagged Issue",
+    "name": "tradle.TaggedIssue",
+    "type": "model"
+  },
+  {
+    "en": "Terms and Conditions",
+    "name": "tradle.TermsAndConditions",
+    "type": "model"
+  },
+  {
+    "en": "Tour",
+    "name": "tradle.Tour",
+    "type": "model"
+  },
+  {
+    "en": "Tour Page",
+    "name": "tradle.TourPage",
+    "type": "model"
+  },
+  {
+    "en": "Utility Bill Verification",
+    "name": "tradle.UtilityBillVerification",
+    "type": "model"
+  },
+  {
+    "en": "Verifiable",
+    "name": "tradle.Verifiable",
+    "type": "model"
+  },
+  {
+    "en": "Verification",
+    "name": "tradle.Verification",
+    "type": "model"
+  },
+  {
+    "en": "Visual Verification Method",
+    "name": "tradle.VisualVerificationMethod",
+    "type": "model"
+  },
+  {
+    "en": "Web site",
+    "name": "tradle.WebSite",
+    "type": "model"
+  },
+  {
+    "en": "Name",
+    "name": "name",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Api",
+    "name": "api",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "State",
+    "name": "state",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Applicant Name",
+    "name": "applicantName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Application",
+    "name": "application",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Name",
+    "name": "name",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Employee",
+    "name": "employee",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Source",
+    "name": "source",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "First Name",
+    "name": "firstName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "First Name",
+    "name": "firstName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Provider",
+    "name": "provider",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Context Id",
+    "name": "contextId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Country",
+    "name": "country",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Card Type",
+    "name": "cardType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Currency Name",
+    "name": "currencyName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Claim Id",
+    "name": "claimId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Counterparty",
+    "name": "counterparty",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Country",
+    "name": "country",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Container",
+    "name": "container",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Document Scanner",
+    "name": "documentScanner",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Applicant Name",
+    "name": "applicantName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Highest Degree",
+    "name": "highestDegree",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Education Degree",
+    "name": "educationDegree",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Education",
+    "name": "education",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Email",
+    "name": "email",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Provider",
+    "name": "provider",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Url",
+    "name": "url",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Organization",
+    "name": "organization",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Time",
+    "name": "time",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Time",
+    "name": "time",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Time",
+    "name": "time",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Prefill",
+    "name": "prefill",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Signature For",
+    "name": "signatureFor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "How To Fund",
+    "name": "howToFund",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Id Card Type",
+    "name": "idCardType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Pubkeys",
+    "name": "pubkeys",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Identity",
+    "name": "identity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Identity",
+    "name": "identity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "A",
+    "name": "a",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Identity",
+    "name": "identity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Recipient",
+    "name": "recipient",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Subject",
+    "name": "subject",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Status",
+    "name": "status",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Container",
+    "name": "container",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Language",
+    "name": "language",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Major",
+    "name": "major",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Status",
+    "name": "status",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Headline",
+    "name": "headline",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Index",
+    "name": "index",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Index",
+    "name": "index",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Object",
+    "name": "object",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Aspect",
+    "name": "aspect",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Version Id",
+    "name": "versionId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Value",
+    "name": "value",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Entity Role",
+    "name": "entityRole",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Current Identity",
+    "name": "currentIdentity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "My Product Id",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Remediation ID",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "tradle.MyRemediation"
+  },
+  {
+    "en": "Given name(s)",
+    "name": "givenName",
+    "type": "propertyName",
+    "model": "tradle.Name"
+  },
+  {
+    "en": "Nationality",
+    "name": "nationality",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Url",
+    "name": "url",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "After",
+    "name": "after",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Name",
+    "name": "name",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Identity",
+    "name": "identity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Identity",
+    "name": "identity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Identity",
+    "name": "identity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Resource",
+    "name": "resource",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Issuing Country",
+    "name": "issuingCountry",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Code Of Issuing",
+    "name": "codeOfIssuing",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "First Name",
+    "name": "firstName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Phone Type",
+    "name": "phoneType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Phone Type",
+    "name": "phoneType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Url",
+    "name": "url",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Document Type",
+    "name": "documentType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Product",
+    "name": "product",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Request For",
+    "name": "requestFor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Security Code",
+    "name": "securityCode",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Property",
+    "name": "property",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Type",
+    "name": "type",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Relationship",
+    "name": "relationship",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Street Address",
+    "name": "streetAddress",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Value",
+    "name": "value",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Status",
+    "name": "status",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Description",
+    "name": "message",
+    "type": "propertyName",
+    "model": "tradle.SalaryVerification"
+  },
+  {
+    "en": "Link",
+    "name": "link",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Seal Id",
+    "name": "sealId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Code",
+    "name": "code",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Identity",
+    "name": "identity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Selfie",
+    "name": "selfie",
+    "type": "propertyName",
+    "model": "tradle.Selfie"
+  },
+  {
+    "en": "Permalink",
+    "name": "permalink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Server URL",
+    "name": "url",
+    "type": "propertyName",
+    "model": "tradle.Settings"
+  },
+  {
+    "en": "Sex",
+    "name": "sex",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Context",
+    "name": "context",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Links",
+    "name": "links",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Description",
+    "name": "message",
+    "type": "propertyName",
+    "model": "tradle.SkillVerification"
+  },
+  {
+    "en": "Status",
+    "name": "status",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Logo Needs Text",
+    "name": "logoNeedsText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Tag",
+    "name": "tag",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Tag",
+    "name": "tag",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Terms And Conditions",
+    "name": "termsAndConditions",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Url",
+    "name": "url",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Bill Date",
+    "name": "billDate",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verifiable Aspects",
+    "name": "verifiableAspects",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verified document",
+    "name": "document",
+    "type": "propertyName",
+    "model": "tradle.Verification"
+  },
+  {
+    "en": "Aspect",
+    "name": "aspect",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Url",
+    "name": "url",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Provider",
+    "name": "provider",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Reference",
+    "name": "reference",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Item",
+    "name": "item",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "From",
+    "name": "from",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Applicant",
+    "name": "applicant",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Application",
+    "name": "application",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Application",
+    "name": "application",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Submission",
+    "name": "submission",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Request For",
+    "name": "requestFor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Methods",
+    "name": "methods",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Target",
+    "name": "target",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Last Name",
+    "name": "lastName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Last Name",
+    "name": "lastName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Bookmark",
+    "name": "bookmark",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Status",
+    "name": "status",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Confirmation For",
+    "name": "confirmationFor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Card Number",
+    "name": "cardNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Code",
+    "name": "code",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Time",
+    "name": "time",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Items",
+    "name": "items",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Time",
+    "name": "time",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Photo",
+    "name": "photo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Applicant",
+    "name": "applicant",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Major",
+    "name": "major",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Status",
+    "name": "status",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Size",
+    "name": "size",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Prefill",
+    "name": "prefill",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Draft",
+    "name": "draft",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Product",
+    "name": "product",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Signature",
+    "name": "signature",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "B",
+    "name": "b",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Subject",
+    "name": "subject",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Description",
+    "name": "description",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Summary",
+    "name": "summary",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Data",
+    "name": "data",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Hash",
+    "name": "hash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Context",
+    "name": "context",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Namespace",
+    "name": "namespace",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Currency",
+    "name": "currency",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Employee ID",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "tradle.MyEmployeeOnboarding"
+  },
+  {
+    "en": "All Identities",
+    "name": "allIdentities",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Surname",
+    "name": "surname",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Domain",
+    "name": "domain",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Nonce",
+    "name": "nonce",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Auth",
+    "name": "auth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Prev",
+    "name": "prev",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Root",
+    "name": "root",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Passport Number",
+    "name": "passportNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Passport Number",
+    "name": "passportNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Last Name",
+    "name": "lastName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Number",
+    "name": "number",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Width",
+    "name": "width",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Country of Issue",
+    "name": "country",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "en": "Session",
+    "name": "session",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "List",
+    "name": "list",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "City",
+    "name": "city",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Progress",
+    "name": "progress",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "One Of",
+    "name": "oneOf",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Purpose",
+    "name": "purpose",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "City",
+    "name": "city",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Blockchain Url",
+    "name": "blockchainUrl",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Permalink",
+    "name": "permalink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Permalink",
+    "name": "permalink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Target",
+    "name": "target",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Photo info",
+    "name": "selfieJson",
+    "type": "propertyName",
+    "model": "tradle.Selfie"
+  },
+  {
+    "en": "With",
+    "name": "with",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "With",
+    "name": "with",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Photos",
+    "name": "photos",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Blockchain Url",
+    "name": "blockchainUrl",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Link Color",
+    "name": "linkColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Issues",
+    "name": "issues",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Issue",
+    "name": "issue",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Pages",
+    "name": "pages",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Title",
+    "name": "title",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Issued By",
+    "name": "issuedBy",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Evidentiary Documents",
+    "name": "evidentiaryDocuments",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Description",
+    "name": "message",
+    "type": "propertyName",
+    "model": "tradle.Verification"
+  },
+  {
+    "en": "Document Presence",
+    "name": "documentPresence",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Title",
+    "name": "title",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "To",
+    "name": "to",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Relationship Managers",
+    "name": "relationshipManagers",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Forms",
+    "name": "forms",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Forms",
+    "name": "forms",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Forms",
+    "name": "forms",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Link Prop",
+    "name": "linkProp",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Formatted Name",
+    "name": "formattedName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Docker Hub username",
+    "name": "dockerhub",
+    "type": "propertyName",
+    "model": "tradle.BetaTesterContactInfo"
+  },
+  {
+    "en": "Result Details",
+    "name": "resultDetails",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Forms",
+    "name": "forms",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Redacted Card Number",
+    "name": "redactedCardNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Symbol",
+    "name": "symbol",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Welcome",
+    "name": "welcome",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Attempts",
+    "name": "attempts",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Started",
+    "name": "dateStarted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Diploma",
+    "name": "diploma",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Email Address",
+    "name": "emailAddress",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Mime Type",
+    "name": "mimeType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Requested Properties",
+    "name": "requestedProperties",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Form",
+    "name": "form",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Body",
+    "name": "body",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Tags",
+    "name": "tags",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Publisher",
+    "name": "publisher",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Forward",
+    "name": "forward",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Models",
+    "name": "models",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "City",
+    "name": "city",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Rendezvous",
+    "name": "rendezvous",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Proof",
+    "name": "proof",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Given Name",
+    "name": "givenName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Given Name",
+    "name": "givenName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Of Birth",
+    "name": "dateOfBirth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "My Phones",
+    "name": "myPhones",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Height",
+    "name": "height",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Scan",
+    "name": "scan",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Welcome",
+    "name": "welcome",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Postal Code",
+    "name": "postalCode",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Pub",
+    "name": "pub",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Postal Code",
+    "name": "postalCode",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Transaction Hash",
+    "name": "transactionHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Header Hash",
+    "name": "headerHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Header Hash",
+    "name": "headerHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Welcome",
+    "name": "welcome",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Transaction Hash",
+    "name": "transactionHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Product Row Bg Color",
+    "name": "productRowBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Dot Color",
+    "name": "dotColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Img",
+    "name": "img",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Postal Code",
+    "name": "postalCode",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Verified",
+    "name": "dateVerified",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Owner Presence",
+    "name": "ownerPresence",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Confidence",
+    "name": "confidence",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Document",
+    "name": "document",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Started",
+    "name": "dateStarted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Github username",
+    "name": "github",
+    "type": "propertyName",
+    "model": "tradle.BetaTesterContactInfo"
+  },
+  {
+    "en": "Aspects",
+    "name": "aspects",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Expiry Month",
+    "name": "expiryMonth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Completed",
+    "name": "dateCompleted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "User",
+    "name": "user",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Errors",
+    "name": "errors",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Lens",
+    "name": "lens",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Invite Link",
+    "name": "inviteLink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Published",
+    "name": "datePublished",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Original Sender",
+    "name": "originalSender",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Postal Code",
+    "name": "postalCode",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Leaves",
+    "name": "leaves",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Of Birth",
+    "name": "dateOfBirth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Of Birth",
+    "name": "dateOfBirth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Personal detail",
+    "name": "name_group",
+    "type": "propertyName",
+    "model": "tradle.PersonalInfo"
+  },
+  {
+    "en": "Extracted fields",
+    "name": "scanJson",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "en": "Region",
+    "name": "region",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Fingerprint",
+    "name": "fingerprint",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Region",
+    "name": "region",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verifications",
+    "name": "verifications",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Prev Header Hash",
+    "name": "prevHeaderHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Prev Header Hash",
+    "name": "prevHeaderHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verifications",
+    "name": "verifications",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Product Row Text Color",
+    "name": "productRowTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Active Dot Color",
+    "name": "activeDotColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Img Style",
+    "name": "imgStyle",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Region",
+    "name": "region",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Cancel",
+    "name": "cancel",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Raw data",
+    "name": "rawData",
+    "type": "propertyName",
+    "model": "tradle.APIBasedVerificationMethod"
+  },
+  {
+    "en": "Confirmed",
+    "name": "confirmed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Completed",
+    "name": "dateCompleted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Is Inactive",
+    "name": "isInactive",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Expiry Year",
+    "name": "expiryYear",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Evaluated",
+    "name": "dateEvaluated",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Expires",
+    "name": "dateExpires",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Lens",
+    "name": "lens",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verifiers",
+    "name": "verifiers",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Button Text",
+    "name": "buttonText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Original Recipient",
+    "name": "originalRecipient",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Region",
+    "name": "region",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Sig",
+    "name": "sig",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Place Of Birth",
+    "name": "placeOfBirth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Place Of Birth",
+    "name": "placeOfBirth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Country Of Birth",
+    "name": "countryOfBirth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Scanned By",
+    "name": "scannedBy",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Street",
+    "name": "street",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Curve",
+    "name": "curve",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Residence Type",
+    "name": "residenceType",
+    "type": "propertyName",
+    "model": "tradle.Residence"
+  },
+  {
+    "en": "Additional Info",
+    "name": "additionalInfo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "For Resource",
+    "name": "forResource",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "For Resource",
+    "name": "forResource",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Additional Info",
+    "name": "additionalInfo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Shared With Bg",
+    "name": "sharedWithBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Left Text Color",
+    "name": "leftTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Background Color",
+    "name": "backgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Street",
+    "name": "street",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Sources",
+    "name": "sources",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Evaluated",
+    "name": "dateEvaluated",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Provider Reference Number",
+    "name": "providerReferenceNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Cvv",
+    "name": "cvv",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Modified",
+    "name": "dateModified",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Require Raw Data",
+    "name": "requireRawData",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "In Reply To",
+    "name": "inReplyTo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Street",
+    "name": "street",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Of Issue",
+    "name": "dateOfIssue",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Of Issue",
+    "name": "dateOfIssue",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Phones",
+    "name": "phones",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Personal",
+    "name": "personal_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "en": "Address",
+    "name": "formattedAddress",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "en": "Network Name",
+    "name": "networkName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Address",
+    "name": "formattedAddress",
+    "type": "propertyName",
+    "model": "tradle.Residence"
+  },
+  {
+    "en": "Tx Id",
+    "name": "txId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Blockchain",
+    "name": "blockchain",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Shared With Verification Bg",
+    "name": "sharedWithVerificationBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Right Text Color",
+    "name": "rightTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Font Color",
+    "name": "fontColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Address",
+    "name": "formattedAddress",
+    "type": "propertyName",
+    "model": "tradle.UtilityBillVerification"
+  },
+  {
+    "en": "Method",
+    "name": "method",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Modified",
+    "name": "dateModified",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Scanned",
+    "name": "scanned",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Request",
+    "name": "request",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Chooser",
+    "name": "chooser",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "I Of N",
+    "name": "iOfN",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Address",
+    "name": "formattedAddress",
+    "type": "propertyName",
+    "model": "tradle.Organization"
+  },
+  {
+    "en": "Authority",
+    "name": "authority",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Authority",
+    "name": "authority",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Marital Status",
+    "name": "maritalStatus",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Address",
+    "name": "address_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "en": "Home Address",
+    "name": "address_group",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "en": "Address",
+    "name": "address_group",
+    "type": "propertyName",
+    "model": "tradle.Residence"
+  },
+  {
+    "en": "Address",
+    "name": "address",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Network",
+    "name": "network",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verified Header Color",
+    "name": "verifiedHeaderColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Skip Btn Text",
+    "name": "skipBtnText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Level",
+    "name": "level",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Check",
+    "name": "check",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Request",
+    "name": "request",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Cardholder Name",
+    "name": "cardholderName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Form Prefills",
+    "name": "formPrefills",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Contacts",
+    "name": "contacts",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Of Expiry",
+    "name": "dateOfExpiry",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Date Of Expiry",
+    "name": "dateOfExpiry",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Document",
+    "name": "document_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "en": "Employment",
+    "name": "employment_group",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "en": "Address For Prev",
+    "name": "addressForPrev",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Pub Key",
+    "name": "pubKey",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verified Header Text Color",
+    "name": "verifiedHeaderTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Next Btn Text",
+    "name": "nextBtnText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Submissions",
+    "name": "submissions",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Extracted fields",
+    "name": "scanJson",
+    "type": "propertyName",
+    "model": "tradle.CreditCard"
+  },
+  {
+    "en": "Invites",
+    "name": "invites",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Last Message",
+    "name": "lastMessage",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "ID Card Details",
+    "name": "idCardDocument_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "en": "Formatted",
+    "name": "formatted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Base Pub Key",
+    "name": "basePubKey",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Watch Type",
+    "name": "watchType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verified Text Color",
+    "name": "verifiedTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Done Btn Text",
+    "name": "doneBtnText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Edit Requests",
+    "name": "editRequests",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Last Message Time",
+    "name": "lastMessageTime",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Full",
+    "name": "full",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Middle Name",
+    "name": "middleName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Confirmations",
+    "name": "confirmations",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verified Border Color",
+    "name": "verifiedBorderColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Show Dots",
+    "name": "showDots",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Products",
+    "name": "products",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Inactive",
+    "name": "inactive",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Document Number",
+    "name": "documentNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Bot",
+    "name": "bot",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Write",
+    "name": "write",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verified Link Color",
+    "name": "verifiedLinkColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Show Skip Button",
+    "name": "showSkipButton",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Checks",
+    "name": "checks",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Security Codes",
+    "name": "securityCodes",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Issuer",
+    "name": "issuer",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Is Employee",
+    "name": "isEmployee",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Unconfirmed",
+    "name": "unconfirmed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verified Bg",
+    "name": "verifiedBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Show Done Button",
+    "name": "showDoneButton",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Certificate",
+    "name": "certificate",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verified By Me",
+    "name": "verifiedByMe",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Unsealed",
+    "name": "unsealed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verified Sources Color",
+    "name": "verifiedSourcesColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Archived",
+    "name": "archived",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Products",
+    "name": "myProducts",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "en": "Date Sealed",
+    "name": "dateSealed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Confirmation Color",
+    "name": "confirmationColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Prefill From Application",
+    "name": "prefillFromApplication",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Verifications",
+    "name": "myVerifications",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "en": "Date Write Canceled",
+    "name": "dateWriteCanceled",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Confirmation Bg",
+    "name": "confirmationBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "My Data",
+    "name": "myForms",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "en": "Fix Error Color",
+    "name": "fixErrorColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Documents",
+    "name": "myDocuments",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "en": "Product Bg Color",
+    "name": "productBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Use Touch Id",
+    "name": "useTouchId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "My Message Link Color",
+    "name": "myMessageLinkColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Use Gesture Password",
+    "name": "useGesturePassword",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "My Message Background Color",
+    "name": "myMessageBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Cover Photo",
+    "name": "coverPhoto",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Form Error Border",
+    "name": "formErrorBorder",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Websites",
+    "name": "websites",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Form Error Color",
+    "name": "formErrorColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Form Error Bg",
+    "name": "formErrorBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Share Context Text Color",
+    "name": "shareContextTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Share Context Background Color",
+    "name": "shareContextBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Current Context Text Color",
+    "name": "currentContextTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Current Context Background Color",
+    "name": "currentContextBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Context Background Color",
+    "name": "contextBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Context Text Color",
+    "name": "contextTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Context Border Color",
+    "name": "contextBorderColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Share Button Background Color",
+    "name": "shareButtonBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "List Bg",
+    "name": "listBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "List Color",
+    "name": "listColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Sourced Verification Bg Color",
+    "name": "sourcedVerificationBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Sourced Verification Text Color",
+    "name": "sourcedVerificationTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Nav Bar Background Color",
+    "name": "navBarBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Nav Bar Border Color",
+    "name": "navBarBorderColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Nav Bar Border Width",
+    "name": "navBarBorderWidth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Message Sent Status",
+    "name": "messageSentStatus",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Incoming Message Bg Color",
+    "name": "incomingMessageBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Incoming Message Text Color",
+    "name": "incomingMessageTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Incoming Message Opaque Text Color",
+    "name": "incomingMessageOpaqueTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Submit Bar In Footer",
+    "name": "submitBarInFooter",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Logo",
+    "name": "logo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Background Image",
+    "name": "backgroundImage",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Splashscreen",
+    "name": "splashscreen",
+    "type": "propertyName",
+    "model": "Default"
   }
-}
+]
