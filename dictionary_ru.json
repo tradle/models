@@ -1,278 +1,15 @@
 [
   {
-    "ru": "гашиш",
-    "en": "Hash",
-    "name": "hash",
+    "ru": "Дата рождения",
+    "en": "Date Of Birth",
+    "name": "dateOfBirth",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "частичный",
-    "en": "Partial",
-    "name": "tradle.Partial",
-    "type": "model"
-  },
-  {
-    "ru": "Изображение на заднем плане",
-    "en": "Background Image",
-    "name": "backgroundImage",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Забыл вас",
-    "en": "Forgot You",
-    "name": "tradle.ForgotYou",
-    "type": "model"
-  },
-  {
-    "ru": "Финансовый продукт",
-    "en": "Financial Product",
-    "name": "tradle.FinancialProduct",
-    "type": "model"
-  },
-  {
-    "ru": "заявка",
-    "en": "Application",
-    "name": "tradle.Application",
-    "type": "model"
-  },
-  {
-    "ru": "валюта",
-    "en": "Currency",
-    "name": "tradle.Currency",
-    "type": "model",
-    "enum": {
-      "PAB": "Бальбоа",
-      "XAU": "Золото",
-      "AUD": "Австралийский доллар",
-      "THB": "батов",
-      "PGK": "Китай",
-      "XPD": "палладий",
-      "GHS": "Гана Седи",
-      "FJD": "Доллар Фиджи",
-      "XBD": "Группа рынков облигаций Европейская группа счетов 17 (E.U.A.-17)",
-      "SVC": "Сальвадор Колон",
-      "BIF": "Бурундийский франк",
-      "BBD": "Доллар Барбадоса",
-      "CUP": "Кубинское песо",
-      "CAD": "Канадский доллар",
-      "XPT": "платиновый",
-      "XBB": "Группа рынков облигаций Европейский валютный отдел (E.M.U.-6)",
-      "MGA": "Malagasy Ariary",
-      "BRL": "Бразильский реал",
-      "SRD": "Surinam Dollar",
-      "XTS": "Коды, специально зарезервированные для целей тестирования",
-      "PKR": "Пакистанская рупия",
-      "BZD": "Доллар Белиза",
-      "VUV": "Vatu",
-      "BGN": "Болгарский Лев",
-      "CRC": "Коста-Риканский колон",
-      "COP": "Колумбийский вес",
-      "MKD": "деньги",
-      "TWD": "Новый Тайваньский Доллар",
-      "EUR": "евро",
-      "XSU": "сахар",
-      "SLL": "Леон",
-      "XBC": "Группа рынков облигаций Европейская группа счетов 9 (E.U.A.-9)",
-      "CVE": "Кабо-Верде",
-      "XAF": "CFA Franc BEAC",
-      "SDG": "Суданский фунт",
-      "SBD": "Доллар Соломоновых Островов",
-      "BWP": "также",
-      "BAM": "Конвертируемый знак",
-      "MVR": "Руфия",
-      "CLP": "Чилийское песо",
-      "GMD": "Dalasi",
-      "JPY": "иена",
-      "ETB": "Эфиопский Бирр",
-      "FKP": "Фолклендские острова Фунт",
-      "KPW": "Северная Корея выиграла",
-      "PYG": "Гуарани",
-      "STD": "хорошо",
-      "XAG": "Серебряный",
-      "IRR": "Иранский риал",
-      "KYD": "Доллар Каймановых островов",
-      "NZD": "Новозеландский доллар",
-      "DOP": "Доминиканское песо",
-      "SHP": "Остров Святой Елены",
-      "MUR": "Маврикийская рупия",
-      "KES": "Кенийский шиллинг",
-      "JMD": "Ямайский доллар",
-      "GIP": "Гибралтарский фунт",
-      "LYD": "Ливийский динар",
-      "ISK": "Исландия Крона",
-      "DZD": "Алжирский динар",
-      "BOB": "боливийский",
-      "KMF": "Comoro Franc",
-      "DKK": "Датская крона",
-      "SEK": "Шведская крона",
-      "KRW": "Выиграл",
-      "BMD": "Бермудский доллар",
-      "LAK": "курица",
-      "NPR": "Непальская рупия",
-      "ILS": "Новый израильский шекель",
-      "XOF": "CFA Franc BCEAO",
-      "TZS": "Танзанийский шиллинг",
-      "BYR": "Белорусский рубль",
-      "XPF": "CFP Franc",
-      "MAD": "Марокканский дирхам",
-      "MZN": "Мозамбик",
-      "ARS": "Аргентинский песо",
-      "MYR": "Малайзийский ринггит",
-      "OMR": "Риаль Омани",
-      "BND": "Брунейские доллары",
-      "WST": "номер",
-      "SZL": "Лилангени",
-      "BOV": "Mvdol",
-      "KHR": "Риель",
-      "BHD": "Бахрейнский динар",
-      "AZN": "Азербайджанский манат",
-      "MXN": "Мексиканское песо",
-      "RON": "Румынский лей",
-      "MXV": "Мексиканская инвестиционная группа (UDI)",
-      "GYD": "Гайанские доллары",
-      "CUC": "Кабриолет",
-      "AFN": "афгани",
-      "HUF": "форинт",
-      "NGN": "Наира",
-      "HTG": "тыква",
-      "KGS": "кто",
-      "BSD": "Багамский доллар",
-      "INR": "Индийская рупия",
-      "PHP": "Филиппинское песо",
-      "RSD": "Сербский динар",
-      "VEF": "боливар",
-      "ZAR": "рант",
-      "VND": "Dong",
-      "TOP": "финансов",
-      "MMK": "Кьят",
-      "UAH": "гривна",
-      "XCD": "Восточнокарибский доллар",
-      "EGP": "Египетский фунт",
-      "LRD": "Либерийский доллар",
-      "IDR": "рупия",
-      "MWK": "Малави Квача",
-      "SAR": "Саудовский Риаль",
-      "GBP": "Фунт стерлингов",
-      "XUA": "Учетная запись АБР",
-      "AOA": "первый",
-      "SGD": "Сингапурский доллар",
-      "SSP": "Южный Суданский Фунт",
-      "IQD": "Иракский динар",
-      "SOS": "Сомалийский шиллинг",
-      "BYN": "Белорусский рубль",
-      "AMD": "Армянский драма",
-      "ERN": "Накфа",
-      "HNL": "Лемпира",
-      "RUB": "Русский рубль",
-      "XBA": "Группа рынков облигаций Европейский композитный блок (EURCO)",
-      "HRK": "потому что",
-      "GEL": "Убегайте",
-      "GNF": "Гвинейский франк",
-      "NIO": "Золото Кордовы",
-      "PEN": "золь",
-      "CZK": "Чешская крона",
-      "LBP": "Ливанский фунт",
-      "DJF": "Франк Джибути",
-      "QAR": "Катарский риал",
-      "ANG": "Нидерланды Антильские гульдены",
-      "LSL": "очень",
-      "KWD": "Кувейтский динар",
-      "RWF": "Руандийский франк",
-      "PLN": "злотый",
-      "TJS": "сомони",
-      "JOD": "Иорданский динар",
-      "HKD": "Гонконгский доллар",
-      "MDL": "Молдавский лев",
-      "CDF": "Конголезский франк",
-      "GTQ": "кетцаль",
-      "AWG": "Арубан Флорин",
-      "ALL": "лек",
-      "NOK": "Норвежская крона",
-      "MNT": "Тугрик",
-      "BTN": "Ngultrum",
-      "SCR": "Сейшельская рупия",
-      "AED": "ОАЭ Дирхам",
-      "TMT": "Туркменистан Новый Манат",
-      "SYP": "Сирийский фунт",
-      "COU": "Блок реальной стоимости",
-      "LKR": "Шри-Ланка Рупия",
-      "UGX": "Уганда Шиллинг",
-      "USD": "Доллар США",
-      "XDR": "SDR (специальное рисование справа)",
-      "KZT": "Время",
-      "YER": "Йеменский риал",
-      "ZWL": "Доллар Зимбабве",
-      "TTD": "Доллар Тринидада и Тобаго",
-      "XXX": "Коды, назначенные для транзакций, в которых не задействована никакая валюта",
-      "TND": "Тунисский динар",
-      "ZMW": "Замбийский Квача",
-      "CLF": "Unidad de Fomento",
-      "UYU": "Уругвайский вес",
-      "NAD": "Намибийские доллары",
-      "MRO": "Угий",
-      "MOP": "картофель",
-      "TRY": "Турецкая лира",
-      "BDT": "Это все",
-      "UZS": "Сумма в Узбекистане",
-      "CHE": "МЫ ЕВРО",
-      "CHW": "WE франк",
-      "UYI": "Уругвайский вес в индексированных единицах (URUIURUI)",
-      "CNY": "Юань Жэньминьби"
-    }
-  },
-  {
-    "ru": "Как финансировать",
-    "en": "How To Fund",
-    "name": "tradle.HowToFund",
-    "type": "model",
-    "enum": {
-      "cash": "Денежные средства",
-      "check": "Проверьте",
-      "direct": "Прямой к банку"
-    }
-  },
-  {
-    "ru": "Деньги",
-    "en": "Money",
-    "name": "tradle.Money",
-    "type": "model"
-  },
-  {
-    "ru": "Проверьте",
-    "en": "Check",
-    "name": "tradle.Check",
-    "type": "model"
-  },
-  {
-    "ru": "Адрес электронной почты",
-    "en": "Email Address",
-    "name": "tradle.EmailAddress",
-    "type": "model"
-  },
-  {
-    "ru": "Спаривание",
-    "en": "Pairing Response",
-    "name": "tradle.PairingResponse",
-    "type": "model"
-  },
-  {
-    "ru": "Ошибка формы",
-    "en": "Form Error",
-    "name": "tradle.FormError",
-    "type": "model"
-  },
-  {
-    "ru": "Степень образования",
-    "en": "Degree of education",
-    "name": "tradle.EducationDegree",
-    "type": "model"
-  },
-  {
-    "ru": "подтверждение",
-    "en": "Confirmation",
-    "name": "tradle.Confirmation",
+    "ru": "Простые сообщения",
+    "en": "Simple Message",
+    "name": "tradle.SimpleMessage",
     "type": "model"
   },
   {
@@ -282,17 +19,81 @@
     "type": "model"
   },
   {
-    "ru": "Утверждение заявки",
-    "en": "Application Approval",
-    "name": "tradle.ApplicationApproval",
+    "ru": "приглашение",
+    "en": "Invite",
+    "name": "tradle.Invite",
     "type": "model"
   },
   {
-    "ru": "логотип",
-    "en": "Logo",
-    "name": "logo",
-    "type": "propertyName",
-    "model": "Default"
+    "ru": "NextFormRequest",
+    "en": "NextFormRequest",
+    "name": "tradle.NextFormRequest",
+    "type": "model"
+  },
+  {
+    "ru": "Типы телефонов",
+    "en": "Phone Types",
+    "name": "tradle.PhoneTypes",
+    "type": "model",
+    "enum": {
+      "mobile": "мобильный",
+      "home": "Главная",
+      "work": "Работа"
+    }
+  },
+  {
+    "ru": "Запрос акций",
+    "en": "Share Request",
+    "name": "tradle.ShareRequest",
+    "type": "model"
+  },
+  {
+    "ru": "контекст",
+    "en": "Context",
+    "name": "tradle.Context",
+    "type": "model"
+  },
+  {
+    "ru": "Запрос формы",
+    "en": "Form Request",
+    "name": "tradle.FormRequest",
+    "type": "model"
+  },
+  {
+    "ru": "Проверка электронной почты",
+    "en": "Email Check",
+    "name": "tradle.EmailCheck",
+    "type": "model"
+  },
+  {
+    "ru": "Запрос на сопряжение",
+    "en": "Pairing Request",
+    "name": "tradle.PairingRequest",
+    "type": "model"
+  },
+  {
+    "ru": "Проверка на основе API",
+    "en": "API based verification",
+    "name": "tradle.APIBasedVerificationMethod",
+    "type": "model"
+  },
+  {
+    "ru": "Пакет данных",
+    "en": "Data Bundle",
+    "name": "tradle.DataBundle",
+    "type": "model"
+  },
+  {
+    "ru": "Самостоятельное введение",
+    "en": "Self introduction",
+    "name": "tradle.SelfIntroduction",
+    "type": "model"
+  },
+  {
+    "ru": "Основная контактная информация",
+    "en": "Basic Contact Info",
+    "name": "tradle.BasicContactInfo",
+    "type": "model"
   },
   {
     "ru": "Проект заявки",
@@ -307,15 +108,281 @@
     "type": "model"
   },
   {
-    "ru": "Состояние приложения",
-    "en": "App State",
-    "name": "tradle.AppState",
+    "ru": "Главный",
+    "en": "Major",
+    "name": "tradle.Major",
+    "type": "model",
+    "enum": {
+      "finance": "финансов",
+      "businessAdministration": "Управление бизнесом",
+      "neurobiology": "нейробиология",
+      "digitalCommunicationsAndMultimedia": "Цифровые коммуникации и мультимедиа",
+      "animation": "Анимация",
+      "entrepreneurship": "предпринимательство",
+      "internationalBusiness": "Международный бизнес",
+      "accounting": "бухгалтерский учет",
+      "computerSystemsAnalysis": "Анализ компьютерных систем",
+      "networkDesignAndAdministration": "Сетевое проектирование и администрирование"
+    }
+  },
+  {
+    "ru": "Предмет получен",
+    "en": "Item Received",
+    "name": "tradle.Ack",
     "type": "model"
   },
   {
-    "ru": "Кредитная карта",
-    "en": "Credit Card",
-    "name": "tradle.CreditCard",
+    "ru": "заявка",
+    "en": "Application",
+    "name": "tradle.Application",
+    "type": "model"
+  },
+  {
+    "ru": "Как финансировать",
+    "en": "How To Fund",
+    "name": "tradle.HowToFund",
+    "type": "model",
+    "enum": {
+      "check": "Проверьте",
+      "direct": "Прямой к банку",
+      "cash": "Денежные средства"
+    }
+  },
+  {
+    "ru": "Пакеты моделей",
+    "en": "Models Pack",
+    "name": "tradle.ModelsPack",
+    "type": "model"
+  },
+  {
+    "ru": "метод",
+    "en": "Method",
+    "name": "tradle.Method",
+    "type": "model"
+  },
+  {
+    "ru": "Страна",
+    "en": "Country",
+    "name": "tradle.DeliveryErrorStatus",
+    "type": "model",
+    "enum": {
+      "retrying": "Повторная",
+      "stuck": "Прикрепленный"
+    }
+  },
+  {
+    "ru": "Изображение на заднем плане",
+    "en": "Background Image",
+    "name": "backgroundImage",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Назначить менеджера связей",
+    "en": "Assign Relationship Manager",
+    "name": "tradle.AssignRelationshipManager",
+    "type": "model"
+  },
+  {
+    "ru": "Профиль",
+    "en": "Profile",
+    "name": "tradle.Profile",
+    "type": "model"
+  },
+  {
+    "ru": "Семейное положение",
+    "en": "Marital Status",
+    "name": "tradle.MaritalStatus",
+    "type": "model",
+    "enum": {
+      "civil": "Гражданское партнерство",
+      "livingTogether": "Жить вместе с соглашением",
+      "single": "Один",
+      "marriedPA": "Женат с брачным соглашением",
+      "married": "замужем"
+    }
+  },
+  {
+    "ru": "частичный",
+    "en": "Partial",
+    "name": "tradle.Partial",
+    "type": "model"
+  },
+  {
+    "ru": "Применение продукта",
+    "en": "Product Application",
+    "name": "tradle.ProductApplication",
+    "type": "model"
+  },
+  {
+    "ru": "Пункт",
+    "en": "Item",
+    "name": "tradle.Item",
+    "type": "model"
+  },
+  {
+    "ru": "вопрос",
+    "en": "Issue",
+    "name": "tradle.IssueProduct",
+    "type": "model"
+  },
+  {
+    "ru": "Сообщение о ходе выполнения",
+    "en": "Progress Message",
+    "name": "tradle.ProgressMessage",
+    "type": "model"
+  },
+  {
+    "ru": "Проверка паспортов",
+    "en": "Passport Verification",
+    "name": "tradle.PassportVerification",
+    "type": "model"
+  },
+  {
+    "ru": "язык",
+    "en": "Language",
+    "name": "tradle.Language",
+    "type": "model",
+    "enum": {
+      "en": "английский",
+      "fil": "Филиппинский",
+      "vi": "вьетнамский",
+      "es": "испанский",
+      "fr": "Французский",
+      "nl": "Голландский",
+      "bn": "бенгальский"
+    }
+  },
+  {
+    "ru": "Заявка на данные",
+    "en": "Data Claim",
+    "name": "tradle.DataClaim",
+    "type": "model"
+  },
+  {
+    "ru": "Кредитные карты",
+    "en": "Credit Cards",
+    "name": "tradle.CreditCards",
+    "type": "model"
+  },
+  {
+    "ru": "Мой выпускной продукт",
+    "en": "My Issue Product",
+    "name": "tradle.MyIssueProduct",
+    "type": "model"
+  },
+  {
+    "ru": "Медиа-фрагмент",
+    "en": "Media Snippet",
+    "name": "tradle.MediaSnippet",
+    "type": "model"
+  },
+  {
+    "ru": "Сопряжение данных",
+    "en": "Pairing Data",
+    "name": "tradle.PairingData",
+    "type": "model"
+  },
+  {
+    "ru": "Тип проживания",
+    "en": "Residence Type",
+    "name": "tradle.ResidenceType",
+    "type": "model",
+    "enum": {
+      "primary": "Основная резиденция",
+      "investment": "Инвестиционная недвижимость",
+      "secondary": "Второй дом"
+    }
+  },
+  {
+    "ru": "Ожидание клиента",
+    "en": "Customer waiting",
+    "name": "tradle.CustomerWaiting",
+    "type": "model"
+  },
+  {
+    "ru": "идентификатор фотографии",
+    "en": "Photo ID",
+    "name": "tradle.PhotoID",
+    "type": "model"
+  },
+  {
+    "ru": "Список продуктов",
+    "en": "Product List",
+    "name": "tradle.ProductList",
+    "type": "model"
+  },
+  {
+    "ru": "Информация о сервере поставщика услуг",
+    "en": "Service Provider Server Info",
+    "name": "tradle.ServiceProvider",
+    "type": "model"
+  },
+  {
+    "ru": "Enum",
+    "en": "Enum",
+    "name": "tradle.Enum",
+    "type": "model"
+  },
+  {
+    "ru": "Опубликованная личность",
+    "en": "Identity Published",
+    "name": "tradle.IdentityPublished",
+    "type": "model"
+  },
+  {
+    "ru": "Адрес электронной почты",
+    "en": "Email Address",
+    "name": "tradle.EmailAddress",
+    "type": "model"
+  },
+  {
+    "ru": "Утверждение заявки",
+    "en": "Application Approval",
+    "name": "tradle.ApplicationApproval",
+    "type": "model"
+  },
+  {
+    "ru": "Национальность",
+    "en": "Nationality",
+    "name": "tradle.Nationality",
+    "type": "model"
+  },
+  {
+    "ru": "Финансовый продукт",
+    "en": "Financial Product",
+    "name": "tradle.FinancialProduct",
+    "type": "model"
+  },
+  {
+    "ru": "вопрос",
+    "en": "Issue",
+    "name": "tradle.Issue",
+    "type": "model"
+  },
+  {
+    "ru": "Телефон",
+    "en": "Phone",
+    "name": "tradle.Phone",
+    "type": "model"
+  },
+  {
+    "ru": "логотип",
+    "en": "Logo",
+    "name": "logo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Степень образования",
+    "en": "Degree of education",
+    "name": "tradle.EducationDegree",
+    "type": "model"
+  },
+  {
+    "ru": "файл",
+    "en": "File",
+    "name": "tradle.File",
     "type": "model"
   },
   {
@@ -325,15 +392,236 @@
     "type": "model"
   },
   {
-    "ru": "Введение",
-    "en": "Introduction",
-    "name": "tradle.Introduction",
+    "ru": "Идентификатор публикации",
+    "en": "Identity Publish Request",
+    "name": "tradle.IdentityPublishRequest",
     "type": "model"
   },
   {
-    "ru": "Форма предварительной заполнения",
-    "en": "Form Prefill",
-    "name": "tradle.FormPrefill",
+    "ru": "Состояние приложения",
+    "en": "App State",
+    "name": "tradle.AppState",
+    "type": "model"
+  },
+  {
+    "ru": "Элемент обратной ссылки",
+    "en": "Backlink Item",
+    "name": "tradle.BacklinkItem",
+    "type": "model"
+  },
+  {
+    "ru": "Кредитная карта",
+    "en": "Credit Card",
+    "name": "tradle.CreditCard",
+    "type": "model"
+  },
+  {
+    "ru": "Проверка зарплаты",
+    "en": "Salary Verification",
+    "name": "tradle.SalaryVerification",
+    "type": "model"
+  },
+  {
+    "ru": "тождественность",
+    "en": "Identity",
+    "name": "tradle.Identity",
+    "type": "model"
+  },
+  {
+    "ru": "валюта",
+    "en": "Currency",
+    "name": "tradle.Currency",
+    "type": "model",
+    "enum": {
+      "BHD": "Бахрейнский динар",
+      "CUP": "Кубинское песо",
+      "AFN": "афгани",
+      "CLP": "Чилийское песо",
+      "ETB": "Эфиопский Бирр",
+      "HNL": "Лемпира",
+      "XPT": "платиновый",
+      "AUD": "Австралийский доллар",
+      "PEN": "золь",
+      "CDF": "Конголезский франк",
+      "XTS": "Коды, специально зарезервированные для целей тестирования",
+      "CVE": "Кабо-Верде",
+      "VND": "Dong",
+      "GMD": "Dalasi",
+      "HTG": "тыква",
+      "SZL": "Лилангени",
+      "SDG": "Суданский фунт",
+      "XBD": "Группа рынков облигаций Европейская группа счетов 17 (E.U.A.-17)",
+      "SLL": "Леон",
+      "UAH": "гривна",
+      "GYD": "Гайанские доллары",
+      "ALL": "лек",
+      "NPR": "Непальская рупия",
+      "WST": "номер",
+      "UYU": "Уругвайский вес",
+      "KZT": "Время",
+      "CAD": "Канадский доллар",
+      "XAF": "CFA Franc BEAC",
+      "BGN": "Болгарский Лев",
+      "XCD": "Восточнокарибский доллар",
+      "MGA": "Malagasy Ariary",
+      "HRK": "потому что",
+      "LBP": "Ливанский фунт",
+      "BTN": "Ngultrum",
+      "SGD": "Сингапурский доллар",
+      "KGS": "кто",
+      "JPY": "иена",
+      "BOB": "боливийский",
+      "BRL": "Бразильский реал",
+      "AOA": "первый",
+      "MNT": "Тугрик",
+      "PKR": "Пакистанская рупия",
+      "CHW": "WE франк",
+      "XBB": "Группа рынков облигаций Европейский валютный отдел (E.M.U.-6)",
+      "BYR": "Белорусский рубль",
+      "YER": "Йеменский риал",
+      "GTQ": "кетцаль",
+      "MYR": "Малайзийский ринггит",
+      "XAG": "Серебряный",
+      "DZD": "Алжирский динар",
+      "BBD": "Доллар Барбадоса",
+      "THB": "батов",
+      "SYP": "Сирийский фунт",
+      "SOS": "Сомалийский шиллинг",
+      "RSD": "Сербский динар",
+      "AZN": "Азербайджанский манат",
+      "PAB": "Бальбоа",
+      "GIP": "Гибралтарский фунт",
+      "UGX": "Уганда Шиллинг",
+      "TND": "Тунисский динар",
+      "TOP": "финансов",
+      "DKK": "Датская крона",
+      "PYG": "Гуарани",
+      "JMD": "Ямайский доллар",
+      "GEL": "Убегайте",
+      "INR": "Индийская рупия",
+      "MXV": "Мексиканская инвестиционная группа (UDI)",
+      "NOK": "Норвежская крона",
+      "AED": "ОАЭ Дирхам",
+      "TMT": "Туркменистан Новый Манат",
+      "ZWL": "Доллар Зимбабве",
+      "BSD": "Багамский доллар",
+      "FKP": "Фолклендские острова Фунт",
+      "GHS": "Гана Седи",
+      "DJF": "Франк Джибути",
+      "LSL": "очень",
+      "MAD": "Марокканский дирхам",
+      "CHE": "МЫ ЕВРО",
+      "BWP": "также",
+      "BZD": "Доллар Белиза",
+      "AWG": "Арубан Флорин",
+      "XOF": "CFA Franc BCEAO",
+      "LRD": "Либерийский доллар",
+      "LAK": "курица",
+      "MUR": "Маврикийская рупия",
+      "TWD": "Новый Тайваньский Доллар",
+      "VUV": "Vatu",
+      "VEF": "боливар",
+      "CRC": "Коста-Риканский колон",
+      "XAU": "Золото",
+      "MZN": "Мозамбик",
+      "BYN": "Белорусский рубль",
+      "BND": "Брунейские доллары",
+      "BIF": "Бурундийский франк",
+      "COP": "Колумбийский вес",
+      "BAM": "Конвертируемый знак",
+      "ISK": "Исландия Крона",
+      "KES": "Кенийский шиллинг",
+      "KYD": "Доллар Каймановых островов",
+      "MKD": "деньги",
+      "IQD": "Иракский динар",
+      "XDR": "SDR (специальное рисование справа)",
+      "XUA": "Учетная запись АБР",
+      "BMD": "Бермудский доллар",
+      "EGP": "Египетский фунт",
+      "SVC": "Сальвадор Колон",
+      "FJD": "Доллар Фиджи",
+      "MWK": "Малави Квача",
+      "TRY": "Турецкая лира",
+      "MDL": "Молдавский лев",
+      "TJS": "сомони",
+      "SBD": "Доллар Соломоновых Островов",
+      "SCR": "Сейшельская рупия",
+      "XBA": "Группа рынков облигаций Европейский композитный блок (EURCO)",
+      "ARS": "Аргентинский песо",
+      "STD": "хорошо",
+      "PGK": "Китай",
+      "BOV": "Mvdol",
+      "PLN": "злотый",
+      "XXX": "Коды, назначенные для транзакций, в которых не задействована никакая валюта",
+      "CUC": "Кабриолет",
+      "ERN": "Накфа",
+      "AMD": "Армянский драма",
+      "GNF": "Гвинейский франк",
+      "HKD": "Гонконгский доллар",
+      "HUF": "форинт",
+      "IRR": "Иранский риал",
+      "XPD": "палладий",
+      "SEK": "Шведская крона",
+      "COU": "Блок реальной стоимости",
+      "XPF": "CFP Franc",
+      "KMF": "Comoro Franc",
+      "NIO": "Золото Кордовы",
+      "CZK": "Чешская крона",
+      "DOP": "Доминиканское песо",
+      "MMK": "Кьят",
+      "MXN": "Мексиканское песо",
+      "ILS": "Новый израильский шекель",
+      "USD": "Доллар США",
+      "ANG": "Нидерланды Антильские гульдены",
+      "SAR": "Саудовский Риаль",
+      "XBC": "Группа рынков облигаций Европейская группа счетов 9 (E.U.A.-9)",
+      "EUR": "евро",
+      "UYI": "Уругвайский вес в индексированных единицах (URUIURUI)",
+      "KHR": "Риель",
+      "QAR": "Катарский риал",
+      "JOD": "Иорданский динар",
+      "KWD": "Кувейтский динар",
+      "LYD": "Ливийский динар",
+      "KPW": "Северная Корея выиграла",
+      "LKR": "Шри-Ланка Рупия",
+      "RWF": "Руандийский франк",
+      "PHP": "Филиппинское песо",
+      "ZMW": "Замбийский Квача",
+      "ZAR": "рант",
+      "TZS": "Танзанийский шиллинг",
+      "NGN": "Наира",
+      "IDR": "рупия",
+      "SHP": "Остров Святой Елены",
+      "UZS": "Сумма в Узбекистане",
+      "MOP": "картофель",
+      "RON": "Румынский лей",
+      "KRW": "Выиграл",
+      "SRD": "Surinam Dollar",
+      "OMR": "Риаль Омани",
+      "CNY": "Юань Жэньминьби",
+      "GBP": "Фунт стерлингов",
+      "MRO": "Угий",
+      "XSU": "сахар",
+      "RUB": "Русский рубль",
+      "SSP": "Южный Суданский Фунт",
+      "MVR": "Руфия",
+      "NZD": "Новозеландский доллар",
+      "NAD": "Намибийские доллары",
+      "BDT": "Это все",
+      "CLF": "Unidad de Fomento",
+      "TTD": "Доллар Тринидада и Тобаго"
+    }
+  },
+  {
+    "ru": "Печать",
+    "en": "Seal",
+    "name": "tradle.Seal",
+    "type": "model"
+  },
+  {
+    "ru": "Спаривание",
+    "en": "Pairing Response",
+    "name": "tradle.PairingResponse",
     "type": "model"
   },
   {
@@ -344,33 +632,58 @@
     "model": "Default"
   },
   {
-    "ru": "Новая модель сообщения",
-    "en": "New message model",
-    "name": "tradle.NewMessageModel",
+    "ru": "Отказ от применения",
+    "en": "Application Denial",
+    "name": "tradle.ApplicationDenial",
     "type": "model"
   },
   {
-    "ru": "Главный",
-    "en": "Major",
-    "name": "tradle.Major",
-    "type": "model",
-    "enum": {
-      "finance": "финансов",
-      "businessAdministration": "Управление бизнесом",
-      "internationalBusiness": "Международный бизнес",
-      "entrepreneurship": "предпринимательство",
-      "computerSystemsAnalysis": "Анализ компьютерных систем",
-      "neurobiology": "нейробиология",
-      "animation": "Анимация",
-      "accounting": "бухгалтерский учет",
-      "networkDesignAndAdministration": "Сетевое проектирование и администрирование",
-      "digitalCommunicationsAndMultimedia": "Цифровые коммуникации и мультимедиа"
-    }
+    "ru": "Фото",
+    "en": "Photo",
+    "name": "tradle.Photo",
+    "type": "model"
   },
   {
-    "ru": "Ожидание клиента",
-    "en": "Customer waiting",
-    "name": "tradle.CustomerWaiting",
+    "ru": "селфи",
+    "en": "Selfie",
+    "name": "tradle.Selfie",
+    "type": "model"
+  },
+  {
+    "ru": "объект",
+    "en": "Object",
+    "name": "tradle.Object",
+    "type": "model"
+  },
+  {
+    "ru": "Тип телефона",
+    "en": "Phone Type",
+    "name": "phoneType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "аспект",
+    "en": "Aspect",
+    "name": "tradle.Aspect",
+    "type": "model"
+  },
+  {
+    "ru": "Санация",
+    "en": "Remediation",
+    "name": "tradle.Remediation",
+    "type": "model"
+  },
+  {
+    "ru": "Состояние уплотнения",
+    "en": "Seal State",
+    "name": "tradle.SealState",
+    "type": "model"
+  },
+  {
+    "ru": "организация",
+    "en": "Organization",
+    "name": "tradle.Organization",
     "type": "model"
   },
   {
@@ -381,6 +694,18 @@
     "model": "Default"
   },
   {
+    "ru": "Запрос продукта",
+    "en": "Product Request",
+    "name": "tradle.ProductRequest",
+    "type": "model"
+  },
+  {
+    "ru": "форма",
+    "en": "Form",
+    "name": "tradle.Form",
+    "type": "model"
+  },
+  {
     "ru": "Цвет входящего сообщения Bg",
     "en": "Incoming Message Bg Color",
     "name": "incomingMessageBgColor",
@@ -388,26 +713,384 @@
     "model": "Default"
   },
   {
-    "ru": "язык",
-    "en": "Language",
-    "name": "tradle.Language",
+    "ru": "Резиденция",
+    "en": "Residence",
+    "name": "tradle.Residence",
+    "type": "model"
+  },
+  {
+    "ru": "образование",
+    "en": "Education",
+    "name": "tradle.Education",
+    "type": "model"
+  },
+  {
+    "ru": "Ошибка доставки",
+    "en": "Delivery Error",
+    "name": "tradle.DeliveryError",
+    "type": "model"
+  },
+  {
+    "ru": "Сотрудник по бортовому",
+    "en": "Employee Onboarding",
+    "name": "tradle.EmployeeOnboarding",
+    "type": "model"
+  },
+  {
+    "ru": "API",
+    "en": "API",
+    "name": "tradle.API",
+    "type": "model"
+  },
+  {
+    "ru": "Бета-тестер Контактная информация",
+    "en": "Beta Tester Contact Info",
+    "name": "tradle.BetaTesterContactInfo",
+    "type": "model"
+  },
+  {
+    "ru": "Мой продукт",
+    "en": "My Product",
+    "name": "tradle.MyProduct",
+    "type": "model"
+  },
+  {
+    "ru": "Забудь меня",
+    "en": "Forget Me",
+    "name": "tradle.ForgetMe",
+    "type": "model"
+  },
+  {
+    "ru": "Сообщение об устранении ошибки",
+    "en": "Remediation Simple Message",
+    "name": "tradle.RemediationSimpleMessage",
+    "type": "model"
+  },
+  {
+    "ru": "Сканер документов",
+    "en": "Document Scanner",
+    "name": "tradle.DocumentScanner",
     "type": "model",
     "enum": {
-      "nl": "Голландский",
-      "en": "английский"
+      "blinkId": "Идентификатор вспышки"
     }
   },
   {
-    "ru": "Запрос формы",
-    "en": "Form Request",
-    "name": "tradle.FormRequest",
+    "ru": "пересечение",
+    "en": "Intersection",
+    "name": "tradle.Intersection",
     "type": "model"
   },
   {
-    "ru": "Моя реабилитация",
-    "en": "My Remediation",
-    "name": "tradle.MyRemediation",
+    "ru": "связи",
+    "en": "Links",
+    "name": "links",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Имя",
+    "en": "First Name",
+    "name": "firstName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Наемный рабочий",
+    "en": "Employee",
+    "name": "employee",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "заявитель",
+    "en": "Applicant",
+    "name": "applicant",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Подача заявки",
+    "en": "Application Submission",
+    "name": "tradle.ApplicationSubmission",
     "type": "model"
+  },
+  {
+    "ru": "Новая модель сообщения",
+    "en": "New message model",
+    "name": "tradle.NewMessageModel",
+    "type": "model"
+  },
+  {
+    "ru": "Сообщение",
+    "en": "Message",
+    "name": "tradle.Message",
+    "type": "model"
+  },
+  {
+    "ru": "Страна",
+    "en": "Country",
+    "name": "tradle.Country",
+    "type": "model",
+    "enum": {
+      "BR": "Бразилия",
+      "AX": "Аландские острова",
+      "AZ": "Азербайджан",
+      "DZ": "Алжир",
+      "CZ": "Чехия",
+      "CH": "Швейцария",
+      "EH": "Западная Сахара",
+      "IE": "Ирландия",
+      "ES": "Испания",
+      "GF": "Французская Гвиана",
+      "GY": "Гайана",
+      "TF": "Французские южные и антарктические земли",
+      "CL": "Чили",
+      "KM": "Коморские острова",
+      "CY": "Кипр",
+      "GA": "Габон",
+      "FJ": "Фиджи",
+      "ER": "Эритрея",
+      "HT": "Гаити",
+      "AR": "Аргентина",
+      "AW": "Аруба",
+      "EC": "Эквадор",
+      "CG": "Республика Конго",
+      "DK": "Дания",
+      "FK": "Фолклендские острова",
+      "HU": "Венгрия",
+      "IQ": "Ирак",
+      "GN": "Гвинея",
+      "IM": "Остров Мэн",
+      "AI": "Ангилья",
+      "BB": "Барбадос",
+      "BH": "Бахрейн",
+      "BQ": "Карибские острова",
+      "BJ": "Бенин",
+      "CD": "ДР Конго",
+      "CX": "Остров Рождества",
+      "DJ": "Джибути",
+      "BF": "Буркина-Фасо",
+      "BS": "Багамские о-ва",
+      "DO": "Доминиканская Республика",
+      "AM": "Армения",
+      "CI": "Кот-д'Ивуар",
+      "GG": "шерстяная фуфайка",
+      "HM": "Острова Херд и Макдональд",
+      "ID": "Индонезия",
+      "GP": "Гваделупа",
+      "FO": "Фарерские острова",
+      "ET": "Эфиопия",
+      "BM": "Бермудские острова",
+      "AU": "Австралия",
+      "BY": "Беларусь",
+      "CN": "Китай",
+      "GE": "Грузия",
+      "IR": "Иран",
+      "CO": "Колумбия",
+      "AS": "американское Самоа",
+      "BG": "Болгария",
+      "CK": "Острова Кука",
+      "CW": "Кюрасао",
+      "GD": "Гренада",
+      "HN": "Гондурас",
+      "CA": "Канада",
+      "CF": "Центрально-Африканская Республика",
+      "BV": "Остров Буве",
+      "BT": "Бутан",
+      "DM": "Доминика",
+      "DE": "Германия",
+      "FM": "Микронезия",
+      "HK": "Гонконг",
+      "AQ": "Антарктида",
+      "AO": "Ангола",
+      "AF": "Афганистан",
+      "BN": "Бруней",
+      "BE": "Бельгия",
+      "CM": "Камерун",
+      "GU": "Гуам",
+      "EE": "Эстония",
+      "GQ": "Экваториальная Гвинея",
+      "AE": "Объединенные Арабские Эмираты",
+      "BO": "Боливия",
+      "CR": "Коста-Рика",
+      "GH": "Гана",
+      "AD": "андорра",
+      "AG": "Антигуа и Барбуда",
+      "BA": "Босния и Герцеговина",
+      "KY": "Каймановы острова",
+      "GI": "Гибралтар",
+      "BL": "Saint Barthelemy",
+      "CV": "Кабо-Верде",
+      "FR": "Франция",
+      "GL": "Гренландия",
+      "GM": "Гамбия",
+      "HR": "Хорватия",
+      "FI": "Финляндия",
+      "BD": "Бангладеш",
+      "GT": "Гватемала",
+      "LT": "Литва",
+      "AL": "Албания",
+      "BI": "Бурунди",
+      "BZ": "Белиз",
+      "SH": "Святой Елены, Вознесения и Тристана-да-Куньи",
+      "CC": "Кокосовые (Килинг) острова",
+      "GW": "Гвинея-Бисау",
+      "GR": "Греция",
+      "GB": "Великобритания",
+      "KN": "Сент-Китс и Невис",
+      "AT": "Австрия",
+      "BW": "Ботсвана",
+      "EG": "Египет",
+      "IN": "Индия",
+      "IO": "Британская территория Индийского океана",
+      "KR": "Южная Корея",
+      "CU": "Куба",
+      "MD": "Молдавия",
+      "KE": "Кения",
+      "MH": "Маршалловы острова",
+      "XK": "Косово",
+      "LY": "Ливия",
+      "MQ": "Мартиника",
+      "NA": "Намибия",
+      "MN": "Монголия",
+      "NU": "Niue",
+      "LK": "Шри-Ланка",
+      "MY": "Малайзия",
+      "MX": "Мексика",
+      "MC": "Монако",
+      "LC": "Сент-Люсия",
+      "KZ": "Казахстан",
+      "KH": "Камбоджа",
+      "JM": "Ямайка",
+      "MO": "Макао",
+      "NF": "Остров Норфолк",
+      "NI": "Никарагуа",
+      "YT": "Майотта",
+      "NP": "Непал",
+      "IL": "Израиль",
+      "MK": "Македония",
+      "MF": "Сен-Мартен",
+      "MW": "Малави",
+      "LU": "Люксембург",
+      "LI": "Лихтенштейн",
+      "IT": "Италия",
+      "NR": "Науру",
+      "MZ": "Мозамбик",
+      "MR": "Мавритания",
+      "NE": "Нигер",
+      "JP": "Япония",
+      "KW": "Кувейт",
+      "MM": "Мьянма",
+      "MV": "Мальдивы",
+      "JO": "Иордания",
+      "LV": "Латвия",
+      "OM": "Оман",
+      "NC": "Новая Каледония",
+      "MU": "Маврикий",
+      "NZ": "Новая Зеландия",
+      "MT": "Мальта",
+      "JE": "Джерси",
+      "NL": "Нидерланды",
+      "LA": "Лаос",
+      "IS": "Исландия",
+      "KG": "Киргизия",
+      "ML": "мали",
+      "SN": "Сенегал",
+      "PG": "Папуа - Новая Гвинея",
+      "MG": "Мадагаскар",
+      "LB": "Ливан",
+      "SO": "Сомали",
+      "MS": "Монсеррат",
+      "KI": "Кирибати",
+      "MA": "Марокко",
+      "PE": "Перу",
+      "PS": "Палестина",
+      "ME": "Черногория",
+      "NG": "Нигерия",
+      "LS": "Лесото",
+      "LR": "Либерия",
+      "MP": "Северные Марианские острова",
+      "PR": "Пуэрто-Рико",
+      "PL": "Польша",
+      "SB": "Соломоновы острова",
+      "SG": "Сингапур",
+      "SI": "Словения",
+      "PW": "Palau",
+      "SA": "Саудовская Аравия",
+      "TH": "Таиланд",
+      "TK": "Токелау",
+      "RW": "Руанда",
+      "TD": "Чад",
+      "PN": "Острова Питкэрн",
+      "RE": "встреча",
+      "ST": "Сан-Томе и Принсипи",
+      "WS": "Самоа",
+      "RU": "Россия",
+      "SL": "Сьерра-Леоне",
+      "TT": "Тринидад и Тобаго",
+      "UM": "Малые отдаленные острова Соединенных Штатов",
+      "PF": "Французская Полинезия",
+      "GS": "Южная Георгия",
+      "KP": "Северная Корея",
+      "SJ": "Свальбард и Ян-Майен",
+      "PT": "Португалия",
+      "SD": "Судан",
+      "PH": "Филиппины",
+      "PA": "Панама",
+      "SK": "Словакия",
+      "SM": "Сан-Марино",
+      "SX": "Синт-Маартен",
+      "TO": "Тонга",
+      "UA": "Украина",
+      "PK": "Пакистан",
+      "RS": "Сербия",
+      "VC": "Святой Винсент и Гренадины",
+      "SS": "южный Судан",
+      "SC": "Сейшельские острова",
+      "PY": "Парагвай",
+      "NO": "Норвегия",
+      "RO": "Румыния",
+      "TC": "Острова Теркс и Кайкос",
+      "QA": "Катар",
+      "TJ": "Таджикистан",
+      "PM": "Сен-Пьер и Микелон",
+      "SV": "Сальвадор",
+      "UG": "Уганда",
+      "ZW": "Зимбабве",
+      "TR": "Турция",
+      "VE": "Венесуэла",
+      "TW": "Тайвань",
+      "TZ": "Танзания",
+      "SY": "Сирия",
+      "TL": "Восточный Тимор",
+      "SR": "Суринам",
+      "ZA": "Южная Африка",
+      "TN": "Тунис",
+      "SZ": "Свазиленд",
+      "TV": "Тувалу",
+      "VG": "Британские Виргинские острова",
+      "YE": "Йемен",
+      "UZ": "Узбекистан",
+      "VA": "Ватикан",
+      "US": "Соединенные Штаты",
+      "VU": "Vanuatu",
+      "VI": "Виргинские острова Соединенных Штатов",
+      "TM": "Туркменистан",
+      "TG": "Идти",
+      "ZM": "Замбия",
+      "SE": "Швеция",
+      "WF": "Уоллис и Футуна",
+      "UY": "Уругвай",
+      "VN": "Вьетнам"
+    }
+  },
+  {
+    "ru": "Продукт",
+    "en": "Product",
+    "name": "product",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "ru": "Статус отправки сообщения",
@@ -415,6 +1098,18 @@
     "name": "messageSentStatus",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "ru": "Мой рабочий пропуск",
+    "en": "My Employee Pass",
+    "name": "tradle.MyEmployeeOnboarding",
+    "type": "model"
+  },
+  {
+    "ru": "имя",
+    "en": "Name",
+    "name": "tradle.Name",
+    "type": "model"
   },
   {
     "ru": "Ширина границы панели навигации",
@@ -438,828 +1133,47 @@
     "model": "Default"
   },
   {
-    "ru": "Цвет списка",
-    "en": "List Color",
-    "name": "listColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Список Bg",
-    "en": "List Bg",
-    "name": "listBg",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Кредитные карты",
-    "en": "Credit Cards",
-    "name": "tradle.CreditCards",
-    "type": "model"
-  },
-  {
-    "ru": "метод",
-    "en": "Method",
-    "name": "tradle.Method",
-    "type": "model"
-  },
-  {
-    "ru": "Цвет границы контекста",
-    "en": "Context Border Color",
-    "name": "contextBorderColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Национальность",
-    "en": "Nationality",
-    "name": "tradle.Nationality",
-    "type": "model"
-  },
-  {
-    "ru": "контекст",
-    "en": "Context",
-    "name": "tradle.Context",
-    "type": "model"
-  },
-  {
-    "ru": "Merkle Leaf",
-    "en": "Merkle Leaf",
-    "name": "tradle.MerkleLeaf",
-    "type": "model"
-  },
-  {
-    "ru": "Семейное положение",
-    "en": "Marital Status",
-    "name": "tradle.MaritalStatus",
+    "ru": "Жилой статус",
+    "en": "Residential Status",
+    "name": "tradle.ResidentialStatus",
     "type": "model",
     "enum": {
-      "civil": "Гражданское партнерство",
-      "single": "Один",
-      "marriedPA": "Женат с брачным соглашением",
-      "married": "замужем",
-      "livingTogether": "Жить вместе с соглашением"
+      "tenantC": "Арендатор (адвокат)",
+      "tenantP": "Арендатор (частный)",
+      "withMortgage": "Владелец дома (с ипотекой)",
+      "livingWithParents": "Живу с родителями",
+      "withoutMortgage": "Владелец дома (без ипотеки)"
     }
-  },
-  {
-    "ru": "Заявка на данные",
-    "en": "Data Claim",
-    "name": "tradle.DataClaim",
-    "type": "model"
-  },
-  {
-    "ru": "Медиа-фрагмент",
-    "en": "Media Snippet",
-    "name": "tradle.MediaSnippet",
-    "type": "model"
-  },
-  {
-    "ru": "образование",
-    "en": "Education",
-    "name": "tradle.Education",
-    "type": "model"
-  },
-  {
-    "ru": "Основная контактная информация",
-    "en": "Basic Contact Info",
-    "name": "tradle.BasicContactInfo",
-    "type": "model"
-  },
-  {
-    "ru": "Enum",
-    "en": "Enum",
-    "name": "tradle.Enum",
-    "type": "model"
-  },
-  {
-    "ru": "Цвет текста контекста",
-    "en": "Context Text Color",
-    "name": "contextTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет фона контекста",
-    "en": "Context Background Color",
-    "name": "contextBackgroundColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Опубликованная личность",
-    "en": "Identity Published",
-    "name": "tradle.IdentityPublished",
-    "type": "model"
-  },
-  {
-    "ru": "Текущий цвет фона контекста",
-    "en": "Current Context Background Color",
-    "name": "currentContextBackgroundColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет текста текущего контекста",
-    "en": "Current Context Text Color",
-    "name": "currentContextTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Ошибка формы Bg",
-    "en": "Form Error Bg",
-    "name": "formErrorBg",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет ошибки формы",
-    "en": "Form Error Color",
-    "name": "formErrorColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Граница ошибок формы",
-    "en": "Form Error Border",
-    "name": "formErrorBorder",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет моего сообщения",
-    "en": "My Message Background Color",
-    "name": "myMessageBackgroundColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет сообщения моего сообщения",
-    "en": "My Message Link Color",
-    "name": "myMessageLinkColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "пересечение",
-    "en": "Intersection",
-    "name": "tradle.Intersection",
-    "type": "model"
-  },
-  {
-    "ru": "форма",
-    "en": "Form",
-    "name": "tradle.Form",
-    "type": "model"
-  },
-  {
-    "ru": "Проверка на основе API",
-    "en": "API based verification",
-    "name": "tradle.APIBasedVerificationMethod",
-    "type": "model"
-  },
-  {
-    "ru": "Исправить цвет ошибки",
-    "en": "Fix Error Color",
-    "name": "fixErrorColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Фото на обложке",
-    "en": "Cover Photo",
-    "name": "coverPhoto",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Подтверждение Bg",
-    "en": "Confirmation Bg",
-    "name": "confirmationBg",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "документы",
-    "en": "Documents",
-    "name": "myDocuments",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "ru": "Цвет подтверждения",
-    "en": "Confirmation Color",
-    "name": "confirmationColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Элемент обратной ссылки",
-    "en": "Backlink Item",
-    "name": "tradle.BacklinkItem",
-    "type": "model"
-  },
-  {
-    "ru": "закладка",
-    "en": "Bookmark",
-    "name": "tradle.Bookmark",
-    "type": "model"
-  },
-  {
-    "ru": "Мои данные",
-    "en": "My Data",
-    "name": "myForms",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "ru": "эмитент",
-    "en": "Issuer",
-    "name": "issuer",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Сообщение",
-    "en": "Message",
-    "name": "tradle.Message",
-    "type": "model"
-  },
-  {
-    "ru": "Дата записи Отменено",
-    "en": "Date Write Canceled",
-    "name": "dateWriteCanceled",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "образование",
-    "en": "Education",
-    "name": "tradle.EducationNL",
-    "type": "model",
-    "enum": {
-      "highSchool": "Старшая школа",
-      "university": "Университет",
-      "elementary": "Начальная школа",
-      "college": "колледж",
-      "vocationalS": "Профессиональная средняя школа (старший)",
-      "vocationalJ": "Профессиональная средняя школа (младшая)"
-    }
-  },
-  {
-    "ru": "Страна",
-    "en": "Country",
-    "name": "tradle.Country",
-    "type": "model",
-    "enum": {
-      "AD": "андорра",
-      "AM": "Армения",
-      "AR": "Аргентина",
-      "AS": "американское Самоа",
-      "AI": "Ангилья",
-      "AE": "Объединенные Арабские Эмираты",
-      "AW": "Аруба",
-      "AL": "Албания",
-      "AO": "Ангола",
-      "AQ": "Антарктида",
-      "AF": "Афганистан",
-      "BS": "Багамские о-ва",
-      "BR": "Бразилия",
-      "BA": "Босния и Герцеговина",
-      "AT": "Австрия",
-      "AZ": "Азербайджан",
-      "BE": "Бельгия",
-      "BO": "Боливия",
-      "BZ": "Белиз",
-      "BJ": "Бенин",
-      "SH": "Святой Елены, Вознесения и Тристана-да-Куньи",
-      "DJ": "Джибути",
-      "AX": "Аландские острова",
-      "BY": "Беларусь",
-      "CI": "Кот-д'Ивуар",
-      "DZ": "Алжир",
-      "AU": "Австралия",
-      "TF": "Французские южные и антарктические земли",
-      "BQ": "Карибские острова",
-      "CG": "Республика Конго",
-      "CN": "Китай",
-      "CU": "Куба",
-      "BH": "Бахрейн",
-      "BN": "Бруней",
-      "CK": "Острова Кука",
-      "AG": "Антигуа и Барбуда",
-      "KY": "Каймановы острова",
-      "FJ": "Фиджи",
-      "BD": "Бангладеш",
-      "DO": "Доминиканская Республика",
-      "BG": "Болгария",
-      "BT": "Бутан",
-      "BF": "Буркина-Фасо",
-      "BM": "Бермудские острова",
-      "GF": "Французская Гвиана",
-      "FR": "Франция",
-      "JE": "Джерси",
-      "CL": "Чили",
-      "CY": "Кипр",
-      "KE": "Кения",
-      "BW": "Ботсвана",
-      "CF": "Центрально-Африканская Республика",
-      "KM": "Коморские острова",
-      "DK": "Дания",
-      "HR": "Хорватия",
-      "LB": "Ливан",
-      "GI": "Гибралтар",
-      "FM": "Микронезия",
-      "IO": "Британская территория Индийского океана",
-      "CH": "Швейцария",
-      "CV": "Кабо-Верде",
-      "GA": "Габон",
-      "FK": "Фолклендские острова",
-      "GN": "Гвинея",
-      "JP": "Япония",
-      "IE": "Ирландия",
-      "CO": "Колумбия",
-      "BB": "Барбадос",
-      "IL": "Израиль",
-      "JO": "Иордания",
-      "PY": "Парагвай",
-      "FI": "Финляндия",
-      "GM": "Гамбия",
-      "ET": "Эфиопия",
-      "IR": "Иран",
-      "IQ": "Ирак",
-      "GE": "Грузия",
-      "LS": "Лесото",
-      "IT": "Италия",
-      "JM": "Ямайка",
-      "MP": "Северные Марианские острова",
-      "HN": "Гондурас",
-      "GH": "Гана",
-      "GL": "Гренландия",
-      "DM": "Доминика",
-      "HK": "Гонконг",
-      "GP": "Гваделупа",
-      "GG": "шерстяная фуфайка",
-      "CA": "Канада",
-      "GR": "Греция",
-      "NC": "Новая Каледония",
-      "NL": "Нидерланды",
-      "DE": "Германия",
-      "CZ": "Чехия",
-      "GQ": "Экваториальная Гвинея",
-      "GD": "Гренада",
-      "EE": "Эстония",
-      "PE": "Перу",
-      "NP": "Непал",
-      "SN": "Сенегал",
-      "PG": "Папуа - Новая Гвинея",
-      "RO": "Румыния",
-      "MD": "Молдавия",
-      "CR": "Коста-Рика",
-      "EH": "Западная Сахара",
-      "EG": "Египет",
-      "ER": "Эритрея",
-      "ES": "Испания",
-      "FO": "Фарерские острова",
-      "GY": "Гайана",
-      "IN": "Индия",
-      "MQ": "Мартиника",
-      "MK": "Македония",
-      "MV": "Мальдивы",
-      "PF": "Французская Полинезия",
-      "EC": "Эквадор",
-      "VE": "Венесуэла",
-      "GU": "Гуам",
-      "NA": "Намибия",
-      "MX": "Мексика",
-      "MU": "Маврикий",
-      "PA": "Панама",
-      "QA": "Катар",
-      "KR": "Южная Корея",
-      "NI": "Никарагуа",
-      "LR": "Либерия",
-      "BI": "Бурунди",
-      "UG": "Уганда",
-      "KN": "Сент-Китс и Невис",
-      "IS": "Исландия",
-      "LV": "Латвия",
-      "NU": "Niue",
-      "GB": "Великобритания",
-      "HU": "Венгрия",
-      "ID": "Индонезия",
-      "CM": "Камерун",
-      "MG": "Мадагаскар",
-      "PL": "Польша",
-      "TT": "Тринидад и Тобаго",
-      "VU": "Vanuatu",
-      "HT": "Гаити",
-      "MC": "Монако",
-      "KH": "Камбоджа",
-      "GW": "Гвинея-Бисау",
-      "MA": "Марокко",
-      "VN": "Вьетнам",
-      "PS": "Палестина",
-      "ML": "мали",
-      "PT": "Португалия",
-      "KI": "Кирибати",
-      "TM": "Туркменистан",
-      "TV": "Тувалу",
-      "PW": "Palau",
-      "LY": "Ливия",
-      "MO": "Макао",
-      "LA": "Лаос",
-      "SS": "южный Судан",
-      "US": "Соединенные Штаты",
-      "RU": "Россия",
-      "KG": "Киргизия",
-      "MH": "Маршалловы острова",
-      "MW": "Малави",
-      "NO": "Норвегия",
-      "SB": "Соломоновы острова",
-      "SI": "Словения",
-      "TR": "Турция",
-      "UA": "Украина",
-      "SG": "Сингапур",
-      "IM": "Остров Мэн",
-      "CX": "Остров Рождества",
-      "SE": "Швеция",
-      "KW": "Кувейт",
-      "MR": "Мавритания",
-      "LT": "Литва",
-      "PK": "Пакистан",
-      "YE": "Йемен",
-      "SA": "Саудовская Аравия",
-      "YT": "Майотта",
-      "MM": "Мьянма",
-      "TZ": "Танзания",
-      "TD": "Чад",
-      "LU": "Люксембург",
-      "SK": "Словакия",
-      "NG": "Нигерия",
-      "KZ": "Казахстан",
-      "RW": "Руанда",
-      "NR": "Науру",
-      "KP": "Северная Корея",
-      "SY": "Сирия",
-      "XK": "Косово",
-      "SD": "Судан",
-      "NE": "Нигер",
-      "TN": "Тунис",
-      "RE": "встреча",
-      "TW": "Тайвань",
-      "SM": "Сан-Марино",
-      "ZA": "Южная Африка",
-      "VG": "Британские Виргинские острова",
-      "NZ": "Новая Зеландия",
-      "SR": "Суринам",
-      "TK": "Токелау",
-      "UZ": "Узбекистан",
-      "TH": "Таиланд",
-      "MY": "Малайзия",
-      "TO": "Тонга",
-      "PH": "Филиппины",
-      "LI": "Лихтенштейн",
-      "ME": "Черногория",
-      "SC": "Сейшельские острова",
-      "SZ": "Свазиленд",
-      "ZM": "Замбия",
-      "MT": "Мальта",
-      "CD": "ДР Конго",
-      "ZW": "Зимбабве",
-      "VA": "Ватикан",
-      "SO": "Сомали",
-      "BV": "Остров Буве",
-      "UY": "Уругвай",
-      "TG": "Идти",
-      "SL": "Сьерра-Леоне",
-      "MN": "Монголия",
-      "MZ": "Мозамбик",
-      "MS": "Монсеррат",
-      "RS": "Сербия",
-      "VC": "Святой Винсент и Гренадины",
-      "CW": "Кюрасао",
-      "PR": "Пуэрто-Рико",
-      "TJ": "Таджикистан",
-      "OM": "Оман",
-      "PN": "Острова Питкэрн",
-      "GS": "Южная Георгия",
-      "LK": "Шри-Ланка",
-      "BL": "Saint Barthelemy",
-      "WS": "Самоа",
-      "MF": "Сен-Мартен",
-      "UM": "Малые отдаленные острова Соединенных Штатов",
-      "VI": "Виргинские острова Соединенных Штатов",
-      "WF": "Уоллис и Футуна",
-      "HM": "Острова Херд и Макдональд",
-      "TC": "Острова Теркс и Кайкос",
-      "SJ": "Свальбард и Ян-Майен",
-      "CC": "Кокосовые (Килинг) острова",
-      "NF": "Остров Норфолк",
-      "SV": "Сальвадор",
-      "SX": "Синт-Маартен",
-      "ST": "Сан-Томе и Принсипи",
-      "TL": "Восточный Тимор",
-      "LC": "Сент-Люсия",
-      "PM": "Сен-Пьер и Микелон",
-      "GT": "Гватемала"
-    }
-  },
-  {
-    "ru": "Номер документа",
-    "en": "Document Number",
-    "name": "documentNumber",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Забудь меня",
-    "en": "Forget Me",
-    "name": "tradle.ForgetMe",
-    "type": "model"
-  },
-  {
-    "ru": "NextFormRequest",
-    "en": "NextFormRequest",
-    "name": "tradle.NextFormRequest",
-    "type": "model"
-  },
-  {
-    "ru": "Пункт",
-    "en": "Item",
-    "name": "tradle.Item",
-    "type": "model"
-  },
-  {
-    "ru": "Запрос на сопряжение",
-    "en": "Pairing Request",
-    "name": "tradle.PairingRequest",
-    "type": "model"
-  },
-  {
-    "ru": "Дата Запечатанная",
-    "en": "Date Sealed",
-    "name": "dateSealed",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Отказ от применения",
-    "en": "Application Denial",
-    "name": "tradle.ApplicationDenial",
-    "type": "model"
-  },
-  {
-    "ru": "Извлеченные поля",
-    "en": "Extracted fields",
-    "name": "scanJson",
-    "type": "propertyName",
-    "model": "tradle.CreditCard"
-  },
-  {
-    "ru": "Полный",
-    "en": "Full",
-    "name": "full",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Проверка электронной почты",
-    "en": "Email Check",
-    "name": "tradle.EmailCheck",
-    "type": "model"
-  },
-  {
-    "ru": "Подача заявки",
-    "en": "Application Submission",
-    "name": "tradle.ApplicationSubmission",
-    "type": "model"
-  },
-  {
-    "ru": "Ошибка доставки",
-    "en": "Delivery Error",
-    "name": "tradle.DeliveryError",
-    "type": "model"
-  },
-  {
-    "ru": "Пакеты моделей",
-    "en": "Models Pack",
-    "name": "tradle.ModelsPack",
-    "type": "model"
-  },
-  {
-    "ru": "Архивировано",
-    "en": "Archived",
-    "name": "archived",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Имя владельца карты",
-    "en": "Cardholder Name",
-    "name": "cardholderName",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Тип удостоверения личности",
-    "en": "ID Card Type",
-    "name": "tradle.IDCardType",
-    "type": "model",
-    "enum": {
-      "passport": "Действительный паспорт",
-      "id": "Идентификационная карта",
-      "license": "Действительная водительская лицензия"
-    }
-  },
-  {
-    "ru": "организация",
-    "en": "Organization",
-    "name": "tradle.Organization",
-    "type": "model"
-  },
-  {
-    "ru": "Предмет получен",
-    "en": "Item Received",
-    "name": "tradle.Ack",
-    "type": "model"
-  },
-  {
-    "ru": "Сотрудник",
-    "en": "Is Employee",
-    "name": "isEmployee",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Назначить менеджера связей",
-    "en": "Assign Relationship Manager",
-    "name": "tradle.AssignRelationshipManager",
-    "type": "model"
-  },
-  {
-    "ru": "Мои личности",
-    "en": "My Identities",
-    "name": "tradle.MyIdentities",
-    "type": "model"
-  },
-  {
-    "ru": "Бета-тестер Контактная информация",
-    "en": "Beta Tester Contact Info",
-    "name": "tradle.BetaTesterContactInfo",
-    "type": "model"
-  },
-  {
-    "ru": "файл",
-    "en": "File",
-    "name": "tradle.File",
-    "type": "model"
-  },
-  {
-    "ru": "вопрос",
-    "en": "Issue",
-    "name": "tradle.IssueProduct",
-    "type": "model"
-  },
-  {
-    "ru": "Сведения об ID-карте",
-    "en": "ID Card Details",
-    "name": "idCardDocument_group",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
-  },
-  {
-    "ru": "приглашение",
-    "en": "Invite",
-    "name": "tradle.Invite",
-    "type": "model"
-  },
-  {
-    "ru": "Мой выпускной продукт",
-    "en": "My Issue Product",
-    "name": "tradle.MyIssueProduct",
-    "type": "model"
-  },
-  {
-    "ru": "объект",
-    "en": "Object",
-    "name": "tradle.Object",
-    "type": "model"
-  },
-  {
-    "ru": "сертификат",
-    "en": "Certificate",
-    "name": "certificate",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "вопрос",
-    "en": "Issue",
-    "name": "tradle.Issue",
-    "type": "model"
-  },
-  {
-    "ru": "Идентификатор публикации",
-    "en": "Identity Publish Request",
-    "name": "tradle.IdentityPublishRequest",
-    "type": "model"
-  },
-  {
-    "ru": "Bot",
-    "en": "Bot",
-    "name": "bot",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Сканер документов",
-    "en": "Document Scanner",
-    "name": "tradle.DocumentScanner",
-    "type": "model",
-    "enum": {
-      "blinkId": "Идентификатор вспышки"
-    }
-  },
-  {
-    "ru": "тождественность",
-    "en": "Identity",
-    "name": "tradle.Identity",
-    "type": "model"
-  },
-  {
-    "ru": "Документ",
-    "en": "Document",
-    "name": "document_group",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
-  },
-  {
-    "ru": "Страна",
-    "en": "Country",
-    "name": "tradle.DeliveryErrorStatus",
-    "type": "model",
-    "enum": {
-      "retrying": "Повторная",
-      "stuck": "Прикрепленный"
-    }
-  },
-  {
-    "ru": "проверки",
-    "en": "Checks",
-    "name": "checks",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Сделано Btn Text",
-    "en": "Done Btn Text",
-    "name": "doneBtnText",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "аспект",
-    "en": "Aspect",
-    "name": "tradle.Aspect",
-    "type": "model"
-  },
-  {
-    "ru": "Пакет данных",
-    "en": "Data Bundle",
-    "name": "tradle.DataBundle",
-    "type": "model"
-  },
-  {
-    "ru": "CVV",
-    "en": "Cvv",
-    "name": "cvv",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Мой рабочий пропуск",
-    "en": "My Employee Pass",
-    "name": "tradle.MyEmployeeOnboarding",
-    "type": "model"
-  },
-  {
-    "ru": "Адрес",
-    "en": "Address",
-    "name": "address_group",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
-  },
-  {
-    "ru": "Эл. адрес",
-    "en": "Email",
-    "name": "email",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "ru": "Тип карты",
     "en": "Card Type",
     "name": "cardType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Забыл вас",
+    "en": "Forgot You",
+    "name": "tradle.ForgotYou",
+    "type": "model"
+  },
+  {
+    "ru": "Моя реабилитация",
+    "en": "My Remediation",
+    "name": "tradle.MyRemediation",
+    "type": "model"
+  },
+  {
+    "ru": "Проверьте",
+    "en": "Check",
+    "name": "tradle.Check",
+    "type": "model"
+  },
+  {
+    "ru": "Список",
+    "en": "List",
+    "name": "list",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1271,22 +1185,39 @@
     "model": "Default"
   },
   {
-    "ru": "Второе имя",
-    "en": "Middle Name",
-    "name": "middleName",
+    "ru": "Тип удостоверения личности",
+    "en": "ID Card Type",
+    "name": "tradle.IDCardType",
+    "type": "model",
+    "enum": {
+      "license": "Действительная водительская лицензия",
+      "passport": "Действительный паспорт",
+      "id": "Идентификационная карта"
+    }
+  },
+  {
+    "ru": "закладка",
+    "en": "Bookmark",
+    "name": "tradle.Bookmark",
+    "type": "model"
+  },
+  {
+    "ru": "Merkle Leaf",
+    "en": "Merkle Leaf",
+    "name": "tradle.MerkleLeaf",
+    "type": "model"
+  },
+  {
+    "ru": "образование",
+    "en": "Education",
+    "name": "education",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Merkle Node",
-    "en": "Merkle Node",
-    "name": "tradle.MerkleNode",
-    "type": "model"
-  },
-  {
-    "ru": "тождественность",
-    "en": "Identity",
-    "name": "identity",
+    "ru": "поставщик",
+    "en": "Provider",
+    "name": "provider",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1298,180 +1229,129 @@
     "model": "Default"
   },
   {
-    "ru": "Подтверждения",
-    "en": "Confirmations",
-    "name": "confirmations",
+    "ru": "Цвет списка",
+    "en": "List Color",
+    "name": "listColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Сопряжение данных",
-    "en": "Pairing Data",
-    "name": "tradle.PairingData",
+    "ru": "",
+    "en": "A",
+    "name": "a",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Идентификатор продукта",
+    "en": "My Product Id",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Деньги",
+    "en": "Money",
+    "name": "tradle.Money",
     "type": "model"
   },
   {
-    "ru": "заявка",
-    "en": "Application",
-    "name": "application",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Следующий текст Btn",
-    "en": "Next Btn Text",
-    "name": "nextBtnText",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Срок годности",
-    "en": "Expiry Year",
-    "name": "expiryYear",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Индекс",
-    "en": "Index",
-    "name": "index",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Как финансировать",
-    "en": "How To Fund",
-    "name": "howToFund",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Сотрудник по бортовому",
-    "en": "Employee Onboarding",
-    "name": "tradle.EmployeeOnboarding",
+    "ru": "Мои личности",
+    "en": "My Identities",
+    "name": "tradle.MyIdentities",
     "type": "model"
-  },
-  {
-    "ru": "Национальность",
-    "en": "Nationality",
-    "name": "nationality",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Сообщение",
-    "en": "Message",
-    "name": "message",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Неактивный",
-    "en": "Inactive",
-    "name": "inactive",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Имя сети",
-    "en": "Network Name",
-    "name": "networkName",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Проверьте",
-    "en": "Check",
-    "name": "check",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "имя",
-    "en": "Name",
-    "name": "tradle.Name",
-    "type": "model"
-  },
-  {
-    "ru": "форматированная",
-    "en": "Formatted",
-    "name": "formatted",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Имя заявителя",
-    "en": "Applicant Name",
-    "name": "applicantName",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Заголовок",
-    "en": "Headline",
-    "name": "headline",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "организация",
-    "en": "Organization",
-    "name": "organization",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "I из N",
-    "en": "I Of N",
-    "name": "iOfN",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Ссылка",
-    "en": "Link",
-    "name": "link",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Мой продукт",
-    "en": "My Product",
-    "name": "tradle.MyProduct",
-    "type": "model"
-  },
-  {
-    "ru": "Ключ базовой бабы",
-    "en": "Base Pub Key",
-    "name": "basePubKey",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "уровень",
-    "en": "Level",
-    "name": "level",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Описание",
-    "en": "Description",
-    "name": "message",
-    "type": "propertyName",
-    "model": "tradle.SkillVerification"
-  },
-  {
-    "ru": "Изменить запросы",
-    "en": "Edit Requests",
-    "name": "editRequests",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "ru": "Из",
     "en": "From",
     "name": "from",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Код выпуска",
+    "en": "Code Of Issuing",
+    "name": "codeOfIssuing",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Форма предварительной заполнения",
+    "en": "Form Prefill",
+    "name": "tradle.FormPrefill",
+    "type": "model"
+  },
+  {
+    "ru": "Код безопасности",
+    "en": "Security Code",
+    "name": "tradle.SecurityCode",
+    "type": "model"
+  },
+  {
+    "ru": "Список Bg",
+    "en": "List Bg",
+    "name": "listBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Цвет фона кнопки",
+    "en": "Share Button Background Color",
+    "name": "shareButtonBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Общий ресурс",
+    "en": "Shared Resource",
+    "name": "tradle.SharedResource",
+    "type": "model"
+  },
+  {
+    "ru": "Цвет границы контекста",
+    "en": "Context Border Color",
+    "name": "contextBorderColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Код безопасности",
+    "en": "Security Code",
+    "name": "securityCode",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Ресурс",
+    "en": "Resource",
+    "name": "resource",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "язык",
+    "en": "Language",
+    "name": "language",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Прогресс",
+    "en": "Progress",
+    "name": "progress",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Merkle Node",
+    "en": "Merkle Node",
+    "name": "tradle.MerkleNode",
+    "type": "model"
+  },
+  {
+    "ru": "Цвет текста контекста",
+    "en": "Context Text Color",
+    "name": "contextTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1483,44 +1363,42 @@
     "model": "Default"
   },
   {
-    "ru": "Время последнего сообщения",
-    "en": "Last Message Time",
-    "name": "lastMessageTime",
+    "ru": "Цвет фона контекста",
+    "en": "Context Background Color",
+    "name": "contextBackgroundColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "заявитель",
-    "en": "Applicant",
-    "name": "applicant",
+    "ru": "Ошибка формы",
+    "en": "Form Error",
+    "name": "tradle.FormError",
+    "type": "model"
+  },
+  {
+    "ru": "подтверждение",
+    "en": "Confirmation",
+    "name": "tradle.Confirmation",
+    "type": "model"
+  },
+  {
+    "ru": "Текущий цвет фона контекста",
+    "en": "Current Context Background Color",
+    "name": "currentContextBackgroundColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "образование",
-    "en": "Education",
-    "name": "education",
+    "ru": "Имя сети",
+    "en": "Network Name",
+    "name": "networkName",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "страницы",
-    "en": "Pages",
-    "name": "pages",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "кривая",
-    "en": "Curve",
-    "name": "curve",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "тот, кто выбирает",
-    "en": "Chooser",
-    "name": "chooser",
+    "ru": "Эл. адрес",
+    "en": "Email",
+    "name": "email",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1539,163 +1417,87 @@
     "model": "Default"
   },
   {
-    "ru": "Предлагает",
-    "en": "Invites",
-    "name": "invites",
+    "ru": "селфи",
+    "en": "Selfie",
+    "name": "selfie",
+    "type": "propertyName",
+    "model": "tradle.Selfie"
+  },
+  {
+    "ru": "Введение",
+    "en": "Introduction",
+    "name": "tradle.Introduction",
+    "type": "model"
+  },
+  {
+    "ru": "Цвет текста текущего контекста",
+    "en": "Current Context Text Color",
+    "name": "currentContextTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Контейнер",
-    "en": "Container",
-    "name": "container",
+    "ru": "Личная информация",
+    "en": "Personal Info",
+    "name": "tradle.PersonalInfo",
+    "type": "model"
+  },
+  {
+    "ru": "Подпись на экране",
+    "en": "Signature on screen",
+    "name": "tradle.HandSignature",
+    "type": "model"
+  },
+  {
+    "ru": "Тип отношения",
+    "en": "Relationship Type",
+    "name": "tradle.RelationshipType",
+    "type": "model",
+    "enum": {
+      "spouse": "супруга",
+      "mother": "Мама",
+      "daughter": "Дочь",
+      "son": "его",
+      "domesticpartner": "Сожитель",
+      "guardian": "блюститель",
+      "sister": "Сестра",
+      "brother": "Брат",
+      "other": "Другие",
+      "father": "Отец"
+    }
+  },
+  {
+    "ru": "Сообщение",
+    "en": "Message",
+    "name": "message",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Тип карты Id",
-    "en": "Id Card Type",
-    "name": "idCardType",
+    "ru": "тождественность",
+    "en": "Identity",
+    "name": "identity",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Подтверждение",
-    "en": "Confirmation For",
-    "name": "confirmationFor",
+    "ru": "Предметы",
+    "en": "Items",
+    "name": "items",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "имя",
-    "en": "Name",
-    "name": "name",
+    "ru": "кривая",
+    "en": "Curve",
+    "name": "curve",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "закладка",
-    "en": "Bookmark",
-    "name": "bookmark",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Контрагент",
-    "en": "Counterparty",
-    "name": "counterparty",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Занятость",
-    "en": "Employment",
-    "name": "employment_group",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "ru": "метод",
-    "en": "Method",
-    "name": "method",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Семейное положение",
-    "en": "Marital Status",
-    "name": "maritalStatus",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "В ответ на",
-    "en": "In Reply To",
-    "name": "inReplyTo",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет шрифта",
-    "en": "Font Color",
-    "name": "fontColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Адрес для Prev",
-    "en": "Address For Prev",
-    "name": "addressForPrev",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Последнее сообщение",
-    "en": "Last Message",
-    "name": "lastMessage",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "отпечаток пальца",
-    "en": "Fingerprint",
-    "name": "fingerprint",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Домашний адрес",
-    "en": "Home Address",
-    "name": "address_group",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "ru": "Адрес электронной почты",
-    "en": "Email Address",
-    "name": "emailAddress",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Дата истечения срока",
-    "en": "Date Of Expiry",
-    "name": "dateOfExpiry",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Извлеченные поля",
-    "en": "Extracted fields",
-    "name": "scanJson",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
-  },
-  {
-    "ru": "Пункт",
-    "en": "Item",
-    "name": "item",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Домен",
-    "en": "Domain",
-    "name": "domain",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Текущая идентичность",
-    "en": "Current Identity",
-    "name": "currentIdentity",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Предварительная подготовка формы",
-    "en": "Form Prefills",
-    "name": "formPrefills",
+    "ru": "Поделиться цветом фона контекста",
+    "en": "Share Context Background Color",
+    "name": "shareContextBackgroundColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1707,163 +1509,49 @@
     "model": "Default"
   },
   {
-    "ru": "вопросы",
-    "en": "Issues",
-    "name": "issues",
+    "ru": "Общий контекст",
+    "en": "Share Context",
+    "name": "tradle.ShareContext",
+    "type": "model"
+  },
+  {
+    "ru": "Выбор недвижимости",
+    "en": "Property Chooser",
+    "name": "tradle.PropertyChooser",
+    "type": "model"
+  },
+  {
+    "ru": "отпечаток пальца",
+    "en": "Fingerprint",
+    "name": "fingerprint",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Наемный рабочий",
-    "en": "Employee",
-    "name": "employee",
+    "ru": "Запрос",
+    "en": "Request For",
+    "name": "requestFor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Адрес",
-    "en": "Address",
-    "name": "address_group",
-    "type": "propertyName",
-    "model": "tradle.Residence"
-  },
-  {
-    "ru": "Код",
-    "en": "Code",
-    "name": "code",
+    "ru": "После",
+    "en": "After",
+    "name": "after",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Власть",
-    "en": "Authority",
-    "name": "authority",
+    "ru": "Цвет текста контекстного текста",
+    "en": "Share Context Text Color",
+    "name": "shareContextTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Оригинальный получатель",
-    "en": "Original Recipient",
-    "name": "originalRecipient",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "язык",
-    "en": "Language",
-    "name": "language",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Адрес",
-    "en": "Address",
-    "name": "address",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Номер карты",
-    "en": "Card Number",
-    "name": "cardNumber",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Логотип нуждается в тексте",
-    "en": "Logo Needs Text",
-    "name": "logoNeedsText",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Фоновый цвет",
-    "en": "Background Color",
-    "name": "backgroundColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет левого текста",
-    "en": "Left Text Color",
-    "name": "leftTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Текст кнопки",
-    "en": "Button Text",
-    "name": "buttonText",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "контакты",
-    "en": "Contacts",
-    "name": "contacts",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "подтвердил",
-    "en": "Confirmed",
-    "name": "confirmed",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "связи",
-    "en": "Links",
-    "name": "links",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Страна-эмитент",
-    "en": "Issuing Country",
-    "name": "issuingCountry",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "методы",
-    "en": "Methods",
-    "name": "methods",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Дата выдачи",
-    "en": "Date Of Issue",
-    "name": "dateOfIssue",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Адрес",
-    "en": "Address",
-    "name": "formattedAddress",
-    "type": "propertyName",
-    "model": "tradle.Residence"
-  },
-  {
-    "ru": "Мои телефоны",
-    "en": "My Phones",
-    "name": "myPhones",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Отмена",
-    "en": "Cancel",
-    "name": "cancel",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "тип документа",
-    "en": "Document Type",
-    "name": "documentType",
+    "ru": "организация",
+    "en": "Organization",
+    "name": "organization",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1875,40 +1563,6 @@
     "model": "tradle.SalaryVerification"
   },
   {
-    "ru": "API",
-    "en": "API",
-    "name": "tradle.API",
-    "type": "model"
-  },
-  {
-    "ru": "Присутствие документа",
-    "en": "Document Presence",
-    "name": "documentPresence",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Неактивен",
-    "en": "Is Inactive",
-    "name": "isInactive",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Второе имя)",
-    "en": "Given name(s)",
-    "name": "givenName",
-    "type": "propertyName",
-    "model": "tradle.Name"
-  },
-  {
-    "ru": "Дата изменена",
-    "en": "Date Modified",
-    "name": "dateModified",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "ru": "объект",
     "en": "Object",
     "name": "object",
@@ -1916,149 +1570,32 @@
     "model": "Default"
   },
   {
-    "ru": "объектив",
-    "en": "Lens",
-    "name": "lens",
+    "ru": "настройки",
+    "en": "Settings",
+    "name": "tradle.Settings",
+    "type": "model"
+  },
+  {
+    "ru": "секс",
+    "en": "Sex",
+    "name": "tradle.Sex",
+    "type": "model",
+    "enum": {
+      "Female": "женский",
+      "Male": "мужчина"
+    }
+  },
+  {
+    "ru": "Пункт",
+    "en": "Item",
+    "name": "item",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Месяц истечения срока действия",
-    "en": "Expiry Month",
-    "name": "expiryMonth",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Страна рождения",
-    "en": "Country Of Birth",
-    "name": "countryOfBirth",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Высшая степень",
-    "en": "Highest Degree",
-    "name": "highestDegree",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Имя",
-    "en": "First Name",
-    "name": "firstName",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Адрес",
-    "en": "Address",
-    "name": "formattedAddress",
-    "type": "propertyName",
-    "model": "tradle.UtilityBillVerification"
-  },
-  {
-    "ru": "Предметы",
-    "en": "Items",
-    "name": "items",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Дата рождения",
-    "en": "Date Of Birth",
-    "name": "dateOfBirth",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Дата публикации",
-    "en": "Date Published",
-    "name": "datePublished",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Сканер документов",
-    "en": "Document Scanner",
-    "name": "documentScanner",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "аспект",
-    "en": "Aspect",
-    "name": "aspect",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Список",
-    "en": "List",
-    "name": "list",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "контекст",
-    "en": "Context",
-    "name": "context",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Роль сущности",
-    "en": "Entity Role",
-    "name": "entityRole",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Адрес",
-    "en": "Address",
-    "name": "formattedAddress",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "ru": "Цвет точки",
-    "en": "Dot Color",
-    "name": "dotColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "",
-    "en": "A",
-    "name": "a",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Исходный отправитель",
-    "en": "Original Sender",
-    "name": "originalSender",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Дата выставления счета",
-    "en": "Bill Date",
-    "name": "billDate",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Узел Blockchain",
-    "en": "Blockchain Url",
-    "name": "blockchainUrl",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "валюта",
-    "en": "Currency",
-    "name": "currency",
+    "ru": "Контейнер",
+    "en": "Container",
+    "name": "container",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2070,6 +1607,47 @@
     "model": "Default"
   },
   {
+    "ru": "Фото",
+    "en": "Photo",
+    "name": "photo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Pubkeys",
+    "en": "Pubkeys",
+    "name": "pubkeys",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Пространство имен",
+    "en": "Namespace",
+    "name": "namespace",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Второе имя)",
+    "en": "Given name(s)",
+    "name": "givenName",
+    "type": "propertyName",
+    "model": "tradle.Name"
+  },
+  {
+    "ru": "Заграничный пасспорт",
+    "en": "Passport",
+    "name": "tradle.Passport",
+    "type": "model"
+  },
+  {
+    "ru": "Страна",
+    "en": "Country",
+    "name": "country",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "ru": "Иск заявки",
     "en": "Claim Id",
     "name": "claimId",
@@ -2077,93 +1655,302 @@
     "model": "Default"
   },
   {
-    "ru": "Заголовок Хэша",
-    "en": "Header Hash",
-    "name": "headerHash",
+    "ru": "Национальность",
+    "en": "Nationality",
+    "name": "nationality",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "сеть",
-    "en": "Network",
-    "name": "network",
+    "ru": "методы",
+    "en": "Methods",
+    "name": "methods",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Для ресурсов",
-    "en": "For Resource",
-    "name": "forResource",
+    "ru": "Менеджеры отношений",
+    "en": "Relationship Managers",
+    "name": "relationshipManagers",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Данные",
-    "en": "Data",
-    "name": "data",
+    "ru": "Получатель",
+    "en": "Recipient",
+    "name": "recipient",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Цвет активной точки",
-    "en": "Active Dot Color",
-    "name": "activeDotColor",
+    "ru": "Имя заявителя",
+    "en": "Applicant Name",
+    "name": "applicantName",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Дата начала",
-    "en": "Date Started",
-    "name": "dateStarted",
+    "ru": "Заголовок",
+    "en": "Headline",
+    "name": "headline",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Проект",
-    "en": "Draft",
-    "name": "draft",
+    "ru": "заявка",
+    "en": "Application",
+    "name": "application",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Пригласить ссылку",
-    "en": "Invite Link",
-    "name": "inviteLink",
+    "ru": "Паб",
+    "en": "Pub",
+    "name": "pub",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Имя пользователя Docker Hub",
-    "en": "Docker Hub username",
-    "name": "dockerhub",
-    "type": "propertyName",
-    "model": "tradle.BetaTesterContactInfo"
-  },
-  {
-    "ru": "Ссылка Prop",
-    "en": "Link Prop",
-    "name": "linkProp",
+    "ru": "Предыдущая",
+    "en": "Prev",
+    "name": "prev",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Все тождества",
-    "en": "All Identities",
-    "name": "allIdentities",
+    "ru": "Домен",
+    "en": "Domain",
+    "name": "domain",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "вопрос",
-    "en": "Issue",
-    "name": "issue",
+    "ru": "тип документа",
+    "en": "Document Type",
+    "name": "documentType",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "попытки",
-    "en": "Attempts",
-    "name": "attempts",
+    "ru": "Ошибка формы Bg",
+    "en": "Form Error Bg",
+    "name": "formErrorBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "страницы",
+    "en": "Pages",
+    "name": "pages",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Высшая степень",
+    "en": "Highest Degree",
+    "name": "highestDegree",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "аспект",
+    "en": "Aspect",
+    "name": "aspect",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Число",
+    "en": "Number",
+    "name": "number",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Цель",
+    "en": "Purpose",
+    "name": "purpose",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Сканер документов",
+    "en": "Document Scanner",
+    "name": "documentScanner",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Цвет ошибки формы",
+    "en": "Form Error Color",
+    "name": "formErrorColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Открытый ключ",
+    "en": "Public Key",
+    "name": "tradle.PubKey",
+    "type": "model"
+  },
+  {
+    "ru": "Ссылка",
+    "en": "Link",
+    "name": "link",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Как финансировать",
+    "en": "How To Fund",
+    "name": "howToFund",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Постоянная ссылка",
+    "en": "Permalink",
+    "name": "permalink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Идентификатор печати",
+    "en": "Seal Id",
+    "name": "sealId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "имя",
+    "en": "Name",
+    "name": "name",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Контрагент",
+    "en": "Counterparty",
+    "name": "counterparty",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Дата выставления счета",
+    "en": "Bill Date",
+    "name": "billDate",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "формы",
+    "en": "Forms",
+    "name": "forms",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Граница ошибок формы",
+    "en": "Form Error Border",
+    "name": "formErrorBorder",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Форматированное имя",
+    "en": "Formatted Name",
+    "name": "formattedName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Идентификатор исправления",
+    "en": "Remediation ID",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "tradle.MyRemediation"
+  },
+  {
+    "ru": "Цвет моего сообщения",
+    "en": "My Message Background Color",
+    "name": "myMessageBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Номер карты",
+    "en": "Card Number",
+    "name": "cardNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Информация о фотографии",
+    "en": "Photo info",
+    "name": "selfieJson",
+    "type": "propertyName",
+    "model": "tradle.Selfie"
+  },
+  {
+    "ru": "Роль сущности",
+    "en": "Entity Role",
+    "name": "entityRole",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Индекс",
+    "en": "Index",
+    "name": "index",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Тип карты Id",
+    "en": "Id Card Type",
+    "name": "idCardType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Цвет сообщения моего сообщения",
+    "en": "My Message Link Color",
+    "name": "myMessageLinkColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Цвет продукта Bg",
+    "en": "Product Bg Color",
+    "name": "productBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "модели",
+    "en": "Models",
+    "name": "models",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Подтверждение",
+    "en": "Confirmation For",
+    "name": "confirmationFor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "В",
+    "en": "B",
+    "name": "b",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Фото на обложке",
+    "en": "Cover Photo",
+    "name": "coverPhoto",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2175,16 +1962,37 @@
     "model": "tradle.Verification"
   },
   {
-    "ru": "Пространство имен",
-    "en": "Namespace",
-    "name": "namespace",
+    "ru": "Auth",
+    "en": "Auth",
+    "name": "auth",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Листья",
-    "en": "Leaves",
-    "name": "leaves",
+    "ru": "Логотип нуждается в тексте",
+    "en": "Logo Needs Text",
+    "name": "logoNeedsText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "отношения",
+    "en": "Relationship",
+    "name": "relationship",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Имя пользователя Docker Hub",
+    "en": "Docker Hub username",
+    "name": "dockerhub",
+    "type": "propertyName",
+    "model": "tradle.BetaTesterContactInfo"
+  },
+  {
+    "ru": "Детали результата",
+    "en": "Result Details",
+    "name": "resultDetails",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2196,100 +2004,58 @@
     "model": "Default"
   },
   {
-    "ru": "Описание",
-    "en": "Description",
-    "name": "description",
+    "ru": "Исправить цвет ошибки",
+    "en": "Fix Error Color",
+    "name": "fixErrorColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Код выпуска",
-    "en": "Code Of Issuing",
-    "name": "codeOfIssuing",
+    "ru": "Вперед",
+    "en": "Forward",
+    "name": "forward",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Доказательные документы",
-    "en": "Evidentiary Documents",
-    "name": "evidentiaryDocuments",
+    "ru": "Подтверждение Bg",
+    "en": "Confirmation Bg",
+    "name": "confirmationBg",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Дополнительная информация",
-    "en": "Additional Info",
-    "name": "additionalInfo",
+    "ru": "Номер паспорта",
+    "en": "Passport Number",
+    "name": "passportNumber",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Страна",
-    "en": "Country",
-    "name": "country",
+    "ru": "образование",
+    "en": "Education",
+    "name": "tradle.EducationNL",
+    "type": "model",
+    "enum": {
+      "highSchool": "Старшая школа",
+      "vocationalJ": "Профессиональная средняя школа (младшая)",
+      "elementary": "Начальная школа",
+      "college": "колледж",
+      "vocationalS": "Профессиональная средняя школа (старший)",
+      "university": "Университет"
+    }
+  },
+  {
+    "ru": "сессия",
+    "en": "Session",
+    "name": "session",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Стиль Img",
-    "en": "Img Style",
-    "name": "imgStyle",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Адрес",
-    "en": "Address",
-    "name": "formattedAddress",
-    "type": "propertyName",
-    "model": "tradle.Organization"
-  },
-  {
-    "ru": "Auth",
-    "en": "Auth",
-    "name": "auth",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Идентификатор продукта",
-    "en": "My Product Id",
-    "name": "myProductId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Дата истечения срока действия",
-    "en": "Date Expires",
-    "name": "dateExpires",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Документ",
-    "en": "Document",
-    "name": "document",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "уверенность",
-    "en": "Confidence",
-    "name": "confidence",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Идентификатор сотрудника",
-    "en": "Employee ID",
-    "name": "myProductId",
-    "type": "propertyName",
-    "model": "tradle.MyEmployeeOnboarding"
-  },
-  {
-    "ru": "Присутствие владельца",
-    "en": "Owner Presence",
-    "name": "ownerPresence",
+    "ru": "вопросы",
+    "en": "Issues",
+    "name": "issues",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2301,6 +2067,195 @@
     "model": "Default"
   },
   {
+    "ru": "Дата завершения",
+    "en": "Date Completed",
+    "name": "dateCompleted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Справка",
+    "en": "Reference",
+    "name": "reference",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "свидание",
+    "en": "Rendezvous",
+    "name": "rendezvous",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "закладка",
+    "en": "Bookmark",
+    "name": "bookmark",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "валюта",
+    "en": "Currency",
+    "name": "currency",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Описание",
+    "en": "Description",
+    "name": "message",
+    "type": "propertyName",
+    "model": "tradle.SkillVerification"
+  },
+  {
+    "ru": "Подпись для",
+    "en": "Signature For",
+    "name": "signatureFor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "URL-адрес сервера",
+    "en": "Server URL",
+    "name": "url",
+    "type": "propertyName",
+    "model": "tradle.Settings"
+  },
+  {
+    "ru": "Узел Blockchain",
+    "en": "Blockchain Url",
+    "name": "blockchainUrl",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Заполнить заранее",
+    "en": "Prefill",
+    "name": "prefill",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Цвет точки",
+    "en": "Dot Color",
+    "name": "dotColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Предпросмотр заголовка",
+    "en": "Prev Header Hash",
+    "name": "prevHeaderHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Текущая идентичность",
+    "en": "Current Identity",
+    "name": "currentIdentity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Код",
+    "en": "Code",
+    "name": "code",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Присутствие документа",
+    "en": "Document Presence",
+    "name": "documentPresence",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "документы",
+    "en": "Documents",
+    "name": "myDocuments",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "ru": "Цвет подтверждения",
+    "en": "Confirmation Color",
+    "name": "confirmationColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Мои данные",
+    "en": "My Data",
+    "name": "myForms",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "ru": "Фото",
+    "en": "Photos",
+    "name": "photos",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Высота",
+    "en": "Height",
+    "name": "height",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "гашиш",
+    "en": "Hash",
+    "name": "hash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Адрес электронной почты",
+    "en": "Email Address",
+    "name": "emailAddress",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "корень",
+    "en": "Root",
+    "name": "root",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Запрошенные свойства",
+    "en": "Requested Properties",
+    "name": "requestedProperties",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Имущество",
+    "en": "Property",
+    "name": "property",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Страна-эмитент",
+    "en": "Issuing Country",
+    "name": "issuingCountry",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "секс",
+    "en": "Sex",
+    "name": "sex",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "ru": "тело",
     "en": "Body",
     "name": "body",
@@ -2308,9 +2263,170 @@
     "model": "Default"
   },
   {
-    "ru": "форма",
-    "en": "Form",
-    "name": "form",
+    "ru": "контекст",
+    "en": "Context",
+    "name": "context",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Дата начала",
+    "en": "Date Started",
+    "name": "dateStarted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Почтовый индекс",
+    "en": "Postal Code",
+    "name": "postalCode",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Выдан",
+    "en": "Issued By",
+    "name": "issuedBy",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Мои телефоны",
+    "en": "My Phones",
+    "name": "myPhones",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Страна происшествия",
+    "en": "Country of Issue",
+    "name": "country",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "ru": "попытки",
+    "en": "Attempts",
+    "name": "attempts",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Ссылка Prop",
+    "en": "Link Prop",
+    "name": "linkProp",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "эмитент",
+    "en": "Issuer",
+    "name": "issuer",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Заголовок Хэша",
+    "en": "Header Hash",
+    "name": "headerHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Описание",
+    "en": "Description",
+    "name": "description",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Область",
+    "en": "Region",
+    "name": "region",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Имя пользователя Github",
+    "en": "Github username",
+    "name": "github",
+    "type": "propertyName",
+    "model": "tradle.BetaTesterContactInfo"
+  },
+  {
+    "ru": "Все тождества",
+    "en": "All Identities",
+    "name": "allIdentities",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Идентификатор сотрудника",
+    "en": "Employee ID",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "tradle.MyEmployeeOnboarding"
+  },
+  {
+    "ru": "Дата записи Отменено",
+    "en": "Date Write Canceled",
+    "name": "dateWriteCanceled",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Доказательные документы",
+    "en": "Evidentiary Documents",
+    "name": "evidentiaryDocuments",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Дата проверки",
+    "en": "Date Verified",
+    "name": "dateVerified",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Данные",
+    "en": "Data",
+    "name": "data",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Исходный отправитель",
+    "en": "Original Sender",
+    "name": "originalSender",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Продукты",
+    "en": "Products",
+    "name": "myProducts",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "ru": "доказательство",
+    "en": "Proof",
+    "name": "proof",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Дата Запечатанная",
+    "en": "Date Sealed",
+    "name": "dateSealed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Номер документа",
+    "en": "Document Number",
+    "name": "documentNumber",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2329,128 +2445,9 @@
     "model": "Default"
   },
   {
-    "ru": "Вперед",
-    "en": "Forward",
-    "name": "forward",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Страна происшествия",
-    "en": "Country of Issue",
-    "name": "country",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
-  },
-  {
-    "ru": "Дата проверки",
-    "en": "Date Verified",
-    "name": "dateVerified",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Форматированное имя",
-    "en": "Formatted Name",
-    "name": "formattedName",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "формы",
-    "en": "Forms",
-    "name": "forms",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "блок цепи",
-    "en": "Blockchain",
-    "name": "blockchain",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Mime Type",
-    "en": "Mime Type",
-    "name": "mimeType",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Выдан",
-    "en": "Issued By",
-    "name": "issuedBy",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет ссылки",
-    "en": "Link Color",
-    "name": "linkColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Число",
-    "en": "Number",
-    "name": "number",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "После",
-    "en": "After",
-    "name": "after",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Высота",
-    "en": "Height",
-    "name": "height",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "модели",
-    "en": "Models",
-    "name": "models",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "В",
-    "en": "B",
-    "name": "b",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Имя пользователя Github",
-    "en": "Github username",
-    "name": "github",
-    "type": "propertyName",
-    "model": "tradle.BetaTesterContactInfo"
-  },
-  {
-    "ru": "ошибки",
-    "en": "Errors",
-    "name": "errors",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "аспекты",
-    "en": "Aspects",
-    "name": "aspects",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Дата завершения",
-    "en": "Date Completed",
-    "name": "dateCompleted",
+    "ru": "Присутствие владельца",
+    "en": "Owner Presence",
+    "name": "ownerPresence",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2462,93 +2459,25 @@
     "model": "Default"
   },
   {
-    "ru": "Один из",
-    "en": "One Of",
-    "name": "oneOf",
+    "ru": "Номер обновленной карты",
+    "en": "Redacted Card Number",
+    "name": "redactedCardNumber",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Веб-сайт",
-    "en": "Url",
-    "name": "url",
+    "ru": "Проект",
+    "en": "Draft",
+    "name": "draft",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Номер паспорта",
-    "en": "Passport Number",
-    "name": "passportNumber",
+    "ru": "Цвет ссылки",
+    "en": "Link Color",
+    "name": "linkColor",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "ru": "Заграничный пасспорт",
-    "en": "Passport",
-    "name": "tradle.Passport",
-    "type": "model"
-  },
-  {
-    "ru": "Ресурс",
-    "en": "Resource",
-    "name": "resource",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Информация о фотографии",
-    "en": "Photo info",
-    "name": "selfieJson",
-    "type": "propertyName",
-    "model": "tradle.Selfie"
-  },
-  {
-    "ru": "Телефон",
-    "en": "Phone",
-    "name": "tradle.Phone",
-    "type": "model"
-  },
-  {
-    "ru": "идентификатор фотографии",
-    "en": "Photo ID",
-    "name": "tradle.PhotoID",
-    "type": "model"
-  },
-  {
-    "ru": "Проверка паспортов",
-    "en": "Passport Verification",
-    "name": "tradle.PassportVerification",
-    "type": "model"
-  },
-  {
-    "ru": "Типы телефонов",
-    "en": "Phone Types",
-    "name": "tradle.PhoneTypes",
-    "type": "model",
-    "enum": {
-      "mobile": "мобильный",
-      "home": "Главная",
-      "work": "Работа"
-    }
-  },
-  {
-    "ru": "Фото",
-    "en": "Photo",
-    "name": "tradle.Photo",
-    "type": "model"
-  },
-  {
-    "ru": "Личная информация",
-    "en": "Personal Info",
-    "name": "tradle.PersonalInfo",
-    "type": "model"
-  },
-  {
-    "ru": "личный",
-    "en": "Personal",
-    "name": "personal_group",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
   },
   {
     "ru": "Личная информация",
@@ -2558,122 +2487,100 @@
     "model": "tradle.PersonalInfo"
   },
   {
-    "ru": "Постоянная ссылка",
-    "en": "Permalink",
-    "name": "permalink",
+    "ru": "Цвет активной точки",
+    "en": "Active Dot Color",
+    "name": "activeDotColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "телефоны",
-    "en": "Phones",
-    "name": "phones",
+    "ru": "Mime Type",
+    "en": "Mime Type",
+    "name": "mimeType",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Тип телефона",
-    "en": "Phone Type",
-    "name": "phoneType",
+    "ru": "аспекты",
+    "en": "Aspects",
+    "name": "aspects",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Фото",
-    "en": "Photo",
-    "name": "photo",
+    "ru": "вопрос",
+    "en": "Issue",
+    "name": "issue",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Область",
-    "en": "Region",
-    "name": "region",
+    "ru": "Для ресурсов",
+    "en": "For Resource",
+    "name": "forResource",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Необработанные данные",
-    "en": "Raw data",
-    "name": "rawData",
-    "type": "propertyName",
-    "model": "tradle.APIBasedVerificationMethod"
-  },
-  {
-    "ru": "Запрос продукта",
-    "en": "Product Request",
-    "name": "tradle.ProductRequest",
-    "type": "model"
-  },
-  {
-    "ru": "Продукт",
-    "en": "Product",
-    "name": "product",
+    "ru": "Подпись",
+    "en": "Signature",
+    "name": "signature",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Применение продукта",
-    "en": "Product Application",
-    "name": "tradle.ProductApplication",
-    "type": "model"
-  },
-  {
-    "ru": "Предпросмотр заголовка",
-    "en": "Prev Header Hash",
-    "name": "prevHeaderHash",
+    "ru": "Один из",
+    "en": "One Of",
+    "name": "oneOf",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "издатель",
-    "en": "Publisher",
-    "name": "publisher",
+    "ru": "форма",
+    "en": "Form",
+    "name": "form",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Почтовый индекс",
-    "en": "Postal Code",
-    "name": "postalCode",
+    "ru": "уверенность",
+    "en": "Confidence",
+    "name": "confidence",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Профиль",
-    "en": "Profile",
-    "name": "tradle.Profile",
-    "type": "model"
-  },
-  {
-    "ru": "Сообщение о ходе выполнения",
-    "en": "Progress Message",
-    "name": "tradle.ProgressMessage",
-    "type": "model"
-  },
-  {
-    "ru": "Цвет продукта Bg",
-    "en": "Product Bg Color",
-    "name": "productBgColor",
+    "ru": "Документ",
+    "en": "Document",
+    "name": "document",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Выбор недвижимости",
-    "en": "Property Chooser",
-    "name": "tradle.PropertyChooser",
-    "type": "model"
+    "ru": "Адрес",
+    "en": "Address",
+    "name": "formattedAddress",
+    "type": "propertyName",
+    "model": "tradle.UtilityBillVerification"
   },
   {
-    "ru": "Список продуктов",
-    "en": "Product List",
-    "name": "tradle.ProductList",
-    "type": "model"
+    "ru": "сканирование",
+    "en": "Scan",
+    "name": "scan",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "ru": "Pubkeys",
-    "en": "Pubkeys",
-    "name": "pubkeys",
+    "ru": "Тип проживания",
+    "en": "Residence Type",
+    "name": "residenceType",
+    "type": "propertyName",
+    "model": "tradle.Residence"
+  },
+  {
+    "ru": "ошибки",
+    "en": "Errors",
+    "name": "errors",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2685,24 +2592,11 @@
     "model": "Default"
   },
   {
-    "ru": "Открытый ключ",
-    "en": "Public Key",
-    "name": "tradle.PubKey",
-    "type": "model"
-  },
-  {
-    "ru": "Фото",
-    "en": "Photos",
-    "name": "photos",
+    "ru": "Пригласить ссылку",
+    "en": "Invite Link",
+    "name": "inviteLink",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "ru": "Продукты",
-    "en": "Products",
-    "name": "myProducts",
-    "type": "propertyName",
-    "model": "tradle.Profile"
   },
   {
     "ru": "Предварительная заполнение от заявки",
@@ -2712,51 +2606,100 @@
     "model": "Default"
   },
   {
-    "ru": "Имущество",
-    "en": "Property",
-    "name": "property",
+    "ru": "Дата изменена",
+    "en": "Date Modified",
+    "name": "dateModified",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Продукты",
-    "en": "Products",
-    "name": "products",
+    "ru": "Адрес",
+    "en": "Address",
+    "name": "formattedAddress",
+    "type": "propertyName",
+    "model": "tradle.Organization"
+  },
+  {
+    "ru": "издатель",
+    "en": "Publisher",
+    "name": "publisher",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Цель",
-    "en": "Purpose",
-    "name": "purpose",
+    "ru": "Показать кнопку «Готово»",
+    "en": "Show Done Button",
+    "name": "showDoneButton",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "поставщик",
-    "en": "Provider",
-    "name": "provider",
+    "ru": "Дата истечения срока действия",
+    "en": "Date Expires",
+    "name": "dateExpires",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "доказательство",
-    "en": "Proof",
-    "name": "proof",
+    "ru": "Стиль Img",
+    "en": "Img Style",
+    "name": "imgStyle",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Предыдущая",
-    "en": "Prev",
-    "name": "prev",
+    "ru": "Отмена",
+    "en": "Cancel",
+    "name": "cancel",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Заполнить заранее",
-    "en": "Prefill",
-    "name": "prefill",
+    "ru": "блок цепи",
+    "en": "Blockchain",
+    "name": "blockchain",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Адрес",
+    "en": "Address",
+    "name": "formattedAddress",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "ru": "Неактивен",
+    "en": "Is Inactive",
+    "name": "isInactive",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Запрос",
+    "en": "Request",
+    "name": "request",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Страна рождения",
+    "en": "Country Of Birth",
+    "name": "countryOfBirth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Листья",
+    "en": "Leaves",
+    "name": "leaves",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Дата выдачи",
+    "en": "Date Of Issue",
+    "name": "dateOfIssue",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2768,23 +2711,121 @@
     "model": "Default"
   },
   {
-    "ru": "Паб-ключ",
-    "en": "Pub Key",
-    "name": "pubKey",
+    "ru": "Оригинальный получатель",
+    "en": "Original Recipient",
+    "name": "originalRecipient",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Прогресс",
-    "en": "Progress",
-    "name": "progress",
+    "ru": "Месяц истечения срока действия",
+    "en": "Expiry Month",
+    "name": "expiryMonth",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Паб",
-    "en": "Pub",
-    "name": "pub",
+    "ru": "Цвет левого текста",
+    "en": "Left Text Color",
+    "name": "leftTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Дополнительная информация",
+    "en": "Additional Info",
+    "name": "additionalInfo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Власть",
+    "en": "Authority",
+    "name": "authority",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Адрес",
+    "en": "Address",
+    "name": "formattedAddress",
+    "type": "propertyName",
+    "model": "tradle.Residence"
+  },
+  {
+    "ru": "Необработанные данные",
+    "en": "Raw data",
+    "name": "rawData",
+    "type": "propertyName",
+    "model": "tradle.APIBasedVerificationMethod"
+  },
+  {
+    "ru": "Извлеченные поля",
+    "en": "Extracted fields",
+    "name": "scanJson",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "ru": "объектив",
+    "en": "Lens",
+    "name": "lens",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "контакты",
+    "en": "Contacts",
+    "name": "contacts",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Текст кнопки",
+    "en": "Button Text",
+    "name": "buttonText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Полный",
+    "en": "Full",
+    "name": "full",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Адрес",
+    "en": "Address",
+    "name": "address",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Дата публикации",
+    "en": "Date Published",
+    "name": "datePublished",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "подтвердил",
+    "en": "Confirmed",
+    "name": "confirmed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "сеть",
+    "en": "Network",
+    "name": "network",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Фоновый цвет",
+    "en": "Background Color",
+    "name": "backgroundColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2796,6 +2837,41 @@
     "model": "Default"
   },
   {
+    "ru": "Показать пропустить кнопку",
+    "en": "Show Skip Button",
+    "name": "showSkipButton",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Дата истечения срока",
+    "en": "Date Of Expiry",
+    "name": "dateOfExpiry",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Предварительная подготовка формы",
+    "en": "Form Prefills",
+    "name": "formPrefills",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Домашний адрес",
+    "en": "Home Address",
+    "name": "address_group",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "ru": "сам",
+    "en": "Sig",
+    "name": "sig",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "ru": "Цвет текста строки продукта",
     "en": "Product Row Text Color",
     "name": "productRowTextColor",
@@ -2803,9 +2879,331 @@
     "model": "Default"
   },
   {
-    "ru": "Время",
-    "en": "Time",
-    "name": "time",
+    "ru": "телефоны",
+    "en": "Phones",
+    "name": "phones",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "В ответ на",
+    "en": "In Reply To",
+    "name": "inReplyTo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Отсканировано",
+    "en": "Scanned By",
+    "name": "scannedBy",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Адрес",
+    "en": "Address",
+    "name": "address_group",
+    "type": "propertyName",
+    "model": "tradle.Residence"
+  },
+  {
+    "ru": "Сотрудник",
+    "en": "Is Employee",
+    "name": "isEmployee",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Цвет правого текста",
+    "en": "Right Text Color",
+    "name": "rightTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Срок годности",
+    "en": "Expiry Year",
+    "name": "expiryYear",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Последнее сообщение",
+    "en": "Last Message",
+    "name": "lastMessage",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Изменить запросы",
+    "en": "Edit Requests",
+    "name": "editRequests",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Адрес для Prev",
+    "en": "Address For Prev",
+    "name": "addressForPrev",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Паб-ключ",
+    "en": "Pub Key",
+    "name": "pubKey",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Предлагает",
+    "en": "Invites",
+    "name": "invites",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Цвет шрифта",
+    "en": "Font Color",
+    "name": "fontColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Занятость",
+    "en": "Employment",
+    "name": "employment_group",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "ru": "Совместно с Bg",
+    "en": "Shared With Bg",
+    "name": "sharedWithBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Семейное положение",
+    "en": "Marital Status",
+    "name": "maritalStatus",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Архивировано",
+    "en": "Archived",
+    "name": "archived",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "метод",
+    "en": "Method",
+    "name": "method",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "личный",
+    "en": "Personal",
+    "name": "personal_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "ru": "I из N",
+    "en": "I Of N",
+    "name": "iOfN",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Сведения об ID-карте",
+    "en": "ID Card Details",
+    "name": "idCardDocument_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "ru": "Требовать сырые данные",
+    "en": "Require Raw Data",
+    "name": "requireRawData",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "CVV",
+    "en": "Cvv",
+    "name": "cvv",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Ключ базовой бабы",
+    "en": "Base Pub Key",
+    "name": "basePubKey",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Время последнего сообщения",
+    "en": "Last Message Time",
+    "name": "lastMessageTime",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Продукты",
+    "en": "Products",
+    "name": "products",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Извлеченные поля",
+    "en": "Extracted fields",
+    "name": "scanJson",
+    "type": "propertyName",
+    "model": "tradle.CreditCard"
+  },
+  {
+    "ru": "Совместно с проверкой Bg",
+    "en": "Shared With Verification Bg",
+    "name": "sharedWithVerificationBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "форматированная",
+    "en": "Formatted",
+    "name": "formatted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Следующий текст Btn",
+    "en": "Next Btn Text",
+    "name": "nextBtnText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "уровень",
+    "en": "Level",
+    "name": "level",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Адрес",
+    "en": "Address",
+    "name": "address_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "ru": "Проверьте",
+    "en": "Check",
+    "name": "check",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Отсканированные",
+    "en": "Scanned",
+    "name": "scanned",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "тот, кто выбирает",
+    "en": "Chooser",
+    "name": "chooser",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "проверки",
+    "en": "Checks",
+    "name": "checks",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Неактивный",
+    "en": "Inactive",
+    "name": "inactive",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Подтверждения",
+    "en": "Confirmations",
+    "name": "confirmations",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Сделано Btn Text",
+    "en": "Done Btn Text",
+    "name": "doneBtnText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Второе имя",
+    "en": "Middle Name",
+    "name": "middleName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Bot",
+    "en": "Bot",
+    "name": "bot",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Имя владельца карты",
+    "en": "Cardholder Name",
+    "name": "cardholderName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Коды безопасности",
+    "en": "Security Codes",
+    "name": "securityCodes",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "сертификат",
+    "en": "Certificate",
+    "name": "certificate",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Документ",
+    "en": "Document",
+    "name": "document_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "ru": "Показать точки",
+    "en": "Show Dots",
+    "name": "showDots",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Веб-сайты",
+    "en": "Websites",
+    "name": "websites",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2813,62 +3211,6 @@
     "ru": "Заставка",
     "en": "Splashscreen",
     "name": "splashscreen",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Подпись на экране",
-    "en": "Signature on screen",
-    "name": "tradle.HandSignature",
-    "type": "model"
-  },
-  {
-    "ru": "Подпись",
-    "en": "Signature",
-    "name": "signature",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Информация о сервере поставщика услуг",
-    "en": "Service Provider Server Info",
-    "name": "tradle.ServiceProvider",
-    "type": "model"
-  },
-  {
-    "ru": "Жилой статус",
-    "en": "Residential Status",
-    "name": "tradle.ResidentialStatus",
-    "type": "model",
-    "enum": {
-      "withMortgage": "Владелец дома (с ипотекой)",
-      "tenantC": "Арендатор (адвокат)",
-      "livingWithParents": "Живу с родителями",
-      "withoutMortgage": "Владелец дома (без ипотеки)",
-      "tenantP": "Арендатор (частный)"
-    }
-  },
-  {
-    "ru": "секс",
-    "en": "Sex",
-    "name": "tradle.Sex",
-    "type": "model",
-    "enum": {
-      "Female": "женский",
-      "Male": "мужчина"
-    }
-  },
-  {
-    "ru": "сессия",
-    "en": "Session",
-    "name": "session",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Размер",
-    "en": "Size",
-    "name": "size",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2887,9 +3229,29 @@
     "model": "Default"
   },
   {
-    "ru": "сам",
-    "en": "Sig",
-    "name": "sig",
+    "ru": "Пропустить Btn Текст",
+    "en": "Skip Btn Text",
+    "name": "skipBtnText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Проверка навыков",
+    "en": "Skill Verification",
+    "name": "tradle.SkillVerification",
+    "type": "model"
+  },
+  {
+    "ru": "Источник",
+    "en": "Source",
+    "name": "source",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Размер",
+    "en": "Size",
+    "name": "size",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2901,387 +3263,125 @@
     "model": "Default"
   },
   {
-    "ru": "Требовать сырые данные",
-    "en": "Require Raw Data",
-    "name": "requireRawData",
+    "ru": "С",
+    "en": "With",
+    "name": "with",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Состояние уплотнения",
-    "en": "Seal State",
-    "name": "tradle.SealState",
+    "ru": "Цвет текста с подтвержденным заголовком",
+    "en": "Verified Header Text Color",
+    "name": "verifiedHeaderTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "незапечатанный",
+    "en": "Unsealed",
+    "name": "unsealed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Цвет проверенной границы",
+    "en": "Verified Border Color",
+    "name": "verifiedBorderColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Tx Id",
+    "en": "Tx Id",
+    "name": "txId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Проверено мной",
+    "en": "Verified By Me",
+    "name": "verifiedByMe",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Теги",
+    "en": "Tags",
+    "name": "tags",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "пользователь",
+    "en": "User",
+    "name": "user",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Сделка транзакций",
+    "en": "Transaction Hash",
+    "name": "transactionHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "верификация",
+    "en": "Verification",
+    "name": "tradle.Verification",
     "type": "model"
-  },
-  {
-    "ru": "Цвет фона кнопки",
-    "en": "Share Button Background Color",
-    "name": "shareButtonBackgroundColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Печать",
-    "en": "Seal",
-    "name": "tradle.Seal",
-    "type": "model"
-  },
-  {
-    "ru": "селфи",
-    "en": "Selfie",
-    "name": "tradle.Selfie",
-    "type": "model"
-  },
-  {
-    "ru": "селфи",
-    "en": "Selfie",
-    "name": "selfie",
-    "type": "propertyName",
-    "model": "tradle.Selfie"
-  },
-  {
-    "ru": "Запрос",
-    "en": "Request For",
-    "name": "requestFor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Идентификатор исправления",
-    "en": "Remediation ID",
-    "name": "myProductId",
-    "type": "propertyName",
-    "model": "tradle.MyRemediation"
-  },
-  {
-    "ru": "Цвет правого текста",
-    "en": "Right Text Color",
-    "name": "rightTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "отношения",
-    "en": "Relationship",
-    "name": "relationship",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Поделиться цветом фона контекста",
-    "en": "Share Context Background Color",
-    "name": "shareContextBackgroundColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "секс",
-    "en": "Sex",
-    "name": "sex",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет текста контекстного текста",
-    "en": "Share Context Text Color",
-    "name": "shareContextTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Подпись для",
-    "en": "Signature For",
-    "name": "signatureFor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Отсканировано",
-    "en": "Scanned By",
-    "name": "scannedBy",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Идентификатор печати",
-    "en": "Seal Id",
-    "name": "sealId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Совместно с Bg",
-    "en": "Shared With Bg",
-    "name": "sharedWithBg",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Запрошенные свойства",
-    "en": "Requested Properties",
-    "name": "requestedProperties",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Тип проживания",
-    "en": "Residence Type",
-    "name": "tradle.ResidenceType",
-    "type": "model",
-    "enum": {
-      "primary": "Основная резиденция",
-      "secondary": "Второй дом",
-      "investment": "Инвестиционная недвижимость"
-    }
-  },
-  {
-    "ru": "корень",
-    "en": "Root",
-    "name": "root",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Проверка навыков",
-    "en": "Skill Verification",
-    "name": "tradle.SkillVerification",
-    "type": "model"
-  },
-  {
-    "ru": "URL-адрес сервера",
-    "en": "Server URL",
-    "name": "url",
-    "type": "propertyName",
-    "model": "tradle.Settings"
-  },
-  {
-    "ru": "Менеджеры отношений",
-    "en": "Relationship Managers",
-    "name": "relationshipManagers",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Пропустить Btn Текст",
-    "en": "Skip Btn Text",
-    "name": "skipBtnText",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Номер обновленной карты",
-    "en": "Redacted Card Number",
-    "name": "redactedCardNumber",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Источник",
-    "en": "Source",
-    "name": "source",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "настройки",
-    "en": "Settings",
-    "name": "tradle.Settings",
-    "type": "model"
-  },
-  {
-    "ru": "Совместно с проверкой Bg",
-    "en": "Shared With Verification Bg",
-    "name": "sharedWithVerificationBg",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Проверка зарплаты",
-    "en": "Salary Verification",
-    "name": "tradle.SalaryVerification",
-    "type": "model"
-  },
-  {
-    "ru": "свидание",
-    "en": "Rendezvous",
-    "name": "rendezvous",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Простые сообщения",
-    "en": "Simple Message",
-    "name": "tradle.SimpleMessage",
-    "type": "model"
-  },
-  {
-    "ru": "Резиденция",
-    "en": "Residence",
-    "name": "tradle.Residence",
-    "type": "model"
-  },
-  {
-    "ru": "Тип отношения",
-    "en": "Relationship Type",
-    "name": "tradle.RelationshipType",
-    "type": "model",
-    "enum": {
-      "sister": "Сестра",
-      "guardian": "блюститель",
-      "spouse": "супруга",
-      "daughter": "Дочь",
-      "domesticpartner": "Сожитель",
-      "other": "Другие",
-      "father": "Отец",
-      "son": "его",
-      "brother": "Брат",
-      "mother": "Мама"
-    }
-  },
-  {
-    "ru": "сканирование",
-    "en": "Scan",
-    "name": "scan",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Получатель",
-    "en": "Recipient",
-    "name": "recipient",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Справка",
-    "en": "Reference",
-    "name": "reference",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Сообщение об устранении ошибки",
-    "en": "Remediation Simple Message",
-    "name": "tradle.RemediationSimpleMessage",
-    "type": "model"
-  },
-  {
-    "ru": "Детали результата",
-    "en": "Result Details",
-    "name": "resultDetails",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Запрос акций",
-    "en": "Share Request",
-    "name": "tradle.ShareRequest",
-    "type": "model"
-  },
-  {
-    "ru": "Коды безопасности",
-    "en": "Security Codes",
-    "name": "securityCodes",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Тип проживания",
-    "en": "Residence Type",
-    "name": "residenceType",
-    "type": "propertyName",
-    "model": "tradle.Residence"
-  },
-  {
-    "ru": "Показать кнопку «Готово»",
-    "en": "Show Done Button",
-    "name": "showDoneButton",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Запрос",
-    "en": "Request",
-    "name": "request",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Общий контекст",
-    "en": "Share Context",
-    "name": "tradle.ShareContext",
-    "type": "model"
-  },
-  {
-    "ru": "Самостоятельное введение",
-    "en": "Self introduction",
-    "name": "tradle.SelfIntroduction",
-    "type": "model"
-  },
-  {
-    "ru": "Общий ресурс",
-    "en": "Shared Resource",
-    "name": "tradle.SharedResource",
-    "type": "model"
-  },
-  {
-    "ru": "Санация",
-    "en": "Remediation",
-    "name": "tradle.Remediation",
-    "type": "model"
-  },
-  {
-    "ru": "Показать точки",
-    "en": "Show Dots",
-    "name": "showDots",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Отсканированные",
-    "en": "Scanned",
-    "name": "scanned",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Код безопасности",
-    "en": "Security Code",
-    "name": "securityCode",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Показать пропустить кнопку",
-    "en": "Show Skip Button",
-    "name": "showSkipButton",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Код безопасности",
-    "en": "Security Code",
-    "name": "tradle.SecurityCode",
-    "type": "model"
-  },
-  {
-    "ru": "Веб-сайты",
-    "en": "Websites",
-    "name": "websites",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "заглавие",
-    "en": "Title",
-    "name": "title",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "ru": "улица",
     "en": "Street",
     "name": "street",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Верификация",
+    "en": "Verifications",
+    "name": "verifications",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Резюме",
+    "en": "Summary",
+    "name": "summary",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Проверено Bg",
+    "en": "Verified Bg",
+    "name": "verifiedBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Верификация",
+    "en": "Verifications",
+    "name": "myVerifications",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "ru": "Положение дел",
+    "en": "Status",
+    "name": "tradle.Status",
+    "type": "model",
+    "enum": {
+      "error": "ошибка",
+      "pass": "Проходить",
+      "pending": "в ожидании",
+      "fail": "Потерпеть неудачу"
+    }
+  },
+  {
+    "ru": "к",
+    "en": "To",
+    "name": "to",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3293,47 +3393,30 @@
     "model": "Default"
   },
   {
-    "ru": "цель",
-    "en": "Target",
-    "name": "target",
+    "ru": "Фамилия",
+    "en": "Surname",
+    "name": "surname",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Отметить проблему",
-    "en": "Tagged Issue",
-    "name": "tradle.TaggedIssue",
-    "type": "model"
-  },
-  {
-    "ru": "Пакет стилей",
-    "en": "Styles Pack",
-    "name": "tradle.StylesPack",
-    "type": "model"
-  },
-  {
-    "ru": "Положение дел",
-    "en": "Status",
-    "name": "tradle.Status",
-    "type": "model",
-    "enum": {
-      "fail": "Потерпеть неудачу",
-      "pass": "Проходить",
-      "error": "ошибка",
-      "pending": "в ожидании"
-    }
-  },
-  {
-    "ru": "Предмет",
-    "en": "Subject",
-    "name": "subject",
+    "ru": "Использовать сенсорный идентификатор",
+    "en": "Use Touch Id",
+    "name": "useTouchId",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Положение дел",
-    "en": "Status",
-    "name": "status",
+    "ru": "Поддающиеся проверке аспекты",
+    "en": "Verifiable Aspects",
+    "name": "verifiableAspects",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Использовать Gesture Password",
+    "en": "Use Gesture Password",
+    "name": "useGesturePassword",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3352,16 +3435,29 @@
     "model": "Default"
   },
   {
-    "ru": "Материалы",
-    "en": "Submissions",
-    "name": "submissions",
+    "ru": "заглавие",
+    "en": "Title",
+    "name": "title",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "ru": "Проверка счетов коммунальных услуг",
+    "en": "Utility Bill Verification",
+    "name": "tradle.UtilityBillVerification",
+    "type": "model"
   },
   {
     "ru": "Условия и положения",
     "en": "Terms And Conditions",
     "name": "termsAndConditions",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "представление",
+    "en": "Submission",
+    "name": "submission",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3373,10 +3469,78 @@
     "model": "Default"
   },
   {
-    "ru": "Условия и положения",
-    "en": "Terms and Conditions",
-    "name": "tradle.TermsAndConditions",
+    "ru": "Веб-сайт",
+    "en": "Url",
+    "name": "url",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Материалы",
+    "en": "Submissions",
+    "name": "submissions",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Тип",
+    "en": "Type",
+    "name": "type",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Тур",
+    "en": "Tour",
+    "name": "tradle.Tour",
     "type": "model"
+  },
+  {
+    "ru": "Предмет",
+    "en": "Subject",
+    "name": "subject",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "цель",
+    "en": "Target",
+    "name": "target",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Тег",
+    "en": "Tag",
+    "name": "tradle.Tag",
+    "type": "model"
+  },
+  {
+    "ru": "состояние",
+    "en": "State",
+    "name": "state",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Положение дел",
+    "en": "Status",
+    "name": "status",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "ru": "Страница тура",
+    "en": "Tour Page",
+    "name": "tradle.TourPage",
+    "type": "model"
+  },
+  {
+    "ru": "Время",
+    "en": "Time",
+    "name": "time",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "ru": "Положение дел",
@@ -3389,47 +3553,6 @@
     }
   },
   {
-    "ru": "представление",
-    "en": "Submission",
-    "name": "submission",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Тег",
-    "en": "Tag",
-    "name": "tradle.Tag",
-    "type": "model"
-  },
-  {
-    "ru": "Резюме",
-    "en": "Summary",
-    "name": "summary",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Теги",
-    "en": "Tags",
-    "name": "tags",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "состояние",
-    "en": "State",
-    "name": "state",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Фамилия",
-    "en": "Surname",
-    "name": "surname",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "ru": "Стоимость",
     "en": "Value",
     "name": "value",
@@ -3437,52 +3560,35 @@
     "model": "Default"
   },
   {
-    "ru": "Цвет проверенных источников",
-    "en": "Verified Sources Color",
-    "name": "verifiedSourcesColor",
+    "ru": "Отметить проблему",
+    "en": "Tagged Issue",
+    "name": "tradle.TaggedIssue",
+    "type": "model"
+  },
+  {
+    "ru": "неподтвержденный",
+    "en": "Unconfirmed",
+    "name": "unconfirmed",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "Верификация",
-    "en": "Verifications",
-    "name": "verifications",
-    "type": "propertyName",
-    "model": "Default"
+    "ru": "Условия и положения",
+    "en": "Terms and Conditions",
+    "name": "tradle.TermsAndConditions",
+    "type": "model"
   },
   {
-    "ru": "Использовать Gesture Password",
-    "en": "Use Gesture Password",
-    "name": "useGesturePassword",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Верификация",
-    "en": "Verifications",
-    "name": "myVerifications",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "ru": "Tx Id",
-    "en": "Tx Id",
-    "name": "txId",
-    "type": "propertyName",
-    "model": "Default"
+    "ru": "Пакет стилей",
+    "en": "Styles Pack",
+    "name": "tradle.StylesPack",
+    "type": "model"
   },
   {
     "ru": "проверяемый",
     "en": "Verifiable",
     "name": "tradle.Verifiable",
     "type": "model"
-  },
-  {
-    "ru": "Проверено Bg",
-    "en": "Verified Bg",
-    "name": "verifiedBg",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "ru": "Цвет проверенного заголовка",
@@ -3492,16 +3598,16 @@
     "model": "Default"
   },
   {
-    "ru": "пользователь",
-    "en": "User",
-    "name": "user",
+    "ru": "желанный",
+    "en": "Welcome",
+    "name": "welcome",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "ru": "неподтвержденный",
-    "en": "Unconfirmed",
-    "name": "unconfirmed",
+    "ru": "Цвет проверенного текста",
+    "en": "Verified Text Color",
+    "name": "verifiedTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3513,103 +3619,9 @@
     "model": "Default"
   },
   {
-    "ru": "Тур",
-    "en": "Tour",
-    "name": "tradle.Tour",
-    "type": "model"
-  },
-  {
-    "ru": "Поддающиеся проверке аспекты",
-    "en": "Verifiable Aspects",
-    "name": "verifiableAspects",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "незапечатанный",
-    "en": "Unsealed",
-    "name": "unsealed",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Сделка транзакций",
-    "en": "Transaction Hash",
-    "name": "transactionHash",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Страница тура",
-    "en": "Tour Page",
-    "name": "tradle.TourPage",
-    "type": "model"
-  },
-  {
-    "ru": "Проверка счетов коммунальных услуг",
-    "en": "Utility Bill Verification",
-    "name": "tradle.UtilityBillVerification",
-    "type": "model"
-  },
-  {
-    "ru": "Использовать сенсорный идентификатор",
-    "en": "Use Touch Id",
-    "name": "useTouchId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "верификация",
-    "en": "Verification",
-    "name": "tradle.Verification",
-    "type": "model"
-  },
-  {
-    "ru": "Цвет проверенной границы",
-    "en": "Verified Border Color",
-    "name": "verifiedBorderColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет текста с подтвержденным заголовком",
-    "en": "Verified Header Text Color",
-    "name": "verifiedHeaderTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "к",
-    "en": "To",
-    "name": "to",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Проверено мной",
-    "en": "Verified By Me",
-    "name": "verifiedByMe",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Тип",
-    "en": "Type",
-    "name": "type",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "С",
-    "en": "With",
-    "name": "with",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "ru": "Цвет проверенного текста",
-    "en": "Verified Text Color",
-    "name": "verifiedTextColor",
+    "ru": "Цвет проверенных источников",
+    "en": "Verified Sources Color",
+    "name": "verifiedSourcesColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3652,13 +3664,6 @@
     "en": "Web site",
     "name": "tradle.WebSite",
     "type": "model"
-  },
-  {
-    "ru": "желанный",
-    "en": "Welcome",
-    "name": "welcome",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "ru": "Ширина",
