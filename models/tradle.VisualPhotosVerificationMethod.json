@@ -1,0 +1,40 @@
+{
+  "id": "tradle.VisualPhotosVerificationMethod",
+  "type": "tradle.Model",
+  "title": "Visual Photos Verification Method",
+  "subClassOf": "tradle.Method",
+  "properties": {
+    "aspect": {
+      "type": "string"
+    },
+    "documentPresence": {
+      "type": "string"
+    },
+    "ownerPresence": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "readOnly": true,
+      "displayName": true,
+      "displayAs": "based on visual inspection and matching the provided document and selfie",
+      "group": []
+    },
+    "photos": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Photo"
+      }
+    }
+  },
+  "required": [
+    "aspect"
+  ],
+  "viewCols": [
+    "aspect",
+    "ownerPresence",
+    "documentPresence",
+    "photos"
+  ]
+}
