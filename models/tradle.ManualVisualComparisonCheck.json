@@ -1,0 +1,67 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.ManualVisualComparisonCheck",
+  "title": "Manual Visual Comparison Check",
+  "subClassOf": "tradle.Check",
+  "description": "manual comparison of document photo and selfie",
+  "properties": {
+    "provider": {
+      "type": "string",
+      "readOnly": true
+    },
+    "status": {
+      "type": "object",
+      "ref": "tradle.Status",
+      "readOnly": true
+    },
+    "selfie": {
+      "type": "object",
+      "ref": "tradle.Selfie"
+    },
+    "message": {
+      "type": "string",
+      "displayName": true,
+      "readOnly": true
+    },
+    "resultDetails": {
+      "type": "string"
+    },
+    "photoID": {
+      "type": "object",
+      "ref": "tradle.PhotoID"
+    },
+    "application": {
+      "type": "object",
+      "ref": "tradle.Application"
+    },
+    "user": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "aspects": {
+      "type": "string"
+    },
+    "isInactive": {
+      "type": "boolean"
+    },
+    "dateChecked": {
+      "type": "date"
+    }
+  },
+  "required": [
+    "status",
+    "provider",
+    "selfie",
+    "photoID"
+  ],
+  "viewCols": [
+    "selfie",
+    "photoID",
+    "status",
+    "aspects",
+    "resultDetails",
+    "provider",
+    "dateChecked",
+    "application"
+  ]
+}
