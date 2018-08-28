@@ -7,7 +7,7 @@
     "lint": "eslint --quiet --ext .js --ext .json .",
     "validate": "PRINT_ONLY=1 node ./validate -f ./models.json",
     "merge": "pack-models -i ./models -o ./models.json -d ./models -l bn,vi,en,nl,es,fr,fil",
-    "dictionaries": "pack-models -d ./models -l ru",
+    "dictionaries": "pack-models -d ./models -l my,th,km",
     "postpublish": "git push -u",
     "precommit": "npm run merge && git add models.json && npm run validate && git add dictionary_en.json dictionary_bn.json dictionary_vi.json dictionary_es.json dictionary_fr.json dictionary_nl.json  dictionary_fil.json"
   },
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/tradle/models",
   "devDependencies": {
-    "@tradle/pack-models": "github:tradle/pack-models",
+    "@tradle/pack-models": "^2.1.2",
     "@tradle/validate-model": "^7.1.1",
     "eslint": "^3.15.0",
     "eslint-plugin-json": "^1.2.0",
