@@ -36,6 +36,15 @@
       "ref": "tradle.Photo",
       "sample": "face"
     },
+    "additionalPhotos": {
+      "type": "array",
+      "range": "photo",
+      "readOnly": true,
+      "inlined": true,
+      "items": {
+        "ref": "tradle.Photo"
+      }
+    },
     "selfieJson": {
       "type": "object",
       "title": "Photo info",
@@ -47,6 +56,7 @@
     "selfie"
   ],
   "viewCols": [
-    "selfie"
+    "selfie",
+    "additionalImages"
   ]
 }
