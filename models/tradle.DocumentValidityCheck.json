@@ -33,7 +33,7 @@
     },
     "form": {
       "type": "object",
-      "ref": "tradle.Selfie"
+      "ref": "tradle.PhotoID"
     },
     "application": {
       "type": "object",
@@ -53,6 +53,7 @@
   "required": [
     "status",
     "dateChecked",
+    "form",
     "application"
   ],
   "viewCols": [
