@@ -1,14 +1,14 @@
 [
   {
+    "en": "Item",
+    "name": "tradle.Item",
+    "type": "model"
+  },
+  {
     "en": "Error Color",
     "name": "errorColor",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "en": "Document validity check",
-    "name": "tradle.DocumentValidityCheck",
-    "type": "model"
   },
   {
     "en": "API",
@@ -1205,10 +1205,9 @@
     "model": "Default"
   },
   {
-    "en": "Liveness Score",
-    "name": "livenessScore",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Document validity check",
+    "name": "tradle.DocumentValidityCheck",
+    "type": "model"
   },
   {
     "en": "Draft",
@@ -1241,14 +1240,13 @@
     "model": "Default"
   },
   {
-    "en": "Models",
-    "name": "models",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Enum",
+    "name": "tradle.Enum",
+    "type": "model"
   },
   {
-    "en": "Errors",
-    "name": "errors",
+    "en": "Entity Role",
+    "name": "entityRole",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1345,25 +1343,25 @@
     }
   },
   {
-    "en": "Entity Role",
-    "name": "entityRole",
+    "en": "Pairing Data",
+    "name": "tradle.PairingData",
+    "type": "model"
+  },
+  {
+    "en": "Errors",
+    "name": "errors",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Enum",
-    "name": "tradle.Enum",
-    "type": "model"
+    "en": "Pages",
+    "name": "pages",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "en": "Phones",
     "name": "phones",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "en": "Font Family Android",
-    "name": "fontFamilyAndroid",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1438,10 +1436,9 @@
     "model": "tradle.CreditCard"
   },
   {
-    "en": "Photo info",
-    "name": "selfieJson",
-    "type": "propertyName",
-    "model": "tradle.Selfie"
+    "en": "Passport Verification",
+    "name": "tradle.PassportVerification",
+    "type": "model"
   },
   {
     "en": "Forgot You",
@@ -1460,15 +1457,10 @@
     "type": "model"
   },
   {
-    "en": "Status",
-    "name": "tradle.Status",
-    "type": "model",
-    "enum": {
-      "pass": "Pass",
-      "fail": "Fail",
-      "pending": "Pending",
-      "error": "Error"
-    }
+    "en": "Phone Type",
+    "name": "phoneType",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "en": "Identity",
@@ -1666,8 +1658,8 @@
     "model": "Default"
   },
   {
-    "en": "Publisher",
-    "name": "publisher",
+    "en": "Permalink",
+    "name": "permalink",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1700,10 +1692,10 @@
     "model": "Default"
   },
   {
-    "en": "Property",
-    "name": "property",
+    "en": "Personal",
+    "name": "personal_group",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.PhotoID"
   },
   {
     "en": "Incoming Message Bg Color",
@@ -1718,10 +1710,9 @@
     "model": "Default"
   },
   {
-    "en": "Product",
-    "name": "product",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Personal Info",
+    "name": "tradle.PersonalInfo",
+    "type": "model"
   },
   {
     "en": "Invite Link",
@@ -1763,10 +1754,10 @@
     "model": "Default"
   },
   {
-    "en": "Product Row Bg Color",
-    "name": "productRowBgColor",
+    "en": "Personal detail",
+    "name": "name_group",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.PersonalInfo"
   },
   {
     "en": "Invites",
@@ -1775,8 +1766,8 @@
     "model": "Default"
   },
   {
-    "en": "Profile",
-    "name": "tradle.Profile",
+    "en": "Phone",
+    "name": "tradle.Phone",
     "type": "model"
   },
   {
@@ -1808,10 +1799,14 @@
     "model": "Default"
   },
   {
-    "en": "Provider",
-    "name": "provider",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Phone Types",
+    "name": "tradle.PhoneTypes",
+    "type": "model",
+    "enum": {
+      "home": "Home",
+      "mobile": "Mobile",
+      "work": "Work"
+    }
   },
   {
     "en": "Level",
@@ -1894,9 +1889,10 @@
     "model": "Default"
   },
   {
-    "en": "Item",
-    "name": "tradle.Item",
-    "type": "model"
+    "en": "Liveness Score",
+    "name": "livenessScore",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "en": "Item Received",
@@ -1922,10 +1918,9 @@
     "model": "Default"
   },
   {
-    "en": "Request",
-    "name": "request",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Pairing Response",
+    "name": "tradle.PairingResponse",
+    "type": "model"
   },
   {
     "en": "Message Sent Status",
@@ -2078,10 +2073,9 @@
     "model": "Default"
   },
   {
-    "en": "Resource",
-    "name": "resource",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Partial",
+    "name": "tradle.Partial",
+    "type": "model"
   },
   {
     "en": "Method",
@@ -2095,10 +2089,9 @@
     "type": "model"
   },
   {
-    "en": "Residence Type",
-    "name": "residenceType",
-    "type": "propertyName",
-    "model": "tradle.Residence"
+    "en": "Passport",
+    "name": "tradle.Passport",
+    "type": "model"
   },
   {
     "en": "Number",
@@ -2281,9 +2274,10 @@
     "model": "Default"
   },
   {
-    "en": "Service Provider Server Info",
-    "name": "tradle.ServiceProvider",
-    "type": "model"
+    "en": "Font Family Android",
+    "name": "fontFamilyAndroid",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "en": "Object",
@@ -2297,8 +2291,8 @@
     "type": "model"
   },
   {
-    "en": "Shared With Verification Bg",
-    "name": "sharedWithVerificationBg",
+    "en": "Models",
+    "name": "models",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2332,10 +2326,9 @@
     "model": "Default"
   },
   {
-    "en": "Security Codes",
-    "name": "securityCodes",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Pairing Request",
+    "name": "tradle.PairingRequest",
+    "type": "model"
   },
   {
     "en": "Passport Number",
@@ -2350,95 +2343,103 @@
     "model": "Default"
   },
   {
-    "en": "Pairing Request",
-    "name": "tradle.PairingRequest",
+    "en": "Settings",
+    "name": "tradle.Settings",
     "type": "model"
   },
   {
-    "en": "Pairing Data",
-    "name": "tradle.PairingData",
-    "type": "model"
-  },
-  {
-    "en": "Pages",
-    "name": "pages",
+    "en": "Result details",
+    "name": "rawData",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.DocumentValidityCheck"
   },
   {
-    "en": "Passport",
-    "name": "tradle.Passport",
-    "type": "model"
-  },
-  {
-    "en": "Partial",
-    "name": "tradle.Partial",
-    "type": "model"
-  },
-  {
-    "en": "Pairing Response",
-    "name": "tradle.PairingResponse",
-    "type": "model"
-  },
-  {
-    "en": "Simple Message",
-    "name": "tradle.SimpleMessage",
-    "type": "model"
-  },
-  {
-    "en": "Phone Types",
-    "name": "tradle.PhoneTypes",
+    "en": "Residential Status",
+    "name": "tradle.ResidentialStatus",
     "type": "model",
     "enum": {
-      "home": "Home",
-      "mobile": "Mobile",
-      "work": "Work"
+      "withMortgage": "Home owner (with mortgage)",
+      "withoutMortgage": "Home owner (without mortgage)",
+      "tenantP": "Tenant (private)",
+      "tenantC": "Tenant (counsel)",
+      "livingWithParents": "Living with parents"
     }
   },
   {
-    "en": "Phone",
-    "name": "tradle.Phone",
-    "type": "model"
-  },
-  {
-    "en": "Personal detail",
-    "name": "name_group",
+    "en": "Residence Type",
+    "name": "residenceType",
     "type": "propertyName",
-    "model": "tradle.PersonalInfo"
+    "model": "tradle.Residence"
   },
   {
-    "en": "Personal Info",
-    "name": "tradle.PersonalInfo",
-    "type": "model"
-  },
-  {
-    "en": "Personal",
-    "name": "personal_group",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
-  },
-  {
-    "en": "Permalink",
-    "name": "permalink",
+    "en": "Resource",
+    "name": "resource",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Phone Type",
-    "name": "phoneType",
+    "en": "Request",
+    "name": "request",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Passport Verification",
-    "name": "tradle.PassportVerification",
+    "en": "Result Details",
+    "name": "resultDetails",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Provider",
+    "name": "provider",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Profile",
+    "name": "tradle.Profile",
     "type": "model"
   },
   {
-    "en": "Status",
-    "name": "status",
+    "en": "Product Row Bg Color",
+    "name": "productRowBgColor",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "en": "Product",
+    "name": "product",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Property",
+    "name": "property",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Publisher",
+    "name": "publisher",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Requested Properties",
+    "name": "requestedProperties",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Photo info",
+    "name": "selfieJson",
+    "type": "propertyName",
+    "model": "tradle.Selfie"
+  },
+  {
+    "en": "Residence",
+    "name": "tradle.Residence",
+    "type": "model"
   },
   {
     "en": "Place Of Birth",
@@ -2475,8 +2476,8 @@
     "model": "Default"
   },
   {
-    "en": "Share Context Background Color",
-    "name": "shareContextBackgroundColor",
+    "en": "Require Raw Data",
+    "name": "requireRawData",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2487,10 +2488,14 @@
     "model": "Default"
   },
   {
-    "en": "Share Context Text Color",
-    "name": "shareContextTextColor",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Residence Type",
+    "name": "tradle.ResidenceType",
+    "type": "model",
+    "enum": {
+      "primary": "Primary Residence",
+      "secondary": "Second Home",
+      "investment": "Investment Property"
+    }
   },
   {
     "en": "Product Bg Color",
@@ -2528,9 +2533,21 @@
     "model": "Default"
   },
   {
-    "en": "Skill Verification",
-    "name": "tradle.SkillVerification",
-    "type": "model"
+    "en": "Relationship Type",
+    "name": "tradle.RelationshipType",
+    "type": "model",
+    "enum": {
+      "son": "Son",
+      "daughter": "Daughter",
+      "mother": "Mother",
+      "father": "Father",
+      "sister": "Sister",
+      "brother": "Brother",
+      "spouse": "Spouse",
+      "domesticpartner": "Domestic Partner",
+      "guardian": "Guardian",
+      "other": "Other"
+    }
   },
   {
     "en": "Progress",
@@ -2567,10 +2584,9 @@
     "model": "Default"
   },
   {
-    "en": "Show Skip Button",
-    "name": "showSkipButton",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Remediation",
+    "name": "tradle.Remediation",
+    "type": "model"
   },
   {
     "en": "Pubkeys",
@@ -2613,8 +2629,8 @@
     "type": "model"
   },
   {
-    "en": "Source",
-    "name": "source",
+    "en": "Relationship",
+    "name": "relationship",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2660,10 +2676,10 @@
     "model": "Default"
   },
   {
-    "en": "Seal Id",
-    "name": "sealId",
+    "en": "Remediation ID",
+    "name": "myProductId",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.MyRemediation"
   },
   {
     "en": "Request For",
@@ -2695,87 +2711,36 @@
     "model": "Default"
   },
   {
-    "en": "Remediation ID",
-    "name": "myProductId",
-    "type": "propertyName",
-    "model": "tradle.MyRemediation"
-  },
-  {
-    "en": "Relationship",
-    "name": "relationship",
+    "en": "Verified By Me",
+    "name": "verifiedByMe",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Remediation",
-    "name": "tradle.Remediation",
+    "en": "Seal Id",
+    "name": "sealId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Seal",
+    "name": "tradle.Seal",
     "type": "model"
   },
   {
-    "en": "Relationship Type",
-    "name": "tradle.RelationshipType",
-    "type": "model",
-    "enum": {
-      "son": "Son",
-      "daughter": "Daughter",
-      "mother": "Mother",
-      "father": "Father",
-      "sister": "Sister",
-      "brother": "Brother",
-      "spouse": "Spouse",
-      "domesticpartner": "Domestic Partner",
-      "guardian": "Guardian",
-      "other": "Other"
-    }
-  },
-  {
-    "en": "Submissions",
-    "name": "submissions",
+    "en": "Scanned By",
+    "name": "scannedBy",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Residence Type",
-    "name": "tradle.ResidenceType",
-    "type": "model",
-    "enum": {
-      "primary": "Primary Residence",
-      "secondary": "Second Home",
-      "investment": "Investment Property"
-    }
-  },
-  {
-    "en": "Require Raw Data",
-    "name": "requireRawData",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "en": "Residence",
-    "name": "tradle.Residence",
+    "en": "Salary Verification",
+    "name": "tradle.SalaryVerification",
     "type": "model"
   },
   {
-    "en": "Requested Properties",
-    "name": "requestedProperties",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "en": "Uploaded",
-    "name": "uploaded",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "en": "Scanned",
-    "name": "scanned",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "en": "Root",
-    "name": "root",
+    "en": "Right Text Color",
+    "name": "rightTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2786,38 +2751,65 @@
     "model": "Default"
   },
   {
-    "en": "Right Text Color",
-    "name": "rightTextColor",
+    "en": "Root",
+    "name": "root",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Result Details",
-    "name": "resultDetails",
+    "en": "Scanned",
+    "name": "scanned",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Salary Verification",
-    "name": "tradle.SalaryVerification",
+    "en": "Unwatched",
+    "name": "unwatched",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Security Codes",
+    "name": "securityCodes",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Seal State",
+    "name": "tradle.SealState",
     "type": "model"
   },
   {
-    "en": "Residential Status",
-    "name": "tradle.ResidentialStatus",
-    "type": "model",
-    "enum": {
-      "withMortgage": "Home owner (with mortgage)",
-      "withoutMortgage": "Home owner (without mortgage)",
-      "tenantP": "Tenant (private)",
-      "tenantC": "Tenant (counsel)",
-      "livingWithParents": "Living with parents"
-    }
+    "en": "Security Code",
+    "name": "tradle.SecurityCode",
+    "type": "model"
   },
   {
-    "en": "Tag",
-    "name": "tradle.Tag",
+    "en": "Security Code",
+    "name": "securityCode",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Styles Pack",
+    "name": "tradle.StylesPack",
     "type": "model"
+  },
+  {
+    "en": "Simple Message",
+    "name": "tradle.SimpleMessage",
+    "type": "model"
+  },
+  {
+    "en": "Service Provider Server Info",
+    "name": "tradle.ServiceProvider",
+    "type": "model"
+  },
+  {
+    "en": "Signature",
+    "name": "signature",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "en": "Sex",
@@ -2832,8 +2824,8 @@
     "model": "Default"
   },
   {
-    "en": "Scanned By",
-    "name": "scannedBy",
+    "en": "Show Done Button",
+    "name": "showDoneButton",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2844,15 +2836,16 @@
     "model": "Default"
   },
   {
-    "en": "Security Code",
-    "name": "securityCode",
+    "en": "Share Context Text Color",
+    "name": "shareContextTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Seal",
-    "name": "tradle.Seal",
-    "type": "model"
+    "en": "Show Skip Button",
+    "name": "showSkipButton",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "en": "Selfie",
@@ -2860,9 +2853,10 @@
     "type": "model"
   },
   {
-    "en": "Settings",
-    "name": "tradle.Settings",
-    "type": "model"
+    "en": "Shared With Verification Bg",
+    "name": "sharedWithVerificationBg",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "en": "Self introduction",
@@ -2888,9 +2882,10 @@
     "model": "Default"
   },
   {
-    "en": "Security Code",
-    "name": "tradle.SecurityCode",
-    "type": "model"
+    "en": "Share Context Background Color",
+    "name": "shareContextBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "en": "Sex",
@@ -2902,13 +2897,14 @@
     }
   },
   {
-    "en": "Seal State",
-    "name": "tradle.SealState",
-    "type": "model"
+    "en": "Sig",
+    "name": "sig",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "en": "Time",
-    "name": "time",
+    "en": "Signature For",
+    "name": "signatureFor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2940,13 +2936,8 @@
     "type": "model"
   },
   {
-    "en": "Tour",
-    "name": "tradle.Tour",
-    "type": "model"
-  },
-  {
-    "en": "Sourced Verification Bg Color",
-    "name": "sourcedVerificationBgColor",
+    "en": "Show Dots",
+    "name": "showDots",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2956,8 +2947,14 @@
     "type": "model"
   },
   {
-    "en": "Show Dots",
-    "name": "showDots",
+    "en": "Target",
+    "name": "target",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Sourced Verification Bg Color",
+    "name": "sourcedVerificationBgColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2968,16 +2965,15 @@
     "model": "Default"
   },
   {
-    "en": "Signature For",
-    "name": "signatureFor",
+    "en": "Source",
+    "name": "source",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Sig",
-    "name": "sig",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Skill Verification",
+    "name": "tradle.SkillVerification",
+    "type": "model"
   },
   {
     "en": "Size",
@@ -2986,21 +2982,27 @@
     "model": "Default"
   },
   {
-    "en": "Show Done Button",
-    "name": "showDoneButton",
+    "en": "To",
+    "name": "to",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Signature",
-    "name": "signature",
+    "en": "Status",
+    "name": "status",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Tour Page",
-    "name": "tradle.TourPage",
-    "type": "model"
+    "en": "Status",
+    "name": "tradle.Status",
+    "type": "model",
+    "enum": {
+      "pass": "Pass",
+      "fail": "Fail",
+      "pending": "Pending",
+      "error": "Error"
+    }
   },
   {
     "en": "Sourced Verification Text Color",
@@ -3009,9 +3011,13 @@
     "model": "Default"
   },
   {
-    "en": "Visual Verification Method",
-    "name": "tradle.VisualVerificationMethod",
-    "type": "model"
+    "en": "Status",
+    "name": "tradle.IssueStatus",
+    "type": "model",
+    "enum": {
+      "closed": "Closed",
+      "open": "Open"
+    }
   },
   {
     "en": "Spoof-proof selfie check",
@@ -3031,8 +3037,14 @@
     "model": "Default"
   },
   {
-    "en": "Verified By Me",
-    "name": "verifiedByMe",
+    "en": "State",
+    "name": "state",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "en": "Value",
+    "name": "value",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3043,29 +3055,20 @@
     "model": "Default"
   },
   {
-    "en": "State",
-    "name": "state",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "en": "Street",
     "name": "street",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Status",
-    "name": "tradle.IssueStatus",
-    "type": "model",
-    "enum": {
-      "closed": "Closed",
-      "open": "Open"
-    }
+    "en": "Transaction Hash",
+    "name": "transactionHash",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "en": "Unwatched",
-    "name": "unwatched",
+    "en": "Uploaded",
+    "name": "uploaded",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3076,13 +3079,14 @@
     "model": "Default"
   },
   {
-    "en": "Styles Pack",
-    "name": "tradle.StylesPack",
-    "type": "model"
+    "en": "Submissions",
+    "name": "submissions",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "en": "Use Touch Id",
-    "name": "useTouchId",
+    "en": "Unconfirmed",
+    "name": "unconfirmed",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3134,8 +3138,8 @@
     "model": "Default"
   },
   {
-    "en": "Verified Text Color",
-    "name": "verifiedTextColor",
+    "en": "Type",
+    "name": "type",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3157,27 +3161,25 @@
     "model": "Default"
   },
   {
-    "en": "Target",
-    "name": "target",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "en": "Verified Link Color",
-    "name": "verifiedLinkColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "en": "Verification",
-    "name": "tradle.Verification",
+    "en": "Tour",
+    "name": "tradle.Tour",
     "type": "model"
   },
   {
-    "en": "To",
-    "name": "to",
+    "en": "Tour Page",
+    "name": "tradle.TourPage",
+    "type": "model"
+  },
+  {
+    "en": "Time",
+    "name": "time",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "en": "Tag",
+    "name": "tradle.Tag",
+    "type": "model"
   },
   {
     "en": "Title",
@@ -3192,14 +3194,14 @@
     "model": "Default"
   },
   {
-    "en": "Use Gesture Password",
-    "name": "useGesturePassword",
+    "en": "Verified Bg",
+    "name": "verifiedBg",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Value",
-    "name": "value",
+    "en": "Use Gesture Password",
+    "name": "useGesturePassword",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3210,26 +3212,26 @@
     "model": "Default"
   },
   {
-    "en": "Transaction Hash",
-    "name": "transactionHash",
+    "en": "Websites",
+    "name": "websites",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Verifiable Aspects",
-    "name": "verifiableAspects",
+    "en": "Verified Link Color",
+    "name": "verifiedLinkColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Type",
-    "name": "type",
+    "en": "Verified Header Text Color",
+    "name": "verifiedHeaderTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Unconfirmed",
-    "name": "unconfirmed",
+    "en": "Use Touch Id",
+    "name": "useTouchId",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3250,9 +3252,10 @@
     "model": "Default"
   },
   {
-    "en": "Visual Photos Verification Method",
-    "name": "tradle.VisualPhotosVerificationMethod",
-    "type": "model"
+    "en": "Verifiable Aspects",
+    "name": "verifiableAspects",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "en": "Verified Header Color",
@@ -3273,10 +3276,9 @@
     "model": "tradle.Profile"
   },
   {
-    "en": "Verified Bg",
-    "name": "verifiedBg",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Verification",
+    "name": "tradle.Verification",
+    "type": "model"
   },
   {
     "en": "Verified Border Color",
@@ -3285,16 +3287,15 @@
     "model": "Default"
   },
   {
-    "en": "Websites",
-    "name": "websites",
+    "en": "Watch Type",
+    "name": "watchType",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "en": "Verified Header Text Color",
-    "name": "verifiedHeaderTextColor",
-    "type": "propertyName",
-    "model": "Default"
+    "en": "Visual Photos Verification Method",
+    "name": "tradle.VisualPhotosVerificationMethod",
+    "type": "model"
   },
   {
     "en": "Verified Sources Color",
@@ -3321,10 +3322,15 @@
     "model": "Default"
   },
   {
-    "en": "Watch Type",
-    "name": "watchType",
+    "en": "Verified Text Color",
+    "name": "verifiedTextColor",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "en": "Visual Verification Method",
+    "name": "tradle.VisualVerificationMethod",
+    "type": "model"
   },
   {
     "en": "Web site",
