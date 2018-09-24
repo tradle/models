@@ -76,15 +76,21 @@
   "indexes": [
     {
       "hashKey": "unsealed",
-      "rangeKey": "sealId"
+      "rangeKey": {
+        "template": "{_time}{sealId}"
+      }
     },
     {
       "hashKey": "unconfirmed",
-      "rangeKey": "sealId"
+      "rangeKey": {
+        "template": "{_time}{sealId}"
+      }
     },
     {
       "hashKey": "link",
-      "rangeKey": "sealId"
+      "rangeKey": {
+        "template": "{_time}{sealId}"
+      }
     },
     {
       "hashKey": "_t",
