@@ -1,0 +1,16 @@
+{
+  "type": "tradle.Model",
+  "title": "Blockchain Network",
+  "id": "tradle.BlockchainNetwork",
+  "subClassOf": "tradle.Enum",
+  "properties": {
+    "network": {
+      "type": "string"
+    }
+  },
+  "enum": [
+    "ethereum.mainnet",
+    "ethereum.ropsten",
+    "ethereum.rinkeby"
+  ]
+}
