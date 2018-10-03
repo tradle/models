@@ -18,6 +18,10 @@
     "lastName": {
       "type": "string",
       "immutable": true
+    },
+    "owner": {
+      "type": "object",
+      "ref": "tradle.Identity"
     }
   },
   "required": [

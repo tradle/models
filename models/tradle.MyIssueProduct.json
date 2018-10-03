@@ -3,5 +3,13 @@
   "type": "tradle.Model",
   "title": "My Issue Product",
   "subClassOf": "tradle.MyProduct",
-  "properties": {}
+  "properties": {
+    "owner": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "myProductId": {
+      "type": "string"
+    }
+  }
 }
