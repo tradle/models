@@ -14,5 +14,26 @@
     "revoked": {
       "type": "boolean"
     }
-  }
+  },
+  "indexes": [
+    {
+      "hashKey": "myProductId",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "owner._permalink",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_orgOrAuthor",
+      "rangeKey": [
+        "_t",
+        "_time"
+      ]
+    }
+  ]
 }
