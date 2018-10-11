@@ -3,5 +3,37 @@
   "type": "tradle.Model",
   "title": "My Issue Product",
   "subClassOf": "tradle.MyProduct",
-  "properties": {}
+  "properties": {
+    "owner": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "myProductId": {
+      "type": "string"
+    },
+    "revoked": {
+      "type": "boolean"
+    }
+  },
+  "indexes": [
+    {
+      "hashKey": "myProductId",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "owner._permalink",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_orgOrAuthor",
+      "rangeKey": [
+        "_t",
+        "_time"
+      ]
+    }
+  ]
 }
