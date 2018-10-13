@@ -49,6 +49,16 @@
       "ref": "tradle.Photo",
       "sample": "scan.photoId"
     },
+    "otherSideToScan": {
+      "type": "string",
+      "hidden": true
+    },
+    "otherSideScan": {
+      "type": "object",
+      "range": "photo",
+      "inlined": true,
+      "ref": "tradle.Photo"
+    },
     "scanJson": {
       "type": "object",
       "title": "Extracted fields",
@@ -155,6 +165,7 @@
     "documentType",
     "country",
     "scan",
+    "otherSideScan",
     "personal_group",
     "nationality",
     "sex",
