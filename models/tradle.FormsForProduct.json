@@ -1,0 +1,19 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.FormsForProduct",
+  "title": "Forms for the product",
+  "inlined": true,
+  "properties": {
+    "product": {
+      "type": "string",
+      "range": "model"
+    },
+    "forms": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "range": "model"
+      }
+    }
+  }
+}

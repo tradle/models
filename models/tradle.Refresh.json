@@ -1,0 +1,16 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.Refresh",
+  "title": "Refresh",
+  "subClassOf": "tradle.Form",
+  "notShareable": true,
+  "properties": {
+    "additionalForms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "ref": "tradle.FormsForProduct"
+      }
+    }
+  }
+}
