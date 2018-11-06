@@ -82,6 +82,14 @@
       "type": "boolean",
       "readOnly": true
     },
+    "isAgent": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "entity": {
+      "type": "object",
+      "ref": "tradle.Form"
+    },
     "verifiedByMe": {
       "type": "array",
       "allowRoles": "me",

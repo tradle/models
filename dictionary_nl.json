@@ -1,15 +1,25 @@
 [
   {
-    "nl": "Nieuw berichtmodel",
-    "en": "New message model",
-    "name": "tradle.NewMessageModel",
-    "type": "model"
+    "nl": "Taal",
+    "en": "Language",
+    "name": "tradle.Language",
+    "type": "model",
+    "enum": {
+      "vi": "Vietnamees",
+      "fil": "Filippijn",
+      "es": "Spaans",
+      "en": "Engels",
+      "nl": "Nederlands",
+      "fr": "Frans",
+      "bn": "Bengalees"
+    }
   },
   {
-    "nl": "Formulieren voor het product",
-    "en": "Forms for the product",
-    "name": "tradle.FormsForProduct",
-    "type": "model"
+    "nl": "Entiteit",
+    "en": "Entity",
+    "name": "entity",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "nl": "API",
@@ -1505,9 +1515,49 @@
     "model": "tradle.MyRefreshProduct"
   },
   {
-    "nl": "Vervalmaand",
-    "en": "Expiry Month",
-    "name": "expiryMonth",
+    "nl": "werk",
+    "en": "Employment",
+    "name": "employment_group",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "nl": "Medewerker aan boord",
+    "en": "Employee Onboarding",
+    "name": "tradle.EmployeeOnboarding",
+    "type": "model"
+  },
+  {
+    "nl": "Sessie",
+    "en": "Session",
+    "name": "session",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Enum",
+    "en": "Enum",
+    "name": "tradle.Enum",
+    "type": "model"
+  },
+  {
+    "nl": "Entiteitsrol",
+    "en": "Entity Role",
+    "name": "entityRole",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Foto-informatie",
+    "en": "Photo info",
+    "name": "selfieJson",
+    "type": "propertyName",
+    "model": "tradle.Selfie"
+  },
+  {
+    "nl": "Bewijsstukken",
+    "en": "Evidentiary Documents",
+    "name": "evidentiaryDocuments",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1519,10 +1569,11 @@
     "model": "Default"
   },
   {
-    "nl": "Enum",
-    "en": "Enum",
-    "name": "tradle.Enum",
-    "type": "model"
+    "nl": "Fout Bg kleur",
+    "en": "Error Bg Color",
+    "name": "errorBgColor",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "nl": "Foutkleur",
@@ -1532,57 +1583,16 @@
     "model": "Default"
   },
   {
-    "nl": "Entiteitsrol",
-    "en": "Entity Role",
-    "name": "entityRole",
+    "nl": "Persoonlijk detail",
+    "en": "Personal detail",
+    "name": "name_group",
     "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Bewijsstukken",
-    "en": "Evidentiary Documents",
-    "name": "evidentiaryDocuments",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Fout Bg kleur",
-    "en": "Error Bg Color",
-    "name": "errorBgColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Medewerker aan boord",
-    "en": "Employee Onboarding",
-    "name": "tradle.EmployeeOnboarding",
-    "type": "model"
-  },
-  {
-    "nl": "werk",
-    "en": "Employment",
-    "name": "employment_group",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "nl": "vormen",
-    "en": "Forms",
-    "name": "forms",
-    "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.PersonalInfo"
   },
   {
     "nl": "Geformatteerde naam",
     "en": "Formatted Name",
     "name": "formattedName",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Het formulier",
-    "en": "Form",
-    "name": "form",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1740,15 +1750,23 @@
     "type": "model"
   },
   {
-    "nl": "Productaanvraag",
-    "en": "Product Request",
-    "name": "tradle.ProductRequest",
-    "type": "model"
+    "nl": "Het formulier",
+    "en": "Form",
+    "name": "form",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "nl": "Nodig Link uit",
-    "en": "Invite Link",
-    "name": "inviteLink",
+    "nl": "Vervalmaand",
+    "en": "Expiry Month",
+    "name": "expiryMonth",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Postcode",
+    "en": "Postal Code",
+    "name": "postalCode",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1758,12 +1776,6 @@
     "name": "givenName",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "nl": "Invoering",
-    "en": "Introduction",
-    "name": "tradle.Introduction",
-    "type": "model"
   },
   {
     "nl": "Github-gebruikersnaam",
@@ -1780,9 +1792,9 @@
     "model": "Default"
   },
   {
-    "nl": "Inkomende tekst Ondoorzichtige tekstkleur",
-    "en": "Incoming Message Opaque Text Color",
-    "name": "incomingMessageOpaqueTextColor",
+    "nl": "vormen",
+    "en": "Forms",
+    "name": "forms",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1801,9 +1813,15 @@
     "model": "Default"
   },
   {
-    "nl": "Kruispunt",
-    "en": "Intersection",
-    "name": "tradle.Intersection",
+    "nl": "Formulieren voor het product",
+    "en": "Forms for the product",
+    "name": "tradle.FormsForProduct",
+    "type": "model"
+  },
+  {
+    "nl": "Product lijst",
+    "en": "Product List",
+    "name": "tradle.ProductList",
     "type": "model"
   },
   {
@@ -1811,13 +1829,6 @@
     "en": "Identity Publish Request",
     "name": "tradle.IdentityPublishRequest",
     "type": "model"
-  },
-  {
-    "nl": "Id-kaarttype",
-    "en": "Id Card Type",
-    "name": "idCardType",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "nl": "ID-kaarttype",
@@ -1925,22 +1936,22 @@
     "model": "Default"
   },
   {
-    "nl": "Nodig uit",
-    "en": "Invite",
-    "name": "tradle.Invite",
+    "nl": "Id-kaarttype",
+    "en": "Id Card Type",
+    "name": "idCardType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Property Chooser",
+    "en": "Property Chooser",
+    "name": "tradle.PropertyChooser",
     "type": "model"
   },
   {
     "nl": "Inhoudsopgave",
     "en": "Index",
     "name": "index",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Inkomende berichttekstkleur",
-    "en": "Incoming Message Text Color",
-    "name": "incomingMessageTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1986,16 +1997,23 @@
     "model": "Default"
   },
   {
-    "nl": "Geformeerde verificatie Bg-kleur",
-    "en": "Sourced Verification Bg Color",
-    "name": "sourcedVerificationBgColor",
+    "nl": "Inkomende berichttekstkleur",
+    "en": "Incoming Message Text Color",
+    "name": "incomingMessageTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Logo",
-    "en": "Logo",
-    "name": "logo",
+    "nl": "Inkomende tekst Ondoorzichtige tekstkleur",
+    "en": "Incoming Message Opaque Text Color",
+    "name": "incomingMessageOpaqueTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Productrij Tekstkleur",
+    "en": "Product Row Text Color",
+    "name": "productRowTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2005,12 +2023,6 @@
     "name": "issuingCountry",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "nl": "Kwestie",
-    "en": "Issue",
-    "name": "tradle.Issue",
-    "type": "model"
   },
   {
     "nl": "Kwestie",
@@ -2068,57 +2080,54 @@
     "model": "Default"
   },
   {
-    "nl": "items",
-    "en": "Items",
-    "name": "items",
+    "nl": "Is Agent",
+    "en": "Is Agent",
+    "name": "isAgent",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "bladeren",
-    "en": "Leaves",
-    "name": "leaves",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Achternaam",
-    "en": "Last Name",
-    "name": "lastName",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Tekstkleur links",
-    "en": "Left Text Color",
-    "name": "leftTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Laatste berichttijd",
-    "en": "Last Message Time",
-    "name": "lastMessageTime",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Item",
-    "en": "Item",
-    "name": "tradle.Item",
+    "nl": "Kwestie",
+    "en": "Issue",
+    "name": "tradle.Issue",
     "type": "model"
+  },
+  {
+    "nl": "Nodig uit",
+    "en": "Invite",
+    "name": "tradle.Invite",
+    "type": "model"
+  },
+  {
+    "nl": "Invoering",
+    "en": "Introduction",
+    "name": "tradle.Introduction",
+    "type": "model"
+  },
+  {
+    "nl": "Nodig Link uit",
+    "en": "Invite Link",
+    "name": "inviteLink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Kruispunt",
+    "en": "Intersection",
+    "name": "tradle.Intersection",
+    "type": "model"
+  },
+  {
+    "nl": "Referentienummer van de leverancier",
+    "en": "Provider Reference Number",
+    "name": "providerReferenceNumber",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "nl": "Link Prop",
     "en": "Link Prop",
     "name": "linkProp",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Link kleur",
-    "en": "Link Color",
-    "name": "linkColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2144,16 +2153,16 @@
     "model": "Default"
   },
   {
-    "nl": "Lijst",
-    "en": "List",
-    "name": "list",
+    "nl": "items",
+    "en": "Items",
+    "name": "items",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Links",
-    "en": "Links",
-    "name": "links",
+    "nl": "Link kleur",
+    "en": "Link Color",
+    "name": "linkColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2185,60 +2194,50 @@
     "type": "model"
   },
   {
-    "nl": "Taal",
-    "en": "Language",
-    "name": "tradle.Language",
-    "type": "model",
-    "enum": {
-      "vi": "Vietnamees",
-      "fil": "Filippijn",
-      "es": "Spaans",
-      "en": "Engels",
-      "nl": "Nederlands",
-      "fr": "Frans",
-      "bn": "Bengalees"
-    }
+    "nl": "Item",
+    "en": "Item",
+    "name": "tradle.Item",
+    "type": "model"
   },
   {
-    "nl": "Liveness Score",
-    "en": "Liveness Score",
-    "name": "livenessScore",
+    "nl": "bladeren",
+    "en": "Leaves",
+    "name": "leaves",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Lijst Bg",
-    "en": "List Bg",
-    "name": "listBg",
+    "nl": "Achternaam",
+    "en": "Last Name",
+    "name": "lastName",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Lijst kleur",
-    "en": "List Color",
-    "name": "listColor",
+    "nl": "Tekstkleur links",
+    "en": "Left Text Color",
+    "name": "leftTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Regio",
-    "en": "Region",
-    "name": "region",
+    "nl": "Laatste berichttijd",
+    "en": "Last Message Time",
+    "name": "lastMessageTime",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "nl": "verversen",
+    "en": "Refresh",
+    "name": "tradle.Refresh",
+    "type": "model"
   },
   {
     "nl": "Methode",
     "en": "Method",
     "name": "tradle.Method",
     "type": "model"
-  },
-  {
-    "nl": "Burgerlijke staat",
-    "en": "Marital Status",
-    "name": "maritalStatus",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "nl": "Merkle Node",
@@ -2358,63 +2357,65 @@
     "model": "Default"
   },
   {
-    "nl": "Gescand door",
-    "en": "Scanned By",
-    "name": "scannedBy",
+    "nl": "Lijst",
+    "en": "List",
+    "name": "list",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Netwerk",
-    "en": "Network",
-    "name": "network",
+    "nl": "Burgerlijke staat",
+    "en": "Marital Status",
+    "name": "maritalStatus",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Nationaliteit",
-    "en": "Nationality",
-    "name": "nationality",
+    "nl": "Links",
+    "en": "Links",
+    "name": "links",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Mime type",
-    "en": "Mime Type",
-    "name": "mimeType",
+    "nl": "Liveness Score",
+    "en": "Liveness Score",
+    "name": "livenessScore",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Mijn identiteiten",
-    "en": "My Identities",
-    "name": "tradle.MyIdentities",
-    "type": "model"
-  },
-  {
-    "nl": "Nav Bar Border Color",
-    "en": "Nav Bar Border Color",
-    "name": "navBarBorderColor",
+    "nl": "Lijst Bg",
+    "en": "List Bg",
+    "name": "listBg",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Nationaliteit",
-    "en": "Nationality",
-    "name": "tradle.Nationality",
-    "type": "model"
+    "nl": "Lijst kleur",
+    "en": "List Color",
+    "name": "listColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Logo",
+    "en": "Logo",
+    "name": "logo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Beveiligingscode",
+    "en": "Security Code",
+    "name": "securityCode",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "nl": "modellen",
     "en": "Models",
     "name": "models",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Midden-naam",
-    "en": "Middle Name",
-    "name": "middleName",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2426,22 +2427,55 @@
     "model": "Default"
   },
   {
-    "nl": "Nav Bar Border Width",
-    "en": "Nav Bar Border Width",
-    "name": "navBarBorderWidth",
+    "nl": "Midden-naam",
+    "en": "Middle Name",
+    "name": "middleName",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Mijn probleemproduct",
-    "en": "My Issue Product",
-    "name": "tradle.MyIssueProduct",
-    "type": "model"
+    "nl": "Mime type",
+    "en": "Mime Type",
+    "name": "mimeType",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Scannen",
+    "en": "Scan",
+    "name": "scan",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "nl": "Models Pack",
     "en": "Models Pack",
     "name": "tradle.ModelsPack",
+    "type": "model"
+  },
+  {
+    "nl": "Resultaatdetails",
+    "en": "Result details",
+    "name": "rawData",
+    "type": "propertyName",
+    "model": "tradle.DocumentValidityCheck"
+  },
+  {
+    "nl": "Mijn werknemerspas",
+    "en": "My Employee Pass",
+    "name": "tradle.MyEmployeeOnboarding",
+    "type": "model"
+  },
+  {
+    "nl": "Mijn klantenpas",
+    "en": "My Customer Pass",
+    "name": "tradle.MyCustomerOnboarding",
+    "type": "model"
+  },
+  {
+    "nl": "Geld",
+    "en": "Money",
+    "name": "tradle.Money",
     "type": "model"
   },
   {
@@ -2452,33 +2486,9 @@
     "model": "tradle.Profile"
   },
   {
-    "nl": "Mijn werknemerspas",
-    "en": "My Employee Pass",
-    "name": "tradle.MyEmployeeOnboarding",
-    "type": "model"
-  },
-  {
-    "nl": "Geld",
-    "en": "Money",
-    "name": "tradle.Money",
-    "type": "model"
-  },
-  {
-    "nl": "Mijn klantenpas",
-    "en": "My Customer Pass",
-    "name": "tradle.MyCustomerOnboarding",
-    "type": "model"
-  },
-  {
-    "nl": "Mijn remedie",
-    "en": "My Remediation",
-    "name": "tradle.MyRemediation",
-    "type": "model"
-  },
-  {
-    "nl": "Mijn product-ID",
-    "en": "My Product Id",
-    "name": "myProductId",
+    "nl": "gescande",
+    "en": "Scanned",
+    "name": "scanned",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2497,10 +2507,61 @@
     "model": "Default"
   },
   {
+    "nl": "Mijn probleemproduct",
+    "en": "My Issue Product",
+    "name": "tradle.MyIssueProduct",
+    "type": "model"
+  },
+  {
+    "nl": "Mijn identiteiten",
+    "en": "My Identities",
+    "name": "tradle.MyIdentities",
+    "type": "model"
+  },
+  {
+    "nl": "residentie",
+    "en": "Residence",
+    "name": "tradle.Residence",
+    "type": "model"
+  },
+  {
+    "nl": "namespace",
+    "en": "Namespace",
+    "name": "namespace",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Naam",
+    "en": "Name",
+    "name": "tradle.Name",
+    "type": "model"
+  },
+  {
+    "nl": "Naam",
+    "en": "Name",
+    "name": "name",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "nl": "Mijn product",
     "en": "My Product",
     "name": "tradle.MyProduct",
     "type": "model"
+  },
+  {
+    "nl": "Mijn remedie",
+    "en": "My Remediation",
+    "name": "tradle.MyRemediation",
+    "type": "model"
+  },
+  {
+    "nl": "Mijn product-ID",
+    "en": "My Product Id",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "nl": "Mijn telefoons",
@@ -2516,23 +2577,16 @@
     "type": "model"
   },
   {
-    "nl": "namespace",
-    "en": "Namespace",
-    "name": "namespace",
+    "nl": "Vereis onbewerkte gegevens",
+    "en": "Require Raw Data",
+    "name": "requireRawData",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Naam",
-    "en": "Name",
-    "name": "name",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Naam",
-    "en": "Name",
-    "name": "tradle.Name",
+    "nl": "Nieuw berichtmodel",
+    "en": "New message model",
+    "name": "tradle.NewMessageModel",
     "type": "model"
   },
   {
@@ -2550,22 +2604,23 @@
     "model": "Default"
   },
   {
-    "nl": "Verzoek",
-    "en": "Request",
-    "name": "request",
+    "nl": "Nav Bar Border Width",
+    "en": "Nav Bar Border Width",
+    "name": "navBarBorderWidth",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "NextFormRequest",
-    "en": "NextFormRequest",
-    "name": "tradle.NextFormRequest",
-    "type": "model"
+    "nl": "Netwerk",
+    "en": "Network",
+    "name": "network",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "nl": "Volgende Btn-tekst",
-    "en": "Next Btn Text",
-    "name": "nextBtnText",
+    "nl": "Nationaliteit",
+    "en": "Nationality",
+    "name": "nationality",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2577,11 +2632,36 @@
     "model": "Default"
   },
   {
-    "nl": "herroepen",
-    "en": "Revoked",
-    "name": "revoked",
+    "nl": "Nav Bar Border Color",
+    "en": "Nav Bar Border Color",
+    "name": "navBarBorderColor",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "nl": "Nationaliteit",
+    "en": "Nationality",
+    "name": "tradle.Nationality",
+    "type": "model"
+  },
+  {
+    "nl": "Zegelstaat",
+    "en": "Seal State",
+    "name": "tradle.SealState",
+    "type": "model"
+  },
+  {
+    "nl": "Organisatie",
+    "en": "Organization",
+    "name": "organization",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Organisatie",
+    "en": "Organization",
+    "name": "tradle.Organization",
+    "type": "model"
   },
   {
     "nl": "Voorwerp",
@@ -2604,6 +2684,12 @@
     "model": "Default"
   },
   {
+    "nl": "NextFormRequest",
+    "en": "NextFormRequest",
+    "name": "tradle.NextFormRequest",
+    "type": "model"
+  },
+  {
     "nl": "Aantal",
     "en": "Number",
     "name": "number",
@@ -2611,20 +2697,9 @@
     "model": "Default"
   },
   {
-    "nl": "Type verblijf",
-    "en": "Residence Type",
-    "name": "tradle.ResidenceType",
-    "type": "model",
-    "enum": {
-      "secondary": "Tweede thuis",
-      "primary": "Hoofdverblijf",
-      "investment": "Vastgoedbeleggingen"
-    }
-  },
-  {
-    "nl": "Scan aan de andere kant",
-    "en": "Other Side Scan",
-    "name": "otherSideScan",
+    "nl": "Volgende Btn-tekst",
+    "en": "Next Btn Text",
+    "name": "nextBtnText",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2636,9 +2711,28 @@
     "model": "Default"
   },
   {
-    "nl": "Oorspronkelijke ontvanger",
-    "en": "Original Recipient",
-    "name": "originalRecipient",
+    "nl": "Server URL",
+    "en": "Server URL",
+    "name": "url",
+    "type": "propertyName",
+    "model": "tradle.Settings"
+  },
+  {
+    "nl": "Reactie koppelen",
+    "en": "Pairing Response",
+    "name": "tradle.PairingResponse",
+    "type": "model"
+  },
+  {
+    "nl": "Verzoek om paren",
+    "en": "Pairing Request",
+    "name": "tradle.PairingRequest",
+    "type": "model"
+  },
+  {
+    "nl": "Andere kant om te scannen",
+    "en": "Other Side To Scan",
+    "name": "otherSideToScan",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2650,45 +2744,6 @@
     "model": "Default"
   },
   {
-    "nl": "Organisatie",
-    "en": "Organization",
-    "name": "organization",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Organisatie",
-    "en": "Organization",
-    "name": "tradle.Organization",
-    "type": "model"
-  },
-  {
-    "nl": "Tijd",
-    "en": "Time",
-    "name": "time",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Paspoortcontrole",
-    "en": "Passport Verification",
-    "name": "tradle.PassportVerification",
-    "type": "model"
-  },
-  {
-    "nl": "Andere kant om te scannen",
-    "en": "Other Side To Scan",
-    "name": "otherSideToScan",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "partieel",
-    "en": "Partial",
-    "name": "tradle.Partial",
-    "type": "model"
-  },
-  {
     "nl": "Gegevens koppelen",
     "en": "Pairing Data",
     "name": "tradle.PairingData",
@@ -2698,6 +2753,13 @@
     "nl": "Eigenaar",
     "en": "Owner",
     "name": "owner",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Scan aan de andere kant",
+    "en": "Other Side Scan",
+    "name": "otherSideScan",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2716,9 +2778,23 @@
     "model": "Default"
   },
   {
-    "nl": "Reactie koppelen",
-    "en": "Pairing Response",
-    "name": "tradle.PairingResponse",
+    "nl": "Oorspronkelijke ontvanger",
+    "en": "Original Recipient",
+    "name": "originalRecipient",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Type",
+    "en": "Type",
+    "name": "type",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Telefoon",
+    "en": "Phone",
+    "name": "tradle.Phone",
     "type": "model"
   },
   {
@@ -2728,9 +2804,9 @@
     "type": "model"
   },
   {
-    "nl": "Verzoek om paren",
-    "en": "Pairing Request",
-    "name": "tradle.PairingRequest",
+    "nl": "Paspoortcontrole",
+    "en": "Passport Verification",
+    "name": "tradle.PassportVerification",
     "type": "model"
   },
   {
@@ -2741,25 +2817,10 @@
     "model": "Default"
   },
   {
-    "nl": "Sessie",
-    "en": "Session",
-    "name": "session",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "foto's",
-    "en": "Photos",
-    "name": "photos",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Foto-informatie",
-    "en": "Photo info",
-    "name": "selfieJson",
-    "type": "propertyName",
-    "model": "tradle.Selfie"
+    "nl": "partieel",
+    "en": "Partial",
+    "name": "tradle.Partial",
+    "type": "model"
   },
   {
     "nl": "persoonlijk",
@@ -2769,11 +2830,11 @@
     "model": "tradle.PhotoID"
   },
   {
-    "nl": "Persoonlijk detail",
-    "en": "Personal detail",
-    "name": "name_group",
+    "nl": "Telefoon",
+    "en": "Phone",
+    "name": "phone",
     "type": "propertyName",
-    "model": "tradle.PersonalInfo"
+    "model": "Default"
   },
   {
     "nl": "Persoonlijke informatie",
@@ -2789,10 +2850,25 @@
     "model": "Default"
   },
   {
-    "nl": "Telefoon",
-    "en": "Phone",
-    "name": "tradle.Phone",
-    "type": "model"
+    "nl": "Naar",
+    "en": "To",
+    "name": "to",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Vooraf invullen",
+    "en": "Prefill",
+    "name": "prefill",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Geboorteplaats",
+    "en": "Place Of Birth",
+    "name": "placeOfBirth",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "nl": "Foto-ID",
@@ -2805,6 +2881,13 @@
     "en": "Photo",
     "name": "tradle.Photo",
     "type": "model"
+  },
+  {
+    "nl": "phones",
+    "en": "Phones",
+    "name": "phones",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "nl": "Foto I D",
@@ -2832,6 +2915,13 @@
     }
   },
   {
+    "nl": "foto's",
+    "en": "Photos",
+    "name": "photos",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "nl": "Telefoon type",
     "en": "Phone Type",
     "name": "phoneType",
@@ -2839,96 +2929,9 @@
     "model": "Default"
   },
   {
-    "nl": "Telefoon",
-    "en": "Phone",
-    "name": "phone",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "phones",
-    "en": "Phones",
-    "name": "phones",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "instellingen",
-    "en": "Settings",
-    "name": "tradle.Settings",
-    "type": "model"
-  },
-  {
-    "nl": "Vooraf invullen",
-    "en": "Prefill",
-    "name": "prefill",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Postcode",
-    "en": "Postal Code",
-    "name": "postalCode",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Geboorteplaats",
-    "en": "Place Of Birth",
-    "name": "placeOfBirth",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Deel context",
-    "en": "Share Context",
-    "name": "tradle.ShareContext",
-    "type": "model"
-  },
-  {
-    "nl": "Productrij Bg Kleur",
-    "en": "Product Row Bg Color",
-    "name": "productRowBgColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Product lijst",
-    "en": "Product List",
-    "name": "tradle.ProductList",
-    "type": "model"
-  },
-  {
-    "nl": "Vorige",
-    "en": "Prev",
-    "name": "prev",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Product applicatie",
-    "en": "Product Application",
-    "name": "tradle.ProductApplication",
-    "type": "model"
-  },
-  {
-    "nl": "Artikel",
-    "en": "Product",
-    "name": "product",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Terug Header Hash",
-    "en": "Prev Header Hash",
-    "name": "prevHeaderHash",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Product Bg Kleur",
-    "en": "Product Bg Color",
-    "name": "productBgColor",
+    "nl": "Gedeeld met Bg",
+    "en": "Shared With Bg",
+    "name": "sharedWithBg",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2940,22 +2943,15 @@
     "model": "Default"
   },
   {
-    "nl": "Handtekening",
-    "en": "Signature",
-    "name": "signature",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Property Chooser",
-    "en": "Property Chooser",
-    "name": "tradle.PropertyChooser",
+    "nl": "Verzoek om delen",
+    "en": "Share Request",
+    "name": "tradle.ShareRequest",
     "type": "model"
   },
   {
-    "nl": "Bewijs",
-    "en": "Proof",
-    "name": "proof",
+    "nl": "herroepen",
+    "en": "Revoked",
+    "name": "revoked",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2980,11 +2976,10 @@
     "model": "Default"
   },
   {
-    "nl": "Productrij Tekstkleur",
-    "en": "Product Row Text Color",
-    "name": "productRowTextColor",
-    "type": "propertyName",
-    "model": "Default"
+    "nl": "Productaanvraag",
+    "en": "Product Request",
+    "name": "tradle.ProductRequest",
+    "type": "model"
   },
   {
     "nl": "Eigendom",
@@ -3007,9 +3002,9 @@
     "type": "model"
   },
   {
-    "nl": "Sla Btn-tekst over",
-    "en": "Skip Btn Text",
-    "name": "skipBtnText",
+    "nl": "Bewijs",
+    "en": "Proof",
+    "name": "proof",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3035,9 +3030,9 @@
     "model": "Default"
   },
   {
-    "nl": "Referentienummer van de leverancier",
-    "en": "Provider Reference Number",
-    "name": "providerReferenceNumber",
+    "nl": "Product Bg Kleur",
+    "en": "Product Bg Color",
+    "name": "productBgColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3076,9 +3071,9 @@
     "model": "Default"
   },
   {
-    "nl": "keuringen",
-    "en": "Verifications",
-    "name": "verifications",
+    "nl": "Productrij Bg Kleur",
+    "en": "Product Row Bg Color",
+    "name": "productRowBgColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3090,10 +3085,15 @@
     "model": "Default"
   },
   {
-    "nl": "verversen",
-    "en": "Refresh",
-    "name": "tradle.Refresh",
-    "type": "model"
+    "nl": "Type verblijf",
+    "en": "Residence Type",
+    "name": "tradle.ResidenceType",
+    "type": "model",
+    "enum": {
+      "secondary": "Tweede thuis",
+      "primary": "Hoofdverblijf",
+      "investment": "Vastgoedbeleggingen"
+    }
   },
   {
     "nl": "Ruwe data",
@@ -3130,11 +3130,10 @@
     "type": "model"
   },
   {
-    "nl": "Staat",
-    "en": "State",
-    "name": "state",
-    "type": "propertyName",
-    "model": "Default"
+    "nl": "Remediation Simple Message",
+    "en": "Remediation Simple Message",
+    "name": "tradle.RemediationSimpleMessage",
+    "type": "model"
   },
   {
     "nl": "Sanering ID",
@@ -3175,15 +3174,16 @@
     }
   },
   {
-    "nl": "Styles-pakket",
-    "en": "Styles Pack",
-    "name": "tradle.StylesPack",
-    "type": "model"
+    "nl": "Type verblijf",
+    "en": "Residence Type",
+    "name": "residenceType",
+    "type": "propertyName",
+    "model": "tradle.Residence"
   },
   {
-    "nl": "Beveiligingscode",
-    "en": "Security Code",
-    "name": "securityCode",
+    "nl": "Regio",
+    "en": "Region",
+    "name": "region",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3202,84 +3202,16 @@
     "model": "Default"
   },
   {
-    "nl": "Scannen",
-    "en": "Scan",
-    "name": "scan",
+    "nl": "Terug Header Hash",
+    "en": "Prev Header Hash",
+    "name": "prevHeaderHash",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Resultaatdetails",
-    "en": "Result details",
-    "name": "rawData",
-    "type": "propertyName",
-    "model": "tradle.DocumentValidityCheck"
-  },
-  {
-    "nl": "Wortel",
-    "en": "Root",
-    "name": "root",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "gescande",
-    "en": "Scanned",
-    "name": "scanned",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Juiste tekstkleur",
-    "en": "Right Text Color",
-    "name": "rightTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Verzoek tot",
-    "en": "Request For",
-    "name": "requestFor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "residentie",
-    "en": "Residence",
-    "name": "tradle.Residence",
-    "type": "model"
-  },
-  {
-    "nl": "zegel",
-    "en": "Seal",
-    "name": "tradle.Seal",
-    "type": "model"
-  },
-  {
-    "nl": "rendez-vous",
-    "en": "Rendezvous",
-    "name": "rendezvous",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Seal ID",
-    "en": "Seal Id",
-    "name": "sealId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Vereis onbewerkte gegevens",
-    "en": "Require Raw Data",
-    "name": "requireRawData",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Gevraagde eigenschappen",
-    "en": "Requested Properties",
-    "name": "requestedProperties",
+    "nl": "Verzoek",
+    "en": "Request",
+    "name": "request",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3297,34 +3229,104 @@
     }
   },
   {
+    "nl": "Artikel",
+    "en": "Product",
+    "name": "product",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Gevraagde eigenschappen",
+    "en": "Requested Properties",
+    "name": "requestedProperties",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Verzoek tot",
+    "en": "Request For",
+    "name": "requestFor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Product applicatie",
+    "en": "Product Application",
+    "name": "tradle.ProductApplication",
+    "type": "model"
+  },
+  {
+    "nl": "Vorige",
+    "en": "Prev",
+    "name": "prev",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "rendez-vous",
+    "en": "Rendezvous",
+    "name": "rendezvous",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Gebruik Touch Id",
+    "en": "Use Touch Id",
+    "name": "useTouchId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Seal ID",
+    "en": "Seal Id",
+    "name": "sealId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Juiste tekstkleur",
+    "en": "Right Text Color",
+    "name": "rightTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Wortel",
+    "en": "Root",
+    "name": "root",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "nl": "Salarisverificatie",
     "en": "Salary Verification",
     "name": "tradle.SalaryVerification",
     "type": "model"
   },
   {
-    "nl": "Type verblijf",
-    "en": "Residence Type",
-    "name": "residenceType",
+    "nl": "Gescand door",
+    "en": "Scanned By",
+    "name": "scannedBy",
     "type": "propertyName",
-    "model": "tradle.Residence"
+    "model": "Default"
   },
   {
-    "nl": "Zegelstaat",
-    "en": "Seal State",
-    "name": "tradle.SealState",
+    "nl": "zegel",
+    "en": "Seal",
+    "name": "tradle.Seal",
     "type": "model"
   },
   {
-    "nl": "Remediation Simple Message",
-    "en": "Remediation Simple Message",
-    "name": "tradle.RemediationSimpleMessage",
-    "type": "model"
+    "nl": "Straat",
+    "en": "Street",
+    "name": "street",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "nl": "Achternaam",
-    "en": "Surname",
-    "name": "surname",
+    "nl": "Geformeerde verificatie Bg-kleur",
+    "en": "Sourced Verification Bg Color",
+    "name": "sourcedVerificationBgColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3335,18 +3337,17 @@
     "type": "model"
   },
   {
-    "nl": "ontzegeld",
-    "en": "Unsealed",
-    "name": "unsealed",
+    "nl": "Bron",
+    "en": "Source",
+    "name": "source",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Server URL",
-    "en": "Server URL",
-    "name": "url",
-    "type": "propertyName",
-    "model": "tradle.Settings"
+    "nl": "Vaardigheidsverificatie",
+    "en": "Skill Verification",
+    "name": "tradle.SkillVerification",
+    "type": "model"
   },
   {
     "nl": "Zelfintroductie",
@@ -3382,11 +3383,10 @@
     "type": "model"
   },
   {
-    "nl": "Type",
-    "en": "Type",
-    "name": "type",
-    "type": "propertyName",
-    "model": "Default"
+    "nl": "Deel context",
+    "en": "Share Context",
+    "name": "tradle.ShareContext",
+    "type": "model"
   },
   {
     "nl": "Seks",
@@ -3419,11 +3419,10 @@
     "model": "Default"
   },
   {
-    "nl": "Naar",
-    "en": "To",
-    "name": "to",
-    "type": "propertyName",
-    "model": "Default"
+    "nl": "instellingen",
+    "en": "Settings",
+    "name": "tradle.Settings",
+    "type": "model"
   },
   {
     "nl": "Show Dots",
@@ -3453,17 +3452,18 @@
     "model": "Default"
   },
   {
-    "nl": "Gedeeld met Bg",
-    "en": "Shared With Bg",
-    "name": "sharedWithBg",
+    "nl": "Handtekening",
+    "en": "Signature",
+    "name": "signature",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Verzoek om delen",
-    "en": "Share Request",
-    "name": "tradle.ShareRequest",
-    "type": "model"
+    "nl": "Sla Btn-tekst over",
+    "en": "Skip Btn Text",
+    "name": "skipBtnText",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "nl": "Knop Gereed weergeven",
@@ -3487,9 +3487,9 @@
     "model": "Default"
   },
   {
-    "nl": "Label",
-    "en": "Tag",
-    "name": "tradle.Tag",
+    "nl": "Eenvoudig bericht",
+    "en": "Simple Message",
+    "name": "tradle.SimpleMessage",
     "type": "model"
   },
   {
@@ -3507,11 +3507,10 @@
     "model": "Default"
   },
   {
-    "nl": "Symbool",
-    "en": "Symbol",
-    "name": "symbol",
-    "type": "propertyName",
-    "model": "Default"
+    "nl": "Handtekening op scherm",
+    "en": "Signature on screen",
+    "name": "tradle.HandSignature",
+    "type": "model"
   },
   {
     "nl": "Grootte",
@@ -3528,53 +3527,16 @@
     "model": "Default"
   },
   {
-    "nl": "Handtekening op scherm",
-    "en": "Signature on screen",
-    "name": "tradle.HandSignature",
-    "type": "model"
-  },
-  {
-    "nl": "Eenvoudig bericht",
-    "en": "Simple Message",
-    "name": "tradle.SimpleMessage",
-    "type": "model"
-  },
-  {
-    "nl": "Rondleiding",
-    "en": "Tour Page",
-    "name": "tradle.TourPage",
-    "type": "model"
-  },
-  {
-    "nl": "Spoofbestendige selfiecheck",
-    "en": "Spoof-proof selfie check",
-    "name": "tradle.SpoofProofSelfieCheck",
-    "type": "model"
-  },
-  {
-    "nl": "Vaardigheidsverificatie",
-    "en": "Skill Verification",
-    "name": "tradle.SkillVerification",
-    "type": "model"
-  },
-  {
-    "nl": "Bron",
-    "en": "Source",
-    "name": "source",
+    "nl": "Titel",
+    "en": "Title",
+    "name": "title",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "bronnen",
-    "en": "Sources",
-    "name": "sources",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Verzamelverificatietekst Kleur",
-    "en": "Sourced Verification Text Color",
-    "name": "sourcedVerificationTextColor",
+    "nl": "Staat",
+    "en": "State",
+    "name": "state",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3586,9 +3548,49 @@
     "model": "Default"
   },
   {
-    "nl": "Breedte",
-    "en": "Width",
-    "name": "width",
+    "nl": "Spoofbestendige selfiecheck",
+    "en": "Spoof-proof selfie check",
+    "name": "tradle.SpoofProofSelfieCheck",
+    "type": "model"
+  },
+  {
+    "nl": "Verzamelverificatietekst Kleur",
+    "en": "Sourced Verification Text Color",
+    "name": "sourcedVerificationTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "bronnen",
+    "en": "Sources",
+    "name": "sources",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "url",
+    "en": "Url",
+    "name": "url",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Symbool",
+    "en": "Symbol",
+    "name": "symbol",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Styles-pakket",
+    "en": "Styles Pack",
+    "name": "tradle.StylesPack",
+    "type": "model"
+  },
+  {
+    "nl": "Overzicht",
+    "en": "Summary",
+    "name": "summary",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3622,9 +3624,9 @@
     }
   },
   {
-    "nl": "Gebruik Touch Id",
-    "en": "Use Touch Id",
-    "name": "useTouchId",
+    "nl": "inzendingen",
+    "en": "Submissions",
+    "name": "submissions",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3643,9 +3645,9 @@
     "model": "Default"
   },
   {
-    "nl": "Straat",
-    "en": "Street",
-    "name": "street",
+    "nl": "Achternaam",
+    "en": "Surname",
+    "name": "surname",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3657,13 +3659,6 @@
     "model": "Default"
   },
   {
-    "nl": "Gebruiker",
-    "en": "User",
-    "name": "user",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "nl": "Bar In voettekst verzenden",
     "en": "Submit Bar In Footer",
     "name": "submitBarInFooter",
@@ -3671,18 +3666,24 @@
     "model": "Default"
   },
   {
-    "nl": "inzendingen",
-    "en": "Submissions",
-    "name": "submissions",
+    "nl": "Tx-ID",
+    "en": "Tx Id",
+    "name": "txId",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Waarde",
-    "en": "Value",
-    "name": "value",
+    "nl": "ontzegeld",
+    "en": "Unsealed",
+    "name": "unsealed",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "nl": "Rondleiding",
+    "en": "Tour Page",
+    "name": "tradle.TourPage",
+    "type": "model"
   },
   {
     "nl": "Voorwaarden",
@@ -3713,9 +3714,9 @@
     "model": "Default"
   },
   {
-    "nl": "Overzicht",
-    "en": "Summary",
-    "name": "summary",
+    "nl": "Tijd",
+    "en": "Time",
+    "name": "time",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3726,11 +3727,11 @@
     "type": "model"
   },
   {
-    "nl": "keuringen",
-    "en": "Verifications",
-    "name": "myVerifications",
+    "nl": "Niet bevestigd",
+    "en": "Unconfirmed",
+    "name": "unconfirmed",
     "type": "propertyName",
-    "model": "tradle.Profile"
+    "model": "Default"
   },
   {
     "nl": "Transactie Hash",
@@ -3752,44 +3753,36 @@
     "type": "model"
   },
   {
-    "nl": "Titel",
-    "en": "Title",
-    "name": "title",
+    "nl": "Label",
+    "en": "Tag",
+    "name": "tradle.Tag",
+    "type": "model"
+  },
+  {
+    "nl": "Type horloge",
+    "en": "Watch Type",
+    "name": "watchType",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Geverifieerd door mij",
-    "en": "Verified By Me",
-    "name": "verifiedByMe",
+    "nl": "Gebruiker",
+    "en": "User",
+    "name": "user",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Geverifieerde koptekst tekstkleur",
-    "en": "Verified Header Text Color",
-    "name": "verifiedHeaderTextColor",
+    "nl": "geüpload",
+    "en": "Uploaded",
+    "name": "uploaded",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "url",
-    "en": "Url",
-    "name": "url",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Verifieerbare aspecten",
-    "en": "Verifiable Aspects",
-    "name": "verifiableAspects",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Geverifieerde koptekst kleur",
-    "en": "Verified Header Color",
-    "name": "verifiedHeaderColor",
+    "nl": "onbekeken",
+    "en": "Unwatched",
+    "name": "unwatched",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3801,22 +3794,30 @@
     "model": "Default"
   },
   {
-    "nl": "te verifiëren",
-    "en": "Verifiable",
-    "name": "tradle.Verifiable",
-    "type": "model"
-  },
-  {
-    "nl": "Niet bevestigd",
-    "en": "Unconfirmed",
-    "name": "unconfirmed",
+    "nl": "Geverifieerde tekstkleur",
+    "en": "Verified Text Color",
+    "name": "verifiedTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Tx-ID",
-    "en": "Tx Id",
-    "name": "txId",
+    "nl": "Geverifieerd door mij",
+    "en": "Verified By Me",
+    "name": "verifiedByMe",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "keuringen",
+    "en": "Verifications",
+    "name": "myVerifications",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "nl": "Waarde",
+    "en": "Value",
+    "name": "value",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3841,9 +3842,9 @@
     "model": "Default"
   },
   {
-    "nl": "onbekeken",
-    "en": "Unwatched",
-    "name": "unwatched",
+    "nl": "Verifieerbare aspecten",
+    "en": "Verifiable Aspects",
+    "name": "verifiableAspects",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3854,16 +3855,48 @@
     "type": "model"
   },
   {
-    "nl": "geüpload",
-    "en": "Uploaded",
-    "name": "uploaded",
+    "nl": "keuringen",
+    "en": "Verifications",
+    "name": "verifications",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "nl": "Type horloge",
-    "en": "Watch Type",
-    "name": "watchType",
+    "nl": "te verifiëren",
+    "en": "Verifiable",
+    "name": "tradle.Verifiable",
+    "type": "model"
+  },
+  {
+    "nl": "Verificatiemethode voor visuele foto's",
+    "en": "Visual Photos Verification Method",
+    "name": "tradle.VisualPhotosVerificationMethod",
+    "type": "model"
+  },
+  {
+    "nl": "Geverifieerde koptekst kleur",
+    "en": "Verified Header Color",
+    "name": "verifiedHeaderColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Visuele verificatiemethode",
+    "en": "Visual Verification Method",
+    "name": "tradle.VisualVerificationMethod",
+    "type": "model"
+  },
+  {
+    "nl": "Geverifieerde koptekst tekstkleur",
+    "en": "Verified Header Text Color",
+    "name": "verifiedHeaderTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "websites",
+    "en": "Websites",
+    "name": "websites",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3871,19 +3904,6 @@
     "nl": "Geverifieerde kleur link",
     "en": "Verified Link Color",
     "name": "verifiedLinkColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "nl": "Website",
-    "en": "Web site",
-    "name": "tradle.WebSite",
-    "type": "model"
-  },
-  {
-    "nl": "Geverifieerde tekstkleur",
-    "en": "Verified Text Color",
-    "name": "verifiedTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3916,28 +3936,22 @@
     "model": "Default"
   },
   {
-    "nl": "Verificatiemethode voor visuele foto's",
-    "en": "Visual Photos Verification Method",
-    "name": "tradle.VisualPhotosVerificationMethod",
+    "nl": "Website",
+    "en": "Web site",
+    "name": "tradle.WebSite",
     "type": "model"
-  },
-  {
-    "nl": "Visuele verificatiemethode",
-    "en": "Visual Verification Method",
-    "name": "tradle.VisualVerificationMethod",
-    "type": "model"
-  },
-  {
-    "nl": "websites",
-    "en": "Websites",
-    "name": "websites",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "nl": "Welkom",
     "en": "Welcome",
     "name": "welcome",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "nl": "Breedte",
+    "en": "Width",
+    "name": "width",
     "type": "propertyName",
     "model": "Default"
   },

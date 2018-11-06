@@ -1,0 +1,32 @@
+{
+  "id": "tradle.CustomerContactInformation",
+  "title": "Customer Contact Information",
+  "interfaces": [
+    "tradle.Verifiable"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "phone": {
+      "type": "object",
+      "ref": "tradle.Phone",
+      "description": "Please enter your phone number"
+    },
+    "email": {
+      "type": "string",
+      "range": "email",
+      "keyboard": "email-address"
+    }
+  },
+  "required": [
+    "phone"
+  ],
+  "viewCols": [
+    "phone",
+    "email"
+  ]
+}

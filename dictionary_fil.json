@@ -1,16 +1,17 @@
 [
   {
-    "fil": "Listahan ng Kulay",
-    "en": "List Color",
-    "name": "listColor",
+    "fil": "Listahan ng Bg",
+    "en": "List Bg",
+    "name": "listBg",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Mga form para sa produkto",
-    "en": "Forms for the product",
-    "name": "tradle.FormsForProduct",
-    "type": "model"
+    "fil": "Entity",
+    "en": "Entity",
+    "name": "entity",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "API",
@@ -1506,16 +1507,22 @@
     "model": "tradle.MyRefreshProduct"
   },
   {
-    "fil": "Mga Form",
-    "en": "Forms",
-    "name": "forms",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Employee Onboarding",
+    "en": "Employee Onboarding",
+    "name": "tradle.EmployeeOnboarding",
+    "type": "model"
   },
   {
-    "fil": "File",
-    "en": "File",
-    "name": "tradle.File",
+    "fil": "Pagtatrabaho",
+    "en": "Employment",
+    "name": "employment_group",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "fil": "Pagtugon sa Pag-ayos",
+    "en": "Pairing Response",
+    "name": "tradle.PairingResponse",
     "type": "model"
   },
   {
@@ -1529,13 +1536,6 @@
     "fil": "Expiry Year",
     "en": "Expiry Year",
     "name": "expiryYear",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Form Error Bg",
-    "en": "Form Error Bg",
-    "name": "formErrorBg",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1554,10 +1554,11 @@
     "model": "tradle.CreditCard"
   },
   {
-    "fil": "Nakalimutan mo",
-    "en": "Forgot You",
-    "name": "tradle.ForgotYou",
-    "type": "model"
+    "fil": "Evidentiary Documents",
+    "en": "Evidentiary Documents",
+    "name": "evidentiaryDocuments",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "Mga Mali",
@@ -1581,10 +1582,11 @@
     "model": "Default"
   },
   {
-    "fil": "Financial Product",
-    "en": "Financial Product",
-    "name": "tradle.FinancialProduct",
-    "type": "model"
+    "fil": "Kulay ng Error",
+    "en": "Error Color",
+    "name": "errorColor",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "Enum",
@@ -1593,36 +1595,33 @@
     "type": "model"
   },
   {
-    "fil": "Kulay ng Error",
-    "en": "Error Color",
-    "name": "errorColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Pagtatrabaho",
-    "en": "Employment",
-    "name": "employment_group",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "fil": "Employee Onboarding",
-    "en": "Employee Onboarding",
-    "name": "tradle.EmployeeOnboarding",
+    "fil": "Pasaporte",
+    "en": "Passport",
+    "name": "tradle.Passport",
     "type": "model"
   },
   {
-    "fil": "Evidentiary Documents",
-    "en": "Evidentiary Documents",
-    "name": "evidentiaryDocuments",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Financial Product",
+    "en": "Financial Product",
+    "name": "tradle.FinancialProduct",
+    "type": "model"
   },
   {
-    "fil": "Error sa Form",
-    "en": "Form Error",
-    "name": "tradle.FormError",
+    "fil": "File",
+    "en": "File",
+    "name": "tradle.File",
+    "type": "model"
+  },
+  {
+    "fil": "Refresh",
+    "en": "Refresh",
+    "name": "tradle.RefreshProduct",
+    "type": "model"
+  },
+  {
+    "fil": "Nakalimutan mo",
+    "en": "Forgot You",
+    "name": "tradle.ForgotYou",
     "type": "model"
   },
   {
@@ -1668,10 +1667,11 @@
     "model": "Default"
   },
   {
-    "fil": "Form",
-    "en": "Form",
-    "name": "tradle.Form",
-    "type": "model"
+    "fil": "Para sa Resource",
+    "en": "For Resource",
+    "name": "forResource",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "Kalimutan mo ako",
@@ -1680,24 +1680,17 @@
     "type": "model"
   },
   {
-    "fil": "Para sa Resource",
-    "en": "For Resource",
-    "name": "forResource",
+    "fil": "Larawan",
+    "en": "Photo",
+    "name": "photo",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Form Prefill",
-    "en": "Form Prefill",
-    "name": "tradle.FormPrefill",
+    "fil": "Form",
+    "en": "Form",
+    "name": "tradle.Form",
     "type": "model"
-  },
-  {
-    "fil": "Formatted Name",
-    "en": "Formatted Name",
-    "name": "formattedName",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "fil": "Form",
@@ -1707,9 +1700,16 @@
     "model": "Default"
   },
   {
-    "fil": "Kulay ng Error sa Form",
-    "en": "Form Error Color",
-    "name": "formErrorColor",
+    "fil": "Larawan ko D",
+    "en": "Photo I D",
+    "name": "photoID",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Formatted Name",
+    "en": "Formatted Name",
+    "name": "formattedName",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1741,36 +1741,36 @@
     "model": "Default"
   },
   {
-    "fil": "Uri ng Telepono",
-    "en": "Phone Type",
-    "name": "phoneType",
+    "fil": "Kulay ng Error sa Form",
+    "en": "Form Error Color",
+    "name": "formErrorColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Paano Pondo",
-    "en": "How To Fund",
-    "name": "howToFund",
+    "fil": "Form Prefill",
+    "en": "Form Prefill",
+    "name": "tradle.FormPrefill",
+    "type": "model"
+  },
+  {
+    "fil": "Error sa Form",
+    "en": "Form Error",
+    "name": "tradle.FormError",
+    "type": "model"
+  },
+  {
+    "fil": "Form Error Bg",
+    "en": "Form Error Bg",
+    "name": "formErrorBg",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Paano Pondo",
-    "en": "How To Fund",
-    "name": "tradle.HowToFund",
-    "type": "model",
-    "enum": {
-      "cash": "Cash",
-      "check": "Suriin",
-      "direct": "Direktang sa Bangko"
-    }
-  },
-  {
-    "fil": "Address ng Tahanan",
-    "en": "Home Address",
-    "name": "address_group",
-    "type": "propertyName",
-    "model": "tradle.Profile"
+    "fil": "ID ng Larawan",
+    "en": "Photo ID",
+    "name": "tradle.PhotoID",
+    "type": "model"
   },
   {
     "fil": "Hash",
@@ -1780,25 +1780,17 @@
     "model": "Default"
   },
   {
-    "fil": "Header Hash",
-    "en": "Header Hash",
-    "name": "headerHash",
+    "fil": "Mga Form",
+    "en": "Forms",
+    "name": "forms",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Pinakamataas na Degree",
-    "en": "Highest Degree",
-    "name": "highestDegree",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Taas",
-    "en": "Height",
-    "name": "height",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Mga form para sa produkto",
+    "en": "Forms for the product",
+    "name": "tradle.FormsForProduct",
+    "type": "model"
   },
   {
     "fil": "Ibinigay na pangalan",
@@ -1843,6 +1835,13 @@
     "model": "Default"
   },
   {
+    "fil": "Isinasagawa",
+    "en": "Progress",
+    "name": "progress",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "fil": "Headline",
     "en": "Headline",
     "name": "headline",
@@ -1850,31 +1849,23 @@
     "model": "Default"
   },
   {
-    "fil": "Ipakita ang Mga Dot",
-    "en": "Show Dots",
-    "name": "showDots",
+    "fil": "Header Hash",
+    "en": "Header Hash",
+    "name": "headerHash",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Img",
-    "en": "Img",
-    "name": "img",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Application ng Produkto",
+    "en": "Product Application",
+    "name": "tradle.ProductApplication",
+    "type": "model"
   },
   {
     "fil": "Kahilingan sa Pag-publish ng Pagkakakilanlan",
     "en": "Identity Publish Request",
     "name": "tradle.IdentityPublishRequest",
     "type": "model"
-  },
-  {
-    "fil": "Ako Ng N",
-    "en": "I Of N",
-    "name": "iOfN",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "fil": "Pagkakakilanlan",
@@ -1890,10 +1881,11 @@
     "type": "model"
   },
   {
-    "fil": "Ipinahayag ang Identity",
-    "en": "Identity Published",
-    "name": "tradle.IdentityPublished",
-    "type": "model"
+    "fil": "Ako Ng N",
+    "en": "I Of N",
+    "name": "iOfN",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "Mga Detalye ng ID Card",
@@ -1921,50 +1913,55 @@
     "model": "Default"
   },
   {
-    "fil": "Kahilingan ng Produkto",
-    "en": "Product Request",
-    "name": "tradle.ProductRequest",
-    "type": "model"
-  },
-  {
-    "fil": "Papasok na Mensahe Bg Kulay",
-    "en": "Incoming Message Bg Color",
-    "name": "incomingMessageBgColor",
+    "fil": "Paano Pondo",
+    "en": "How To Fund",
+    "name": "howToFund",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Di-aktibo",
-    "en": "Inactive",
-    "name": "inactive",
+    "fil": "Paano Pondo",
+    "en": "How To Fund",
+    "name": "tradle.HowToFund",
+    "type": "model",
+    "enum": {
+      "cash": "Cash",
+      "check": "Suriin",
+      "direct": "Direktang sa Bangko"
+    }
+  },
+  {
+    "fil": "Pinakamataas na Degree",
+    "en": "Highest Degree",
+    "name": "highestDegree",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Img Estilo",
-    "en": "Img Style",
-    "name": "imgStyle",
+    "fil": "Address ng Tahanan",
+    "en": "Home Address",
+    "name": "address_group",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "fil": "Taas",
+    "en": "Height",
+    "name": "height",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Bilang tugon kay",
-    "en": "In Reply To",
-    "name": "inReplyTo",
+    "fil": "Publisher",
+    "en": "Publisher",
+    "name": "publisher",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Kulay ng Bg ng Produkto",
-    "en": "Product Bg Color",
-    "name": "productBgColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Papasok na Kulay ng Text Message",
-    "en": "Incoming Message Text Color",
-    "name": "incomingMessageTextColor",
+    "fil": "Listahan ng Kulay",
+    "en": "List Color",
+    "name": "listColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1976,16 +1973,16 @@
     "model": "Default"
   },
   {
-    "fil": "Kulay ng Kulay ng Tekstong ng Produkto",
-    "en": "Product Row Text Color",
-    "name": "productRowTextColor",
+    "fil": "Ay Agent",
+    "en": "Is Agent",
+    "name": "isAgent",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Nav Bar na Kulay",
-    "en": "Nav Bar Color",
-    "name": "navBarColor",
+    "fil": "Papasok na Kulay ng Text Message",
+    "en": "Incoming Message Text Color",
+    "name": "incomingMessageTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2195,9 +2192,9 @@
     "model": "Default"
   },
   {
-    "fil": "Listahan ng Bg",
-    "en": "List Bg",
-    "name": "listBg",
+    "fil": "Bilang tugon kay",
+    "en": "In Reply To",
+    "name": "inReplyTo",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2229,35 +2226,43 @@
     "type": "model"
   },
   {
-    "fil": "Pangalan",
-    "en": "Name",
-    "name": "tradle.Name",
+    "fil": "Ipinahayag ang Identity",
+    "en": "Identity Published",
+    "name": "tradle.IdentityPublished",
     "type": "model"
   },
   {
-    "fil": "Kailangan ng Teksto ng Logo",
-    "en": "Logo Needs Text",
-    "name": "logoNeedsText",
+    "fil": "Img",
+    "en": "Img",
+    "name": "img",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Katayuan ng Pag-aasawa",
-    "en": "Marital Status",
-    "name": "maritalStatus",
+    "fil": "Papasok na Mensahe Bg Kulay",
+    "en": "Incoming Message Bg Color",
+    "name": "incomingMessageBgColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Suriin ang Manwal na Visual Paghahambing",
-    "en": "Manual Visual Comparison Check",
-    "name": "tradle.ManualVisualComparisonCheck",
-    "type": "model"
+    "fil": "Di-aktibo",
+    "en": "Inactive",
+    "name": "inactive",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "fil": "Gitnang pangalan",
-    "en": "Middle Name",
-    "name": "middleName",
+    "fil": "Img Estilo",
+    "en": "Img Style",
+    "name": "imgStyle",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Rendezvous",
+    "en": "Rendezvous",
+    "name": "rendezvous",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2287,6 +2292,47 @@
     "model": "Default"
   },
   {
+    "fil": "Kailangan ng Teksto ng Logo",
+    "en": "Logo Needs Text",
+    "name": "logoNeedsText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Major",
+    "en": "Major",
+    "name": "major",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Kalidad ng Liveness",
+    "en": "Liveness Score",
+    "name": "livenessScore",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Logo",
+    "en": "Logo",
+    "name": "logo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Selfie",
+    "en": "Selfie",
+    "name": "selfie",
+    "type": "propertyName",
+    "model": "tradle.Selfie"
+  },
+  {
+    "fil": "Media Snippet",
+    "en": "Media Snippet",
+    "name": "tradle.MediaSnippet",
+    "type": "model"
+  },
+  {
     "fil": "Katayuan ng Pag-aasawa",
     "en": "Marital Status",
     "name": "tradle.MaritalStatus",
@@ -2300,63 +2346,24 @@
     }
   },
   {
-    "fil": "Kulay ng Menu",
-    "en": "Menu Color",
-    "name": "menuColor",
+    "fil": "Katayuan ng Pag-aasawa",
+    "en": "Marital Status",
+    "name": "maritalStatus",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Major",
-    "en": "Major",
-    "name": "major",
+    "fil": "Suriin ang Manwal na Visual Paghahambing",
+    "en": "Manual Visual Comparison Check",
+    "name": "tradle.ManualVisualComparisonCheck",
+    "type": "model"
+  },
+  {
+    "fil": "Hiniling na Mga Katangian",
+    "en": "Requested Properties",
+    "name": "requestedProperties",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "fil": "Ang Pasaporte Ko",
-    "en": "My Customer Pass",
-    "name": "tradle.MyCustomerOnboarding",
-    "type": "model"
-  },
-  {
-    "fil": "Merkle Leaf",
-    "en": "Merkle Leaf",
-    "name": "tradle.MerkleLeaf",
-    "type": "model"
-  },
-  {
-    "fil": "Media Snippet",
-    "en": "Media Snippet",
-    "name": "tradle.MediaSnippet",
-    "type": "model"
-  },
-  {
-    "fil": "Uri ng Mime",
-    "en": "Mime Type",
-    "name": "mimeType",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Logo",
-    "en": "Logo",
-    "name": "logo",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Ang aking data",
-    "en": "My Data",
-    "name": "myForms",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "fil": "Pera",
-    "en": "Money",
-    "name": "tradle.Money",
-    "type": "model"
   },
   {
     "fil": "Mga Modelong Pack",
@@ -2365,15 +2372,9 @@
     "type": "model"
   },
   {
-    "fil": "Aking I-refresh",
-    "en": "My Refresh",
-    "name": "tradle.MyRefreshProduct",
-    "type": "model"
-  },
-  {
-    "fil": "Kulay ng Aking Kulay ng Mensahe",
-    "en": "My Message Link Color",
-    "name": "myMessageLinkColor",
+    "fil": "Uri ng Mime",
+    "en": "Mime Type",
+    "name": "mimeType",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2385,11 +2386,10 @@
     "model": "Default"
   },
   {
-    "fil": "Pangalan",
-    "en": "Name",
-    "name": "name",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Merkle Leaf",
+    "en": "Merkle Leaf",
+    "name": "tradle.MerkleLeaf",
+    "type": "model"
   },
   {
     "fil": "Mensahe Naipadala ng Katayuan",
@@ -2399,49 +2399,51 @@
     "model": "Default"
   },
   {
-    "fil": "Aking Produkto",
-    "en": "My Product",
-    "name": "tradle.MyProduct",
-    "type": "model"
-  },
-  {
-    "fil": "Aking Mga Telepono",
-    "en": "My Phones",
-    "name": "myPhones",
+    "fil": "Kulay ng Menu",
+    "en": "Menu Color",
+    "name": "menuColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Ang Aking Isyu ng Produkto",
-    "en": "My Issue Product",
-    "name": "tradle.MyIssueProduct",
-    "type": "model"
-  },
-  {
-    "fil": "Aking Id ng Produkto",
-    "en": "My Product Id",
-    "name": "myProductId",
+    "fil": "Gitnang pangalan",
+    "en": "Middle Name",
+    "name": "middleName",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Kulay ng Background ng Aking Mensahe",
-    "en": "My Message Background Color",
-    "name": "myMessageBackgroundColor",
+    "fil": "Merkle Node",
+    "en": "Merkle Node",
+    "name": "tradle.MerkleNode",
+    "type": "model"
+  },
+  {
+    "fil": "Paraan",
+    "en": "Methods",
+    "name": "methods",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Aking Mga Pagkakakilanlan",
-    "en": "My Identities",
-    "name": "tradle.MyIdentities",
+    "fil": "Paraan",
+    "en": "Method",
+    "name": "tradle.Method",
     "type": "model"
   },
   {
-    "fil": "Ang Aking Employee Pass",
-    "en": "My Employee Pass",
-    "name": "tradle.MyEmployeeOnboarding",
-    "type": "model"
+    "fil": "Mensahe",
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Paraan",
+    "en": "Method",
+    "name": "method",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "Mensahe",
@@ -2457,55 +2459,63 @@
     "model": "Default"
   },
   {
-    "fil": "Paraan",
-    "en": "Method",
-    "name": "method",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Mensahe",
-    "en": "Message",
-    "name": "message",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Paraan",
-    "en": "Method",
-    "name": "tradle.Method",
+    "fil": "Paninirahan",
+    "en": "Residence",
+    "name": "tradle.Residence",
     "type": "model"
   },
   {
-    "fil": "Paraan",
-    "en": "Methods",
-    "name": "methods",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Aking Remediation",
-    "en": "My Remediation",
-    "name": "tradle.MyRemediation",
+    "fil": "Ang Aking Employee Pass",
+    "en": "My Employee Pass",
+    "name": "tradle.MyEmployeeOnboarding",
     "type": "model"
   },
   {
-    "fil": "Merkle Node",
-    "en": "Merkle Node",
-    "name": "tradle.MerkleNode",
+    "fil": "Ang aking data",
+    "en": "My Data",
+    "name": "myForms",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "fil": "Pera",
+    "en": "Money",
+    "name": "tradle.Money",
     "type": "model"
   },
   {
-    "fil": "Kalidad ng Liveness",
-    "en": "Liveness Score",
-    "name": "livenessScore",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Ang Pasaporte Ko",
+    "en": "My Customer Pass",
+    "name": "tradle.MyCustomerOnboarding",
+    "type": "model"
   },
   {
-    "fil": "Lapad ng Border ng Nav Bar",
-    "en": "Nav Bar Border Width",
-    "name": "navBarBorderWidth",
+    "fil": "Uri ng Paninirahan",
+    "en": "Residence Type",
+    "name": "tradle.ResidenceType",
+    "type": "model",
+    "enum": {
+      "primary": "Pangunahing paninirahan",
+      "investment": "Puhunanang ari-arian",
+      "secondary": "Pangalawang tahanan"
+    }
+  },
+  {
+    "fil": "Ang Aking Isyu ng Produkto",
+    "en": "My Issue Product",
+    "name": "tradle.MyIssueProduct",
+    "type": "model"
+  },
+  {
+    "fil": "Aking Mga Pagkakakilanlan",
+    "en": "My Identities",
+    "name": "tradle.MyIdentities",
+    "type": "model"
+  },
+  {
+    "fil": "Pinagmulan",
+    "en": "Source",
+    "name": "source",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2513,13 +2523,6 @@
     "fil": "Kulay ng Border ng Nav Bar",
     "en": "Nav Bar Border Color",
     "name": "navBarBorderColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Nasyonalidad",
-    "en": "Nationality",
-    "name": "nationality",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2544,34 +2547,115 @@
     "model": "Default"
   },
   {
-    "fil": "Nabawi",
-    "en": "Revoked",
-    "name": "revoked",
+    "fil": "Nasyonalidad",
+    "en": "Nationality",
+    "name": "nationality",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Uri ng Relasyon",
-    "en": "Relationship Type",
-    "name": "tradle.RelationshipType",
-    "type": "model",
-    "enum": {
-      "sister": "Ate",
-      "son": "ang kanyang",
-      "other": "Iba pa",
-      "father": "Ama",
-      "daughter": "Anak na babae",
-      "mother": "Ina",
-      "domesticpartner": "Domestic Partner",
-      "guardian": "Tagapangalaga",
-      "brother": "Brother",
-      "spouse": "Asawa"
-    }
+    "fil": "Aking Remediation",
+    "en": "My Remediation",
+    "name": "tradle.MyRemediation",
+    "type": "model"
+  },
+  {
+    "fil": "Aking I-refresh",
+    "en": "My Refresh",
+    "name": "tradle.MyRefreshProduct",
+    "type": "model"
+  },
+  {
+    "fil": "Kulay ng Aking Kulay ng Mensahe",
+    "en": "My Message Link Color",
+    "name": "myMessageLinkColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Pangalan",
+    "en": "Name",
+    "name": "name",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Pangalan",
+    "en": "Name",
+    "name": "tradle.Name",
+    "type": "model"
+  },
+  {
+    "fil": "Aking Produkto",
+    "en": "My Product",
+    "name": "tradle.MyProduct",
+    "type": "model"
+  },
+  {
+    "fil": "Kulay ng Background ng Aking Mensahe",
+    "en": "My Message Background Color",
+    "name": "myMessageBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Aking Id ng Produkto",
+    "en": "My Product Id",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Aking Mga Telepono",
+    "en": "My Phones",
+    "name": "myPhones",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Info Server Server ng Serbisyo",
+    "en": "Service Provider Server Info",
+    "name": "tradle.ServiceProvider",
+    "type": "model"
+  },
+  {
+    "fil": "Isa sa",
+    "en": "One Of",
+    "name": "oneOf",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Numero",
+    "en": "Number",
+    "name": "number",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Bagay",
+    "en": "Object",
+    "name": "object",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Lapad ng Border ng Nav Bar",
+    "en": "Nav Bar Border Width",
+    "name": "navBarBorderWidth",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "NextFormRequest",
     "en": "NextFormRequest",
     "name": "tradle.NextFormRequest",
+    "type": "model"
+  },
+  {
+    "fil": "Bagay",
+    "en": "Object",
+    "name": "tradle.Object",
     "type": "model"
   },
   {
@@ -2585,6 +2669,13 @@
     "fil": "Network",
     "en": "Network",
     "name": "network",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Nav Bar na Kulay",
+    "en": "Nav Bar Color",
+    "name": "navBarColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2609,104 +2700,10 @@
     "model": "Default"
   },
   {
-    "fil": "Rehiyon",
-    "en": "Region",
-    "name": "region",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Orihinal na Nagpapadala",
-    "en": "Original Sender",
-    "name": "originalSender",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Isa sa",
-    "en": "One Of",
-    "name": "oneOf",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Numero",
-    "en": "Number",
-    "name": "number",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Organisasyon",
-    "en": "Organization",
-    "name": "organization",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Bagay",
-    "en": "Object",
-    "name": "object",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Organisasyon",
-    "en": "Organization",
-    "name": "tradle.Organization",
+    "fil": "Pagpapakilala sa sarili",
+    "en": "Self introduction",
+    "name": "tradle.SelfIntroduction",
     "type": "model"
-  },
-  {
-    "fil": "Orihinal na Tatanggap",
-    "en": "Original Recipient",
-    "name": "originalRecipient",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Bagay",
-    "en": "Object",
-    "name": "tradle.Object",
-    "type": "model"
-  },
-  {
-    "fil": "Sanggunian",
-    "en": "Reference",
-    "name": "reference",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Telepono",
-    "en": "Phone",
-    "name": "tradle.Phone",
-    "type": "model"
-  },
-  {
-    "fil": "Telepono",
-    "en": "Phone",
-    "name": "phone",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Pagpapares Data",
-    "en": "Pairing Data",
-    "name": "tradle.PairingData",
-    "type": "model"
-  },
-  {
-    "fil": "Kahilingan sa pagpapares",
-    "en": "Pairing Request",
-    "name": "tradle.PairingRequest",
-    "type": "model"
-  },
-  {
-    "fil": "Personal na detalye",
-    "en": "Personal detail",
-    "name": "name_group",
-    "type": "propertyName",
-    "model": "tradle.PersonalInfo"
   },
   {
     "fil": "Numero ng pasaporte",
@@ -2722,16 +2719,11 @@
     "type": "model"
   },
   {
-    "fil": "Personal na impormasyon",
-    "en": "Personal Info",
-    "name": "tradle.PersonalInfo",
-    "type": "model"
-  },
-  {
-    "fil": "Pagpapatunay ng Pasaporte",
-    "en": "Passport Verification",
-    "name": "tradle.PassportVerification",
-    "type": "model"
+    "fil": "Organisasyon",
+    "en": "Organization",
+    "name": "organization",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "May-ari",
@@ -2748,10 +2740,11 @@
     "model": "Default"
   },
   {
-    "fil": "Pagtugon sa Pag-ayos",
-    "en": "Pairing Response",
-    "name": "tradle.PairingResponse",
-    "type": "model"
+    "fil": "Orihinal na Nagpapadala",
+    "en": "Original Sender",
+    "name": "originalSender",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "Iba pang Side Scan",
@@ -2761,11 +2754,10 @@
     "model": "Default"
   },
   {
-    "fil": "Personal",
-    "en": "Personal",
-    "name": "personal_group",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
+    "fil": "Organisasyon",
+    "en": "Organization",
+    "name": "tradle.Organization",
+    "type": "model"
   },
   {
     "fil": "Iba pang mga Gilid Upang I-scan",
@@ -2775,9 +2767,9 @@
     "model": "Default"
   },
   {
-    "fil": "Permalink",
-    "en": "Permalink",
-    "name": "permalink",
+    "fil": "Orihinal na Tatanggap",
+    "en": "Original Recipient",
+    "name": "originalRecipient",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2789,28 +2781,28 @@
     "model": "Default"
   },
   {
-    "fil": "Pasaporte",
-    "en": "Passport",
-    "name": "tradle.Passport",
+    "fil": "Pagpapares Data",
+    "en": "Pairing Data",
+    "name": "tradle.PairingData",
     "type": "model"
   },
   {
-    "fil": "Refresh",
-    "en": "Refresh",
-    "name": "tradle.RefreshProduct",
+    "fil": "Kahilingan sa pagpapares",
+    "en": "Pairing Request",
+    "name": "tradle.PairingRequest",
     "type": "model"
+  },
+  {
+    "fil": "Selfie",
+    "en": "Selfie",
+    "name": "selfie",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "Prefill From Application",
     "en": "Prefill From Application",
     "name": "prefillFromApplication",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Lugar ng Kapanganakan",
-    "en": "Place Of Birth",
-    "name": "placeOfBirth",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2829,9 +2821,9 @@
     "model": "Default"
   },
   {
-    "fil": "Larawan",
-    "en": "Photo",
-    "name": "photo",
+    "fil": "Lugar ng Kapanganakan",
+    "en": "Place Of Birth",
+    "name": "placeOfBirth",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2843,9 +2835,9 @@
     "model": "Default"
   },
   {
-    "fil": "Larawan ko D",
-    "en": "Photo I D",
-    "name": "photoID",
+    "fil": "Uri ng Telepono",
+    "en": "Phone Type",
+    "name": "phoneType",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2857,9 +2849,9 @@
     "model": "Default"
   },
   {
-    "fil": "Refresh",
-    "en": "Refresh",
-    "name": "tradle.Refresh",
+    "fil": "Personal na impormasyon",
+    "en": "Personal Info",
+    "name": "tradle.PersonalInfo",
     "type": "model"
   },
   {
@@ -2880,15 +2872,70 @@
     "type": "model"
   },
   {
-    "fil": "ID ng Larawan",
-    "en": "Photo ID",
-    "name": "tradle.PhotoID",
+    "fil": "Personal na detalye",
+    "en": "Personal detail",
+    "name": "name_group",
+    "type": "propertyName",
+    "model": "tradle.PersonalInfo"
+  },
+  {
+    "fil": "Pagpapatunay ng Pasaporte",
+    "en": "Passport Verification",
+    "name": "tradle.PassportVerification",
     "type": "model"
   },
   {
-    "fil": "Relasyon",
-    "en": "Relationship",
-    "name": "relationship",
+    "fil": "Personal",
+    "en": "Personal",
+    "name": "personal_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "fil": "Permalink",
+    "en": "Permalink",
+    "name": "permalink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Telepono",
+    "en": "Phone",
+    "name": "tradle.Phone",
+    "type": "model"
+  },
+  {
+    "fil": "Telepono",
+    "en": "Phone",
+    "name": "phone",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Mga larawan",
+    "en": "Photos",
+    "name": "photos",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Ibahagi ang Kulay ng Teksto ng Ibahagi",
+    "en": "Share Context Text Color",
+    "name": "shareContextTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Kulay ng Bg ng Produkto",
+    "en": "Product Bg Color",
+    "name": "productBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Produkto",
+    "en": "Product",
+    "name": "product",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2907,24 +2954,11 @@
     "model": "Default"
   },
   {
-    "fil": "Tagapagbigay",
-    "en": "Provider",
-    "name": "provider",
+    "fil": "Kasarian",
+    "en": "Sex",
+    "name": "sex",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "fil": "Isinasagawa",
-    "en": "Progress",
-    "name": "progress",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Application ng Produkto",
-    "en": "Product Application",
-    "name": "tradle.ProductApplication",
-    "type": "model"
   },
   {
     "fil": "Kulay ng Produkto Bg Bg",
@@ -2934,18 +2968,10 @@
     "model": "Default"
   },
   {
-    "fil": "Produkto",
-    "en": "Product",
-    "name": "product",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Mga larawan",
-    "en": "Photos",
-    "name": "photos",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Kahilingan ng Produkto",
+    "en": "Product Request",
+    "name": "tradle.ProductRequest",
+    "type": "model"
   },
   {
     "fil": "Listahan ng Produkto",
@@ -2954,50 +2980,16 @@
     "type": "model"
   },
   {
-    "fil": "Profile",
-    "en": "Profile",
-    "name": "tradle.Profile",
-    "type": "model"
-  },
-  {
-    "fil": "Relationship Managers",
-    "en": "Relationship Managers",
-    "name": "relationshipManagers",
+    "fil": "Ibahagi ang Kulay ng Background ng Pindutan",
+    "en": "Share Button Background Color",
+    "name": "shareButtonBackgroundColor",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "fil": "Publisher",
-    "en": "Publisher",
-    "name": "publisher",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Mga Produkto",
-    "en": "Products",
-    "name": "products",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Mga Produkto",
-    "en": "Products",
-    "name": "myProducts",
-    "type": "propertyName",
-    "model": "tradle.Profile"
   },
   {
     "fil": "Layunin",
     "en": "Purpose",
     "name": "purpose",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Numero ng Reference ng Provider",
-    "en": "Provider Reference Number",
-    "name": "providerReferenceNumber",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3035,23 +3027,23 @@
     "model": "Default"
   },
   {
-    "fil": "Redacted Card Number",
-    "en": "Redacted Card Number",
-    "name": "redactedCardNumber",
+    "fil": "Kulay ng Kulay ng Tekstong ng Produkto",
+    "en": "Product Row Text Color",
+    "name": "productRowTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Recipient",
-    "en": "Recipient",
-    "name": "recipient",
+    "fil": "Numero ng Reference ng Provider",
+    "en": "Provider Reference Number",
+    "name": "providerReferenceNumber",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Raw Data",
-    "en": "Raw Data",
-    "name": "rawData",
+    "fil": "Mga Produkto",
+    "en": "Products",
+    "name": "products",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3063,11 +3055,11 @@
     "model": "Default"
   },
   {
-    "fil": "Raw data",
-    "en": "Raw data",
-    "name": "rawData",
+    "fil": "Mga Produkto",
+    "en": "Products",
+    "name": "myProducts",
     "type": "propertyName",
-    "model": "tradle.APIBasedVerificationMethod"
+    "model": "tradle.Profile"
   },
   {
     "fil": "Mga Pubkey",
@@ -3083,91 +3075,91 @@
     "type": "model"
   },
   {
-    "fil": "Sukat",
-    "en": "Size",
-    "name": "size",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Katayuan",
-    "en": "Status",
-    "name": "tradle.IssueStatus",
-    "type": "model",
-    "enum": {
-      "closed": "Isinara",
-      "open": "Buksan"
-    }
-  },
-  {
-    "fil": "Pagsisiyasat ng selfie",
-    "en": "Spoof-proof selfie check",
-    "name": "tradle.SpoofProofSelfieCheck",
+    "fil": "Profile",
+    "en": "Profile",
+    "name": "tradle.Profile",
     "type": "model"
   },
   {
-    "fil": "ID ng Remediation",
-    "en": "Remediation ID",
-    "name": "myProductId",
+    "fil": "Tagapagbigay",
+    "en": "Provider",
+    "name": "provider",
     "type": "propertyName",
-    "model": "tradle.MyRemediation"
+    "model": "Default"
   },
   {
-    "fil": "Lagda sa screen",
-    "en": "Signature on screen",
-    "name": "tradle.HandSignature",
+    "fil": "Pinagmulan",
+    "en": "Sources",
+    "name": "sources",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Relationship Managers",
+    "en": "Relationship Managers",
+    "name": "relationshipManagers",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Redacted Card Number",
+    "en": "Redacted Card Number",
+    "name": "redactedCardNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Recipient",
+    "en": "Recipient",
+    "name": "recipient",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Rehiyon",
+    "en": "Region",
+    "name": "region",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Raw Data",
+    "en": "Raw Data",
+    "name": "rawData",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Sanggunian",
+    "en": "Reference",
+    "name": "reference",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Refresh",
+    "en": "Refresh",
+    "name": "tradle.Refresh",
     "type": "model"
   },
   {
-    "fil": "Rendezvous",
-    "en": "Rendezvous",
-    "name": "rendezvous",
+    "fil": "Relasyon",
+    "en": "Relationship",
+    "name": "relationship",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Ibahagi ang Konteksto",
-    "en": "Share Context",
-    "name": "tradle.ShareContext",
-    "type": "model"
-  },
-  {
-    "fil": "Katayuan",
-    "en": "Status",
-    "name": "status",
+    "fil": "Raw data",
+    "en": "Raw data",
+    "name": "rawData",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.APIBasedVerificationMethod"
   },
   {
-    "fil": "Selfie",
-    "en": "Selfie",
-    "name": "selfie",
-    "type": "propertyName",
-    "model": "tradle.Selfie"
-  },
-  {
-    "fil": "Katayuan",
-    "en": "Status",
-    "name": "tradle.Status",
-    "type": "model",
-    "enum": {
-      "fail": "Mabigo",
-      "pending": "Nakabinbin",
-      "error": "Error",
-      "pass": "Pass"
-    }
-  },
-  {
-    "fil": "Mangailangan ng Raw Data",
-    "en": "Require Raw Data",
-    "name": "requireRawData",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Hiniling na Mga Katangian",
-    "en": "Requested Properties",
-    "name": "requestedProperties",
+    "fil": "Hindi naitala",
+    "en": "Unwatched",
+    "name": "unwatched",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3178,16 +3170,27 @@
     "type": "model"
   },
   {
-    "fil": "Hiling",
-    "en": "Request",
-    "name": "request",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Uri ng Relasyon",
+    "en": "Relationship Type",
+    "name": "tradle.RelationshipType",
+    "type": "model",
+    "enum": {
+      "sister": "Ate",
+      "son": "ang kanyang",
+      "other": "Iba pa",
+      "father": "Ama",
+      "daughter": "Anak na babae",
+      "mother": "Ina",
+      "domesticpartner": "Domestic Partner",
+      "guardian": "Tagapangalaga",
+      "brother": "Brother",
+      "spouse": "Asawa"
+    }
   },
   {
-    "fil": "Humiling ng",
-    "en": "Request For",
-    "name": "requestFor",
+    "fil": "Hindi nakumpirma",
+    "en": "Unconfirmed",
+    "name": "unconfirmed",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3198,37 +3201,25 @@
     "type": "model"
   },
   {
-    "fil": "Estado",
-    "en": "State",
-    "name": "state",
+    "fil": "ID ng Remediation",
+    "en": "Remediation ID",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "tradle.MyRemediation"
+  },
+  {
+    "fil": "Isinumite",
+    "en": "Submission",
+    "name": "submission",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Resource",
-    "en": "Resource",
-    "name": "resource",
+    "fil": "Sukat",
+    "en": "Size",
+    "name": "size",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "fil": "Paninirahan",
-    "en": "Residence",
-    "name": "tradle.Residence",
-    "type": "model"
-  },
-  {
-    "fil": "Katayuan ng Residential",
-    "en": "Residential Status",
-    "name": "tradle.ResidentialStatus",
-    "type": "model",
-    "enum": {
-      "withoutMortgage": "Bahay ng may-ari (walang mortgage)",
-      "livingWithParents": "Pamumuhay kasama ang mga magulang",
-      "withMortgage": "May-ari ng bahay (may mortgage)",
-      "tenantP": "Ang nangungupahan (pribado)",
-      "tenantC": "Umuupa (tagapayo)"
-    }
   },
   {
     "fil": "Uri ng Paninirahan",
@@ -3238,20 +3229,16 @@
     "model": "tradle.Residence"
   },
   {
-    "fil": "Uri ng Paninirahan",
-    "en": "Residence Type",
-    "name": "tradle.ResidenceType",
-    "type": "model",
-    "enum": {
-      "primary": "Pangunahing paninirahan",
-      "investment": "Puhunanang ari-arian",
-      "secondary": "Pangalawang tahanan"
-    }
+    "fil": "Humiling ng",
+    "en": "Request For",
+    "name": "requestFor",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "fil": "Pinagmulan",
-    "en": "Source",
-    "name": "source",
+    "fil": "Nabawi",
+    "en": "Revoked",
+    "name": "revoked",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3297,16 +3284,17 @@
     "model": "Default"
   },
   {
-    "fil": "Pagpapatunay ng Kasanayan",
-    "en": "Skill Verification",
-    "name": "tradle.SkillVerification",
+    "fil": "Lagda sa screen",
+    "en": "Signature on screen",
+    "name": "tradle.HandSignature",
     "type": "model"
   },
   {
-    "fil": "Info Server Server ng Serbisyo",
-    "en": "Service Provider Server Info",
-    "name": "tradle.ServiceProvider",
-    "type": "model"
+    "fil": "Mangailangan ng Raw Data",
+    "en": "Require Raw Data",
+    "name": "requireRawData",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "URL ng server",
@@ -3342,10 +3330,17 @@
     "model": "Default"
   },
   {
-    "fil": "Pagpapakilala sa sarili",
-    "en": "Self introduction",
-    "name": "tradle.SelfIntroduction",
-    "type": "model"
+    "fil": "Katayuan ng Residential",
+    "en": "Residential Status",
+    "name": "tradle.ResidentialStatus",
+    "type": "model",
+    "enum": {
+      "withoutMortgage": "Bahay ng may-ari (walang mortgage)",
+      "livingWithParents": "Pamumuhay kasama ang mga magulang",
+      "withMortgage": "May-ari ng bahay (may mortgage)",
+      "tenantP": "Ang nangungupahan (pribado)",
+      "tenantC": "Umuupa (tagapayo)"
+    }
   },
   {
     "fil": "Seal Id",
@@ -3388,16 +3383,16 @@
     "model": "Default"
   },
   {
-    "fil": "Selfie",
-    "en": "Selfie",
-    "name": "selfie",
+    "fil": "Hiling",
+    "en": "Request",
+    "name": "request",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Kulay ng Tekstong Pinagkaloob na Pinatutunayan",
-    "en": "Sourced Verification Text Color",
-    "name": "sourcedVerificationTextColor",
+    "fil": "Resource",
+    "en": "Resource",
+    "name": "resource",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3453,11 +3448,10 @@
     }
   },
   {
-    "fil": "Ibahagi ang Kulay ng Teksto ng Ibahagi",
-    "en": "Share Context Text Color",
-    "name": "shareContextTextColor",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Ibahagi ang Konteksto",
+    "en": "Share Context",
+    "name": "tradle.ShareContext",
+    "type": "model"
   },
   {
     "fil": "Mga Setting",
@@ -3473,9 +3467,9 @@
     "model": "Default"
   },
   {
-    "fil": "Kasarian",
-    "en": "Sex",
-    "name": "sex",
+    "fil": "Ipakita ang Mga Dot",
+    "en": "Show Dots",
+    "name": "showDots",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3487,18 +3481,16 @@
     "model": "Default"
   },
   {
-    "fil": "Ibahagi ang Kulay ng Background ng Pindutan",
-    "en": "Share Button Background Color",
-    "name": "shareButtonBackgroundColor",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Simpleng Mensahe",
+    "en": "Simple Message",
+    "name": "tradle.SimpleMessage",
+    "type": "model"
   },
   {
-    "fil": "Pinagaling na Bg Kulay ng Pagpapatunay",
-    "en": "Sourced Verification Bg Color",
-    "name": "sourcedVerificationBgColor",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Ibinahagi na Resource",
+    "en": "Shared Resource",
+    "name": "tradle.SharedResource",
+    "type": "model"
   },
   {
     "fil": "Lagda Para sa",
@@ -3515,9 +3507,48 @@
     "model": "Default"
   },
   {
+    "fil": "Tour Page",
+    "en": "Tour Page",
+    "name": "tradle.TourPage",
+    "type": "model"
+  },
+  {
     "fil": "Laktawan ang Btn Text",
     "en": "Skip Btn Text",
     "name": "skipBtnText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Pagpapatunay ng Kasanayan",
+    "en": "Skill Verification",
+    "name": "tradle.SkillVerification",
+    "type": "model"
+  },
+  {
+    "fil": "Lapad",
+    "en": "Width",
+    "name": "width",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Pagsisiyasat ng selfie",
+    "en": "Spoof-proof selfie check",
+    "name": "tradle.SpoofProofSelfieCheck",
+    "type": "model"
+  },
+  {
+    "fil": "Pinagaling na Bg Kulay ng Pagpapatunay",
+    "en": "Sourced Verification Bg Color",
+    "name": "sourcedVerificationBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Kulay ng Tekstong Pinagkaloob na Pinatutunayan",
+    "en": "Sourced Verification Text Color",
+    "name": "sourcedVerificationTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3529,76 +3560,51 @@
     "model": "Default"
   },
   {
-    "fil": "Ibinahagi na Resource",
-    "en": "Shared Resource",
-    "name": "tradle.SharedResource",
+    "fil": "Pagpapatunay",
+    "en": "Verification",
+    "name": "tradle.Verification",
     "type": "model"
   },
   {
-    "fil": "Simpleng Mensahe",
-    "en": "Simple Message",
-    "name": "tradle.SimpleMessage",
-    "type": "model"
+    "fil": "Katayuan",
+    "en": "Status",
+    "name": "tradle.IssueStatus",
+    "type": "model",
+    "enum": {
+      "closed": "Isinara",
+      "open": "Buksan"
+    }
   },
   {
-    "fil": "Pinagmulan",
-    "en": "Sources",
-    "name": "sources",
+    "fil": "Estado",
+    "en": "State",
+    "name": "state",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Web site",
-    "en": "Web site",
-    "name": "tradle.WebSite",
-    "type": "model"
-  },
-  {
-    "fil": "Kalye",
-    "en": "Street",
-    "name": "street",
+    "fil": "Katayuan",
+    "en": "Status",
+    "name": "status",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Na-unsealed",
-    "en": "Unsealed",
-    "name": "unsealed",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Katayuan",
+    "en": "Status",
+    "name": "tradle.Status",
+    "type": "model",
+    "enum": {
+      "fail": "Mabigo",
+      "pending": "Nakabinbin",
+      "error": "Error",
+      "pass": "Pass"
+    }
   },
   {
-    "fil": "Na-upload",
-    "en": "Uploaded",
-    "name": "uploaded",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Hindi naitala",
-    "en": "Unwatched",
-    "name": "unwatched",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Hindi nakumpirma",
-    "en": "Unconfirmed",
-    "name": "unconfirmed",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Buod",
-    "en": "Summary",
-    "name": "summary",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Isinumite",
-    "en": "Submission",
-    "name": "submission",
+    "fil": "Url",
+    "en": "Url",
+    "name": "url",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3606,13 +3612,6 @@
     "fil": "Isumite ang Bar In Footer",
     "en": "Submit Bar In Footer",
     "name": "submitBarInFooter",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Target",
-    "en": "Target",
-    "name": "target",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3631,9 +3630,9 @@
     "model": "Default"
   },
   {
-    "fil": "Tag",
-    "en": "Tag",
-    "name": "tag",
+    "fil": "Kalye",
+    "en": "Street",
+    "name": "street",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3651,16 +3650,16 @@
     "type": "model"
   },
   {
-    "fil": "Tx Id",
-    "en": "Tx Id",
-    "name": "txId",
+    "fil": "Gamitin ang Touch Id",
+    "en": "Use Touch Id",
+    "name": "useTouchId",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Mga Tag",
-    "en": "Tags",
-    "name": "tags",
+    "fil": "Tx Id",
+    "en": "Tx Id",
+    "name": "txId",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3691,9 +3690,9 @@
     "type": "model"
   },
   {
-    "fil": "Uri",
-    "en": "Type",
-    "name": "type",
+    "fil": "Mga Tag",
+    "en": "Tags",
+    "name": "tags",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3739,10 +3738,11 @@
     "model": "Default"
   },
   {
-    "fil": "Tour Page",
-    "en": "Tour Page",
-    "name": "tradle.TourPage",
-    "type": "model"
+    "fil": "Target",
+    "en": "Target",
+    "name": "target",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "Paglilibot",
@@ -3751,42 +3751,51 @@
     "type": "model"
   },
   {
-    "fil": "Lapad",
-    "en": "Width",
-    "name": "width",
+    "fil": "Tag",
+    "en": "Tag",
+    "name": "tag",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Na-verify na Bg",
-    "en": "Verified Bg",
-    "name": "verifiedBg",
+    "fil": "Buod",
+    "en": "Summary",
+    "name": "summary",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Pagpapatunay",
-    "en": "Verification",
-    "name": "tradle.Verification",
-    "type": "model"
-  },
-  {
-    "fil": "Napatunayan",
-    "en": "Verifiable",
-    "name": "tradle.Verifiable",
-    "type": "model"
-  },
-  {
-    "fil": "Mga pagpapatunay",
-    "en": "Verifications",
-    "name": "verifications",
+    "fil": "Na-verify na Kulay ng Tekstong Header",
+    "en": "Verified Header Text Color",
+    "name": "verifiedHeaderTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fil": "Url",
-    "en": "Url",
-    "name": "url",
+    "fil": "Na-upload",
+    "en": "Uploaded",
+    "name": "uploaded",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Uri",
+    "en": "Type",
+    "name": "type",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Na-unsealed",
+    "en": "Unsealed",
+    "name": "unsealed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Na-verify na Kulay ng Teksto",
+    "en": "Verified Text Color",
+    "name": "verifiedTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3801,13 +3810,6 @@
     "fil": "User",
     "en": "User",
     "name": "user",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Gamitin ang Touch Id",
-    "en": "Use Touch Id",
-    "name": "useTouchId",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3832,11 +3834,44 @@
     "model": "Default"
   },
   {
+    "fil": "Napatunayan",
+    "en": "Verifiable",
+    "name": "tradle.Verifiable",
+    "type": "model"
+  },
+  {
+    "fil": "Na-verify na dokumento",
+    "en": "Verified document",
+    "name": "document",
+    "type": "propertyName",
+    "model": "tradle.Verification"
+  },
+  {
+    "fil": "Na-verify na Bg",
+    "en": "Verified Bg",
+    "name": "verifiedBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Mga pagpapatunay",
+    "en": "Verifications",
+    "name": "verifications",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "fil": "Mga pagpapatunay",
     "en": "Verifications",
     "name": "myVerifications",
     "type": "propertyName",
     "model": "tradle.Profile"
+  },
+  {
+    "fil": "Pamamaraan sa Pag-verify ng Visual",
+    "en": "Visual Verification Method",
+    "name": "tradle.VisualVerificationMethod",
+    "type": "model"
   },
   {
     "fil": "Na-verify Sa Akin",
@@ -3853,37 +3888,9 @@
     "model": "Default"
   },
   {
-    "fil": "Mga Tagatukoy",
-    "en": "Verifiers",
-    "name": "verifiers",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Bersyon Id",
-    "en": "Version Id",
-    "name": "versionId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Na-verify na Kulay ng Tekstong Header",
-    "en": "Verified Header Text Color",
-    "name": "verifiedHeaderTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Mga Kulay ng Na-verify na Mga Pinagkakatiwala",
-    "en": "Verified Sources Color",
-    "name": "verifiedSourcesColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fil": "Na-verify na Kulay ng Teksto",
-    "en": "Verified Text Color",
-    "name": "verifiedTextColor",
+    "fil": "Mga website",
+    "en": "Websites",
+    "name": "websites",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3902,22 +3909,30 @@
     "model": "Default"
   },
   {
-    "fil": "Na-verify na dokumento",
-    "en": "Verified document",
-    "name": "document",
+    "fil": "Mga Kulay ng Na-verify na Mga Pinagkakatiwala",
+    "en": "Verified Sources Color",
+    "name": "verifiedSourcesColor",
     "type": "propertyName",
-    "model": "tradle.Verification"
+    "model": "Default"
+  },
+  {
+    "fil": "Mga Tagatukoy",
+    "en": "Verifiers",
+    "name": "verifiers",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fil": "Bersyon Id",
+    "en": "Version Id",
+    "name": "versionId",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fil": "Pamamaraan sa Pag-verify ng Visual na Larawan",
     "en": "Visual Photos Verification Method",
     "name": "tradle.VisualPhotosVerificationMethod",
-    "type": "model"
-  },
-  {
-    "fil": "Pamamaraan sa Pag-verify ng Visual",
-    "en": "Visual Verification Method",
-    "name": "tradle.VisualVerificationMethod",
     "type": "model"
   },
   {
@@ -3928,11 +3943,10 @@
     "model": "Default"
   },
   {
-    "fil": "Mga website",
-    "en": "Websites",
-    "name": "websites",
-    "type": "propertyName",
-    "model": "Default"
+    "fil": "Web site",
+    "en": "Web site",
+    "name": "tradle.WebSite",
+    "type": "model"
   },
   {
     "fil": "Maligayang pagdating",

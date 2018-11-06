@@ -1,0 +1,59 @@
+{
+  "id": "tradle.MyCustomerOnboarding",
+  "title": "My Customer Pass",
+  "subClassOf": "tradle.MyProduct",
+  "type": "tradle.Model",
+  "properties": {
+    "entityRole": {
+      "type": "string"
+    },
+    "myProductId": {
+      "title": "Customer ID",
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string",
+      "immutable": true
+    },
+    "lastName": {
+      "type": "string",
+      "immutable": true
+    },
+    "owner": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "revoked": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "myProductId"
+  ],
+  "viewCols": [
+    "myProductId",
+    "firstName",
+    "lastName"
+  ],
+  "indexes": [
+    {
+      "hashKey": "myProductId",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "owner._permalink",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_orgOrAuthor",
+      "rangeKey": [
+        "_t",
+        "_time"
+      ]
+    }
+  ]
+}
