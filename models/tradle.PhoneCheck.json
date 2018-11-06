@@ -1,0 +1,36 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.PhoneCheck",
+  "title": "Phone Check",
+  "subClassOf": "tradle.Check",
+  "description": "check phone number ownership",
+  "properties": {
+    "status": {
+      "type": "object",
+      "ref": "tradle.Status",
+      "readOnly": true
+    },
+    "phone": {
+      "type": "object",
+      "ref": "tradle.Phone"
+    },
+    "application": {
+      "type": "object",
+      "ref": "tradle.Application"
+    },
+    "user": {
+      "type": "object",
+      "ref": "tradle.Identity"
+    },
+    "dateExpires": {
+      "type": "date"
+    }
+  },
+  "required": [
+    "phone"
+  ],
+  "viewCols": [
+    "phone",
+    "status"
+  ]
+}
