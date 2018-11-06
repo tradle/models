@@ -1,17 +1,16 @@
 [
   {
-    "bn": "লিঙ্ক সাপোর্ট",
-    "en": "Link Prop",
-    "name": "linkProp",
+    "bn": "লিংক রঙ",
+    "en": "Link Color",
+    "name": "linkColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "লেন্স",
-    "en": "Lens",
-    "name": "lens",
-    "type": "propertyName",
-    "model": "Default"
+    "bn": "গ্রাহক নিশ্চিতকরণ",
+    "en": "Customer Confirmation",
+    "name": "tradle.CustomerConfirmation",
+    "type": "model"
   },
   {
     "bn": "এপিআই ভিত্তিক যাচাইকরণ",
@@ -430,12 +429,6 @@
     "name": "check",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "bn": "গ্রাহক যোগাযোগের তথ্য",
-    "en": "Customer Contact Information",
-    "name": "tradle.CustomerContactInformation",
-    "type": "model"
   },
   {
     "bn": "ব্লকচেইন নেটওয়ার্ক",
@@ -1125,16 +1118,21 @@
     "model": "Default"
   },
   {
-    "bn": "গ্রাহক আইডি",
-    "en": "Customer ID",
-    "name": "myProductId",
-    "type": "propertyName",
-    "model": "tradle.MyCustomerOnboarding"
+    "bn": "যোগাযোগের তথ্য",
+    "en": "Contact Information",
+    "name": "tradle.CustomerContactInformation",
+    "type": "model"
   },
   {
-    "bn": "সীলমোহর তারিখ",
-    "en": "Date Sealed",
-    "name": "dateSealed",
+    "bn": "নিশ্চিতকরণ কোড",
+    "en": "Confirmation Code",
+    "name": "tradle.OTP",
+    "type": "model"
+  },
+  {
+    "bn": "এনওয়াই বার ব্যাকগ্রাউন্ড কালার",
+    "en": "Nav Bar Background Color",
+    "name": "navBarBackgroundColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1145,37 +1143,28 @@
     "type": "model"
   },
   {
-    "bn": "মেয়াদ শেষের তারিখ",
-    "en": "Date Of Expiry",
-    "name": "dateOfExpiry",
+    "bn": "গ্রাহক আইডি",
+    "en": "Customer ID",
+    "name": "myProductId",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.MyCustomerOnboarding"
   },
   {
-    "bn": "তারিখ মেয়াদ শেষ হবে",
-    "en": "Date Expires",
-    "name": "dateExpires",
-    "type": "propertyName",
-    "model": "Default"
+    "bn": "গ্রাহক অনবোর্ডিং",
+    "en": "Customer Onboarding",
+    "name": "tradle.CustomerOnboarding",
+    "type": "model"
   },
   {
-    "bn": "প্রদান এর তারিখ",
-    "en": "Date Of Issue",
-    "name": "dateOfIssue",
-    "type": "propertyName",
-    "model": "Default"
+    "bn": "গ্রাহক অপেক্ষা করছে",
+    "en": "Customer waiting",
+    "name": "tradle.CustomerWaiting",
+    "type": "model"
   },
   {
-    "bn": "তারিখ চেক",
-    "en": "Date Checked",
-    "name": "dateChecked",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "তারিখ পৃর্ণ",
-    "en": "Date Completed",
-    "name": "dateCompleted",
+    "bn": "উপাত্ত",
+    "en": "Data",
+    "name": "data",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1187,9 +1176,23 @@
     "model": "Default"
   },
   {
-    "bn": "উপাত্ত",
-    "en": "Data",
-    "name": "data",
+    "bn": "নাম",
+    "en": "Name",
+    "name": "name",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "তারিখ পৃর্ণ",
+    "en": "Date Completed",
+    "name": "dateCompleted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "তারিখ চেক",
+    "en": "Date Checked",
+    "name": "dateChecked",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1200,16 +1203,11 @@
     "type": "model"
   },
   {
-    "bn": "গ্রাহক অপেক্ষা করছে",
-    "en": "Customer waiting",
-    "name": "tradle.CustomerWaiting",
-    "type": "model"
-  },
-  {
-    "bn": "গ্রাহক অনবোর্ডিং",
-    "en": "Customer Onboarding",
-    "name": "tradle.CustomerOnboarding",
-    "type": "model"
+    "bn": "মাহবুব",
+    "en": "Permalink",
+    "name": "permalink",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "তারিখ মূল্যায়ন",
@@ -1219,9 +1217,9 @@
     "model": "Default"
   },
   {
-    "bn": "পরিবর্তিত তারিখ",
-    "en": "Date Modified",
-    "name": "dateModified",
+    "bn": "নেটওয়ার্ক",
+    "en": "Network",
+    "name": "network",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1233,6 +1231,13 @@
     "model": "Default"
   },
   {
+    "bn": "তারিখ মেয়াদ শেষ হবে",
+    "en": "Date Expires",
+    "name": "dateExpires",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "bn": "জন্ম তারিখ",
     "en": "Date Of Birth",
     "name": "dateOfBirth",
@@ -1240,35 +1245,30 @@
     "model": "Default"
   },
   {
-    "bn": "কর্মচারী অনবোর্ডিং",
-    "en": "Employee Onboarding",
-    "name": "tradle.EmployeeOnboarding",
-    "type": "model"
-  },
-  {
-    "bn": "তারিখ শুরু",
-    "en": "Date Started",
-    "name": "dateStarted",
+    "bn": "পরিবর্তিত তারিখ",
+    "en": "Date Modified",
+    "name": "dateModified",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "ইমেল ঠিকানা",
-    "en": "Email Address",
-    "name": "tradle.EmailAddress",
-    "type": "model"
-  },
-  {
-    "bn": "ইমেল ঠিকানা",
-    "en": "Email Address",
-    "name": "emailAddress",
+    "bn": "প্রদান এর তারিখ",
+    "en": "Date Of Issue",
+    "name": "dateOfIssue",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "বিবরণ",
-    "en": "Description",
-    "name": "description",
+    "bn": "মেয়াদ শেষের তারিখ",
+    "en": "Date Of Expiry",
+    "name": "dateOfExpiry",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ফোন প্রকার",
+    "en": "Phone Type",
+    "name": "phoneType",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1284,21 +1284,89 @@
     "en": "Description",
     "name": "message",
     "type": "propertyName",
-    "model": "tradle.SkillVerification"
+    "model": "tradle.SalaryVerification"
   },
   {
     "bn": "বিবরণ",
     "en": "Description",
     "name": "message",
     "type": "propertyName",
-    "model": "tradle.SalaryVerification"
+    "model": "tradle.SkillVerification"
   },
   {
-    "bn": "কর্মচারী আইডি",
-    "en": "Employee ID",
-    "name": "myProductId",
+    "bn": "তারিখ শুরু",
+    "en": "Date Started",
+    "name": "dateStarted",
     "type": "propertyName",
-    "model": "tradle.MyRefreshProduct"
+    "model": "Default"
+  },
+  {
+    "bn": "বিবরণ",
+    "en": "Description",
+    "name": "description",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "সীলমোহর তারিখ",
+    "en": "Date Sealed",
+    "name": "dateSealed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ডেলিভারি ত্রুটি",
+    "en": "Delivery Error",
+    "name": "tradle.DeliveryError",
+    "type": "model"
+  },
+  {
+    "bn": "শিক্ষার ডিগ্রী",
+    "en": "Degree of education",
+    "name": "tradle.EducationDegree",
+    "type": "model"
+  },
+  {
+    "bn": "তারিখ বাতিল বাতিল",
+    "en": "Date Write Canceled",
+    "name": "dateWriteCanceled",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "তারিখ যাচাই করা হয়েছে",
+    "en": "Date Verified",
+    "name": "dateVerified",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "উদ্দেশ্য",
+    "en": "Object",
+    "name": "object",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "দস্তাবেজ উপস্থিতি",
+    "en": "Document Presence",
+    "name": "documentPresence",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ডকুমেন্ট সংখ্যা",
+    "en": "Document Number",
+    "name": "documentNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "সনন্দ",
+    "en": "Diploma",
+    "name": "diploma",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "দলিল",
@@ -1328,10 +1396,17 @@
     "type": "model"
   },
   {
-    "bn": "শিক্ষার ডিগ্রী",
-    "en": "Degree of education",
-    "name": "tradle.EducationDegree",
+    "bn": "সংগঠন",
+    "en": "Organization",
+    "name": "tradle.Organization",
     "type": "model"
+  },
+  {
+    "bn": "ডোমেইন",
+    "en": "Domain",
+    "name": "domain",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "নথিপত্র ধরণ",
@@ -1343,37 +1418,7 @@
   {
     "bn": "নথি স্ক্যানার",
     "en": "Document Scanner",
-    "name": "tradle.DocumentScanner",
-    "type": "model",
-    "enum": {
-      "blinkId": "ব্লিক আইডি"
-    }
-  },
-  {
-    "bn": "দস্তাবেজ উপস্থিতি",
-    "en": "Document Presence",
-    "name": "documentPresence",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "নথি স্ক্যানার",
-    "en": "Document Scanner",
     "name": "documentScanner",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "ডকুমেন্ট সংখ্যা",
-    "en": "Document Number",
-    "name": "documentNumber",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "সনন্দ",
-    "en": "Diploma",
-    "name": "diploma",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1391,9 +1436,31 @@
     "type": "model"
   },
   {
-    "bn": "তারিখ যাচাই করা হয়েছে",
-    "en": "Date Verified",
-    "name": "dateVerified",
+    "bn": "নথি স্ক্যানার",
+    "en": "Document Scanner",
+    "name": "tradle.DocumentScanner",
+    "type": "model",
+    "enum": {
+      "blinkId": "ব্লিক আইডি"
+    }
+  },
+  {
+    "bn": "ফোন",
+    "en": "Phone",
+    "name": "tradle.Phone",
+    "type": "model"
+  },
+  {
+    "bn": "খসড়া",
+    "en": "Draft",
+    "name": "draft",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ডট রঙ",
+    "en": "Dot Color",
+    "name": "dotColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1405,16 +1472,42 @@
     "model": "Default"
   },
   {
-    "bn": "ডোমেইন",
-    "en": "Domain",
-    "name": "domain",
+    "bn": "ফোন",
+    "en": "Phone",
+    "name": "phone",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "তারিখ বাতিল বাতিল",
-    "en": "Date Write Canceled",
-    "name": "dateWriteCanceled",
+    "bn": "ড্রাফট অ্যাপ্লিকেশন",
+    "en": "Draft Application",
+    "name": "tradle.DraftApplication",
+    "type": "model"
+  },
+  {
+    "bn": "মালিক উপস্থিতি",
+    "en": "Owner Presence",
+    "name": "ownerPresence",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ইমেল চেক",
+    "en": "Email Check",
+    "name": "tradle.EmailCheck",
+    "type": "model"
+  },
+  {
+    "bn": "শীক্ষাগত ডিগ্রি",
+    "en": "Education Degree",
+    "name": "educationDegree",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "অনুরোধ সম্পাদনা করুন",
+    "en": "Edit Requests",
+    "name": "editRequests",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1439,30 +1532,15 @@
     "model": "Default"
   },
   {
-    "bn": "ডট রঙ",
-    "en": "Dot Color",
-    "name": "dotColor",
-    "type": "propertyName",
-    "model": "Default"
+    "bn": "ইমেল ঠিকানা",
+    "en": "Email Address",
+    "name": "tradle.EmailAddress",
+    "type": "model"
   },
   {
-    "bn": "অনুরোধ সম্পাদনা করুন",
-    "en": "Edit Requests",
-    "name": "editRequests",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "খসড়া",
-    "en": "Draft",
-    "name": "draft",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "শীক্ষাগত ডিগ্রি",
-    "en": "Education Degree",
-    "name": "educationDegree",
+    "bn": "ইমেল ঠিকানা",
+    "en": "Email Address",
+    "name": "emailAddress",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1481,100 +1559,16 @@
     }
   },
   {
-    "bn": "ড্রাফট অ্যাপ্লিকেশন",
-    "en": "Draft Application",
-    "name": "tradle.DraftApplication",
-    "type": "model"
-  },
-  {
-    "bn": "ডেলিভারি ত্রুটি",
-    "en": "Delivery Error",
-    "name": "tradle.DeliveryError",
-    "type": "model"
-  },
-  {
-    "bn": "চাকরি",
-    "en": "Employment",
-    "name": "employment_group",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
-    "bn": "ইমেল চেক",
-    "en": "Email Check",
-    "name": "tradle.EmailCheck",
-    "type": "model"
-  },
-  {
-    "bn": "কর্মচারী",
-    "en": "Employee",
-    "name": "employee",
+    "bn": "নিজে",
+    "en": "Sig",
+    "name": "sig",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "bn": "কর্মচারী আইডি",
-    "en": "Employee ID",
-    "name": "myProductId",
-    "type": "propertyName",
-    "model": "tradle.MyEmployeeOnboarding"
-  },
-  {
-    "bn": "নিশ্চিতকরণ কোড",
-    "en": "Confirmation Code",
-    "name": "tradle.OTP",
-    "type": "model"
-  },
-  {
-    "bn": "সত্তা ভূমিকা",
-    "en": "Entity Role",
-    "name": "entityRole",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "সত্তা",
-    "en": "Entity",
-    "name": "entity",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "বিজি রঙ ত্রুটি",
-    "en": "Error Bg Color",
-    "name": "errorBgColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "Enum",
-    "en": "Enum",
-    "name": "tradle.Enum",
-    "type": "model"
-  },
-  {
-    "bn": "পণ্যের জন্য ফর্ম",
-    "en": "Forms for the product",
-    "name": "tradle.FormsForProduct",
-    "type": "model"
-  },
-  {
-    "bn": "ফর্ম",
-    "en": "Form",
-    "name": "tradle.Form",
-    "type": "model"
   },
   {
     "bn": "ফর্ম",
     "en": "Form",
     "name": "form",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "ত্রুটি রঙ",
-    "en": "Error Color",
-    "name": "errorColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1694,9 +1688,97 @@
     "model": "Default"
   },
   {
-    "bn": "বাম টেক্সট রঙ",
-    "en": "Left Text Color",
-    "name": "leftTextColor",
+    "bn": "কর্মচারী অনবোর্ডিং",
+    "en": "Employee Onboarding",
+    "name": "tradle.EmployeeOnboarding",
+    "type": "model"
+  },
+  {
+    "bn": "ত্রুটি রঙ",
+    "en": "Error Color",
+    "name": "errorColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "কর্মচারী",
+    "en": "Employee",
+    "name": "employee",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "চাকরি",
+    "en": "Employment",
+    "name": "employment_group",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "bn": "কর্মচারী আইডি",
+    "en": "Employee ID",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "tradle.MyEmployeeOnboarding"
+  },
+  {
+    "bn": "সত্তা ভূমিকা",
+    "en": "Entity Role",
+    "name": "entityRole",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "সত্তা",
+    "en": "Entity",
+    "name": "entity",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "কর্মচারী আইডি",
+    "en": "Employee ID",
+    "name": "myProductId",
+    "type": "propertyName",
+    "model": "tradle.MyRefreshProduct"
+  },
+  {
+    "bn": "বিজি রঙ ত্রুটি",
+    "en": "Error Bg Color",
+    "name": "errorBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "Enum",
+    "en": "Enum",
+    "name": "tradle.Enum",
+    "type": "model"
+  },
+  {
+    "bn": "ফর্ম",
+    "en": "Form",
+    "name": "tradle.Form",
+    "type": "model"
+  },
+  {
+    "bn": "অ্যাপ্লিকেশন থেকে প্রিফিল",
+    "en": "Prefill From Application",
+    "name": "prefillFromApplication",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "সম্পূর্ণ",
+    "en": "Full",
+    "name": "full",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "অগ্রবর্তী",
+    "en": "Forward",
+    "name": "forward",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1705,13 +1787,6 @@
     "en": "Form Error",
     "name": "tradle.FormError",
     "type": "model"
-  },
-  {
-    "bn": "শেষ বার্তা সময়",
-    "en": "Last Message Time",
-    "name": "lastMessageTime",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "bn": "ফর্ম প্রাকফল",
@@ -1741,20 +1816,6 @@
     "model": "Default"
   },
   {
-    "bn": "শেষ বার্তা",
-    "en": "Last Message",
-    "name": "lastMessage",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "নামের শেষাংশ",
-    "en": "Last Name",
-    "name": "lastName",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "bn": "থেকে",
     "en": "From",
     "name": "from",
@@ -1762,18 +1823,57 @@
     "model": "Default"
   },
   {
-    "bn": "প্রদত্ত নাম)",
-    "en": "Given name(s)",
-    "name": "givenName",
-    "type": "propertyName",
-    "model": "tradle.Name"
+    "bn": "পণ্যের জন্য ফর্ম",
+    "en": "Forms for the product",
+    "name": "tradle.FormsForProduct",
+    "type": "model"
   },
   {
-    "bn": "সম্পূর্ণ",
-    "en": "Full",
-    "name": "full",
+    "bn": "ফর্ম প্রাক্ফিলস",
+    "en": "Form Prefills",
+    "name": "formPrefills",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "bn": "ফরম",
+    "en": "Forms",
+    "name": "forms",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ফর্ম্যাট করা নাম",
+    "en": "Formatted Name",
+    "name": "formattedName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "বিন্যাস করা",
+    "en": "Formatted",
+    "name": "formatted",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ফর্ম অনুরোধ",
+    "en": "Form Request",
+    "name": "tradle.FormRequest",
+    "type": "model"
+  },
+  {
+    "bn": "সতেজ করা",
+    "en": "Refresh",
+    "name": "tradle.RefreshProduct",
+    "type": "model"
+  },
+  {
+    "bn": "বাসার ঠিকানা",
+    "en": "Home Address",
+    "name": "address_group",
+    "type": "propertyName",
+    "model": "tradle.Profile"
   },
   {
     "bn": "Github ব্যবহারকারীর নাম",
@@ -1783,23 +1883,9 @@
     "model": "tradle.BetaTesterContactInfo"
   },
   {
-    "bn": "অগ্রবর্তী",
-    "en": "Forward",
-    "name": "forward",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "bn": "প্রদত্ত নাম",
     "en": "Given Name",
     "name": "givenName",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "এজেন্ট",
-    "en": "Is Agent",
-    "name": "isAgent",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1839,16 +1925,41 @@
     "model": "Default"
   },
   {
-    "bn": "ফর্ম প্রাক্ফিলস",
-    "en": "Form Prefills",
-    "name": "formPrefills",
+    "bn": "প্রদত্ত নাম)",
+    "en": "Given name(s)",
+    "name": "givenName",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.Name"
   },
   {
-    "bn": "ইনকামিং মেসেজ অপেরিক টেক্সট রঙ",
-    "en": "Incoming Message Opaque Text Color",
-    "name": "incomingMessageOpaqueTextColor",
+    "bn": "সম্পর্ক প্রকার",
+    "en": "Relationship Type",
+    "name": "tradle.RelationshipType",
+    "type": "model",
+    "enum": {
+      "sister": "বোন",
+      "guardian": "অভিভাবক",
+      "other": "অন্যান্য",
+      "daughter": "কন্যা",
+      "father": "পিতা",
+      "brother": "ভাই",
+      "son": "তার",
+      "mother": "মা",
+      "domesticpartner": "গার্হস্থ্য অংশীদার",
+      "spouse": "পত্নী"
+    }
+  },
+  {
+    "bn": "আইডি কার্ড বিবরণ",
+    "en": "ID Card Details",
+    "name": "idCardDocument_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "bn": "ফান্ড কিভাবে",
+    "en": "How To Fund",
+    "name": "howToFund",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1871,23 +1982,41 @@
     }
   },
   {
-    "bn": "ইনকামিং মেসেজ বিজি কালার",
-    "en": "Incoming Message Bg Color",
-    "name": "incomingMessageBgColor",
+    "bn": "পাব কী",
+    "en": "Pub Key",
+    "name": "pubKey",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "বাসার ঠিকানা",
-    "en": "Home Address",
-    "name": "address_group",
+    "bn": "সূচক",
+    "en": "Index",
+    "name": "index",
     "type": "propertyName",
-    "model": "tradle.Profile"
+    "model": "Default"
   },
   {
-    "bn": "ফান্ড কিভাবে",
-    "en": "How To Fund",
-    "name": "howToFund",
+    "bn": "ইনকামিং মেসেজ টেক্সট রঙ",
+    "en": "Incoming Message Text Color",
+    "name": "incomingMessageTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "আইডি কার্ড প্রকার",
+    "en": "ID Card Type",
+    "name": "tradle.IDCardType",
+    "type": "model",
+    "enum": {
+      "license": "বৈধ ড্রাইভার লাইসেন্স",
+      "id": "পরিচয় পত্র",
+      "passport": "বৈধ পাসপোর্ট"
+    }
+  },
+  {
+    "bn": "নিষ্ক্রিয়",
+    "en": "Inactive",
+    "name": "inactive",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1939,52 +2068,50 @@
     "model": "Default"
   },
   {
+    "bn": "ইনকামিং মেসেজ বিজি কালার",
+    "en": "Incoming Message Bg Color",
+    "name": "incomingMessageBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "bn": "আইডেন্টিটি প্রকাশিত",
     "en": "Identity Published",
     "name": "tradle.IdentityPublished",
     "type": "model"
   },
   {
-    "bn": "আইডি কার্ড বিবরণ",
-    "en": "ID Card Details",
-    "name": "idCardDocument_group",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
-  },
-  {
-    "bn": "আইডি কার্ড প্রকার",
-    "en": "ID Card Type",
-    "name": "tradle.IDCardType",
-    "type": "model",
-    "enum": {
-      "license": "বৈধ ড্রাইভার লাইসেন্স",
-      "id": "পরিচয় পত্র",
-      "passport": "বৈধ পাসপোর্ট"
-    }
-  },
-  {
-    "bn": "নিষ্ক্রিয়",
-    "en": "Inactive",
-    "name": "inactive",
+    "bn": "ইনকামিং মেসেজ অপেরিক টেক্সট রঙ",
+    "en": "Incoming Message Opaque Text Color",
+    "name": "incomingMessageOpaqueTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "ফর্ম অনুরোধ",
-    "en": "Form Request",
-    "name": "tradle.FormRequest",
-    "type": "model"
+    "bn": "প্রমাণ",
+    "en": "Proof",
+    "name": "proof",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "bn": "ভূমিকা",
-    "en": "Introduction",
-    "name": "tradle.Introduction",
-    "type": "model"
+    "bn": "সমস্যা",
+    "en": "Issues",
+    "name": "issues",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "bn": "সূচক",
-    "en": "Index",
-    "name": "index",
+    "bn": "ইস্যুকারী",
+    "en": "Issuer",
+    "name": "issuer",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "প্রদান করেছেন",
+    "en": "Issued By",
+    "name": "issuedBy",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1995,18 +2122,10 @@
     "type": "model"
   },
   {
-    "bn": "ইনকামিং মেসেজ টেক্সট রঙ",
-    "en": "Incoming Message Text Color",
-    "name": "incomingMessageTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "বিন্যাস করা",
-    "en": "Formatted",
-    "name": "formatted",
-    "type": "propertyName",
-    "model": "Default"
+    "bn": "ভূমিকা",
+    "en": "Introduction",
+    "name": "tradle.Introduction",
+    "type": "model"
   },
   {
     "bn": "সমস্যা",
@@ -2025,6 +2144,13 @@
     "bn": "নিষ্ক্রিয়",
     "en": "Is Inactive",
     "name": "isInactive",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "এজেন্ট",
+    "en": "Is Agent",
+    "name": "isAgent",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2062,44 +2188,37 @@
     "model": "Default"
   },
   {
-    "bn": "ফর্ম্যাট করা নাম",
-    "en": "Formatted Name",
-    "name": "formattedName",
+    "bn": "উদ্দেশ্য",
+    "en": "Purpose",
+    "name": "purpose",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "প্রদানকারী দেশে",
-    "en": "Issuing Country",
-    "name": "issuingCountry",
+    "bn": "লিঙ্ক সাপোর্ট",
+    "en": "Link Prop",
+    "name": "linkProp",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "ইস্যুকারী",
-    "en": "Issuer",
-    "name": "issuer",
+    "bn": "লিংক",
+    "en": "Link",
+    "name": "link",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "সমস্যা",
-    "en": "Issues",
-    "name": "issues",
+    "bn": "লেন্স",
+    "en": "Lens",
+    "name": "lens",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "প্রদান করেছেন",
-    "en": "Issued By",
-    "name": "issuedBy",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "ফরম",
-    "en": "Forms",
-    "name": "forms",
+    "bn": "বাম টেক্সট রঙ",
+    "en": "Left Text Color",
+    "name": "leftTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2152,16 +2271,16 @@
     "type": "model"
   },
   {
-    "bn": "পত্রাদি",
-    "en": "Leaves",
-    "name": "leaves",
+    "bn": "শেষ বার্তা সময়",
+    "en": "Last Message Time",
+    "name": "lastMessageTime",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "মদের দোকান",
-    "en": "Pub",
-    "name": "pub",
+    "bn": "পত্রাদি",
+    "en": "Leaves",
+    "name": "leaves",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2173,68 +2292,58 @@
     "model": "Default"
   },
   {
-    "bn": "মূল তথ্য",
-    "en": "Raw Data",
-    "name": "rawData",
+    "bn": "শেষ বার্তা",
+    "en": "Last Message",
+    "name": "lastMessage",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "ফোন প্রকার",
-    "en": "Phone Types",
-    "name": "tradle.PhoneTypes",
+    "bn": "নামের শেষাংশ",
+    "en": "Last Name",
+    "name": "lastName",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "প্রদানকারী দেশে",
+    "en": "Issuing Country",
+    "name": "issuingCountry",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "আবাসিক অবস্থা",
+    "en": "Residential Status",
+    "name": "tradle.ResidentialStatus",
     "type": "model",
     "enum": {
-      "work": "কাজ",
-      "home": "বাড়ি",
-      "mobile": "মোবাইল"
+      "livingWithParents": "বাবা মায়ের সঙ্গে বসবাস",
+      "withoutMortgage": "হোম মালিক (বন্ধকী ছাড়া)",
+      "withMortgage": "হোম মালিক (বন্ধকীর সাথে)",
+      "tenantP": "ভাড়াটে (ব্যক্তিগত)",
+      "tenantC": "ভাড়াটে (পরামর্শ)"
     }
   },
   {
-    "bn": "অন্য সাইড স্ক্যান",
-    "en": "Other Side Scan",
-    "name": "otherSideScan",
+    "bn": "বৈবাহিক অবস্থা",
+    "en": "Marital Status",
+    "name": "tradle.MaritalStatus",
+    "type": "model",
+    "enum": {
+      "married": "বিবাহিত",
+      "marriedPA": "বিবাহিত বিবাহের সঙ্গে বিবাহিত",
+      "single": "একক",
+      "civil": "সিভিল পার্টনারশীপ",
+      "livingTogether": "চুক্তি সঙ্গে একসঙ্গে বসবাস"
+    }
+  },
+  {
+    "bn": "বৈবাহিক অবস্থা",
+    "en": "Marital Status",
+    "name": "maritalStatus",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "bn": "ফোন চেক",
-    "en": "Phone Check",
-    "name": "tradle.PhoneCheck",
-    "type": "model"
-  },
-  {
-    "bn": "মালিক",
-    "en": "Owner",
-    "name": "owner",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "লিংক",
-    "en": "Link",
-    "name": "link",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "লিংক রঙ",
-    "en": "Link Color",
-    "name": "linkColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "দম্পতি ডেটা",
-    "en": "Pairing Data",
-    "name": "tradle.PairingData",
-    "type": "model"
-  },
-  {
-    "bn": "জোড়া প্রতিক্রিয়া",
-    "en": "Pairing Response",
-    "name": "tradle.PairingResponse",
-    "type": "model"
   },
   {
     "bn": "তালিকা বিজি",
@@ -2258,109 +2367,11 @@
     "model": "Default"
   },
   {
-    "bn": "পাসপোর্ট",
-    "en": "Passport",
-    "name": "tradle.Passport",
-    "type": "model"
-  },
-  {
     "bn": "লাইভেস স্কোর",
     "en": "Liveness Score",
     "name": "livenessScore",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "bn": "তালিকা রঙ",
-    "en": "List Color",
-    "name": "listColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "ব্যক্তিগত",
-    "en": "Personal",
-    "name": "personal_group",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
-  },
-  {
-    "bn": "বার্তা",
-    "en": "Message",
-    "name": "message",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "মুখ্য",
-    "en": "Major",
-    "name": "major",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "বার্তা",
-    "en": "Message",
-    "name": "tradle.Message",
-    "type": "model"
-  },
-  {
-    "bn": "ম্যানুয়াল ভিসুয়াল তুলনা চেক",
-    "en": "Manual Visual Comparison Check",
-    "name": "tradle.ManualVisualComparisonCheck",
-    "type": "model"
-  },
-  {
-    "bn": "বৈবাহিক অবস্থা",
-    "en": "Marital Status",
-    "name": "tradle.MaritalStatus",
-    "type": "model",
-    "enum": {
-      "married": "বিবাহিত",
-      "marriedPA": "বিবাহিত বিবাহের সঙ্গে বিবাহিত",
-      "single": "একক",
-      "civil": "সিভিল পার্টনারশীপ",
-      "livingTogether": "চুক্তি সঙ্গে একসঙ্গে বসবাস"
-    }
-  },
-  {
-    "bn": "বৈবাহিক অবস্থা",
-    "en": "Marital Status",
-    "name": "maritalStatus",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "মারকেল লিফ",
-    "en": "Merkle Leaf",
-    "name": "tradle.MerkleLeaf",
-    "type": "model"
-  },
-  {
-    "bn": "মিডিয়া স্নিপেট",
-    "en": "Media Snippet",
-    "name": "tradle.MediaSnippet",
-    "type": "model"
-  },
-  {
-    "bn": "মেনু রঙ",
-    "en": "Menu Color",
-    "name": "menuColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "মেনু বিজি রঙ",
-    "en": "Menu Bg Color",
-    "name": "menuBgColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "ম্যার্কেল নোড",
-    "en": "Merkle Node",
-    "name": "tradle.MerkleNode",
-    "type": "model"
   },
   {
     "bn": "লোগো প্রয়োজন টেক্সট",
@@ -2402,21 +2413,29 @@
     "model": "Default"
   },
   {
-    "bn": "ব্যাক্তিগত তথ্য",
-    "en": "Personal Info",
-    "name": "tradle.PersonalInfo",
+    "bn": "তালিকা রঙ",
+    "en": "List Color",
+    "name": "listColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "মুখ্য",
+    "en": "Major",
+    "name": "major",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ম্যানুয়াল ভিসুয়াল তুলনা চেক",
+    "en": "Manual Visual Comparison Check",
+    "name": "tradle.ManualVisualComparisonCheck",
     "type": "model"
   },
   {
-    "bn": "আমার গ্রাহক পাস",
-    "en": "My Customer Pass",
-    "name": "tradle.MyCustomerOnboarding",
-    "type": "model"
-  },
-  {
-    "bn": "বার্তা প্রেরিত স্থিতি",
-    "en": "Message Sent Status",
-    "name": "messageSentStatus",
+    "bn": "নিরাপত্তা কোড",
+    "en": "Security Code",
+    "name": "securityCode",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2432,6 +2451,72 @@
     "name": "method",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "bn": "মারকেল লিফ",
+    "en": "Merkle Leaf",
+    "name": "tradle.MerkleLeaf",
+    "type": "model"
+  },
+  {
+    "bn": "মিডিয়া স্নিপেট",
+    "en": "Media Snippet",
+    "name": "tradle.MediaSnippet",
+    "type": "model"
+  },
+  {
+    "bn": "মেনু রঙ",
+    "en": "Menu Color",
+    "name": "menuColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "মেনু বিজি রঙ",
+    "en": "Menu Bg Color",
+    "name": "menuBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ম্যার্কেল নোড",
+    "en": "Merkle Node",
+    "name": "tradle.MerkleNode",
+    "type": "model"
+  },
+  {
+    "bn": "বার্তা",
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "বার্তা",
+    "en": "Message",
+    "name": "tradle.Message",
+    "type": "model"
+  },
+  {
+    "bn": "বার্তা প্রেরিত স্থিতি",
+    "en": "Message Sent Status",
+    "name": "messageSentStatus",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "জন্য অনুরোধ",
+    "en": "Request For",
+    "name": "requestFor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "আমার তথ্য",
+    "en": "My Data",
+    "name": "myForms",
+    "type": "propertyName",
+    "model": "tradle.Profile"
   },
   {
     "bn": "মধ্য নাম",
@@ -2474,9 +2559,41 @@
     "type": "model"
   },
   {
-    "bn": "পাসপোর্ট নম্বর",
-    "en": "Passport Number",
-    "name": "passportNumber",
+    "bn": "আমার গ্রাহক পাস",
+    "en": "My Customer Pass",
+    "name": "tradle.MyCustomerOnboarding",
+    "type": "model"
+  },
+  {
+    "bn": "স্ক্যান",
+    "en": "Scanned",
+    "name": "scanned",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "আমার বার্তা লিংক রঙ",
+    "en": "My Message Link Color",
+    "name": "myMessageLinkColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "আমার পরিচয়",
+    "en": "My Identities",
+    "name": "tradle.MyIdentities",
+    "type": "model"
+  },
+  {
+    "bn": "আমার কর্মচারী পাস",
+    "en": "My Employee Pass",
+    "name": "tradle.MyEmployeeOnboarding",
+    "type": "model"
+  },
+  {
+    "bn": "আমার বার্তা পটভূমি রং",
+    "en": "My Message Background Color",
+    "name": "myMessageBackgroundColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2487,28 +2604,22 @@
     "type": "model"
   },
   {
-    "bn": "আমার কর্মচারী পাস",
-    "en": "My Employee Pass",
-    "name": "tradle.MyEmployeeOnboarding",
-    "type": "model"
-  },
-  {
-    "bn": "আমার তথ্য",
-    "en": "My Data",
-    "name": "myForms",
+    "bn": "ডান টেক্সট রঙ",
+    "en": "Right Text Color",
+    "name": "rightTextColor",
     "type": "propertyName",
-    "model": "tradle.Profile"
+    "model": "Default"
   },
   {
-    "bn": "আমার পরিচয়",
-    "en": "My Identities",
-    "name": "tradle.MyIdentities",
+    "bn": "জাতীয়তা",
+    "en": "Nationality",
+    "name": "tradle.Nationality",
     "type": "model"
   },
   {
-    "bn": "আংশিক",
-    "en": "Partial",
-    "name": "tradle.Partial",
+    "bn": "নাম",
+    "en": "Name",
+    "name": "tradle.Name",
     "type": "model"
   },
   {
@@ -2516,6 +2627,13 @@
     "en": "My Remediation",
     "name": "tradle.MyRemediation",
     "type": "model"
+  },
+  {
+    "bn": "জাতীয়তা",
+    "en": "Nationality",
+    "name": "nationality",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "আমার রিফ্রেশ",
@@ -2528,6 +2646,13 @@
     "en": "My Product",
     "name": "tradle.MyProduct",
     "type": "model"
+  },
+  {
+    "bn": "নামস্থান",
+    "en": "Namespace",
+    "name": "namespace",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "আমার পণ্য আইডি",
@@ -2544,83 +2669,29 @@
     "model": "Default"
   },
   {
-    "bn": "আমার বার্তা পটভূমি রং",
-    "en": "My Message Background Color",
-    "name": "myMessageBackgroundColor",
+    "bn": "সার্ভার URL",
+    "en": "Server URL",
+    "name": "url",
+    "type": "propertyName",
+    "model": "tradle.Settings"
+  },
+  {
+    "bn": "পরবর্তী বিটিএন টেক্সট",
+    "en": "Next Btn Text",
+    "name": "nextBtnText",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "আমার বার্তা লিংক রঙ",
-    "en": "My Message Link Color",
-    "name": "myMessageLinkColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "পাসপোর্ট যাচাইকরণ",
-    "en": "Passport Verification",
-    "name": "tradle.PassportVerification",
+    "bn": "নতুন বার্তা মডেল",
+    "en": "New message model",
+    "name": "tradle.NewMessageModel",
     "type": "model"
   },
   {
     "bn": "এনওয়াই বার বর্ডার রঙ",
     "en": "Nav Bar Border Color",
     "name": "navBarBorderColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "এনওয়াই বার ব্যাকগ্রাউন্ড কালার",
-    "en": "Nav Bar Background Color",
-    "name": "navBarBackgroundColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "নামস্থান",
-    "en": "Namespace",
-    "name": "namespace",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "জাতীয়তা",
-    "en": "Nationality",
-    "name": "nationality",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "জাতীয়তা",
-    "en": "Nationality",
-    "name": "tradle.Nationality",
-    "type": "model"
-  },
-  {
-    "bn": "নাম",
-    "en": "Name",
-    "name": "name",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "নাম",
-    "en": "Name",
-    "name": "tradle.Name",
-    "type": "model"
-  },
-  {
-    "bn": "মাহবুব",
-    "en": "Permalink",
-    "name": "permalink",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "নেটওয়ার্ক",
-    "en": "Network",
-    "name": "network",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2639,19 +2710,6 @@
     "model": "Default"
   },
   {
-    "bn": "ফোন প্রকার",
-    "en": "Phone Type",
-    "name": "phoneType",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "উদ্দেশ্য",
-    "en": "Object",
-    "name": "tradle.Object",
-    "type": "model"
-  },
-  {
     "bn": "আন্তঃজাল নাম",
     "en": "Network Name",
     "name": "networkName",
@@ -2659,62 +2717,16 @@
     "model": "Default"
   },
   {
-    "bn": "পরবর্তী বিটিএন টেক্সট",
-    "en": "Next Btn Text",
-    "name": "nextBtnText",
+    "bn": "লিঙ্গ",
+    "en": "Sex",
+    "name": "sex",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "নতুন বার্তা মডেল",
-    "en": "New message model",
-    "name": "tradle.NewMessageModel",
-    "type": "model"
-  },
-  {
-    "bn": "সংখ্যা",
-    "en": "Number",
-    "name": "number",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "উদ্দেশ্য",
-    "en": "Object",
-    "name": "object",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "NextFormRequest",
-    "en": "NextFormRequest",
-    "name": "tradle.NextFormRequest",
-    "type": "model"
-  },
-  {
-    "bn": "পোপের দূত",
-    "en": "Nonce",
-    "name": "nonce",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "বেক্তিগত সব",
-    "en": "Personal detail",
-    "name": "name_group",
-    "type": "propertyName",
-    "model": "tradle.PersonalInfo"
-  },
-  {
-    "bn": "সংগঠন",
-    "en": "Organization",
-    "name": "tradle.Organization",
-    "type": "model"
-  },
-  {
-    "bn": "সংগঠন",
-    "en": "Organization",
-    "name": "organization",
+    "bn": "পাসপোর্ট নম্বর",
+    "en": "Passport Number",
+    "name": "passportNumber",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2726,9 +2738,9 @@
     "model": "Default"
   },
   {
-    "bn": "ফোন",
-    "en": "Phone",
-    "name": "tradle.Phone",
+    "bn": "দম্পতি ডেটা",
+    "en": "Pairing Data",
+    "name": "tradle.PairingData",
     "type": "model"
   },
   {
@@ -2738,16 +2750,16 @@
     "type": "model"
   },
   {
-    "bn": "ফোন",
-    "en": "Phone",
-    "name": "phone",
+    "bn": "সংগঠন",
+    "en": "Organization",
+    "name": "organization",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "মালিক উপস্থিতি",
-    "en": "Owner Presence",
-    "name": "ownerPresence",
+    "bn": "সংখ্যা",
+    "en": "Number",
+    "name": "number",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2780,57 +2792,100 @@
     "model": "Default"
   },
   {
-    "bn": "নিজে",
-    "en": "Sig",
-    "name": "sig",
+    "bn": "অন্য সাইড স্ক্যান",
+    "en": "Other Side Scan",
+    "name": "otherSideScan",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "পণ্য তালিকা",
-    "en": "Product List",
-    "name": "tradle.ProductList",
+    "bn": "আংশিক",
+    "en": "Partial",
+    "name": "tradle.Partial",
     "type": "model"
   },
   {
-    "bn": "পূর্ববর্তী",
-    "en": "Prev",
-    "name": "prev",
+    "bn": "মালিক",
+    "en": "Owner",
+    "name": "owner",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "প্রোডাক্ট",
-    "en": "Product",
-    "name": "product",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "ফোন",
-    "en": "Phones",
-    "name": "phones",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "পণ্য অ্যাপ্লিকেশন",
-    "en": "Product Application",
-    "name": "tradle.ProductApplication",
+    "bn": "জোড়া প্রতিক্রিয়া",
+    "en": "Pairing Response",
+    "name": "tradle.PairingResponse",
     "type": "model"
   },
   {
-    "bn": "ছবি",
-    "en": "Photo",
-    "name": "tradle.Photo",
+    "bn": "NextFormRequest",
+    "en": "NextFormRequest",
+    "name": "tradle.NextFormRequest",
     "type": "model"
   },
   {
-    "bn": "পণ্য বিজি রঙ",
-    "en": "Product Bg Color",
-    "name": "productBgColor",
+    "bn": "পোপের দূত",
+    "en": "Nonce",
+    "name": "nonce",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "bn": "উদ্দেশ্য",
+    "en": "Object",
+    "name": "tradle.Object",
+    "type": "model"
+  },
+  {
+    "bn": "পাসপোর্ট",
+    "en": "Passport",
+    "name": "tradle.Passport",
+    "type": "model"
+  },
+  {
+    "bn": "এড়িয়ে যান বোতাম দেখান",
+    "en": "Show Skip Button",
+    "name": "showSkipButton",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ফোন চেক",
+    "en": "Phone Check",
+    "name": "tradle.PhoneCheck",
+    "type": "model"
+  },
+  {
+    "bn": "ব্যক্তিগত",
+    "en": "Personal",
+    "name": "personal_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "bn": "ব্যাক্তিগত তথ্য",
+    "en": "Personal Info",
+    "name": "tradle.PersonalInfo",
+    "type": "model"
+  },
+  {
+    "bn": "বেক্তিগত সব",
+    "en": "Personal detail",
+    "name": "name_group",
+    "type": "propertyName",
+    "model": "tradle.PersonalInfo"
+  },
+  {
+    "bn": "পাসপোর্ট যাচাইকরণ",
+    "en": "Passport Verification",
+    "name": "tradle.PassportVerification",
+    "type": "model"
+  },
+  {
+    "bn": "ভাগ অনুরোধ",
+    "en": "Share Request",
+    "name": "tradle.ShareRequest",
+    "type": "model"
   },
   {
     "bn": "ফটো",
@@ -2838,6 +2893,19 @@
     "name": "photos",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "bn": "ফটো আইডি",
+    "en": "Photo I D",
+    "name": "photoID",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ফটো আইডি",
+    "en": "Photo ID",
+    "name": "tradle.PhotoID",
+    "type": "model"
   },
   {
     "bn": "ছবি",
@@ -2852,6 +2920,44 @@
     "name": "selfieJson",
     "type": "propertyName",
     "model": "tradle.Selfie"
+  },
+  {
+    "bn": "ফোন প্রকার",
+    "en": "Phone Types",
+    "name": "tradle.PhoneTypes",
+    "type": "model",
+    "enum": {
+      "work": "কাজ",
+      "home": "বাড়ি",
+      "mobile": "মোবাইল"
+    }
+  },
+  {
+    "bn": "ফোন",
+    "en": "Phones",
+    "name": "phones",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ছবি",
+    "en": "Photo",
+    "name": "tradle.Photo",
+    "type": "model"
+  },
+  {
+    "bn": "শেলফি",
+    "en": "Selfie",
+    "name": "selfie",
+    "type": "propertyName",
+    "model": "tradle.Selfie"
+  },
+  {
+    "bn": "পূর্ববর্তী শিরোলেখ হ্যাশ",
+    "en": "Prev Header Hash",
+    "name": "prevHeaderHash",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "জন্মস্থান",
@@ -2875,57 +2981,18 @@
     "model": "Default"
   },
   {
-    "bn": "পূর্ববর্তী শিরোলেখ হ্যাশ",
-    "en": "Prev Header Hash",
-    "name": "prevHeaderHash",
+    "bn": "পূর্ববর্তী",
+    "en": "Prev",
+    "name": "prev",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "অ্যাপ্লিকেশন থেকে প্রিফিল",
-    "en": "Prefill From Application",
-    "name": "prefillFromApplication",
+    "bn": "শেলফি",
+    "en": "Selfie",
+    "name": "selfie",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "bn": "ফটো আইডি",
-    "en": "Photo I D",
-    "name": "photoID",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "ফটো আইডি",
-    "en": "Photo ID",
-    "name": "tradle.PhotoID",
-    "type": "model"
-  },
-  {
-    "bn": "যাচাই বিজনেস সঙ্গে ভাগ",
-    "en": "Shared With Verification Bg",
-    "name": "sharedWithVerificationBg",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "উপসম",
-    "en": "Remediation",
-    "name": "tradle.Remediation",
-    "type": "model"
-  },
-  {
-    "bn": "উল্লেখ",
-    "en": "Reference",
-    "name": "reference",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "সতেজ করা",
-    "en": "Refresh",
-    "name": "tradle.Refresh",
-    "type": "model"
   },
   {
     "bn": "পণ্য",
@@ -2935,29 +3002,23 @@
     "model": "Default"
   },
   {
-    "bn": "সতেজ করা",
-    "en": "Refresh",
-    "name": "tradle.RefreshProduct",
-    "type": "model"
-  },
-  {
-    "bn": "প্রকাশক",
-    "en": "Publisher",
-    "name": "publisher",
+    "bn": "পণ্য বিজি রঙ",
+    "en": "Product Bg Color",
+    "name": "productBgColor",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "bn": "পণ্য",
+    "en": "Products",
+    "name": "myProducts",
+    "type": "propertyName",
+    "model": "tradle.Profile"
   },
   {
     "bn": "পণ্য রো বিজি রঙ",
     "en": "Product Row Bg Color",
     "name": "productRowBgColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "সম্পর্ক পরিচালক",
-    "en": "Relationship Managers",
-    "name": "relationshipManagers",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2968,49 +3029,44 @@
     "type": "model"
   },
   {
-    "bn": "সম্পর্ক প্রকার",
-    "en": "Relationship Type",
-    "name": "tradle.RelationshipType",
-    "type": "model",
-    "enum": {
-      "sister": "বোন",
-      "guardian": "অভিভাবক",
-      "other": "অন্যান্য",
-      "daughter": "কন্যা",
-      "father": "পিতা",
-      "brother": "ভাই",
-      "son": "তার",
-      "mother": "মা",
-      "domesticpartner": "গার্হস্থ্য অংশীদার",
-      "spouse": "পত্নী"
-    }
-  },
-  {
-    "bn": "Pubkeys",
-    "en": "Pubkeys",
-    "name": "pubkeys",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "পাব কী",
-    "en": "Pub Key",
-    "name": "pubKey",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "সম্পত্তি পছন্দকারী",
-    "en": "Property Chooser",
-    "name": "tradle.PropertyChooser",
+    "bn": "পণ্য তালিকা",
+    "en": "Product List",
+    "name": "tradle.ProductList",
     "type": "model"
   },
   {
-    "bn": "পণ্য",
-    "en": "Products",
-    "name": "myProducts",
+    "bn": "পণ্য অ্যাপ্লিকেশন",
+    "en": "Product Application",
+    "name": "tradle.ProductApplication",
+    "type": "model"
+  },
+  {
+    "bn": "পণ্য রো টেক্সট রঙ",
+    "en": "Product Row Text Color",
+    "name": "productRowTextColor",
     "type": "propertyName",
-    "model": "tradle.Profile"
+    "model": "Default"
+  },
+  {
+    "bn": "প্রোডাক্ট",
+    "en": "Product",
+    "name": "product",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "উৎস",
+    "en": "Source",
+    "name": "source",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "সম্পত্তি",
+    "en": "Property",
+    "name": "property",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "উন্নতি",
@@ -3026,45 +3082,37 @@
     "type": "model"
   },
   {
-    "bn": "প্রদানকারী",
-    "en": "Provider",
-    "name": "provider",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "bn": "প্রোফাইলের",
     "en": "Profile",
     "name": "tradle.Profile",
     "type": "model"
   },
   {
-    "bn": "সম্পত্তি",
-    "en": "Property",
-    "name": "property",
+    "bn": "Sourced যাচাইকরণ টেক্সট রঙ",
+    "en": "Sourced Verification Text Color",
+    "name": "sourcedVerificationTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "প্রমাণ",
-    "en": "Proof",
-    "name": "proof",
+    "bn": "Pubkeys",
+    "en": "Pubkeys",
+    "name": "pubkeys",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "পণ্য রো টেক্সট রঙ",
-    "en": "Product Row Text Color",
-    "name": "productRowTextColor",
+    "bn": "মদের দোকান",
+    "en": "Pub",
+    "name": "pub",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "সম্পর্ক",
-    "en": "Relationship",
-    "name": "relationship",
-    "type": "propertyName",
-    "model": "Default"
+    "bn": "সম্পত্তি পছন্দকারী",
+    "en": "Property Chooser",
+    "name": "tradle.PropertyChooser",
+    "type": "model"
   },
   {
     "bn": "সরবরাহকারী রেফারেন্স নম্বর",
@@ -3074,16 +3122,16 @@
     "model": "Default"
   },
   {
-    "bn": "এলাকা",
-    "en": "Region",
-    "name": "region",
+    "bn": "প্রদানকারী",
+    "en": "Provider",
+    "name": "provider",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "প্রাপক",
-    "en": "Recipient",
-    "name": "recipient",
+    "bn": "রাষ্ট্র",
+    "en": "State",
+    "name": "state",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3095,18 +3143,25 @@
     "model": "Default"
   },
   {
-    "bn": "উদ্দেশ্য",
-    "en": "Purpose",
-    "name": "purpose",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "bn": "মূল তথ্য",
     "en": "Raw data",
     "name": "rawData",
     "type": "propertyName",
     "model": "tradle.APIBasedVerificationMethod"
+  },
+  {
+    "bn": "প্রাপক",
+    "en": "Recipient",
+    "name": "recipient",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "প্রকাশক",
+    "en": "Publisher",
+    "name": "publisher",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "পাবলিক কী",
@@ -3115,20 +3170,23 @@
     "type": "model"
   },
   {
-    "bn": "অবস্থা",
-    "en": "Status",
-    "name": "tradle.IssueStatus",
-    "type": "model",
-    "enum": {
-      "closed": "বন্ধ",
-      "open": "খোলা"
-    }
+    "bn": "মূল তথ্য",
+    "en": "Raw Data",
+    "name": "rawData",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "bn": "আত্ম পরিচিতি",
-    "en": "Self introduction",
-    "name": "tradle.SelfIntroduction",
-    "type": "model"
+    "bn": "অবস্থা",
+    "en": "Status",
+    "name": "tradle.Status",
+    "type": "model",
+    "enum": {
+      "fail": "ব্যর্থ",
+      "error": "এরর",
+      "pass": "পাস",
+      "pending": "মুলতুবী"
+    }
   },
   {
     "bn": "রেসিডেন্স প্রকার",
@@ -3136,6 +3194,12 @@
     "name": "residenceType",
     "type": "propertyName",
     "model": "tradle.Residence"
+  },
+  {
+    "bn": "প্রতিকার সহজ বার্তা",
+    "en": "Remediation Simple Message",
+    "name": "tradle.RemediationSimpleMessage",
+    "type": "model"
   },
   {
     "bn": "রেসিডেন্স প্রকার",
@@ -3149,74 +3213,9 @@
     }
   },
   {
-    "bn": "সংস্থান",
-    "en": "Resource",
-    "name": "resource",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "স্ক্যান",
-    "en": "Scan",
-    "name": "scan",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "আবাসিক অবস্থা",
-    "en": "Residential Status",
-    "name": "tradle.ResidentialStatus",
-    "type": "model",
-    "enum": {
-      "livingWithParents": "বাবা মায়ের সঙ্গে বসবাস",
-      "withoutMortgage": "হোম মালিক (বন্ধকী ছাড়া)",
-      "withMortgage": "হোম মালিক (বন্ধকীর সাথে)",
-      "tenantP": "ভাড়াটে (ব্যক্তিগত)",
-      "tenantC": "ভাড়াটে (পরামর্শ)"
-    }
-  },
-  {
-    "bn": "সীল",
-    "en": "Seal",
-    "name": "tradle.Seal",
-    "type": "model"
-  },
-  {
-    "bn": "সীল রাজ্য",
-    "en": "Seal State",
-    "name": "tradle.SealState",
-    "type": "model"
-  },
-  {
-    "bn": "বেতন যাচাইকরণ",
-    "en": "Salary Verification",
-    "name": "tradle.SalaryVerification",
-    "type": "model"
-  },
-  {
-    "bn": "ফলাফলের বিবরণ",
-    "en": "Result Details",
-    "name": "resultDetails",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "প্রতিকার সহজ বার্তা",
-    "en": "Remediation Simple Message",
-    "name": "tradle.RemediationSimpleMessage",
-    "type": "model"
-  },
-  {
-    "bn": "দ্বারা স্ক্যান",
-    "en": "Scanned By",
-    "name": "scannedBy",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "নিরাপত্তা কোড",
-    "en": "Security Code",
-    "name": "securityCode",
+    "bn": "সম্পর্ক",
+    "en": "Relationship",
+    "name": "relationship",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3234,11 +3233,10 @@
     "type": "model"
   },
   {
-    "bn": "ফলাফল বিবরণ",
-    "en": "Result details",
-    "name": "rawData",
-    "type": "propertyName",
-    "model": "tradle.DocumentValidityCheck"
+    "bn": "সতেজ করা",
+    "en": "Refresh",
+    "name": "tradle.Refresh",
+    "type": "model"
   },
   {
     "bn": "অনুরোধ",
@@ -3248,9 +3246,9 @@
     "model": "Default"
   },
   {
-    "bn": "জন্য অনুরোধ",
-    "en": "Request For",
-    "name": "requestFor",
+    "bn": "উল্লেখ",
+    "en": "Reference",
+    "name": "reference",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3262,11 +3260,10 @@
     "model": "Default"
   },
   {
-    "bn": "প্রত্যাহার করা",
-    "en": "Revoked",
-    "name": "revoked",
-    "type": "propertyName",
-    "model": "Default"
+    "bn": "উপসম",
+    "en": "Remediation",
+    "name": "tradle.Remediation",
+    "type": "model"
   },
   {
     "bn": "নির্দিষ্ট মিলনস্থান",
@@ -3283,17 +3280,25 @@
     "model": "tradle.MyRemediation"
   },
   {
-    "bn": "স্ক্যান",
-    "en": "Scanned",
-    "name": "scanned",
+    "bn": "এলাকা",
+    "en": "Region",
+    "name": "region",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "নিরাপত্তা কোড",
-    "en": "Security Code",
-    "name": "tradle.SecurityCode",
-    "type": "model"
+    "bn": "সম্পর্ক পরিচালক",
+    "en": "Relationship Managers",
+    "name": "relationshipManagers",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "বিষয়",
+    "en": "Subject",
+    "name": "subject",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "মূল",
@@ -3303,65 +3308,57 @@
     "model": "Default"
   },
   {
-    "bn": "ডান টেক্সট রঙ",
-    "en": "Right Text Color",
-    "name": "rightTextColor",
+    "bn": "সংস্থান",
+    "en": "Resource",
+    "name": "resource",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "নিরাপত্তা কোড",
-    "en": "Security Codes",
-    "name": "securityCodes",
+    "bn": "ফলাফলের বিবরণ",
+    "en": "Result Details",
+    "name": "resultDetails",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "সীল আইডি",
-    "en": "Seal Id",
-    "name": "sealId",
+    "bn": "ফলাফল বিবরণ",
+    "en": "Result details",
+    "name": "rawData",
+    "type": "propertyName",
+    "model": "tradle.DocumentValidityCheck"
+  },
+  {
+    "bn": "প্রত্যাহার করা",
+    "en": "Revoked",
+    "name": "revoked",
     "type": "propertyName",
     "model": "Default"
   },
   {
     "bn": "ট্যাগ",
     "en": "Tag",
-    "name": "tag",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "আয়তন",
-    "en": "Size",
-    "name": "size",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "সার্ভার URL",
-    "en": "Server URL",
-    "name": "url",
-    "type": "propertyName",
-    "model": "tradle.Settings"
-  },
-  {
-    "bn": "সহজ বার্তা",
-    "en": "Simple Message",
-    "name": "tradle.SimpleMessage",
+    "name": "tradle.Tag",
     "type": "model"
+  },
+  {
+    "bn": "বেতন যাচাইকরণ",
+    "en": "Salary Verification",
+    "name": "tradle.SalaryVerification",
+    "type": "model"
+  },
+  {
+    "bn": "সারাংশ",
+    "en": "Summary",
+    "name": "summary",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "স্ক্রিনে স্বাক্ষর",
     "en": "Signature on screen",
     "name": "tradle.HandSignature",
     "type": "model"
-  },
-  {
-    "bn": "লিঙ্গ",
-    "en": "Sex",
-    "name": "sex",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "bn": "স্বাক্ষর",
@@ -3428,9 +3425,9 @@
     "type": "model"
   },
   {
-    "bn": "এড়িয়ে যান বোতাম দেখান",
-    "en": "Show Skip Button",
-    "name": "showSkipButton",
+    "bn": "যাচাই বিজনেস সঙ্গে ভাগ",
+    "en": "Shared With Verification Bg",
+    "name": "sharedWithVerificationBg",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3449,9 +3446,9 @@
     "model": "Default"
   },
   {
-    "bn": "ভাগ অনুরোধ",
-    "en": "Share Request",
-    "name": "tradle.ShareRequest",
+    "bn": "সীল",
+    "en": "Seal",
+    "name": "tradle.Seal",
     "type": "model"
   },
   {
@@ -3474,11 +3471,10 @@
     "model": "Default"
   },
   {
-    "bn": "শেলফি",
-    "en": "Selfie",
-    "name": "selfie",
-    "type": "propertyName",
-    "model": "tradle.Selfie"
+    "bn": "সীল রাজ্য",
+    "en": "Seal State",
+    "name": "tradle.SealState",
+    "type": "model"
   },
   {
     "bn": "সেশন আইডি",
@@ -3494,64 +3490,66 @@
     "type": "model"
   },
   {
-    "bn": "শেলফি",
-    "en": "Selfie",
-    "name": "selfie",
+    "bn": "নিরাপত্তা কোড",
+    "en": "Security Codes",
+    "name": "securityCodes",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "লেনদেন হাশ",
-    "en": "Transaction Hash",
-    "name": "transactionHash",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "বিটিএন টেক্সট এড়িয়ে যান",
-    "en": "Skip Btn Text",
-    "name": "skipBtnText",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "দক্ষতা যাচাইকরণ",
-    "en": "Skill Verification",
-    "name": "tradle.SkillVerification",
+    "bn": "নিরাপত্তা কোড",
+    "en": "Security Code",
+    "name": "tradle.SecurityCode",
     "type": "model"
   },
   {
-    "bn": "প্রতীক",
-    "en": "Symbol",
-    "name": "symbol",
+    "bn": "সীল আইডি",
+    "en": "Seal Id",
+    "name": "sealId",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "উৎস",
-    "en": "Source",
-    "name": "source",
+    "bn": "দ্বারা স্ক্যান",
+    "en": "Scanned By",
+    "name": "scannedBy",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "যাচাই করা সোর্স রঙ",
-    "en": "Verified Sources Color",
-    "name": "verifiedSourcesColor",
+    "bn": "স্ক্যান",
+    "en": "Scan",
+    "name": "scan",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "আত্ম পরিচিতি",
+    "en": "Self introduction",
+    "name": "tradle.SelfIntroduction",
+    "type": "model"
+  },
+  {
+    "bn": "Tx আইডি",
+    "en": "Tx Id",
+    "name": "txId",
     "type": "propertyName",
     "model": "Default"
   },
   {
     "bn": "অবস্থা",
     "en": "Status",
-    "name": "status",
-    "type": "propertyName",
-    "model": "Default"
+    "name": "tradle.IssueStatus",
+    "type": "model",
+    "enum": {
+      "closed": "বন্ধ",
+      "open": "খোলা"
+    }
   },
   {
-    "bn": "Sourced যাচাইকরণ টেক্সট রঙ",
-    "en": "Sourced Verification Text Color",
-    "name": "sourcedVerificationTextColor",
+    "bn": "অবস্থা",
+    "en": "Status",
+    "name": "status",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3570,11 +3568,10 @@
     "model": "Default"
   },
   {
-    "bn": "রাষ্ট্র",
-    "en": "State",
-    "name": "state",
-    "type": "propertyName",
-    "model": "Default"
+    "bn": "দক্ষতা যাচাইকরণ",
+    "en": "Skill Verification",
+    "name": "tradle.SkillVerification",
+    "type": "model"
   },
   {
     "bn": "Sourced যাচাই বিজি রঙ",
@@ -3590,28 +3587,29 @@
     "type": "model"
   },
   {
-    "bn": "অবস্থা",
-    "en": "Status",
-    "name": "tradle.Status",
-    "type": "model",
-    "enum": {
-      "fail": "ব্যর্থ",
-      "error": "এরর",
-      "pass": "পাস",
-      "pending": "মুলতুবী"
-    }
-  },
-  {
-    "bn": "প্রকার দেখুন",
-    "en": "Watch Type",
-    "name": "watchType",
+    "bn": "বিটিএন টেক্সট এড়িয়ে যান",
+    "en": "Skip Btn Text",
+    "name": "skipBtnText",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "পাদদেশে বার জমা দিন",
-    "en": "Submit Bar In Footer",
-    "name": "submitBarInFooter",
+    "bn": "আয়তন",
+    "en": "Size",
+    "name": "size",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "সহজ বার্তা",
+    "en": "Simple Message",
+    "name": "tradle.SimpleMessage",
+    "type": "model"
+  },
+  {
+    "bn": "অসমর্থিত",
+    "en": "Unconfirmed",
+    "name": "unconfirmed",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3619,13 +3617,6 @@
     "bn": "নমন",
     "en": "Submission",
     "name": "submission",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "জমা",
-    "en": "Submissions",
-    "name": "submissions",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3650,16 +3641,16 @@
     "model": "Default"
   },
   {
-    "bn": "বিষয়",
-    "en": "Subject",
-    "name": "subject",
+    "bn": "টাচ আইডি ব্যবহার করুন",
+    "en": "Use Touch Id",
+    "name": "useTouchId",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "ব্যবহারকারী",
-    "en": "User",
-    "name": "user",
+    "bn": "লেনদেন হাশ",
+    "en": "Transaction Hash",
+    "name": "transactionHash",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3671,15 +3662,16 @@
     "model": "Default"
   },
   {
-    "bn": "ট্যাগ",
-    "en": "Tag",
-    "name": "tradle.Tag",
-    "type": "model"
+    "bn": "পাদদেশে বার জমা দিন",
+    "en": "Submit Bar In Footer",
+    "name": "submitBarInFooter",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "bn": "সারাংশ",
-    "en": "Summary",
-    "name": "summary",
+    "bn": "ট্যাগ",
+    "en": "Tag",
+    "name": "tag",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3697,11 +3689,11 @@
     "type": "model"
   },
   {
-    "bn": "যাচাই করা ডকুমেন্ট",
-    "en": "Verified document",
-    "name": "document",
+    "bn": "জমা",
+    "en": "Submissions",
+    "name": "submissions",
     "type": "propertyName",
-    "model": "tradle.Verification"
+    "model": "Default"
   },
   {
     "bn": "ভ্রমণ পৃষ্ঠা",
@@ -3757,11 +3749,17 @@
     "model": "Default"
   },
   {
-    "bn": "যাচাইকরণ",
-    "en": "Verifications",
-    "name": "myVerifications",
+    "bn": "প্রতীক",
+    "en": "Symbol",
+    "name": "symbol",
     "type": "propertyName",
-    "model": "tradle.Profile"
+    "model": "Default"
+  },
+  {
+    "bn": "প্রতিপাদন",
+    "en": "Verification",
+    "name": "tradle.Verification",
+    "type": "model"
   },
   {
     "bn": "আদর্শ",
@@ -3771,9 +3769,9 @@
     "model": "Default"
   },
   {
-    "bn": "Tx আইডি",
-    "en": "Tx Id",
-    "name": "txId",
+    "bn": "ওয়েবসাইট",
+    "en": "Websites",
+    "name": "websites",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3781,13 +3779,6 @@
     "bn": "যাচাই করা শিরোনাম রঙ",
     "en": "Verified Header Color",
     "name": "verifiedHeaderColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "bn": "আপলোড করা",
-    "en": "Uploaded",
-    "name": "uploaded",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3806,9 +3797,9 @@
     "model": "Default"
   },
   {
-    "bn": "অসমর্থিত",
-    "en": "Unconfirmed",
-    "name": "unconfirmed",
+    "bn": "যাচাই করা সীমানা রঙ",
+    "en": "Verified Border Color",
+    "name": "verifiedBorderColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3826,9 +3817,9 @@
     "type": "model"
   },
   {
-    "bn": "টাচ আইডি ব্যবহার করুন",
-    "en": "Use Touch Id",
-    "name": "useTouchId",
+    "bn": "ব্যবহারকারী",
+    "en": "User",
+    "name": "user",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3847,9 +3838,9 @@
     "model": "Default"
   },
   {
-    "bn": "সংস্করণ আইডি",
-    "en": "Version Id",
-    "name": "versionId",
+    "bn": "যাচাইকরণ",
+    "en": "Verifications",
+    "name": "verifications",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3874,25 +3865,6 @@
     "model": "Default"
   },
   {
-    "bn": "ভিসুয়াল যাচাইকরণ পদ্ধতি",
-    "en": "Visual Verification Method",
-    "name": "tradle.VisualVerificationMethod",
-    "type": "model"
-  },
-  {
-    "bn": "প্রতিপাদন",
-    "en": "Verification",
-    "name": "tradle.Verification",
-    "type": "model"
-  },
-  {
-    "bn": "ওয়েবসাইট",
-    "en": "Websites",
-    "name": "websites",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "bn": "যাচাই বি জি",
     "en": "Verified Bg",
     "name": "verifiedBg",
@@ -3902,14 +3874,34 @@
   {
     "bn": "যাচাইকরণ",
     "en": "Verifications",
-    "name": "verifications",
+    "name": "myVerifications",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "bn": "আপলোড করা",
+    "en": "Uploaded",
+    "name": "uploaded",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "প্রস্থ",
-    "en": "Width",
-    "name": "width",
+    "bn": "ভিজুয়াল ফটোগুলি যাচাইকরণ পদ্ধতি",
+    "en": "Visual Photos Verification Method",
+    "name": "tradle.VisualPhotosVerificationMethod",
+    "type": "model"
+  },
+  {
+    "bn": "যাচাই করা সোর্স রঙ",
+    "en": "Verified Sources Color",
+    "name": "verifiedSourcesColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "যাচাই শিরোলেখ টেক্সট রঙ",
+    "en": "Verified Header Text Color",
+    "name": "verifiedHeaderTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3921,18 +3913,18 @@
     "model": "Default"
   },
   {
-    "bn": "যাচাই করা সীমানা রঙ",
-    "en": "Verified Border Color",
-    "name": "verifiedBorderColor",
+    "bn": "স্বাগত",
+    "en": "Welcome",
+    "name": "welcome",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "bn": "যাচাই শিরোলেখ টেক্সট রঙ",
-    "en": "Verified Header Text Color",
-    "name": "verifiedHeaderTextColor",
+    "bn": "যাচাই করা ডকুমেন্ট",
+    "en": "Verified document",
+    "name": "document",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.Verification"
   },
   {
     "bn": "যাচাই করা টেক্সট রঙ",
@@ -3949,10 +3941,24 @@
     "model": "Default"
   },
   {
-    "bn": "ভিজুয়াল ফটোগুলি যাচাইকরণ পদ্ধতি",
-    "en": "Visual Photos Verification Method",
-    "name": "tradle.VisualPhotosVerificationMethod",
+    "bn": "সংস্করণ আইডি",
+    "en": "Version Id",
+    "name": "versionId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "bn": "ভিসুয়াল যাচাইকরণ পদ্ধতি",
+    "en": "Visual Verification Method",
+    "name": "tradle.VisualVerificationMethod",
     "type": "model"
+  },
+  {
+    "bn": "প্রকার দেখুন",
+    "en": "Watch Type",
+    "name": "watchType",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "bn": "ওয়েব সাইট",
@@ -3961,9 +3967,9 @@
     "type": "model"
   },
   {
-    "bn": "স্বাগত",
-    "en": "Welcome",
-    "name": "welcome",
+    "bn": "প্রস্থ",
+    "en": "Width",
+    "name": "width",
     "type": "propertyName",
     "model": "Default"
   },

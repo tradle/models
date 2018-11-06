@@ -1,0 +1,25 @@
+{
+  "id": "tradle.CustomerConfirmation",
+  "title": "Customer Confirmation",
+  "interfaces": [
+    "tradle.Verifiable"
+  ],
+  "subClassOf": "tradle.Form",
+  "type": "tradle.Model",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "code": {
+      "type": "string",
+      "description": "Please enter the code you received on your device"
+    }
+  },
+  "required": [
+    "code"
+  ],
+  "viewCols": [
+    "code"
+  ]
+}

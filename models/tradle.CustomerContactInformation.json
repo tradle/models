@@ -1,6 +1,6 @@
 {
   "id": "tradle.CustomerContactInformation",
-  "title": "Customer Contact Information",
+  "title": "Contact Information",
   "interfaces": [
     "tradle.Verifiable"
   ],
@@ -12,8 +12,10 @@
       "readOnly": true
     },
     "phone": {
-      "type": "object",
-      "ref": "tradle.Phone",
+      "type": "string",
+      "range": "phone",
+      "keyboard": "phone-pad",
+      "sample": "phone.phoneNumber",
       "description": "Please enter your phone number"
     },
     "email": {
