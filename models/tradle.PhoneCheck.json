@@ -31,6 +31,10 @@
     "isInactive": {
       "type": "boolean"
     },
+    "provider": {
+      "type": "string",
+      "readOnly": true
+    },
     "status": {
       "type": "object",
       "ref": "tradle.Status",
@@ -49,6 +53,8 @@
   "viewCols": [
     "phone",
     "status",
-    "message"
+    "message",
+    "provider",
+    "application"
   ]
 }
