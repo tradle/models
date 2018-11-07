@@ -24,13 +24,25 @@
     },
     "dateExpires": {
       "type": "date"
+    },
+    "status": {
+      "type": "object",
+      "ref": "tradle.Status",
+      "readOnly": true
+    },
+    "message": {
+      "type": "string",
+      "displayName": true,
+      "readOnly": true
     }
   },
   "required": [
-    "phone"
+    "phone",
+    "status"
   ],
   "viewCols": [
     "phone",
-    "status"
+    "status",
+    "message"
   ]
 }
