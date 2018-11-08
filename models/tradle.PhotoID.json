@@ -129,7 +129,8 @@
       "type": "string"
     },
     "issuer": {
-      "type": "string"
+      "type": "object",
+      "ref": "tradle.Country"
     },
     "dateOfExpiry": {
       "type": "date"
@@ -142,7 +143,8 @@
       "type": "date"
     },
     "nationality": {
-      "type": "string"
+      "type": "object",
+      "ref": "tradle.Country"
     },
     "uploaded": {
       "type": "boolean"
