@@ -7,13 +7,15 @@
   "properties": {
     "phoneType": {
       "type": "object",
-      "ref": "tradle.PhoneTypes"
+      "ref": "tradle.PhoneTypes",
+      "displayName": true
     },
     "number": {
       "type": "string",
       "range": "phone",
       "keyboard": "phone-pad",
-      "sample": "phone.phoneNumber"
+      "sample": "phone.phoneNumber",
+      "displayName": true
     },
     "myPhones": {
       "type": "string",
