@@ -1,0 +1,56 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.SealableBatch",
+  "title": "Sealable Batch",
+  "properties": {
+    "merkleRoot": {
+      "type": "string",
+      "immutable": true
+    },
+    "batchNumber": {
+      "type": "number",
+      "immutable": true
+    },
+    "fromSubBatch": {
+      "type": "string",
+      "immutable": true
+    },
+    "toSubBatch": {
+      "type": "string",
+      "immutable": true
+    },
+    "fromLink": {
+      "type": "string",
+      "immutable": true
+    },
+    "fromTimestamp": {
+      "type": "date",
+      "immutable": true
+    },
+    "toTimestamp": {
+      "type": "date",
+      "immutable": true
+    },
+    "toLink": {
+      "type": "string",
+      "immutable": true
+    }
+  },
+  "indexes": [
+    {
+      "hashKey": "batchNumber",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_orgOrAuthor",
+      "rangeKey": [
+        "_t",
+        "_time"
+      ]
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ]
+}
