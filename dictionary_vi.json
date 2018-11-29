@@ -1,17 +1,17 @@
 [
   {
+    "vi": "Điểm số Liveness",
+    "en": "Liveness Score",
+    "name": "livenessScore",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "vi": "Điện thoại của tôi",
     "en": "My Phones",
     "name": "myPhones",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "vi": "Quét mặt sau",
-    "en": "Back side scan",
-    "name": "otherSideScan",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
   },
   {
     "vi": "Xác minh dựa trên API",
@@ -415,9 +415,9 @@
     "model": "Default"
   },
   {
-    "vi": "Người nhận ban đầu",
-    "en": "Original Recipient",
-    "name": "originalRecipient",
+    "vi": "Từ Dấu thời gian",
+    "en": "From Timestamp",
+    "name": "fromTimestamp",
     "type": "propertyName",
     "model": "Default"
   },
@@ -477,10 +477,11 @@
     "model": "Default"
   },
   {
-    "vi": "Sản phẩm của tôi",
-    "en": "My Product",
-    "name": "tradle.MyProduct",
-    "type": "model"
+    "vi": "Từ liên kết",
+    "en": "From Link",
+    "name": "fromLink",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "vi": "Trình chọn",
@@ -1174,9 +1175,9 @@
     }
   },
   {
-    "vi": "Không gian tên",
-    "en": "Namespace",
-    "name": "namespace",
+    "vi": "Từ Hàng loạt phụ",
+    "en": "From Sub Batch",
+    "name": "fromSubBatch",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1248,9 +1249,9 @@
     "model": "Default"
   },
   {
-    "vi": "khâm mạng",
-    "en": "Nonce",
-    "name": "nonce",
+    "vi": "Số lô",
+    "en": "Batch Number",
+    "name": "batchNumber",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1323,10 +1324,11 @@
     "type": "model"
   },
   {
-    "vi": "Mô hình tin nhắn mới",
-    "en": "New message model",
-    "name": "tradle.NewMessageModel",
-    "type": "model"
+    "vi": "Merkle Root",
+    "en": "Merkle Root",
+    "name": "merkleRoot",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "vi": "Ghi ngày tháng bị hủy",
@@ -1364,11 +1366,10 @@
     "model": "Default"
   },
   {
-    "vi": "Mặt khác để quét",
-    "en": "Other Side To Scan",
-    "name": "otherSideToScan",
-    "type": "propertyName",
-    "model": "Default"
+    "vi": "Thẻ nhân viên của tôi",
+    "en": "My Employee Pass",
+    "name": "tradle.MyEmployeeOnboarding",
+    "type": "model"
   },
   {
     "vi": "Trình quét tài liệu",
@@ -1475,16 +1476,18 @@
     "model": "tradle.SalaryVerification"
   },
   {
-    "vi": "Một phần",
-    "en": "Partial",
-    "name": "tradle.Partial",
-    "type": "model"
+    "vi": "Màu chấm",
+    "en": "Dot Color",
+    "name": "dotColor",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "vi": "Quốc tịch",
-    "en": "Nationality",
-    "name": "tradle.Nationality",
-    "type": "model"
+    "vi": "Màu nền tin nhắn của tôi",
+    "en": "My Message Background Color",
+    "name": "myMessageBackgroundColor",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "vi": "Mã hiệu công nhân",
@@ -2235,11 +2238,11 @@
     "model": "Default"
   },
   {
-    "vi": "Điểm số Liveness",
-    "en": "Liveness Score",
-    "name": "livenessScore",
+    "vi": "Quét mặt sau",
+    "en": "Back side scan",
+    "name": "otherSideScan",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.PhotoID"
   },
   {
     "vi": "Danh sách",
@@ -2364,11 +2367,11 @@
     "model": "Default"
   },
   {
-    "vi": "Quốc tịch",
-    "en": "Nationality",
-    "name": "nationality",
+    "vi": "Dữ liệu của tôi",
+    "en": "My Data",
+    "name": "myForms",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.Profile"
   },
   {
     "vi": "Tình trạng hôn nhân",
@@ -2437,24 +2440,24 @@
     "model": "Default"
   },
   {
-    "vi": "Tên",
-    "en": "Name",
-    "name": "name",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Id sản phẩm của tôi",
-    "en": "My Product Id",
-    "name": "myProductId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Xử lý của tôi",
-    "en": "My Remediation",
-    "name": "tradle.MyRemediation",
+    "vi": "Sản phẩm của tôi",
+    "en": "My Issue Product",
+    "name": "tradle.MyIssueProduct",
     "type": "model"
+  },
+  {
+    "vi": "Màu liên kết tin nhắn của tôi",
+    "en": "My Message Link Color",
+    "name": "myMessageLinkColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Đã hoàn thành Văn bản Btn",
+    "en": "Done Btn Text",
+    "name": "doneBtnText",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "vi": "Gói mô hình",
@@ -2482,16 +2485,11 @@
     "type": "model"
   },
   {
-    "vi": "Làm mới của tôi",
-    "en": "My Refresh",
-    "name": "tradle.MyRefreshProduct",
-    "type": "model"
-  },
-  {
-    "vi": "Tên",
-    "en": "Name",
-    "name": "tradle.Name",
-    "type": "model"
+    "vi": "Mô hình",
+    "en": "Models",
+    "name": "models",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "vi": "Tên đệm",
@@ -2501,63 +2499,67 @@
     "model": "Default"
   },
   {
-    "vi": "Mô hình",
-    "en": "Models",
-    "name": "models",
+    "vi": "Đã tải lên",
+    "en": "Uploaded",
+    "name": "uploaded",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Đã hoàn thành Văn bản Btn",
-    "en": "Done Btn Text",
-    "name": "doneBtnText",
+    "vi": "Tên",
+    "en": "Name",
+    "name": "tradle.Name",
+    "type": "model"
+  },
+  {
+    "vi": "Xử lý của tôi",
+    "en": "My Remediation",
+    "name": "tradle.MyRemediation",
+    "type": "model"
+  },
+  {
+    "vi": "Id sản phẩm của tôi",
+    "en": "My Product Id",
+    "name": "myProductId",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Màu liên kết tin nhắn của tôi",
-    "en": "My Message Link Color",
-    "name": "myMessageLinkColor",
+    "vi": "Tên",
+    "en": "Name",
+    "name": "name",
     "type": "propertyName",
     "model": "Default"
   },
   {
     "vi": "Sản phẩm của tôi",
-    "en": "My Issue Product",
-    "name": "tradle.MyIssueProduct",
+    "en": "My Product",
+    "name": "tradle.MyProduct",
     "type": "model"
   },
   {
-    "vi": "Dữ liệu của tôi",
-    "en": "My Data",
-    "name": "myForms",
-    "type": "propertyName",
-    "model": "tradle.Profile"
+    "vi": "Làm mới của tôi",
+    "en": "My Refresh",
+    "name": "tradle.MyRefreshProduct",
+    "type": "model"
   },
   {
-    "vi": "Màu nền tin nhắn của tôi",
-    "en": "My Message Background Color",
-    "name": "myMessageBackgroundColor",
+    "vi": "Mã bảo mật",
+    "en": "Security Code",
+    "name": "securityCode",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Màu chấm",
-    "en": "Dot Color",
-    "name": "dotColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Thẻ nhân viên của tôi",
-    "en": "My Employee Pass",
-    "name": "tradle.MyEmployeeOnboarding",
+    "vi": "Một phần",
+    "en": "Partial",
+    "name": "tradle.Partial",
     "type": "model"
   },
   {
-    "vi": "Chi tiết kết quả",
-    "en": "Result Details",
-    "name": "resultDetails",
+    "vi": "Người nhận ban đầu",
+    "en": "Original Recipient",
+    "name": "originalRecipient",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2703,43 +2705,49 @@
     "type": "model"
   },
   {
-    "vi": "Quét",
-    "en": "Scan",
-    "name": "scan",
+    "vi": "Quốc tịch",
+    "en": "Nationality",
+    "name": "nationality",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Màu văn bản bên phải",
-    "en": "Right Text Color",
-    "name": "rightTextColor",
+    "vi": "Không gian tên",
+    "en": "Namespace",
+    "name": "namespace",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Đã thu hồi",
-    "en": "Revoked",
-    "name": "revoked",
+    "vi": "khâm mạng",
+    "en": "Nonce",
+    "name": "nonce",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Liên kết",
-    "en": "Permalink",
-    "name": "permalink",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Hộ chiếu",
-    "en": "Passport",
-    "name": "tradle.Passport",
+    "vi": "Mô hình tin nhắn mới",
+    "en": "New message model",
+    "name": "tradle.NewMessageModel",
     "type": "model"
   },
   {
-    "vi": "Nguồn",
-    "en": "Resource",
-    "name": "resource",
+    "vi": "Mặt khác để quét",
+    "en": "Other Side To Scan",
+    "name": "otherSideToScan",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Quốc tịch",
+    "en": "Nationality",
+    "name": "tradle.Nationality",
+    "type": "model"
+  },
+  {
+    "vi": "Chia sẻ màu nền ngữ cảnh",
+    "en": "Share Context Background Color",
+    "name": "shareContextBackgroundColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2750,43 +2758,9 @@
     "type": "model"
   },
   {
-    "vi": "Chi tiết kết quả",
-    "en": "Result details",
-    "name": "rawData",
-    "type": "propertyName",
-    "model": "tradle.DocumentValidityCheck"
-  },
-  {
-    "vi": "Cá nhân",
-    "en": "Personal",
-    "name": "personal_group",
-    "type": "propertyName",
-    "model": "tradle.PhotoID"
-  },
-  {
-    "vi": "Tình trạng cư trú",
-    "en": "Residential Status",
-    "name": "tradle.ResidentialStatus",
-    "type": "model",
-    "enum": {
-      "tenantP": "Người thuê nhà (riêng tư)",
-      "withMortgage": "Chủ sở hữu nhà (có thế chấp)",
-      "withoutMortgage": "Chủ sở hữu nhà (không có thế chấp)",
-      "livingWithParents": "Sống chung với cha mẹ",
-      "tenantC": "Người thuê nhà (luật sư)"
-    }
-  },
-  {
-    "vi": "Chi tiết cá nhân",
-    "en": "Personal detail",
-    "name": "name_group",
-    "type": "propertyName",
-    "model": "tradle.PersonalInfo"
-  },
-  {
-    "vi": "Thông tin cá nhân",
-    "en": "Personal Info",
-    "name": "tradle.PersonalInfo",
+    "vi": "Hộ chiếu",
+    "en": "Passport",
+    "name": "tradle.Passport",
     "type": "model"
   },
   {
@@ -2797,9 +2771,49 @@
     "model": "Default"
   },
   {
-    "vi": "Kiểm tra điện thoại",
-    "en": "Phone Check",
-    "name": "tradle.PhoneCheck",
+    "vi": "Tình dục",
+    "en": "Sex",
+    "name": "sex",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Chi tiết cá nhân",
+    "en": "Personal detail",
+    "name": "name_group",
+    "type": "propertyName",
+    "model": "tradle.PersonalInfo"
+  },
+  {
+    "vi": "Liên kết",
+    "en": "Permalink",
+    "name": "permalink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Thông tin cá nhân",
+    "en": "Personal Info",
+    "name": "tradle.PersonalInfo",
+    "type": "model"
+  },
+  {
+    "vi": "Cá nhân",
+    "en": "Personal",
+    "name": "personal_group",
+    "type": "propertyName",
+    "model": "tradle.PhotoID"
+  },
+  {
+    "vi": "Chia sẻ bối cảnh",
+    "en": "Share Context",
+    "name": "tradle.ShareContext",
+    "type": "model"
+  },
+  {
+    "vi": "Điện thoại",
+    "en": "Phone",
+    "name": "tradle.Phone",
     "type": "model"
   },
   {
@@ -2810,21 +2824,9 @@
     "model": "Default"
   },
   {
-    "vi": "Điện thoại",
-    "en": "Phone",
-    "name": "tradle.Phone",
-    "type": "model"
-  },
-  {
-    "vi": "Nơi cư trú",
-    "en": "Residence",
-    "name": "tradle.Residence",
-    "type": "model"
-  },
-  {
-    "vi": "hình chụp",
-    "en": "Photo",
-    "name": "photo",
+    "vi": "Địa chỉ đường phố",
+    "en": "Street Address",
+    "name": "streetAddress",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2836,15 +2838,15 @@
     "model": "Default"
   },
   {
-    "vi": "hình chụp",
-    "en": "Photo",
-    "name": "tradle.Photo",
+    "vi": "Kiểm tra điện thoại",
+    "en": "Phone Check",
+    "name": "tradle.PhoneCheck",
     "type": "model"
   },
   {
-    "vi": "Điện thoại",
-    "en": "Phones",
-    "name": "phones",
+    "vi": "Chia sẻ màu văn bản ngữ cảnh",
+    "en": "Share Context Text Color",
+    "name": "shareContextTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2860,9 +2862,9 @@
     }
   },
   {
-    "vi": "Yêu cầu dữ liệu thô",
-    "en": "Require Raw Data",
-    "name": "requireRawData",
+    "vi": "Môn học",
+    "en": "Subject",
+    "name": "subject",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2870,13 +2872,6 @@
     "vi": "Bất động sản",
     "en": "Property",
     "name": "property",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Bằng chứng",
-    "en": "Proof",
-    "name": "proof",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3029,33 +3024,36 @@
     "type": "model"
   },
   {
-    "vi": "Loại nhà ở",
-    "en": "Residence Type",
-    "name": "tradle.ResidenceType",
-    "type": "model",
-    "enum": {
-      "investment": "Bất động sản đầu tư",
-      "secondary": "Trang chủ thứ hai",
-      "primary": "Dinh thự chính"
-    }
-  },
-  {
-    "vi": "Số tham chiếu của nhà cung cấp",
-    "en": "Provider Reference Number",
-    "name": "providerReferenceNumber",
+    "vi": "Bằng chứng",
+    "en": "Proof",
+    "name": "proof",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Trình chọn thuộc tính",
-    "en": "Property Chooser",
-    "name": "tradle.PropertyChooser",
+    "vi": "hình chụp",
+    "en": "Photo",
+    "name": "tradle.Photo",
     "type": "model"
   },
   {
-    "vi": "Các nhà cung cấp",
-    "en": "Provider",
-    "name": "provider",
+    "vi": "Điện thoại",
+    "en": "Phones",
+    "name": "phones",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "hình chụp",
+    "en": "Photo",
+    "name": "photo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Màu văn bản xác minh nguồn gốc",
+    "en": "Sourced Verification Text Color",
+    "name": "sourcedVerificationTextColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3065,13 +3063,6 @@
     "name": "residenceType",
     "type": "propertyName",
     "model": "tradle.Residence"
-  },
-  {
-    "vi": "Thuộc tính được yêu cầu",
-    "en": "Requested Properties",
-    "name": "requestedProperties",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "vi": "Người nhận",
@@ -3241,54 +3232,60 @@
     "model": "Default"
   },
   {
-    "vi": "Trạng thái",
-    "en": "Status",
-    "name": "tradle.Status",
+    "vi": "Thuộc tính được yêu cầu",
+    "en": "Requested Properties",
+    "name": "requestedProperties",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Loại nhà ở",
+    "en": "Residence Type",
+    "name": "tradle.ResidenceType",
     "type": "model",
     "enum": {
-      "pending": "Đang chờ xử lý",
-      "pass": "Vượt qua",
-      "error": "lỗi",
-      "fail": "Thất bại"
+      "investment": "Bất động sản đầu tư",
+      "secondary": "Trang chủ thứ hai",
+      "primary": "Dinh thự chính"
     }
   },
   {
-    "vi": "Niêm phong",
-    "en": "Seal",
-    "name": "tradle.Seal",
+    "vi": "Yêu cầu dữ liệu thô",
+    "en": "Require Raw Data",
+    "name": "requireRawData",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Số tham chiếu của nhà cung cấp",
+    "en": "Provider Reference Number",
+    "name": "providerReferenceNumber",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Nơi cư trú",
+    "en": "Residence",
+    "name": "tradle.Residence",
     "type": "model"
   },
   {
-    "vi": "Được quét bởi",
-    "en": "Scanned By",
-    "name": "scannedBy",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Nguồn gốc",
-    "en": "Root",
-    "name": "root",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Thẩm định lương",
-    "en": "Salary Verification",
-    "name": "tradle.SalaryVerification",
+    "vi": "Trình chọn thuộc tính",
+    "en": "Property Chooser",
+    "name": "tradle.PropertyChooser",
     "type": "model"
   },
   {
-    "vi": "Đã quét",
-    "en": "Scanned",
-    "name": "scanned",
+    "vi": "Các nhà cung cấp",
+    "en": "Provider",
+    "name": "provider",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Đã tải lên",
-    "en": "Uploaded",
-    "name": "uploaded",
+    "vi": "Mục tiêu",
+    "en": "Target",
+    "name": "target",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3300,22 +3297,15 @@
     "model": "Default"
   },
   {
-    "vi": "Phiên",
-    "en": "Session",
-    "name": "session",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "vi": "Thông tin máy chủ nhà cung cấp dịch vụ",
     "en": "Service Provider Server Info",
     "name": "tradle.ServiceProvider",
     "type": "model"
   },
   {
-    "vi": "Mã bảo mật",
-    "en": "Security Code",
-    "name": "securityCode",
+    "vi": "Nguồn",
+    "en": "Resource",
+    "name": "resource",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3379,107 +3369,111 @@
     "model": "tradle.Settings"
   },
   {
-    "vi": "Tóm lược",
-    "en": "Summary",
-    "name": "summary",
+    "vi": "Chi tiết kết quả",
+    "en": "Result Details",
+    "name": "resultDetails",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Nộp hồ sơ",
-    "en": "Submission",
-    "name": "submission",
+    "vi": "Quét",
+    "en": "Scan",
+    "name": "scan",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Màu nền nút chia sẻ",
-    "en": "Share Button Background Color",
-    "name": "shareButtonBackgroundColor",
+    "vi": "Màu văn bản bên phải",
+    "en": "Right Text Color",
+    "name": "rightTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Tình dục",
-    "en": "Sex",
-    "name": "tradle.Sex",
+    "vi": "Đã thu hồi",
+    "en": "Revoked",
+    "name": "revoked",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Tình trạng cư trú",
+    "en": "Residential Status",
+    "name": "tradle.ResidentialStatus",
     "type": "model",
     "enum": {
-      "Female": "Giống cái",
-      "Male": "Nam giới"
+      "tenantP": "Người thuê nhà (riêng tư)",
+      "withMortgage": "Chủ sở hữu nhà (có thế chấp)",
+      "withoutMortgage": "Chủ sở hữu nhà (không có thế chấp)",
+      "livingWithParents": "Sống chung với cha mẹ",
+      "tenantC": "Người thuê nhà (luật sư)"
     }
   },
   {
-    "vi": "Chữ ký trên màn hình",
-    "en": "Signature on screen",
-    "name": "tradle.HandSignature",
+    "vi": "Chi tiết kết quả",
+    "en": "Result details",
+    "name": "rawData",
+    "type": "propertyName",
+    "model": "tradle.DocumentValidityCheck"
+  },
+  {
+    "vi": "Lô có thể bịt kín",
+    "en": "Sealable Batch",
+    "name": "tradle.SealableBatch",
     "type": "model"
   },
   {
-    "vi": "Chia sẻ màu nền ngữ cảnh",
-    "en": "Share Context Background Color",
-    "name": "shareContextBackgroundColor",
+    "vi": "Đã quét",
+    "en": "Scanned",
+    "name": "scanned",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Gói kiểu",
-    "en": "Styles Pack",
-    "name": "tradle.StylesPack",
-    "type": "model"
-  },
-  {
-    "vi": "Tình dục",
-    "en": "Sex",
-    "name": "sex",
+    "vi": "Phiên",
+    "en": "Session",
+    "name": "session",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Cài đặt",
-    "en": "Settings",
-    "name": "tradle.Settings",
+    "vi": "Thẩm định lương",
+    "en": "Salary Verification",
+    "name": "tradle.SalaryVerification",
     "type": "model"
   },
   {
-    "vi": "Chia sẻ bối cảnh",
-    "en": "Share Context",
-    "name": "tradle.ShareContext",
+    "vi": "Niêm phong",
+    "en": "Seal",
+    "name": "tradle.Seal",
     "type": "model"
+  },
+  {
+    "vi": "Nguồn gốc",
+    "en": "Root",
+    "name": "root",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Được quét bởi",
+    "en": "Scanned By",
+    "name": "scannedBy",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Hash giao dịch",
+    "en": "Transaction Hash",
+    "name": "transactionHash",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "vi": "Kiểm tra ảnh tự sướng chống giả mạo",
     "en": "Spoof-proof selfie check",
     "name": "tradle.SpoofProofSelfieCheck",
     "type": "model"
-  },
-  {
-    "vi": "Địa chỉ đường phố",
-    "en": "Street Address",
-    "name": "streetAddress",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Chia sẻ màu văn bản ngữ cảnh",
-    "en": "Share Context Text Color",
-    "name": "shareContextTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Môn học",
-    "en": "Subject",
-    "name": "subject",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Splashscreen",
-    "en": "Splashscreen",
-    "name": "splashscreen",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "vi": "Thông điệp đơn giản",
@@ -3564,9 +3558,9 @@
     "model": "Default"
   },
   {
-    "vi": "Màu văn bản xác minh nguồn gốc",
-    "en": "Sourced Verification Text Color",
-    "name": "sourcedVerificationTextColor",
+    "vi": "Màu nền nút chia sẻ",
+    "en": "Share Button Background Color",
+    "name": "shareButtonBackgroundColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3598,26 +3592,25 @@
     "type": "model"
   },
   {
-    "vi": "Trạng thái",
-    "en": "Status",
-    "name": "tradle.IssueStatus",
+    "vi": "Tình dục",
+    "en": "Sex",
+    "name": "tradle.Sex",
     "type": "model",
     "enum": {
-      "open": "Mở",
-      "closed": "Đã đóng"
+      "Female": "Giống cái",
+      "Male": "Nam giới"
     }
   },
   {
-    "vi": "đường phố",
-    "en": "Street",
-    "name": "street",
-    "type": "propertyName",
-    "model": "Default"
+    "vi": "Chữ ký trên màn hình",
+    "en": "Signature on screen",
+    "name": "tradle.HandSignature",
+    "type": "model"
   },
   {
-    "vi": "Tiểu bang",
-    "en": "State",
-    "name": "state",
+    "vi": "Splashscreen",
+    "en": "Splashscreen",
+    "name": "splashscreen",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3628,9 +3621,15 @@
     "type": "model"
   },
   {
-    "vi": "Trạng thái",
-    "en": "Status",
-    "name": "status",
+    "vi": "Cài đặt",
+    "en": "Settings",
+    "name": "tradle.Settings",
+    "type": "model"
+  },
+  {
+    "vi": "Các khía cạnh có thể xác minh",
+    "en": "Verifiable Aspects",
+    "name": "verifiableAspects",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3638,13 +3637,6 @@
     "vi": "Đến",
     "en": "To",
     "name": "to",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Họ",
-    "en": "Surname",
-    "name": "surname",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3663,23 +3655,23 @@
     "model": "Default"
   },
   {
-    "vi": "Màu văn bản tiêu đề đã xác minh",
-    "en": "Verified Header Text Color",
-    "name": "verifiedHeaderTextColor",
+    "vi": "Tóm lược",
+    "en": "Summary",
+    "name": "summary",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Chưa xem",
-    "en": "Unwatched",
-    "name": "unwatched",
+    "vi": "Nộp hồ sơ",
+    "en": "Submission",
+    "name": "submission",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "vi": "Mục tiêu",
-    "en": "Target",
-    "name": "target",
+    "vi": "Trạng thái",
+    "en": "Status",
+    "name": "status",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3725,10 +3717,16 @@
     "type": "model"
   },
   {
-    "vi": "Chuyến du lịch",
-    "en": "Tour",
-    "name": "tradle.Tour",
-    "type": "model"
+    "vi": "Trạng thái",
+    "en": "Status",
+    "name": "tradle.Status",
+    "type": "model",
+    "enum": {
+      "pending": "Đang chờ xử lý",
+      "pass": "Vượt qua",
+      "error": "lỗi",
+      "fail": "Thất bại"
+    }
   },
   {
     "vi": "Sự cố được gắn thẻ",
@@ -3750,6 +3748,118 @@
     "type": "model"
   },
   {
+    "vi": "Trạng thái",
+    "en": "Status",
+    "name": "tradle.IssueStatus",
+    "type": "model",
+    "enum": {
+      "open": "Mở",
+      "closed": "Đã đóng"
+    }
+  },
+  {
+    "vi": "đường phố",
+    "en": "Street",
+    "name": "street",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Tiểu bang",
+    "en": "State",
+    "name": "state",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Gói kiểu",
+    "en": "Styles Pack",
+    "name": "tradle.StylesPack",
+    "type": "model"
+  },
+  {
+    "vi": "Họ",
+    "en": "Surname",
+    "name": "surname",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Được xác minh bởi tôi",
+    "en": "Verified By Me",
+    "name": "verifiedByMe",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Liên kết",
+    "en": "To Link",
+    "name": "toLink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Chào mừng",
+    "en": "Welcome",
+    "name": "welcome",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Id Tx",
+    "en": "Tx Id",
+    "name": "txId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Để Dấu thời gian",
+    "en": "To Timestamp",
+    "name": "toTimestamp",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Gửi hàng loạt phụ",
+    "en": "To Sub Batch",
+    "name": "toSubBatch",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Chuyến du lịch",
+    "en": "Tour",
+    "name": "tradle.Tour",
+    "type": "model"
+  },
+  {
+    "vi": "Trang Tour",
+    "en": "Tour Page",
+    "name": "tradle.TourPage",
+    "type": "model"
+  },
+  {
+    "vi": "Màu văn bản đã xác minh",
+    "en": "Verified Text Color",
+    "name": "verifiedTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Sử dụng mật khẩu cử chỉ",
+    "en": "Use Gesture Password",
+    "name": "useGesturePassword",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Chưa xem",
+    "en": "Unwatched",
+    "name": "unwatched",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "vi": "Chưa được hủy",
     "en": "Unsealed",
     "name": "unsealed",
@@ -3764,43 +3874,9 @@
     "model": "Default"
   },
   {
-    "vi": "Hash giao dịch",
-    "en": "Transaction Hash",
-    "name": "transactionHash",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "vi": "Chưa được xác nhận",
     "en": "Unconfirmed",
     "name": "unconfirmed",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Trang Tour",
-    "en": "Tour Page",
-    "name": "tradle.TourPage",
-    "type": "model"
-  },
-  {
-    "vi": "Id Tx",
-    "en": "Tx Id",
-    "name": "txId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Màu đường viền đã được xác minh",
-    "en": "Verified Border Color",
-    "name": "verifiedBorderColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Sử dụng mật khẩu cử chỉ",
-    "en": "Use Gesture Password",
-    "name": "useGesturePassword",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3812,9 +3888,23 @@
     "model": "Default"
   },
   {
-    "vi": "Phương pháp xác minh trực quan",
-    "en": "Visual Verification Method",
-    "name": "tradle.VisualVerificationMethod",
+    "vi": "Chiều rộng",
+    "en": "Width",
+    "name": "width",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Xác minh",
+    "en": "Verifications",
+    "name": "myVerifications",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "vi": "Có thể xác minh",
+    "en": "Verifiable",
+    "name": "tradle.Verifiable",
     "type": "model"
   },
   {
@@ -3823,39 +3913,6 @@
     "name": "useTouchId",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "vi": "Trang web",
-    "en": "Web site",
-    "name": "tradle.WebSite",
-    "type": "model"
-  },
-  {
-    "vi": "Người dùng",
-    "en": "User",
-    "name": "user",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Màu nguồn đã xác minh",
-    "en": "Verified Sources Color",
-    "name": "verifiedSourcesColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Các khía cạnh có thể xác minh",
-    "en": "Verifiable Aspects",
-    "name": "verifiableAspects",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Có thể xác minh",
-    "en": "Verifiable",
-    "name": "tradle.Verifiable",
-    "type": "model"
   },
   {
     "vi": "Xác minh hóa đơn tiện ích",
@@ -3871,13 +3928,6 @@
     "model": "Default"
   },
   {
-    "vi": "Người xác minh",
-    "en": "Verifiers",
-    "name": "verifiers",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "vi": "Xác minh",
     "en": "Verifications",
     "name": "verifications",
@@ -3885,17 +3935,38 @@
     "model": "Default"
   },
   {
-    "vi": "Xác minh",
-    "en": "Verifications",
-    "name": "myVerifications",
-    "type": "propertyName",
-    "model": "tradle.Profile"
-  },
-  {
     "vi": "xác minh",
     "en": "Verification",
     "name": "tradle.Verification",
     "type": "model"
+  },
+  {
+    "vi": "Người dùng",
+    "en": "User",
+    "name": "user",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Người xác minh",
+    "en": "Verifiers",
+    "name": "verifiers",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Màu nguồn đã xác minh",
+    "en": "Verified Sources Color",
+    "name": "verifiedSourcesColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Màu văn bản tiêu đề đã xác minh",
+    "en": "Verified Header Text Color",
+    "name": "verifiedHeaderTextColor",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "vi": "Màu liên kết đã xác minh",
@@ -3912,43 +3983,9 @@
     "model": "Default"
   },
   {
-    "vi": "Trang web",
-    "en": "Websites",
-    "name": "websites",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Được xác minh bởi tôi",
-    "en": "Verified By Me",
-    "name": "verifiedByMe",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Chào mừng",
-    "en": "Welcome",
-    "name": "welcome",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Phương pháp xác minh hình ảnh trực quan",
-    "en": "Visual Photos Verification Method",
-    "name": "tradle.VisualPhotosVerificationMethod",
-    "type": "model"
-  },
-  {
-    "vi": "Id phiên bản",
-    "en": "Version Id",
-    "name": "versionId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "vi": "Màu văn bản đã xác minh",
-    "en": "Verified Text Color",
-    "name": "verifiedTextColor",
+    "vi": "Màu đường viền đã được xác minh",
+    "en": "Verified Border Color",
+    "name": "verifiedBorderColor",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3967,6 +4004,25 @@
     "model": "tradle.Verification"
   },
   {
+    "vi": "Id phiên bản",
+    "en": "Version Id",
+    "name": "versionId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "vi": "Phương pháp xác minh hình ảnh trực quan",
+    "en": "Visual Photos Verification Method",
+    "name": "tradle.VisualPhotosVerificationMethod",
+    "type": "model"
+  },
+  {
+    "vi": "Phương pháp xác minh trực quan",
+    "en": "Visual Verification Method",
+    "name": "tradle.VisualVerificationMethod",
+    "type": "model"
+  },
+  {
     "vi": "Loại xem",
     "en": "Watch Type",
     "name": "watchType",
@@ -3974,9 +4030,15 @@
     "model": "Default"
   },
   {
-    "vi": "Chiều rộng",
-    "en": "Width",
-    "name": "width",
+    "vi": "Trang web",
+    "en": "Web site",
+    "name": "tradle.WebSite",
+    "type": "model"
+  },
+  {
+    "vi": "Trang web",
+    "en": "Websites",
+    "name": "websites",
     "type": "propertyName",
     "model": "Default"
   },
