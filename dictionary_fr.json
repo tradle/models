@@ -1,15 +1,15 @@
 [
   {
-    "fr": "Les méthodes",
-    "en": "Methods",
-    "name": "methods",
+    "fr": "Bénéficiaire",
+    "en": "Recipient",
+    "name": "recipient",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Couleur du texte gauche",
-    "en": "Left Text Color",
-    "name": "leftTextColor",
+    "fr": "Est en attente",
+    "en": "Is Pending",
+    "name": "isPending",
     "type": "propertyName",
     "model": "Default"
   },
@@ -1972,10 +1972,11 @@
     "type": "model"
   },
   {
-    "fr": "Objet reçu",
-    "en": "Item Received",
-    "name": "tradle.Ack",
-    "type": "model"
+    "fr": "Les données",
+    "en": "Data",
+    "name": "rawData",
+    "type": "propertyName",
+    "model": "tradle.AddressCheck"
   },
   {
     "fr": "Message entrant Bg Couleur",
@@ -2006,11 +2007,10 @@
     "model": "Default"
   },
   {
-    "fr": "Articles",
-    "en": "Items",
-    "name": "items",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Vérification d'adresse",
+    "en": "Address Check",
+    "name": "tradle.AddressCheck",
+    "type": "model"
   },
   {
     "fr": "Intersection",
@@ -2047,15 +2047,15 @@
     "model": "Default"
   },
   {
-    "fr": "Article",
-    "en": "Item",
-    "name": "tradle.Item",
+    "fr": "introduction",
+    "en": "Introduction",
+    "name": "tradle.Introduction",
     "type": "model"
   },
   {
-    "fr": "Délivré par",
-    "en": "Issued By",
-    "name": "issuedBy",
+    "fr": "Est l'agent",
+    "en": "Is Agent",
+    "name": "isAgent",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2066,9 +2066,9 @@
     "type": "model"
   },
   {
-    "fr": "Article",
-    "en": "Item",
-    "name": "item",
+    "fr": "Invite",
+    "en": "Invites",
+    "name": "invites",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2080,9 +2080,9 @@
     "model": "Default"
   },
   {
-    "fr": "Pays émetteur",
-    "en": "Issuing Country",
-    "name": "issuingCountry",
+    "fr": "Est employé",
+    "en": "Is Employee",
+    "name": "isEmployee",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2094,22 +2094,21 @@
     "model": "Default"
   },
   {
+    "fr": "Clé publique",
+    "en": "Public Key",
+    "name": "tradle.PubKey",
+    "type": "model"
+  },
+  {
     "fr": "Problème",
     "en": "Issue",
     "name": "tradle.IssueProduct",
     "type": "model"
   },
   {
-    "fr": "Est employé",
-    "en": "Is Employee",
-    "name": "isEmployee",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Invite",
-    "en": "Invites",
-    "name": "invites",
+    "fr": "Problème",
+    "en": "Issue",
+    "name": "issue",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2120,16 +2119,23 @@
     "type": "model"
   },
   {
-    "fr": "Est l'agent",
-    "en": "Is Agent",
-    "name": "isAgent",
+    "fr": "Pubkeys",
+    "en": "Pubkeys",
+    "name": "pubkeys",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Problème",
-    "en": "Issue",
-    "name": "issue",
+    "fr": "Délivré par",
+    "en": "Issued By",
+    "name": "issuedBy",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Taille",
+    "en": "Size",
+    "name": "size",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2141,10 +2147,11 @@
     "model": "Default"
   },
   {
-    "fr": "introduction",
-    "en": "Introduction",
-    "name": "tradle.Introduction",
-    "type": "model"
+    "fr": "Relation",
+    "en": "Relationship",
+    "name": "relationship",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Problèmes",
@@ -2154,11 +2161,10 @@
     "model": "Default"
   },
   {
-    "fr": "La langue",
-    "en": "Language",
-    "name": "language",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Rafraîchir",
+    "en": "Refresh",
+    "name": "tradle.Refresh",
+    "type": "model"
   },
   {
     "fr": "La langue",
@@ -2176,9 +2182,63 @@
     }
   },
   {
-    "fr": "Heure du dernier message",
-    "en": "Last Message Time",
-    "name": "lastMessageTime",
+    "fr": "Objet reçu",
+    "en": "Item Received",
+    "name": "tradle.Ack",
+    "type": "model"
+  },
+  {
+    "fr": "Articles",
+    "en": "Items",
+    "name": "items",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "La langue",
+    "en": "Language",
+    "name": "language",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Article",
+    "en": "Item",
+    "name": "tradle.Item",
+    "type": "model"
+  },
+  {
+    "fr": "Article",
+    "en": "Item",
+    "name": "item",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Pays émetteur",
+    "en": "Issuing Country",
+    "name": "issuingCountry",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Région",
+    "en": "Region",
+    "name": "region",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Lien",
+    "en": "Link",
+    "name": "link",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Lentille",
+    "en": "Lens",
+    "name": "lens",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2197,6 +2257,27 @@
     "model": "Default"
   },
   {
+    "fr": "Niveau",
+    "en": "Level",
+    "name": "level",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Couleur du texte gauche",
+    "en": "Left Text Color",
+    "name": "leftTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Heure du dernier message",
+    "en": "Last Message Time",
+    "name": "lastMessageTime",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "fr": "Feuilles",
     "en": "Leaves",
     "name": "leaves",
@@ -2204,10 +2285,39 @@
     "model": "Default"
   },
   {
-    "fr": "Rafraîchir",
-    "en": "Refresh",
-    "name": "tradle.RefreshProduct",
-    "type": "model"
+    "fr": "Gestionnaires de relations",
+    "en": "Relationship Managers",
+    "name": "relationshipManagers",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Couleur de la liste",
+    "en": "List Color",
+    "name": "listColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "liste",
+    "en": "List",
+    "name": "list",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Liste Bg",
+    "en": "List Bg",
+    "name": "listBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Liens",
+    "en": "Links",
+    "name": "links",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Link Prop",
@@ -2224,113 +2334,9 @@
     "model": "Default"
   },
   {
-    "fr": "Lien",
-    "en": "Link",
-    "name": "link",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Niveau",
-    "en": "Level",
-    "name": "level",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Lentille",
-    "en": "Lens",
-    "name": "lens",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Rendez-vous",
-    "en": "Rendezvous",
-    "name": "rendezvous",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "liste",
-    "en": "List",
-    "name": "list",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Liens",
-    "en": "Links",
-    "name": "links",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Bénéficiaire",
-    "en": "Recipient",
-    "name": "recipient",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "URL longue",
-    "en": "Long Url",
-    "name": "longUrl",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Logo",
-    "en": "Logo",
-    "name": "logo",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Couleur de la liste",
-    "en": "List Color",
-    "name": "listColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Liste Bg",
-    "en": "List Bg",
-    "name": "listBg",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "DB chargé",
-    "en": "Loaded DB",
-    "name": "tradle.LoadedDB",
-    "type": "model"
-  },
-  {
-    "fr": "Logo nécessite du texte",
-    "en": "Logo Needs Text",
-    "name": "logoNeedsText",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Score de vivacité",
-    "en": "Liveness Score",
-    "name": "livenessScore",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Logo texte seulement",
-    "en": "Logo Text Only",
-    "name": "logoTextOnly",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Nombre",
-    "en": "Number",
-    "name": "number",
+    "fr": "Afficher le bouton de saut",
+    "en": "Show Skip Button",
+    "name": "showSkipButton",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2339,13 +2345,6 @@
     "en": "Media Snippet",
     "name": "tradle.MediaSnippet",
     "type": "model"
-  },
-  {
-    "fr": "État civil",
-    "en": "Marital Status",
-    "name": "maritalStatus",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "fr": "Majeur",
@@ -2392,11 +2391,92 @@
     "type": "model"
   },
   {
-    "fr": "Type de mime",
-    "en": "Mime Type",
-    "name": "mimeType",
+    "fr": "DB chargé",
+    "en": "Loaded DB",
+    "name": "tradle.LoadedDB",
+    "type": "model"
+  },
+  {
+    "fr": "État civil",
+    "en": "Marital Status",
+    "name": "maritalStatus",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "fr": "Logo nécessite du texte",
+    "en": "Logo Needs Text",
+    "name": "logoNeedsText",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Score de vivacité",
+    "en": "Liveness Score",
+    "name": "livenessScore",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "URL longue",
+    "en": "Long Url",
+    "name": "longUrl",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Logo",
+    "en": "Logo",
+    "name": "logo",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Logo texte seulement",
+    "en": "Logo Text Only",
+    "name": "logoTextOnly",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Exiger des données brutes",
+    "en": "Require Raw Data",
+    "name": "requireRawData",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Méthode",
+    "en": "Method",
+    "name": "method",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Message",
+    "en": "Message",
+    "name": "message",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Etat du message envoyé",
+    "en": "Message Sent Status",
+    "name": "messageSentStatus",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Méthode",
+    "en": "Method",
+    "name": "tradle.Method",
+    "type": "model"
+  },
+  {
+    "fr": "Message",
+    "en": "Message",
+    "name": "tradle.Message",
+    "type": "model"
   },
   {
     "fr": "Merkle Racine",
@@ -2432,71 +2512,44 @@
     "model": "Default"
   },
   {
-    "fr": "ID de session",
-    "en": "Session Id",
-    "name": "sessionId",
+    "fr": "Ressource",
+    "en": "Resource",
+    "name": "resource",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Méthode",
-    "en": "Method",
-    "name": "method",
+    "fr": "Les méthodes",
+    "en": "Methods",
+    "name": "methods",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Message",
-    "en": "Message",
-    "name": "tradle.Message",
+    "fr": "Résultat Détails",
+    "en": "Result Details",
+    "name": "resultDetails",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Mon produit d'émission",
+    "en": "My Issue Product",
+    "name": "tradle.MyIssueProduct",
     "type": "model"
   },
   {
-    "fr": "Message",
-    "en": "Message",
-    "name": "message",
+    "fr": "Type de mime",
+    "en": "Mime Type",
+    "name": "mimeType",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Etat du message envoyé",
-    "en": "Message Sent Status",
-    "name": "messageSentStatus",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Méthode",
-    "en": "Method",
-    "name": "tradle.Method",
+    "fr": "Mon Pass Employé",
+    "en": "My Employee Pass",
+    "name": "tradle.MyEmployeeOnboarding",
     "type": "model"
-  },
-  {
-    "fr": "Scanné",
-    "en": "Scanned",
-    "name": "scanned",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "prénom",
-    "en": "Name",
-    "name": "tradle.Name",
-    "type": "model"
-  },
-  {
-    "fr": "Mon message Lien Couleur",
-    "en": "My Message Link Color",
-    "name": "myMessageLinkColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Couleur de fond de mon message",
-    "en": "My Message Background Color",
-    "name": "myMessageBackgroundColor",
-    "type": "propertyName",
-    "model": "Default"
   },
   {
     "fr": "Mon Pass Client",
@@ -2510,57 +2563,6 @@
     "name": "myForms",
     "type": "propertyName",
     "model": "tradle.Profile"
-  },
-  {
-    "fr": "Mon produit d'émission",
-    "en": "My Issue Product",
-    "name": "tradle.MyIssueProduct",
-    "type": "model"
-  },
-  {
-    "fr": "Mes téléphones",
-    "en": "My Phones",
-    "name": "myPhones",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Mon rafraîchissement",
-    "en": "My Refresh",
-    "name": "tradle.MyRefreshProduct",
-    "type": "model"
-  },
-  {
-    "fr": "Mon Pass Employé",
-    "en": "My Employee Pass",
-    "name": "tradle.MyEmployeeOnboarding",
-    "type": "model"
-  },
-  {
-    "fr": "Mon identifiant de produit",
-    "en": "My Product Id",
-    "name": "myProductId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Mon produit",
-    "en": "My Product",
-    "name": "tradle.MyProduct",
-    "type": "model"
-  },
-  {
-    "fr": "prénom",
-    "en": "Name",
-    "name": "name",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Ma remédiation",
-    "en": "My Remediation",
-    "name": "tradle.MyRemediation",
-    "type": "model"
   },
   {
     "fr": "Pack de modèles",
@@ -2595,51 +2597,55 @@
     "model": "Default"
   },
   {
-    "fr": "Selfie",
-    "en": "Selfie",
-    "name": "selfie",
-    "type": "propertyName",
-    "model": "tradle.Selfie"
+    "fr": "Vérification de salaire",
+    "en": "Salary Verification",
+    "name": "tradle.SalaryVerification",
+    "type": "model"
   },
   {
-    "fr": "Pub",
-    "en": "Pub",
-    "name": "pub",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Mon rafraîchissement",
+    "en": "My Refresh",
+    "name": "tradle.MyRefreshProduct",
+    "type": "model"
   },
   {
-    "fr": "Photo d'identité",
-    "en": "Photo I D",
-    "name": "photoID",
+    "fr": "Mon identifiant de produit",
+    "en": "My Product Id",
+    "name": "myProductId",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Téléphone",
-    "en": "Phone",
-    "name": "phone",
+    "fr": "Mon produit",
+    "en": "My Product",
+    "name": "tradle.MyProduct",
+    "type": "model"
+  },
+  {
+    "fr": "Mes téléphones",
+    "en": "My Phones",
+    "name": "myPhones",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Nonce",
-    "en": "Nonce",
-    "name": "nonce",
+    "fr": "Mon message Lien Couleur",
+    "en": "My Message Link Color",
+    "name": "myMessageLinkColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Couleur de la barre de navigation",
-    "en": "Nav Bar Color",
-    "name": "navBarColor",
+    "fr": "Couleur de fond de mon message",
+    "en": "My Message Background Color",
+    "name": "myMessageBackgroundColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Nom de réseau",
-    "en": "Network Name",
-    "name": "networkName",
+    "fr": "Session",
+    "en": "Session",
+    "name": "session",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2657,12 +2663,6 @@
     "type": "model"
   },
   {
-    "fr": "NextFormRequest",
-    "en": "NextFormRequest",
-    "name": "tradle.NextFormRequest",
-    "type": "model"
-  },
-  {
     "fr": "Réseau",
     "en": "Network",
     "name": "network",
@@ -2670,30 +2670,31 @@
     "model": "Default"
   },
   {
-    "fr": "Photo",
-    "en": "Photo",
-    "name": "tradle.Photo",
+    "fr": "prénom",
+    "en": "Name",
+    "name": "tradle.Name",
     "type": "model"
   },
   {
-    "fr": "Organisation",
-    "en": "Organization",
-    "name": "organization",
+    "fr": "Couleur de la barre de navigation",
+    "en": "Nav Bar Color",
+    "name": "navBarColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Un des",
-    "en": "One Of",
-    "name": "oneOf",
+    "fr": "Nom de réseau",
+    "en": "Network Name",
+    "name": "networkName",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Objet",
-    "en": "Object",
-    "name": "tradle.Object",
-    "type": "model"
+    "fr": "prénom",
+    "en": "Name",
+    "name": "name",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Espace de noms",
@@ -2703,17 +2704,17 @@
     "model": "Default"
   },
   {
-    "fr": "Objet",
-    "en": "Object",
-    "name": "object",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Ma remédiation",
+    "en": "My Remediation",
+    "name": "tradle.MyRemediation",
+    "type": "model"
   },
   {
-    "fr": "Organisation",
-    "en": "Organization",
-    "name": "tradle.Organization",
-    "type": "model"
+    "fr": "Nationalité",
+    "en": "Nationality",
+    "name": "nationality",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Couleur de fond de la barre de navigation",
@@ -2730,9 +2731,9 @@
     "model": "Default"
   },
   {
-    "fr": "Preuve",
-    "en": "Proof",
-    "name": "proof",
+    "fr": "Largeur de la barre de navigation",
+    "en": "Nav Bar Border Width",
+    "name": "navBarBorderWidth",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2743,17 +2744,18 @@
     "type": "model"
   },
   {
+    "fr": "Selfie",
+    "en": "Selfie",
+    "name": "selfie",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
     "fr": "Des produits",
     "en": "Products",
     "name": "products",
     "type": "propertyName",
     "model": "Default"
-  },
-  {
-    "fr": "Informations personnelles",
-    "en": "Personal Info",
-    "name": "tradle.PersonalInfo",
-    "type": "model"
   },
   {
     "fr": "Téléphones",
@@ -2776,9 +2778,9 @@
     "model": "Default"
   },
   {
-    "fr": "Le progrès",
-    "en": "Progress",
-    "name": "progress",
+    "fr": "Photo d'identité",
+    "en": "Photo I D",
+    "name": "photoID",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2804,9 +2806,9 @@
     "model": "Default"
   },
   {
-    "fr": "Sélecteur de propriété",
-    "en": "Property Chooser",
-    "name": "tradle.PropertyChooser",
+    "fr": "Informations personnelles",
+    "en": "Personal Info",
+    "name": "tradle.PersonalInfo",
     "type": "model"
   },
   {
@@ -2817,11 +2819,10 @@
     "model": "Default"
   },
   {
-    "fr": "Fournisseur",
-    "en": "Provider",
-    "name": "provider",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "NextFormRequest",
+    "en": "NextFormRequest",
+    "name": "tradle.NextFormRequest",
+    "type": "model"
   },
   {
     "fr": "Types de téléphone",
@@ -2841,10 +2842,11 @@
     "type": "model"
   },
   {
-    "fr": "Profil",
-    "en": "Profile",
-    "name": "tradle.Profile",
-    "type": "model"
+    "fr": "Téléphone",
+    "en": "Phone",
+    "name": "phone",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "photo d'identité",
@@ -2880,9 +2882,9 @@
     "type": "model"
   },
   {
-    "fr": "Largeur de la barre de navigation",
-    "en": "Nav Bar Border Width",
-    "name": "navBarBorderWidth",
+    "fr": "Nonce",
+    "en": "Nonce",
+    "name": "nonce",
     "type": "propertyName",
     "model": "Default"
   },
@@ -2928,18 +2930,16 @@
     "model": "tradle.Selfie"
   },
   {
-    "fr": "Propriété",
-    "en": "Property",
-    "name": "property",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Photo",
+    "en": "Photo",
+    "name": "tradle.Photo",
+    "type": "model"
   },
   {
-    "fr": "Nationalité",
-    "en": "Nationality",
-    "name": "nationality",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Organisation",
+    "en": "Organization",
+    "name": "tradle.Organization",
+    "type": "model"
   },
   {
     "fr": "Propriétaire",
@@ -3015,10 +3015,11 @@
     "model": "Default"
   },
   {
-    "fr": "Message de progression",
-    "en": "Progress Message",
-    "name": "tradle.ProgressMessage",
-    "type": "model"
+    "fr": "Organisation",
+    "en": "Organization",
+    "name": "organization",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Produit Bg Couleur",
@@ -3048,9 +3049,9 @@
     "type": "model"
   },
   {
-    "fr": "Numéro de référence du fournisseur",
-    "en": "Provider Reference Number",
-    "name": "providerReferenceNumber",
+    "fr": "Un des",
+    "en": "One Of",
+    "name": "oneOf",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3081,24 +3082,31 @@
     "type": "model"
   },
   {
-    "fr": "Ignorer le texte",
-    "en": "Skip Btn Text",
-    "name": "skipBtnText",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Éditeur",
-    "en": "Publisher",
-    "name": "publisher",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Clé publique",
-    "en": "Public Key",
-    "name": "tradle.PubKey",
+    "fr": "Objet",
+    "en": "Object",
+    "name": "tradle.Object",
     "type": "model"
+  },
+  {
+    "fr": "Objet",
+    "en": "Object",
+    "name": "object",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Nombre",
+    "en": "Number",
+    "name": "number",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Partagé avec vérification Bg",
+    "en": "Shared With Verification Bg",
+    "name": "sharedWithVerificationBg",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Clé de pub",
@@ -3108,92 +3116,83 @@
     "model": "Default"
   },
   {
-    "fr": "Pubkeys",
-    "en": "Pubkeys",
-    "name": "pubkeys",
+    "fr": "Le progrès",
+    "en": "Progress",
+    "name": "progress",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Taille",
-    "en": "Size",
-    "name": "size",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Relation",
-    "en": "Relationship",
-    "name": "relationship",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Rafraîchir",
-    "en": "Refresh",
-    "name": "tradle.Refresh",
+    "fr": "Sélecteur de propriété",
+    "en": "Property Chooser",
+    "name": "tradle.PropertyChooser",
     "type": "model"
   },
   {
-    "fr": "Objectif",
-    "en": "Purpose",
-    "name": "purpose",
+    "fr": "Fournisseur",
+    "en": "Provider",
+    "name": "provider",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Données brutes",
-    "en": "Raw data",
-    "name": "rawData",
-    "type": "propertyName",
-    "model": "tradle.APIBasedVerificationMethod"
-  },
-  {
-    "fr": "Numéro de carte expurgé",
-    "en": "Redacted Card Number",
-    "name": "redactedCardNumber",
+    "fr": "Pub",
+    "en": "Pub",
+    "name": "pub",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Région",
-    "en": "Region",
-    "name": "region",
+    "fr": "Profil",
+    "en": "Profile",
+    "name": "tradle.Profile",
+    "type": "model"
+  },
+  {
+    "fr": "Preuve",
+    "en": "Proof",
+    "name": "proof",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Référence",
-    "en": "Reference",
-    "name": "reference",
+    "fr": "Numéro de référence du fournisseur",
+    "en": "Provider Reference Number",
+    "name": "providerReferenceNumber",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "fr": "Propriété",
+    "en": "Property",
+    "name": "property",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Message de progression",
+    "en": "Progress Message",
+    "name": "tradle.ProgressMessage",
+    "type": "model"
+  },
+  {
+    "fr": "lui-même",
+    "en": "Sig",
+    "name": "sig",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Selfie",
+    "en": "Selfie",
+    "name": "selfie",
+    "type": "propertyName",
+    "model": "tradle.Selfie"
   },
   {
     "fr": "Données brutes",
     "en": "Raw Data",
     "name": "rawData",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Signature pour",
-    "en": "Signature For",
-    "name": "signatureFor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "ID de correction",
-    "en": "Remediation ID",
-    "name": "myProductId",
-    "type": "propertyName",
-    "model": "tradle.MyRemediation"
-  },
-  {
-    "fr": "Gestionnaires de relations",
-    "en": "Relationship Managers",
-    "name": "relationshipManagers",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3222,9 +3221,9 @@
     "type": "model"
   },
   {
-    "fr": "Afficher le bouton de saut",
-    "en": "Show Skip Button",
-    "name": "showSkipButton",
+    "fr": "Référence",
+    "en": "Reference",
+    "name": "reference",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3276,9 +3275,9 @@
     "type": "model"
   },
   {
-    "fr": "Exiger des données brutes",
-    "en": "Require Raw Data",
-    "name": "requireRawData",
+    "fr": "Scanné",
+    "en": "Scanned",
+    "name": "scanned",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3300,10 +3299,11 @@
     }
   },
   {
-    "fr": "Étiquette",
-    "en": "Tag",
-    "name": "tradle.Tag",
-    "type": "model"
+    "fr": "Rendez-vous",
+    "en": "Rendezvous",
+    "name": "rendezvous",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Racine",
@@ -3313,18 +3313,18 @@
     "model": "Default"
   },
   {
-    "fr": "Ressource",
-    "en": "Resource",
-    "name": "resource",
+    "fr": "Numéro de carte expurgé",
+    "en": "Redacted Card Number",
+    "name": "redactedCardNumber",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Résultat Détails",
-    "en": "Result Details",
-    "name": "resultDetails",
+    "fr": "Données brutes",
+    "en": "Raw data",
+    "name": "rawData",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.APIBasedVerificationMethod"
   },
   {
     "fr": "Révoqué",
@@ -3348,11 +3348,10 @@
     "model": "Default"
   },
   {
-    "fr": "Soumission",
-    "en": "Submission",
-    "name": "submission",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Rafraîchir",
+    "en": "Refresh",
+    "name": "tradle.RefreshProduct",
+    "type": "model"
   },
   {
     "fr": "Scanné par",
@@ -3362,10 +3361,11 @@
     "model": "Default"
   },
   {
-    "fr": "Vérification de salaire",
-    "en": "Salary Verification",
-    "name": "tradle.SalaryVerification",
-    "type": "model"
+    "fr": "Objectif",
+    "en": "Purpose",
+    "name": "purpose",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Balayage",
@@ -3375,18 +3375,17 @@
     "model": "Default"
   },
   {
-    "fr": "Résumé",
-    "en": "Summary",
-    "name": "summary",
+    "fr": "ID de correction",
+    "en": "Remediation ID",
+    "name": "myProductId",
     "type": "propertyName",
-    "model": "Default"
+    "model": "tradle.MyRemediation"
   },
   {
-    "fr": "Session",
-    "en": "Session",
-    "name": "session",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Code de sécurité",
+    "en": "Security Code",
+    "name": "tradle.SecurityCode",
+    "type": "model"
   },
   {
     "fr": "Codes de sécurité",
@@ -3433,9 +3432,9 @@
     "type": "model"
   },
   {
-    "fr": "Selfie",
-    "en": "Selfie",
-    "name": "selfie",
+    "fr": "Éditeur",
+    "en": "Publisher",
+    "name": "publisher",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3447,16 +3446,18 @@
     "model": "Default"
   },
   {
-    "fr": "Code de sécurité",
-    "en": "Security Code",
-    "name": "tradle.SecurityCode",
-    "type": "model"
+    "fr": "symbole",
+    "en": "Symbol",
+    "name": "symbol",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "fr": "Informations sur le serveur du fournisseur de services",
-    "en": "Service Provider Server Info",
-    "name": "tradle.ServiceProvider",
-    "type": "model"
+    "fr": "Signature pour",
+    "en": "Signature For",
+    "name": "signatureFor",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "URL du serveur",
@@ -3466,11 +3467,10 @@
     "model": "tradle.Settings"
   },
   {
-    "fr": "Lier",
-    "en": "To Link",
-    "name": "toLink",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Informations sur le serveur du fournisseur de services",
+    "en": "Service Provider Server Info",
+    "name": "tradle.ServiceProvider",
+    "type": "model"
   },
   {
     "fr": "Sexe",
@@ -3496,9 +3496,9 @@
     "type": "model"
   },
   {
-    "fr": "Temps",
-    "en": "Time",
-    "name": "time",
+    "fr": "Afficher les points",
+    "en": "Show Dots",
+    "name": "showDots",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3542,75 +3542,23 @@
     "model": "Default"
   },
   {
-    "fr": "Tour Page",
-    "en": "Tour Page",
-    "name": "tradle.TourPage",
-    "type": "model"
+    "fr": "Partagé avec bg",
+    "en": "Shared With Bg",
+    "name": "sharedWithBg",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
-    "fr": "Selfie anti-usurpation",
-    "en": "Spoof-proof selfie check",
-    "name": "tradle.SpoofProofSelfieCheck",
-    "type": "model"
+    "fr": "Afficher le bouton Terminé",
+    "en": "Show Done Button",
+    "name": "showDoneButton",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "URL courte",
     "en": "Short Url",
     "name": "shortUrl",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Vérification des compétences",
-    "en": "Skill Verification",
-    "name": "tradle.SkillVerification",
-    "type": "model"
-  },
-  {
-    "fr": "Vérification de source Bg Couleur",
-    "en": "Sourced Verification Bg Color",
-    "name": "sourcedVerificationBgColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Écran de démarrage",
-    "en": "Splashscreen",
-    "name": "splashscreen",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "La source",
-    "en": "Source",
-    "name": "source",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Mappage d'URL court à long",
-    "en": "Short to long URL mapping",
-    "name": "tradle.ShortToLongUrlMapping",
-    "type": "model"
-  },
-  {
-    "fr": "Couleur du texte de vérification à l'origine",
-    "en": "Sourced Verification Text Color",
-    "name": "sourcedVerificationTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Sources",
-    "en": "Sources",
-    "name": "sources",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Partagé avec vérification Bg",
-    "en": "Shared With Verification Bg",
-    "name": "sharedWithVerificationBg",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3622,22 +3570,29 @@
     "model": "Default"
   },
   {
-    "fr": "Message simple",
-    "en": "Simple Message",
-    "name": "tradle.SimpleMessage",
-    "type": "model"
-  },
-  {
-    "fr": "Afficher le bouton Terminé",
-    "en": "Show Done Button",
-    "name": "showDoneButton",
+    "fr": "ID de session",
+    "en": "Session Id",
+    "name": "sessionId",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Partagé avec bg",
-    "en": "Shared With Bg",
-    "name": "sharedWithBg",
+    "fr": "Mappage d'URL court à long",
+    "en": "Short to long URL mapping",
+    "name": "tradle.ShortToLongUrlMapping",
+    "type": "model"
+  },
+  {
+    "fr": "Tx Id",
+    "en": "Tx Id",
+    "name": "txId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Ignorer le texte",
+    "en": "Skip Btn Text",
+    "name": "skipBtnText",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3648,25 +3603,109 @@
     "type": "model"
   },
   {
-    "fr": "lui-même",
-    "en": "Sig",
-    "name": "sig",
+    "fr": "Message simple",
+    "en": "Simple Message",
+    "name": "tradle.SimpleMessage",
+    "type": "model"
+  },
+  {
+    "fr": "Vérification des compétences",
+    "en": "Skill Verification",
+    "name": "tradle.SkillVerification",
+    "type": "model"
+  },
+  {
+    "fr": "Type",
+    "en": "Type",
+    "name": "type",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Afficher les points",
-    "en": "Show Dots",
-    "name": "showDots",
+    "fr": "La source",
+    "en": "Source",
+    "name": "source",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Bienvenue",
-    "en": "Welcome",
-    "name": "welcome",
+    "fr": "Non confirmé",
+    "en": "Unconfirmed",
+    "name": "unconfirmed",
     "type": "propertyName",
     "model": "Default"
+  },
+  {
+    "fr": "Vérification de source Bg Couleur",
+    "en": "Sourced Verification Bg Color",
+    "name": "sourcedVerificationBgColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "À",
+    "en": "To",
+    "name": "to",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Couleur du texte de vérification à l'origine",
+    "en": "Sourced Verification Text Color",
+    "name": "sourcedVerificationTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Titre",
+    "en": "Title",
+    "name": "title",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Selfie anti-usurpation",
+    "en": "Spoof-proof selfie check",
+    "name": "tradle.SpoofProofSelfieCheck",
+    "type": "model"
+  },
+  {
+    "fr": "Sources",
+    "en": "Sources",
+    "name": "sources",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Écran de démarrage",
+    "en": "Splashscreen",
+    "name": "splashscreen",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Utiliser un mot de passe gestuel",
+    "en": "Use Gesture Password",
+    "name": "useGesturePassword",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Statut",
+    "en": "Status",
+    "name": "status",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Statut",
+    "en": "Status",
+    "name": "tradle.IssueStatus",
+    "type": "model",
+    "enum": {
+      "closed": "Fermé",
+      "open": "Ouvrir"
+    }
   },
   {
     "fr": "Statut",
@@ -3689,40 +3728,9 @@
     "model": "Default"
   },
   {
-    "fr": "Statut",
-    "en": "Status",
-    "name": "status",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Statut",
-    "en": "Status",
-    "name": "tradle.IssueStatus",
-    "type": "model",
-    "enum": {
-      "closed": "Fermé",
-      "open": "Ouvrir"
-    }
-  },
-  {
-    "fr": "Utiliser l'ID tactile",
-    "en": "Use Touch Id",
-    "name": "useTouchId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Nom de famille",
-    "en": "Surname",
-    "name": "surname",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "rue",
-    "en": "Street",
-    "name": "street",
+    "fr": "URL",
+    "en": "Url",
+    "name": "url",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3734,16 +3742,9 @@
     "model": "Default"
   },
   {
-    "fr": "Les soumissions",
-    "en": "Submissions",
-    "name": "submissions",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Soumettre la barre dans le pied de page",
-    "en": "Submit Bar In Footer",
-    "name": "submitBarInFooter",
+    "fr": "rue",
+    "en": "Street",
+    "name": "street",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3761,16 +3762,16 @@
     "type": "model"
   },
   {
-    "fr": "Utilisateur",
-    "en": "User",
-    "name": "user",
+    "fr": "Couleur du texte d'en-tête vérifié",
+    "en": "Verified Header Text Color",
+    "name": "verifiedHeaderTextColor",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Cible",
-    "en": "Target",
-    "name": "target",
+    "fr": "Temps",
+    "en": "Time",
+    "name": "time",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3782,11 +3783,10 @@
     "model": "Default"
   },
   {
-    "fr": "symbole",
-    "en": "Symbol",
-    "name": "symbol",
-    "type": "propertyName",
-    "model": "Default"
+    "fr": "Étiquette",
+    "en": "Tag",
+    "name": "tradle.Tag",
+    "type": "model"
   },
   {
     "fr": "Problème étiqueté",
@@ -3802,11 +3802,11 @@
     "model": "Default"
   },
   {
-    "fr": "Les vérifications",
-    "en": "Verifications",
-    "name": "myVerifications",
+    "fr": "Soumission",
+    "en": "Submission",
+    "name": "submission",
     "type": "propertyName",
-    "model": "tradle.Profile"
+    "model": "Default"
   },
   {
     "fr": "Termes et conditions",
@@ -3822,167 +3822,37 @@
     "model": "Default"
   },
   {
-    "fr": "Aspects vérifiables",
-    "en": "Verifiable Aspects",
-    "name": "verifiableAspects",
+    "fr": "Cible",
+    "en": "Target",
+    "name": "target",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Non scellé",
-    "en": "Unsealed",
-    "name": "unsealed",
+    "fr": "Les soumissions",
+    "en": "Submissions",
+    "name": "submissions",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Vers sous-lot",
-    "en": "To Sub Batch",
-    "name": "toSubBatch",
+    "fr": "Résumé",
+    "en": "Summary",
+    "name": "summary",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "Tour",
-    "en": "Tour",
-    "name": "tradle.Tour",
-    "type": "model"
-  },
-  {
-    "fr": "Tx Id",
-    "en": "Tx Id",
-    "name": "txId",
+    "fr": "Nom de famille",
+    "en": "Surname",
+    "name": "surname",
     "type": "propertyName",
     "model": "Default"
   },
   {
-    "fr": "À l'horodatage",
-    "en": "To Timestamp",
-    "name": "toTimestamp",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Hachage de transaction",
-    "en": "Transaction Hash",
-    "name": "transactionHash",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Type",
-    "en": "Type",
-    "name": "type",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Non confirmé",
-    "en": "Unconfirmed",
-    "name": "unconfirmed",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "À",
-    "en": "To",
-    "name": "to",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Titre",
-    "en": "Title",
-    "name": "title",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Couleur d'en-tête vérifiée",
-    "en": "Verified Header Color",
-    "name": "verifiedHeaderColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Utiliser un mot de passe gestuel",
-    "en": "Use Gesture Password",
-    "name": "useGesturePassword",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Téléchargé",
-    "en": "Uploaded",
-    "name": "uploaded",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "URL",
-    "en": "Url",
-    "name": "url",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Sans surveillance",
-    "en": "Unwatched",
-    "name": "unwatched",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "ID de version",
-    "en": "Version Id",
-    "name": "versionId",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Couleur du texte d'en-tête vérifié",
-    "en": "Verified Header Text Color",
-    "name": "verifiedHeaderTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Vérification",
-    "en": "Verification",
-    "name": "tradle.Verification",
-    "type": "model"
-  },
-  {
-    "fr": "Vérifiable",
-    "en": "Verifiable",
-    "name": "tradle.Verifiable",
-    "type": "model"
-  },
-  {
-    "fr": "Valeur",
-    "en": "Value",
-    "name": "value",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Les vérifications",
-    "en": "Verifications",
-    "name": "verifications",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Couleur de bordure vérifiée",
-    "en": "Verified Border Color",
-    "name": "verifiedBorderColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Bg vérifié",
-    "en": "Verified Bg",
-    "name": "verifiedBg",
+    "fr": "Soumettre la barre dans le pied de page",
+    "en": "Submit Bar In Footer",
+    "name": "submitBarInFooter",
     "type": "propertyName",
     "model": "Default"
   },
@@ -3994,10 +3864,25 @@
     "model": "Default"
   },
   {
-    "fr": "Vérification de facture d'électricité",
-    "en": "Utility Bill Verification",
-    "name": "tradle.UtilityBillVerification",
-    "type": "model"
+    "fr": "À l'horodatage",
+    "en": "To Timestamp",
+    "name": "toTimestamp",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Lier",
+    "en": "To Link",
+    "name": "toLink",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Vers sous-lot",
+    "en": "To Sub Batch",
+    "name": "toSubBatch",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Largeur",
@@ -4007,11 +3892,172 @@
     "model": "Default"
   },
   {
+    "fr": "Tour Page",
+    "en": "Tour Page",
+    "name": "tradle.TourPage",
+    "type": "model"
+  },
+  {
+    "fr": "Tour",
+    "en": "Tour",
+    "name": "tradle.Tour",
+    "type": "model"
+  },
+  {
     "fr": "Document vérifié",
     "en": "Verified document",
     "name": "document",
     "type": "propertyName",
     "model": "tradle.Verification"
+  },
+  {
+    "fr": "Utiliser l'ID tactile",
+    "en": "Use Touch Id",
+    "name": "useTouchId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Non scellé",
+    "en": "Unsealed",
+    "name": "unsealed",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Sans surveillance",
+    "en": "Unwatched",
+    "name": "unwatched",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Téléchargé",
+    "en": "Uploaded",
+    "name": "uploaded",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Hachage de transaction",
+    "en": "Transaction Hash",
+    "name": "transactionHash",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Couleur du texte vérifié",
+    "en": "Verified Text Color",
+    "name": "verifiedTextColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Utilisateur",
+    "en": "User",
+    "name": "user",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Vérificateurs",
+    "en": "Verifiers",
+    "name": "verifiers",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Valeur",
+    "en": "Value",
+    "name": "value",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Vérification de facture d'électricité",
+    "en": "Utility Bill Verification",
+    "name": "tradle.UtilityBillVerification",
+    "type": "model"
+  },
+  {
+    "fr": "Méthode de vérification visuelle",
+    "en": "Visual Verification Method",
+    "name": "tradle.VisualVerificationMethod",
+    "type": "model"
+  },
+  {
+    "fr": "Vérification",
+    "en": "Verification",
+    "name": "tradle.Verification",
+    "type": "model"
+  },
+  {
+    "fr": "Aspects vérifiables",
+    "en": "Verifiable Aspects",
+    "name": "verifiableAspects",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Vérifiable",
+    "en": "Verifiable",
+    "name": "tradle.Verifiable",
+    "type": "model"
+  },
+  {
+    "fr": "Web site",
+    "en": "Web site",
+    "name": "tradle.WebSite",
+    "type": "model"
+  },
+  {
+    "fr": "Bg vérifié",
+    "en": "Verified Bg",
+    "name": "verifiedBg",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Les vérifications",
+    "en": "Verifications",
+    "name": "myVerifications",
+    "type": "propertyName",
+    "model": "tradle.Profile"
+  },
+  {
+    "fr": "Les vérifications",
+    "en": "Verifications",
+    "name": "verifications",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Avec",
+    "en": "With",
+    "name": "with",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "ID de version",
+    "en": "Version Id",
+    "name": "versionId",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Couleur de bordure vérifiée",
+    "en": "Verified Border Color",
+    "name": "verifiedBorderColor",
+    "type": "propertyName",
+    "model": "Default"
+  },
+  {
+    "fr": "Couleur d'en-tête vérifiée",
+    "en": "Verified Header Color",
+    "name": "verifiedHeaderColor",
+    "type": "propertyName",
+    "model": "Default"
   },
   {
     "fr": "Couleur du lien vérifié",
@@ -4028,29 +4074,9 @@
     "model": "Default"
   },
   {
-    "fr": "Couleur du texte vérifié",
-    "en": "Verified Text Color",
-    "name": "verifiedTextColor",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
-    "fr": "Vérificateurs",
-    "en": "Verifiers",
-    "name": "verifiers",
-    "type": "propertyName",
-    "model": "Default"
-  },
-  {
     "fr": "Méthode de vérification des photos visuelles",
     "en": "Visual Photos Verification Method",
     "name": "tradle.VisualPhotosVerificationMethod",
-    "type": "model"
-  },
-  {
-    "fr": "Méthode de vérification visuelle",
-    "en": "Visual Verification Method",
-    "name": "tradle.VisualVerificationMethod",
     "type": "model"
   },
   {
@@ -4061,12 +4087,6 @@
     "model": "Default"
   },
   {
-    "fr": "Web site",
-    "en": "Web site",
-    "name": "tradle.WebSite",
-    "type": "model"
-  },
-  {
     "fr": "Sites Internet",
     "en": "Websites",
     "name": "websites",
@@ -4074,9 +4094,9 @@
     "model": "Default"
   },
   {
-    "fr": "Avec",
-    "en": "With",
-    "name": "with",
+    "fr": "Bienvenue",
+    "en": "Welcome",
+    "name": "welcome",
     "type": "propertyName",
     "model": "Default"
   },
