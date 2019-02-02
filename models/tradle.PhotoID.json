@@ -32,11 +32,13 @@
     "documentType": {
       "type": "object",
       "displayName": true,
+      "immutable": true,
       "ref": "tradle.IDCardType"
     },
     "country": {
       "type": "object",
       "title": "Country of Issue",
+      "immutable": true,
       "displayName": true,
       "ref": "tradle.Country"
     },
@@ -45,7 +47,7 @@
       "range": "photo",
       "scanner": "id-document",
       "mainPhoto": true,
-      "component": "BlinkID",
+      "component": "Regula",
       "ref": "tradle.Photo",
       "sample": "scan.photoId"
     },
@@ -168,7 +170,6 @@
   ],
   "editCols": [
     "documentType",
-    "country",
     "scan"
   ],
   "viewCols": [
