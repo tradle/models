@@ -83,7 +83,7 @@ optional, specifies this model as an extension of another model. This is when yo
 
 ### required
 
-optional, array of properties. UI enforces this, making sure user enters all of them.
+optional, array of properties. Server and UI both are making sure user enters all of them. 
 
 ### viewCols
 
@@ -91,7 +91,7 @@ restricts the set of properties that are displayed to the user when the resource
 
 ### editCols
 
-restricts the set of properties that are displayed to the user in edit mode. The order defines the order in which properties are displayed.
+optional, restricts the set of properties that are displayed to the user in edit mode. The order defines the order in which properties are displayed.
 
 ### inlined
 
@@ -138,6 +138,10 @@ optional, set to true if the value for this property is a resource rather than a
 ### readOnly
 
 optional, set to true if this property cannot be modified by the user 
+
+### immutable
+
+optional, once the property value is set, the property can not be modified
 
 ### description
 
