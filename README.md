@@ -83,10 +83,10 @@ optional, specifies this model as an extension of another model. This is when yo
 
 ### interfaces
 
-opsional, array of interfaces. They are not real interfaces, they are more like markers. 
+optional, array of interface models. They are not real interfaces, they are more like markers. 
 We don't enforce inheritance of their properties. 
 
-In model they will be added like this:
+In model they could be added like this:
 ```
 {
   "id": "tradle.TaggedIssue",
