@@ -81,6 +81,39 @@ optional, specifies this model as an extension of another model. This is when yo
 - tradle.MyProduct: see tradle.FinancialProduct
 - tradle.Check: subclasses of this represent checks carried out during the application process, via third parties (tradle.TruefaceCheck, tradle.CentrixCheck, etc.), or otherwise.
 
+### interfaces
+
+opsional, array of interfaces. They are not real interfaces, they are more like markers. 
+We don't enforce inheritance of their properties. 
+
+In model they will be added like this:
+```
+{
+  "id": "tradle.TaggedIssue",
+  "type": "tradle.Model",
+  "interfaces": [
+    "tradle.Intersection"
+  ],
+  "properties": {
+    "tag":  {
+        "type": "object",
+        "ref": "tradle.Tag"
+    },
+    "issue": {
+        "type": "object",
+        "ref": "tradle.Issue"
+    }
+  },
+  ...
+}
+```
+
+We have the following interfaces. 
+
+- tradle.Document - to better group and display the resources on Profile. They will appear in the Profile's Documents tab. Some of the implementors are: tradle.PhotoID, tradle.Selfie, tradle.MediaSnippet, etc.
+- tradle.Item - to display them only in the parent resource. The resources of implementor type can be added on parent resource page
+- tradle.Intersection - to make a soft connection between two or more resources or different types. We use it for example here:
+
 ### required
 
 optional, array of properties. Server and UI both are making sure user enters all of them. 
