@@ -83,10 +83,9 @@ optional, specifies this model as an extension of another model. This is when yo
 
 ### interfaces
 
-optional, array of interface models. They are not real interfaces, they are more like markers. 
-We don't enforce inheritance of their properties. 
+optional, array of interface models. They are more like markers. We don't enforce/check inheritance of their properties. We might consider it in the future but not at this moment
 
-In model they could be added like this:
+Example of the Intersection implementor:
 ```
 {
   "id": "tradle.TaggedIssue",
@@ -96,13 +95,32 @@ In model they could be added like this:
   ],
   "properties": {
     "tag":  {
-        "type": "object",
-        "ref": "tradle.Tag"
+      "type": "object",
+      "ref": "tradle.Tag"
     },
     "issue": {
-        "type": "object",
-        "ref": "tradle.Issue"
+      "type": "object",
+      "ref": "tradle.Issue"
     }
+  },
+  ...
+}
+```
+and then in tradle.Issue it'll be referred like this:
+```
+{
+  "id": "tradle.Issue",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "tags":  {
+      "type": "array",
+      "backlink": "issue"
+      "items": {
+        "ref": "tradle.TaggedIssue"
+      }
+    },
+    ...
   },
   ...
 }
@@ -145,6 +163,10 @@ optional. If true, it prevents the customer from sharing this object with other 
 ### notEditable
 
 optional, objects of this type could not be modified. Once again, tradle.Selfie fits this description
+
+### indexes
+
+optional, to speed up the searches. Check [tradle.Application](https://github.com/tradle/models/blob/master/models/tradle.Application.json) to see how to add them
 
 ## Property Attributes
 
