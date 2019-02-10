@@ -5,6 +5,10 @@
   "properties": {
     "myProductId": {
       "type": "string"
+    },
+    "owner": {
+      "type": "object",
+      "ref": "tradle.Identity"
     }
   }
 }
