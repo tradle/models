@@ -1,13 +1,17 @@
 ## Creating new Product model.
 
 ### Requirements
-- Always is a **subClassOf**  **tradle.FinancialProduct**
-- **forms** property should be present and is an array of model IDs. Each model listed in **forms** should be **subClassOf** **tradle.Form**
-- each product model has a corresponding model that is a **subClassOf** tradle.MyProduct. 
+
+There are two models that represent the product:
+
+1. **subClassOf**  **tradle.FinancialProduct**
+   - **forms** property is required and is an array of model IDs. Each model listed in **forms** should be **subClassOf** **tradle.Form**
+   - **additionalForms** property is optional, it is same as **forms**. This list of forms is for the Employee or plugin to request more information if there is a need for it.
+2. **subClassOf** **tradle.MyProduct** 
    - This is a model for the approval of the product application. 
    - When the product application is approved by employee or auto-approved because of some conditions were met the resource of subClassOf tradle.MyProduct is create and represents a badge of approval.
    - The naming convention is very important here. It is derived from your product model name. 
-For example Product => MyProduc correspondencet:
+For example Product => MyProduct correspondence:
        - ab.tradle.RetailKYC => ab.tradle.**My**RetailKYC
 ab.tradle.SmeKYC => ab.tradle.**My**SmeKYC
 
@@ -86,6 +90,6 @@ They must have the same **name** they have in the Forms they derived from.
   ]
 }
 ```
-Index part of the MyProduct shuld be just blindly copied :).
+Index part of the MyProduct should be just blindly copied :).
 
 
