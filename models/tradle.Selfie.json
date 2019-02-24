@@ -36,7 +36,15 @@
       "ref": "tradle.Photo",
       "sample": "face"
     },
-    "additionalImages": {
+    "facemap": {
+      "type": "string",
+      "inlined": true,
+      "hidden": true,
+      "title": "Facemap",
+      "ref": "tradle.Photo",
+      "readOnly": true
+    },
+    "auditTrail": {
       "type": "array",
       "range": "photo",
       "readOnly": true,
@@ -56,7 +64,6 @@
     "selfie"
   ],
   "viewCols": [
-    "selfie",
-    "additionalImages"
+    "selfie"
   ]
 }
