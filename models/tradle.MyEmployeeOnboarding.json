@@ -19,6 +19,16 @@
       "type": "string",
       "immutable": true
     },
+    "name": {
+      "type": "string",
+      "displayAs": "{2} {1}",
+      "group": [
+        "lastName",
+        "firstName"
+      ],
+      "readOnly": true,
+      "displayName": true
+    },
     "owner": {
       "type": "object",
       "ref": "tradle.Identity"
@@ -31,9 +41,8 @@
     "myProductId"
   ],
   "viewCols": [
-    "myProductId",
-    "firstName",
-    "lastName"
+    "name",
+    "myProductId"
   ],
   "indexes": [
     {
