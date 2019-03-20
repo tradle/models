@@ -1,0 +1,51 @@
+{
+  "id": "tradle.RequestError",
+  "type": "tradle.Model",
+  "title": "Request Error",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "provider": {
+      "type": "string",
+      "readOnly": true
+    },
+    "message": {
+      "type": "string",
+      "displayName": true,
+      "readOnly": true
+    },
+    "date": {
+      "type": "date",
+      "readOnly": true
+    },
+    "application": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Application"
+    }
+  },
+  "indexes": [
+    {
+      "hashKey": "application._permalink",
+      "rangeKey": "provider"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ],
+  "required": [
+    "date",
+    "provider",
+    "application"
+  ],
+  "viewCols": [
+    "message",
+    "provider",
+    "date",
+    "application"
+  ]
+}
