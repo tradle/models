@@ -110,7 +110,12 @@
       "type": "array",
       "items": {
         "ref": "tradle.RequestError",
-        "backlink": "application"
+        "backlink": "application",
+        "filter": {
+          "EQ": {
+            "submission._t": "tradle.RequestError"
+          }
+        }
       }
     },
     "certificate": {
