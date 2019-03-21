@@ -106,6 +106,13 @@
         "backlink": "application"
       }
     },
+    "errorRequests": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.RequestError",
+        "backlink": "application"
+      }
+    },
     "certificate": {
       "type": "object",
       "ref": "tradle.MyProduct"
@@ -134,7 +141,8 @@
     "checks",
     "verifications",
     "editRequests",
-    "products"
+    "products",
+    "errorRequests"
   ],
   "required": [
     "applicant",
