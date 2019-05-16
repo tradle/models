@@ -2,6 +2,7 @@
   "id": "tradle.Message",
   "type": "tradle.Model",
   "title": "Message",
+  "notEditable": true,
   "properties": {
     "object": {
       "type": "object",
@@ -96,6 +97,12 @@
     "hashKey": "_counterparty",
     "rangeKey": "_time"
   },
+  "editCols": [
+    "_recipient",
+    "_payloadType",
+    "context",
+    "_time"
+  ],
   "indexes": [
     {
       "hashKey": "_dcounterparty",
