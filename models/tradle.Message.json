@@ -55,14 +55,17 @@
       "type": "date",
       "readOnly": true,
       "immutable": true,
-      "sample": "timestamp.recent"
+      "sample": "timestamp.recent",
+      "title": "Date"
     },
     "_recipient": {
-      "type": "string"
+      "type": "string",
+      "title": "Recipient"
     },
     "_payloadType": {
       "type": "string",
       "range": "model",
+      "title": "Payload type",
       "virtual": true
     },
     "_payloadLink": {
