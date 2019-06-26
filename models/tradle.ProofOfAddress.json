@@ -1,0 +1,45 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.ProofOfAddress",
+  "title": "Proof of address",
+  "abstract": true,
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "streetAddress": {
+      "type": "string",
+      "readOnly": true
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "region": {
+      "type": "string",
+      "sample": "address.state"
+    },
+    "city": {
+      "type": "string",
+      "title": "City or town",
+      "readOnly": true
+    },
+    "name": {
+      "type": "string",
+      "readOnly": true
+    },
+    "document": {
+      "type": "object",
+      "range": "document",
+      "allowPicturesFromLibrary": true,
+      "title": "Proof of address document",
+      "ref": "tradle.Photo"
+    }
+  },
+  "editCols": [
+    "country",
+    "region",
+    "document"
+  ],
+  "required": [
+    "document"
+  ]
+}
