@@ -22,6 +22,10 @@
       "title": "City or town",
       "readOnly": true
     },
+    "postalCode": {
+      "type": "string",
+      "sample": "address.zipCode"
+    },
     "name": {
       "type": "string",
       "readOnly": true
@@ -36,7 +40,6 @@
   },
   "editCols": [
     "country",
-    "region",
     "document"
   ],
   "required": [
