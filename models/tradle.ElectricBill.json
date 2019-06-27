@@ -33,9 +33,8 @@
       "title": "City or town",
       "readOnly": true
     },
-    "name": {
-      "type": "string",
-      "readOnly": true
+    "postalCode": {
+      "type": "string"
     },
     "document": {
       "type": "object",
@@ -47,10 +46,20 @@
   },
   "editCols": [
     "country",
-    "region",
     "document"
   ],
   "required": [
+    "country",
+    "document"
+  ],
+  "viewCols": [
+    "accountName",
+    "billDate",
+    "issuedBy",
+    "streetAddress",
+    "city",
+    "country",
+    "postalCode",
     "document"
   ]
 }
