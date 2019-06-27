@@ -5,6 +5,17 @@
   "abstract": true,
   "subClassOf": "tradle.ProofOfAddress",
   "properties": {
+    "billDate": {
+      "type": "date",
+      "displayName": true
+    },
+    "issuedBy": {
+      "type": "string",
+      "displayName": true
+    },
+    "accountName": {
+      "type": "string"
+    },
     "streetAddress": {
       "type": "string",
       "readOnly": true
