@@ -8,12 +8,19 @@
       "type": "date",
       "displayName": true
     },
-    "issuedBy": {
+    "issuer": {
+      "type": "string"
+    },
+    "issuerPhoneNumber": {
+      "type": "string"
+    },
+    "accountName": {
       "type": "string",
       "displayName": true
     },
-    "accountName": {
-      "type": "string"
+    "accountNumber": {
+      "type": "string",
+      "displayName": true
     },
     "streetAddress": {
       "type": "string",
@@ -53,8 +60,10 @@
   ],
   "viewCols": [
     "accountName",
+    "accountNumber",
     "billDate",
-    "issuedBy",
+    "issuer",
+    "issuerPhoneNumber",
     "streetAddress",
     "city",
     "country",
