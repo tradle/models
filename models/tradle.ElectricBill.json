@@ -23,8 +23,7 @@
       "displayName": true
     },
     "streetAddress": {
-      "type": "string",
-      "readOnly": true
+      "type": "string"
     },
     "country": {
       "type": "object",
@@ -36,8 +35,11 @@
     },
     "city": {
       "type": "string",
-      "title": "City or town",
-      "readOnly": true
+      "title": "City or town"
+    },
+    "town": {
+      "type": "string",
+      "title": "City or town"
     },
     "postalCode": {
       "type": "string"
@@ -66,6 +68,7 @@
     "issuerPhoneNumber",
     "streetAddress",
     "city",
+    "town",
     "country",
     "postalCode",
     "document"
