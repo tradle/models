@@ -27,10 +27,6 @@
     "postalCode": {
       "type": "string"
     },
-    "scanned": {
-      "type": "boolean",
-      "readOnly": true
-    },
     "cardholderName": {
       "type": "string",
       "displayName": true
@@ -40,6 +36,7 @@
       "range": "photo",
       "scanner": "payment-card",
       "mainPhoto": true,
+      "immutable": true,
       "ref": "tradle.Photo"
     },
     "scanJson": {
