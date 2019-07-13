@@ -31,7 +31,6 @@
     },
     "documentType": {
       "type": "object",
-      "displayName": true,
       "immutable": true,
       "ref": "tradle.IDCardType"
     },
@@ -39,8 +38,17 @@
       "type": "object",
       "title": "Country of Issue",
       "immutable": true,
-      "displayName": true,
       "ref": "tradle.Country"
+    },
+    "resourceTitle": {
+      "type": "string",
+      "readOnly": true,
+      "displayName": true,
+      "displayAs": "{1}, {2}",
+      "group": [
+        "documentType",
+        "country"
+      ]
     },
     "scan": {
       "type": "object",
