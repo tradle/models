@@ -1,0 +1,15 @@
+{
+  "id": "tradle.DocumentValidityCheckFail",
+  "title": "Reason for check override",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "reasons": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "fail", "title": "Document expired" }
+  ]
+}
