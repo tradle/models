@@ -1,0 +1,40 @@
+{
+  "id": "tradle.DocumentValidityCheckOverride",
+  "title": "Check Override",
+  "subClassOf": "tradle.CheckOverride",
+  "type": "tradle.Model",
+  "properties": {
+    "status": {
+      "type": "object",
+      "ref": "tradle.OverrideStatus",
+      "displayName": true
+    },
+    "reasonsToPass": {
+      "type": "object",
+      "ref": "tradle.DocumentValidityCheckPass"
+    },
+    "reasonsToFail": {
+      "type": "object",
+      "ref": "tradle.DocumentValidityCheckFail"
+    },
+    "check": {
+      "type": "object",
+      "ref": "tradle.Check",
+      "readOnly": true
+    },
+    "application": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Application"
+    }
+  },
+  "editCols": [
+    "status"
+  ],
+  "required": [
+    "status",
+    "reasons",
+    "check",
+    "application"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "tradle.OverrideStatus",
+  "title": "Status",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "status": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    {
+      "id": "pass",
+      "title": "Pass",
+      "icon": "ios-checkmark",
+      "color": "green"
+    },
+    {
+      "id": "fail",
+      "title": "Fail",
+      "icon": "ios-close",
+      "color": "red"
+    }
+  ]
+}

@@ -49,6 +49,11 @@
     },
     "sessionId": {
       "type": "string"
+    },
+    "checkOverride": {
+      "type": "object",
+      "ref": "tradle.DocumentValidityCheckOverride",
+      "readOnly": true
     }
   },
   "indexes": [
@@ -74,6 +79,7 @@
     "form",
     "application",
     "provider",
+    "checkOverride",
     "rawData"
   ]
 }

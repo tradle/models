@@ -33,6 +33,13 @@
     },
     "providerReferenceNumber": {
       "type": "string"
+    },
+    "checkOverride": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.CheckOverride",
+        "backlink": "check"
+      }
     }
   },
   "required": [
