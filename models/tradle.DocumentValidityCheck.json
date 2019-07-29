@@ -51,8 +51,11 @@
       "type": "string"
     },
     "checkOverride": {
-      "type": "object",
-      "ref": "tradle.DocumentValidityCheckOverride",
+      "type": "array",
+      "items": {
+        "ref": "tradle.DocumentValidityCheckOverride",
+        "backlink": "check"
+      },
       "readOnly": true
     }
   },
