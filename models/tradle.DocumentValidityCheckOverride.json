@@ -11,11 +11,13 @@
     },
     "reasonsToPass": {
       "type": "object",
-      "ref": "tradle.DocumentValidityCheckPass"
+      "ref": "tradle.DocumentValidityCheckPass",
+      "displayName": true
     },
     "reasonsToFail": {
       "type": "object",
-      "ref": "tradle.DocumentValidityCheckFail"
+      "ref": "tradle.DocumentValidityCheckFail",
+      "displayName": true
     },
     "check": {
       "type": "object",
