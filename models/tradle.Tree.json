@@ -1,0 +1,36 @@
+{
+  "id": "tradle.Tree",
+  "type": "tradle.Model",
+  "title": "Tree",
+  "abstract": true,
+  "properties": {
+    "node": {
+      "type": "string",
+      "displayName": true
+    },
+    "title": {
+      "type": "string",
+      "displayName": true
+    },
+    "parent": {
+      "type": "object",
+      "ref": "tradle.Tree"
+    },
+    "children": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.Tree",
+        "backlink": "parent"
+      }
+    }
+  },
+  "viewCols": [
+    "node",
+    "title",
+    "parent"
+  ],
+  "required": [
+    "node",
+    "title"
+  ]
+}
