@@ -249,6 +249,6 @@ For example:
  }
 ```
 It means:
-  - first the property **country* will be displayed
-  - when it set the **a** text field will be displayed - but not before
-  - hide property b if the country is US, but show for all others or until it set
+  - the property **country** will be displayed
+  - when it is set the **a** text field will be displayed - but not before
+  - hide property **b** if the country is US, but show for all other countries or until it set
