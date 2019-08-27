@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Tradle software is divided into two parts, the code and the data models. The code uses the data models to display data on the screen, to transmit data, to store data and to search for data. Each data model defines a set of properties. Any object of this model will have properties defined there. Some properties are listed as ‘required’. There are many other annotations, which are used to create rich definition of data and its handling. 
+Tradle software is divided into two parts, the code and the data models. The code uses the data models to display data on the screen, to transmit data, to store data and to search for data. Each data model defines a set of properties. Any object of this model will have properties defined there. Some properties are listed as ‘required’. There are many other annotations, which are used to create rich definition of data and its handling.
 
 We use Json Schema as a basis for the data modeling language, but Json Schema is not rich enough for our purposes, so we have extended it.
 
@@ -12,7 +12,7 @@ Models are like blueprints. “Resources” are like buildings created from thos
 Below is the reference on data models. See some of the currently used models on github.
 
 To validate your models, use: https://github.com/tradle/validate-model
-To validate resources built from models, use: https://github.com/tradle/validate-resource 
+To validate resources built from models, use: https://github.com/tradle/validate-resource
 
 ### Example:
 
@@ -55,9 +55,9 @@ A resource built from this model would like this:
 
 ### properties
 
-list of properties, each separately described. No other properties can be used in the objects of this model. 
+list of properties, each separately described. No other properties can be used in the objects of this model.
 
-There is one exception to this rule, a special property that represents json. It allows to include any type of structured data into the object without modeling it upfront, which is very useful for integration purposes. 
+There is one exception to this rule, a special property that represents json. It allows to include any type of structured data into the object without modeling it upfront, which is very useful for integration purposes.
 
 ### type
 
@@ -71,11 +71,11 @@ namespaced id of the model, e.g. ‘tradle.Organization’
 
 how you want the name of this model to appear in UI. This is useful for evolving UI without affecting the code that may be referencing that id.
 
-### subClassOf 
+### subClassOf
 
-optional, specifies this model as an extension of another model. This is when you absolutely need a strong rigidity in the data model. Current models you can subclass: 
+optional, specifies this model as an extension of another model. This is when you absolutely need a strong rigidity in the data model. Current models you can subclass:
 
-- tradle.Form: the only way to specify in model that you want it to use for entering structured data. 
+- tradle.Form: the only way to specify in model that you want it to use for entering structured data.
 - tradle.Enum: for when you can list all possible values of the property, e.g. marital status, gender, etc. This mechanism is also used for longer lists, which are predefined, like currencies, countries, etc. See for example, the Country model.
 - tradle.FinancialProduct: to define products to put in your channel’s product list. This must have a corresponding model that subclasses tradle.MyProduct. If you have a product com.example.Insurance that subclasses tradle.FinancialProduct, you must have a corresponding model com.example.MyInsurance that subclasses tradle.MyProduct. This is the product certificate the customer receives after their application for a.b.Insurance is approved.
 - tradle.MyProduct: see tradle.FinancialProduct
@@ -126,7 +126,7 @@ and then in tradle.Issue it'll be referred like this:
 }
 ```
 
-We have the following interfaces. 
+We have the following interfaces.
 
 - tradle.Document - to better group and display the resources on Profile. They will appear in the Profile's Documents tab. Some of the implementors are: tradle.PhotoID, tradle.Selfie, tradle.MediaSnippet, etc.
 - tradle.Item - to display them only in the parent resource. The resources of implementor type can be added on parent resource page
@@ -134,11 +134,15 @@ We have the following interfaces.
 
 ### required
 
-optional, array of properties. Server and UI both are making sure user enters all of them. 
+optional, array of properties. Server and UI both are making sure user enters all of them.
+
+### softRequired
+
+optional, array of properties. UI is making sure user enters all of them in case they are displayed.
 
 ### viewCols
 
-restricts the set of properties that are displayed to the user when the resource is viewed on its own page. The order defines the order in which properties are displayed. 
+restricts the set of properties that are displayed to the user when the resource is viewed on its own page. The order defines the order in which properties are displayed.
 
 ### editCols
 
@@ -192,7 +196,7 @@ optional, set to true if the value for this property is a resource rather than a
 
 ### readOnly
 
-optional, set to true if this property cannot be modified by the user 
+optional, set to true if this property cannot be modified by the user
 
 ### immutable
 
@@ -217,3 +221,34 @@ possible values include: default, numeric, email-address, phone-pad
 ### backlink
 
 defines a one-to-many relationship. Specifies by which property the "many" links to the "one." Many must be *type* array. For an example, take a look at the relationship between tradle.PhotoID and tradle.Verification. In this case, many tradle.Verification resources can link to one tradle.PhotoID
+
+### showIf/hideIf
+
+optional, a formula that will be executed to make a decision if the property is going to be displayed.
+
+For example:
+```
+{
+  "id": "tradle.XXX",
+  "type": "tradle.Model",
+  ...
+  "properties": {
+    "a": {
+      "type": "string"
+      "showIf": "country"
+    },
+    "b": {
+      "type": "string"
+      "hideIf": "country.id.endsWith('US')"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    ...
+ }
+```
+It means:
+  - first the property **country* will be displayed
+  - when it set the **a** text field will be displayed - but not before
+  - hide property b if the country is US, but show for all others or until it set
