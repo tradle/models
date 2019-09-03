@@ -14,6 +14,7 @@
     },
     "relationshipManagers": {
       "type": "array",
+      "readOnly": true,
       "items": {
         "ref": "tradle.Identity"
       }
@@ -146,10 +147,12 @@
     },
     "certificate": {
       "type": "object",
-      "ref": "tradle.MyProduct"
+      "ref": "tradle.MyProduct",
+      "readOnly": true
     },
     "archived": {
-      "type": "boolean"
+      "type": "boolean",
+      "readOnly": true
     },
     "draft": {
       "type": "boolean",
@@ -157,7 +160,8 @@
     },
     "prefillFromApplication": {
       "type": "object",
-      "ref": "tradle.Application"
+      "ref": "tradle.Application",
+      "readOnly": true
     }
   },
   "viewCols": [
