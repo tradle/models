@@ -4,11 +4,13 @@
   "id": "tradle.Application",
   "properties": {
     "applicantName": {
-      "type": "string"
+      "type": "string",
+      "readOnly": true
     },
     "applicant": {
       "type": "object",
-      "ref": "tradle.Identity"
+      "ref": "tradle.Identity",
+      "readOnly": true
     },
     "relationshipManagers": {
       "type": "array",
@@ -17,43 +19,50 @@
       }
     },
     "status": {
-      "type": "string"
+      "type": "string",
+      "readOnly": true
     },
     "dateStarted": {
-      "type": "date"
+      "type": "date",
+      "readOnly": true
     },
     "dateCompleted": {
-      "type": "date"
+      "type": "date",
+      "readOnly": true
     },
     "dateEvaluated": {
-      "type": "date"
+      "type": "date",
+      "readOnly": true
     },
     "dateModified": {
-      "type": "date"
+      "type": "date",
+      "readOnly": true
     },
     "context": {
-      "type": "string"
+      "type": "string",
+      "readOnly": true
     },
     "request": {
       "type": "object",
-      "ref": "tradle.Form"
+      "ref": "tradle.Form",
+      "readOnly": true
     },
     "requestFor": {
       "type": "string",
       "range": "model",
-      "displayName": true
+      "displayName": true,
+      "readOnly": true
     },
     "submissions": {
       "type": "array",
       "items": {
         "ref": "tradle.ApplicationSubmission",
         "backlink": "application"
-      },
-      "assignedToTeam": {
-        "type": "object",
-        "ref": "tradle.ClientOnboardingTeam"
       }
-
+    },
+    "assignedToTeam": {
+      "type": "object",
+      "ref": "tradle.ClientOnboardingTeam"
     },
     "forms": {
       "type": "array",
