@@ -171,6 +171,14 @@
       "type": "boolean",
       "readOnly": true
     },
+    "numberOfCheckOverrides": {
+      "type": "number",
+      "readOnly": true
+    },
+    "hasCheckOverrides": {
+      "type": "boolean",
+      "readOnly": true
+    },
     "lastMsgToClientTime": {
       "type": "date",
       "readOnly": true
@@ -190,6 +198,8 @@
     "dateCompleted",
     "hasFailedChecks",
     "numberOfChecksFailed",
+    "hasCheckOverrides",
+    "numberOfCheckOverrides",
     "lastMsgFromClientTime",
     "lastMsgToClientTime",
     "archived",
