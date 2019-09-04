@@ -162,6 +162,22 @@
       "type": "object",
       "ref": "tradle.Application",
       "readOnly": true
+    },
+    "numberOfChecksFailed": {
+      "type": "number",
+      "readOnly": true
+    },
+    "hasFailedChecks": {
+      "type": "number",
+      "readOnly": true
+    },
+    "lastMsgToClientTime": {
+      "type": "date",
+      "readOnly": true
+    },
+    "lastMsgFromClientTime": {
+      "type": "date",
+      "readOnly": true
     }
   },
   "viewCols": [
@@ -172,6 +188,10 @@
     "dateStarted",
     "dateModified",
     "dateCompleted",
+    "hasFailedChecks",
+    "numberOfChecksFailed",
+    "lastMsgFromClientTime",
+    "lastMsgToClientTime",
     "archived",
     "forms",
     "checks",
