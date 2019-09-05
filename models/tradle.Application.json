@@ -162,6 +162,30 @@
       "type": "object",
       "ref": "tradle.Application",
       "readOnly": true
+    },
+    "numberOfChecksFailed": {
+      "type": "number",
+      "readOnly": true
+    },
+    "hasFailedChecks": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "numberOfCheckOverrides": {
+      "type": "number",
+      "readOnly": true
+    },
+    "hasCheckOverrides": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "lastMsgToClientTime": {
+      "type": "date",
+      "readOnly": true
+    },
+    "lastMsgFromClientTime": {
+      "type": "date",
+      "readOnly": true
     }
   },
   "viewCols": [
@@ -172,6 +196,12 @@
     "dateStarted",
     "dateModified",
     "dateCompleted",
+    "hasFailedChecks",
+    "numberOfChecksFailed",
+    "hasCheckOverrides",
+    "numberOfCheckOverrides",
+    "lastMsgFromClientTime",
+    "lastMsgToClientTime",
     "archived",
     "forms",
     "checks",
