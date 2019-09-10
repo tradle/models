@@ -99,6 +99,7 @@
     "products": {
       "type": "array",
       "icon": "ios-color-filter-outline",
+      "hidden": true,
       "items": {
         "ref": "tradle.ApplicationSubmission",
         "backlink": "application",
@@ -141,6 +142,7 @@
     "requestErrors": {
       "type": "array",
       "icon": "ios-open-outline",
+      "hidden": true,
       "items": {
         "ref": "tradle.ApplicationSubmission",
         "backlink": "application",
@@ -149,6 +151,12 @@
             "submission._t": "tradle.RequestError"
           }
         }
+      }
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.Application"
       }
     },
     "certificate": {
@@ -212,8 +220,7 @@
     "forms",
     "checks",
     "editRequests",
-    "products",
-    "requestErrors"
+    "products"
   ],
   "required": [
     "applicant",
