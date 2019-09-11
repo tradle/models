@@ -15,6 +15,7 @@
     "relationshipManagers": {
       "type": "array",
       "readOnly": true,
+      "hidden": true,
       "items": {
         "ref": "tradle.Identity"
       }
@@ -153,11 +154,16 @@
         }
       }
     },
+    "parent": {
+      "type": "object",
+      "ref": "tradle.Application"
+    },
     "items": {
       "type": "array",
       "readOnly": true,
       "items": {
-        "ref": "tradle.Application"
+        "ref": "tradle.Application",
+        "backlink": "parent"
       }
     },
     "certificate": {
@@ -194,6 +200,14 @@
       "type": "boolean",
       "readOnly": true
     },
+    "hasFailedSanctionsChecks": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "hasFailedDocumentValidityChecks": {
+      "type": "boolean",
+      "readOnly": true
+    },
     "lastMsgToClientTime": {
       "type": "date",
       "readOnly": true
@@ -213,6 +227,8 @@
     "dateCompleted",
     "hasFailedChecks",
     "numberOfChecksFailed",
+    "hasFailedSanctionsChecks",
+    "hasFailedDocumentValidityChecks",
     "hasCheckOverrides",
     "numberOfCheckOverrides",
     "lastMsgFromClientTime",
