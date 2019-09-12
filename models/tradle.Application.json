@@ -240,11 +240,7 @@
     "editRequests",
     "products"
   ],
-  "required": [
-    "applicant",
-    "requestFor",
-    "context"
-  ],
+  "required": ["applicant", "requestFor", "context"],
   "indexes": [
     {
       "hashKey": "context",
@@ -264,6 +260,16 @@
       "hashKey": "status",
       "rangeKey": ["requestFor", "_time"],
       "specificity": 3
+    },
+    {
+      "hashKey": "assignedToTeam.id",
+      "rangeKey": "_time",
+      "specificity": 4
+    },
+    {
+      "hashKey": "reviewer._permalink",
+      "rangeKey": "_time",
+      "specificity": 4
     }
   ]
 }
