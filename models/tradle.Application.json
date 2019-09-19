@@ -20,8 +20,14 @@
         "ref": "tradle.Identity"
       }
     },
+    "analyst": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.MyEmployeeOnboarding"
+    },
     "reviewer": {
       "type": "object",
+      "hidden": true,
       "readOnly": true,
       "ref": "tradle.Identity"
     },
@@ -238,7 +244,8 @@
     "forms",
     "checks",
     "editRequests",
-    "products"
+    "parent",
+    "analyst"
   ],
   "required": ["applicant", "requestFor", "context"],
   "indexes": [
@@ -267,7 +274,7 @@
       "specificity": 4
     },
     {
-      "hashKey": "reviewer._permalink",
+      "hashKey": "analyst._permalink",
       "rangeKey": "_time",
       "specificity": 4
     }
