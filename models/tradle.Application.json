@@ -215,6 +215,10 @@
       "type": "boolean",
       "readOnly": true
     },
+    "hasFailedEntityExistanceChecks": {
+      "type": "boolean",
+      "readOnly": true
+    },
     "lastMsgToClientTime": {
       "type": "date",
       "readOnly": true
@@ -236,6 +240,7 @@
     "numberOfChecksFailed",
     "hasFailedSanctionsChecks",
     "hasFailedDocumentValidityChecks",
+    "hasFailedEntityExistanceChecks",
     "hasCheckOverrides",
     "numberOfCheckOverrides",
     "lastMsgFromClientTime",
