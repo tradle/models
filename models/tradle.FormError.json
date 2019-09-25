@@ -10,6 +10,7 @@
     },
     "message": {
       "type": "string",
+      "displayName": true,
       "sample": "lorem.sentence"
     },
     "prefill": {
@@ -36,6 +37,7 @@
     "errors": {
       "type": "array",
       "inlined": true,
+      "displayName": true,
       "items": {
         "type": "object",
         "properties": {
