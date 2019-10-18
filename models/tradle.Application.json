@@ -163,8 +163,20 @@
     },
     "parent": {
       "type": "object",
+      "title": "Parent application",
       "readOnly": true,
       "ref": "tradle.Application"
+    },
+    "top": {
+      "type": "object",
+      "title": "Root application",
+      "readOnly": true,
+      "ref": "tradle.Application"
+    },
+    "associatedResource": {
+      "type": "object",
+      "ref": "tradle.Form",
+      "readOnly": true
     },
     "items": {
       "type": "array",
@@ -227,6 +239,9 @@
     "lastMsgFromClientTime": {
       "type": "date",
       "readOnly": true
+    },
+    "score": {
+      "type": "number"
     }
   },
   "viewCols": [
@@ -237,6 +252,7 @@
     "dateStarted",
     "dateModified",
     "dateCompleted",
+    "score",
     "hasFailedChecks",
     "numberOfChecksFailed",
     "hasFailedSanctionsChecks",
