@@ -1,5 +1,5 @@
 'use strict'
-exports.models = require('./models.json')
+exports.models = require('./models.js')
 // exports.dictionaries = {
 // //   get en() { return require('./dictionary_en.json') },
 //   get nl() { return require('./dictionary_nl.json') },
