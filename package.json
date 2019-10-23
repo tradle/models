@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --quiet --ext .js --ext .json .",
-    "validate": "PRINT_ONLY=1 node ./validate -f ./models.json",
+    "validate": "PRINT_ONLY=1 node ./validate -f ./models.js",
     "merge": "pack-models -i ./models -o ./models.js",
     "dictionaries": "pack-models -d ./models",
     "postpublish": "git push -u",
-    "precommit": "npm run merge && git add models.json && npm run validate"
+    "precommit": "npm run merge && git add models.js && npm run validate"
   },
   "repository": {
     "type": "git",
