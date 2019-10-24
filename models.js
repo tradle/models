@@ -1,6 +1,6 @@
 const models = module.exports = {
   get ['tradle.API']() { return require('./models/tradle.API.json') },
-  get ['tradle.APIBasedVerificationMethod_Wealth']() { return require('./models/tradle.APIBasedVerificationMethod_Wealth.json') },
+  get ['tradle.APIBasedVerificationMethod']() { return require('./models/tradle.APIBasedVerificationMethod_Wealth.json') },
   get ['tradle.Ack']() { return require('./models/tradle.Ack.json') },
   get ['tradle.AdditionalInfo']() { return require('./models/tradle.AdditionalInfo.json') },
   get ['tradle.AddressCheck']() { return require('./models/tradle.AddressCheck.json') },
@@ -160,6 +160,6 @@ const models = module.exports = {
   get ['tradle.Verifiable']() { return require('./models/tradle.Verifiable.json') },
   get ['tradle.Verification']() { return require('./models/tradle.Verification.json') },
   get ['tradle.VisualPhotosVerificationMethod']() { return require('./models/tradle.VisualPhotosVerificationMethod.json') },
-  get ['tradle.VisualVerificationMethod_Wealth']() { return require('./models/tradle.VisualVerificationMethod_Wealth.json') },
+  get ['tradle.VisualVerificationMethod']() { return require('./models/tradle.VisualVerificationMethod_Wealth.json') },
   get ['tradle.WebSite']() { return require('./models/tradle.WebSite.json') }
 }
