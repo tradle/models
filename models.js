@@ -32,6 +32,7 @@ const models = module.exports = {
   get ['tradle.CustomerOnboarding']() { return require('./models/tradle.CustomerOnboarding.json') },
   get ['tradle.CustomerWaiting']() { return require('./models/tradle.CustomerWaiting.json') },
   get ['tradle.DataBundle']() { return require('./models/tradle.DataBundle.json') },
+  get ['tradle.DataBundleSubmitted']() { return require('./models/tradle.DataBundleSubmitted.json') },
   get ['tradle.DataClaim']() { return require('./models/tradle.DataClaim.json') },
   get ['tradle.DeliveryError']() { return require('./models/tradle.DeliveryError.json') },
   get ['tradle.DeliveryErrorStatus']() { return require('./models/tradle.DeliveryErrorStatus.json') },

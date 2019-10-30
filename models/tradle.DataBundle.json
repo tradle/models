@@ -4,14 +4,20 @@
   "type": "tradle.Model",
   "properties": {
     "message": {
-      "type": "string"
+      "type": "string",
+      "readOnly": true
     },
     "items": {
       "inlined": true,
+      "readOnly": true,
       "type": "array",
       "items": {
         "ref": "tradle.Object"
       }
+    },
+    "isUpload": {
+      "type": "boolean",
+      "readOnly": true
     }
   },
   "viewCols": [
