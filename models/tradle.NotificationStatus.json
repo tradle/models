@@ -1,0 +1,39 @@
+{
+  "id": "tradle.NotificationStatus",
+  "title": "Notification Status",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "status": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    {
+      "id": "notified",
+      "title": "Notified",
+      "color": "green"
+    },
+    {
+      "id": "completed",
+      "title": "Completed",
+      "color": "red"
+    },
+    {
+      "id": "started",
+      "title": "Pending",
+      "color": "blue"
+    },
+    {
+      "id": "warning",
+      "title": "Warning",
+      "color": "orange"
+    },
+    {
+      "id": "error",
+      "title": "Error",
+      "color": "darkred"
+    }
+  ]
+}

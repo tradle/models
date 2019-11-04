@@ -1,0 +1,58 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.Notification",
+  "title": "Notification",
+  "properties": {
+    "provider": {
+      "type": "string",
+      "readOnly": true
+    },
+    "status": {
+      "type": "object",
+      "ref": "tradle.NotificationStatus",
+      "readOnly": true
+    },
+    "timesNotified": {
+      "type": "number"
+    },
+    "dateLastNotified": {
+      "type": "date",
+      "readOnly": true
+    },
+    "form": {
+      "type": "object",
+      "ref": "tradle.Form"
+    },
+    "application": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.Application"
+    }
+  },
+  "indexes": [
+    {
+      "hashKey": "application._permalink",
+      "rangeKey": "provider"
+    },
+    {
+      "hashKey": "status",
+      "rangeKey": "_time"
+    }
+  ],
+  "required": [
+    "status",
+    "dateChecked",
+    "form",
+    "application"
+  ],
+  "viewCols": [
+    "status",
+    "message",
+    "dateChecked",
+    "form",
+    "application",
+    "provider",
+    "checkOverride",
+    "rawData"
+  ]
+}
