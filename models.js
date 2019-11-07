@@ -100,6 +100,7 @@ const models = module.exports = {
   get ['tradle.NewMessageModel']() { return require('./models/tradle.NewMessageModel.json') },
   get ['tradle.NextFormRequest']() { return require('./models/tradle.NextFormRequest.json') },
   get ['tradle.Notification']() { return require('./models/tradle.Notification.json') },
+  get ['tradle.NotificationMethod']() { return require('./models/tradle.NotificationMethod.json') },
   get ['tradle.NotificationStatus']() { return require('./models/tradle.NotificationStatus.json') },
   get ['tradle.OTP']() { return require('./models/tradle.OTP.json') },
   get ['tradle.Object']() { return require('./models/tradle.Object.json') },

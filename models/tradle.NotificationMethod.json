@@ -1,0 +1,22 @@
+{
+  "id": "tradle.NotificationMethod",
+  "title": "Notification Method",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "method": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    {
+      "id": "email",
+      "title": "Email"
+    },
+    {
+      "id": "sms",
+      "title": "SMS"
+    }
+  ]
+}
