@@ -15,6 +15,14 @@
     "message": {
       "type": "string"
     },
+    "emailAddress": {
+      "type": "string",
+      "range": "email"
+    },
+    "mobile": {
+      "type": "string",
+      "range": "phone"
+    },
     "timesNotified": {
       "type": "number"
     },
@@ -42,21 +50,25 @@
       "rangeKey": "provider"
     },
     {
+      "hashKey": "form._permalink",
+      "rangeKey": "provider"
+    },
+    {
       "hashKey": "status",
       "rangeKey": "_time"
     }
   ],
   "required": [
-    "status",
-    "dateLastNotified",
-    "form",
-    "application"
+    "status"
   ],
   "viewCols": [
     "status",
     "dateLastNotified",
+    "dateLastModified",
+    "timesNotified",
+    "emailAddress",
+    "mobile",
     "form",
-    "application",
-    "provider"
+    "application"
   ]
 }
