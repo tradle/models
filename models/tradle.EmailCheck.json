@@ -14,6 +14,10 @@
       "ref": "tradle.Status",
       "readOnly": true
     },
+    "aspects": {
+      "type": "string",
+      "displayName": true
+    },
     "emailAddress": {
       "type": "string",
       "range": "email",
@@ -27,6 +31,10 @@
       "type": "object",
       "ref": "tradle.Identity"
     },
+    "dateChecked": {
+      "type": "date",
+      "readOnly": true
+    },
     "dateExpires": {
       "type": "date"
     }
@@ -38,6 +46,8 @@
   "viewCols": [
     "emailAddress",
     "status",
-    "provider"
+    "provider",
+    "dateChecked",
+    "dateExpires"
   ]
 }
