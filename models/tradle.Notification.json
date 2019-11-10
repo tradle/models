@@ -10,6 +10,7 @@
     "status": {
       "type": "object",
       "ref": "tradle.NotificationStatus",
+      "displayName": true,
       "readOnly": true
     },
     "message": {
@@ -17,6 +18,7 @@
     },
     "emailAddress": {
       "type": "string",
+      "displayName": true,
       "range": "email"
     },
     "mobile": {
@@ -36,6 +38,7 @@
     },
     "form": {
       "type": "object",
+      "displayName": true,
       "ref": "tradle.Form"
     },
     "application": {
