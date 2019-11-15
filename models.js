@@ -152,6 +152,7 @@ const models = module.exports = {
   get ['tradle.ShortToLongUrlMapping']() { return require('./models/tradle.ShortToLongUrlMapping.json') },
   get ['tradle.SimpleMessage']() { return require('./models/tradle.SimpleMessage.json') },
   get ['tradle.SkillVerification']() { return require('./models/tradle.SkillVerification.json') },
+  get ['tradle.SourceType']() { return require('./models/tradle.SourceType.json') },
   get ['tradle.SpoofProofSelfieCheck']() { return require('./models/tradle.SpoofProofSelfieCheck.json') },
   get ['tradle.Status']() { return require('./models/tradle.Status.json') },
   get ['tradle.StylesPack']() { return require('./models/tradle.StylesPack.json') },
