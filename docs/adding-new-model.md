@@ -1,6 +1,6 @@
 ### Adding new model 
 
-- When you commit a new model, make sure the new model was added to models.js that is located in the root folder. It should be added on commit but if it wasn't, run
+- When you commit a new model, the commit hook is adding it in models.js file that is located in the root folder. Please check that it was indeed added and if it wasn't, please run:
 ```
 npm run merge
 ```
