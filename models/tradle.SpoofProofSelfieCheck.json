@@ -62,6 +62,20 @@
       "type": "string"
     }
   },
+  "indexes": [
+    {
+      "hashKey": "application._permalink",
+      "rangeKey": "provider"
+    },
+    {
+      "hashKey": "top._permalink",
+      "rangeKey": "provider"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ],
   "required": [
     "status",
     "dateChecked",
