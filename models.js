@@ -99,6 +99,7 @@ const models = module.exports = {
   get ['tradle.Nationality']() { return require('./models/tradle.Nationality.json') },
   get ['tradle.NewMessageModel']() { return require('./models/tradle.NewMessageModel.json') },
   get ['tradle.NextFormRequest']() { return require('./models/tradle.NextFormRequest.json') },
+  get ['tradle.NotifiableByEmployee']() { return require('./models/tradle.NotifiableByEmployee.json') },
   get ['tradle.Notification']() { return require('./models/tradle.Notification.json') },
   get ['tradle.NotificationMethod']() { return require('./models/tradle.NotificationMethod.json') },
   get ['tradle.NotificationStatus']() { return require('./models/tradle.NotificationStatus.json') },
