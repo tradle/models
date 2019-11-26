@@ -81,6 +81,18 @@
       "readOnly": true,
       "ref": "tradle.DocumentScanner"
     },
+    "houseNumber": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
     "verifications": {
       "type": "array",
       "readOnly": true,
@@ -103,6 +115,16 @@
       "title": "Address",
       "list": [
         "full"
+      ]
+    },
+    "addressDetails_group": {
+      "type": "string",
+      "title": "Address",
+      "list": [
+        "houseNumber",
+        "street",
+        "city",
+        "region"
       ]
     },
     "document_group": {
