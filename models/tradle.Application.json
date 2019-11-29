@@ -263,6 +263,11 @@
       "type": "number",
       "readOnly": true
     },
+    "scoreDetails": {
+      "type": "object",
+      "range": "json",
+      "readOnly": true
+    },
     "dataBundle": {
       "type": "string",
       "readOnly": true
@@ -280,6 +285,7 @@
     "dateModified",
     "dateCompleted",
     "score",
+    "scoreDetails",
     "hasFailedChecks",
     "numberOfChecksFailed",
     "hasFailedSanctionsChecks",
