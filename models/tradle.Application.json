@@ -26,6 +26,15 @@
       "readOnly": true,
       "ref": "tradle.MyEmployeeOnboarding"
     },
+    "decisionBy": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.MyEmployeeOnboarding"
+    },
+    "decisionDate": {
+      "type": "date",
+      "readOnly": true
+    },
     "reviewer": {
       "type": "object",
       "hidden": true,
@@ -306,7 +315,9 @@
     "checks",
     "editRequests",
     "parent",
-    "analyst"
+    "analyst",
+    "decisionBy",
+    "decisionDate"
   ],
   "required": ["applicant", "requestFor", "context"],
   "indexes": [
