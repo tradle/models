@@ -59,19 +59,9 @@
     },
     "referenceDataSource": {
       "type": "array",
+      "inlined": true,
       "items": {
-        "type": "string",
-        "properties": {
-          "source": {
-            "type": "object",
-            "ref": "tradle.ReferenceDataSource"
-          },
-          "prefill": {
-            "type": "object",
-            "range": "json",
-            "readOnly": true
-          }
-        }
+        "ref": "tradle.DataLineage"
       }
     }
   },
