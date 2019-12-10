@@ -1,0 +1,26 @@
+{
+  "id": "tradle.DataLineage",
+  "type": "tradle.Model",
+  "title": "Data Lineage",
+  "inlined": true,
+  "properties": {
+    "referenceDataSource": {
+      "type": "object",
+      "ref": "tradle.ReferenceDataSource",
+      "displayName": true
+    },
+    "prefill": {
+      "type": "object",
+      "range": "json",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "referenceDataSource",
+    "prefill"
+  ],
+  "viewCols": [
+    "referenceDataSource",
+    "prefill"
+  ]
+}

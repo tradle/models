@@ -57,12 +57,19 @@
       "type": "string",
       "range": "model",
       "readOnly": true
+    },
+    "referenceDataSource": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.DataLineage"
+      }
     }
   },
   "viewCols": [
     "message",
     "errors",
-    "prefill"
+    "prefill",
+    "referenceDataSource"
   ],
   "required": [
     "prefill",

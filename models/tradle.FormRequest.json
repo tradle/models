@@ -56,6 +56,23 @@
     },
     "context": {
       "type": "string"
+    },
+    "referenceDataSource": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "properties": {
+          "source": {
+            "type": "object",
+            "ref": "tradle.ReferenceDataSource"
+          },
+          "prefill": {
+            "type": "object",
+            "range": "json",
+            "readOnly": true
+          }
+        }
+      }
     }
   },
   "required": [
@@ -66,6 +83,7 @@
     "message",
     "form",
     "product",
-    "time"
+    "time",
+    "referenceDataSource"
   ]
 }

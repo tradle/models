@@ -36,6 +36,7 @@ const models = module.exports = {
   get ['tradle.DataBundle']() { return require('./models/tradle.DataBundle.json') },
   get ['tradle.DataBundleSubmitted']() { return require('./models/tradle.DataBundleSubmitted.json') },
   get ['tradle.DataClaim']() { return require('./models/tradle.DataClaim.json') },
+  get ['tradle.DataLineage']() { return require('./models/tradle.DataLineage.json') },
   get ['tradle.DeliveryError']() { return require('./models/tradle.DeliveryError.json') },
   get ['tradle.DeliveryErrorStatus']() { return require('./models/tradle.DeliveryErrorStatus.json') },
   get ['tradle.Document']() { return require('./models/tradle.Document.json') },
