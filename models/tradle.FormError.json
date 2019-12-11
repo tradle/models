@@ -57,6 +57,13 @@
       "type": "string",
       "range": "model",
       "readOnly": true
+    },
+    "referenceDataSource": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.DataLineage"
+      },
+      "internalUse": true
     }
   },
   "viewCols": [

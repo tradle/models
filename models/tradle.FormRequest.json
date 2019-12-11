@@ -56,6 +56,13 @@
     },
     "context": {
       "type": "string"
+    },
+    "referenceDataSource": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.DataLineage"
+      },
+      "internalUse": true
     }
   },
   "required": [
