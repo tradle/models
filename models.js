@@ -128,7 +128,6 @@ const models = module.exports = {
   get ['tradle.ProofOfAddress']() { return require('./models/tradle.ProofOfAddress.json') },
   get ['tradle.PropertyChooser']() { return require('./models/tradle.PropertyChooser.json') },
   get ['tradle.PubKey']() { return require('./models/tradle.PubKey.json') },
-  get ['tradle.ReferenceDataSource']() { return require('./models/tradle.ReferenceDataSource.json') },
   get ['tradle.Refresh']() { return require('./models/tradle.Refresh.json') },
   get ['tradle.RefreshProduct']() { return require('./models/tradle.RefreshProduct.json') },
   get ['tradle.RelationshipType']() { return require('./models/tradle.RelationshipType.json') },

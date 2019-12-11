@@ -4,10 +4,6 @@
   "title": "Data Lineage",
   "inlined": true,
   "properties": {
-    "referenceDataSource": {
-      "type": "string",
-      "displayName": true
-    },
     "prefill": {
       "type": "object",
       "range": "json",
@@ -15,11 +11,9 @@
     }
   },
   "required": [
-    "referenceDataSource",
     "prefill"
   ],
   "viewCols": [
-    "referenceDataSource",
     "prefill"
   ]
 }
