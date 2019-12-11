@@ -57,12 +57,12 @@
     "context": {
       "type": "string"
     },
-    "referenceDataSource": {
+    "dataLineage": {
       "type": "array",
+      "internalUse": true,
       "items": {
         "ref": "tradle.DataLineage"
-      },
-      "internalUse": true
+      }
     }
   },
   "required": [
@@ -73,6 +73,7 @@
     "message",
     "form",
     "product",
-    "time"
+    "time",
+    "dataLineage"
   ]
 }

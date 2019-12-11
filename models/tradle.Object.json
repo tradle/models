@@ -163,8 +163,18 @@
     },
     "_sourceOfData": {
       "type": "object",
+      "title": "Source of data",
+      "internalUse": true,
       "ref": "tradle.FormRequest",
       "readOnly": true
+    },
+    "_dataLineage": {
+      "type": "array",
+      "internalUse": true,
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.DataLineage"
+      }
     }
   },
   "required": [
