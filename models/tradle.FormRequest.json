@@ -56,13 +56,6 @@
     },
     "context": {
       "type": "string"
-    },
-    "referenceDataSource": {
-      "type": "array",
-      "inlined": true,
-      "items": {
-        "ref": "tradle.DataLineage"
-      }
     }
   },
   "required": [
@@ -73,7 +66,6 @@
     "message",
     "form",
     "product",
-    "time",
-    "referenceDataSource"
+    "time"
   ]
 }
