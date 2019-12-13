@@ -169,12 +169,10 @@
       "readOnly": true
     },
     "_dataLineage": {
-      "type": "array",
+      "type": "object",
       "internalUse": true,
       "readOnly": true,
-      "items": {
-        "ref": "tradle.DataLineage"
-      }
+      "range": "json"
     }
   },
   "required": [

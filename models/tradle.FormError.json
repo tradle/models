@@ -59,11 +59,10 @@
       "readOnly": true
     },
     "dataLineage": {
-      "type": "array",
+      "type": "object",
       "internalUse": true,
-      "items": {
-        "ref": "tradle.DataLineage"
-      }
+      "readOnly": true,
+      "range": "json"
     }
   },
   "viewCols": [
