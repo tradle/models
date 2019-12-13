@@ -288,6 +288,26 @@
     },
     "processingDataBundle": {
       "type": "boolean"
+    },
+    "formsCount": {
+      "type": "number",
+      "readOnly": true
+    },
+    "checksCount": {
+      "type": "number",
+      "readOnly": true
+    },
+    "itemsCount": {
+      "type": "number",
+      "readOnly": true
+    },
+    "editRequestsCount": {
+      "type": "number",
+      "readOnly": true
+    },
+    "notificationsCount": {
+      "type": "number",
+      "readOnly": true
     }
   },
   "viewCols": [
@@ -309,13 +329,13 @@
     "lastMsgFromClientTime",
     "lastMsgToClientTime",
     "archived",
+    "analyst",
     "scoreDetails",
     "tree",
     "forms",
     "checks",
     "editRequests",
     "parent",
-    "analyst",
     "decisionBy",
     "decisionDate"
   ],
