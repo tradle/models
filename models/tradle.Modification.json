@@ -1,0 +1,44 @@
+{
+  "type": "tradle.Model",
+  "id": "tradle.Modification",
+  "title": "Modification",
+  "properties": {
+    "_t": {
+      "type": "string",
+      "readOnly": true
+    },
+    "modifications": {
+      "type": "object",
+      "range": "json",
+      "readOnly": true
+    },
+    "dateModified": {
+      "type": "date",
+      "readOnly": true
+    },
+    "form": {
+      "type": "object",
+      "ref": "tradle.Form"
+    }
+  },
+  "indexes": [
+    {
+      "hashKey": "form._permalink",
+      "rangeKey": "provider"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ],
+  "required": [
+    "modifications",
+    "dateModified",
+    "form"
+  ],
+  "viewCols": [
+    "dateModified",
+    "form",
+    "modifications"
+  ]
+}
