@@ -19,7 +19,6 @@ const models = module.exports = {
   get ['tradle.Bookmark']() { return require('./models/tradle.Bookmark.json') },
   get ['tradle.Check']() { return require('./models/tradle.Check.json') },
   get ['tradle.CheckOverride']() { return require('./models/tradle.CheckOverride.json') },
-  get ['tradle.ClientActionRequiredCheck']() { return require('./models/tradle.ClientActionRequiredCheck.json') },
   get ['tradle.ClientEditsCheck']() { return require('./models/tradle.ClientEditsCheck.json') },
   get ['tradle.ClientOnboardingTeam']() { return require('./models/tradle.ClientOnboardingTeam.json') },
   get ['tradle.Confirmation']() { return require('./models/tradle.Confirmation.json') },
