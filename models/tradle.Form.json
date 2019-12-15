@@ -3,5 +3,15 @@
   "title": "Form",
   "abstract": true,
   "type": "tradle.Model",
-  "properties": {}
+  "properties": {
+    "_modificationHistory": {
+      "type": "array",
+      "internalUse": true,
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.Modification",
+        "backlink": "form"
+      }
+    }
+  }
 }
