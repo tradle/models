@@ -19,6 +19,14 @@
     "form": {
       "type": "object",
       "ref": "tradle.Form"
+    },
+    "changedBy": {
+      "type": "object",
+      "ref": "tradle.ModifiedBy"
+    },
+    "person": {
+      "type": "object",
+      "ref": "tradle.PhotoID"
     }
   },
   "indexes": [
@@ -32,6 +40,7 @@
     }
   ],
   "required": [
+    "changedBy",
     "modifications",
     "dateModified",
     "form"

@@ -90,6 +90,7 @@ const models = module.exports = {
   get ['tradle.Method']() { return require('./models/tradle.Method.json') },
   get ['tradle.ModelsPack']() { return require('./models/tradle.ModelsPack.json') },
   get ['tradle.Modification']() { return require('./models/tradle.Modification.json') },
+  get ['tradle.ModifiedBy']() { return require('./models/tradle.ModifiedBy.json') },
   get ['tradle.Money']() { return require('./models/tradle.Money.json') },
   get ['tradle.MyCustomerOnboarding']() { return require('./models/tradle.MyCustomerOnboarding.json') },
   get ['tradle.MyEmployeeOnboarding']() { return require('./models/tradle.MyEmployeeOnboarding.json') },
