@@ -173,6 +173,15 @@
       "internalUse": true,
       "readOnly": true,
       "range": "json"
+    },
+    "_modificationHistory": {
+      "type": "array",
+      "internalUse": true,
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.Modification",
+        "backlink": "form"
+      }
     }
   },
   "required": [

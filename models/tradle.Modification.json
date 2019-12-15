@@ -3,10 +3,6 @@
   "id": "tradle.Modification",
   "title": "Modification",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "modifications": {
       "type": "object",
       "range": "json",
@@ -32,10 +28,6 @@
   "indexes": [
     {
       "hashKey": "form._permalink",
-      "rangeKey": "provider"
-    },
-    {
-      "hashKey": "_t",
       "rangeKey": "_time"
     }
   ],
