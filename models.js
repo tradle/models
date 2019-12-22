@@ -108,6 +108,7 @@ const models = module.exports = {
   get ['tradle.OTP']() { return require('./models/tradle.OTP.json') },
   get ['tradle.Object']() { return require('./models/tradle.Object.json') },
   get ['tradle.Organization']() { return require('./models/tradle.Organization.json') },
+  get ['tradle.OutreachMode']() { return require('./models/tradle.OutreachMode.json') },
   get ['tradle.OverrideStatus']() { return require('./models/tradle.OverrideStatus.json') },
   get ['tradle.PairingData']() { return require('./models/tradle.PairingData.json') },
   get ['tradle.PairingRequest']() { return require('./models/tradle.PairingRequest.json') },
