@@ -122,6 +122,7 @@ const models = module.exports = {
   get ['tradle.Photo']() { return require('./models/tradle.Photo.json') },
   get ['tradle.PhotoID']() { return require('./models/tradle.PhotoID.json') },
   get ['tradle.ProductApplication']() { return require('./models/tradle.ProductApplication.json') },
+  get ['tradle.ProductBundle']() { return require('./models/tradle.ProductBundle.json') },
   get ['tradle.ProductList']() { return require('./models/tradle.ProductList.json') },
   get ['tradle.ProductRequest']() { return require('./models/tradle.ProductRequest.json') },
   get ['tradle.Profile']() { return require('./models/tradle.Profile.json') },

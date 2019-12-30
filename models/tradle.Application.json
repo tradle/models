@@ -223,6 +223,9 @@
       "type": "boolean",
       "description": "true if this is a draft for another application"
     },
+    "draftCompleted": {
+      "type": "boolean"
+    },
     "prefillFromApplication": {
       "type": "object",
       "ref": "tradle.Application",
@@ -311,6 +314,8 @@
     }
   },
   "viewCols": [
+    "draft",
+    "draftCompleted",
     "status",
     "applicantName",
     "requestFor",
