@@ -1,0 +1,32 @@
+{
+  "id": "tradle.ProductBundle",
+  "title": "Product Bundle",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "message": {
+      "type": "string",
+      "readOnly": true
+    },
+    "items": {
+      "inlined": true,
+      "readOnly": true,
+      "type": "array",
+      "items": {
+        "ref": "tradle.Object"
+      }
+    },
+    "requestFor": {
+      "type": "string",
+      "range": "model",
+      "displayName": true
+    }
+  },
+  "viewCols": [
+    "message",
+    "items"
+  ],
+  "required": [
+    "items"
+  ]
+}
