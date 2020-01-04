@@ -37,7 +37,6 @@
     "errors": {
       "type": "array",
       "inlined": true,
-      "displayName": true,
       "items": {
         "type": "object",
         "properties": {
@@ -57,12 +56,19 @@
       "type": "string",
       "range": "model",
       "readOnly": true
+    },
+    "dataLineage": {
+      "type": "object",
+      "internalUse": true,
+      "readOnly": true,
+      "range": "json"
     }
   },
   "viewCols": [
     "message",
     "errors",
-    "prefill"
+    "prefill",
+    "dataLineage"
   ],
   "required": [
     "prefill",

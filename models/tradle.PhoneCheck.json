@@ -29,6 +29,10 @@
     "dateExpires": {
       "type": "date"
     },
+    "form": {
+      "type": "object",
+      "ref": "tradle.Form"
+    },
     "aspects": {
       "type": "string"
     },
@@ -71,6 +75,7 @@
   "viewCols": [
     "phone",
     "status",
+    "form",
     "message",
     "provider",
     "application",

@@ -1,0 +1,17 @@
+{
+  "id": "tradle.ModifiedBy",
+  "title": "Modified By",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "modifiedBy": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "customer", "title": "Customer" },
+    { "id": "employee", "title": "Employee" },
+    { "id": "bot", "title": "Bot" }
+  ]
+}

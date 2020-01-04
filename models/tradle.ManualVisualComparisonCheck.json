@@ -14,7 +14,8 @@
       "ref": "tradle.Status",
       "readOnly": true
     },
-    "selfie": {
+    "form": {
+      "title": "Selfie",
       "type": "object",
       "ref": "tradle.Selfie"
     },
@@ -69,11 +70,11 @@
   "required": [
     "status",
     "provider",
-    "selfie",
+    "form",
     "photoID"
   ],
   "viewCols": [
-    "selfie",
+    "form",
     "photoID",
     "status",
     "aspects",

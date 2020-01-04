@@ -160,6 +160,19 @@
     "_sourceId": {
       "type": "string",
       "readOnly": true
+    },
+    "_sourceOfData": {
+      "type": "object",
+      "title": "Source of data",
+      "internalUse": true,
+      "ref": "tradle.FormRequest",
+      "readOnly": true
+    },
+    "_dataLineage": {
+      "type": "object",
+      "internalUse": true,
+      "readOnly": true,
+      "range": "json"
     }
   },
   "required": [

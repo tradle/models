@@ -223,6 +223,9 @@
       "type": "boolean",
       "description": "true if this is a draft for another application"
     },
+    "draftCompleted": {
+      "type": "boolean"
+    },
     "prefillFromApplication": {
       "type": "object",
       "ref": "tradle.Application",
@@ -289,6 +292,26 @@
     "processingDataBundle": {
       "type": "boolean"
     },
+    "formsCount": {
+      "type": "number",
+      "readOnly": true
+    },
+    "checksCount": {
+      "type": "number",
+      "readOnly": true
+    },
+    "itemsCount": {
+      "type": "number",
+      "readOnly": true
+    },
+    "editRequestsCount": {
+      "type": "number",
+      "readOnly": true
+    },
+    "notificationsCount": {
+      "type": "number",
+      "readOnly": true
+    },
     "enterpriseClassification": {
       "type": "string"
     },
@@ -321,6 +344,8 @@
     }
   },
   "viewCols": [
+    "draft",
+    "draftCompleted",
     "status",
     "applicantName",
     "requestFor",
@@ -339,14 +364,21 @@
     "lastMsgFromClientTime",
     "lastMsgToClientTime",
     "archived",
+    "analyst",
     "scoreDetails",
     "enterpriseClassification",
+    "FCAClassification",
+    "PSRClassification",
+    "eligibleComplainantClassification",
+    "FSCSClassification",
+    "UKClientSectorCode",
+    "UKClientIndustryCode",
+    "mifidClassification",
     "tree",
     "forms",
     "checks",
     "editRequests",
     "parent",
-    "analyst",
     "decisionBy",
     "decisionDate"
   ],

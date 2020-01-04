@@ -56,6 +56,12 @@
     },
     "context": {
       "type": "string"
+    },
+    "dataLineage": {
+      "type": "object",
+      "internalUse": true,
+      "readOnly": true,
+      "range": "json"
     }
   },
   "required": [
@@ -66,6 +72,7 @@
     "message",
     "form",
     "product",
-    "time"
+    "time",
+    "dataLineage"
   ]
 }

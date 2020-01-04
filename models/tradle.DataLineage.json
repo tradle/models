@@ -1,0 +1,19 @@
+{
+  "id": "tradle.DataLineage",
+  "type": "tradle.Model",
+  "title": "Data Lineage",
+  "inlined": true,
+  "properties": {
+    "prefill": {
+      "type": "object",
+      "range": "json",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "prefill"
+  ],
+  "viewCols": [
+    "prefill"
+  ]
+}

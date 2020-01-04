@@ -3,5 +3,24 @@
   "title": "Form",
   "abstract": true,
   "type": "tradle.Model",
-  "properties": {}
+  "properties": {
+    "modificationHistory": {
+      "type": "array",
+      "internalUse": true,
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.Modification",
+        "backlink": "form"
+      }
+    },
+    "checks": {
+      "type": "array",
+      "internalUse": true,
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.Check",
+        "backlink": "form"
+      }
+    }
+  }
 }
