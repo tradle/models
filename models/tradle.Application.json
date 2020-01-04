@@ -288,6 +288,36 @@
     },
     "processingDataBundle": {
       "type": "boolean"
+    },
+    "enterpriseClassification": {
+      "type": "string"
+    },
+    "FCAClassification": {
+      "type": "string",
+      "title": "FCA Classification"
+    },
+    "PSRClassification": {
+      "type": "string",
+      "title": "PSR Classification"
+    },
+    "eligibleComplainantClassification": {
+      "type": "string"
+    },
+    "FSCSClassification": {
+      "type": "string",
+      "title": "FSCS Classification"
+    },
+    "UKClientSectorCode": {
+      "type": "string",
+      "title": "UK Client Sector Code"
+    },
+    "UKClientIndustryCode": {
+      "type": "string",
+      "title": "UK Client Industry Code"
+    },
+    "mifidClassification": {
+      "type": "string",
+      "title": "MiFID Classification"
     }
   },
   "viewCols": [
@@ -310,6 +340,7 @@
     "lastMsgToClientTime",
     "archived",
     "scoreDetails",
+    "enterpriseClassification",
     "tree",
     "forms",
     "checks",
