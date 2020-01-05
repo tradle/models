@@ -247,7 +247,7 @@
       "type": "boolean",
       "readOnly": true
     },
-    "hasFailedSanctionsChecks": {
+    "hasFailedScreeningChecks": {
       "type": "boolean",
       "readOnly": true
     },
@@ -259,7 +259,19 @@
       "type": "boolean",
       "readOnly": true
     },
-    "sanctionsChecksCount": {
+    "pepHit": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "sanctionsHit": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "adverseMediaHit": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "screeningCheckCount": {
       "type": "number",
       "readOnly": true
     },
@@ -356,7 +368,10 @@
     "score",
     "hasFailedChecks",
     "numberOfChecksFailed",
-    "hasFailedSanctionsChecks",
+    "hasFailedScreeningChecks",
+    "sanctionsHit",
+    "pepHit",
+    "adverseMediaHit",
     "hasFailedDocumentValidityChecks",
     "hasFailedEntityExistanceChecks",
     "hasCheckOverrides",
