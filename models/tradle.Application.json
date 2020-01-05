@@ -357,15 +357,6 @@
     "mifidClassification": {
       "type": "string",
       "title": "MiFID Classification"
-    },
-    "screening_group": {
-      "type": "string",
-      "title": "Screening",
-      "list": [
-        "sanctionsHit",
-        "pepHit",
-        "adverseMediaHit"
-      ]
     }
   },
   "viewCols": [
@@ -383,7 +374,9 @@
     "hasFailedChecks",
     "numberOfChecksFailed",
     "hasFailedScreeningChecks",
-    "screening_group",
+    "sanctionsHit",
+    "pepHit",
+    "adverseMediaHit",
     "hasFailedDocumentValidityChecks",
     "hasFailedEntityExistanceChecks",
     "hasCheckOverrides",
