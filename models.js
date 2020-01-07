@@ -151,6 +151,7 @@ const models = module.exports = {
   get ['tradle.StylesPack']() { return require('./models/tradle.StylesPack.json') },
   get ['tradle.Tag']() { return require('./models/tradle.Tag.json') },
   get ['tradle.TaggedIssue']() { return require('./models/tradle.TaggedIssue.json') },
+  get ['tradle.TeamCode']() { return require('./models/tradle.TeamCode.json') },
   get ['tradle.TermsAndConditions']() { return require('./models/tradle.TermsAndConditions.json') },
   get ['tradle.Tour']() { return require('./models/tradle.Tour.json') },
   get ['tradle.TourPage']() { return require('./models/tradle.TourPage.json') },

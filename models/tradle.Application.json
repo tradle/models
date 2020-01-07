@@ -87,6 +87,10 @@
       "type": "object",
       "ref": "tradle.ClientOnboardingTeam"
     },
+    "teamCode": {
+      "type": "object",
+      "ref": "tradle.TeamCode"
+    },
     "submittedFormTypesCount": {
       "type": "number",
       "readOnly": true
@@ -366,6 +370,7 @@
     "applicantName",
     "requestFor",
     "assignedToTeam",
+    "teamCode",
     "dateStarted",
     "dateModified",
     "dateCompleted",
@@ -385,7 +390,6 @@
     "lastMsgToClientTime",
     "archived",
     "analyst",
-    "scoreDetails",
     "enterpriseClassification",
     "FCAClassification",
     "PSRClassification",
@@ -394,6 +398,7 @@
     "UKClientSectorCode",
     "UKClientIndustryCode",
     "mifidClassification",
+    "scoreDetails",
     "tree",
     "forms",
     "checks",
