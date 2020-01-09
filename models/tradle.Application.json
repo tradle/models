@@ -202,6 +202,12 @@
       "readOnly": true,
       "ref": "tradle.Application"
     },
+    "fromDraft": {
+      "type": "object",
+      "title": "Draft application",
+      "readOnly": true,
+      "ref": "tradle.Application"
+    },
     "associatedResource": {
       "type": "object",
       "ref": "tradle.Form",
@@ -293,6 +299,10 @@
       "type": "number",
       "readOnly": true
     },
+    "scoreType": {
+      "type": "object",
+      "ref": "tradle.Score"
+    },
     "scoreDetails": {
       "type": "object",
       "range": "json",
@@ -377,6 +387,7 @@
     "dateModified",
     "dateCompleted",
     "score",
+    "scoreType",
     "ddr",
     "hasFailedChecks",
     "numberOfChecksFailed",
@@ -400,14 +411,14 @@
     "UKClientSectorCode",
     "UKClientIndustryCode",
     "mifidClassification",
+    "parent",
+    "decisionBy",
+    "decisionDate",
     "scoreDetails",
     "tree",
     "forms",
     "checks",
-    "editRequests",
-    "parent",
-    "decisionBy",
-    "decisionDate"
+    "editRequests"
   ],
   "required": ["applicant", "requestFor", "context"],
   "indexes": [

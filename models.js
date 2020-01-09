@@ -130,6 +130,7 @@ const models = module.exports = {
   get ['tradle.ResidenceType']() { return require('./models/tradle.ResidenceType.json') },
   get ['tradle.ResidentialStatus']() { return require('./models/tradle.ResidentialStatus.json') },
   get ['tradle.SalaryVerification']() { return require('./models/tradle.SalaryVerification.json') },
+  get ['tradle.Score']() { return require('./models/tradle.Score.json') },
   get ['tradle.Seal']() { return require('./models/tradle.Seal.json') },
   get ['tradle.SealState']() { return require('./models/tradle.SealState.json') },
   get ['tradle.SealableBatch']() { return require('./models/tradle.SealableBatch.json') },
