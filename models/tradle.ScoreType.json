@@ -1,0 +1,18 @@
+{
+  "id": "tradle.ScoreType",
+  "title": "Score Type",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "scoreType": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "low", "title": "Low" },
+    { "id": "medium", "title": "Medium" },
+    { "id": "high", "title": "High"},
+    { "id": "autohigh", "title": "Autohigh"}
+  ]
+}
