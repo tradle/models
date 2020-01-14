@@ -22,6 +22,9 @@
       "ref": "tradle.Check",
       "readOnly": true
     },
+    "explanationForOverride": {
+      "type": "string"
+    },
     "top": {
       "type": "object",
       "ref": "tradle.Application",
@@ -34,10 +37,12 @@
     }
   },
   "editCols": [
-    "status"
+    "status",
+    "explanationForOverride"
   ],
   "required": [
     "status",
+    "explanationForOverride",
     "check",
     "application"
   ]
