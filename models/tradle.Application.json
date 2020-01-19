@@ -233,10 +233,12 @@
     },
     "draft": {
       "type": "boolean",
+      "readOnly": true,
       "description": "true if this is a draft for another application"
     },
     "draftCompleted": {
-      "type": "boolean"
+      "type": "boolean",
+      "readOnly": true
     },
     "prefillFromApplication": {
       "type": "object",
@@ -326,7 +328,8 @@
       "readOnly": true
     },
     "processingDataBundle": {
-      "type": "boolean"
+      "type": "boolean",
+      "readOnly": true
     },
     "formsCount": {
       "type": "number",
