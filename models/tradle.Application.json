@@ -118,7 +118,13 @@
       "type": "string",
       "showIf": "clientPremisesVisited && clientPremisesVisited = false"
     },
-
+    "report": {
+      "type": "object",
+      "range": "document",
+      "allowPicturesFromLibrary": true,
+      "inlined": true,
+      "ref": "tradle.Photo"
+    },
     "submittedFormTypesCount": {
       "type": "number",
       "readOnly": true
@@ -432,6 +438,7 @@
     "scoreType",
     "ddr",
     "bsa",
+    "report",
     "hasFailedChecks",
     "numberOfChecksFailed",
     "hasFailedScreeningChecks",
