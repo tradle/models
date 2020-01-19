@@ -91,6 +91,34 @@
       "type": "object",
       "ref": "tradle.TeamCode"
     },
+    "relationshipOwner": {
+      "type": "string"
+    },
+    "clientMetInPerson": {
+      "type": "boolean",
+      "range": "troolean"
+    },
+    "personClientMet": {
+      "type": "string",
+      "showIf": "clientMetInPerson && clientMetInPerson = true"
+    },
+    "reasonClientNotMet": {
+      "type": "string",
+      "showIf": "clientMetInPerson && clientMetInPerson = false"
+    },
+    "clientPremisesVisited": {
+      "type": "boolean",
+      "range": "troolean"
+    },
+    "personPremisesVisited": {
+      "type": "string",
+      "showIf": "clientPremisesVisited && clientPremisesVisited = true"
+    },
+    "reasonPremisesNotVisited": {
+      "type": "string",
+      "showIf": "clientPremisesVisited && clientPremisesVisited = false"
+    },
+
     "submittedFormTypesCount": {
       "type": "number",
       "readOnly": true
@@ -390,6 +418,13 @@
     "requestFor",
     "assignedToTeam",
     "teamCode",
+    "relationshipOwner",
+    "clientMetInPerson",
+    "personClientMet",
+    "reasonClientNotMet",
+    "clientPremisesVisited",
+    "personPremisesVisited",
+    "reasonPremisesNotVisited",
     "dateStarted",
     "dateModified",
     "dateCompleted",
