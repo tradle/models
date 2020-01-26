@@ -87,6 +87,44 @@
       "type": "object",
       "ref": "tradle.ClientOnboardingTeam"
     },
+    "teamCode": {
+      "type": "object",
+      "ref": "tradle.TeamCode"
+    },
+    "relationshipOwner": {
+      "type": "string"
+    },
+    "clientMetInPerson": {
+      "type": "boolean",
+      "range": "troolean"
+    },
+    "personClientMet": {
+      "type": "string",
+      "showIf": "clientMetInPerson && clientMetInPerson = true"
+    },
+    "reasonClientNotMet": {
+      "type": "string",
+      "showIf": "clientMetInPerson && clientMetInPerson = false"
+    },
+    "clientPremisesVisited": {
+      "type": "boolean",
+      "range": "troolean"
+    },
+    "personPremisesVisited": {
+      "type": "string",
+      "showIf": "clientPremisesVisited && clientPremisesVisited = true"
+    },
+    "reasonPremisesNotVisited": {
+      "type": "string",
+      "showIf": "clientPremisesVisited && clientPremisesVisited = false"
+    },
+    "report": {
+      "type": "object",
+      "range": "document",
+      "allowPicturesFromLibrary": true,
+      "inlined": true,
+      "ref": "tradle.Photo"
+    },
     "submittedFormTypesCount": {
       "type": "number",
       "readOnly": true
@@ -166,6 +204,7 @@
     },
     "notifications": {
       "type": "array",
+      "icon": "ios-notifications-outline",
       "items": {
         "ref": "tradle.Notification",
         "backlink": "application"
@@ -197,6 +236,12 @@
       "readOnly": true,
       "ref": "tradle.Application"
     },
+    "fromDraft": {
+      "type": "object",
+      "title": "Draft application",
+      "readOnly": true,
+      "ref": "tradle.Application"
+    },
     "associatedResource": {
       "type": "object",
       "ref": "tradle.Form",
@@ -204,6 +249,7 @@
     },
     "items": {
       "type": "array",
+      "icon": "ios-browsers-outline",
       "readOnly": true,
       "items": {
         "ref": "tradle.Application",
@@ -221,10 +267,12 @@
     },
     "draft": {
       "type": "boolean",
+      "readOnly": true,
       "description": "true if this is a draft for another application"
     },
     "draftCompleted": {
-      "type": "boolean"
+      "type": "boolean",
+      "readOnly": true
     },
     "prefillFromApplication": {
       "type": "object",
@@ -247,7 +295,7 @@
       "type": "boolean",
       "readOnly": true
     },
-    "hasFailedSanctionsChecks": {
+    "hasFailedScreeningChecks": {
       "type": "boolean",
       "readOnly": true
     },
@@ -259,7 +307,19 @@
       "type": "boolean",
       "readOnly": true
     },
-    "sanctionsChecksCount": {
+    "pepHit": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "sanctionsHit": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "adverseMediaHit": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "screeningCheckCount": {
       "type": "number",
       "readOnly": true
     },
@@ -275,10 +335,27 @@
       "type": "number",
       "readOnly": true
     },
+    "ruledBasedScore": {
+      "type": "number",
+      "readOnly": true
+    },
+    "scoreType": {
+      "type": "object",
+      "ref": "tradle.ScoreType",
+      "title": "Risk Category"
+    },
     "scoreDetails": {
       "type": "object",
       "range": "json",
       "readOnly": true
+    },
+    "ddr": {
+      "type": "string",
+      "title": "DDR"
+    },
+    "bsa": {
+      "type": "string",
+      "title": "BSA"
     },
     "tree": {
       "type": "object",
@@ -290,7 +367,8 @@
       "readOnly": true
     },
     "processingDataBundle": {
-      "type": "boolean"
+      "type": "boolean",
+      "readOnly": true
     },
     "formsCount": {
       "type": "number",
@@ -350,13 +428,29 @@
     "applicantName",
     "requestFor",
     "assignedToTeam",
+    "teamCode",
+    "relationshipOwner",
+    "clientMetInPerson",
+    "personClientMet",
+    "reasonClientNotMet",
+    "clientPremisesVisited",
+    "personPremisesVisited",
+    "reasonPremisesNotVisited",
     "dateStarted",
     "dateModified",
     "dateCompleted",
     "score",
+    "ruledBasedScore",
+    "scoreType",
+    "ddr",
+    "bsa",
+    "report",
     "hasFailedChecks",
     "numberOfChecksFailed",
-    "hasFailedSanctionsChecks",
+    "hasFailedScreeningChecks",
+    "sanctionsHit",
+    "pepHit",
+    "adverseMediaHit",
     "hasFailedDocumentValidityChecks",
     "hasFailedEntityExistanceChecks",
     "hasCheckOverrides",
@@ -365,7 +459,6 @@
     "lastMsgToClientTime",
     "archived",
     "analyst",
-    "scoreDetails",
     "enterpriseClassification",
     "FCAClassification",
     "PSRClassification",
@@ -374,13 +467,14 @@
     "UKClientSectorCode",
     "UKClientIndustryCode",
     "mifidClassification",
+    "parent",
+    "decisionBy",
+    "decisionDate",
+    "scoreDetails",
     "tree",
     "forms",
     "checks",
-    "editRequests",
-    "parent",
-    "decisionBy",
-    "decisionDate"
+    "editRequests"
   ],
   "required": ["applicant", "requestFor", "context"],
   "indexes": [

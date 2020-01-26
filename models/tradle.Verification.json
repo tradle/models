@@ -50,6 +50,12 @@
       "ref": "tradle.Check"
     }
   },
+  "indexes": [
+    {
+      "hashKey": "document._permalink",
+      "rangeKey": "_time"
+    }
+  ],
   "required": [
     "document"
   ],
