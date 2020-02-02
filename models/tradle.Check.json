@@ -43,6 +43,16 @@
     "providerReferenceNumber": {
       "type": "string"
     },
+    "previousCheck": {
+      "type": "object",
+      "ref": "tradle.Check",
+      "readOnly": true
+    },
+    "nextCheck": {
+      "type": "object",
+      "ref": "tradle.Check",
+      "readOnly": true
+    },
     "checkOverride": {
       "type": "array",
       "items": {
