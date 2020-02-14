@@ -15,6 +15,16 @@
         "backlink": "form"
       }
     },
+    "notifications": {
+      "type": "array",
+      "internalUse": true,
+      "icon": "ios-notifications-outline",
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.Notification",
+        "backlink": "application"
+      }
+    },
     "checks": {
       "type": "array",
       "internalUse": true,
