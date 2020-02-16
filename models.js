@@ -20,6 +20,7 @@ const models = module.exports = {
   get ['tradle.Check']() { return require('./models/tradle.Check.json') },
   get ['tradle.CheckOverride']() { return require('./models/tradle.CheckOverride.json') },
   get ['tradle.ClientOnboardingTeam']() { return require('./models/tradle.ClientOnboardingTeam.json') },
+  get ['tradle.Configuration']() { return require('./models/tradle.Configuration.json') },
   get ['tradle.Confirmation']() { return require('./models/tradle.Confirmation.json') },
   get ['tradle.Context']() { return require('./models/tradle.Context.json') },
   get ['tradle.Country']() { return require('./models/tradle.Country.json') },

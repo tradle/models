@@ -1,0 +1,17 @@
+{
+  "id": "tradle.Configuration",
+  "type": "tradle.Model",
+  "title": "Configuration",
+  "subClassOf": "tradle.Form",
+  "abstract": true,
+  "properties": {
+    "products": {
+      "type": "string",
+      "range": "json"
+    },
+    "forms": {
+      "type": "string",
+      "range": "json"
+    }
+  }
+}
