@@ -1,6 +1,7 @@
 {
   "type": "tradle.Model",
   "title": "Application",
+  "shortTitle": "App",
   "id": "tradle.Application",
   "properties": {
     "applicantName": {
@@ -47,6 +48,7 @@
     },
     "dateStarted": {
       "type": "date",
+      "shortTitle": "start",
       "readOnly": true
     },
     "dateCompleted": {
@@ -333,6 +335,7 @@
     },
     "score": {
       "type": "number",
+      "shortTitle": "IRR",
       "readOnly": true
     },
     "ruledBasedScore": {
@@ -427,6 +430,17 @@
       "title": "MiFID Classification"
     }
   },
+  "gridCols": [
+    "applicantName",
+    "status",
+    "requestFor",
+    "score",
+    "assignedToTeam",
+    "analyst",
+    "dateStarted",
+    "numberOfChecksFailed",
+    "numberOfCheckOverrides"
+  ],
   "viewCols": [
     "draft",
     "draftCompleted",
