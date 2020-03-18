@@ -1,5 +1,4 @@
 const models = module.exports = {
-  get ['tradle.AttestationItem']() { return require('./models/AttestationItem.json') },
   get ['tradle.API']() { return require('./models/tradle.API.json') },
   get ['tradle.APIBasedVerificationMethod']() { return require('./models/tradle.APIBasedVerificationMethod_Wealth.json') },
   get ['tradle.Ack']() { return require('./models/tradle.Ack.json') },
@@ -13,6 +12,7 @@ const models = module.exports = {
   get ['tradle.Aspect']() { return require('./models/tradle.Aspect.json') },
   get ['tradle.AssignRelationshipManager']() { return require('./models/tradle.AssignRelationshipManager.json') },
   get ['tradle.Attestation']() { return require('./models/tradle.Attestation.json') },
+  get ['tradle.AttestationItem']() { return require('./models/tradle.AttestationItem.json') },
   get ['tradle.BacklinkItem']() { return require('./models/tradle.BacklinkItem.json') },
   get ['tradle.BankAccount']() { return require('./models/tradle.BankAccount.json') },
   get ['tradle.BasicContactInfo']() { return require('./models/tradle.BasicContactInfo.json') },
