@@ -1,0 +1,44 @@
+{
+  "id": "tradle.Attestation",
+  "type": "tradle.Model",
+  "title": "Attestation",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "confirmation": {
+      "type": "boolean",
+      "readOnly": true,
+      "description": "Please confirm that you have reviewed all the information submitted for the application"
+    },
+    "signature": {
+      "type": "object",
+      "ref": "tradle.Photo",
+      "immutable": true,
+      "inlined": true,
+      "signature": true
+    },
+    "items": {
+      "inlined": true,
+      "readOnly": true,
+      "type": "array",
+      "items": {
+        "ref": "tradle.AtestationItem"
+      }
+    },
+    "application": {
+      "type": "object",
+      "ref": "tradle.Application",
+      "readOnly": true
+    },
+    "form": {
+      "type": "object",
+      "ref": "tradle.Form",
+      "readOnly": true
+    },
+    "notes": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "signature"
+  ]
+}

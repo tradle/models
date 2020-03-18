@@ -1,4 +1,5 @@
 const models = module.exports = {
+  get ['tradle.AttestationItem']() { return require('./models/AttestationItem.json') },
   get ['tradle.API']() { return require('./models/tradle.API.json') },
   get ['tradle.APIBasedVerificationMethod']() { return require('./models/tradle.APIBasedVerificationMethod_Wealth.json') },
   get ['tradle.Ack']() { return require('./models/tradle.Ack.json') },

@@ -1,0 +1,22 @@
+{
+  "id": "tradle.AttestationItem",
+  "type": "tradle.Model",
+  "title": "Attestation Item",
+  "inlined": true,
+  "properties": {
+    "confirmation": {
+      "type": "boolean",
+      "readOnly": true,
+      "description": "Please confirm that you have reviewed all the information submitted for the application"
+    },
+    "item": {
+      "type": "object",
+      "ref": "tradle.Form",
+      "inlined": true,
+      "readOnly": true
+    }
+  },
+  "required": [
+    "signature"
+  ]
+}
