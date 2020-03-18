@@ -6,8 +6,7 @@
   "properties": {
     "confirmation": {
       "type": "boolean",
-      "readOnly": true,
-      "description": "Please confirm that you have reviewed all the information submitted for the application"
+      "readOnly": true
     },
     "item": {
       "type": "object",
@@ -17,6 +16,6 @@
     }
   },
   "required": [
-    "signature"
+    "item"
   ]
 }
