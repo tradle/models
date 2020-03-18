@@ -11,6 +11,7 @@ const models = module.exports = {
   get ['tradle.ApplicationSubmitted']() { return require('./models/tradle.ApplicationSubmitted.json') },
   get ['tradle.Aspect']() { return require('./models/tradle.Aspect.json') },
   get ['tradle.AssignRelationshipManager']() { return require('./models/tradle.AssignRelationshipManager.json') },
+  get ['tradle.Attestation']() { return require('./models/tradle.Attestation.json') },
   get ['tradle.BacklinkItem']() { return require('./models/tradle.BacklinkItem.json') },
   get ['tradle.BankAccount']() { return require('./models/tradle.BankAccount.json') },
   get ['tradle.BasicContactInfo']() { return require('./models/tradle.BasicContactInfo.json') },
