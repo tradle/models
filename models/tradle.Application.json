@@ -135,6 +135,13 @@
       "type": "number",
       "readOnly": true
     },
+    "attestations": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.Attestation",
+        "backlink": "parentApplication"
+      }
+    },
     "forms": {
       "type": "array",
       "icon": "logo-buffer",
@@ -498,6 +505,7 @@
     "tree",
     "forms",
     "checks",
+    "attestations",
     "editRequests"
   ],
   "required": ["applicant", "requestFor", "context"],

@@ -24,14 +24,14 @@
         "ref": "tradle.AttestationItem"
       }
     },
-    "application": {
+    "parentApplication": {
       "type": "object",
       "ref": "tradle.Application",
       "readOnly": true
     },
-    "form": {
+    "application": {
       "type": "object",
-      "ref": "tradle.Form",
+      "ref": "tradle.Application",
       "readOnly": true
     },
     "notes": {
