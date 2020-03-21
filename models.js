@@ -119,6 +119,8 @@ const models = module.exports = {
   get ['tradle.ProductBundle']() { return require('./models/tradle.ProductBundle.json') },
   get ['tradle.ProductList']() { return require('./models/tradle.ProductList.json') },
   get ['tradle.ProductRequest']() { return require('./models/tradle.ProductRequest.json') },
+  get ['tradle.Profession']() { return require('./models/tradle.Profession.json') },
+  get ['tradle.ProfessionType']() { return require('./models/tradle.ProfessionType.json') },
   get ['tradle.Profile']() { return require('./models/tradle.Profile.json') },
   get ['tradle.ProgressMessage']() { return require('./models/tradle.ProgressMessage.json') },
   get ['tradle.ProofOfAddress']() { return require('./models/tradle.ProofOfAddress.json') },

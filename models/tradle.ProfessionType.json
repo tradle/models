@@ -1,0 +1,18 @@
+{
+  "id": "tradle.ProfessionType",
+  "title": "Profession Type",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "professionType": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "doctor", "title": "Doctor" },
+    { "id": "nurse", "title": "Nurse" },
+    { "id": "pharmacist", "title": "Pharmacist"},
+    { "id": "paramedic", "title": "Paramedic"}
+  ]
+}
