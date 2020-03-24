@@ -137,6 +137,7 @@
     },
     "attestations": {
       "type": "array",
+      "hidden": true,
       "items": {
         "ref": "tradle.Attestation",
         "backlink": "parentApplication"
@@ -171,7 +172,6 @@
     "products": {
       "type": "array",
       "icon": "ios-color-filter-outline",
-      "hidden": true,
       "items": {
         "ref": "tradle.ApplicationSubmission",
         "backlink": "application",
@@ -505,6 +505,7 @@
     "tree",
     "forms",
     "checks",
+    "products",
     "attestations",
     "editRequests"
   ],
