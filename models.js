@@ -41,6 +41,7 @@ const models = module.exports = {
   get ['tradle.DeliveryError']() { return require('./models/tradle.DeliveryError.json') },
   get ['tradle.DeliveryErrorStatus']() { return require('./models/tradle.DeliveryErrorStatus.json') },
   get ['tradle.DeviceSync']() { return require('./models/tradle.DeviceSync.json') },
+  get ['tradle.DeviceSyncDataBundle']() { return require('./models/tradle.DeviceSyncDataBundle.json') },
   get ['tradle.Document']() { return require('./models/tradle.Document.json') },
   get ['tradle.DocumentScanner']() { return require('./models/tradle.DocumentScanner.json') },
   get ['tradle.DraftApplication']() { return require('./models/tradle.DraftApplication.json') },
