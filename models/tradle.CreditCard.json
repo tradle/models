@@ -10,7 +10,6 @@
     },
     "cardNumber": {
       "immutable": true,
-      "clientUse": true,
       "type": "string"
     },
     "redactedCardNumber": {
@@ -25,8 +24,9 @@
       "type": "number"
     },
     "cvv": {
+      "type": "string",
       "immutable": true,
-      "type": "string"
+      "clientUse": true
     },
     "postalCode": {
       "type": "string"
