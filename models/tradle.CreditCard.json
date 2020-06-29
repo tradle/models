@@ -38,7 +38,6 @@
     },
     "scan": {
       "type": "object",
-      "clientUse": true,
       "range": "photo",
       "scanner": "payment-card",
       "mainPhoto": true,
@@ -47,6 +46,7 @@
     },
     "scanJson": {
       "type": "object",
+      "clientUse": true,
       "title": "Extracted fields",
       "range": "json",
       "readOnly": true
