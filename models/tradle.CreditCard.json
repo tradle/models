@@ -10,6 +10,7 @@
     },
     "cardNumber": {
       "immutable": true,
+      "clientUse": true,
       "type": "string"
     },
     "redactedCardNumber": {
@@ -38,6 +39,7 @@
     },
     "scan": {
       "type": "object",
+
       "range": "photo",
       "scanner": "payment-card",
       "mainPhoto": true,
