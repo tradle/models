@@ -24,6 +24,15 @@
     "expiryYear": {
       "type": "number"
     },
+    "expiryDate": {
+      "type": "string",
+      "displayAs": "{1}/{2}",
+      "group": [
+        "expiryMonth",
+        "expiryYear"
+      ],
+      "readOnly": true
+    },
     "cvv": {
       "type": "string",
       "immutable": true,
@@ -75,8 +84,7 @@
     "cardholderName",
     "cardNumber",
     "redactedCardNumber",
-    "expiryMonth",
-    "expiryYear",
+    "expiryDate",
     "cvv",
     "postalCode",
     "signature"
