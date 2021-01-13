@@ -51,19 +51,23 @@
       "hashKey": "permalink",
       "rangeKey": {
         "template": "{_time}:{link}"
-      }
+      },
+      "specificity": 4
     },
     {
       "hashKey": "fingerprint",
-      "rangeKey": "_time"
+      "rangeKey": "_time",
+      "specificity": 3
     },
     {
       "hashKey": "_t",
-      "rangeKey": "_time"
+      "rangeKey": "_time",
+      "specificity": 1
     },
     {
       "hashKey": "importedFrom",
-      "rangeKey": "_time"
+      "rangeKey": "_time",
+      "specificity": 2
     }
   ],
   "required": [
