@@ -210,6 +210,33 @@ optional, shown in UI during data entry to give the user an additional hint / in
 
 optional, helps UI. When a resource is shown in a list or in the nav bar, its title is displayed. Set displayName to true if you want this property to be part of the object’s displayed title.
 
+### format
+
+optional, dates only. Shown in UI in view mode. For example:
+
+```
+...
+"expirationDate": {
+  "type": "date",
+  "format": "mmmm, yyyy"
+}
+```
+
+### numberFormat
+
+optional, numbers only. Shown in UI in view mode. For example:
+
+```
+...
+"zScore": {
+  "type": "number",
+  "numberFormat": {
+    "maximumFractionDigits": 2
+  }
+},
+```
+It has only one property for now: **maximumFractionDigits**. It means to round the value to the value with 2 fraction digits.
+
 ### pattern
 
 optional, a regular expression (regexp) that defines the pattern for property value validation.
