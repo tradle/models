@@ -45,6 +45,7 @@ const models = module.exports = {
   get ['tradle.Document']() { return require('./models/tradle.Document.json') },
   get ['tradle.DocumentScanner']() { return require('./models/tradle.DocumentScanner.json') },
   get ['tradle.DraftApplication']() { return require('./models/tradle.DraftApplication.json') },
+  get ['tradle.Duration']() { return require('./models/tradle.Duration.json') },
   get ['tradle.Education']() { return require('./models/tradle.Education.json') },
   get ['tradle.EducationDegree']() { return require('./models/tradle.EducationDegree.json') },
   get ['tradle.EducationNL']() { return require('./models/tradle.EducationNL.json') },
@@ -170,5 +171,6 @@ const models = module.exports = {
   get ['tradle.Verification']() { return require('./models/tradle.Verification.json') },
   get ['tradle.VisualPhotosVerificationMethod']() { return require('./models/tradle.VisualPhotosVerificationMethod.json') },
   get ['tradle.VisualVerificationMethod']() { return require('./models/tradle.VisualVerificationMethod_Wealth.json') },
+  get ['tradle.WebApiCredentials']() { return require('./models/tradle.WebApiCredentials.json') },
   get ['tradle.WebSite']() { return require('./models/tradle.WebSite.json') }
 }

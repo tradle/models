@@ -1,0 +1,27 @@
+{
+  "id": "tradle.Duration",
+  "type": "tradle.Model",
+  "title": "Duration",
+  "inlined": true,
+  "properties": {
+    "value": {
+      "type": "number"
+    },
+    "durationType": {
+      "type": "enum",
+      "oneOf": [
+        "Seconds",
+        "Minutes",
+        "Hours",
+        "Days",
+        "Weeks",
+        "Months",
+        "Years"
+      ]
+    }
+  },
+  "required": [
+    "durationType",
+    "value"
+  ]
+}
