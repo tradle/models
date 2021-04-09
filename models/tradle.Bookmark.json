@@ -3,10 +3,13 @@
   "type": "tradle.Model",
   "title": "Bookmark",
   "notEditable": true,
+  "interfaces": [
+    "tradle.Cancellable"
+  ],
   "properties": {
     "message": {
       "type": "string",
-      "readOnly": true,
+      "title": "Title",
       "skipLabel": true,
       "displayName": true
     },
@@ -18,8 +21,16 @@
     "grid": {
       "type": "boolean"
     },
-    "noInternalUse": {
+    "shared": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "cancelled": {
       "type": "boolean"
+    },
+    "noInternalUse": {
+      "type": "boolean",
+      "readOnly": true
     }
   },
   "required": [
