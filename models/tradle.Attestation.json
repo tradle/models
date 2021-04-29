@@ -28,10 +28,12 @@
     "parentApplication": {
       "type": "object",
       "ref": "tradle.Application",
+      "internalUse": true,
       "readOnly": true
     },
     "application": {
       "type": "object",
+      "internalUse": true,
       "ref": "tradle.Application",
       "readOnly": true
     },
@@ -39,6 +41,11 @@
       "type": "string"
     }
   },
+  "viewCols": [
+    "confirmation",
+    "notes",
+    "items"
+  ],
   "required": [
     "signature"
   ]
