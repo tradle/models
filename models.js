@@ -19,6 +19,7 @@ const models = module.exports = {
   get ['tradle.BetaTesterContactInfo']() { return require('./models/tradle.BetaTesterContactInfo.json') },
   get ['tradle.BlockchainNetwork']() { return require('./models/tradle.BlockchainNetwork.json') },
   get ['tradle.Bookmark']() { return require('./models/tradle.Bookmark.json') },
+  get ['tradle.BookmarksFolder']() { return require('./models/tradle.BookmarksFolder.json') },
   get ['tradle.Cancellable']() { return require('./models/tradle.Cancellable.json') },
   get ['tradle.Check']() { return require('./models/tradle.Check.json') },
   get ['tradle.CheckOverride']() { return require('./models/tradle.CheckOverride.json') },

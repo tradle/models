@@ -3,9 +3,6 @@
   "type": "tradle.Model",
   "title": "Bookmark",
   "notEditable": true,
-  "interfaces": [
-    "tradle.Cancellable"
-  ],
   "properties": {
     "message": {
       "type": "string",
@@ -19,18 +16,22 @@
       "readOnly": true
     },
     "grid": {
-      "type": "boolean"
-    },
-    "shared": {
       "type": "boolean",
       "readOnly": true
     },
-    "cancelled": {
-      "type": "boolean"
+    "shared": {
+      "type": "boolean",
+      "description": "Check if you want to share this bookmark with others?"
     },
     "noInternalUse": {
       "type": "boolean",
       "readOnly": true
+    },
+    "folder": {
+      "type": "object",
+      "allowToAdd": true,
+      "readOnly": true,
+      "ref": "tradle.BookmarksFolder"
     }
   },
   "required": [

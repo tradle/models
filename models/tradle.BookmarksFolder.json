@@ -1,0 +1,23 @@
+{
+  "id": "tradle.BookmarksFolder",
+  "type": "tradle.Model",
+  "title": "Bookmarks Folder",
+  "properties": {
+    "message": {
+      "type": "string",
+      "displayName": true
+    },
+    "shared": {
+      "type": "boolean",
+      "readOnly": true
+    },
+    "list": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.Bookmark",
+        "backlink": "folder"
+      }
+    }
+  }
+}
