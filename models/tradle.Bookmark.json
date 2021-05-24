@@ -30,7 +30,8 @@
     "folder": {
       "type": "object",
       "allowToAdd": true,
-      "ref": "tradle.BookmarksFolder"
+      "ref": "tradle.BookmarksFolder",
+      "showIf": "!shared  ||  (shared  &&  _s)"
     }
   },
   "required": [
