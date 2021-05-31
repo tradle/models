@@ -31,6 +31,7 @@ const models = module.exports = {
   get ['tradle.Credentials']() { return require('./models/tradle.Credentials.json') },
   get ['tradle.CreditCard']() { return require('./models/tradle.CreditCard.json') },
   get ['tradle.CreditCards']() { return require('./models/tradle.CreditCards.json') },
+  get ['tradle.CreditScore']() { return require('./models/tradle.CreditScore.json') },
   get ['tradle.Currency']() { return require('./models/tradle.Currency.json') },
   get ['tradle.CustomerConfirmation']() { return require('./models/tradle.CustomerConfirmation.json') },
   get ['tradle.CustomerContactInformation']() { return require('./models/tradle.CustomerContactInformation.json') },
