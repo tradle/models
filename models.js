@@ -116,6 +116,7 @@ const models = module.exports = {
   get ['tradle.Partial']() { return require('./models/tradle.Partial.json') },
   get ['tradle.Passport']() { return require('./models/tradle.Passport.json') },
   get ['tradle.PassportVerification']() { return require('./models/tradle.PassportVerification.json') },
+  get ['tradle.PendingWork']() { return require('./models/tradle.PendingWork.json') },
   get ['tradle.PersonalInfo']() { return require('./models/tradle.PersonalInfo.json') },
   get ['tradle.Phone']() { return require('./models/tradle.Phone.json') },
   get ['tradle.PhoneTypes']() { return require('./models/tradle.PhoneTypes.json') },

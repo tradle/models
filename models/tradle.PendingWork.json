@@ -1,0 +1,58 @@
+{
+  "id": "tradle.PendingWork",
+  "type": "tradle.Model",
+  "title": "Pending Work",
+  "properties": {
+    "plugin": {
+       "type": "string",
+       "readOnly": true   
+    }, 
+    "request": {
+      "type": "string",
+      "readOnly": true
+    }, 
+    "attempts": {
+      "type": "number" 
+    },
+    "lastAttempt": {
+      "type": "date",
+      "readOnly": true
+    },
+    "frequency": {
+      "type": "number"
+    },
+    "pendingRef": {
+      "type": "object",
+      "ref": "tradle.Object",
+      "readOnly": true
+    },
+    "message": {
+      "type": "string",
+      "displayName": true,
+      "readOnly": true
+    },
+    "done": {
+      "type": "boolean",
+      "readOnly": true
+    }
+  },
+  "required": [
+    "plugin",
+    "request",
+    "done"
+  ],
+  "viewCols": [
+    "plugin",
+    "attempts",
+    "lastAttempt",
+    "message",
+    "done"
+  ],
+  "indexes": [
+    {
+      "hashKey": "_t",
+      "rangeKey": "done"
+    }
+  ] 
+}
+
