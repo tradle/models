@@ -10,6 +10,15 @@
         "type": "string"
       }
     },
+    "stubs": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "type": "object",
+        "range": "json",
+        "inlined": true
+      }
+    },
     "with": {
       "type": "array",
       "immutable": true,
