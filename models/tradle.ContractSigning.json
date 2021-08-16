@@ -1,0 +1,26 @@
+{
+  "id": "tradle.ContractSigning",
+  "type": "tradle.Model",
+  "title": "Contract Signing",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "contractText": {
+      "type": "string",
+      "markdown": true
+    },
+    "signature": {
+      "type": "object",
+      "ref": "tradle.Photo",
+      "inlined": true,
+      "skipLabel": true,
+      "signature": true
+    }
+  },
+  "required": [
+    "title",
+    "contractText",
+    "signature"
+  ]
+}
