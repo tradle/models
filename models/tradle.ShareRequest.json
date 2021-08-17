@@ -10,13 +10,18 @@
         "type": "string"
       }
     },
-    "stubs": {
+    "verificationStubs": {
       "type": "array",
       "readOnly": true,
       "items": {
-        "type": "object",
-        "range": "json",
-        "inlined": true
+        "ref": "tradle.Verification"
+      }
+    },
+    "formStubs": {
+      "type": "array",
+      "readOnly": true,
+      "items": {
+        "ref": "tradle.Form"
       }
     },
     "with": {
