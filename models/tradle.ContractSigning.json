@@ -18,10 +18,25 @@
       "inlined": true,
       "skipLabel": true,
       "signature": true
+    },
+    "daysTillFirstScheduledPayment": {
+      "type": "number",
+      "readOnly": true
+    },
+    "firstScheduledPaymentDue": {
+      "type": "date",
+      "readOnly": true,
+      "set": "Date.now() + daysTillFirstScheduledPayment * 24 * 60 * 60 * 1000"
     }
   },
   "required": [
     "title",
+    "contractText",
+    "signature"
+  ],
+  "viewCols": [
+    "title",
+    "firstScheduledPaymentDue",
     "contractText",
     "signature"
   ]
