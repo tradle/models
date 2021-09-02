@@ -5,15 +5,31 @@
   "properties": {
     "title": {
       "type": "string",
+      "skipLabel": true,
       "displayName": true
     },
     "contractText": {
       "type": "string",
+      "skipLabel": true,
       "markdown": true
+    },
+    "contract_group": {
+      "type": "string",
+      "title": "Company Information",
+      "list": [
+        "title",
+        "contractText"
+      ]
     }
   },
   "required": [
     "title",
     "contractText"
+  ],
+  "viewCols": [
+    "contract_group"
+  ],
+  "editCols": [
+    "contract_group"
   ]
 }
