@@ -48,6 +48,14 @@
         "nationality"
       ]
     },
+    "contact_group": {
+      "type": "string",
+      "title": "Contact Information",
+      "list": [
+        "emailAddress",
+        "phones"
+      ]
+    },
     "countryOfBirth": {
       "type": "object",
       "ref": "tradle.Country"
@@ -81,7 +89,7 @@
   },
   "editCols": [
     "name_group",
-    "phones"
+    "contact_group"
   ],
   "required": [
     "firstName",
@@ -90,7 +98,6 @@
   ],
   "viewCols": [
     "name_group",
-    "name",
-    "phones"
+    "contact_group"
   ]
 }
