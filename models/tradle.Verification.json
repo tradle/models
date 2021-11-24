@@ -44,10 +44,25 @@
       "inlined": true,
       "ref": "tradle.Method"
     },
+    "checkType": {
+      "type": "string",
+      "range": "model",
+      "readOnly": true
+    },
     "check": {
       "type": "object",
       "readOnly": true,
       "ref": "tradle.Check"
+    },
+    "entityType": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.EntityTypes"
+    },
+    "trustCircle": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.TrustCircle"
     }
   },
   "indexes": [

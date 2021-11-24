@@ -1,0 +1,20 @@
+{
+  "id": "tradle.EntityTypes",
+  "title": "Entity Types",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "typeOfEntity": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "bank", "title": "Bank" },
+    { "id": "broker", "title": "Broker" },
+    { "id": "insurer", "title": "Insurer" },
+    { "id": "insuranceBroker", "title": "Insurance broker" },
+    { "id": "reinsurer", "title": "Reinsurer" },
+    { "id": "corporate", "title": "Corporate" }
+  ]
+}

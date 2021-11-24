@@ -1,0 +1,18 @@
+{
+  "id": "tradle.TrustCircle",
+  "title": "Trust Circle",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "typeOfEntity": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "taskForce", "title": "Task Force" },
+    { "id": "global", "title": "Global" },
+    { "id": "regional", "title": "Regional" },
+    { "id": "local", "title": "Local" }
+  ]
+}
