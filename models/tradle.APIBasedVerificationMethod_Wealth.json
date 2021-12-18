@@ -10,12 +10,13 @@
       "inlined": true
     },
     "reference": {
-      "skipLabel": true,
       "type": "array",
+      "skipLabel": true,
       "items": {
         "properties": {
           "queryId": {
-            "type": "string"
+            "type": "string",
+            "title": "reference"
           }
         }
       }
@@ -36,6 +37,7 @@
       "max": "1"
     },
     "aspect": {
+      "title": "What was verified",
       "type": "string"
     },
     "rawData": {
@@ -44,6 +46,22 @@
       "title": "Raw data",
       "range": "json",
       "readOnly": true
+    },
+    "main_group": {
+      "type": "string",
+      "title": "Topic",
+      "list": [
+        "aspect",
+        "api"
+      ]
+    },
+    "misc_group":{
+      "type": "string",
+      "title": "Tracking",
+      "list": [
+        "confidence",
+        "reference"
+      ]
     }
   },
   "required": [
@@ -52,10 +70,8 @@
     "reference"
   ],
   "viewCols": [
-    "aspect",
-    "api",
-    "reference",
-    "confidence",
+    "main_group",
+    "misc_group",
     "rawData"
   ]
 }

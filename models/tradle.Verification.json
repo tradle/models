@@ -9,7 +9,7 @@
       "type": "object",
       "readOnly": true,
       "ref": "tradle.Form",
-      "title": "Verified document"
+      "title": "Verification subject"
     },
     "message": {
       "type": "string",
@@ -63,6 +63,15 @@
       "type": "object",
       "readOnly": true,
       "ref": "tradle.TrustCircle"
+    },
+    "main_group": {
+      "type": "string",
+      "title": "Trust level",
+      "list": [
+        "document",
+        "entityType",
+        "trustCircle"
+      ]
     }
   },
   "indexes": [
@@ -75,11 +84,6 @@
     "document"
   ],
   "viewCols": [
-    "document",
-    "dateVerified",
-    "organization",
-    "method",
-    "sources",
-    "check"
+    "main_group"
   ]
 }
