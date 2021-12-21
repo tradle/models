@@ -1,0 +1,17 @@
+{
+  "id": "tradle.ShareRequestSubmitted",
+  "type": "tradle.Model",
+  "title": "Share Request Submitted",
+  "properties": {
+    "shareRequest": {
+      "type": "object",
+      "ref": "tradle.ShareRequest"
+    },
+    "submitted": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "submitted"
+  ]
+}

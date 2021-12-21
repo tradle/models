@@ -160,6 +160,7 @@ const models = module.exports = {
   get ['tradle.Sex']() { return require('./models/tradle.Sex.json') },
   get ['tradle.ShareContext']() { return require('./models/tradle.ShareContext.json') },
   get ['tradle.ShareRequest']() { return require('./models/tradle.ShareRequest.json') },
+  get ['tradle.ShareRequestSubmitted']() { return require('./models/tradle.ShareRequestSubmitted.json') },
   get ['tradle.SharedResource']() { return require('./models/tradle.SharedResource.json') },
   get ['tradle.ShortToLongUrlMapping']() { return require('./models/tradle.ShortToLongUrlMapping.json') },
   get ['tradle.SimpleMessage']() { return require('./models/tradle.SimpleMessage.json') },

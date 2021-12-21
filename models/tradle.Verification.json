@@ -26,6 +26,10 @@
       "ref": "tradle.Organization",
       "immutable": true
     },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
     "cancel": {
       "type": "boolean",
       "immutable": true
@@ -56,12 +60,14 @@
     },
     "entityType": {
       "type": "object",
+      "title": "Verifier classification",
       "readOnly": true,
       "ref": "tradle.EntityTypes"
     },
     "trustCircle": {
       "type": "object",
       "readOnly": true,
+      "title": "Verifier supervision",
       "ref": "tradle.TrustCircle"
     },
     "main_group": {
@@ -70,7 +76,8 @@
       "list": [
         "document",
         "entityType",
-        "trustCircle"
+        "trustCircle",
+        "country"
       ]
     }
   },
