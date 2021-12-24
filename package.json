@@ -4,13 +4,16 @@
   "description": "models for tradle apps",
   "main": "index.js",
   "scripts": {
+    "gen": "npm run gen:country-model; npm run gen:dictionary",
+    "gen:country-model": "bin/gen-country-model",
+    "gen:dictionary": "bin/gen-dictionary",
     "lint": "eslint --quiet --ext .js --ext .json .",
-    "validate": "PRINT_ONLY=1 node ./validate -f ./models.js",
+    "validate": "PRINT_ONLY=1 bin/validate -f ./models.js",
     "merge": "pack-models -i ./models -o ./models.js",
     "dictionaries": "pack-models -d ./models",
     "dictionaries:en": "pack-models -d ./models -l en",
     "postpublish": "git push -u",
-    "precommit": "npm run merge && git add models.js && npm run validate"
+    "precommit": "npm run gen && npm run merge && git add models.js && npm run validate"
   },
   "repository": {
     "type": "git",
@@ -27,17 +30,15 @@
   },
   "homepage": "https://github.com/tradle/models",
   "devDependencies": {
-    "@tradle/pack-models": "^4.0.1",
+    "@tradle/pack-models": "^4.0.8",
     "@tradle/validate-model": "^7.1.32",
-    "aws-sdk": "^2.407.0",
-    "eslint": "^3.15.0",
-    "eslint-plugin-json": "^1.2.0",
-    "husky": "^0.13.1",
+    "eslint": "^8.5.0",
+    "eslint-plugin-json": "^3.1.0",
+    "husky": "^7.0.4",
     "json-stable-stringify": "^1.0.1",
     "minimist": "^1.2.0",
     "mockery": "^2.1.0",
-    "s3-ls": "^2.0.1",
     "world-countries": "git+https://github.com/mledoze/countries.git",
-    "write-file-atomic": "^1.1.4"
+    "write-file-atomic": "^3.0.3"
   }
 }

@@ -1,19 +1,22 @@
-const staticData = [
-  require('./tradle.EducationDegree.json'),
-  // require('./tradle.Country.json'),
-  require('./tradle.Nationality.json'),
-  // require('./tradle.Currency.json'),
-  // require('./tradle.Major.json'),
-  require('./tradle.InvestingType.json')
-  // require('./tradle.WealthItemType.json')
-]
-const resources = [
-]
+function loadResources () {
+  return [
+    ...require('./tradle.EducationDegree.json'),
+    // ...require('./tradle.Country.json'),
+    ...require('./tradle.Nationality.json'),
+    // ...require('./tradle.Currency.json'),
+    // ...require('./tradle.Major.json'),
+    ...require('./tradle.InvestingType.json')
+    // ...require('./tradle.WealthItemType.json')
+  ]
+}
+let resources = null
 
 const data = {
   getResources() {
-    staticData.forEach(data =>  data.forEach(r => resources.push(r)))
-    return resources;
+    if (resources === null) {
+      resources = loadResources()
+    }
+    return resources
   }
 }
-module.exports = data;
+module.exports = data
