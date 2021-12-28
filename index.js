@@ -11,7 +11,7 @@ const models = {
   // Memo:   get fil() { return require('./dictionary_fil.json') },
   // Memo: },
   // Memo: get formDefaults () { return require('./data/formDefaults.json') },
-  get data () { return require('./data/data') },
+  get data () { return require('./data/index.js') },
   get currencies () { return require('./data/tradle.Currency.json') },
   get nationalities () { return require('./data/tradle.Nationality.json') },
   get countries () { return require('./data/tradle.Country.json') }
