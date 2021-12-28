@@ -1,5 +1,7 @@
-const m = require('./models')
-const writeFileAtomic = require('write-file-atomic')
+#!/usr/bin/env node
+const path = require('path')
+const m = require('../models')
+const writeFileAtomic = require('write-file-atomic').sync
 const stableStringify = require('json-stable-stringify')
 const argv = require('minimist')(process.argv.slice(2), {
   alias: {
@@ -25,7 +27,7 @@ if (argv.models) {
 let propNames
 let modelNames
 const lang = argv.language || 'en'
-const fn = './dictionary_' + lang + '.json'
+const fn = path.join(__dirname, '..', 'dictionary_' + lang + '.json')
 // Check if the dictionary exists
 // try {
 //   const d = require(fn)
@@ -85,6 +87,7 @@ function writeDictionary() {
     models: modelNames
   }
 
+  // eslint-disable-next-line no-console
   writeFileAtomic(fn, stableStringify(dictionary, { space: '  ' }), console.log)
   // console.log(JSON.stringify(propNames, 0, 2))
   // for (let p in propNames) {
@@ -101,19 +104,14 @@ function makeLabel(label) {
 }
 
 function printUsage () {
-  console.log(function () {
-  /*
-  Usage:
-  Options:
-      -h, --help              print usage
-      -f, --file              file path where the model resides
-      -m, --model             model json object. Verifies everyhing except references
-      -r, --references        the array of models for which to check the references
-  */
-  }.toString()
-  .split(/\n/)
-  .slice(2, -2)
-  .join('\n'))
-
+  // eslint-disable-next-line no-console
+  console.log(`
+Usage:
+Options:
+    -h, --help              print usage
+    -f, --file              file path where the model resides
+    -m, --model             model json object. Verifies everyhing except references
+    -r, --references        the array of models for which to check the references
+`)
   process.exit(0)
 }

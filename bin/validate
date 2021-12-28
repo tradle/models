@@ -1,14 +1,13 @@
 #!/usr/bin/env node
-
 const mockery = require('mockery')
+const path = require('path')
 mockery.enable({
   warnOnReplace: false,
   warnOnUnregistered: false
 })
 
-mockery.registerMock('@tradle/models', require('./'))
+mockery.registerMock('@tradle/models', require('..'))
 
-const path = require('path')
 const argv = require('minimist')(process.argv.slice(2), {
   alias: {
     m: 'model',
@@ -33,7 +32,8 @@ const validate = require('@tradle/validate-model')
 
 function run () {
   if (argv.file) {
-    const models = require(argv.file)
+    const file = path.resolve(process.cwd(), argv.file)
+    const models = require(file)
     return validate(models)
   }
 
