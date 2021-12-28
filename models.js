@@ -10,6 +10,7 @@ const models = module.exports = {
   get ['tradle.ApplicationSubmission']() { return require('./models/tradle.ApplicationSubmission.json') },
   get ['tradle.ApplicationSubmitted']() { return require('./models/tradle.ApplicationSubmitted.json') },
   get ['tradle.Aspect']() { return require('./models/tradle.Aspect.json') },
+  get ['tradle.Asset']() { return require('./models/tradle.Asset.json') },
   get ['tradle.AssignRelationshipManager']() { return require('./models/tradle.AssignRelationshipManager.json') },
   get ['tradle.Attestation']() { return require('./models/tradle.Attestation.json') },
   get ['tradle.AttestationItem']() { return require('./models/tradle.AttestationItem.json') },
