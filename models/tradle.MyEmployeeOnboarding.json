@@ -5,10 +5,12 @@
   "type": "tradle.Model",
   "properties": {
     "entityRole": {
-      "type": "string"
+      "type": "string",
+      "readOnly": true
     },
     "myProductId": {
       "title": "ID",
+      "immutable": true,
       "type": "string"
     },
     "firstName": {
@@ -31,10 +33,19 @@
     },
     "owner": {
       "type": "object",
-      "ref": "tradle.Identity"
+      "ref": "tradle.Identity",
+      "immutable": true
     },
     "revoked": {
       "type": "boolean"
+    },
+    "roles": {
+      "type": "array",
+      "items": {
+        "backlink": "employee",
+        "ref": "tradle.Role",
+      },
+      "allowToAdd": true
     }
   },
   "required": [
