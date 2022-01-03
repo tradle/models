@@ -2,10 +2,15 @@
   "id": "tradle.Asset",
   "type": "tradle.Model",
   "title": "Asset",
+  "abstract": true,
   "properties": {
     "title": {
       "displayName": true,
       "type": "string"
+    },
+    "currentOwner": {
+      "type": "object",
+      "ref": "tradle.Organization"
     }
   },
   "required": [
