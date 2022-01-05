@@ -1,0 +1,15 @@
+{
+  "id": "tradle.EmployeeRole",
+  "type": "tradle.Model",
+  "title": "Employee Role",
+  "inlined": true,
+  "properties": {
+    "role": {
+      "type": "object",
+      "ref": "tradle.EmployeeRoles"
+    }
+  },
+  "required": [
+    "role"
+  ]
+}
