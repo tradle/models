@@ -39,13 +39,23 @@
     "revoked": {
       "type": "boolean"
     },
-    "roles": {
+    "employeeOrganization": {
+      "type": "object",
+      "ref": "tradle.Organization"
+    },
+    "employeeRoles": {
       "type": "array",
+      "inlined": true,
       "items": {
-        "backlink": "employee",
-        "ref": "tradle.Role",
-      },
-      "allowToAdd": true
+        "ref": "tradle.EmployeeRole"
+      }
+    },
+    "entityRoles": {
+      "type": "array",
+      "inlined": true,
+      "items": {
+        "ref": "tradle.EntityRole"
+      }
     }
   },
   "required": [
