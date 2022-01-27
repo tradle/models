@@ -189,7 +189,7 @@ e.g.
   ...
 }
 ```
-**For the case #1**
+**Case #1**
 
 Annotation is set on `subClassOf: tradle.MyProduct` - which we call the **certificate**.
 
@@ -220,7 +220,7 @@ The flow is going to be the following:
 - Certificate is created
 - After the approval of Quotation application, the Employee from the Quotation application screen will be able to start the ...LeasingApplication
 
-**For the case #2**
+**Case #2**
 We needed the flow to start Quotation from the Asset so that the asset be a property value for one of the forms of Quotation Application
 ```
 {
