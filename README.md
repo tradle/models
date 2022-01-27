@@ -221,6 +221,7 @@ The flow is going to be the following:
 - After the approval of Quotation application, the Employee from the Quotation application screen will be able to start the ...LeasingApplication
 
 **Case #2**
+
 We needed the flow to start Quotation from the Asset so that the asset be a property value for one of the forms of Quotation Application
 ```
 {
