@@ -222,7 +222,7 @@ The flow is going to be the following:
 
 **Case #2**
 
-We needed the flow to start Quotation from the Asset so that the asset be a property value for one of the forms of Quotation Application
+For example if you need to pass the `...SomeAsset` (see below) to the Quotation Application to set the it as a property value for one of the forms of Quotation Application
 ```
 {
   "id": "...SomeAsset",
