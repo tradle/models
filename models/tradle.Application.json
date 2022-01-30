@@ -448,8 +448,90 @@
     "mifidClassification": {
       "type": "string",
       "title": "MiFID Classification"
+    },
+    "summary_group": {
+      "type": "string",
+      "title": "Summary",
+      "list": [
+        "status",
+        "draft",
+        "draftCompleted",
+        "dateStarted",
+        "dateModified",
+        "dateCompleted",
+        "forms"
+      ]
+    },
+    "score_group": {
+      "type": "string",
+      "title": "Score Details",
+      "list": [
+        "score",
+        "ruledBasedScore",
+        "scoreType",
+        "creditScore",
+        "scoreDetails",
+        "creditScoreDetails"
+      ]
+    },
+    "screening_group": {
+      "type": "string",
+      "title": "Screening Details",
+      "list": [
+        "hasFailedScreeningChecks",
+        "sanctionsHit",
+        "pepHit",
+        "adverseMediaHit",
+        "hasFailedDocumentValidityChecks",
+        "hasFailedEntityExistanceChecks"
+      ]
+    },
+    "checks_group": {
+      "type": "string",
+      "title": "Check Details",
+      "list": [
+        "numberOfChecksFailed",
+        "hasFailedChecks",
+        "numberOfChecksFailed",
+        "hasCheckOverrides",
+        "numberOfCheckOverrides",
+        "checks"
+      ]
+    },
+    "relationship_group": {
+      "type": "string",
+      "title": "Relationship",
+      "list": [
+        "assignedToTeam",
+        "teamCode",
+        "analyst",
+        "relationshipOwner",
+        "clientMetInPerson",
+        "personClientMet",
+        "reasonClientNotMet",
+        "clientPremisesVisited",
+        "personPremisesVisited",
+        "reasonPremisesNotVisited"
+      ]
+    },
+    "other_group": {
+      "type": "string",
+      "title": "Other Details",
+      "list": [
+        "lastMsgFromClientTime",
+        "lastMsgToClientTime",
+        "archived",
+        "parent",
+        "decisionBy",
+        "decisionDate",
+        "tree",
+        "products",
+        "attestations",
+        "editRequests"
+      ]
     }
   },
+
   "gridCols": [
     "applicantName",
     "status",
@@ -461,64 +543,21 @@
     "numberOfChecksFailed",
     "numberOfCheckOverrides"
   ],
+  "editCols": [
+    "summary_group",
+    "score_group",
+    "screening_group",
+    "checks_group",
+    "relationship_group",
+    "other_group"
+  ],
   "viewCols": [
-    "draft",
-    "draftCompleted",
-    "status",
-    "applicantName",
-    "requestFor",
-    "assignedToTeam",
-    "teamCode",
-    "relationshipOwner",
-    "clientMetInPerson",
-    "personClientMet",
-    "reasonClientNotMet",
-    "clientPremisesVisited",
-    "personPremisesVisited",
-    "reasonPremisesNotVisited",
-    "dateStarted",
-    "dateModified",
-    "dateCompleted",
-    "score",
-    "ruledBasedScore",
-    "scoreType",
-    "ddr",
-    "bsa",
-    "report",
-    "hasFailedChecks",
-    "creditScore",
-    "numberOfChecksFailed",
-    "hasFailedScreeningChecks",
-    "sanctionsHit",
-    "pepHit",
-    "adverseMediaHit",
-    "hasFailedDocumentValidityChecks",
-    "hasFailedEntityExistanceChecks",
-    "hasCheckOverrides",
-    "numberOfCheckOverrides",
-    "lastMsgFromClientTime",
-    "lastMsgToClientTime",
-    "archived",
-    "analyst",
-    "enterpriseClassification",
-    "FCAClassification",
-    "PSRClassification",
-    "eligibleComplainantClassification",
-    "FSCSClassification",
-    "UKClientSectorCode",
-    "UKClientIndustryCode",
-    "mifidClassification",
-    "parent",
-    "decisionBy",
-    "decisionDate",
-    "scoreDetails",
-    "creditScoreDetails",
-    "tree",
-    "forms",
-    "checks",
-    "products",
-    "attestations",
-    "editRequests"
+    "summary_group",
+    "score_group",
+    "screening_group",
+    "checks_group",
+    "relationship_group",
+    "other_group"
   ],
   "required": ["applicant", "requestFor", "context"],
   "indexes": [
