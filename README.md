@@ -172,6 +172,70 @@ optional, objects of this type could not be modified. Once again, tradle.Selfie 
 
 optional, to speed up the searches. Check [tradle.Application](https://github.com/tradle/models/blob/master/models/tradle.Application.json) to see how to add them
 
+### prerequisiteFor
+
+optional, this is used for two cases (the second one is not encouraged since might be re-designed). In both cases the employee fills out the application for the customer
+
+1. when the employee fills out the application for the customer but needs customer interference in the middle of the application. This way application is split in 2 and **prerequisiteFor** is what prompts these 2 applications to connect.
+2. when employee fills out the application starting from a particular resource because this resource serves as a value for the property in one of the forms of the application - this was used once because customer had a particular flow in mind.
+
+the value for this annotation is a model **id** for some `subClassOf: tradle.FinancialProduct`
+e.g.
+```
+{
+  "id": "...Quotation",
+  "title": "Quotation",
+  "subClassOf": "tradle.FinancialProduct",
+  ...
+}
+```
+**Case #1**
+
+Annotation is set on `subClassOf: tradle.MyProduct` - which we call the **certificate**.
+
+For example:
+```
+{
+  "id": ...MyQuotation,
+  "title": "My Quotation",
+  "subClassOf": "tradle.MyProduct",
+  "type": "tradle.Model",
+  "prerequisiteFor": "...LeaseApplication", 
+```
+where
+```
+{
+  "id": "...LeaseApplication",
+  "title": "Lease Application",
+  "subClassOf": "tradle.FinancialProduct",
+  ...
+}
+```
+
+The flow is going to be the following:
+- Employee fills out the Quotation application for the customer
+- Employee send the bundle to customer
+- Customer reviews and submits reviewed forms
+- Employee approves application
+- Certificate is created
+- After the approval of Quotation application, the Employee from the Quotation application screen will be able to start the ...LeasingApplication
+
+**Case #2**
+
+For example if you need to pass the `...SomeAsset` (see below) to the Quotation Application to set the it as a property value for one of the forms of Quotation Application
+```
+{
+  "id": "...SomeAsset",
+  "title": "Asset",
+  "subClassOf": "tradle.Asset",
+  "prerequisiteFor": "...Quotation",
+}
+```
+
+### displayName
+
+optional, to indicate the form the title of which is going to be the name of the Application this form is included in.
+
 ## Property Attributes
 
 ### title
