@@ -1,0 +1,37 @@
+{
+  "id": "tradle.Address",
+  "type": "tradle.Model",
+  "title": "Address",
+  "isInterface": true,
+  "properties": {
+    "street": {
+      "type": "string"
+    },
+    "number": {
+      "type": "string"
+    },
+    "neighborhood": {
+      "type": "string"
+    },
+    "borough": {
+      "type": "string",
+      "title": "borough / / municipality / delegation"
+    },
+    "city": {
+      "type": "string",
+      "title": "city / town"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "state": {
+      "type": "object",
+      "ref": "tradle.Jurisdiction"
+    },
+    "zip": {
+      "type": "string",
+      "title": "ZIP"
+    }
+  }
+}
