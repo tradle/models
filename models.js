@@ -170,6 +170,7 @@ const models = {
   get 'tradle.SharedResource' () { return require('./models/tradle.SharedResource.json') },
   get 'tradle.ShortToLongUrlMapping' () { return require('./models/tradle.ShortToLongUrlMapping.json') },
   get 'tradle.SimpleMessage' () { return require('./models/tradle.SimpleMessage.json') },
+  get 'tradle.Singleton' () { return require('./models/tradle.Singleton.json') },
   get 'tradle.SkillVerification' () { return require('./models/tradle.SkillVerification.json') },
   get 'tradle.SourceType' () { return require('./models/tradle.SourceType.json') },
   get 'tradle.Status' () { return require('./models/tradle.Status.json') },
