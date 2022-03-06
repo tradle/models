@@ -39,6 +39,11 @@
     "done": {
       "type": "boolean",
       "readOnly": true
+    },
+    "created": {
+      "type": "date",
+      "readOnly": true,
+      "immutable": true
     }
   },
   "required": [
@@ -48,6 +53,7 @@
   ],
   "viewCols": [
     "plugin",
+    "created",
     "attempts",
     "lastAttempt",
     "message",
