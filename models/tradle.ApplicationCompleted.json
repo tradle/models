@@ -1,0 +1,31 @@
+{
+  "id": "tradle.ApplicationCompleted",
+  "type": "tradle.Model",
+  "title": "Application Completed",
+  "properties": {
+    "message": {
+      "type": "string",
+      "sample": "lorem.sentence"
+    },
+    "requestFor": {
+      "type": "string"
+    },
+    "context": {
+      "type": "string"
+    }
+  },
+  "indexes": [
+    {
+      "hashKey": "context",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_orgOrAuthor",
+      "rangeKey": "_time"
+    },
+    {
+      "hashKey": "_t",
+      "rangeKey": "_time"
+    }
+  ]
+}
