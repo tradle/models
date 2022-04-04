@@ -39,6 +39,12 @@
       "showIf": "!shared  ||  (shared  &&  _s)"
     }
   },
+  "indexes": [
+    {
+      "hashKey": "_org",
+      "rangeKey": "_time"
+    }
+  ],
   "required": [
     "bookmark"
   ],
