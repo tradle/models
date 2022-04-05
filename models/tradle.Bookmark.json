@@ -2,8 +2,10 @@
   "id": "tradle.Bookmark",
   "type": "tradle.Model",
   "title": "Bookmark",
+  "sort": "order",
   "interfaces": [
-    "tradle.Cancellable"
+    "tradle.Cancellable",
+    "tradle.OrderedList"
   ],
   "properties": {
     "message": {
@@ -32,6 +34,9 @@
       "type": "boolean",
       "readOnly": true
     },
+    "order": {
+      "type": "number"
+    },
     "folder": {
       "type": "object",
       "allowToAdd": true,
@@ -49,6 +54,7 @@
     "bookmark"
   ],
   "viewCols": [
-    "bookmark"
+    "bookmark",
+    "order"
   ]
 }
