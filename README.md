@@ -11,6 +11,8 @@ Models are like blueprints. “Resources” are like buildings created from thos
 
 Below is the reference on data models. See some of the currently used models on github.
 
+[Learn more about modelling in Tradle here](DataModelling.md)
+
 To validate your models, use: https://github.com/tradle/validate-model
 To validate resources built from models, use: https://github.com/tradle/validate-resource
 
