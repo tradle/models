@@ -174,6 +174,10 @@ optional, objects of this type could not be modified. Once again, tradle.Selfie 
 
 optional, to speed up the searches. Check [tradle.Application](https://github.com/tradle/models/blob/master/models/tradle.Application.json) to see how to add them
 
+### internalUse
+
+optional, the resources created from it will never be viewed by customer. For example tradle.credit.CostOfCapital, tradle.ProviderConfiguraiton, etc.
+
 ### prerequisiteFor
 
 optional, this is used for two cases (the second one is not encouraged since might be re-designed). In both cases the employee fills out the application for the customer
@@ -276,6 +280,29 @@ optional, shown in UI during data entry to give the user an additional hint / in
 
 optional, helps UI. When a resource is shown in a list or in the nav bar, its title is displayed. Set displayName to true if you want this property to be part of the object’s displayed title.
 
+### displayAs
+
+optional, helps UI. Composing the value of the property from properties listed in attribute `group`.
+For example:
+```
+    "resourceTitle": {
+      "type": "string",
+      "readOnly": true,
+      "displayName": true,
+      "displayAs": "{1} {2}\n{3}, {4}",
+      "group": [
+        "firstName",
+        "lastName",
+        "documentType",
+        "country"
+      ]
+    },
+```
+
+### skipLabel
+
+optional, propety label will not show in UI 
+
 ### format
 
 optional, dates only. Shown in UI in view mode. For example:
@@ -345,3 +372,38 @@ It means:
   - the property **country** will be displayed
   - when it is set the **a** text field will be displayed - but not before
   - hide property **b** if the country is US, but show for all other countries or until it set
+
+### internalUse
+
+optional, the properties will be viewed only by the employee
+
+### list
+
+optional, helpsUI. This attribute is used in properties that have names ending with `_group` like `personal_group`. This is the property for groupping other properties of the models. For example:
+```
+    "personal_group": {
+      "type": "string",
+      "title": "Personal",
+      "readOnly": true,
+      "list": [
+        "firstName",
+        "lastName",
+        "dateOfBirth"
+      ]
+    }
+
+```
+
+### signature
+
+optional, helps UI. Specifies that property of the type `tradle.Photo` is actually a signature. _**Note**_ should have been range
+Example:
+```
+    "signature": {
+      "type": "object",
+      "ref": "tradle.Photo",
+      "inlined": true,
+      "skipLabel": true,
+      "signature": true
+    },
+```
