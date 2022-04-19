@@ -75,6 +75,7 @@ const models = {
   get 'tradle.FormsForProduct' () { return require('./models/tradle.FormsForProduct.json') },
   get 'tradle.FullAddress' () { return require('./models/tradle.FullAddress.json') },
   get 'tradle.FullName' () { return require('./models/tradle.FullName.json') },
+  get 'tradle.GoalSeek' () { return require('./models/tradle.GoalSeek.json') },
   get 'tradle.HandSignature' () { return require('./models/tradle.HandSignature.json') },
   get 'tradle.HowToFund' () { return require('./models/tradle.HowToFund.json') },
   get 'tradle.IDCardType' () { return require('./models/tradle.IDCardType.json') },
