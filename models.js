@@ -63,7 +63,6 @@ const models = {
   get 'tradle.EntityRole' () { return require('./models/tradle.EntityRole.json') },
   get 'tradle.EntityTypes' () { return require('./models/tradle.EntityTypes.json') },
   get 'tradle.Enum' () { return require('./models/tradle.Enum.json') },
-  get 'tradle.ExternalOrganization' () { return require('./models/tradle.ExternalOrganization.json') },
   get 'tradle.File' () { return require('./models/tradle.File.json') },
   get 'tradle.FinancialProduct' () { return require('./models/tradle.FinancialProduct.json') },
   get 'tradle.ForgetMe' () { return require('./models/tradle.ForgetMe.json') },
