@@ -61,7 +61,6 @@ const models = {
   get 'tradle.EmployeeOnboarding' () { return require('./models/tradle.EmployeeOnboarding.json') },
   get 'tradle.EmployeeRole' () { return require('./models/tradle.EmployeeRole.json') },
   get 'tradle.EnergyBill' () { return require('./models/tradle.EnergyBill.json') },
-  get 'tradle.EntityRole' () { return require('./models/tradle.EntityRole.json') },
   get 'tradle.EntityTypes' () { return require('./models/tradle.EntityTypes.json') },
   get 'tradle.Enum' () { return require('./models/tradle.Enum.json') },
   get 'tradle.File' () { return require('./models/tradle.File.json') },

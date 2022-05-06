@@ -6,6 +6,15 @@
     "role": {
       "type": "string",
       "displayName": true
+    },
+    "isCounterparty": {
+      "type": "boolean",
+      "description": "Third-party representative"
+    },
+    "counterparty": {
+      "type": "object",
+      "ref": "tradle.Counterparty",
+      "showIf": "isCounterparty"
     }
   },
   "required": [
