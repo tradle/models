@@ -39,6 +39,10 @@
     "revoked": {
       "type": "boolean"
     },
+    "counterparty": {
+      "type": "object",
+      "ref": "tradle.Counterparty"
+    },
     "employeeOrganization": {
       "type": "object",
       "ref": "tradle.Organization"
@@ -47,12 +51,6 @@
       "type": "array",
       "items": {
         "ref": "tradle.EmployeeRole"
-      }
-    },
-    "entityRoles": {
-      "type": "array",
-      "items": {
-        "ref": "tradle.EntityRole"
       }
     }
   },
@@ -63,7 +61,6 @@
     "name",
     "employeeOrganization",
     "employeeRoles",
-    "entityRoles",
     "myProductId"
   ],
   "indexes": [
