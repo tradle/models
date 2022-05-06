@@ -31,6 +31,7 @@ const models = {
   get 'tradle.Context' () { return require('./models/tradle.Context.json') },
   get 'tradle.Contract' () { return require('./models/tradle.Contract.json') },
   get 'tradle.ContractSigning' () { return require('./models/tradle.ContractSigning.json') },
+  get 'tradle.Counterparty' () { return require('./models/tradle.Counterparty.json') },
   get 'tradle.Country' () { return require('./models/tradle.Country.json') },
   get 'tradle.Credentials' () { return require('./models/tradle.Credentials.json') },
   get 'tradle.CreditCard' () { return require('./models/tradle.CreditCard.json') },
