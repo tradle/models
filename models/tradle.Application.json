@@ -27,6 +27,15 @@
       "readOnly": true,
       "ref": "tradle.MyEmployeeOnboarding"
     },
+    "submittedBy": {
+      "type": "object",
+      "readOnly": true,
+      "ref": "tradle.MyEmployeeOnboarding"
+    },
+    "counterparty": {
+      "type": "object",
+      "ref": "tradle.Counterparty"
+    },
     "decisionBy": {
       "type": "object",
       "readOnly": true,
@@ -515,7 +524,9 @@
         "reasonClientNotMet",
         "clientPremisesVisited",
         "personPremisesVisited",
-        "reasonPremisesNotVisited"
+        "reasonPremisesNotVisited",
+        "submittedBy",
+        "counterparty"
       ]
     },
     "other_group": {
@@ -541,11 +552,12 @@
     "status",
     "requestFor",
     "score",
-    "assignedToTeam",
     "analyst",
     "dateStarted",
     "numberOfChecksFailed",
-    "numberOfCheckOverrides"
+    "numberOfCheckOverrides",
+    "submittedBy",
+    "counterparty"
   ],
   "editCols": [
     "summary_group",
