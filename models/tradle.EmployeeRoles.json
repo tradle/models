@@ -1,0 +1,17 @@
+{
+  "id": "tradle.EmployeeRoles",
+  "title": "Employee Roles",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "role": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "admin", "title": "Admin" },
+    { "id": "sales", "title": "Sales" },
+    { "id": "other", "title": "Other" }
+  ]
+}

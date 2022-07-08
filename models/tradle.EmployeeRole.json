@@ -5,7 +5,9 @@
   "subClassOf": "tradle.Form",
   "properties": {
     "role": {
-      "type": "string",
+      "type": "object",
+      "ref": "tradle.EmployeeRoles",
+      "readOnlyForClients": true,
       "displayName": true
     },
     "isCounterparty": {

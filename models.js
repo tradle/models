@@ -60,6 +60,7 @@ const models = {
   get 'tradle.EmailAddress' () { return require('./models/tradle.EmailAddress.json') },
   get 'tradle.EmployeeOnboarding' () { return require('./models/tradle.EmployeeOnboarding.json') },
   get 'tradle.EmployeeRole' () { return require('./models/tradle.EmployeeRole.json') },
+  get 'tradle.EmployeeRoles' () { return require('./models/tradle.EmployeeRoles.json') },
   get 'tradle.EnergyBill' () { return require('./models/tradle.EnergyBill.json') },
   get 'tradle.EntityTypes' () { return require('./models/tradle.EntityTypes.json') },
   get 'tradle.Enum' () { return require('./models/tradle.Enum.json') },
