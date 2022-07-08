@@ -18,6 +18,7 @@
     "counterparty": {
       "type": "object",
       "ref": "tradle.Counterparty",
+      "readOnlyForClients": true,
       "showIf": "isCounterparty"
     }
   },
