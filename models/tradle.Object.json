@@ -99,6 +99,13 @@
       "description": "this object counterparty author's identity's permalink",
       "sample": "hash"
     },
+    "_authorOrgType": {
+      "type": "string",
+      "range": "model",
+      "readOnly": true,
+      "description": "this object counterparty author's organization type",
+      "sample": "tradle.Vendor"
+    },
     "_masterAuthor": {
       "type": "string",
       "readOnly": true,
