@@ -1,0 +1,33 @@
+{
+  "id": "tradle.BankAccountType",
+  "title": "Bank Account Type",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "accountType": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "required": [
+    "accountType"
+  ],
+  "enum": [
+    {
+      "id": "saving",
+      "title": "Savings"
+    },
+    {
+      "id": "investment",
+      "title": "Investment"
+    },
+    {
+      "id": "credit",
+      "title": "Credit"
+    },
+    {
+      "id": "creditCard",
+      "title": "Credit Card"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": "tradle.BankReference",
+  "type": "tradle.Model",
+  "title": "Bank References",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "financialInstitution": {
+      "type": "string",
+      "displayName": true
+    },
+    "accountType": {
+      "type": "object",
+      "ref": "tradle.BankAccountType"
+    },
+    "ageOfAccount": {
+      "type": "number",
+      "range": "year",
+      "displayName": true,
+      "maxDate": "today",
+      "minDate": "30 years before",
+      "sample": "year.past",
+      "description": "What year was this account opened?"
+    },
+    "balance": {
+      "type": "object",
+      "ref": "tradle.Money"
+    }
+  },
+  "required": [
+    "financialInstitution"
+  ],
+  "viewCols": [
+    "financialInstitution",
+    "accountType",
+    "ageOfAccount",
+    "balance"
+  ]
+}

@@ -8,6 +8,24 @@
       "displayName": true,
       "type": "object",
       "ref": "tradle.ProfessionType"
+    },
+    "description": {
+      "type": "string"
+    },
+    "seniority": {
+      "type": "string"
+    },
+    "position": {
+      "type": "string"
     }
-  }
+  },
+  "viewCols": [
+    "profession",
+    "description",
+    "seniority",
+    "position"
+  ],
+  "required": [
+    "profession"
+  ]
 }
