@@ -17,6 +17,8 @@ const models = {
   get 'tradle.AttestationItem' () { return require('./models/tradle.AttestationItem.json') },
   get 'tradle.BacklinkItem' () { return require('./models/tradle.BacklinkItem.json') },
   get 'tradle.BankAccount' () { return require('./models/tradle.BankAccount.json') },
+  get 'tradle.BankAccountType' () { return require('./models/tradle.BankAccountType.json') },
+  get 'tradle.BankReference' () { return require('./models/tradle.BankReference.json') },
   get 'tradle.BasicContactInfo' () { return require('./models/tradle.BasicContactInfo.json') },
   get 'tradle.BetaTesterContactInfo' () { return require('./models/tradle.BetaTesterContactInfo.json') },
   get 'tradle.BlockchainNetwork' () { return require('./models/tradle.BlockchainNetwork.json') },
