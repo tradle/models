@@ -23,17 +23,71 @@
       "type": "object",
       "ref": "tradle.Identity"
     },
+    "phone": {
+      "type": "string",
+      "range": "phone",
+      "keyboard": "phone-pad",
+      "sample": "phone.phoneNumber",
+      "description": "Please enter your phone number"
+    },
+    "email": {
+      "type": "string",
+      "range": "email",
+      "keyboard": "email-address"
+    },
     "revoked": {
       "type": "boolean"
-    }
+    },
+    "mySentPayments": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.C2CPayment",
+        "backlink": "from"
+      }
+    },
+    "myReceivedPayments": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.C2CPayment",
+        "backlink": "to"
+      }
+    },
+    "contacts": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.CustomerContactInformation",
+        "backlink": "owner"
+      }
+    },
+    "personal_group": {
+      "type": "string",
+      "title": "Personal",
+      "list": [
+        "firstName",
+        "lastName",
+        "email"
+      ]
+    },
+    "payments_group": {
+      "type": "string",
+      "title": "Payments",
+      "list": [
+        "mySentPayments",
+        "myReceivedPayments"
+      ]
+    },
   },
   "required": [
-    "myProductId"
+    "myProductId",
+    "email"
   ],
   "viewCols": [
     "myProductId",
     "firstName",
-    "lastName"
+    "lastName",
+    "email",
+    "mySentPayments",
+    "myReceivedPayments"
   ],
   "indexes": [
     {

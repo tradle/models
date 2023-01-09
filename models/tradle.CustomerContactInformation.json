@@ -7,10 +7,6 @@
   "subClassOf": "tradle.Form",
   "type": "tradle.Model",
   "properties": {
-    "_t": {
-      "type": "string",
-      "readOnly": true
-    },
     "phone": {
       "type": "string",
       "range": "phone",
@@ -22,10 +18,14 @@
       "type": "string",
       "range": "email",
       "keyboard": "email-address"
+    },
+    "owner": {
+      "type": "object",
+      "ref": "tradle.MyCustomerOnboarding"
     }
   },
   "required": [
-    "phone"
+    "email"
   ],
   "viewCols": [
     "phone",
