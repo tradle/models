@@ -1,0 +1,19 @@
+{
+  "id": "tradle.ContractType",
+  "title": "Contract Type",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "contractType": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "privateRental", "title": "Private rental" },
+    { "id": "sharedRental", "title": "Shared rental" },
+    { "id": "sideLetter", "title": "Side letter"},
+    { "id": "localDirector", "title": "Local director"}
+  ]
+}
+

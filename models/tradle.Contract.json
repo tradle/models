@@ -3,9 +3,9 @@
   "type": "tradle.Model",
   "title": "Contract",
   "properties": {
-    "title": {
-      "type": "string",
-      "skipLabel": true,
+    "contractType": {
+      "type": "object",
+      "ref": "tradle.ContractType",
       "displayName": true
     },
     "contractText": {
@@ -13,17 +13,22 @@
       "skipLabel": true,
       "markdown": true
     },
+    "current": {
+      "type": "boolean",
+      "description": "The one that is current will be used for the set contract type"
+    },
     "contract_group": {
       "type": "string",
       "title": "Company Information",
       "list": [
-        "title",
-        "contractText"
+        "contractType",
+        "contractText",
+        "current"
       ]
     }
   },
   "required": [
-    "title",
+    "contractType",
     "contractText"
   ],
   "viewCols": [
