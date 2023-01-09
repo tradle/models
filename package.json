@@ -13,7 +13,7 @@
     "dictionaries": "pack-models -d ./models",
     "dictionaries:en": "pack-models -d ./models -l en",
     "postpublish": "git push -u",
-    "precommit": "npm run merge && git add models.js && npm run validate"
+    "precommit": "npm run merge && npm run validate && git add models.js"
   },
   "repository": {
     "type": "git",
