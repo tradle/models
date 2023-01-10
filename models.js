@@ -122,6 +122,7 @@ const models = {
   get 'tradle.NotificationStatus' () { return require('./models/tradle.NotificationStatus.json') },
   get 'tradle.OTP' () { return require('./models/tradle.OTP.json') },
   get 'tradle.Object' () { return require('./models/tradle.Object.json') },
+  get 'tradle.Order' () { return require('./models/tradle.Order.json') },
   get 'tradle.OrderedList' () { return require('./models/tradle.OrderedList.json') },
   get 'tradle.Organization' () { return require('./models/tradle.Organization.json') },
   get 'tradle.OverrideStatus' () { return require('./models/tradle.OverrideStatus.json') },
