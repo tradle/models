@@ -24,6 +24,7 @@ const models = {
   get 'tradle.BlockchainNetwork' () { return require('./models/tradle.BlockchainNetwork.json') },
   get 'tradle.Bookmark' () { return require('./models/tradle.Bookmark.json') },
   get 'tradle.BookmarksFolder' () { return require('./models/tradle.BookmarksFolder.json') },
+  get 'tradle.C2CPayment' () { return require('./models/tradle.C2CPayment.json') },
   get 'tradle.Cancellable' () { return require('./models/tradle.Cancellable.json') },
   get 'tradle.Check' () { return require('./models/tradle.Check.json') },
   get 'tradle.CheckOverride' () { return require('./models/tradle.CheckOverride.json') },
