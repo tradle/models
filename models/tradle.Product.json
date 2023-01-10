@@ -1,0 +1,32 @@
+{
+  "id": "tradle.Product",
+  "type": "tradle.Model",
+  "title": "Product",
+  "properties": {
+    "productName": {
+      "displayName": true,
+      "type": "string"
+    },
+    "code": {
+      "displayName": true,
+      "type": "string"
+    },
+    "description": {
+      "displayName": true,
+      "type": "string"
+    },
+    "manufacturer": {
+      "type": "object",
+      "ref": "tradle.Counterparty"
+    },
+    "listPrice": {
+      "type": "object",
+      "displayName": true,
+      "ref": "tradle.Money"
+    }
+  },
+  "required": [
+    "productName",
+    "listPrice"
+  ]
+}
