@@ -1,0 +1,40 @@
+{
+  "id": "tradle.C2CPayment",
+  "title": "Payment",
+  "type": "tradle.Model",
+  "subClassOf": "tradle.Form",
+  "properties": {
+    "from": {
+      "type": "object",
+      "ref": "tradle.MyCustomerOnboarding"
+    },
+    "to": {
+      "type": "object",
+      "ref": "tradle.MyCustomerOnboarding"
+    },
+    "payment": {
+      "type": "object",
+      "ref": "tradle.Money",
+      "inlined": true
+    },
+    "status": {
+      "type": "object",
+      "ref": "tradle.Status"
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "from",
+    "to",
+    "payment"
+  ],
+
+  "viewCols": [
+    "from",
+    "to",
+    "payment",
+    "message"
+  ]
+}
