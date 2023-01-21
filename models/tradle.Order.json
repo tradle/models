@@ -33,7 +33,9 @@
     "totalPrice": {
       "type": "object",
       "ref": "tradle.Money",
-      "readOnly": true
+      "readOnly": true,
+      "displayName": true,
+      "set": "items && items.map(a => a.listPrice ? a.listPrice.value : 0).reduce((a, b) => a + b, 0)"
     },
     "items": {
       "type": "array",
