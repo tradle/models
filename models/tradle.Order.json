@@ -28,7 +28,8 @@
     },
     "contract": {
       "type": "object",
-      "ref": "tradle.Contract"
+      "ref": "tradle.Contract",
+      "readOnlyForClients": true
     },
     "totalPrice": {
       "type": "object",
@@ -39,6 +40,7 @@
     },
     "items": {
       "type": "array",
+      "readOnlyForClients": true,
       "items": {
         "ref": "tradle.Product"
       }
