@@ -55,6 +55,10 @@
       "type": "string",
       "readOnly": true
     },
+    "manualEdit": {
+      "type": "string",
+      "readOnly": true
+    },
     "dateStarted": {
       "type": "date",
       "shortTitle": "start",
@@ -467,6 +471,7 @@
       "title": "Summary",
       "list": [
         "status",
+        "manualEdit",
         "draft",
         "draftCompleted",
         "dateStarted",
