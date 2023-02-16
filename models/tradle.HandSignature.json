@@ -19,14 +19,21 @@
       "inlined": true,
       "skipLabel": true,
       "signature": true
+    },
+    "signatureCard": {
+      "type": "string",
+      "range": "url",
+      "readOnly": true
     }
   },
   "editCols": [
-    "signature"
+    "signature",
+    "signatureCard"
   ],
   "viewCols": [
     "signature",
-    "signatureFor"
+    "signatureFor",
+    "signatureCard"
   ],
   "gridCols": [
     "signature",
