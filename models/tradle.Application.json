@@ -295,6 +295,9 @@
       "type": "boolean",
       "readOnly": true
     },
+    "moveToArchive": {
+      "type": "boolean"
+    },
     "draft": {
       "type": "boolean",
       "readOnly": true,
@@ -475,6 +478,7 @@
       "type": "string",
       "title": "Summary",
       "list": [
+        "applicantName",
         "status",
         "manualEdit",
         "draft",
@@ -546,6 +550,7 @@
         "lastMsgFromClientTime",
         "lastMsgToClientTime",
         "archived",
+        "moveToArchive",
         "parent",
         "decisionBy",
         "decisionDate",
