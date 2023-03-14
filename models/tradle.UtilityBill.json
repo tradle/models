@@ -1,0 +1,95 @@
+{
+  "id": "tradle.UtilityBill",
+  "type": "tradle.Model",
+  "title": "Utility Bill",
+  "subClassOf": "tradle.Form",
+  "style": {
+    "backgroundColor": "#EBE1FA"
+  },
+  "properties": {
+    "billDate": {
+      "type": "date",
+      "displayName": true
+    },
+    "issuedBy": {
+      "type": "string"
+    },
+    "utilityType": {
+      "type": "string"
+    },
+    "firstName": {
+      "type": "string"
+    },
+    "lastName": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "country": {
+      "type": "object",
+      "ref": "tradle.Country"
+    },
+    "postalCode": {
+      "type": "string"
+    },
+    "region": {
+      "type": "string"
+    },
+    "street": {
+      "type": "string"
+    },
+    "formattedAddress": {
+      "type": "string",
+      "displayAs": "{1} {2}, {3}, {4}",
+      "group": [
+        "street",
+        "city",
+        "region",
+        "postalCode"
+      ],
+      "title": "Address",
+      "readOnly": true
+    },
+    "accountNumber": {
+      "type": "string"
+    },
+    "accountDue": {
+      "type": "object",
+      "ref": "tradle.Money"
+    },
+    "issuerPhone": {
+      "type": "string",
+      "range": "phone"
+    },
+    "issuerEmail": {
+      "type": "string",
+      "range": "email"
+    },
+    "issuer_group": {
+      "type": "string",
+      "title": "Issuer",
+      "list": [
+        "utilityType",
+        "issuedBy",
+        "issuerPhone",
+        "issuerEmail" 
+      ]
+    }
+  },
+  "required": [
+    "billDate",
+    "issuedBy",
+    "firstName",
+    "lastName"
+  ],
+
+  "viewCols": [
+    "issuedBy",
+    "accountNumber",
+    "accountDue",
+    "formattedAddress",
+    "billDate",
+    "issuer_group"
+  ]
+}
