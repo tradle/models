@@ -66,6 +66,13 @@
       "type": "string",
       "range": "email"
     },
+    "document": {
+      "type": "object",
+      "range": "document",
+      "allowPicturesFromLibrary": true,
+      "title": "Proof of address document",
+      "ref": "tradle.Photo"
+    },
     "issuer_group": {
       "type": "string",
       "title": "Issuer",
@@ -78,18 +85,18 @@
     }
   },
   "required": [
-    "billDate",
-    "issuedBy",
-    "firstName",
-    "lastName"
+    "document"
   ],
-
+  "editCols": [
+    "document"
+  ],
   "viewCols": [
     "issuedBy",
     "accountNumber",
     "amountDue",
     "formattedAddress",
     "billDate",
-    "issuer_group"
+    "issuer_group",
+    "document"
   ]
 }
