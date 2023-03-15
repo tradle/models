@@ -54,7 +54,7 @@
     "accountNumber": {
       "type": "string"
     },
-    "accountDue": {
+    "amountDue": {
       "type": "object",
       "ref": "tradle.Money"
     },
@@ -87,7 +87,7 @@
   "viewCols": [
     "issuedBy",
     "accountNumber",
-    "accountDue",
+    "amountDue",
     "formattedAddress",
     "billDate",
     "issuer_group"
