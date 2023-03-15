@@ -192,6 +192,7 @@ const models = {
   get 'tradle.Tree' () { return require('./models/tradle.Tree.json') },
   get 'tradle.TrustCircle' () { return require('./models/tradle.TrustCircle.json') },
   get 'tradle.TypeOfContract' () { return require('./models/tradle.TypeOfContract.json') },
+  get 'tradle.UtilityBill' () { return require('./models/tradle.UtilityBill.json') },
   get 'tradle.UtilityBillVerification' () { return require('./models/tradle.UtilityBillVerification.json') },
   get 'tradle.Verifiable' () { return require('./models/tradle.Verifiable.json') },
   get 'tradle.Verification' () { return require('./models/tradle.Verification.json') },
