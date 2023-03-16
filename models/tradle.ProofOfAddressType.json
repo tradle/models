@@ -1,0 +1,19 @@
+{
+  "id": "tradle.ProofOfAddressType",
+  "title": "Utility Bill Type",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "typeOfDocument": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "phoneBill", "title": "Phone Bill" },
+    { "id": "energyBill", "title": "Energy Bill" },
+    { "id": "driverLicense", "title": "Driver license" },
+    { "id": "passport", "title": "Passport"}
+  ]
+}
+

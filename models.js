@@ -149,6 +149,7 @@ const models = {
   get 'tradle.Profile' () { return require('./models/tradle.Profile.json') },
   get 'tradle.ProgressMessage' () { return require('./models/tradle.ProgressMessage.json') },
   get 'tradle.ProofOfAddress' () { return require('./models/tradle.ProofOfAddress.json') },
+  get 'tradle.ProofOfAddressType' () { return require('./models/tradle.ProofOfAddressType.json') },
   get 'tradle.PropertyChooser' () { return require('./models/tradle.PropertyChooser.json') },
   get 'tradle.PubKey' () { return require('./models/tradle.PubKey.json') },
   get 'tradle.Refresh' () { return require('./models/tradle.Refresh.json') },

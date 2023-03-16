@@ -17,6 +17,10 @@
     "utilityType": {
       "type": "string"
     },
+    "typeOfDocument": {
+      "type": "object",
+      "ref": "tradle.ProofOfAddressType"
+    },
     "firstName": {
       "type": "string"
     },
@@ -54,7 +58,7 @@
     "accountNumber": {
       "type": "string"
     },
-    "amountDue": {
+    "totalAmountDue": {
       "type": "object",
       "ref": "tradle.Money"
     },
@@ -93,7 +97,7 @@
   "viewCols": [
     "issuedBy",
     "accountNumber",
-    "amountDue",
+    "totalAmountDue",
     "formattedAddress",
     "billDate",
     "issuer_group",
