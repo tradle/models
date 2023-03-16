@@ -15,10 +15,6 @@
       "type": "string"
     },
     "utilityType": {
-      "type": "string"
-    },
-    "typeOfDocument": {
-      "type": "object",
       "ref": "tradle.ProofOfAddressType"
     },
     "firstName": {
@@ -77,11 +73,19 @@
       "title": "Proof of address document",
       "ref": "tradle.Photo"
     },
+    "personalInfo_group": {
+      "type": "string",
+      "title": "Issuer",
+      "list": [
+        "firstName",
+        "lastName",
+        "formattedAddress"
+      ]
+    },
     "issuer_group": {
       "type": "string",
       "title": "Issuer",
       "list": [
-        "utilityType",
         "issuedBy",
         "issuerPhone",
         "issuerEmail"
@@ -95,11 +99,11 @@
     "document"
   ],
   "viewCols": [
-    "issuedBy",
+    "utilityType",
     "accountNumber",
-    "totalAmountDue",
-    "formattedAddress",
+    "personalInfo_group",
     "billDate",
+    "totalAmountDue",
     "issuer_group",
     "document"
   ]
