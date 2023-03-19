@@ -7,14 +7,14 @@
     "backgroundColor": "#EBE1FA"
   },
   "properties": {
-    "billDate": {
+    "documentDate": {
       "type": "date",
       "displayName": true
     },
     "issuedBy": {
       "type": "string"
     },
-    "utilityType": {
+    "documentType": {
       "type": "object",
       "ref": "tradle.DocumentType"
     },
@@ -99,11 +99,11 @@
     "document"
   ],
   "viewCols": [
-    "utilityType",
+    "documentType",
     "accountNumber",
     "personalInfo_group",
     "formattedAddress",
-    "billDate",
+    "documentDate",
     "totalAmountDue",
     "issuer_group",
     "document"
