@@ -132,7 +132,8 @@ We have the following interfaces.
 
 - tradle.Document - to better group and display the resources on Profile. They will appear in the Profile's Documents tab. Some of the implementors are: tradle.PhotoID, tradle.Selfie, tradle.MediaSnippet, etc.
 - tradle.Item - to display them only in the parent resource. The resources of implementor type can be added on parent resource page
-- tradle.Intersection - to make a soft connection between two or more resources or different types. We use it for example here:
+- tradle.Intersection - to make a soft connection between two or more resources or different types. We use it for example here.
+- tradle.Singleton - is designed to restrict the creation of resources of a specific type to a single instance for the entire company.
 
 ### required
 
@@ -145,6 +146,10 @@ optional, array of properties. UI is making sure user enters all of them in case
 ### viewCols
 
 restricts the set of properties that are displayed to the user when the resource is viewed on its own page. The order defines the order in which properties are displayed.
+
+### gridCols
+
+restricts the set of properties that are displayed to the user when the list of the resources is viewed in grid mode. The order defines the order in which properties are displayed.
 
 ### editCols
 
@@ -271,6 +276,11 @@ optional, set to true if this property cannot be modified by the user
 ### immutable
 
 optional, once the property value is set, the property can not be modified
+
+### hidden
+
+optional, property is never set from UI
+
 
 ### description
 
@@ -563,4 +573,109 @@ optional, an array of form IDs that specifies which forms can be repeatedly fill
 ### additionalForms
 
 optional, array of form IDs. It allows employees to request extra information from customers by providing access to a specified set of additional forms.
+
+## Lens
+
+A Lens acts as a filter or customization layer on top of a data model, allowing you to tailor the presentation and behavior of model properties to better suit specific needs or contexts. Lens is usually not generic but specific for a particular provider.
+
+As an example let's create a simple lens for model `tradle.Order` - see [here](https://github.com/tradle/models/blob/master/models/tradle.Order.json)
+```
+{
+  "_t": "tradle.Lens",
+  "model": "tradle.Order",
+  "id": "[namespace].lens.Order",
+  "properties": {
+    "dateSubmitted": {
+      "title": "Date",
+      "displayName": true
+    },
+    "description": {
+      "readOnlyForClients": true
+    },
+    "contract": {
+      "readOnlyForClients": true
+    },
+    "totalPrice": {},
+    "items": {}
+  },
+  "required": [
+    "dateSubmitted"
+  ],
+  "editCols": [
+    "description",
+    "contract",
+    "items",
+    "totalPrice"
+  ],
+  "viewCols": [
+    "dateSubmitted",
+    "description",
+    "contract",
+    "items",
+    "totalPrice"
+  ],
+  "gridCols": [
+    "dateSubmitted",
+    "description",
+    "contract",
+    "totalPrice"
+  ],
+  "hidden": [
+    "buyer"
+  ]
+}
+```
+
+Here are the required attributes for the lens.
+- `_t`: Always set to `tradle.Lens`
+- `model`: Specifies the model for which this lens is created
+- `id`: The unique identifier for the lens
+- `properties`: The list of properties you want to change behavior of.
+
+**Only properties that are listed in the model can be listed in lens.**
+
+When lens is applied to original `tradle.Order` there going to be the following changes to the model:
+- `displayName` changes from `description` to `dateSubmitted` and the `dateSubmitted` will be displayed as `Date`
+- `description` and `contract` properties become read-only for clients
+- `required` property will change from `items` to `dateSubmitted`
+- `hidden` added so that property `buyer` will not be displayed
+- `viewCols`, `gridCold` and `editCols` will be added to specify the order in which properties are going to be displayed and limit the ones that will be entered.
+
+These modifications demonstrate how a lens can significantly alter the presentation and behavior of a model without changing its underlying structure.
+
+### Another example would be
+
+```
+{
+  "_t": "tradle.Lens",
+  "model": "tradle.PersonalInfo",
+  "id": "[namespace].lens.PersonalInfo",
+  "properties": {
+    "countryOfBirth": {
+      "pin": [
+        "US",
+        "UK",
+        "AR"
+      ]
+    }
+  },
+  "name_group": {
+    "type": "string",
+    "title": "Personal detail",
+    "list": [
+      "firstName",
+      "lastName",
+      "emailAddress",
+      "countryOfBirth",
+      "dateOfBirth",
+      "education"
+    ]
+  },
+  "required": [
+    "emailAddress"
+  ]
+}
+```
+
+After the lens is applied the three countries listed will show on top of the list of all countries. Also changed the set of required properties and the set of properties that will show in `Personal detail` group.
 
