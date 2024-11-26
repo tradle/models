@@ -140,7 +140,7 @@ optional, array of properties. Server and UI both are making sure user enters al
 
 ### softRequired
 
-optional, array of properties. UI is making sure user enters all of them in case they are displayed.
+optional, array of properties. UI is making sure user enters all of them in case they are displayed in UI. This is different from properties listed in `required`, which must always be set regardless of their visibility.
 
 ### viewCols
 
@@ -206,7 +206,7 @@ For example:
   "title": "My Quotation",
   "subClassOf": "tradle.MyProduct",
   "type": "tradle.Model",
-  "prerequisiteFor": "...LeaseApplication", 
+  "prerequisiteFor": "...LeaseApplication",
 ```
 where
 ```
@@ -301,7 +301,20 @@ For example:
 
 ### skipLabel
 
-optional, propety label will not show in UI 
+optional, propety label will not show in UI
+
+### units
+
+optional, string, applicable only to numbers and provides a contextual representation for numeric values by appending a specific unit or symbol in the user interface.
+```
+{
+  "monthlyRate": {
+    "type": "number",
+    "units": "%"
+  },
+}
+```
+For example if `monthlyRate` was set to 25 it'll be displayed as `25%`
 
 ### format
 
@@ -379,7 +392,8 @@ optional, the properties will be viewed only by the employee
 
 ### list
 
-optional, helpsUI. This attribute is used in properties that have names ending with `_group` like `personal_group`. This is the property for groupping other properties of the models. For example:
+optional, helpsUI. This attribute is used in properties that have names ending with `_group` like `personal_group`. This is the property for groupping other properties of the models.
+For example:
 ```
     "personal_group": {
       "type": "string",
@@ -397,7 +411,7 @@ optional, helpsUI. This attribute is used in properties that have names ending w
 ### signature
 
 optional, helps UI. Specifies that property of the type `tradle.Photo` is actually a signature. _**Note**_ should have been range
-Example:
+For example:
 ```
     "signature": {
       "type": "object",
@@ -407,3 +421,146 @@ Example:
       "signature": true
     },
 ```
+
+### allowPicturesFromLibrary
+
+optional, enables users to upload images directly from their device's photo library
+
+### set
+
+optional, calculates the value using formula
+For example:
+```
+    "netPrice": {...},
+    "exchangeRate": {...},
+    "vatRate": {...},
+    "vat": {
+      "type": "object",
+      "ref": "tradle.Money",
+      "readOnly": true,
+      "set": "Math.round(netPrice.value * exchangeRate * vatRate * 100)/100"
+    },
+```
+
+### hiddenFromClient
+
+optional, properties with this attribute are always hidden from the customer, ensuring that sensitive or complex data is not exposed unnecessarily. It is typically used in models for forms that are prefilled by employees on behalf of the customer. Often used for properties that involve calculations or internal data, such as `exchangeRate` or `vatRate`, which are crucial for determining final values but do not require customer input.
+
+### readOnlyForClients
+
+optional, the property with this attribute can’t be changed by the client
+
+### allowToAdd
+
+optional, it is specifically designed for properties that are a subClassOf tradle.Form. When specified, the value(s) for the property could be either chosen from the list of values of the specified in the model type (in example below it'll be `tradle.PersonalInfo`) or created on-the-fly while filling out the form.
+
+For example:
+```
+    "policyHolder": {
+      "type": "object",
+      "ref": "tradle.PersonalInfo",
+      "allowToAdd": true
+    },
+    "insuredPersons": {
+      "type": "array",
+      "allowToAdd": true,
+      "items": {
+        "type": "object",
+        "ref": "tradle.PersonalInfo"
+      }
+    },
+ ```
+
+## Attributes for `subClassOf` `tradle.Enum`
+
+### enum
+For example:
+```
+{
+  "id": "tradle.IDCardType",
+  "subClassOf": "tradle.Enum",
+  "type": "tradle.Model",
+  "properties": {
+    "idCardType": {
+      "displayName": true,
+      "type": "string"
+    }
+  },
+  "enum": [
+    { "id": "passport", "title": "Passport" },
+    { "id": "license", "title": "Driver Licence" },
+    { "id": "id", "title": "ID Card"},
+    { "id": "other", "title": "Other"}
+  ]
+}
+```
+
+## Specific attributes for the properties with `subClassOf` `tradle.Enum` type.
+
+### pin
+
+optional, allows to highlight specific values by placing them at the top of a list. This makes it easier for users to find and select the most commonly chosen options. Usually used in the custom models or lenses created for particular customer.
+
+For example:
+```
+    "currency": {
+      "type": "object",
+      "ref": "tradle.Currency",
+      "pin": [
+        "MXN",
+        "USD"
+      ]
+    },
+```
+
+### limit
+
+optional, restricts the available options for a property to a specific subset of values from a  list. Usually used in the custom models or lenses created for particular customer.
+For example:
+```
+    "currency": {
+      "type": "object",
+      "ref": "tradle.Currency",
+      "limit": [
+        "MXN",
+        "USD"
+      ]
+    },
+```
+
+## Attributes for `subClassOf` `tradle.FinancialProduct`
+
+For example:
+```
+{
+  "id": "tradle.CustomerOnboarding",
+  "type": "tradle.Model",
+  "title": "Customer Onboarding",
+  "subClassOf": "tradle.FinancialProduct",
+  "forms": [
+    "tradle.PhotoID",
+    "tradle.CustomerContactInformation"
+  ],
+  "multiEntryForms": [
+    "tradle.Selfie"
+  ],
+  "additionalForms": [
+    "tradle.PersonalInfo",
+    "tradle.Residence"
+  ],
+  "properties": {}
+}
+```
+
+### forms
+
+required, array of form IDs, it specifies the sequence in which customers will provide information.
+
+### multiEntryForms
+
+optional, an array of form IDs that specifies which forms can be repeatedly filled. It allows users to fill out the same type of form multiple times until they choose to switch to a different form.
+
+### additionalForms
+
+optional, array of form IDs. It allows employees to request extra information from customers by providing access to a specified set of additional forms.
+
