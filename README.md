@@ -363,8 +363,26 @@ possible values include: default, numeric, email-address, phone-pad
 
 ### backlink
 
-defines a one-to-many relationship. Specifies by which property the "many" links to the "one." Many must be *type* array. For an example, take a look at the relationship between tradle.PhotoID and tradle.Verification. In this case, many tradle.Verification resources can link to one tradle.PhotoID
-
+defines a one-to-many relationship. Specifies by which property the "many" links to the "one." Many must be *type* array.
+For an example, take a look at the relationship between tradle.Application and tradle.ApplicationSubmission resources. In this case, many tradle.ApplicationSubmission resources can link to one tradle.Application
+```
+{
+  "id": "tradle.Application",
+  ...
+  "properties": {
+    ...
+    "submissions": {
+      "type": "array",
+      "items": {
+        "ref": "tradle.ApplicationSubmission",
+        "backlink": "application"
+      }
+    },
+    ...
+  }
+...
+}
+```
 ### showIf/hideIf
 
 optional, a formula that will be executed to make a decision if the property is going to be displayed.
