@@ -251,7 +251,7 @@ optional, to indicate the form the title of which is going to be the name of the
 
 ### title
 
-optional, to specify a name different from the property’s uncamelcased name. Useful for evolving property names without changing all the references to them in the code. If the `title` is not specified it is going to be auto-generated. For example for the property `dateOfBirth` it will be "Date of birth". If that is what you want skip the `title` attribute. But if you want this property to be displayed with the `title` for example "DOB" then you need to explicitely add it like here:
+optional, to specify a name different from the property’s uncamelcased name. Useful for evolving property names without changing all the references to them in the code. If the `title` is not specified it is going to be auto-generated. For example for the property `dateOfBirth` it will be "Date of Birth". If that is what you want skip the `title` attribute. But if you want this property to be displayed with the `title` for example "DOB" then you need to explicitely add it like here:
 ```
 ...
 "dateOfBirth": {
