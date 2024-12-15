@@ -79,7 +79,7 @@ optional, specifies this model as an extension of another model. This is when yo
 
 - tradle.Form: the only way to specify in model that you want it to use for entering structured data.
 - tradle.Enum: for when you can list all possible values of the property, e.g. marital status, gender, etc. This mechanism is also used for longer lists, which are predefined, like currencies, countries, etc. See for example, the Country model.
-- tradle.FinancialProduct: to define products to put in your channel’s product list. This must have a corresponding model that subclasses tradle.MyProduct. If you have a product com.example.Insurance that subclasses tradle.FinancialProduct, you must have a corresponding model com.example.MyInsurance that subclasses tradle.MyProduct. This is the product certificate the customer receives after their application for a.b.Insurance is approved.
+- tradle.FinancialProduct: to define products to put in your channel’s product list. Read [here](https://github.com/tradle/models/blob/master/docs/creatingNewProduct.md) for guidelines on how to create a new product
 - tradle.MyProduct: see tradle.FinancialProduct
 - tradle.Check: subclasses of this represent checks carried out during the application process, via third parties (tradle.TruefaceCheck, tradle.CentrixCheck, etc.), or otherwise.
 
@@ -251,14 +251,14 @@ optional, to indicate the form the title of which is going to be the name of the
 
 ### title
 
-optional, to specify a name different from the property’s uncamelcased name. Useful for evolving property names without changing all the references to them in the code. If the `title` is not specified it is going to be auto-generated. For example for the property `dateOfBirth` it will be "Date of Birth". If that is what you want skip the `title` attribute. But if you want this property to be displayed with the `title` for example "DOB" then you need to explicitely add it like here:
+optional, to specify a name different from the property’s uncamelcased name. Useful for evolving property names without changing all the references to them in the code.
+DO NOT add a title attribute if the property name is already user-friendly and follows the convention of uncasing and capitalizing (e.g., firstName to First Name). Including redundant title attributes will not change the behavior and may clutter the model unnecessarily.
+ONLY add a title attribute when you want to provide a custom label that differs from the default auto-generated label. For example:
 ```
-...
-"dateOfBirth": {
-  "type": "date",
-  "title": "DOB"
+"dateSubmitted": {
+  "title": "Date",
+  "displayName": true
 }
-...
 ```
 
 ### type
@@ -563,42 +563,6 @@ For example:
       ]
     },
 ```
-
-## Attributes for `subClassOf` `tradle.FinancialProduct`
-
-For example:
-```
-{
-  "id": "tradle.CustomerOnboarding",
-  "type": "tradle.Model",
-  "title": "Customer Onboarding",
-  "subClassOf": "tradle.FinancialProduct",
-  "forms": [
-    "tradle.PhotoID",
-    "tradle.CustomerContactInformation"
-  ],
-  "multiEntryForms": [
-    "tradle.Selfie"
-  ],
-  "additionalForms": [
-    "tradle.PersonalInfo",
-    "tradle.Residence"
-  ],
-  "properties": {}
-}
-```
-
-### forms
-
-required, array of form IDs, it specifies the sequence in which customers will provide information.
-
-### multiEntryForms
-
-optional, an array of form IDs that specifies which forms can be repeatedly filled. It allows users to fill out the same type of form multiple times until they choose to switch to a different form.
-
-### additionalForms
-
-optional, array of form IDs. It allows employees to request extra information from customers by providing access to a specified set of additional forms.
 
 ## Lens
 
