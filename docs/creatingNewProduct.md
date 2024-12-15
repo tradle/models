@@ -99,5 +99,5 @@ They must have the same **name** they have in the Forms they derived from.
 ```
 Index part of the MyProduct should be just blindly copied :).
 
-The MyProduct is creates when all forms are submitted and the application is approved. It serves as product certificate.
+MyProduct is created when all forms are submitted and the application is approved. It serves as product certificate.
 
