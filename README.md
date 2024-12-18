@@ -79,7 +79,7 @@ optional, specifies this model as an extension of another model. This is when yo
 
 - tradle.Form: the only way to specify in model that you want it to use for entering structured data.
 - tradle.Enum: for when you can list all possible values of the property, e.g. marital status, gender, etc. This mechanism is also used for longer lists, which are predefined, like currencies, countries, etc. See for example, the Country model.
-- tradle.FinancialProduct: to define products to put in your channel’s product list. Read [here](https://github.com/tradle/models/blob/master/docs/creatingNewProduct.md) for guidelines on how to create a new product
+- tradle.FinancialProduct: to define products to put in your channel’s product list. Read [here](https://github.com/tradle/models/blob/master/docs/creatingNewProduct.md) for guidelines on how to create a new product model.
 - tradle.MyProduct: see tradle.FinancialProduct
 - tradle.Check: subclasses of this represent checks carried out during the application process, via third parties (tradle.TruefaceCheck, tradle.CentrixCheck, etc.), or otherwise.
 
