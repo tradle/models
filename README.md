@@ -669,3 +669,29 @@ These modifications demonstrate how a lens can significantly alter the presentat
 
 After the lens is applied the three countries listed will show on top of the list of all countries. Also changed the set of required properties and the set of properties that will show in `Personal detail` group.
 
+## Developer Notes
+
+### Model Merging 
+
+When adding or removing models, the `models.js` file must be regenerated to reflect the updated set of models.
+
+The [models.js](https://github.com/tradle/models/blob/master/models.js) file acts as a "models registry," consolidating all model definitions into a single access point. It is generated using the [@tradle/pack-models](https://github.com/tradle/pack-models) utility package and is a critical component for managing models across various Tradle packages, including:
+
+    @tradle/models
+    @tradle/models-corporate-onboarding
+    @tradle/custom-models
+
+This process is automated and runs at the pre-commit stage to ensure the registry is always up-to-date. Check the script defined in your package.json file:
+
+```
+"scripts": {
+  ...
+  "merge": "pack-models -i ./models -o ./models.js"
+  "precommit": "npm run merge && npm run validate && git add models.js"
+}
+```
+where:
+
+  -i: Input directory containing the JSON model files.  
+  -o: Output file where the merged models will be saved.  
+
